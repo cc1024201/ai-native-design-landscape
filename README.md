@@ -14,17 +14,19 @@
 
 ## Remaining work
 
-The remaining work is intentionally depth-first, one project directory at a time.
+The remaining work is intentionally depth-first, one project directory at a time. Depth does **not** mean forcing every project through one table of contents. Before drafting a dossier, identify the product's decisive user journey, unusual technical mechanism and most consequential evidence gaps, then build the document around those questions.
 
-For every project, advance through the same evidence chain:
+The earlier ten-part chain remains a **research checklist**, not a required structure:
 
-`product facts → technical direction → technology choices → artifact/data model → agent interface → runtime/rendering → source mapping → persistence/versioning → implementation map → commit-level evidence`
+`product facts · technical direction · technology choices · artifact/data model · agent interface · runtime/rendering · source mapping · persistence/versioning · implementation paths · commit history`
+
+Use only the dimensions that explain the project, combine related ones, and add project-specific dimensions when the implementation demands them. A compile-time source locator, a feedback overlay, a vector editor and an agent-run artifact workspace should not read like four instances of the same system.
 
 Priority backlog:
 
 1. Deepen the remaining open-source/source-available projects first and pin immutable commit SHAs.
 2. For closed-source products, exhaust official product docs, changelogs, engineering posts, public protocols and integration documentation without guessing undisclosed internals.
-3. Add concrete artifact/source-of-truth, runtime, targeting, persistence and versioning evidence to every dossier.
+3. Trace the project's own critical path deeply enough to establish its artifact/source of truth, decisive mechanism, user-visible failure boundaries and relevant persistence or delivery semantics; do not add irrelevant sections for symmetry.
 4. Maintain lifecycle events, aliases/rebrands, acquisitions and discontinued products.
 5. Re-run long-tail discovery periodically so coverage can expand without weakening the per-project evidence standard.
 6. Evolve the root panorama only from facts established in project dossiers; cross-product synthesis remains root-only.
@@ -71,7 +73,7 @@ Coverage and evidence depth are tracked separately. A directory existing in the 
 
 | Depth | Meaning | Count in current snapshot |
 |---|---|---:|
-| **Source-level** | Open/source-available implementation pinned to a concrete commit and traced through artifact/data model, agent interface, runtime/rendering, source mapping, persistence/versioning and implementation paths | **11** |
+| **Source-level** | Open/source-available implementation pinned to a concrete commit and traced through the project's decisive product and technical questions, relevant implementation paths and failure boundaries, with commit history used where it changes the conclusion | **11** |
 | **Architecture/Product-level or Seed** | Product is registered and independently documented, but one or more implementation layers still depend on public docs, incomplete source tracing, or future evidence | **52** |
 
 Current source-level dossiers:
@@ -88,9 +90,22 @@ Current source-level dossiers:
 - [Code Inspector](projects/code-inspector/)
 - [Open Design](projects/open-design/)
 
-The standard deep-dive order for every project is:
+### Project-specific dossier design
 
-`product facts → technical direction → technology choices → artifact/data model → agent interface → runtime/rendering → source mapping → persistence/versioning → implementation map → commit-level evidence`
+Every dossier keeps a small common evidence floor: verified identity and lifecycle, canonical sources, an explicit evidence boundary, research gaps, and immutable revisions for source-derived claims. Everything between those anchors is project-specific.
+
+Examples of questions that can determine a dossier's structure:
+
+| Project shape | Questions that should lead the document |
+|---|---|
+| Agent design workspace | What is the ordinary-user loop, who owns execution authority, what becomes the durable artifact, and how is it delivered or recovered? |
+| Code-native visual editor | What is canonical—source or a design document—how is it rendered, how does a selected element regain identity, and where is a mutation written? |
+| Feedback/annotation bridge | What context is captured, how stable is the target, what survives transport to the agent, and what is persisted or lost? |
+| Compile-time source locator | Which files are transformed, what identity is injected, how is it resolved at runtime, and which framework/build cases break the chain? |
+| Canvas/object editor | What graph or schema owns truth, which operations mutate it, how do renderers project it, and how do undo, collaboration and versioning compose? |
+| Closed or historical product | What user-observable journey and public contracts are established, what changed over time, and which internal claims must remain unknown? |
+
+These are prompts, not archetype templates. The final headings should expose the particular system's causal structure rather than demonstrate that every checklist label was filled.
 
 ## Panorama
 

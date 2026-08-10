@@ -13,7 +13,7 @@ The directory unit is an independently identifiable product, open-source project
 - Do not create duplicate directories for historical names of the same product.
 - Keep acquired or discontinued products as historical entries instead of deleting them.
 
-A project directory discusses only that project: product boundary, technical direction, public technical choices, artifact/source-of-truth model, implementation notes, research gaps and primary sources.
+A project directory discusses only that project. Its table of contents should be derived from the product's own decisive user journey, technical mechanism and failure boundaries—not copied from another dossier. Product facts, artifact/source-of-truth, agent/runtime, mapping and versioning are investigation lenses, not mandatory peer sections.
 
 Cross-project taxonomy, comparison, market synthesis, coverage decisions and alias mapping belong only in the root `README.md`.
 
@@ -30,6 +30,8 @@ Use sources in this order:
 Do not guess a closed product's internal framework, renderer, data model, source mapping, persistence layer or agent orchestration.
 
 For open-source projects, pin a commit SHA before making source-derived implementation claims.
+
+Every dossier must preserve a small common evidence floor: canonical identity/lifecycle, primary sources, an explicit fact/inference/unknown boundary, research gaps, and immutable source revisions when implementation claims depend on code. Beyond that floor, combine, omit, reorder or add sections so the document explains this project rather than satisfying a universal outline.
 
 ## Lifecycle
 

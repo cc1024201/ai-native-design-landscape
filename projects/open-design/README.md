@@ -13,7 +13,7 @@
 | Canonical source repository | https://github.com/nexu-io/open-design |
 | Pinned source revision | `0460157e1eb1cbc3ca8314cae275d4464322ada5` |
 
-## 1. Product facts
+## Product surface and creation modes
 
 Open Design is a local-first design product built around coding-agent runtimes and code artifacts. The current repository describes it as an open-source Claude Design alternative and ships a complete application rather than only a skill bundle: a Next.js web client, an Electron desktop shell, a privileged local daemon, a CLI, a stdio MCP server, agent adapters, functional skills, rendering design templates, design systems and plugins.
 
@@ -37,7 +37,7 @@ The project explicitly positions real HTML/CSS/components and `DESIGN.md` as the
 
 The root package, web, daemon and desktop packages are v0.18.2 at the pinned revision. The root license is Apache-2.0; the repository also states that bundled skills and templates carrying their own license files retain those licenses.
 
-## 2. Technical direction
+## Three-plane architecture and delegated execution
 
 Open Design's technical direction is **to make a local daemon the authority for projects and product state, delegate the model/tool loop to an installed coding-agent runtime, and keep generated design output as inspectable project files rendered in a constrained preview**.
 
@@ -62,9 +62,9 @@ The design-content model is compositional but typed by role:
 
 The web UI and `od` CLI are intended to drive the same daemon contracts. The stdio MCP server adds an external-agent boundary over the same project/file/run authority rather than creating a second artifact store.
 
-## 3. Technology choices
+### Concrete technology and protocol choices
 
-### Application and build
+#### Application and build
 
 - **Monorepo:** pnpm 10.33.2 workspaces, TypeScript and Node `~24`.
 - **Web:** Next.js 16.2, React 18.3 and Tailwind/PostCSS, with Lexical for rich composition and Excalidraw for sketch flows.
@@ -74,7 +74,7 @@ The web UI and `od` CLI are intended to drive the same daemon contracts. The std
 - **Exports/media:** PDF-lib, PptxGenJS, browser printing/capture and artifact-specific media pipelines.
 - **Plugin runtime:** a filesystem-independent TypeScript parser/merger/validator package; daemon, web and CI inject loaders.
 
-### Agent/runtime adapters
+#### Agent/runtime adapters
 
 The pinned registry contains 26 base runtime definitions, including one BYOK OpenCode profile, across 25 distinct local executable families. Adapter groups include:
 
@@ -87,14 +87,14 @@ The pinned registry contains 26 base runtime definitions, including one BYOK Ope
 
 Each `RuntimeAgentDef` declares executable discovery, arguments, stream format, models, prompt transport, session-resume behavior, environment, optional auth probe and MCP-injection strategy. A new CLI sharing an existing wire format usually needs a definition rather than another orchestration engine.
 
-### Content protocols
+#### Content protocols
 
 - Skills and design templates use portable `SKILL.md` directories, with optional `od:` metadata.
 - Design systems center on `DESIGN.md`, optional tokens, component manifests and richer referenced files.
 - Artifact files can carry a v1 manifest naming kind, renderer, entry, export formats, primary/supporting files, source skill and design system.
 - Plugins use `open-design.json` plus type-specific payloads and explicit capability declarations.
 
-### Security-relevant choices
+#### Security-relevant choices
 
 - The normal project preview uses an opaque-origin iframe and a CSP with scripts/forms allowed but network connections, form actions, base URI and objects blocked.
 - A separate powered-preview path intentionally grants same-origin workers/storage and cross-origin isolation for WebGL, WASM and `SharedArrayBuffer`; it uses a preview-only loopback origin barred from normal daemon APIs.
@@ -102,7 +102,7 @@ Each `RuntimeAgentDef` declares executable discovery, arguments, stream format, 
 - The daemon binds loopback by default; non-loopback operation requires explicit bind/auth/origin configuration.
 - Agent subprocess authority is adapter-specific and materially broader than iframe authority. Claude is launched with `bypassPermissions`; Codex uses `workspace-write` with network on supported macOS/Linux environments but `danger-full-access` on Windows/WSL or explicit operator override. Several other adapters use their own headless allow-all flags.
 
-## 4. Artifact and data model
+## Canonical files, artifact envelopes, and live data
 
 ### Project control record
 
@@ -137,7 +137,7 @@ Functional skills, design templates and design systems are request-time registri
 
 A preview comment is not merely text. Its target stores file path, element id, selector, label, visible text, bounding box, an HTML start-tag hint, optional computed-style summary, deck slide and optional multi-element pod members. Collaboration adds an explicit anchor state (`anchored`, `reanchored`, `stale`, `lost`) and last-known-good position so drift is surfaced instead of silently retargeted.
 
-## 5. Agent interface
+## Delegated agent runtimes and external control surfaces
 
 ### Product run API
 
@@ -176,7 +176,7 @@ The iframe can be strongly sandboxed while the agent process can still edit the 
 
 The `od` CLI calls the same daemon surface for projects, files, versions, conversations, runs, exports, skills, design systems, plugins, live artifacts, terminals and automation. `od mcp install <agent>` adapts installation to the target agent's config/CLI conventions. This dual UI/CLI route makes the daemon API, not Electron UI state, the product integration seam.
 
-## 6. Runtime and rendering
+## Preview, editing, and delivery runtime
 
 ### Daemon and event lifecycle
 
@@ -199,9 +199,9 @@ Artifact manifests dispatch HTML/deck HTML, React component, Markdown, SVG, diag
 
 There is no universal Open Design renderer that converts an abstract design graph into every output. The selected template/skill and artifact's own HTML/CSS/JS remain responsible for most layout and interaction; Open Design supplies containment, bridges, inspection and delivery machinery around them.
 
-## 7. Source mapping and targeting
+### Target identity and guarded source patching
 
-### Direct-edit addressing
+#### Direct-edit addressing
 
 Open Design does not consume JavaScript source maps or compiler AST metadata to return a rendered element to JSX/TSX source. Its rich direct-edit path addresses elements inside an HTML source document:
 
@@ -215,19 +215,19 @@ Before saving, the host re-fetches the persisted file. If it differs from the so
 
 This is deterministic relative to one parsed HTML tree, but it is not a compiler-level source map. Authored stable `data-od-id` values are the strongest identity. Generated child-index paths can drift when siblings/wrappers change, DOMParser reserialization can normalize markup, and nodes created only by runtime JavaScript may not exist in the persisted source at all.
 
-### Inspect/tuning path
+#### Inspect/tuning path
 
 Inspect mode shares a selection bridge with comments but persists style changes differently. It accepts only an allow-listed set of typography, color, padding and radius properties; unsafe CSS values are rejected. The host serializes its own structured override map into a single `<style data-od-inspect-overrides>` block keyed by `data-od-id` or `data-screen-label`. It does not trust a CSS string returned from the artifact iframe.
 
 This path targets a stable annotated selector when available. It styles the selected rendered element without claiming knowledge of the original CSS rule, token definition or component source file.
 
-### Comment and annotation anchors
+#### Comment and annotation anchors
 
 Comment mode is intentionally more permissive than direct edit. It prefers `data-od-id`/`data-screen-label`, but for meaningful runtime DOM can fall back to a `body > ... > tag:nth-of-type(n)` selector. The target includes selector, text, start-tag hint, bbox and computed-style snapshot; free pins and drawn pods can exist without a source element.
 
 On later renders, the anchoring engine resolves from strong to weak evidence and persists `anchored`, `reanchored`, `stale` or `lost`. This makes comments useful on dynamic previews while explicitly admitting that a selector/HTML hint/position is not source identity.
 
-### Mapping limits
+#### Mapping limits
 
 - targeting is primarily HTML DOM-to-HTML-source, not DOM-to-React/Vue component source;
 - generated child-index ids are sensitive to structural edits;
@@ -237,7 +237,7 @@ On later renders, the anchoring engine resolves from strong to weak evidence and
 - comments can survive through heuristic re-anchoring but can also become stale/lost;
 - the selected element gives an agent visual/contextual evidence, not an automatic semantic ownership proof for the correct component or design token.
 
-## 8. Persistence and versioning
+## Control-state persistence and per-file history
 
 ### Resolved daemon data root
 
@@ -270,7 +270,7 @@ Messages/events and agent-session handles persist separately from file versions.
 
 Skills, templates, design systems and plugins are versionable directories rather than database blobs. Live artifacts keep their own project-scoped document/data/provenance and refresh log. Team/shared resource layers add publication/materialization versions, but the local canonical project file model remains distinct from collaboration transport state.
 
-## 9. Open-source implementation map
+## Implementation and architectural evolution
 
 Repository pinned at `0460157e1eb1cbc3ca8314cae275d4464322ada5`.
 
@@ -298,11 +298,11 @@ Repository pinned at `0460157e1eb1cbc3ca8314cae275d4464322ada5`.
 | External agent interface | `apps/daemon/src/mcp.ts`, `apps/daemon/src/cli.ts`, `apps/daemon/src/mcp-agent-install.ts` | MCP tool surface, daemon-backed CLI parity and agent-specific installation |
 | Regression coverage | `apps/web/tests/edit-mode/source-patches.test.ts`, `apps/web/tests/runtime/srcdoc.test.ts`, `apps/web/tests/components/FileViewer.manual-edit-history.test.tsx`, `apps/daemon/tests/project-file-versions.test.ts`, `apps/daemon/tests/plain-stream-artifact-event-truncation.test.ts`, `apps/daemon/tests/mcp-runs.test.ts` | repository-authored checks for patching, bridges, history, version store, plain persistence and MCP run lifecycle |
 
-## 10. Commit-level evidence
+### Commit-level evidence
 
 **Pinned revision:** [`0460157e1eb1cbc3ca8314cae275d4464322ada5`](https://github.com/nexu-io/open-design/commit/0460157e1eb1cbc3ca8314cae275d4464322ada5)
 
-### Current snapshot evidence
+#### Current snapshot evidence
 
 | Claim | Evidence at pinned revision |
 |---|---|
@@ -318,7 +318,7 @@ Repository pinned at `0460157e1eb1cbc3ca8314cae275d4464322ada5`.
 | HTML history appends AI/manual/restore versions with digests, parent/origin fields and content files | [`apps/daemon/src/project-file-versions.ts`](https://github.com/nexu-io/open-design/blob/0460157e1eb1cbc3ca8314cae275d4464322ada5/apps/daemon/src/project-file-versions.ts), [`run-html-version-snapshots.ts`](https://github.com/nexu-io/open-design/blob/0460157e1eb1cbc3ca8314cae275d4464322ada5/apps/daemon/src/run-html-version-snapshots.ts) |
 | External agents can create/read/write project artifacts and commission/poll/cancel Open Design runs through MCP | [`apps/daemon/src/mcp.ts`](https://github.com/nexu-io/open-design/blob/0460157e1eb1cbc3ca8314cae275d4464322ada5/apps/daemon/src/mcp.ts), [`apps/daemon/src/cli.ts`](https://github.com/nexu-io/open-design/blob/0460157e1eb1cbc3ca8314cae275d4464322ada5/apps/daemon/src/cli.ts) |
 
-### Historical implementation commits
+#### Historical implementation commits
 
 | Date | Commit | What the diff establishes |
 |---|---|---|

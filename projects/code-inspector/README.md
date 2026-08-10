@@ -13,7 +13,7 @@
 | Canonical source repository | https://github.com/zh-lx/code-inspector |
 | Pinned source revision | `22c8d1e037a17b36acd93a5a3bff0db05f2e4cab` |
 
-## 1. Product facts
+## Product boundary: source return inside a running application
 
 Code Inspector is developer tooling that connects a rendered web element to the source location that produced it. Its core interaction is: hold the configured hot keys or enable the switch, hover an element, then click to open an IDE at the corresponding file, line and column. The browser overlay can also copy that location, open a templated target URL, dispatch a custom event or open an AI coding panel with the selected element as context.
 
@@ -33,7 +33,7 @@ The first-party monorepo contains adapters for Vite, webpack/rspack, esbuild, Tu
 
 Code Inspector is not a visual design editor. It has no separate canvas document, design object graph or direct-manipulation layout model. The target repository remains the artifact. Ordinary locate/copy/target actions do not change source; source mutation begins only when a configured external coding agent uses its own tools.
 
-## 2. Technical direction
+### Architectural direction
 
 Code Inspector's technical direction is **to establish rendered-element identity before the browser runs, carry that identity through the normal application render, then use a thin in-page runtime and local Node service to return to source or hand the location to a coding agent**.
 
@@ -54,9 +54,9 @@ The architecture is deliberately additive:
 
 Failure is mostly fail-open. If a transform cannot parse a file, `transformCode` returns the original content. The application can still run, but affected elements have no Code Inspector identity and therefore cannot participate in the source-return interaction.
 
-## 3. Technology choices
+### Concrete stack and deliberate non-choices
 
-### Build-time instrumentation
+#### Build-time instrumentation
 
 - **Language/build:** TypeScript monorepo managed with pnpm; package builds use TypeScript and Vite.
 - **Text rewriting:** `magic-string` preserves the surrounding module while inserting attributes, props or imports.
@@ -66,7 +66,7 @@ Failure is mostly fail-open. If a transform cannot parse a file, `transformCode`
 - **Astro/MDX:** project-resolved compiler/parser support with scanner fallbacks and an explicit opt-in for full MDX transformation.
 - **Bundler adapters:** dedicated packages for Vite, webpack/rspack, esbuild, Turbopack and Mako.
 
-### Browser runtime
+#### Browser runtime
 
 - **UI:** Lit 2 `LitElement` packaged as the `code-inspector-component` custom element.
 - **Embedding:** injected into `document.documentElement` of the target page; Lit's shadow root contains the toolbar, overlays, DOM tree and AI panel.
@@ -74,7 +74,7 @@ Failure is mostly fail-open. If a transform cannot parse a file, `transformCode`
 - **AI presentation:** streamed SSE parsing, Markdown rendering, tool-call/diff blocks and optional pasted images.
 - **Terminal:** xterm in the browser connected to an optional `node-pty` process through WebSocket.
 
-### Local Node runtime
+#### Local Node runtime
 
 - **HTTP:** Node's built-in HTTP server with `portfinder`; default starting port is 5678.
 - **IDE bridge:** `launch-ide` receives file/line/column and editor/open-mode options.
@@ -82,7 +82,7 @@ Failure is mostly fail-open. If a transform cannot parse a file, `transformCode`
 - **Streaming:** SSE for agent turns and `ws` for terminal sessions.
 - **State:** JSON files for durable chat history, in-memory runtime event buffers and private temporary files for server coordination and image handoff.
 
-### Deliberate non-choices
+#### Deliberate non-choices
 
 - no imported or duplicated visual document;
 - no runtime source-map consumer in the browser;
@@ -91,7 +91,7 @@ Failure is mostly fail-open. If a transform cannot parse a file, `transformCode`
 - no Code Inspector-owned MCP server or agent tool protocol;
 - no built-in Git, commit graph or automatic browser-verification loop.
 
-## 4. Artifact and data model
+## The injected source-identity payload
 
 ### Primary artifact / source of truth
 
@@ -149,7 +149,7 @@ Agent turns and terminals use process-local runtime sessions with:
 
 These sessions support stream reattachment; they are not durable artifact versions.
 
-## 5. Agent interface
+## Browser-to-agent action path and authority
 
 ### Non-agent exits
 
@@ -188,7 +188,7 @@ Enabling Claude with defaults therefore authorizes materially more than merely l
 
 The selected node contributes a source coordinate and name, not live browser-control access. Code Inspector does not expose the page DOM, console, network, screenshot or post-edit rendering result as agent tools. A human can observe HMR in the same page, but automated edit verification must come from the agent's separate tools or the repository's test/browser workflow.
 
-## 6. Runtime and rendering
+## Instrumented runtime and local-service topology
 
 ### Instrumented application render
 
@@ -227,7 +227,7 @@ All `/ai` HTTP routes and the terminal WebSocket require a random process token 
 
 The server sends wildcard CORS headers and calls `server.listen(port)` without an explicit host. The actual bind interfaces therefore depend on Node and the operating system, not the printed `localhost` URL. The AI token reduces blind cross-origin access, but it is delivered into the inspected page runtime and is not an isolation boundary against scripts already executing in that page.
 
-## 7. Source mapping and targeting
+## Mapping pipeline, framework coverage, and failure modes
 
 ### Framework transforms
 
@@ -266,7 +266,7 @@ At runtime, source identity is read directly from the attribute/property. Parsin
 - path mappings are configured string/regex replacements rather than repository-aware provenance;
 - a selected coordinate gives the agent a starting file/line, not a guarantee that the semantic change belongs only at that location.
 
-## 8. Persistence and versioning
+## Conversation recovery, persistence, and edit reversal
 
 ### Page-session recovery
 
@@ -297,7 +297,7 @@ Code Inspector does not bind an instrumented page to a Git commit, persist the t
 
 The private runtime-path JSON used for port/startup coordination is operational metadata, not user artifact or conversation history.
 
-## 9. Open-source implementation map
+## Implementation and evolution evidence
 
 Repository pinned at `22c8d1e037a17b36acd93a5a3bff0db05f2e4cab`.
 
@@ -322,7 +322,7 @@ Repository pinned at `22c8d1e037a17b36acd93a5a3bff0db05f2e4cab`.
 | Bundler integration | `packages/vite/src/index.ts`, `packages/webpack/src/index.ts`, `packages/webpack/src/loader.ts`, `packages/esbuild/src/index.ts` | concrete transform and client-injection hooks |
 | Verification surface | `test/core/server/transform/`, `test/core/server/ai/`, `test/core/server/runtime-session.test.ts`, `e2e/tests/l2-locate.spec.ts` | repository-authored transform, AI/revert/runtime and locate coverage |
 
-## 10. Commit-level evidence
+### Historical commit evidence
 
 **Pinned revision:** `22c8d1e037a17b36acd93a5a3bff0db05f2e4cab`
 

@@ -13,7 +13,7 @@
 | Canonical source repository | https://github.com/OpenCoworkAI/open-codesign |
 | Pinned source revision | `b94d7156bf4aeb2c79892c91dc9934911a4e3741` |
 
-## 1. Product facts
+## Product boundary and local-first thesis
 
 Open CoDesign is an MIT-licensed desktop design agent for macOS, Windows and Linux. It turns prompts and local context into interactive prototypes, slide decks, PDFs and other visual artifacts while letting the user choose the model/provider and keep the working files on the local machine.
 
@@ -30,7 +30,7 @@ The v0.2 product model is workspace-backed: a design is associated with a real f
 
 Open CoDesign has no required hosted workspace or OpenCoworkAI account. Model traffic goes to the provider, relay or local endpoint selected by the user. The repository explicitly excludes bundled model runtimes and default telemetry/account/cloud-sync flows.
 
-## 2. Technical direction
+### Product and architectural direction
 
 Open CoDesign's current direction is **a local workspace as the durable design artifact, with the canvas as a rendered projection and an agent operating through bounded tools**.
 
@@ -46,9 +46,9 @@ The project reuses pi agent/model/session primitives where possible, but adds de
 
 At the pinned revision, this direction is still in migration. The primary `generateViaAgent` implementation assembles tools on `pi-agent-core`; a separate `createCodesignSession` wrapper integrates `pi-coding-agent` sessions and a bash permission hook, but that wrapper's source header states that it is not yet wired into the legacy generation path. The dossier therefore distinguishes shipped implementation from repository direction rather than presenting them as already unified.
 
-## 3. Technology choices
+### Concrete technology choices
 
-### Desktop/client
+#### Desktop/client
 
 - **Shell:** Electron 39 with `electron-vite` and `electron-builder`.
 - **Renderer:** React 19 + ReactDOM 19.
@@ -58,14 +58,14 @@ At the pinned revision, this direction is still in migration. The primary `gener
 - **UI primitives:** repository UI package, Radix-style primitives and Lucide icons.
 - **Quality tooling:** Biome, Vitest and Playwright.
 
-### Agent/model layer
+#### Agent/model layer
 
 - **Agent primitives:** `@mariozechner/pi-agent-core`, `pi-ai` and `pi-coding-agent` 0.72.x.
 - **Provider boundary:** pi model/provider abstractions plus the repository's `packages/providers` compatibility layer.
 - **Credentials/model routing:** user-selected provider credentials, ChatGPT/Codex sign-in, imported provider configuration, local endpoints and OpenAI-compatible relays.
 - **Hosted backend:** none required for the core desktop workflow.
 
-### Storage and execution
+#### Storage and execution
 
 - **Design source:** normal workspace files.
 - **Design catalog/snapshots:** local `design-store.json`.
@@ -75,7 +75,7 @@ At the pinned revision, this direction is still in migration. The primary `gener
 - **Agent preview/PDF execution:** `puppeteer-core` against an installed system Chrome/Chromium; the app does not bundle a browser binary.
 - **Export dependencies:** dynamically loaded HTML, PDF, PPTX, ZIP and Markdown exporters.
 
-## 4. Artifact and data model
+## The project bundle: artifacts, catalog, and snapshots
 
 ### Primary durable artifact / source of truth
 
@@ -106,7 +106,7 @@ The JSON design store contains design records, snapshots and diagnostics. It is 
 - Tweak controls update an in-iframe token object over `postMessage`, then debounce the same token values back into the source file's `EDITMODE` block.
 - Completed generations create a content-deduplicated snapshot whose parent is the previous newest snapshot.
 
-## 5. Agent interface
+## Agent planning, tool use, and human correction
 
 ### Invocation surfaces
 
@@ -151,7 +151,7 @@ The documented permission model grades workspace-local operations, installs/netw
 
 Human correction does not require replacing the whole prompt. Users can pin element comments, queue multiple edits, adjust exposed tokens, answer `ask` questions, cancel generation and inspect live tool activity. File changes remain visible in the workspace.
 
-## 6. Runtime and rendering
+## Preview-to-tweak-to-export pipeline
 
 ### Interactive renderer
 
@@ -181,11 +181,11 @@ The `preview(path)` tool reads a safe workspace-relative source, builds the same
 
 Exporters convert the current source/runtime into HTML, PDF, PPTX, ZIP or Markdown. Heavy exporters are lazy-imported. PDF and rendered conversions use an installed Chrome/Chromium rather than downloading or shipping a private browser runtime.
 
-## 7. Source mapping and targeting
+### Element identity and source-return limits
 
 Open CoDesign's current targeting is **runtime DOM context followed by agent-mediated source search**, not deterministic DOM-to-file mapping.
 
-### Runtime element identity
+#### Runtime element identity
 
 The injected overlay chooses a selector in this order:
 
@@ -195,7 +195,7 @@ The injected overlay chooses a selector in this order:
 
 On click it sends the selector, tag name, truncated `outerHTML`, truncated parent `outerHTML` and bounding rectangle to the parent. Saved comments also retain snapshot association and status. The parent can ask the iframe to remeasure watched selectors so pins follow scroll/layout changes.
 
-### Mapping back to source
+#### Mapping back to source
 
 For a batched pending edit, the agent receives selector/tag/HTML context and is explicitly told to inspect and modify `App.jsx` with the file editing tool. The single-selection schema used by the legacy `apply-comment` path carries selector, tag, outer HTML and rectangle. No source filename, AST node, component ID or line/column is produced by the overlay.
 
@@ -205,7 +205,7 @@ The resulting path is:
 
 `data-codesign-id` can stabilize runtime selection, but it still does not establish a source-file/line mapping.
 
-### Known unmappable or weakly mappable cases
+#### Known unmappable or weakly mappable cases
 
 - DOM created dynamically by libraries or runtime state may not have a unique source snippet.
 - Repeated markup can make `outerHTML` search ambiguous.
@@ -215,7 +215,7 @@ The resulting path is:
 
 The first three behaviors are source-established mechanisms plus direct consequences of the selector strategy; the exact failure rate in real projects has not been measured in this dossier.
 
-## 8. Persistence and versioning
+## Persistence, checkpoints, and recovery limits
 
 ### Project/workspace persistence
 
@@ -243,7 +243,7 @@ Tweak changes first update the live iframe without recompiling Babel, then are d
 
 No hosted collaboration or cloud-sync data model is part of the pinned local-first architecture. Multiple sessions may share a workspace, but real-time multi-user collaboration and merge semantics are not established by the reviewed source.
 
-## 9. Open-source implementation map
+## Implementation and evolution evidence
 
 Repository pinned at `b94d7156bf4aeb2c79892c91dc9934911a4e3741`.
 
@@ -266,7 +266,7 @@ Repository pinned at `b94d7156bf4aeb2c79892c91dc9934911a4e3741`.
 | Agent-visible verification | `apps/desktop/src/main/preview-runtime.ts`, `packages/core/src/tools/done.ts` | isolated system-Chrome preview, screenshots/DOM report and completion verification |
 | Exporters | `packages/exporters/src/` | lazy HTML/PDF/PPTX/ZIP/Markdown output paths |
 
-## 10. Commit-level evidence
+### Commit-level evolution
 
 **Pinned revision:** `b94d7156bf4aeb2c79892c91dc9934911a4e3741`
 

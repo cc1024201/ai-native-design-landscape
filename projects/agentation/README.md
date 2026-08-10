@@ -13,7 +13,7 @@
 | Canonical source repository | https://github.com/benjitaylor/agentation |
 | Pinned source revision | `8158a97c10c37e577b0a6e2d3175d143918216cd` |
 
-## 1. Product facts
+## Product boundary: annotation infrastructure, not a generator
 
 Agentation is a React component that runs inside the web application being reviewed. It adds a floating toolbar and overlays for attaching feedback to rendered UI, then turns that feedback into structured context for an external coding agent. It is not itself a code editor or code-changing agent.
 
@@ -33,7 +33,7 @@ The published package requires React 18 or newer and a desktop browser. It is no
 
 The source is publicly readable but is not permissive open source: PolyForm Shield allows broad use while restricting use to compete with the software.
 
-## 2. Technical direction
+### Core design thesis
 
 Agentation's technical direction is **to leave the target application and its source code in place, then add a thin in-runtime intent and targeting layer that an external coding agent can consume**.
 
@@ -50,9 +50,9 @@ Source mapping follows the same progressive-enhancement model. Basic DOM descrip
 
 Server synchronization is optional. Without `endpoint`, the component remains a local browser tool. With `endpoint`, it joins or creates a session, uploads local annotations and listens for lifecycle updates; network failures return the UI to local-only operation.
 
-## 3. Technology choices
+### Split browser and MCP implementation
 
-### Browser package
+#### Browser package
 
 - **UI/runtime:** React and ReactDOM 18+ peer dependencies.
 - **Language/build:** TypeScript, tsup and ES module/CommonJS outputs.
@@ -63,7 +63,7 @@ Server synchronization is optional. Without `endpoint`, the component remains a 
 - **Local state:** React state plus `localStorage`/`sessionStorage`.
 - **Distribution:** npm package `agentation`, v3.0.2 in the pinned manifest.
 
-### Agent Sync / MCP package
+#### Agent Sync / MCP package
 
 - **Runtime:** Node.js 18+.
 - **Protocol:** Model Context Protocol SDK over stdio.
@@ -72,7 +72,7 @@ Server synchronization is optional. Without `endpoint`, the component remains a 
 - **Persistence:** `better-sqlite3`, WAL mode, with an in-memory fallback.
 - **Distribution:** npm package `agentation-mcp`, v1.2.0 in the pinned manifest.
 
-### Deliberate non-choices
+#### Deliberate non-choices
 
 - no imported copy of the target application's source tree;
 - no proprietary canvas document required for ordinary feedback;
@@ -80,7 +80,7 @@ Server synchronization is optional. Without `endpoint`, the component remains a 
 - no iframe or remote browser runtime for the annotation surface;
 - no required hosted service for the local MCP workflow.
 
-## 4. Artifact and data model
+## Annotation, session, and proposed-change records
 
 ### Primary artifact / source of truth
 
@@ -123,7 +123,7 @@ The full browser annotation and the common MCP result are not the same artifact 
 
 The default SQLite schema also has no `source_file` column even though the browser type includes `sourceFile`. Consequently, copied Markdown, callbacks and immediate browser/webhook payloads can contain the detected file hint, but the default persisted MCP pending/watch loop does not deliver it.
 
-## 5. Agent interface
+## Agent-facing exits and projection contract
 
 ### Local and programmatic exits
 
@@ -161,7 +161,7 @@ The MCP surface does **not** include a file read, file edit, browser-control or 
 
 The HTTP server also implements an `action.requested` route, and the browser sync utility exports a matching client helper. At the pinned revision the toolbar does not import that helper: its manual send path invokes `onSubmit` and a webhook, while MCP watch mode reacts directly to annotation creation.
 
-## 6. Runtime and rendering
+## Capture runtime and target identity
 
 ### In-app overlay
 
@@ -189,25 +189,25 @@ The freeze utility is installed as a module side effect and preserves original t
 
 On unfreeze it replays queued timeouts/animation frames, resumes the animations it paused, removes the CSS and resumes videos it marked. This captures transient visual states, but it is a global intervention in the target page rather than an isolated renderer.
 
-## 7. Source mapping and targeting
+### Identity ladder: DOM, React owner, and source hint
 
 Agentation uses several different target identities, each with different precision.
 
-### Human-readable DOM identity
+#### Human-readable DOM identity
 
 Normal feedback calls `getElementPath` with a default depth of four. For each ancestor it prefers an ID, otherwise one filtered class, otherwise the tag; open shadow-boundary crossings are marked. `identifyElement` adds a human label using element type, visible text, ARIA labels, role, class semantics or media context.
 
 The forensic record separately stores a full ancestry path, sibling/nearby text, cleaned classes, computed styles, accessibility attributes and geometry. These fields improve search context, but the ordinary `elementPath` is a readable locator, not a guaranteed unique or permanently valid CSS selector.
 
-### Design-mode selector
+#### Design-mode selector
 
 Rearrangement uses a separate selector generator. It prefers a unique semantic tag, then ID, then a unique tag/class pair, and finally a recursively constructed `:nth-child` path. This selector is used to recapture/highlight the section and is carried into the rearrangement proposal.
 
-### React ownership
+#### React ownership
 
 React context is recovered by locating React fiber keys on the DOM node and walking `.return` links. Depending on output detail, component names are disabled, filtered, correlated against DOM classes or returned broadly. The resulting path resembles `<App> <Layout> <Button>` and supplements, rather than replaces, DOM identity.
 
-### File/line detection
+#### File/line detection
 
 `detectSourceFile` first walks fiber/owner nodes for development-only `_debugSource`, then tries additional React 19-style source properties. If those are absent, the fallback unwraps a function/forward-ref/memo component, temporarily installs a throwing hooks dispatcher, invokes the component with `{}` and parses the error stack for an original source frame.
 
@@ -225,7 +225,7 @@ The end-to-end path is therefore normally:
 
 `rendered node → DOM label/path + optional React hierarchy/file hint → structured feedback → external agent searches source → external agent edits and verifies`.
 
-## 8. Persistence and versioning
+## Local/server persistence and context loss
 
 ### Browser-local mode
 
@@ -255,7 +255,7 @@ Agentation tracks feedback lifecycle, not source-code versions. It has no target
 
 In default local mode the HTTP server sets wildcard CORS, performs no local-route authentication and calls `server.listen(port)` without an explicit loopback host, although its log prints a localhost URL. This dossier does not assume network isolation from the log text; deployment exposure should be checked explicitly.
 
-## 9. Source-available implementation map
+## Implementation and evolution evidence
 
 Repository pinned at `8158a97c10c37e577b0a6e2d3175d143918216cd`.
 
@@ -277,7 +277,7 @@ Repository pinned at `8158a97c10c37e577b0a6e2d3175d143918216cd`.
 | Durable store | `mcp/src/server/store.ts`, `sqlite.ts` | SQLite-first selection, memory fallback, WAL schema, lifecycle/event persistence and retention |
 | Recommended integration | `skills/agentation/SKILL.md`, `skills/agentation-self-driving/SKILL.md` | repository-authored setup and critic/fixer workflow guidance; these are guidance, not runtime enforcement |
 
-## 10. Commit-level evidence
+### Historical commit evidence
 
 **Pinned revision:** `8158a97c10c37e577b0a6e2d3175d143918216cd`
 
