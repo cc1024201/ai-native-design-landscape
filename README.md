@@ -7,8 +7,9 @@
 ## Current progress
 
 - **Canonical coverage:** 63 project directories registered and coverage-audited against the research collected for v0.1.
-- **Source-level dossiers complete:** 18 / 63 — Onlook, stagewise, Tuna, Nimbalyst, OpenPencil (`open-pencil/open-pencil`), OpenPencil (`ZSeven-W/openpencil`), Reframe, Puck, onUI, Open CoDesign, Agentation, Code Inspector, Open Design, Monet, Superdesign, Figwright, mcp_excalidraw, Codex.
-- **Remaining dossiers:** 45 / 63 at Seed, Product-level, or Architecture-level depth.
+- **Evidence-bounded deep dossiers complete:** 19 / 63 — 18 Source-level dossiers plus Claude Design at Architecture-level with the closed-source evidence boundary reached.
+- **Source-level subset:** 18 / 63 — Onlook, stagewise, Tuna, Nimbalyst, OpenPencil (`open-pencil/open-pencil`), OpenPencil (`ZSeven-W/openpencil`), Reframe, Puck, onUI, Open CoDesign, Agentation, Code Inspector, Open Design, Monet, Superdesign, Figwright, mcp_excalidraw, Codex.
+- **Remaining dossiers:** 44 / 63 at Seed, Product-level, or unfinished Architecture-level depth.
 - **Repository structure:** canonical project registry, project template, evidence rules, lifecycle/alias rules, and global panorama are established.
 - **Current milestone:** v0.1 breadth is established; depth work is in progress project by project.
 
@@ -24,11 +25,11 @@ Use only the dimensions that explain the project, combine related ones, and add 
 
 Priority backlog:
 
-1. Deepen the remaining open-source/source-available projects first and pin immutable commit SHAs.
-2. For closed-source products, exhaust official product docs, changelogs, engineering posts, public protocols and integration documentation without guessing undisclosed internals.
+1. Deepen the remaining closed, partial-source and historical products through official product docs, changelogs, engineering posts, public protocols, distribution artifacts and bounded live observation without guessing undisclosed internals.
+2. When a closed product exposes an open format, SDK, agent API or related foundation, pin and inspect that component but do not let adjacent source stand in for the product implementation.
 3. Trace the project's own critical path deeply enough to establish its artifact/source of truth, decisive mechanism, user-visible failure boundaries and relevant persistence or delivery semantics; do not add irrelevant sections for symmetry.
 4. Maintain lifecycle events, aliases/rebrands, acquisitions and discontinued products.
-5. Re-run long-tail discovery periodically so coverage can expand without weakening the per-project evidence standard.
+5. Re-audit completed Source-level dossiers and re-run long-tail discovery periodically so coverage can expand without weakening the per-project evidence standard.
 6. Evolve the root panorama only from facts established in project dossiers; cross-product synthesis remains root-only.
 
 ## Scope
@@ -69,12 +70,13 @@ The v0.1 registry was re-audited against the named products and projects collect
 
 ### Research depth
 
-Coverage and evidence depth are tracked separately. A directory existing in the registry does **not** mean its implementation has already been source-audited.
+Coverage and evidence depth are tracked separately. A directory existing in the registry does **not** mean its technical dossier is complete. Completion follows the available evidence ceiling: source-visible projects require implementation tracing, while a closed product can be complete only after its official behavior, public architecture/protocol edges, observable failure boundaries and consequential unknowns have been exhausted for the current snapshot.
 
 | Depth | Meaning | Count in current snapshot |
 |---|---|---:|
 | **Source-level** | Open/source-available implementation pinned to a concrete commit and traced through the project's decisive product and technical questions, relevant implementation paths and failure boundaries, with commit history used where it changes the conclusion | **18** |
-| **Architecture/Product-level or Seed** | Product is registered and independently documented, but one or more implementation layers still depend on public docs, incomplete source tracing, or future evidence | **45** |
+| **Architecture-level / closed-source boundary reached** | Closed implementation, but the decisive user journey, working artifact authority, public runtime/protocol boundaries, delivery and persistence semantics, documented failures, live observable edges and unresolved internals are explicitly established without invented source claims | **1** |
+| **Seed, Product-level or unfinished Architecture-level** | Product is registered and independently documented, but its available public evidence has not yet been exhausted around the project's decisive questions | **44** |
 
 Current source-level dossiers:
 
@@ -96,6 +98,10 @@ Current source-level dossiers:
 - [Figwright](projects/figwright/)
 - [mcp_excalidraw](projects/mcp-excalidraw/)
 - [Codex](projects/openai-codex/)
+
+Current evidence-bounded closed-source dossiers:
+
+- [Claude Design](projects/anthropic-claude-design/)
 
 ### Project-specific dossier design
 
@@ -130,7 +136,7 @@ flowchart TD
     L --> I[Domain-specific creative runtimes]
 ```
 
-The project index is the ecosystem view; source-level dossiers also support an implementation-oriented reading across products:
+The project index is the ecosystem view; completed deep dossiers also support an implementation-oriented reading across products:
 
 ```mermaid
 flowchart LR
@@ -172,7 +178,9 @@ Six distinct target-return mechanisms are now established in the current source-
 
 [Codex](projects/openai-codex/) establishes a tool-supplied visual-context boundary: the public harness carries images as data or paths and client-supplied context as opaque classified strings, while review comments can address Git diff lines. None of those public types standardizes a rendered DOM/design node back to an authored file or AST location. Rich visual feedback can guide a repair without becoming durable target-return identity.
 
-The dossiers now also establish eight different durable-refinement models. “Structured” does not by itself mean that every product has one equivalent source of truth:
+[Claude Design](projects/anthropic-claude-design/) establishes the corresponding closed-product boundary. Its public surface can click-target a canvas element, directly manipulate layout and let Claude create adjustment sliders for the current artifact, but no public contract exposes the selected node identity, slider representation or a reverse binding to design-system source or code. Precise human targeting and an artifact-specific generated editor are product facts; durable target-return identity is still unknown.
+
+The dossiers now also establish nine different durable-refinement models. “Structured” does not by itself mean that every product has one equivalent source of truth:
 
 | Durable-refinement model | Established implementation | Durable center | Known break |
 |---|---|---|---|
@@ -182,6 +190,7 @@ The dossiers now also establish eight different durable-refinement models. “St
 | Thread ledger plus workspace and Git clocks | [Codex](projects/openai-codex/) persists replayable thread JSONL, lets tools and external processes mutate the selected workspace, and uses Git/worktrees for reviewable isolation and versions | the intended workspace files and Git state are the artifact; rollout JSONL preserves orchestration history and SQLite is a rebuildable query projection | resuming a thread does not restore files, streamed turn diffs cover exact tracked patch deltas rather than every side effect, and worktrees do not merge or publish themselves |
 | Path-bound multi-artifact workspace | [Monet](projects/monet/) combines a live timeline store, `.aiveproj.json`, hashed autosave, path-keyed Canvas sidecar, absolute media references and generated source/renders | live `ProjectStore` for editing/export; project file and newer autosave for timeline recovery | Canvas is outside the project file, relocation changes its lookup key, external media is not bundled and MCP mixes live calls with direct disk writes |
 | Hosted draft graph with local context staging | [Superdesign](projects/superdesign/) reduces a repository into selected context files, then keeps branchable draft nodes and per-node HTML versions on its hosted service | remote project/draft/version graph during design; application source becomes durable only through a later coding-agent implementation | context snippets are evidence inputs rather than source links, the hosted renderer/backend is closed and implemented code can diverge from the approved HTML draft |
+| Hosted multi-format project with inferred organization constraints | [Claude Design](projects/anthropic-claude-design/) derives a reusable design system from heterogeneous organization assets, then keeps chat, canvas corrections, saved directions, sharing and exports around a hosted project | the hosted project is the working editing center; the published organization design system governs later projects and each export/handoff creates a new delivery authority | internal project and version schemas are closed, projects are not publicly pinned to an exact design-system revision, and no lossless roundtrip or downstream reverse sync is established |
 | Native external document with repository-side reconciliation aids | [Figwright](projects/figwright/) mutates the open Figma file while optionally storing verified name mappings and per-node context baselines in the application repository | Figma owns durable design state; application files own implementation; `docs/figma-*-map.md` and `.figwright/snapshots/` support later reconciliation | the aids are not a mirrored document: map keys lack file identity, snapshots are keyed only by node id, and neither establishes a shared Figma/code transaction |
 | Volatile canvas with explicit interchange checkpoints | [mcp_excalidraw](projects/mcp-excalidraw/) keeps live elements, snapshots and image files in one local process, then materializes deterministic Excalidraw or Obsidian files on demand | an explicitly exported <code>.excalidraw</code>/<code>.excalidraw.md</code> file; PNG/SVG are visual deliveries | restart loses live state, named snapshots are process-local and shallow, files have a separate lifecycle, and an open browser tab can become an unintended shadow copy |
 
@@ -195,10 +204,11 @@ The same evidence separates **having an agent interface** from **converging on o
 | Live-graph convergence with partial replay | [Reframe](projects/reframe/) shares the current `SceneGraph` across MCP and Platform UI | direct manipulation and agent tools see one in-memory graph | not every mutation joins the replay log, and the primary compile route currently bypasses replay |
 | Split live/file/sidecar control | [Monet](projects/monet/) routes CLI/HTTP mutations to a live store but lets six MCP tools rewrite the project JSON directly; Canvas persists separately | nominally one agent server can operate three authorities | UI saves can overwrite disk-only MCP edits, disk reads can be stale, Canvas acknowledgements precede renderer persistence and fixed MCP port/file discovery can miss the live project |
 | Hosted-draft convergence, downstream source rewrite | [Superdesign](projects/superdesign/) gives web UI and CLI operations common remote project/draft/version identities | agent commands and canvas review converge on the hosted draft, then a coding agent separately writes the application repository after approval | no shared transaction or reverse identity joins the approved HTML head to the resulting framework code |
+| Hosted-project convergence with generated controls | [Claude Design](projects/anthropic-claude-design/) brings chat, element comments, direct manipulation, Claude-created sliders and an OAuth-scoped read/write MCP edge to the same hosted design project | users can move between semantic, targeted, continuous and direct corrections before sharing, export or Claude Code handoff | public evidence does not prove one durable node identity or transaction across those paths; comments can be lost, simultaneous editing is basic and downstream handoff has no documented reverse binding |
 | Native-Figma convergence with downstream provider split | [Figwright](projects/figwright/) routes human-visible plugin activity and agent tools to nodes in the same open Figma file, while Figma-to-code hands grounded context to an external coding agent | direct Figma edits and plugin writes converge on the native document; repository output is a later provider-authored artifact | server/plugin feature skew can make a write partial, activity-based file routing is not an explicit file id on every call, and code generation has no shared commit with the Figma mutation |
 | REST-centered convergence with browser full-scene return | [mcp_excalidraw](projects/mcp-excalidraw/) routes CLI, MCP and raw HTTP to one in-memory canvas server while the browser projects and edits the same scene | agent-side granular writes and human browser edits normally meet in the server element map | browser edits replace the complete map after a debounce; no scene revision or transaction prevents a stale tab or partial multi-operation call from overwriting earlier work |
 
-The dossiers now separate seven artifact-production profiles that can all look like “the agent made a design” at the UI level:
+The dossiers now separate eight artifact-production profiles that can all look like “the agent made a design” at the UI level:
 
 | Artifact production profile | Established implementation | Durable result | Verification boundary |
 |---|---|---|---|
@@ -206,6 +216,7 @@ The dossiers now separate seven artifact-production profiles that can all look l
 | Stream-to-file materialization | Open Design parses complete supported `<artifact>` blocks from a plain/BYOK adapter | HTML, CSS, SVG or Markdown written through the same project-file API with a generated manifest | incomplete, fenced or unsupported blocks are not a durable artifact merely because text streamed in chat |
 | Thread-coordinated workspace mutation with visual verification | [Codex](projects/openai-codex/) accepts reference images or client/tool context, executes commands and patches under workspace authority, then lets a user inspect a runtime, file preview or Git review | the actual application/document files and intended Git state | a completed turn, image observation or streamed diff is insufficient; acceptance requires repository inspection, the relevant deterministic checks and a real render/visual pass |
 | Hosted draft then agent implementation | Superdesign generates or imports a versioned HTML draft, obtains human approval on the hosted canvas, then asks the calling coding agent to implement it | remote HTML/version history plus whatever application files the downstream agent actually writes | a completed draft job proves neither that repository files changed nor that the implementation preserved the approved design |
+| Hosted multi-format design with downstream exits | Claude Design builds a hosted result under an inferred organization design system, then exposes HTML/ZIP, PDF, PPTX, partner transfers and Claude Code handoff | the hosted project while editing; the actual exported file, destination-native object or repository after exit | preview success is not export fidelity, different formats preserve different semantics, and a successful handoff proves neither production readiness nor durable canvas-to-source identity |
 | Context-grounded provider implementation | Figwright serializes a selected Figma subtree, joins it to repository components/tokens/icons, and leaves framework code generation to the connected model | application source and exported assets actually written by the coding agent | a successful context or mapping call is not artifact proof; only a repository diff plus a rendered Figma comparison closes the loop |
 | Plugin-mediated native-document mutation | Figwright's model issues typed writes through the local relay and public Figma Plugin API, with retry idempotency and an inverse-allowlisted batch | the open Figma document | a tool result can be unverified under plugin skew, batch rollback can itself be partial, and no simultaneous repository transaction exists |
 | Volatile canvas to deterministic diagram artifact | mcp_excalidraw lets an agent create/query elements, use a real browser screenshot to repair layout, then explicitly expand the compact agent model into a byte-stable Excalidraw/Obsidian file | the exported diagram file actually written to the selected path | live-scene success is not durability, structured description is not visual proof, browser writeback changes the graph shape, and a failed multi-step mutation can leave partial state |
@@ -307,4 +318,4 @@ mcp_excalidraw also exposes a distribution-truth boundary that product matrices 
 
 **v0.1 breadth:** complete for the audited 63-project registry.
 
-**v0.1 depth:** in progress — 18 Source-level dossiers complete, 45 remaining.
+**v0.1 depth:** in progress — 19 evidence-bounded deep dossiers complete (18 Source-level and 1 closed-source Architecture-level), 44 remaining.

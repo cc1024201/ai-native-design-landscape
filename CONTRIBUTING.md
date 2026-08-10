@@ -29,6 +29,8 @@ Use sources in this order:
 
 Do not guess a closed product's internal framework, renderer, data model, source mapping, persistence layer or agent orchestration.
 
+Judge completion against the project's available evidence ceiling. Source-visible projects require pinned implementation tracing. A closed product may reach an evidence-bounded Architecture-level only after its ordinary journey, working artifact authority, public architecture/protocol edges, delivery and persistence semantics, documented failures, bounded observable behavior and consequential unknowns have been established. Calling the internal stack unknown is correct; stopping at a feature list is not.
+
 For open-source projects, pin a commit SHA before making source-derived implementation claims.
 
 Every dossier must preserve a small common evidence floor: canonical identity/lifecycle, primary sources, an explicit fact/inference/unknown boundary, research gaps, and immutable source revisions when implementation claims depend on code. Beyond that floor, combine, omit, reorder or add sections so the document explains this project rather than satisfying a universal outline.

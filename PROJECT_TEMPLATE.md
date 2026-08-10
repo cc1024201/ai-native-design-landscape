@@ -1,6 +1,6 @@
 # Project name
 
-> Research status: **Seed | Product-level | Architecture-level | Source-level** · Last reviewed: **YYYY-MM-DD**
+> Research status: **Seed | Product-level | Architecture-level | Architecture-level / closed-source boundary reached | Source-level** · Last reviewed: **YYYY-MM-DD**
 
 > Template note: this is a research aid, not a required table of contents. Keep the metadata and evidence anchors, then replace the middle with a structure derived from the project itself.
 
@@ -52,6 +52,8 @@ Use these to find blind spots. Do not turn them into headings merely because the
 - discontinuities between UI claims and user-obtainable artifacts.
 
 For closed-source products, leave undisclosed internals unknown. Replace implementation questions with observable product behavior, official contracts, changelogs and explicit unknowns.
+
+`Architecture-level / closed-source boundary reached` is a completion state, not a substitute for source evidence. Use it only when the project's decisive user journey, working artifact authority, public runtime/protocol edges, delivery and persistence behavior, documented failures, meaningful live observations and remaining unknowns have all been traced for the current snapshot. If a material public check is still accessible within the current authorized scope, the dossier is not yet at that boundary. A check that requires new credentials, paid access, private user data or external coordination may remain explicitly access-blocked; record what was not tested and do not turn the gap into a product claim.
 
 ## Common evidence floor
 
