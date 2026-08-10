@@ -7,8 +7,8 @@
 ## Current progress
 
 - **Canonical coverage:** 63 project directories registered and coverage-audited against the research collected for v0.1.
-- **Source-level dossiers complete:** 8 / 63 — Onlook, stagewise, Tuna, Nimbalyst, OpenPencil (`open-pencil/open-pencil`), Puck, onUI, Open CoDesign.
-- **Remaining dossiers:** 55 / 63 at Seed, Product-level, or Architecture-level depth.
+- **Source-level dossiers complete:** 9 / 63 — Onlook, stagewise, Tuna, Nimbalyst, OpenPencil (`open-pencil/open-pencil`), Puck, onUI, Open CoDesign, Agentation.
+- **Remaining dossiers:** 54 / 63 at Seed, Product-level, or Architecture-level depth.
 - **Repository structure:** canonical project registry, project template, evidence rules, lifecycle/alias rules, and global panorama are established.
 - **Current milestone:** v0.1 breadth is established; depth work is in progress project by project.
 
@@ -71,8 +71,8 @@ Coverage and evidence depth are tracked separately. A directory existing in the 
 
 | Depth | Meaning | Count in current snapshot |
 |---|---|---:|
-| **Source-level** | Open/source-available implementation pinned to a concrete commit and traced through artifact/data model, agent interface, runtime/rendering, source mapping, persistence/versioning and implementation paths | **8** |
-| **Architecture/Product-level or Seed** | Product is registered and independently documented, but one or more implementation layers still depend on public docs, incomplete source tracing, or future evidence | **55** |
+| **Source-level** | Open/source-available implementation pinned to a concrete commit and traced through artifact/data model, agent interface, runtime/rendering, source mapping, persistence/versioning and implementation paths | **9** |
+| **Architecture/Product-level or Seed** | Product is registered and independently documented, but one or more implementation layers still depend on public docs, incomplete source tracing, or future evidence | **54** |
 
 Current source-level dossiers:
 
@@ -84,6 +84,7 @@ Current source-level dossiers:
 - [Puck](projects/puck/)
 - [onUI](projects/onui/)
 - [Open CoDesign](projects/open-codesign/)
+- [Agentation](projects/agentation/)
 
 The standard deep-dive order for every project is:
 
@@ -100,9 +101,22 @@ flowchart TD
     L --> D[Code-native visual surfaces]
     L --> E[Agent-controllable canvases & design editors]
     L --> F[Design/code bridges & MCP integrations]
-    L --> G[Open-source interaction primitives]
+    L --> G[Open & source-available interaction primitives]
     L --> H[Historical & transition cases]
 ```
+
+The project index is the ecosystem view; source-level dossiers also support an implementation-oriented reading across products:
+
+```mermaid
+flowchart LR
+    I[Human intent] --> A[Artifact or source of truth]
+    A --> R[Runtime projection]
+    R --> M[Target and source mapping]
+    M --> X[Agent interface]
+    X --> P[Persistence and versions]
+```
+
+These axes distinguish prompts, annotations and direct manipulation; source files, canvas graphs and feedback sessions; DOM, iframe, canvas and native renderers; selectors, component identities and source maps; file tools, MCP and product protocols; and browser storage, databases, snapshots and version graphs. Each dossier pins those distinctions to evidence instead of treating every visible canvas as the same architecture.
 
 ## Project index
 
@@ -156,7 +170,7 @@ flowchart TD
 | [Reframe](projects/reframe/) | Reframe contributors | Experimental AI-native design engine | Experimental | Open source |
 | [Open CoDesign](projects/open-codesign/) | OpenCoworkAI / contributors | Local-first desktop AI design agent | Active; v0.2.1 | MIT |
 | [Open Design](projects/open-design/) | nexu-io / contributors | Design tooling for agents | Active / early | Open source |
-| [Agentation](projects/agentation/) | Agentation contributors | Visual context primitive | Active | Source-available |
+| [Agentation](projects/agentation/) | Benji Taylor / contributors | In-app visual feedback and agent-context primitive | Active; package v3.0.2 | PolyForm Shield 1.0.0 source-available |
 | [Code Inspector](projects/code-inspector/) | Code Inspector contributors | DOM-to-source primitive | Active | Open source |
 | [Puck](projects/puck/) | Puck Editor | Visual editor primitive | Active | Open source |
 | [Figwright](projects/figwright/) | Figwright contributors | Design/agent bridge primitive | Active / early | Open source |
@@ -199,4 +213,4 @@ flowchart TD
 
 **v0.1 breadth:** complete for the audited 63-project registry.
 
-**v0.1 depth:** in progress — 8 Source-level dossiers complete, 55 remaining.
+**v0.1 depth:** in progress — 9 Source-level dossiers complete, 54 remaining.
