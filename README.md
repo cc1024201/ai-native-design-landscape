@@ -2,7 +2,7 @@
 
 > A living map of global AI-native design products, teams, visual surfaces, coding-agent design workflows, and open-source infrastructure.
 
-**Snapshot:** 2026-08-10 · **Version:** v0.1 seed · **Coverage:** 63 canonical project directories
+**Snapshot:** 2026-08-10 · **Version:** v0.1 · **Coverage:** 63 canonical project directories
 
 ## Scope
 
@@ -10,7 +10,7 @@ This repository tracks the part of the design-tool ecosystem being reshaped by A
 
 Repository rule:
 
-- Root `README.md`: taxonomy, categorization, panorama, lifecycle, coverage decisions and project index.
+- Root `README.md`: taxonomy, categorization, panorama, lifecycle, coverage decisions, research depth and project index.
 - `projects/<project>/README.md`: only that project's own technical direction, public technology choices, artifact model and primary sources.
 - No cross-product comparisons inside project directories.
 - No guessed internal stack for closed products.
@@ -39,6 +39,29 @@ The v0.1 registry was re-audited against the named products and projects collect
 | v0 Design Mode | [v0](projects/vercel-v0/) |
 | Uizard Autodesigner | [Uizard](projects/uizard/) |
 | Canva AI / Magic Design | [Canva Magic Design](projects/canva-magic-design/) |
+
+### Research depth
+
+Coverage and evidence depth are tracked separately. A directory existing in the registry does **not** mean its implementation has already been source-audited.
+
+| Depth | Meaning | Count in current snapshot |
+|---|---|---:|
+| **Source-level** | Open/source-available implementation pinned to a concrete commit and traced through artifact/data model, agent interface, runtime/rendering, source mapping, persistence/versioning and implementation paths | **7** |
+| **Architecture/Product-level or Seed** | Product is registered and independently documented, but one or more implementation layers still depend on public docs, incomplete source tracing, or future evidence | **56** |
+
+Current source-level dossiers:
+
+- [Onlook](projects/onlook/)
+- [stagewise](projects/stagewise/)
+- [Tuna](projects/tuna/)
+- [Nimbalyst](projects/nimbalyst/)
+- [OpenPencil (`open-pencil/open-pencil`)](projects/open-pencil/)
+- [Puck](projects/puck/)
+- [onUI](projects/onui/)
+
+The standard deep-dive order for every project is:
+
+`product facts → technical direction → technology choices → artifact/data model → agent interface → runtime/rendering → source mapping → persistence/versioning → implementation map → commit-level evidence`
 
 ## Panorama
 
@@ -92,7 +115,7 @@ flowchart TD
 | [stagewise](projects/stagewise/) | stagewise | Code-native visual surface | Active | Open source |
 | [Dosmos](projects/dosmos/) | Dosmos | Code-native visual surface | Active | Source status unconfirmed |
 | [Retune](projects/retune/) | Retune | Visual manipulation layer | Active | Closed |
-| [Tuna](projects/tuna/) | Tuna contributors | Visual manipulation layer | Active | Open-source repository |
+| [Tuna](projects/tuna/) | Tuna contributors | Visual manipulation layer | Active | Source-available |
 | [onUI](projects/onui/) | onUI contributors | Visual interaction primitive | Active | Open source |
 | [Design Canvas](projects/design-canvas/) | Design Canvas | Agent-controlled runtime canvas | Active | Closed / source status unconfirmed |
 | [Rivet](projects/rivet-design/) | Rivet Design | Visual manipulation layer | Active | Closed |
@@ -128,10 +151,11 @@ flowchart TD
 1. Prefer official docs, official product/changelog posts and official source repositories.
 2. Keep fact, inference and unknown separate.
 3. Project directories are monographs, not comparison pages.
-4. For open-source projects, future deep dives should pin commit SHAs before recording implementation details.
+4. For open-source/source-available projects, pin a commit SHA before recording source-derived implementation details.
 5. Keep discontinued/acquired products as history instead of deleting them.
 6. Categories may change as products evolve; directory slugs should remain stable.
 7. Record aliases/rebrands inside the canonical project directory rather than creating duplicate project entries.
+8. Keep registry coverage and research depth separate; `Seed` is not `Source-level`.
 
 ## Repository structure
 
@@ -145,6 +169,6 @@ flowchart TD
         └── README.md
 ```
 
-## v0.1 follow-up
+## Research progression
 
-This first version is a seed landscape. The next pass should deepen each project independently: pin source commits for open-source projects; extract concrete renderer/editor/runtime/protocol/persistence choices; add timelines; and expand primary-source coverage.
+Each project advances independently through the evidence chain. Open-source projects can reach source-level by pinning a revision and tracing concrete implementation paths. Closed-source projects should stop at the deepest level supported by public first-party evidence instead of inventing missing internals.
