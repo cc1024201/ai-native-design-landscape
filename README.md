@@ -7,9 +7,9 @@
 ## Current progress
 
 - **Canonical coverage:** 63 project directories registered and coverage-audited against the research collected for v0.1.
-- **Evidence-bounded deep dossiers complete:** 23 / 63 — 18 Source-level dossiers plus Claude Design, Replit Design, QoderWork Design, TRAE Work Design and Cursor at Architecture-level with the closed-source evidence boundary reached.
+- **Evidence-bounded deep dossiers complete:** 24 / 63 — 18 Source-level dossiers plus Claude Design, Replit Design, QoderWork Design, TRAE Work Design, Cursor and Tencent CodeBuddy at Architecture-level with the closed-source evidence boundary reached.
 - **Source-level subset:** 18 / 63 — Onlook, stagewise, Tuna, Nimbalyst, OpenPencil (`open-pencil/open-pencil`), OpenPencil (`ZSeven-W/openpencil`), Reframe, Puck, onUI, Open CoDesign, Agentation, Code Inspector, Open Design, Monet, Superdesign, Figwright, mcp_excalidraw, Codex.
-- **Remaining dossiers:** 40 / 63 at Seed, Product-level, or unfinished Architecture-level depth.
+- **Remaining dossiers:** 39 / 63 at Seed, Product-level, or unfinished Architecture-level depth.
 - **Repository structure:** canonical project registry, project template, evidence rules, lifecycle/alias rules, and global panorama are established.
 - **Current milestone:** v0.1 breadth is established; depth work is in progress project by project.
 
@@ -75,8 +75,8 @@ Coverage and evidence depth are tracked separately. A directory existing in the 
 | Depth | Meaning | Count in current snapshot |
 |---|---|---:|
 | **Source-level** | Open/source-available implementation pinned to a concrete commit and traced through the project's decisive product and technical questions, relevant implementation paths and failure boundaries, with commit history used where it changes the conclusion | **18** |
-| **Architecture-level / closed-source boundary reached** | Closed implementation, but the decisive user journey, working artifact authority, public runtime/protocol boundaries, delivery and persistence semantics, documented failures, live observable edges and unresolved internals are explicitly established without invented source claims | **5** |
-| **Seed, Product-level or unfinished Architecture-level** | Product is registered and independently documented, but its available public evidence has not yet been exhausted around the project's decisive questions | **40** |
+| **Architecture-level / closed-source boundary reached** | Closed implementation, but the decisive user journey, working artifact authority, public runtime/protocol boundaries, delivery and persistence semantics, documented failures, live observable edges and unresolved internals are explicitly established without invented source claims | **6** |
+| **Seed, Product-level or unfinished Architecture-level** | Product is registered and independently documented, but its available public evidence has not yet been exhausted around the project's decisive questions | **39** |
 
 Current source-level dossiers:
 
@@ -106,6 +106,7 @@ Current evidence-bounded closed-source dossiers:
 - [QoderWork Design](projects/qoderwork-design/)
 - [TRAE Work Design](projects/trae-work/)
 - [Cursor](projects/cursor/)
+- [Tencent CodeBuddy](projects/tencent-codebuddy/)
 
 ### Project-specific dossier design
 
@@ -192,7 +193,9 @@ Six distinct target-return mechanisms are now established in the current source-
 
 [Cursor](projects/cursor/) exposes the strongest inspectable closed-client runtime packet in this snapshot without crossing into deterministic source identity. Its shipped protocol carries element label, a field named `xpath`, text, JSON extras, component and optional props; the inspected picker actually fills `xpath` with a CSS-like tag/id/class/sibling path and gives nodes session-local `WeakMap` ids. Framework stacks, geometry, styles and screenshots help Agent search, but no file, range, module, source-map location or repository revision reaches the packet. Cursor therefore sharpens the heuristic-runtime-context category without increasing the six source-inspected mechanism count.
 
-The dossiers now also establish thirteen different durable-refinement models. “Structured” does not by itself mean that every product has one equivalent source of truth:
+[Tencent CodeBuddy](projects/tencent-codebuddy/) exposes two different closed-client negative boundaries. Its Figma path stores generated HTML, resources and an optional screenshot under selection-keyed workspace paths before passing them to Agent, while its Preview path narrows a runtime element to HTML, a synthetic range in serialized page markup and optional DOM-editor deltas. A normal localhost target contributes no authored file path; the DOM Editor first patches the live element and only then asks Agent to implement CSS in project files. Figma node ids and runtime coordinates improve grounding, but neither path yields a durable file/range/AST identity or reverse sync.
+
+The dossiers now also establish fourteen different durable-refinement models. “Structured” does not by itself mean that every product has one equivalent source of truth:
 
 | Durable-refinement model | Established implementation | Durable center | Known break |
 |---|---|---|---|
@@ -209,6 +212,7 @@ The dossiers now also establish thirteen different durable-refinement models. �
 | Design-library-grounded hosted artifact with plural exits | [TRAE Work Design](projects/trae-work/) conditions a hosted canvas with an agent-readable package of tokens, components, previews, UI kits, provenance and authoring rules, then exits to Figma, raster images, Code Mode or static deployment | the hosted task/canvas is the editing center; the Design Library is reusable generation evidence; each destination becomes its own authority | no public Design revision graph or library pin joins task, canvas, local/cloud files, memory, Git worktree and destination state atomically |
 | Native external document with repository-side reconciliation aids | [Figwright](projects/figwright/) mutates the open Figma file while optionally storing verified name mappings and per-node context baselines in the application repository | Figma owns durable design state; application files own implementation; `docs/figma-*-map.md` and `.figwright/snapshots/` support later reconciliation | the aids are not a mirrored document: map keys lack file identity, snapshots are keyed only by node id, and neither establishes a shared Figma/code transaction |
 | Volatile canvas with explicit interchange checkpoints | [mcp_excalidraw](projects/mcp-excalidraw/) keeps live elements, snapshots and image files in one local process, then materializes deterministic Excalidraw or Obsidian files on demand | an explicitly exported <code>.excalidraw</code>/<code>.excalidraw.md</code> file; PNG/SVG are visual deliveries | restart loses live state, named snapshots are process-local and shallow, files have a separate lifecycle, and an open browser tab can become an unintended shadow copy |
+| External-design and runtime-context convergence on checkpointed files | [Tencent CodeBuddy](projects/tencent-codebuddy/) materializes Figma selections as local HTML/resources/screenshots, turns Preview selections and DOM-editor deltas into Agent context, and imports Miora bridge results as files | application files and Git are the implementation authority; automatic file checkpoints add recovery, while Figma/Miora caches, plans, chat, global memory, Preview and deployment retain separate clocks | re-export can mix refreshed HTML with a retained screenshot, runtime targets stale under reload/HMR, and no transaction joins visual sources, context caches, file checkpoint and delivery |
 
 The same evidence separates **having an agent interface** from **converging on one mutation authority**:
 
@@ -227,8 +231,9 @@ The same evidence separates **having an agent interface** from **converging on o
 | Hosted-artifact convergence with an executable library contract | [TRAE Work Design](projects/trae-work/) lets conversational edits, comments and a CSS-property GUI refine one hosted Design artifact while the Design Library supplies routed token/component/preview evidence | direct and agent-guided corrections meet in the current canvas; Code Mode is a later materialization path | canvas patch/rollback semantics are closed, no node-to-library/code identity is public, and later Figma/code/deployment exits have no documented reverse sync |
 | Native-Figma convergence with downstream provider split | [Figwright](projects/figwright/) routes human-visible plugin activity and agent tools to nodes in the same open Figma file, while Figma-to-code hands grounded context to an external coding agent | direct Figma edits and plugin writes converge on the native document; repository output is a later provider-authored artifact | server/plugin feature skew can make a write partial, activity-based file routing is not an explicit file id on every call, and code generation has no shared commit with the Figma mutation |
 | REST-centered convergence with browser full-scene return | [mcp_excalidraw](projects/mcp-excalidraw/) routes CLI, MCP and raw HTTP to one in-memory canvas server while the browser projects and edits the same scene | agent-side granular writes and human browser edits normally meet in the server element map | browser edits replace the complete map after a debounce; no scene revision or transaction prevents a stale tab or partial multi-operation call from overwriting earlier work |
+| Dual visual-context convergence on one project workspace | [Tencent CodeBuddy](projects/tencent-codebuddy/) routes an external Figma export and a selected running DOM through different context schemas to the same Agent file-writing authority; Miora contributes a third ordinary-file input | Figma is a one-way HTML/resource/screenshot materialization, while DOM Editor performs a temporary runtime patch before Agent edits source | neither target carries deterministic source identity, parallel tasks can observe different runtime/file states, and a checkpoint cannot rewind the external design, cached context or deployment |
 
-The dossiers now separate thirteen artifact-production profiles that can all look like “the agent made a design” at the UI level:
+The dossiers now separate fourteen artifact-production profiles that can all look like “the agent made a design” at the UI level:
 
 | Artifact production profile | Established implementation | Durable result | Verification boundary |
 |---|---|---|---|
@@ -245,6 +250,7 @@ The dossiers now separate thirteen artifact-production profiles that can all loo
 | Context-grounded provider implementation | Figwright serializes a selected Figma subtree, joins it to repository components/tokens/icons, and leaves framework code generation to the connected model | application source and exported assets actually written by the coding agent | a successful context or mapping call is not artifact proof; only a repository diff plus a rendered Figma comparison closes the loop |
 | Plugin-mediated native-document mutation | Figwright's model issues typed writes through the local relay and public Figma Plugin API, with retry idempotency and an inverse-allowlisted batch | the open Figma document | a tool result can be unverified under plugin skew, batch rollback can itself be partial, and no simultaneous repository transaction exists |
 | Volatile canvas to deterministic diagram artifact | mcp_excalidraw lets an agent create/query elements, use a real browser screenshot to repair layout, then explicitly expand the compact agent model into a byte-stable Excalidraw/Obsidian file | the exported diagram file actually written to the selected path | live-scene success is not durability, structured description is not visual proof, browser writeback changes the graph shape, and a failed multi-step mutation can leave partial state |
+| Exported design context plus runtime-targeted implementation | [Tencent CodeBuddy](projects/tencent-codebuddy/) exports selected Figma content into local HTML/resources/screenshot context, or packages a selected Preview element and DOM-editor intent, then asks Agent to implement the result | the project files actually changed by Agent and the provider-specific deployed result; `.codebuddy` exports are evidence inputs | an export, temporary correct-looking DOM patch or completed task is insufficient; acceptance requires current design comparison, real diff review, clean reload and final deployment validation |
 
 mcp_excalidraw also exposes a distribution-truth boundary that product matrices often hide. At the 2026-08-11 snapshot, its source manifest and README announce <code>2.0.0</code> and current containers carry that HEAD, while the recommended <code>npx</code> route still resolves to npm <code>1.1.0</code>; no <code>v2.0.0</code> tag, GitHub Release or npm publish exists. Merged release intent and green source CI do not establish what an ordinary install obtains.
 
@@ -343,4 +349,4 @@ mcp_excalidraw also exposes a distribution-truth boundary that product matrices 
 
 **v0.1 breadth:** complete for the audited 63-project registry.
 
-**v0.1 depth:** in progress — 23 evidence-bounded deep dossiers complete (18 Source-level and 5 closed-source Architecture-level), 40 remaining.
+**v0.1 depth:** in progress — 24 evidence-bounded deep dossiers complete (18 Source-level and 6 closed-source Architecture-level), 39 remaining.
