@@ -7,8 +7,8 @@
 ## Current progress
 
 - **Canonical coverage:** 63 project directories registered and coverage-audited against the research collected for v0.1.
-- **Source-level dossiers complete:** 10 / 63 — Onlook, stagewise, Tuna, Nimbalyst, OpenPencil (`open-pencil/open-pencil`), Puck, onUI, Open CoDesign, Agentation, Code Inspector.
-- **Remaining dossiers:** 53 / 63 at Seed, Product-level, or Architecture-level depth.
+- **Source-level dossiers complete:** 11 / 63 — Onlook, stagewise, Tuna, Nimbalyst, OpenPencil (`open-pencil/open-pencil`), Puck, onUI, Open CoDesign, Agentation, Code Inspector, Open Design.
+- **Remaining dossiers:** 52 / 63 at Seed, Product-level, or Architecture-level depth.
 - **Repository structure:** canonical project registry, project template, evidence rules, lifecycle/alias rules, and global panorama are established.
 - **Current milestone:** v0.1 breadth is established; depth work is in progress project by project.
 
@@ -71,8 +71,8 @@ Coverage and evidence depth are tracked separately. A directory existing in the 
 
 | Depth | Meaning | Count in current snapshot |
 |---|---|---:|
-| **Source-level** | Open/source-available implementation pinned to a concrete commit and traced through artifact/data model, agent interface, runtime/rendering, source mapping, persistence/versioning and implementation paths | **10** |
-| **Architecture/Product-level or Seed** | Product is registered and independently documented, but one or more implementation layers still depend on public docs, incomplete source tracing, or future evidence | **53** |
+| **Source-level** | Open/source-available implementation pinned to a concrete commit and traced through artifact/data model, agent interface, runtime/rendering, source mapping, persistence/versioning and implementation paths | **11** |
+| **Architecture/Product-level or Seed** | Product is registered and independently documented, but one or more implementation layers still depend on public docs, incomplete source tracing, or future evidence | **52** |
 
 Current source-level dossiers:
 
@@ -86,6 +86,7 @@ Current source-level dossiers:
 - [Open CoDesign](projects/open-codesign/)
 - [Agentation](projects/agentation/)
 - [Code Inspector](projects/code-inspector/)
+- [Open Design](projects/open-design/)
 
 The standard deep-dive order for every project is:
 
@@ -114,20 +115,30 @@ flowchart LR
     A --> R[Runtime projection]
     R --> M[Target and source mapping]
     M --> D[Deterministic build-time identity]
+    M --> S[Preview-time structural re-addressing]
     M --> H[Heuristic runtime context]
     D --> X[Agent interface]
+    S --> X
     H --> X
     X --> P[Persistence and versions]
 ```
 
 These axes distinguish prompts, annotations and direct manipulation; source files, canvas graphs and feedback sessions; DOM, iframe, canvas and native renderers; selectors, component identities and source maps; file tools, MCP and product protocols; and browser storage, databases, snapshots and version graphs. Each dossier pins those distinctions to evidence instead of treating every visible canvas as the same architecture.
 
-Two distinct source-return mechanisms are now established in the current source-level dossiers; this is an evidence-backed starting taxonomy, not an exhaustive claim about the landscape:
+Three distinct source-return mechanisms are now established in the current source-level dossiers; this is an evidence-backed starting taxonomy, not an exhaustive claim about the landscape:
 
 | Source-return route | Established implementation | Identity delivered downstream | Known break |
 |---|---|---|---|
 | Deterministic build-time identity | [Code Inspector](projects/code-inspector/) rewrites eligible framework source during bundling | file, line, column and node name carried on the rendered element | untransformed/failed files and unresolved multi-root call sites lose or downgrade the mapping |
+| Preview-time structural re-addressing | [Open Design](projects/open-design/) parses HTML for its rich preview, prefers authored element ids and adds body-relative child-index paths before re-parsing persisted HTML for bounded patches | authored `data-od-id` or a structural HTML path plus DOM/text/style context | generated paths drift after structural edits; runtime-only DOM and heuristic comment targets do not become component-source identity |
 | Heuristic runtime context | [Agentation](projects/agentation/) inspects DOM/React runtime structures while the page is running | DOM context plus optional React hierarchy and file hint | file hints are environment-dependent and do not survive its default SQLite + common MCP projection |
+
+Open Design also establishes two artifact-production profiles that can converge on one project-file model:
+
+| Artifact production profile | Established implementation | Durable result | Verification boundary |
+|---|---|---|---|
+| Filesystem-native agent run | Open Design launches a selected CLI/ACP agent in the resolved project workspace and fingerprints files before/after the run | canonical project files plus optional manifests and per-HTML versions | provider tool events are insufficient by themselves; a real content/file diff is the evidence that an artifact changed |
+| Stream-to-file materialization | Open Design parses complete supported `<artifact>` blocks from a plain/BYOK adapter | HTML, CSS, SVG or Markdown written through the same project-file API with a generated manifest | incomplete, fenced or unsupported blocks are not a durable artifact merely because text streamed in chat |
 
 ## Project index
 
@@ -180,7 +191,7 @@ Two distinct source-return mechanisms are now established in the current source-
 | [OpenPencil (ZSeven-W/openpencil)](projects/openpencil-zseven/) | ZSeven-W / contributors | AI-native design editor | Active | Open source |
 | [Reframe](projects/reframe/) | Reframe contributors | Experimental AI-native design engine | Experimental | Open source |
 | [Open CoDesign](projects/open-codesign/) | OpenCoworkAI / contributors | Local-first desktop AI design agent | Active; v0.2.1 | MIT |
-| [Open Design](projects/open-design/) | nexu-io / contributors | Design tooling for agents | Active / early | Open source |
+| [Open Design](projects/open-design/) | nexu-io / Open Design contributors | Local-first agent-native design workspace and artifact studio | Active; v0.18.2 | Apache-2.0 |
 | [Agentation](projects/agentation/) | Benji Taylor / contributors | In-app visual feedback and agent-context primitive | Active; package v3.0.2 | PolyForm Shield 1.0.0 source-available |
 | [Code Inspector](projects/code-inspector/) | zh-lx / contributors | Compile-time DOM-to-source and in-browser coding-agent bridge | Active; v2.0.7 | MIT |
 | [Puck](projects/puck/) | Puck Editor | Visual editor primitive | Active | Open source |
@@ -224,4 +235,4 @@ Two distinct source-return mechanisms are now established in the current source-
 
 **v0.1 breadth:** complete for the audited 63-project registry.
 
-**v0.1 depth:** in progress — 10 Source-level dossiers complete, 53 remaining.
+**v0.1 depth:** in progress — 11 Source-level dossiers complete, 52 remaining.
