@@ -7,9 +7,9 @@
 ## Current progress
 
 - **Canonical coverage:** 63 project directories registered and coverage-audited against the research collected for v0.1.
-- **Evidence-bounded deep dossiers complete:** 26 / 63 — 18 Source-level dossiers plus Claude Design, Replit Design, QoderWork Design, TRAE Work Design, Cursor, Tencent CodeBuddy, Baidu Comate and Devin at Architecture-level with the closed-source evidence boundary reached.
+- **Evidence-bounded deep dossiers complete:** 27 / 63 — 18 Source-level dossiers plus Claude Design, Replit Design, QoderWork Design, TRAE Work Design, Cursor, Tencent CodeBuddy, Baidu Comate, Devin and historical Windsurf at Architecture-level with the closed-source evidence boundary reached.
 - **Source-level subset:** 18 / 63 — Onlook, stagewise, Tuna, Nimbalyst, OpenPencil (`open-pencil/open-pencil`), OpenPencil (`ZSeven-W/openpencil`), Reframe, Puck, onUI, Open CoDesign, Agentation, Code Inspector, Open Design, Monet, Superdesign, Figwright, mcp_excalidraw, Codex.
-- **Remaining dossiers:** 37 / 63 at Seed, Product-level, or unfinished Architecture-level depth.
+- **Remaining dossiers:** 36 / 63 at Seed, Product-level, or unfinished Architecture-level depth.
 - **Repository structure:** canonical project registry, project template, evidence rules, lifecycle/alias rules, and global panorama are established.
 - **Current milestone:** v0.1 breadth is established; depth work is in progress project by project.
 
@@ -48,8 +48,8 @@ Repository rule:
 A directory represents an independently identifiable product, open-source project, or independently surfaced design workspace.
 
 - Product features/modes stay inside the owning product directory unless they have a distinct product/workspace identity.
-- Direct renames/rebrands stay in one canonical directory with aliases recorded as metadata.
-- Acquired or discontinued products remain as historical entries.
+- Direct renames/rebrands normally stay in one canonical directory with aliases recorded as metadata.
+- An acquired or discontinued product may remain as a historical entry when its independently attributable pre-transition lineage is material; that dossier must declare an exact cutoff and leave the successor's current implementation in the successor directory.
 - Traditional design tools are outside the current scope unless they have an AI-native product/workspace represented here.
 
 ### Coverage audit
@@ -62,6 +62,7 @@ The v0.1 registry was re-audited against the named products and projects collect
 | MGX / MetaGPT X | [Atoms](projects/atoms/) |
 | TRAE SOLO | [TRAE Work](projects/trae-work/) |
 | Devin Desktop / cloud Desktop mode / installable Devin PWA | [Devin](projects/devin/) |
+| Windsurf Editor through 2026-06-01 | [Windsurf](projects/windsurf/) as a bounded historical entry; post-rename Devin Desktop belongs to [Devin](projects/devin/) |
 | Cursor Design Mode | [Cursor](projects/cursor/) |
 | Codex Browser / Annotations / Sites / Product Design workflows | [Codex](projects/openai-codex/) |
 | v0 Design Mode | [v0](projects/vercel-v0/) |
@@ -75,8 +76,8 @@ Coverage and evidence depth are tracked separately. A directory existing in the 
 | Depth | Meaning | Count in current snapshot |
 |---|---|---:|
 | **Source-level** | Open/source-available implementation pinned to a concrete commit and traced through the project's decisive product and technical questions, relevant implementation paths and failure boundaries, with commit history used where it changes the conclusion | **18** |
-| **Architecture-level / closed-source boundary reached** | Closed implementation, but the decisive user journey, working artifact authority, public runtime/protocol boundaries, delivery and persistence semantics, documented failures, live observable edges and unresolved internals are explicitly established without invented source claims | **8** |
-| **Seed, Product-level or unfinished Architecture-level** | Product is registered and independently documented, but its available public evidence has not yet been exhausted around the project's decisive questions | **37** |
+| **Architecture-level / closed-source boundary reached** | Closed implementation, but the decisive user journey, working artifact authority, public runtime/protocol boundaries, delivery and persistence semantics, documented failures, live observable edges and unresolved internals are explicitly established without invented source claims | **9** |
+| **Seed, Product-level or unfinished Architecture-level** | Product is registered and independently documented, but its available public evidence has not yet been exhausted around the project's decisive questions | **36** |
 
 Current source-level dossiers:
 
@@ -108,6 +109,8 @@ Current evidence-bounded closed-source dossiers:
 - [Cursor](projects/cursor/)
 - [Tencent CodeBuddy](projects/tencent-codebuddy/)
 - [Baidu Comate](projects/baidu-comate/)
+- [Devin](projects/devin/)
+- [Windsurf](projects/windsurf/) — historical boundary through 2026-06-01
 
 ### Project-specific dossier design
 
@@ -200,6 +203,8 @@ Six distinct target-return mechanisms are now established in the current source-
 
 [Devin](projects/devin/) adds a closed-client runtime-context boundary across two different visual planes. Cloud Computer Use observes screenshots and acts on a remote Linux/Windows desktop, then can return a focused recording; local Devin Desktop Preview sends an HTML ancestor path, outer HTML, geometry, computed CSS and an optional clipped screenshot to local, remote or ACP agents. The inspected Preview packet contains no file, range, component, source-map or repository revision, while cloud screen coordinates never claim source identity. Visual execution proof and richly structured DOM context can improve a repair without becoming target return.
 
+The bounded historical [Windsurf](projects/windsurf/) dossier fixes the lineage behind that local Preview category. The final Windsurf-branded `2.3.15` main process uses Electron debugging and CDP `DOM`/`CSS`/`Overlay`/`Runtime` calls to turn a clicked element into ancestor path, attributes, HTML, computed styles, geometry and an optional clipped screenshot before Cascade searches source. Its outgoing packet likewise has no authored file/range/component/source-map/revision identity. This establishes that the runtime-context mechanism predates the Devin Desktop name; it refines product history rather than adding a seventh source-inspected mapping mechanism.
+
 The dossiers now also establish sixteen different durable-refinement models. “Structured” does not by itself mean that every product has one equivalent source of truth:
 
 | Durable-refinement model | Established implementation | Durable center | Known break |
@@ -280,7 +285,7 @@ mcp_excalidraw also exposes a distribution-truth boundary that product matrices 
 | [Devin](projects/devin/) | Cognition | Coding agent with visual/runtime workflow | Active | Closed |
 | [v0](projects/vercel-v0/) | Vercel | AI app builder with visual editing | Active | Closed |
 | [Lovable](projects/lovable/) | Lovable | AI app builder with visual editing | Active | Closed |
-| [Windsurf](projects/windsurf/) | Cognition | Coding agent with visual workflow | Active | Closed |
+| [Windsurf](projects/windsurf/) | Exafunction / Codeium → Cognition | Historical agentic IDE and local-to-cloud transition | Historical; renamed to Devin Desktop on 2026-06-02 | Closed editor/agent core; adjacent MIT demo/plugins |
 | [GitHub Spark](projects/github-spark/) | GitHub | AI app builder with visual editing | Active | Closed |
 | [Anything (formerly Create)](projects/anything/) | Anything | AI app builder with design reasoning | Active | Closed |
 | [Fusion](projects/builderio-fusion/) | Builder.io | Code-native visual surface | Active | Closed |
@@ -360,4 +365,4 @@ mcp_excalidraw also exposes a distribution-truth boundary that product matrices 
 
 **v0.1 breadth:** complete for the audited 63-project registry.
 
-**v0.1 depth:** in progress — 26 evidence-bounded deep dossiers complete (18 Source-level and 8 closed-source Architecture-level), 37 remaining.
+**v0.1 depth:** in progress — 27 evidence-bounded deep dossiers complete (18 Source-level and 9 closed-source Architecture-level), 36 remaining.
