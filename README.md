@@ -7,8 +7,8 @@
 ## Current progress
 
 - **Canonical coverage:** 63 project directories registered and coverage-audited against the research collected for v0.1.
-- **Source-level dossiers complete:** 7 / 63 — Onlook, stagewise, Tuna, Nimbalyst, OpenPencil (`open-pencil/open-pencil`), Puck, onUI.
-- **Remaining dossiers:** 56 / 63 at Seed, Product-level, or Architecture-level depth.
+- **Source-level dossiers complete:** 8 / 63 — Onlook, stagewise, Tuna, Nimbalyst, OpenPencil (`open-pencil/open-pencil`), Puck, onUI, Open CoDesign.
+- **Remaining dossiers:** 55 / 63 at Seed, Product-level, or Architecture-level depth.
 - **Repository structure:** canonical project registry, project template, evidence rules, lifecycle/alias rules, and global panorama are established.
 - **Current milestone:** v0.1 breadth is established; depth work is in progress project by project.
 
@@ -71,8 +71,8 @@ Coverage and evidence depth are tracked separately. A directory existing in the 
 
 | Depth | Meaning | Count in current snapshot |
 |---|---|---:|
-| **Source-level** | Open/source-available implementation pinned to a concrete commit and traced through artifact/data model, agent interface, runtime/rendering, source mapping, persistence/versioning and implementation paths | **7** |
-| **Architecture/Product-level or Seed** | Product is registered and independently documented, but one or more implementation layers still depend on public docs, incomplete source tracing, or future evidence | **56** |
+| **Source-level** | Open/source-available implementation pinned to a concrete commit and traced through artifact/data model, agent interface, runtime/rendering, source mapping, persistence/versioning and implementation paths | **8** |
+| **Architecture/Product-level or Seed** | Product is registered and independently documented, but one or more implementation layers still depend on public docs, incomplete source tracing, or future evidence | **55** |
 
 Current source-level dossiers:
 
@@ -83,6 +83,7 @@ Current source-level dossiers:
 - [OpenPencil (`open-pencil/open-pencil`)](projects/open-pencil/)
 - [Puck](projects/puck/)
 - [onUI](projects/onui/)
+- [Open CoDesign](projects/open-codesign/)
 
 The standard deep-dive order for every project is:
 
@@ -153,7 +154,7 @@ flowchart TD
 | [OpenPencil (open-pencil/open-pencil)](projects/open-pencil/) | OpenPencil | Agent-controllable design editor | Active | Open source |
 | [OpenPencil (ZSeven-W/openpencil)](projects/openpencil-zseven/) | ZSeven-W / contributors | AI-native design editor | Active | Open source |
 | [Reframe](projects/reframe/) | Reframe contributors | Experimental AI-native design engine | Experimental | Open source |
-| [Open CoDesign](projects/open-codesign/) | Open CoDesign contributors | Open-source AI design product | Active / early | Open source |
+| [Open CoDesign](projects/open-codesign/) | OpenCoworkAI / contributors | Local-first desktop AI design agent | Active; v0.2.1 | MIT |
 | [Open Design](projects/open-design/) | nexu-io / contributors | Design tooling for agents | Active / early | Open source |
 | [Agentation](projects/agentation/) | Agentation contributors | Visual context primitive | Active | Source-available |
 | [Code Inspector](projects/code-inspector/) | Code Inspector contributors | DOM-to-source primitive | Active | Open source |
@@ -198,4 +199,4 @@ flowchart TD
 
 **v0.1 breadth:** complete for the audited 63-project registry.
 
-**v0.1 depth:** in progress — 7 Source-level dossiers complete, 56 remaining.
+**v0.1 depth:** in progress — 8 Source-level dossiers complete, 55 remaining.
