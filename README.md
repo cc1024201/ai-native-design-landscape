@@ -7,9 +7,9 @@
 ## Current progress
 
 - **Canonical coverage:** 63 project directories registered and coverage-audited against the research collected for v0.1.
-- **Evidence-bounded deep dossiers complete:** 25 / 63 — 18 Source-level dossiers plus Claude Design, Replit Design, QoderWork Design, TRAE Work Design, Cursor, Tencent CodeBuddy and Baidu Comate at Architecture-level with the closed-source evidence boundary reached.
+- **Evidence-bounded deep dossiers complete:** 26 / 63 — 18 Source-level dossiers plus Claude Design, Replit Design, QoderWork Design, TRAE Work Design, Cursor, Tencent CodeBuddy, Baidu Comate and Devin at Architecture-level with the closed-source evidence boundary reached.
 - **Source-level subset:** 18 / 63 — Onlook, stagewise, Tuna, Nimbalyst, OpenPencil (`open-pencil/open-pencil`), OpenPencil (`ZSeven-W/openpencil`), Reframe, Puck, onUI, Open CoDesign, Agentation, Code Inspector, Open Design, Monet, Superdesign, Figwright, mcp_excalidraw, Codex.
-- **Remaining dossiers:** 38 / 63 at Seed, Product-level, or unfinished Architecture-level depth.
+- **Remaining dossiers:** 37 / 63 at Seed, Product-level, or unfinished Architecture-level depth.
 - **Repository structure:** canonical project registry, project template, evidence rules, lifecycle/alias rules, and global panorama are established.
 - **Current milestone:** v0.1 breadth is established; depth work is in progress project by project.
 
@@ -61,7 +61,7 @@ The v0.1 registry was re-audited against the named products and projects collect
 | Create | [Anything](projects/anything/) |
 | MGX / MetaGPT X | [Atoms](projects/atoms/) |
 | TRAE SOLO | [TRAE Work](projects/trae-work/) |
-| Devin Desktop / Desktop mode | [Devin](projects/devin/) |
+| Devin Desktop / cloud Desktop mode / installable Devin PWA | [Devin](projects/devin/) |
 | Cursor Design Mode | [Cursor](projects/cursor/) |
 | Codex Browser / Annotations / Sites / Product Design workflows | [Codex](projects/openai-codex/) |
 | v0 Design Mode | [v0](projects/vercel-v0/) |
@@ -75,8 +75,8 @@ Coverage and evidence depth are tracked separately. A directory existing in the 
 | Depth | Meaning | Count in current snapshot |
 |---|---|---:|
 | **Source-level** | Open/source-available implementation pinned to a concrete commit and traced through the project's decisive product and technical questions, relevant implementation paths and failure boundaries, with commit history used where it changes the conclusion | **18** |
-| **Architecture-level / closed-source boundary reached** | Closed implementation, but the decisive user journey, working artifact authority, public runtime/protocol boundaries, delivery and persistence semantics, documented failures, live observable edges and unresolved internals are explicitly established without invented source claims | **7** |
-| **Seed, Product-level or unfinished Architecture-level** | Product is registered and independently documented, but its available public evidence has not yet been exhausted around the project's decisive questions | **38** |
+| **Architecture-level / closed-source boundary reached** | Closed implementation, but the decisive user journey, working artifact authority, public runtime/protocol boundaries, delivery and persistence semantics, documented failures, live observable edges and unresolved internals are explicitly established without invented source claims | **8** |
+| **Seed, Product-level or unfinished Architecture-level** | Product is registered and independently documented, but its available public evidence has not yet been exhausted around the project's decisive questions | **37** |
 
 Current source-level dossiers:
 
@@ -198,7 +198,9 @@ Six distinct target-return mechanisms are now established in the current source-
 
 [Baidu Comate](projects/baidu-comate/) establishes a stronger optional closed-client return path. Its Preview picker can inherit `data-comate-source-path` from the selected element or an ancestor, navigate to a real file/line/column and use that hint for direct style/text rewrites or Agent-led general edits. Yet the installed client exposes the reader rather than the annotation producer, its own edit prompt calls coordinates search starting points rather than exact identity, and no file revision guards against HMR or concurrent change. Normal Figma input remains a generated HTML/assets/token context mediated by a system Skill, not a native node-to-source binding. Comate therefore strengthens source-addressed runtime repair without increasing the six source-inspected mechanism count.
 
-The dossiers now also establish fifteen different durable-refinement models. “Structured” does not by itself mean that every product has one equivalent source of truth:
+[Devin](projects/devin/) adds a closed-client runtime-context boundary across two different visual planes. Cloud Computer Use observes screenshots and acts on a remote Linux/Windows desktop, then can return a focused recording; local Devin Desktop Preview sends an HTML ancestor path, outer HTML, geometry, computed CSS and an optional clipped screenshot to local, remote or ACP agents. The inspected Preview packet contains no file, range, component, source-map or repository revision, while cloud screen coordinates never claim source identity. Visual execution proof and richly structured DOM context can improve a repair without becoming target return.
+
+The dossiers now also establish sixteen different durable-refinement models. “Structured” does not by itself mean that every product has one equivalent source of truth:
 
 | Durable-refinement model | Established implementation | Durable center | Known break |
 |---|---|---|---|
@@ -217,6 +219,7 @@ The dossiers now also establish fifteen different durable-refinement models. “
 | Volatile canvas with explicit interchange checkpoints | [mcp_excalidraw](projects/mcp-excalidraw/) keeps live elements, snapshots and image files in one local process, then materializes deterministic Excalidraw or Obsidian files on demand | an explicitly exported <code>.excalidraw</code>/<code>.excalidraw.md</code> file; PNG/SVG are visual deliveries | restart loses live state, named snapshots are process-local and shallow, files have a separate lifecycle, and an open browser tab can become an unintended shadow copy |
 | External-design and runtime-context convergence on checkpointed files | [Tencent CodeBuddy](projects/tencent-codebuddy/) materializes Figma selections as local HTML/resources/screenshots, turns Preview selections and DOM-editor deltas into Agent context, and imports Miora bridge results as files | application files and Git are the implementation authority; automatic file checkpoints add recovery, while Figma/Miora caches, plans, chat, global memory, Preview and deployment retain separate clocks | re-export can mix refreshed HTML with a retained screenshot, runtime targets stale under reload/HMR, and no transaction joins visual sources, context caches, file checkpoint and delivery |
 | Skill-mediated design context plus hybrid source-addressed repair | [Baidu Comate](projects/baidu-comate/) materializes Figma HTML/assets/tokens under temporary and `.comate` context, while Preview can carry an optional source hint into direct style/text rewrites or Agent-led general edits | workspace files and ordinary Git state are the implementation authority; design providers, F2C cache/rules, Spec/Mission, Memory, conversation recovery and Preview retain separate clocks | multiple Figma inputs share first-context configuration, source hints can be absent/inherited/stale, direct rewrites are tag/line heuristics, and no transaction joins design revision, working tree, runtime and delivery |
+| Snapshot-booted cloud execution plus local/cloud Git convergence | [Devin](projects/devin/) boots each cloud session from an organization snapshot, lets local agents work in a checkout/worktree, and transfers bounded context into separate cloud VMs whose reviewable result is a branch/PR | local files/Git or the cloud branch/PR are implementation authority; snapshot, session VM, queue, browser state, recording, plan, checkpoint and Space retain distinct clocks | session changes do not persist to the snapshot, worktrees require preservation/merge, handoff omits or truncates local state, and no suite-wide rewind joins machines, Git and visual evidence |
 
 The same evidence separates **having an agent interface** from **converging on one mutation authority**:
 
@@ -237,8 +240,9 @@ The same evidence separates **having an agent interface** from **converging on o
 | REST-centered convergence with browser full-scene return | [mcp_excalidraw](projects/mcp-excalidraw/) routes CLI, MCP and raw HTTP to one in-memory canvas server while the browser projects and edits the same scene | agent-side granular writes and human browser edits normally meet in the server element map | browser edits replace the complete map after a debounce; no scene revision or transaction prevents a stale tab or partial multi-operation call from overwriting earlier work |
 | Dual visual-context convergence on one project workspace | [Tencent CodeBuddy](projects/tencent-codebuddy/) routes an external Figma export and a selected running DOM through different context schemas to the same Agent file-writing authority; Miora contributes a third ordinary-file input | Figma is a one-way HTML/resource/screenshot materialization, while DOM Editor performs a temporary runtime patch before Agent edits source | neither target carries deterministic source identity, parallel tasks can observe different runtime/file states, and a checkpoint cannot rewind the external design, cached context or deployment |
 | Hybrid direct/Agent convergence with optional source hints | [Baidu Comate](projects/baidu-comate/) routes Figma context through the `figma2code` Skill to Agent, while Preview routes supported style/text edits through a local source rewriter and compound edits through Agent | both mutation paths converge on workspace files; a clean rebuilt Preview is the shared verification surface | the source annotation producer and coverage are closed, direct rewrites use AST/line heuristics, Agent targets are advisory, and preview overlays can look correct before durable source exists |
+| Command-center convergence over plural machines | [Devin](projects/devin/) places Devin Local, Cascade, cloud Devin and ACP agents in one Kanban/Space surface while each route retains its own workspace or VM | local agents mutate the main checkout/worktree; cloud sessions mutate their own checkout and return a branch/PR; shared Space context coordinates rather than merges | sessions can see different revisions, Preview context has no source identity, handoff is lossy and a “finished” control state does not prove file or PR delivery |
 
-The dossiers now separate fifteen artifact-production profiles that can all look like “the agent made a design” at the UI level:
+The dossiers now separate sixteen artifact-production profiles that can all look like “the agent made a design” at the UI level:
 
 | Artifact production profile | Established implementation | Durable result | Verification boundary |
 |---|---|---|---|
@@ -257,6 +261,7 @@ The dossiers now separate fifteen artifact-production profiles that can all look
 | Volatile canvas to deterministic diagram artifact | mcp_excalidraw lets an agent create/query elements, use a real browser screenshot to repair layout, then explicitly expand the compact agent model into a byte-stable Excalidraw/Obsidian file | the exported diagram file actually written to the selected path | live-scene success is not durability, structured description is not visual proof, browser writeback changes the graph shape, and a failed multi-step mutation can leave partial state |
 | Exported design context plus runtime-targeted implementation | [Tencent CodeBuddy](projects/tencent-codebuddy/) exports selected Figma content into local HTML/resources/screenshot context, or packages a selected Preview element and DOM-editor intent, then asks Agent to implement the result | the project files actually changed by Agent and the provider-specific deployed result; `.codebuddy` exports are evidence inputs | an export, temporary correct-looking DOM patch or completed task is insufficient; acceptance requires current design comparison, real diff review, clean reload and final deployment validation |
 | Skill-mediated design implementation plus source-addressed preview repair | [Baidu Comate](projects/baidu-comate/) gives Agent Figma HTML/assets/thumbnail/tokens under a project-aware Skill, or turns a rendered-element ledger into direct supported rewrites and general Agent changes | workspace files actually changed and the independently verified delivered result; Figma/cache/Preview state are evidence inputs | context acceptance, cursor navigation, a successful rewrite or Spec Summary is insufficient; acceptance requires diff review, clean rebuild, interaction checks and separate delivery validation |
+| PR-centered remote execution with focused visual proof | [Devin](projects/devin/) boots a fresh cloud VM, edits/tests a repository, produces a branch/PR and can attach an edited Computer Use recording of one focused flow; local Preview separately supplies structured runtime context for local-file repair | the actual cloud branch/PR or local Git state; recording, Preview capture and session status are evidence/control objects | snapshot and VM state diverge, a short recording is not exhaustive or commit-bound, local Preview has no source identity, and handoff/Space do not make local and cloud files one transaction |
 
 mcp_excalidraw also exposes a distribution-truth boundary that product matrices often hide. At the 2026-08-11 snapshot, its source manifest and README announce <code>2.0.0</code> and current containers carry that HEAD, while the recommended <code>npx</code> route still resolves to npm <code>1.1.0</code>; no <code>v2.0.0</code> tag, GitHub Release or npm publish exists. Merged release intent and green source CI do not establish what an ordinary install obtains.
 
@@ -355,4 +360,4 @@ mcp_excalidraw also exposes a distribution-truth boundary that product matrices 
 
 **v0.1 breadth:** complete for the audited 63-project registry.
 
-**v0.1 depth:** in progress — 25 evidence-bounded deep dossiers complete (18 Source-level and 7 closed-source Architecture-level), 38 remaining.
+**v0.1 depth:** in progress — 26 evidence-bounded deep dossiers complete (18 Source-level and 8 closed-source Architecture-level), 37 remaining.
