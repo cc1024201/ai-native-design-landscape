@@ -2,7 +2,7 @@
 
 > A living map of global AI-native design products, teams, visual surfaces, coding-agent design workflows, and open-source infrastructure.
 
-**Snapshot:** 2026-08-10 · **Version:** v0.1 seed · **Coverage:** 60 project directories
+**Snapshot:** 2026-08-10 · **Version:** v0.1 seed · **Coverage:** 63 canonical project directories
 
 ## Scope
 
@@ -10,10 +10,35 @@ This repository tracks the part of the design-tool ecosystem being reshaped by A
 
 Repository rule:
 
-- Root `README.md`: taxonomy, categorization, panorama, lifecycle and project index.
+- Root `README.md`: taxonomy, categorization, panorama, lifecycle, coverage decisions and project index.
 - `projects/<project>/README.md`: only that project's own technical direction, public technology choices, artifact model and primary sources.
 - No cross-product comparisons inside project directories.
 - No guessed internal stack for closed products.
+
+### Directory unit
+
+A directory represents an independently identifiable product, open-source project, or independently surfaced design workspace.
+
+- Product features/modes stay inside the owning product directory unless they have a distinct product/workspace identity.
+- Direct renames/rebrands stay in one canonical directory with aliases recorded as metadata.
+- Acquired or discontinued products remain as historical entries.
+- Traditional design tools are outside the current scope unless they have an AI-native product/workspace represented here.
+
+### Coverage audit
+
+The v0.1 registry was re-audited against the named products and projects collected during the research thread. Important canonicalization decisions:
+
+| Name encountered during research | Canonical entry |
+|---|---|
+| Create | [Anything](projects/anything/) |
+| MGX / MetaGPT X | [Atoms](projects/atoms/) |
+| TRAE SOLO | [TRAE Work](projects/trae-work/) |
+| Devin Desktop / Desktop mode | [Devin](projects/devin/) |
+| Cursor Design Mode | [Cursor](projects/cursor/) |
+| Codex Browser / Annotations / Sites / Product Design workflows | [Codex](projects/openai-codex/) |
+| v0 Design Mode | [v0](projects/vercel-v0/) |
+| Uizard Autodesigner | [Uizard](projects/uizard/) |
+| Canva AI / Magic Design | [Canva Magic Design](projects/canva-magic-design/) |
 
 ## Panorama
 
@@ -37,20 +62,23 @@ flowchart TD
 | [Claude Design](projects/anthropic-claude-design/) | Anthropic | Agent-first design | Active / beta | Closed |
 | [Codex](projects/openai-codex/) | OpenAI | Coding agent with visual workflow | Active | Core/CLI/App Server open; primary rich clients closed |
 | [Cursor](projects/cursor/) | Anysphere | Coding agent with visual workflow | Active | Closed |
-| [TRAE / TRAE Work](projects/trae/) | ByteDance | Coding agent with visual workflow | Active | Closed |
+| [TRAE Work](projects/trae-work/) | ByteDance / TRAE | Agent workspace with Design Mode | Active | Closed |
 | [QoderWork Design](projects/qoderwork-design/) | Alibaba / Qoder | Agent-first design surface | Active | Closed |
 | [Replit Design](projects/replit-design/) | Replit | Agent-first design surface | Active | Closed |
 | [CodeBuddy](projects/tencent-codebuddy/) | Tencent | Coding agent with design workflow | Active | Closed |
 | [Comate](projects/baidu-comate/) | Baidu | Coding agent with design workflow | Active | Closed |
+| [Devin](projects/devin/) | Cognition | Coding agent with visual/runtime workflow | Active | Closed |
 | [v0](projects/vercel-v0/) | Vercel | AI app builder with visual editing | Active | Closed |
 | [Lovable](projects/lovable/) | Lovable | AI app builder with visual editing | Active | Closed |
 | [Windsurf](projects/windsurf/) | Cognition | Coding agent with visual workflow | Active | Closed |
 | [GitHub Spark](projects/github-spark/) | GitHub | AI app builder with visual editing | Active | Closed |
+| [Anything (formerly Create)](projects/anything/) | Anything | AI app builder with design reasoning | Active | Closed |
 | [Fusion](projects/builderio-fusion/) | Builder.io | Code-native visual surface | Active | Closed |
 | [Stitch](projects/google-stitch/) | Google Labs | Agent-first design | Active | Closed |
 | [Google Antigravity](projects/google-antigravity/) | Google | Coding agent with visual workflow | Active | Closed client; agent API available |
 | [Base44](projects/base44/) | Wix / Base44 | AI app builder with visual editing | Active | Closed |
 | [Bolt.new](projects/bolt-new/) | StackBlitz | AI app builder with design-system workflow | Active | Closed |
+| [Atoms (formerly MGX / MetaGPT X)](projects/atoms/) | MetaGPT / Atoms | Multi-agent app builder with visual editing | Active | Commercial product; related MetaGPT open source |
 | [Subframe](projects/subframe/) | Subframe | Design-to-code / code-native design | Active | Closed |
 | [FlutterFlow](projects/flutterflow/) | FlutterFlow | Visual builder with coding-agent integration | Active | Closed |
 | [Figma Make](projects/figma-make/) | Figma | AI design + app builder | Active | Closed |
@@ -59,13 +87,13 @@ flowchart TD
 | [Anima](projects/anima/) | Anima | Design-to-code / agent integration | Active | Closed |
 | [Kombai](projects/kombai/) | Kombai | Design engineering agent | Active | Closed |
 | [Miaoda (秒哒)](projects/baidu-miaoda/) | Baidu | AI app builder with visual editing | Active | Closed |
-| [MGX / Atoms](projects/mgx/) | MetaGPT / MGX | AI app builder | Active | Closed / mixed ecosystem |
 | [Onlook](projects/onlook/) | Onlook | Code-native visual surface | Active | Open source |
 | [Tempo](projects/tempo/) | Tempo Labs | Code-native visual surface | Active | Closed |
 | [stagewise](projects/stagewise/) | stagewise | Code-native visual surface | Active | Open source |
 | [Dosmos](projects/dosmos/) | Dosmos | Code-native visual surface | Active | Source status unconfirmed |
 | [Retune](projects/retune/) | Retune | Visual manipulation layer | Active | Closed |
 | [Tuna](projects/tuna/) | Tuna contributors | Visual manipulation layer | Active | Open-source repository |
+| [onUI](projects/onui/) | onUI contributors | Visual interaction primitive | Active | Open source |
 | [Design Canvas](projects/design-canvas/) | Design Canvas | Agent-controlled runtime canvas | Active | Closed / source status unconfirmed |
 | [Rivet](projects/rivet-design/) | Rivet Design | Visual manipulation layer | Active | Closed |
 | [pen.dev](projects/pen-dev/) | pen.dev | Agent-controllable design canvas | Active | Closed product; open design format |
@@ -103,6 +131,7 @@ flowchart TD
 4. For open-source projects, future deep dives should pin commit SHAs before recording implementation details.
 5. Keep discontinued/acquired products as history instead of deleting them.
 6. Categories may change as products evolve; directory slugs should remain stable.
+7. Record aliases/rebrands inside the canonical project directory rather than creating duplicate project entries.
 
 ## Repository structure
 

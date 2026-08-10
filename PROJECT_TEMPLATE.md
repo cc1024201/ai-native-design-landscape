@@ -8,6 +8,7 @@
 | Category | |
 | Status | |
 | Source availability | |
+| Previous names / aliases | |
 
 ## Scope
 
@@ -25,6 +26,10 @@ Describe only this project.
 - **Runtime / rendering:** 
 - **Persistence / versioning:** 
 - **Packaging / deployment:** 
+
+## Product continuity
+
+Record renames, rebrands, acquisitions, or direct predecessor identity only when supported by evidence.
 
 ## Evidence boundary
 
