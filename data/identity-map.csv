@@ -1,0 +1,23 @@
+encountered_name,canonical_slug,decision,note
+Create,anything,alias,Current product name is Anything; count one record
+MGX,atoms,alias,Count under the current Atoms product lineage
+MetaGPT X,atoms,alias,Count under the current Atoms product lineage
+TRAE SOLO,trae-work,renamed-surface,Count the current Design workspace under TRAE Work
+Devin Desktop,devin,current-surface,Count the current desktop surface under Devin
+Devin cloud Desktop mode,devin,current-surface,Count the cloud surface under Devin
+Devin installable PWA,devin,current-surface,Count the installable surface under Devin
+Windsurf Editor through 2026-06-01,windsurf,historical-cutoff,Preserve the independently attributable pre-transition lineage as one historical record
+Post-transition Windsurf / Devin Desktop,devin,successor-boundary,Current implementation belongs to Devin rather than extending the historical Windsurf record
+Cursor Design Mode,cursor,product-mode,Count inside Cursor because it is not an independently surfaced product lineage
+Codex Browser,openai-codex,product-surface,Count inside the multi-surface Codex product
+Codex Annotations,openai-codex,product-surface,Count inside the multi-surface Codex product
+Codex Sites,openai-codex,product-surface,Count inside the multi-surface Codex product
+Codex Product Design workflow,openai-codex,product-surface,Count inside the multi-surface Codex product
+v0 Design Mode,vercel-v0,product-mode,Count inside v0 because it is not an independently surfaced product lineage
+Uizard Autodesigner,uizard,product-feature,Count inside Uizard
+Canva AI,canva-magic-design,product-family,Count with the Magic Design lineage represented by one dossier
+Magic Design,canva-magic-design,product-family,Count with the Canva AI lineage represented by one dossier
+Galileo AI / usegalileo.ai through historical cutoff,galileo-ai,historical-cutoff,Preserve the independently attributable ended product lineage
+Current usegalileo.ai redirect and successor product,google-stitch,successor-boundary,Current product evidence belongs to Stitch and does not extend the Galileo dossier
+Motiff UI Editor,motiff,same-lineage-era,One dossier preserves the native-editor era
+Motiff AI generator,motiff,same-lineage-era,One dossier preserves the later generator era under the same Motiff lineage

@@ -1,0 +1,193 @@
+{
+  "schemaVersion": "0.2",
+  "snapshot": "2026-08-11",
+  "units": {
+    "product": "One independently identifiable product, open-source project, or independently surfaced design workspace represented by one canonical project directory.",
+    "teamLineage": "The independently attributable product or maintainer lineage responsible for that record. Acquired and historical lineages remain distinct.",
+    "publicTeamBoundary": "Public evidence usually cannot reveal stable internal squads. Team-like scope is therefore reported using both consolidated organization or maintainer umbrellas and distinct product or maintainer lineages, never as a precise headcount of internal teams.",
+    "organization": "The canonical owning organization or maintainer umbrella used by this census to consolidate related team lineages. It is a research counting unit, not necessarily the ultimate legal corporate parent.",
+    "designDefinition": "An operational answer to what the user is doing when the product calls or treats work as design. Definitions are multi-label because one product may embody several answers.",
+    "productForm": "The primary user-facing packaging of the product in this snapshot. Each record receives exactly one primary form so the distribution is countable.",
+    "architectureFamily": "A decisive implementation arrangement connecting artifact authority, visual projection, agent control, mutation, and persistence. Records have one primary family and may have additional families."
+  },
+  "censusBoundary": {
+    "includeWhen": [
+      "The object is an independently identifiable product, open-source project, or independently surfaced Design workspace rather than only a feature alias.",
+      "At least one evidenced ordinary-user loop treats visual or interactive creation, authoring, correction, decision, governance, translation, delivery, or coordination as Design work.",
+      "Public evidence establishes the product boundary and working artifact authority; historical entries also require an independently material lineage and explicit cutoff."
+    ],
+    "excludeWhen": [
+      "It is only a generic model, API, or media generator without a design-specific artifact loop.",
+      "It is a generic coding or execution agent with no evidenced visual or Design-specific surface.",
+      "It is a traditional tool whose AI-native product or workspace cannot be independently evidenced.",
+      "It is an alias, rebrand, product mode, or surface already owned by a canonical record."
+    ],
+    "knownCoverageLimits": [
+      "Discovery currently depends mainly on publicly reachable English- and Chinese-language primary material, public source and package registries, shipped distributions, and observable product surfaces.",
+      "Stealth teams, private deployments, inaccessible paid surfaces, and products documented only in unreviewed languages can be missed.",
+      "Closed products may contain distinct internal mechanisms that cannot be separated beyond their observable authority and protocol boundaries."
+    ]
+  },
+  "designDefinitions": [
+    {
+      "id": "delegated-creation",
+      "title": "Design as delegated creation",
+      "operationalTest": "A person supplies intent or references and an AI or agent creates and repeatedly refines the visual or interactive artifact.",
+      "boundary": "A one-shot template recommendation without an artifact refinement loop is insufficient."
+    },
+    {
+      "id": "native-artifact-authoring",
+      "title": "Design as native artifact authoring",
+      "operationalTest": "The central work is creating or editing a structured design, scene, page, site, or timeline graph that remains a first-class artifact.",
+      "boundary": "A screenshot or transient runtime DOM is not a native authoring artifact."
+    },
+    {
+      "id": "code-visual-authoring",
+      "title": "Design as visual authoring of executable source",
+      "operationalTest": "A visual surface renders executable source or a running application and changes ultimately return to the code or workspace that owns implementation authority.",
+      "boundary": "One-way design export to code belongs to design-code translation unless later visual work returns to the same source authority."
+    },
+    {
+      "id": "runtime-correction",
+      "title": "Design as runtime correction",
+      "operationalTest": "A person selects, annotates, adjusts, or demonstrates a change on a running artifact so an agent or deterministic writer can repair the implementation.",
+      "boundary": "Passive preview or screenshots without a targetable correction path are visual coordination instead."
+    },
+    {
+      "id": "variant-decision",
+      "title": "Design as variant exploration and decision",
+      "operationalTest": "The product makes alternative directions coexist, supports comparison or refinement, and has an explicit promotion or selection step.",
+      "boundary": "Undo history or sequential regeneration alone is not parallel design exploration."
+    },
+    {
+      "id": "system-governance",
+      "title": "Design as system governance",
+      "operationalTest": "The product extracts, defines, publishes, applies, or validates reusable components, tokens, brand rules, or layout conventions that constrain later work.",
+      "boundary": "Merely accepting a color reference or component screenshot is not a governed design system."
+    },
+    {
+      "id": "design-code-translation",
+      "title": "Design as design-code translation and grounding",
+      "operationalTest": "The decisive workflow converts, joins, or grounds identities, components, tokens, or structure across a design artifact and a codebase.",
+      "boundary": "Generic image-to-code reconstruction without preserved structure or repository grounding is delegated creation."
+    },
+    {
+      "id": "product-delivery",
+      "title": "Design as end-to-end product delivery",
+      "operationalTest": "Design work is inseparable from creating a functional app or site and advancing it through behavior, data, testing, publication, or deployment.",
+      "boundary": "A runnable prototype without a product or release path does not qualify by itself."
+    },
+    {
+      "id": "visual-coordination",
+      "title": "Design as visual coordination and evidence",
+      "operationalTest": "The visual artifact, board, screenshot, recording, diagram, or spatial surface primarily coordinates, explains, reviews, or verifies agent work rather than owning the implementation.",
+      "boundary": "A visual surface that directly owns the canonical graph or source belongs to native or code-visual authoring."
+    }
+  ],
+  "productForms": [
+    {
+      "id": "standalone-design-agent",
+      "title": "Standalone design-agent workspace",
+      "test": "A dedicated product whose primary entry is AI-mediated design creation or refinement."
+    },
+    {
+      "id": "agent-platform-design-surface",
+      "title": "Design surface inside an agent platform",
+      "test": "A named Design workspace or mode is one first-class surface within a broader coding or general-agent product."
+    },
+    {
+      "id": "general-agent-visual-tools",
+      "title": "General agent with visual tools",
+      "test": "The product remains a general coding or execution agent; browser, preview, annotation, computer-use, or artifact viewers provide the visual path."
+    },
+    {
+      "id": "ai-app-site-builder",
+      "title": "AI app or site builder",
+      "test": "The primary product path turns intent into a hosted application or site and includes visual refinement and delivery."
+    },
+    {
+      "id": "code-native-visual-ide",
+      "title": "Code-native visual editor or IDE",
+      "test": "The product opens or creates executable source and makes its running projection a central visual authoring surface."
+    },
+    {
+      "id": "runtime-overlay-bridge",
+      "title": "Runtime overlay or context bridge",
+      "test": "An injected overlay, extension, compiler bridge, or preview picker captures targets and visual intent for another agent or editor."
+    },
+    {
+      "id": "agent-controllable-canvas",
+      "title": "Agent-controllable canvas or domain editor",
+      "test": "A first-class visual artifact can be read or mutated by an external agent through tools, MCP, CLI, or a headless API."
+    },
+    {
+      "id": "design-code-bridge",
+      "title": "Design-code bridge",
+      "test": "The product's primary value is moving or grounding structured context between design and code rather than owning the full creation environment."
+    },
+    {
+      "id": "established-visual-platform",
+      "title": "Established visual platform with AI",
+      "test": "A pre-existing design, site, or application-authoring platform embeds agentic generation or control into its native artifact model."
+    },
+    {
+      "id": "visual-decision-verification-workspace",
+      "title": "Visual decision or verification workspace",
+      "test": "The central surface arranges, compares, reviews, or captures alternatives and runtime evidence before another authority adopts the result."
+    },
+    {
+      "id": "visual-editor-infrastructure",
+      "title": "Visual-editor infrastructure",
+      "test": "The public project is primarily an embeddable editor kernel, schema, or interaction primitive rather than a complete end-user workspace."
+    }
+  ],
+  "architectureFamilies": [
+    {
+      "id": "source-authority-live-projection",
+      "title": "Source-authority live projection",
+      "mechanism": "Repository or workspace files are authoritative; a live visual projection maps deterministic edits or agent intent back to those files."
+    },
+    {
+      "id": "runtime-intent-relay",
+      "title": "Runtime-intent relay",
+      "mechanism": "A runtime overlay or browser bridge captures target context and desired change; another agent or editor owns durable source mutation."
+    },
+    {
+      "id": "native-graph-authority",
+      "title": "Native graph authority",
+      "mechanism": "A design, scene, site, page, or timeline graph is the canonical editable artifact and human or agent operations mutate its native objects."
+    },
+    {
+      "id": "external-agent-canvas",
+      "title": "External-agent canvas",
+      "mechanism": "A separate visual artifact or canvas is exposed to third-party agents through MCP, skills, CLI, plugins, or a headless API."
+    },
+    {
+      "id": "hosted-generated-artifact",
+      "title": "Hosted generated-artifact workspace",
+      "mechanism": "The provider owns generated code or artifact revisions and chat, visual, and code editing converge inside that hosted workspace."
+    },
+    {
+      "id": "managed-app-project",
+      "title": "Managed application-project graph",
+      "mechanism": "A platform project spans UI, logic, data, backend, configuration, and release state; agent and visual edits mutate that managed graph."
+    },
+    {
+      "id": "design-code-materialization",
+      "title": "Design-code materialization",
+      "mechanism": "A design graph, capture, design system, or semantic join is compiled, exported, reconstructed, or grounded into a distinct code authority."
+    },
+    {
+      "id": "filesystem-agent-visual-evidence",
+      "title": "Filesystem agent with visual evidence",
+      "mechanism": "Files and Git remain authoritative while canvases, screenshots, recordings, diagrams, or previews coordinate and verify the agent's work."
+    },
+    {
+      "id": "candidate-promotion",
+      "title": "Candidate isolation and promotion",
+      "mechanism": "Alternative designs, artifacts, or worktrees are isolated and compared; one candidate is explicitly selected, applied, or committed."
+    }
+  ],
+  "evidenceDepths": ["source", "architecture"],
+  "lifecycles": ["active", "active-transition", "historical", "sunsetting"]
+}

@@ -7,7 +7,7 @@
 | Field | Value |
 |---|---|
 | Organization / team | |
-| Category | |
+| Product boundary / ordinary job | |
 | Status | |
 | Source availability | |
 | Previous names / aliases | |
@@ -36,6 +36,8 @@ Examples:
 - a canvas editor may use `document graph → operations → renderer → collaboration → version semantics`.
 
 These are examples, not replacement templates. A project can require a different sequence or a unique section that appears nowhere else in the repository.
+
+Do not place the global Design-definition, product-form or architecture-family labels in this dossier. Establish this project's facts here, then classify the record in `data/census.csv` against the public tests in `data/taxonomy.json`. That separation prevents a project-specific narrative from silently becoming a global category.
 
 ## Optional investigation lenses
 
@@ -86,6 +88,19 @@ When history changes the conclusion, commit evidence should explain that archite
 - **Not established:** state important capabilities or guarantees that the evidence does not prove.
 
 Cross-project comparison belongs in the repository root, never in the project dossier.
+
+## Census handoff
+
+After the dossier evidence is stable, update the corresponding `data/census.csv` row:
+
+- canonical `team_lineage` and census `organization` counting unit;
+- any alias, renamed surface or historical/successor boundary needed in `data/identity-map.csv` to avoid double counting;
+- one `primary_definition` plus evidence-supported additional definitions;
+- one `product_form`;
+- one `primary_architecture` plus evidence-supported additional architectures;
+- `evidence_depth` and `lifecycle`.
+
+Use only identifiers declared in `data/taxonomy.json`. Run `./scripts/verify-census.ps1 -Json` before treating the global count as updated.
 
 ## Research gaps
 
