@@ -37,7 +37,7 @@ Examples:
 
 These are examples, not replacement templates. A project can require a different sequence or a unique section that appears nowhere else in the repository.
 
-Do not place the global Design-definition, product-form or architecture-family labels in this dossier. Establish this project's facts here, then classify the record in `data/census.csv` against the public tests in `data/taxonomy.json`. That separation prevents a project-specific narrative from silently becoming a global category.
+Do not place repository-level Design-definition, product-form or architecture-family labels in this dossier. Establish this project's facts here, then classify the record in `data/census.csv` against the public tests in `data/taxonomy.json`. That separation prevents a project-specific narrative from silently becoming a cross-project category.
 
 ## Optional investigation lenses
 
@@ -89,18 +89,18 @@ When history changes the conclusion, commit evidence should explain that archite
 
 Cross-project comparison belongs in the repository root, never in the project dossier.
 
-## Census handoff
+## Verified-sample handoff
 
 After the dossier evidence is stable, update the corresponding `data/census.csv` row:
 
-- canonical `team_lineage` and census `organization` counting unit;
+- canonical `team_lineage` and public `organization` counting unit;
 - any alias, renamed surface or historical/successor boundary needed in `data/identity-map.csv` to avoid double counting;
 - one `primary_definition` plus evidence-supported additional definitions;
 - one `product_form`;
 - one `primary_architecture` plus evidence-supported additional architectures;
 - `evidence_depth` and `lifecycle`.
 
-Use only identifiers declared in `data/taxonomy.json`. Run `./scripts/verify-census.ps1 -Json` before treating the global count as updated.
+Use only identifiers declared in `data/taxonomy.json`. Run `./scripts/verify-census.ps1 -Json` before treating any derived sample count as updated. For a newly discovered record, its `data/candidates.csv` decision and `data/verification-waves.csv` review must already be present; legacy seeds are the documented exception.
 
 ## Research gaps
 

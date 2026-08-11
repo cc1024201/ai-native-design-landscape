@@ -1,21 +1,21 @@
-# AI-Native Design Landscape — v0.1 evidence atlas
+# AI-Native Design Landscape — v0.1 legacy evidence atlas
 
-> Preserved detailed mechanism synthesis from the first evidence-bounded research pass. The current census, definitions and primary conclusions now live in [`README.md`](README.md); machine-readable classifications live in [`data/census.csv`](data/census.csv), [`data/taxonomy.json`](data/taxonomy.json) and [`data/identity-map.csv`](data/identity-map.csv).
+> Historical mechanism synthesis for exactly the 63 dossiers in the legacy seed pass. This document is **not** the current candidate universe, a discovery-coverage report or a global frame. Current verified-sample findings and explicit unknowns live in [`README.md`](README.md); the discovery protocol and open candidate register live in [`DISCOVERY.md`](DISCOVERY.md) and [`data/candidates.csv`](data/candidates.csv).
 
-**Snapshot:** 2026-08-11 · **Version:** v0.1 · **Coverage:** 63 canonical project directories
+**Legacy pass snapshot:** 2026-08-11 · **Version:** v0.1 · **Coverage:** 63 legacy seed dossiers only
 
-## Current progress
+## Status of the legacy pass
 
-- **Canonical coverage:** 63 project directories registered and coverage-audited against the research collected for v0.1.
+- **Audited seed set:** 63 project directories registered against the names collected before the reproducible discovery protocol existed; the original search routes and denominator are unknown.
 - **Evidence-bounded deep dossiers complete:** 63 / 63 — 20 Source-level dossiers plus Claude Design, Replit Design, QoderWork Design, TRAE Work Design, Cursor, Tencent CodeBuddy, Baidu Comate, Devin, v0, Lovable, GitHub Spark, Anything, Fusion, Base44, Bolt.new, Atoms, Subframe, FlutterFlow, Magic Patterns, Anima, Tempo, Rivet, Uizard, Webflow AI, Firebase Studio, Kombai, Miaoda, Canva Magic Design, Design Canvas, historical Windsurf, Diagram, Galileo AI, Motiff, Stitch, Google Antigravity, Figma Make, Alloy, pen.dev, Paper, Clearly, MagicPath, Framer AI and Relume at Architecture-level with the available closed-source or published-distribution evidence boundary reached.
 - **Source-level subset:** 20 / 63 — Onlook, stagewise, Dosmos, Retune, Tuna, Nimbalyst, OpenPencil (`open-pencil/open-pencil`), OpenPencil (`ZSeven-W/openpencil`), Reframe, Puck, onUI, Open CoDesign, Agentation, Code Inspector, Open Design, Monet, Superdesign, Figwright, mcp_excalidraw, Codex.
 - **Remaining dossiers:** 0 / 63 at Seed, Product-level, or unfinished Architecture-level depth.
-- **Repository structure:** canonical project registry, project template, evidence rules, lifecycle/alias rules, and global panorama are established.
-- **Current milestone:** v0.1 breadth and evidence-bounded depth are complete across the audited registry.
+- **Repository structure:** the legacy registry, project template, evidence rules, lifecycle/alias rules and a mechanism panorama for this seed set were established.
+- **Closed milestone:** v0.1 depth is complete for the audited 63-record seed set only. It makes no claim that the set covers the field.
 
 ## Continuing research
 
-The first evidence-bounded pass is complete, but the landscape is not frozen. Future work remains depth-first and project-specific: refresh lifecycle/product facts, follow newly public implementation paths, upgrade an Architecture-level dossier only when its evidence ceiling moves, and update the global synthesis when a project establishes a genuinely new mechanism.
+The first evidence-bounded pass is complete, but the landscape is not frozen. Future work remains depth-first and project-specific: refresh lifecycle/product facts, follow newly public implementation paths, upgrade an Architecture-level dossier only when its evidence ceiling moves, and update the current root synthesis when a project establishes a genuinely new mechanism.
 
 The earlier ten-part chain remains a **research checklist**, not a required structure:
 
@@ -590,6 +590,6 @@ mcp_excalidraw also exposes a distribution-truth boundary that product matrices 
 
 ## Milestone status
 
-**v0.1 breadth:** complete for the audited 63-project registry.
+**v0.1 seed-set breadth:** closed for the audited 63-project registry; this is not a claim of discovery breadth outside that legacy set.
 
-**v0.1 depth:** complete — 63 evidence-bounded deep dossiers (20 Source-level and 43 Architecture-level), 0 remaining.
+**v0.1 dossier depth:** complete within that seed set — 63 evidence-bounded deep dossiers (20 Source-level and 43 Architecture-level), 0 remaining.

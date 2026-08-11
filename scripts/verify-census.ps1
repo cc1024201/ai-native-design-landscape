@@ -11,16 +11,33 @@ $censusPath = Join-Path $repoRoot 'data/census.csv'
 $organizationsPath = Join-Path $repoRoot 'data/organizations.csv'
 $identityMapPath = Join-Path $repoRoot 'data/identity-map.csv'
 $taxonomyPath = Join-Path $repoRoot 'data/taxonomy.json'
+$candidatesPath = Join-Path $repoRoot 'data/candidates.csv'
+$discoveryBatchesPath = Join-Path $repoRoot 'data/discovery-batches.csv'
+$verificationWavesPath = Join-Path $repoRoot 'data/verification-waves.csv'
+$discoveryProtocolPath = Join-Path $repoRoot 'DISCOVERY.md'
 $projectsPath = Join-Path $repoRoot 'projects'
 $rootReadmePath = Join-Path $repoRoot 'README.md'
 
 $records = @(Import-Csv -LiteralPath $censusPath)
 $organizations = @(Import-Csv -LiteralPath $organizationsPath)
 $identityMap = @(Import-Csv -LiteralPath $identityMapPath)
+$candidates = @(Import-Csv -LiteralPath $candidatesPath)
+$discoveryBatches = @(Import-Csv -LiteralPath $discoveryBatchesPath)
+$verificationWaves = @(Import-Csv -LiteralPath $verificationWavesPath)
 $taxonomy = Get-Content -LiteralPath $taxonomyPath -Raw | ConvertFrom-Json
 $errors = [System.Collections.Generic.List[string]]::new()
 
 function Split-Ids {
+    param([AllowEmptyString()][string]$Value)
+
+    if ([string]::IsNullOrWhiteSpace($Value)) {
+        return @()
+    }
+
+    return @($Value.Split('|', [System.StringSplitOptions]::RemoveEmptyEntries))
+}
+
+function Split-Refs {
     param([AllowEmptyString()][string]$Value)
 
     if ([string]::IsNullOrWhiteSpace($Value)) {
@@ -100,6 +117,229 @@ foreach ($unused in @($organizationIds | Where-Object { $_ -notin $records.organ
 $duplicateEncounteredNames = @($identityMap | Group-Object encountered_name | Where-Object Count -gt 1)
 foreach ($duplicate in $duplicateEncounteredNames) {
     $errors.Add("Identity map repeats encountered name '$($duplicate.Name)'.")
+}
+
+if (-not (Test-Path -LiteralPath $discoveryProtocolPath)) {
+    $errors.Add('DISCOVERY.md is missing.')
+}
+
+$candidateStatuses = @('pending', 'included', 'duplicate', 'excluded')
+$candidateEvidenceKinds = @('legacy-dossier', 'first-party', 'source-repository', 'package-registry', 'secondary-discovery', 'research-paper')
+$candidateIds = @($candidates.candidate_id)
+$batchIds = @($discoveryBatches.batch_id)
+
+foreach ($duplicate in @($candidates | Group-Object candidate_id | Where-Object Count -gt 1)) {
+    $errors.Add("Candidate register repeats id '$($duplicate.Name)'.")
+}
+foreach ($duplicate in @($discoveryBatches | Group-Object batch_id | Where-Object Count -gt 1)) {
+    $errors.Add("Discovery batch ledger repeats id '$($duplicate.Name)'.")
+}
+
+foreach ($candidate in $candidates) {
+    foreach ($requiredField in @('candidate_id', 'display_name', 'status', 'first_seen_batch', 'discovery_url', 'evidence_kind', 'team_region', 'reviewed_on', 'decision_reason')) {
+        if ([string]::IsNullOrWhiteSpace($candidate.$requiredField)) {
+            $errors.Add("Candidate '$($candidate.candidate_id)' has an empty required field '$requiredField'.")
+        }
+    }
+
+    if ($candidate.status -notin $candidateStatuses) {
+        $errors.Add("Candidate '$($candidate.candidate_id)' has unknown status '$($candidate.status)'.")
+    }
+    if ($candidate.evidence_kind -notin $candidateEvidenceKinds) {
+        $errors.Add("Candidate '$($candidate.candidate_id)' has unknown evidence kind '$($candidate.evidence_kind)'.")
+    }
+    if ($candidate.first_seen_batch -notin $batchIds) {
+        $errors.Add("Candidate '$($candidate.candidate_id)' references unknown first-seen batch '$($candidate.first_seen_batch)'.")
+    }
+
+    $reviewedDate = [datetime]::MinValue
+    if (-not [datetime]::TryParseExact($candidate.reviewed_on, 'yyyy-MM-dd', [Globalization.CultureInfo]::InvariantCulture, [Globalization.DateTimeStyles]::None, [ref]$reviewedDate)) {
+        $errors.Add("Candidate '$($candidate.candidate_id)' has invalid reviewed_on '$($candidate.reviewed_on)'.")
+    }
+
+    if ($candidate.team_region -ne 'unknown' -and [string]::IsNullOrWhiteSpace($candidate.region_evidence_url)) {
+        $errors.Add("Candidate '$($candidate.candidate_id)' assigns team_region '$($candidate.team_region)' without region evidence.")
+    }
+
+    $target = $candidate.resolution_target
+    if ($candidate.status -eq 'included') {
+        if ($target -notmatch '^census:(.+)$') {
+            $errors.Add("Included candidate '$($candidate.candidate_id)' must resolve to census:<slug>.")
+        }
+        elseif ($Matches[1] -notin $records.slug) {
+            $errors.Add("Included candidate '$($candidate.candidate_id)' resolves to missing census slug '$($Matches[1])'.")
+        }
+    }
+    elseif ($candidate.status -eq 'duplicate') {
+        if ([string]::IsNullOrWhiteSpace($target)) {
+            $errors.Add("Duplicate candidate '$($candidate.candidate_id)' has no resolution target.")
+        }
+        elseif ($target -match '^census:(.+)$') {
+            if ($Matches[1] -notin $records.slug) {
+                $errors.Add("Duplicate candidate '$($candidate.candidate_id)' resolves to missing census slug '$($Matches[1])'.")
+            }
+        }
+        elseif ($target -match '^candidate:(.+)$') {
+            if ($Matches[1] -notin $candidateIds) {
+                $errors.Add("Duplicate candidate '$($candidate.candidate_id)' resolves to missing candidate '$($Matches[1])'.")
+            }
+            elseif ($Matches[1] -eq $candidate.candidate_id) {
+                $errors.Add("Duplicate candidate '$($candidate.candidate_id)' resolves to itself.")
+            }
+        }
+        else {
+            $errors.Add("Duplicate candidate '$($candidate.candidate_id)' has invalid resolution target '$target'.")
+        }
+    }
+    elseif (-not [string]::IsNullOrWhiteSpace($target)) {
+        $errors.Add("Candidate '$($candidate.candidate_id)' with status '$($candidate.status)' must not have a resolution target.")
+    }
+
+    if ($candidate.discovery_url -notmatch '^[a-z]+://') {
+        $candidateEvidencePath = Join-Path $repoRoot $candidate.discovery_url.Replace('/', [IO.Path]::DirectorySeparatorChar)
+        if (-not (Test-Path -LiteralPath $candidateEvidencePath)) {
+            $errors.Add("Candidate '$($candidate.candidate_id)' references missing local discovery evidence '$($candidate.discovery_url)'.")
+        }
+    }
+}
+
+$candidateNewBatchMentions = @{}
+foreach ($batch in $discoveryBatches) {
+    foreach ($requiredField in @('batch_id', 'executed_on', 'channel', 'language_scope', 'region_scope', 'query_count', 'result_cards_reviewed', 'queries', 'limitations')) {
+        if ([string]::IsNullOrWhiteSpace($batch.$requiredField)) {
+            $errors.Add("Discovery batch '$($batch.batch_id)' has an empty required field '$requiredField'.")
+        }
+    }
+
+    $batchDate = [datetime]::MinValue
+    if (-not [datetime]::TryParseExact($batch.executed_on, 'yyyy-MM-dd', [Globalization.CultureInfo]::InvariantCulture, [Globalization.DateTimeStyles]::None, [ref]$batchDate)) {
+        $errors.Add("Discovery batch '$($batch.batch_id)' has invalid executed_on '$($batch.executed_on)'.")
+    }
+
+    $queryCount = 0
+    $resultCount = 0
+    if (-not [int]::TryParse($batch.query_count, [ref]$queryCount) -or $queryCount -lt 0) {
+        $errors.Add("Discovery batch '$($batch.batch_id)' has invalid query_count '$($batch.query_count)'.")
+    }
+    if (-not [int]::TryParse($batch.result_cards_reviewed, [ref]$resultCount) -or $resultCount -lt 0) {
+        $errors.Add("Discovery batch '$($batch.batch_id)' has invalid result_cards_reviewed '$($batch.result_cards_reviewed)'.")
+    }
+
+    if ($batch.batch_id -ne 'LEGACY-000') {
+        $queries = @(Split-Refs $batch.queries)
+        if ($queries.Count -ne $queryCount) {
+            $errors.Add("Discovery batch '$($batch.batch_id)' declares $queryCount queries but records $($queries.Count).")
+        }
+    }
+
+    $newRefs = @(Split-Refs $batch.new_candidate_refs)
+    $repeatRefs = @(Split-Refs $batch.repeat_candidate_refs)
+    foreach ($duplicate in @($newRefs | Group-Object | Where-Object Count -gt 1)) {
+        $errors.Add("Discovery batch '$($batch.batch_id)' repeats new candidate ref '$($duplicate.Name)'.")
+    }
+    foreach ($duplicate in @($repeatRefs | Group-Object | Where-Object Count -gt 1)) {
+        $errors.Add("Discovery batch '$($batch.batch_id)' repeats prior candidate ref '$($duplicate.Name)'.")
+    }
+    foreach ($overlap in @($newRefs | Where-Object { $_ -in $repeatRefs })) {
+        $errors.Add("Discovery batch '$($batch.batch_id)' lists '$overlap' as both new and repeated.")
+    }
+
+    foreach ($ref in $newRefs) {
+        if ($ref -notin $candidateIds) {
+            $errors.Add("Discovery batch '$($batch.batch_id)' references unknown new candidate '$ref'.")
+            continue
+        }
+        $candidate = $candidates | Where-Object candidate_id -eq $ref | Select-Object -First 1
+        if ($candidate.first_seen_batch -ne $batch.batch_id) {
+            $errors.Add("Candidate '$ref' says first seen in '$($candidate.first_seen_batch)' but is new in '$($batch.batch_id)'.")
+        }
+        if (-not $candidateNewBatchMentions.ContainsKey($ref)) {
+            $candidateNewBatchMentions[$ref] = 0
+        }
+        $candidateNewBatchMentions[$ref]++
+    }
+    foreach ($ref in $repeatRefs) {
+        if ($ref -notin $candidateIds) {
+            $errors.Add("Discovery batch '$($batch.batch_id)' references unknown repeated candidate '$ref'.")
+            continue
+        }
+        $candidate = $candidates | Where-Object candidate_id -eq $ref | Select-Object -First 1
+        if ($candidate.first_seen_batch -eq $batch.batch_id) {
+            $errors.Add("Candidate '$ref' cannot be both first seen and repeated within '$($batch.batch_id)'.")
+        }
+    }
+}
+
+foreach ($candidate in @($candidates | Where-Object first_seen_batch -ne 'LEGACY-000')) {
+    $mentionCount = if ($candidateNewBatchMentions.ContainsKey($candidate.candidate_id)) { $candidateNewBatchMentions[$candidate.candidate_id] } else { 0 }
+    if ($mentionCount -ne 1) {
+        $errors.Add("Candidate '$($candidate.candidate_id)' must appear exactly once in a batch new_candidate_refs list; found $mentionCount.")
+    }
+}
+
+$legacyBatches = @($discoveryBatches | Where-Object batch_id -eq 'LEGACY-000')
+$legacyCandidates = @($candidates | Where-Object first_seen_batch -eq 'LEGACY-000')
+if ($legacyBatches.Count -ne 1) {
+    $errors.Add("Discovery ledger must contain exactly one LEGACY-000 import batch; found $($legacyBatches.Count).")
+}
+else {
+    $legacyCardCount = [int]$legacyBatches[0].result_cards_reviewed
+    if ($legacyCardCount -ne $legacyCandidates.Count) {
+        $errors.Add("LEGACY-000 declares $legacyCardCount imported records but candidate register contains $($legacyCandidates.Count) legacy seeds.")
+    }
+}
+foreach ($candidate in $legacyCandidates) {
+    if ($candidate.status -ne 'included' -or $candidate.evidence_kind -ne 'legacy-dossier') {
+        $errors.Add("Legacy candidate '$($candidate.candidate_id)' must be an included legacy-dossier row.")
+    }
+}
+foreach ($candidate in @($candidates | Where-Object first_seen_batch -ne 'LEGACY-000')) {
+    if ($candidate.evidence_kind -eq 'legacy-dossier') {
+        $errors.Add("Nonlegacy candidate '$($candidate.candidate_id)' cannot use legacy-dossier evidence.")
+    }
+}
+
+foreach ($duplicate in @($verificationWaves | Group-Object wave_id, candidate_id | Where-Object Count -gt 1)) {
+    $errors.Add("Verification ledger repeats wave/candidate pair '$($duplicate.Name)'.")
+}
+foreach ($review in $verificationWaves) {
+    foreach ($requiredField in @('wave_id', 'candidate_id', 'selection_stratum', 'selection_reason', 'outcome', 'reviewed_on', 'decisive_evidence')) {
+        if ([string]::IsNullOrWhiteSpace($review.$requiredField)) {
+            $errors.Add("Verification review '$($review.wave_id)/$($review.candidate_id)' has an empty required field '$requiredField'.")
+        }
+    }
+
+    $candidate = $candidates | Where-Object candidate_id -eq $review.candidate_id | Select-Object -First 1
+    if ($null -eq $candidate) {
+        $errors.Add("Verification review '$($review.wave_id)' references missing candidate '$($review.candidate_id)'.")
+        continue
+    }
+    if ($review.outcome -notin $candidateStatuses) {
+        $errors.Add("Verification review '$($review.wave_id)/$($review.candidate_id)' has unknown outcome '$($review.outcome)'.")
+    }
+    elseif ($review.outcome -ne $candidate.status) {
+        $errors.Add("Verification review '$($review.wave_id)/$($review.candidate_id)' outcome '$($review.outcome)' disagrees with candidate status '$($candidate.status)'.")
+    }
+
+    $reviewedDate = [datetime]::MinValue
+    if (-not [datetime]::TryParseExact($review.reviewed_on, 'yyyy-MM-dd', [Globalization.CultureInfo]::InvariantCulture, [Globalization.DateTimeStyles]::None, [ref]$reviewedDate)) {
+        $errors.Add("Verification review '$($review.wave_id)/$($review.candidate_id)' has invalid reviewed_on '$($review.reviewed_on)'.")
+    }
+}
+
+foreach ($candidate in @($candidates | Where-Object { $_.status -eq 'included' -and $_.first_seen_batch -ne 'LEGACY-000' })) {
+    $reviewCount = @($verificationWaves | Where-Object candidate_id -eq $candidate.candidate_id).Count
+    if ($reviewCount -lt 1) {
+        $errors.Add("Newly included candidate '$($candidate.candidate_id)' has no verification-wave record.")
+    }
+}
+
+$includedCandidateTargets = @($candidates | Where-Object status -eq 'included' | ForEach-Object { $_.resolution_target -replace '^census:', '' })
+foreach ($slug in $records.slug) {
+    $targetCount = @($includedCandidateTargets | Where-Object { $_ -eq $slug }).Count
+    if ($targetCount -ne 1) {
+        $errors.Add("Census slug '$slug' must have exactly one included candidate-register row; found $targetCount.")
+    }
 }
 foreach ($identityDecision in $identityMap) {
     if ($identityDecision.canonical_slug -notin $records.slug) {
@@ -310,6 +550,23 @@ $summary = [ordered]@{
         productOrMaintainerLineages = @($records.team_lineage | Sort-Object -Unique).Count
     }
     identityDecisions = $identityMap.Count
+    discovery = [ordered]@{
+        candidateRegisterRows = $candidates.Count
+        openCanonicalPool = @($candidates | Where-Object status -in @('included', 'pending')).Count
+        verifiedSample = @($candidates | Where-Object status -eq 'included').Count
+        pending = @($candidates | Where-Object status -eq 'pending').Count
+        duplicates = @($candidates | Where-Object status -eq 'duplicate').Count
+        excluded = @($candidates | Where-Object status -eq 'excluded').Count
+        batches = $discoveryBatches.Count
+        reproducibleSearchBatches = @($discoveryBatches | Where-Object batch_id -ne 'LEGACY-000').Count
+        searchResultCardsReviewed = ($discoveryBatches | Where-Object batch_id -ne 'LEGACY-000' | Measure-Object -Property result_cards_reviewed -Sum).Sum
+        legacySeedImports = @($candidates | Where-Object first_seen_batch -eq 'LEGACY-000').Count
+        unknownTeamRegion = @($candidates | Where-Object team_region -eq 'unknown').Count
+        verificationWaves = @($verificationWaves.wave_id | Sort-Object -Unique).Count
+        verificationReviews = $verificationWaves.Count
+        verificationOutcomes = [ordered]@{}
+        batchYield = [ordered]@{}
+    }
     designDefinitionFamilies = $definitionIds.Count
     productFormFamilies = $productFormIds.Count
     architectureFamilies = $architectureIds.Count
@@ -320,6 +577,26 @@ $summary = [ordered]@{
     productForms = [ordered]@{}
     primaryArchitectures = [ordered]@{}
     architectureAdoption = [ordered]@{}
+}
+
+foreach ($group in @($verificationWaves | Group-Object outcome | Sort-Object Name)) {
+    $summary.discovery.verificationOutcomes[$group.Name] = $group.Count
+}
+
+foreach ($batch in @($discoveryBatches | Where-Object batch_id -ne 'LEGACY-000')) {
+    $newCount = @(Split-Refs $batch.new_candidate_refs).Count
+    $repeatCount = @(Split-Refs $batch.repeat_candidate_refs).Count
+    $resultCount = [int]$batch.result_cards_reviewed
+    $retainedMentions = $newCount + $repeatCount
+    $summary.discovery.batchYield[$batch.batch_id] = [ordered]@{
+        resultCardsReviewed = $resultCount
+        firstSeenCandidates = $newCount
+        repeatedCandidates = $repeatCount
+        zeroResultBatch = $resultCount -eq 0
+        newCandidateYield = if ($resultCount -eq 0) { 0 } else { [math]::Round($newCount / $resultCount, 4) }
+        candidateHitYield = if ($resultCount -eq 0) { 0 } else { [math]::Round($retainedMentions / $resultCount, 4) }
+        retainedMentionOverlap = if ($retainedMentions -eq 0) { 0 } else { [math]::Round($repeatCount / $retainedMentions, 4) }
+    }
 }
 
 foreach ($group in @($records | Group-Object evidence_depth | Sort-Object Name)) {
@@ -357,6 +634,36 @@ foreach ($entry in $requiredHeadlineCounts.GetEnumerator()) {
     }
 }
 
+$requiredDiscoveryCounts = [ordered]@{
+    'Legacy seed imports' = $summary.discovery.legacySeedImports
+    'Reproducible discovery batches' = $summary.discovery.reproducibleSearchBatches
+    'Search result cards reviewed' = $summary.discovery.searchResultCardsReviewed
+    'First-seen candidates after the legacy import' = @($candidates | Where-Object first_seen_batch -ne 'LEGACY-000').Count
+    'Candidate-register rows' = $summary.discovery.candidateRegisterRows
+    'Open plausible pool' = $summary.discovery.openCanonicalPool
+    'Verified records' = $summary.discovery.verifiedSample
+    'Pending candidates' = $summary.discovery.pending
+    'Duplicate decisions' = $summary.discovery.duplicates
+    'Exclusion decisions' = $summary.discovery.excluded
+    'Candidates with team-region evidence' = $summary.discovery.candidateRegisterRows - $summary.discovery.unknownTeamRegion
+    'Candidates with unknown team region' = $summary.discovery.unknownTeamRegion
+}
+foreach ($entry in $requiredDiscoveryCounts.GetEnumerator()) {
+    $pattern = '^\| ' + [regex]::Escape($entry.Key) + ' \| \*\*' + $entry.Value + '\*\* \|'
+    if (-not ($readmeLines | Where-Object { $_ -match $pattern })) {
+        $errors.Add("README discovery table is missing '$($entry.Key) = $($entry.Value)'.")
+    }
+}
+
+$snapshotPattern = '^\*\*Snapshot:\*\* ' + [regex]::Escape($taxonomy.snapshot) +
+    ' · \*\*Schema:\*\* v' + [regex]::Escape($taxonomy.schemaVersion) +
+    ' · \*\*Verified records:\*\* ' + $summary.discovery.verifiedSample +
+    ' · \*\*Candidate register:\*\* ' + $summary.discovery.candidateRegisterRows +
+    ' · \*\*Reproducible discovery batches:\*\* ' + $summary.discovery.reproducibleSearchBatches + '$'
+if (-not ($readmeLines | Where-Object { $_ -match $snapshotPattern })) {
+    $errors.Add('README top-level snapshot line disagrees with the verified ledgers or taxonomy schema.')
+}
+
 $teamBoundaryPattern = '^\| Publicly attributable team units \| \*\*' + $summary.organizations + '–' + $summary.teamLineages + '\*\* \|'
 if (-not ($readmeLines | Where-Object { $_ -match $teamBoundaryPattern })) {
     $errors.Add("README snapshot table is missing the public team boundary '$($summary.organizations)–$($summary.teamLineages)'.")
@@ -364,7 +671,7 @@ if (-not ($readmeLines | Where-Object { $_ -match $teamBoundaryPattern })) {
 
 if ($errors.Count -gt 0) {
     $errors | ForEach-Object { Write-Error $_ }
-    throw "Census verification failed with $($errors.Count) error(s)."
+    throw "Landscape verification failed with $($errors.Count) error(s)."
 }
 
 if ($Json) {
@@ -380,5 +687,5 @@ else {
             Write-Output "$($_.Key): $($_.Value)"
         }
     }
-    Write-Output 'Census verification passed.'
+    Write-Output 'Landscape verification passed.'
 }

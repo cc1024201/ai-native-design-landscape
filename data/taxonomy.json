@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "0.2",
+  "schemaVersion": "0.3",
   "snapshot": "2026-08-11",
   "units": {
     "product": "One independently identifiable product, open-source project, or independently surfaced design workspace represented by one canonical project directory.",
@@ -23,8 +23,11 @@
       "It is an alias, rebrand, product mode, or surface already owned by a canonical record."
     ],
     "knownCoverageLimits": [
-      "Discovery currently depends mainly on publicly reachable English- and Chinese-language primary material, public source and package registries, shipped distributions, and observable product surfaces.",
-      "Stealth teams, private deployments, inaccessible paid surfaces, and products documented only in unreviewed languages can be missed.",
+      "The 63 legacy seeds have product evidence but no reproducible original discovery trail; they are a starting sample rather than a discovery frame.",
+      "The current reproducible cycle uses general and language-oriented web search, GitHub, a launch directory and npm across several query families; it does not cover every registry, language, region, community or time window.",
+      "A query language or localized page is not evidence of team geography. Most candidate team locations remain unaudited and unknown.",
+      "High novelty in creative, presentation, video, CAD, architecture, fashion and textile batches shows that the verified sample remains biased toward UI, software and web artifacts.",
+      "Stealth teams, private deployments, inaccessible paid surfaces and products using unsearched terminology can be missed.",
       "Closed products may contain distinct internal mechanisms that cannot be separated beyond their observable authority and protocol boundaries."
     ]
   },
@@ -82,6 +85,12 @@
       "title": "Design as visual coordination and evidence",
       "operationalTest": "The visual artifact, board, screenshot, recording, diagram, or spatial surface primarily coordinates, explains, reviews, or verifies agent work rather than owning the implementation.",
       "boundary": "A visual surface that directly owns the canonical graph or source belongs to native or code-visual authoring."
+    },
+    {
+      "id": "constraint-driven-engineering",
+      "title": "Design as constraint-driven engineering",
+      "operationalTest": "The work creates and validates an editable physical or engineering model whose dimensions, constraints, features, topology, assemblies, analysis, or manufacturability determine whether the result is usable.",
+      "boundary": "A visually plausible 3D image or mesh without editable engineering intent, constraints, precise geometry, or a downstream engineering path is delegated generation rather than constraint-driven Design."
     }
   ],
   "productForms": [
@@ -139,6 +148,11 @@
       "id": "visual-editor-infrastructure",
       "title": "Visual-editor infrastructure",
       "test": "The public project is primarily an embeddable editor kernel, schema, or interaction primitive rather than a complete end-user workspace."
+    },
+    {
+      "id": "ai-engineering-design-workspace",
+      "title": "AI engineering-design workspace",
+      "test": "The primary product is a CAD, architecture, industrial, fashion, spatial, or other domain-engineering workspace where AI operates on precise domain artifacts and their downstream production constraints."
     }
   ],
   "architectureFamilies": [
@@ -186,6 +200,11 @@
       "id": "candidate-promotion",
       "title": "Candidate isolation and promotion",
       "mechanism": "Alternative designs, artifacts, or worktrees are isolated and compared; one candidate is explicitly selected, applied, or committed."
+    },
+    {
+      "id": "parametric-engineering-authority",
+      "title": "Parametric engineering-model authority",
+      "mechanism": "A constraint- and feature-bearing engineering model is canonical; AI and manual operations mutate parameters, topology, parts or assemblies while a domain kernel resolves geometry and version or PDM state governs release."
     }
   ],
   "evidenceDepths": ["source", "architecture"],
