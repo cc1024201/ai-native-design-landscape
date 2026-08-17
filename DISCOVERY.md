@@ -122,7 +122,18 @@ There is no “global completion” flag. Three different signals are tracked:
 - **identity saturation**: the share of retained mentions resolving to known candidates or canonical records;
 - **classification saturation**: whether newly verified records fit existing definitions/forms/architectures without erasing a consequential difference.
 
-A cycle may pause a channel after at least three comparable successive batches have low new-candidate yield and high overlap. That is only a channel-level stopping decision. New languages, registries, domains, time windows and query families remain open. A taxonomy can be provisionally stable while discovery is not saturated, and discovery can appear saturated while the public evidence is too weak to classify candidates.
+A batch qualifies as **low novelty / high overlap** only when all four tests hold:
+
+1. at least 20 result cards were actually reviewed;
+2. at least five retained candidate mentions remain after screening;
+3. new-candidate yield is at most 10%; and
+4. at least 70% of retained mentions resolve to previously known candidates.
+
+These thresholds are an operational pause rule, not a recall estimate. A zero-result batch, a robots/access failure or a batch with fewer than five retained mentions cannot qualify. Comparable batches must keep the same channel, language scope and search stratum, use three to five non-identical queries, and keep their reviewed-card denominators within the same practical scale.
+
+`data/saturation-strata.csv` makes the active frame explicit across channel, language, region-oriented discovery surface and product domain. A stratum may move from `active` to `paused` only when its latest three successive comparable batches all qualify. A later non-qualifying batch reopens it. `blocked` means the search surface cannot currently produce reviewable evidence; it never means saturated.
+
+That is only a stratum-level stopping decision. New languages, registries, domains, time windows and query families remain open. A taxonomy can be provisionally stable while discovery is not saturated, and discovery can appear saturated while the public evidence is too weak to classify candidates.
 
 The baseline batches in this snapshot are deliberately not treated as saturated: broad web and repository searches continue to return many first-seen candidates. Their purpose is to replace an unrecorded seed boundary with an inspectable starting frame.
 

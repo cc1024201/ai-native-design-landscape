@@ -1,6 +1,6 @@
 # Stitch
 
-> Research status: **Architecture-level / closed-source boundary reached** · Last reviewed: **2026-08-11**
+> Research status: **Architecture-level / closed-source boundary reached** · Last reviewed: **2026-08-12**
 
 | Field | Value |
 |---|---|
@@ -290,6 +290,7 @@ The SDK source also records real public-interface instability:
 | 2026-06-01 | SDK [`575a9fb`](https://github.com/google-labs-code/stitch-sdk/commit/575a9fb6319bd9d1ce8175e4a89e5958e024bbfd) | The repository added the two-step DESIGN.md design-system workflow |
 | 2026-07-27 | DESIGN.md [`9bf8eae`](https://github.com/google-labs-code/design.md/commit/9bf8eae67128b6cc55ad9bf86665767deb4c11cd) | The independent CLI/specification reached 0.4.0 |
 | 2026-07-29 | Agent Skills [`bf2f67d`](https://github.com/google-labs-code/stitch-skills/commit/bf2f67da80c934e584b7e8c04ec078c90cc47d19) | Static HTML capture added stronger overlay removal and route titling immediately before the pinned HEAD |
+| 2026-07-30 | Agent Skills [`535b088`](https://github.com/google-labs-code/stitch-skills/commit/535b0889a46868c9b08f8a7f7084db3c1958a2b6) | Current pinned head merges the static-capture work into the official skill collection that also exposes generate edit variant DESIGN.md upload and React or React Native delivery paths |
 
 This chronology belongs to the open client/tooling edge. It must not be used as a release log for the proprietary canvas or model backend.
 

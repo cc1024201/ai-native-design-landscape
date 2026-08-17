@@ -14,6 +14,7 @@ $taxonomyPath = Join-Path $repoRoot 'data/taxonomy.json'
 $candidatesPath = Join-Path $repoRoot 'data/candidates.csv'
 $discoveryBatchesPath = Join-Path $repoRoot 'data/discovery-batches.csv'
 $verificationWavesPath = Join-Path $repoRoot 'data/verification-waves.csv'
+$saturationStrataPath = Join-Path $repoRoot 'data/saturation-strata.csv'
 $discoveryProtocolPath = Join-Path $repoRoot 'DISCOVERY.md'
 $projectsPath = Join-Path $repoRoot 'projects'
 $rootReadmePath = Join-Path $repoRoot 'README.md'
@@ -24,6 +25,7 @@ $identityMap = @(Import-Csv -LiteralPath $identityMapPath)
 $candidates = @(Import-Csv -LiteralPath $candidatesPath)
 $discoveryBatches = @(Import-Csv -LiteralPath $discoveryBatchesPath)
 $verificationWaves = @(Import-Csv -LiteralPath $verificationWavesPath)
+$saturationStrata = @(Import-Csv -LiteralPath $saturationStrataPath)
 $taxonomy = Get-Content -LiteralPath $taxonomyPath -Raw | ConvertFrom-Json
 $errors = [System.Collections.Generic.List[string]]::new()
 
@@ -267,6 +269,86 @@ foreach ($batch in $discoveryBatches) {
         if ($candidate.first_seen_batch -eq $batch.batch_id) {
             $errors.Add("Candidate '$ref' cannot be both first seen and repeated within '$($batch.batch_id)'.")
         }
+    }
+}
+
+$batchById = @{}
+foreach ($batch in $discoveryBatches) { $batchById[$batch.batch_id] = $batch }
+$saturationDimensions = @('channel', 'language', 'region', 'product-domain')
+$saturationStates = @('active', 'paused', 'blocked')
+$saturationAssessment = [ordered]@{}
+foreach ($duplicate in @($saturationStrata | Group-Object stratum_id | Where-Object Count -gt 1)) {
+    $errors.Add("Saturation register repeats stratum '$($duplicate.Name)'.")
+}
+foreach ($stratum in $saturationStrata) {
+    foreach ($requiredField in @('stratum_id', 'dimension', 'label', 'state', 'scope', 'decision_basis', 'limitations')) {
+        if ([string]::IsNullOrWhiteSpace($stratum.$requiredField)) {
+            $errors.Add("Saturation stratum '$($stratum.stratum_id)' has an empty required field '$requiredField'.")
+        }
+    }
+    if ($stratum.dimension -notin $saturationDimensions) {
+        $errors.Add("Saturation stratum '$($stratum.stratum_id)' has unknown dimension '$($stratum.dimension)'.")
+    }
+    if ($stratum.state -notin $saturationStates) {
+        $errors.Add("Saturation stratum '$($stratum.stratum_id)' has unknown state '$($stratum.state)'.")
+    }
+
+    $refs = @(Split-Refs $stratum.qualifying_batch_refs)
+    if ($stratum.state -eq 'paused' -and $refs.Count -ne 3) {
+        $errors.Add("Paused saturation stratum '$($stratum.stratum_id)' must cite exactly three qualifying batches.")
+    }
+    if ($stratum.state -ne 'paused' -and $refs.Count -gt 0) {
+        $errors.Add("Non-paused saturation stratum '$($stratum.stratum_id)' must not claim qualifying batches.")
+    }
+    if ($stratum.state -eq 'paused' -and [string]::IsNullOrWhiteSpace($stratum.assessed_on)) {
+        $errors.Add("Paused saturation stratum '$($stratum.stratum_id)' must record assessed_on.")
+    }
+
+    $metrics = @()
+    foreach ($ref in $refs) {
+        if (-not $batchById.ContainsKey($ref)) {
+            $errors.Add("Saturation stratum '$($stratum.stratum_id)' references missing batch '$ref'.")
+            continue
+        }
+        $batch = $batchById[$ref]
+        $resultCount = [int]$batch.result_cards_reviewed
+        $newCount = @(Split-Refs $batch.new_candidate_refs).Count
+        $repeatCount = @(Split-Refs $batch.repeat_candidate_refs).Count
+        $retainedCount = $newCount + $repeatCount
+        $newYield = if ($resultCount -eq 0) { 1 } else { $newCount / $resultCount }
+        $overlap = if ($retainedCount -eq 0) { 0 } else { $repeatCount / $retainedCount }
+        $qualifies = $resultCount -ge 20 -and $retainedCount -ge 5 -and $newYield -le 0.10 -and $overlap -ge 0.70
+        if (-not $qualifies) {
+            $errors.Add("Paused saturation stratum '$($stratum.stratum_id)' cites non-qualifying batch '$ref'.")
+        }
+        $metrics += [ordered]@{
+            batch = $ref
+            cards = $resultCount
+            retainedMentions = $retainedCount
+            newCandidateYield = [math]::Round($newYield, 4)
+            retainedMentionOverlap = [math]::Round($overlap, 4)
+            qualifies = $qualifies
+        }
+    }
+
+    if ($refs.Count -eq 3) {
+        $batches = @($refs | ForEach-Object { $batchById[$_] })
+        foreach ($field in @('channel', 'language_scope', 'region_scope')) {
+            if (@($batches.$field | Sort-Object -Unique).Count -ne 1) {
+                $errors.Add("Paused saturation stratum '$($stratum.stratum_id)' cites batches with different $field values.")
+            }
+        }
+        $queryCounts = @($batches | ForEach-Object { [int]$_.query_count })
+        if (($queryCounts | Measure-Object -Maximum).Maximum - ($queryCounts | Measure-Object -Minimum).Minimum -gt 1) {
+            $errors.Add("Paused saturation stratum '$($stratum.stratum_id)' cites batches with materially different query counts.")
+        }
+    }
+    $saturationAssessment[$stratum.stratum_id] = [ordered]@{
+        dimension = $stratum.dimension
+        label = $stratum.label
+        state = $stratum.state
+        qualifyingBatches = $refs
+        metrics = $metrics
     }
 }
 
@@ -566,6 +648,14 @@ $summary = [ordered]@{
         verificationReviews = $verificationWaves.Count
         verificationOutcomes = [ordered]@{}
         batchYield = [ordered]@{}
+        saturation = [ordered]@{
+            strata = $saturationStrata.Count
+            active = @($saturationStrata | Where-Object state -eq 'active').Count
+            paused = @($saturationStrata | Where-Object state -eq 'paused').Count
+            blocked = @($saturationStrata | Where-Object state -eq 'blocked').Count
+            qualification = 'cards>=20; retained>=5; newYield<=0.10; overlap>=0.70; three successive comparable batches'
+            assessments = $saturationAssessment
+        }
     }
     designDefinitionFamilies = $definitionIds.Count
     productFormFamilies = $productFormIds.Count

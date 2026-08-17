@@ -178,6 +178,8 @@ New work should not treat App Gen success as a durable platform direction merely
 
 The [current MCP overview](https://developers.webflow.com/mcp/reference/overview) exposes native elements, styles, variables, components, pages/branches, custom code, CMS, assets, analytics and activity through a remote OAuth endpoint. Each site can carry Agent Instructions that reference its own Webflow primitives, and shared Libraries can distribute those instructions with their design system.
 
+Webflow also publishes a pinned [`webflow-skills`](https://github.com/webflow/webflow-skills/tree/b4e1fac15f65f60b60385ccd4f13740ae024665c) repository that routes agents through CMS, audit, Designer, Figma-to-Webflow, publish and code-component workflows. Those skills operate the same Webflow project graph and are recorded as an official product surface here, not as another team or canonical product.
+
 ### Current architecture
 
 The [documented current path](https://developers.webflow.com/mcp/reference/how-it-works) is:
@@ -350,6 +352,7 @@ The three code models are therefore not interchangeable options invented at once
 | AI code-component article JSON | updated 2026-07-31; SHA-256 `f0f31fc698fe5f591bb092f57b1fce18c2a24d1331dcc750a3d518baf6e62402` | code/dependency/prop/portability/secret contract |
 | App Gen article JSON | updated 2026-05-13; SHA-256 `b092fb6448ab276a10e88db28d77f3678ca1af8723702c5a24cde21547dbee00` | separate app/Cloud authority and deprecation |
 | MCP current docs | overview `1be8963d…`; architecture `095e557d…`; MCP 2.0 changelog `f7caa04a…` | current remote protocol, governance and live-session boundary |
+| official Webflow skills | `b4e1fac15f65f60b60385ccd4f13740ae024665c` | current agent routing across MCP audit Designer Figma transfer publish and code components; same Webflow product identity |
 | Flowkit specification | SHA-256 `db5325e89d024de658ef28e2cedb9da3c81c35441e2eaa3061187b00848b47e4` | generated-site class/token system |
 | official MCP repository | `main`/`HEAD` `c4fa339cd9ba7a93d771e710db89302fc443c447`; 163 commits; MIT | earlier adapter implementation and current-source gap |
 | npm MCP distribution | `1.0.0`; `gitHead=ca01e120…`; tarball SHA-256 `5ce3e9168c743f564af1fc4f41116de4bb95eee7a6e59a34d73479d39c8d4235` | ordinary published local package boundary |
@@ -373,6 +376,7 @@ The three code models are therefore not interchangeable options invented at once
 - [Webflow MCP overview](https://developers.webflow.com/mcp/reference/overview)
 - [Webflow MCP architecture](https://developers.webflow.com/mcp/reference/how-it-works)
 - [MCP 2.0 changelog](https://developers.webflow.com/home/changelog/2026/7/21)
+- [Official Webflow Skills repository](https://github.com/webflow/webflow-skills/tree/b4e1fac15f65f60b60385ccd4f13740ae024665c)
 - [Official MCP source repository](https://github.com/webflow/mcp-server/tree/c4fa339cd9ba7a93d771e710db89302fc443c447)
 - [Page branching](https://help.webflow.com/hc/en-us/articles/46651751861139-Page-branching)
 - [Backups and restore](https://help.webflow.com/hc/en-us/articles/33961244069395-Save-and-restore-backups)

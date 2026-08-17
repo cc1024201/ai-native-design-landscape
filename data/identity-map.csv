@@ -27,3 +27,1309 @@ Zixel 3D CAD,zcad,product-name,Current cloud CAD product in the zCAD and Zixel p
 zCAD Online,zcad,product-surface,Active browser CAD surface in the same product lineage
 zCAD AI for Mac,zcad,preview-surface,Limited preview hands generated parametric geometry into the same cloud CAD lineage
 Gamma Agent,gamma,product-surface,The named Agent is the AI editing surface inside the Gamma product
+DeepPresenter,pptagent,current-lineage,Current repository generation workspace in the same PPTAgent project lineage
+DynaSlide,slideagent,benchmark-and-task-name,Dynamic slide update task and benchmark shipped with the SlideAgent implementation
+Talk-to-Slides,talk-to-your-slides,alias,Short discovery label for Talk-to-Your-Slides
+Figma Context MCP,framelink-mcp,former-name,Current repository and product name are Framelink MCP for Figma
+figma-developer-mcp,framelink-mcp,package-name,The npm executable belongs to the Framelink MCP for Figma lineage
+Uno Platform Visual Designer,uno-studio,former-surface-name,Current first-party product surface is Uno Platform Studio with Hot Design
+Hot Design,uno-studio,product-surface,Count the live visual designer inside Uno Platform Studio
+Penpot MCP,penpot,product-surface,Official MCP server and plugin are part of the Penpot platform lineage
+Silex Desktop,silex,product-surface,Count the desktop and MCP surface inside the Silex lineage
+21st.dev Toolbar,stagewise,fork-and-rebrand,Source changelog identifies a stagewise fork followed by toolbar renaming and 21st branding; do not count a second underlying runtime-selection mechanism
+TwentyFirstToolbar,stagewise,renamed-symbol,Renamed toolbar symbol belongs to the same forked stagewise mechanism
+Agent Native Design,agent-native-design,styling-variant,Canonical public name uses Agent-Native Design
+Agent-Native Figma,agent-native-design,product-metaphor,First-party gallery metaphor refers to the HTML prototyping application rather than a Figma-hosted file
+Chordio Workbench,chordio-px-bench,same-lineage-era,Earlier Claude Code prototype workbench is preserved in the rapidly transitioning Chordio product-experience lineage
+Design Rails,chordio-px-bench,same-lineage-era,Structured brand-context experiment belongs to the same small Chordio team and transition record pending evidence of an independent durable product home
+PX-bench,chordio-px-bench,current-surface,Current first-party Chordio surface evaluates product experience in held-out applications
+Fleck Agent,fleck,product-name,Agent name and Fleck product resolve to one managed workspace
+保特丽布,botlab-art,current-name,Current Chinese brand name on the Botlab.art product site
+保丽智绘,botlab-art,former-name,Earlier indexed Chinese product name resolves to the same Botlab.art service
+M.A.N.T.I.S.,mantis-cad,styling-variant,Stylized site mark resolves to MANTIS CAD
+Miro AI Design,miro-prototypes,discovery-name,Current canonical product surface is Miro Prototypes inside the Miro workspace
+Miro AI Prototype Generator,miro-prototypes,feature-name,AI generation and refinement belong to the Miro Prototypes surface
+MasterGo AI 设计助手,mastergo-ai,product-surface,Canvas-native agent mode belongs to the MasterGo AI lineage
+AI 快搭,mastergo-ai,product-surface,Generated UI and code surface belongs to MasterGo AI rather than a separate product lineage
+墨刀 MCP,modao-ai,agent-interface,Remote MCP tools create files through the same Modao AI account and task lineage
+即时 AI,jsdesign-ai,styling-variant,AI generation surface resolves to the 即时设计 product lineage
+BoardMix,boardmix-ai,capitalization,Canonical dossier uses the current boardmix AI styling
+博思 AI,boardmix-ai,localized-name,Chinese AI-agent naming belongs to the boardmix workspace
+Jules,efecto,agent-name,Efecto's embedded design agent belongs to the Efecto canvas lineage
+Efecto Design,efecto,product-name,Documentation and changelog styling resolve to the same Efecto service
+Firefly AI Assistant,adobe-firefly-creative-agent,current-surface,Adobe's current public-beta assistant is powered by the cross-application creative-agent lineage
+Adobe creative agent,adobe-firefly-creative-agent,technology-name,Count the shared orchestration lineage once rather than one record per Creative Cloud host
+AIHouse 3D Cloud Design,aihouse,product-surface,Interior design and design-to-manufacturing surfaces belong to the AIHouse lineage
+JEGA Cloud Factory,aihouse,downstream-surface,Manufacturing projection belongs to the AIHouse design-to-manufacture lineage
+بنيان,bunyan,localized-name,Arabic product mark resolves to Bunyan
+GetFacade,facade,domain-name,Domain and product styling resolve to Facade
+واجهة,facade,localized-name,Arabic product name resolves to the Facade project lineage
+Adly AI,adly,product-name,AI agent and managed marketing workspace resolve to Adly at getadly.com
+Adly MCP,adly,agent-interface,MCP access operates the same Adly brand and campaign workspace
+adly.ai,adly,do-not-merge,Unrelated domain must not be merged with the getadly.com Adly product lineage
+M2 UI,m2-canvas,styling-variant,The m2ui.ai domain and M2 Canvas product resolve to one Model Tool Labs lineage
+Wonder Public Alpha,wonder,lifecycle-name,Public-alpha launch resolves to the current Wonder canvas
+Inspector Visual Editor,inspector,descriptive-name,Tool directories and current first-party docs resolve to Inspector at tryinspector.com
+Banani Agent Mode,banani,product-surface,Component-based agent projects are a Banani project mode rather than a second product
+Dart design task,dart-design-agent,product-surface,Design task assignment and returned result state belong to Dart while Magic Patterns owns the downstream prototype
+ChatCanvas,lovart,product-surface,Infinite collaborative canvas is the central Lovart project surface
+.gui,dotgui,format-name,The file format and deterministic toolchain belong to the dotGUI project
+Figma AI Bridge,plexui-bridge,product-name,Token-aware bridge is the current Plex UI product name
+Plex UI Bridge,plexui-bridge,styling-variant,Discovery styling resolves to PlexUI AI Bridge
+Build Task,dstoai,artifact-name,Generated Markdown context document belongs to the DStoAI plugin workflow
+Jeda AI Whiteboard,jeda,product-surface,Wireframe diagram and other visual commands share the Jeda native canvas
+Niki Studio,niki,product-name,Nikistudio.cloud and the Niki agent-operated canvas resolve to one early product
+Ada,adalo-ai,agent-name,Magic Start Magic Add Visual Direction and X-Ray belong to Adalo's Ada agent
+Aria,wix-harmony,agent-name,Wix's continuous site agent belongs to the Harmony builder
+Wix AI Website Builder,wix-harmony,current-surface,Current consumer AI builder is part of Wix Harmony
+Wix ADI,wix-harmony,predecessor,Retired ADI projects now open in Wix Editor and are not a second current record
+Microsoft Designer legacy visual editor,microsoft-designer,retired-surface,Legacy editor was deprecated while current Designer projects and editing remain one lineage
+Blueprint AI,squarespace-blueprint,styling-variant,Squarespace's AI guided site-starting surface resolves to Blueprint AI
+Aida AI Website Builder,one-aida,product-name,Current conversational builder belongs to one.com
+Bananotate,brilliant-design,former-name,Former screen-annotation product now redirects to Brilliant
+Superflex,wonder,predecessor,The founding team identifies Superflex as the earlier design-to-code product before Wonder
+Zigma by NextUI,zigma,product-name,The launch styling and NextUI affiliation resolve to the historical Zigma design-system product
+DhiWise,rocket-new,former-name,DhiWise now presents the same product lineage under the Rocket.new name
+Rocket,rocket-new,styling-variant,Unqualified current Rocket product references resolve to Rocket.new
+Serendie MCP,serendie-ai,product-surface,The remote MCP server and Figma plugin belong to one Serendie Design System lineage
+Serendie UI Plugin,serendie-ai,product-surface,The native Figma validation and fix agent is the write-side Serendie AI surface
+Mushu,musho,misspelling,The discovery register misspelled the historical Figma assistant Musho and used a nonexistent domain
+Musho AI,musho,styling-variant,Contemporaneous launch references resolve to the same Musho Figma assistant
+FlatoAI,flato,styling-variant,Compact references resolve to the Flato native presentation canvas
+CopyCoder,komposo,former-name,Official rebrand states the same accounts projects and product continued under Komposo
+Quby Stitch,quby-weave,product-surface,The current Weave route calls the multi-screen prompt-to-prototype surface Stitch
+Quby UI Studio,quby-weave,product-surface,Builder Remix Extend and Enhance belong to the same Quby UI product family
+Codia Studio,codia,product-surface,Studio and format-specific plugins share Codia's VisualElement reconstruction lineage
+Codia NoteSlide,codia,product-surface,Editable slide reconstruction belongs to the Codia platform rather than a second team
+AIGEN4FASHION,inescop-footwear,project-name,The footwear prototype is the Design artifact work package of the INESCOP and ITI research project
+Jenova UI/UX Prototype Generator,jenova,product-surface,The dedicated prototype agent is a Jenova product surface rather than a separate team
+UX STUDIO,ux-studio-ai,styling-variant,Uppercase interface labels resolve to the UX Studio AI product
+Холст,holst-ai,product-surface,The browser layer editor belongs to the broader Холст.ИИ generation platform
+AI Design Space Canvas,ai-design-space,product-surface,Canvas editor project history and domain services belong to one studio platform
+Pippit AI Design,pippit,product-surface,The UI Designer page is a use-case entry into Pippit AI Design rather than an independent structured UI product
+EaseUI AI UI Generation,easeui,styling-variant,Documentation and application branding resolve to EaseUI
+Appy Pie AI UI Generator,appy-pie-ui,product-surface,The UI generator continues into the Appy Pie no-code builder lineage
+Rosebud AI Game Maker,rosebud-ai,styling-variant,Lab editor and published game surfaces belong to the Rosebud AI product
+DeepShot Video Editor,vidova,company-lineage,Vidova identifies DeepShot Inc. as the operating company for the current agentic editor
+PPTCraft AI Presentation Generator,pptcraft,styling-variant,Preview and generator labels resolve to one PPTCraft product
+Influencer Studio Editor,influencer-studio,product-surface,The AI-native timeline is a surface of the broader Influencer Studio character and filmmaking platform
+Reel/Studio,reel-studio,styling-variant,Slash-styled branding resolves to Reel Studio
+okkslides,okkslides,styling-variant,Lowercase site branding resolves to the OkkSlides product operated by Autogent
+Zoea Creative Agent,zoea,styling-variant,Desktop download and workflow pages belong to Zoea
+Story Movie Agent,story-video-editor,product-surface,Movie Agent operates inside Story.com AI Video Editor rather than as a separate product
+Preso Presentation API,preso,product-surface,Editor REST API and MCP surfaces share Preso's deck engine and brand context
+Visk PowerPoint Add-in,visk,product-surface,Web add-in API and MCP access all resolve to Visk's HTML and PowerPoint engine
+DeckScript Presentation Workspace,deckscript,styling-variant,Local-first editor and presentation labels resolve to DeckScript
+Google Workspace Vids,google-vids,product-name,Google Vids is the Workspace video project surface
+Recraft Studio,recraft,product-surface,Studio canvas model API and asset tools belong to the Recraft product lineage
+Kittl AI Creative Suite,kittl,product-surface,Agentic generation and the editor are surfaces of Kittl's design platform
+CapCut Video Studio,capcut,product-surface,Chat generation and the timeline editor belong to CapCut while Dreamina and Pippit remain separately branded products
+Dafty Creative Team,dafty,styling-variant,Creative-team language resolves to Dafty's brand campaign workspace
+Wonder Studio,autodesk-flow-studio,former-name,Autodesk identifies Flow Studio as the current name of the former Wonder Studio product
+Hemy,hemline,agent-name,Hemy is the tool-selecting agent inside each Hemline fashion workspace
+TextoCAD AI,textocad,styling-variant,Editor and generator labels resolve to TextoCAD operated by GadiDokan
+Arch gen,archgen,styling-variant,Spaced logo treatment resolves to the ArchGen early-access product
+Forgent3D Cloud,forgent3d,product-surface,Hosted workbench and the open desktop companion share the Forgent3D CAD code and preview lineage
+Forgent3D Skill,forgent3d,agent-interface,The installable agent skill writes into the same product workspace rather than defining another CAD product
+AdderCAD AI Drafter,addercad,styling-variant,Download and early-access labels resolve to the Adder Labs product
+Mercer Design Studio,mercer-fashion,company-lineage,The current fashion platform is operated by Mercer Design Studio Inc.
+Cala,mercer-fashion,former-name,Mercer states that the current product was formerly Cala and continues the same fashion-development lineage
+BuildCAD AI,buildcad,styling-variant,Cloud editor and MCP connector resolve to BuildCAD
+CAD Cursor,cadcursor,styling-variant,The discovery spelling resolves to current CadCursor branding
+Bezi for Unity,bezi,product-surface,Current Bezi product is the Unity-integrated project agent rather than the earlier standalone spatial collaboration framing
+Unity AI,unity-ai-tools,former-name,Unity is retiring this umbrella brand while retaining the assistant gateway and MCP tools
+DRESSX AI Studio,dressx-ai-suite,product-surface,The self-serve image and video production workspace belongs to the broader DRESSX AI Suite
+DRESSX Agent,dressx-ai-suite,product-surface,Consumer try-on agent and enterprise production surfaces belong to the same DRESSX organization but are not counted separately
+Pixso MCP,pixso,agent-interface,Local and remote MCP services expose the same Pixso design-file authority
+Orbis Intelligence,orbis,styling-variant,The company-domain label resolves to the downloadable Orbis product
+TapCanvas canvas,tapcanvas,artifact-name,Canvas is the reusable native UI artifact inside TapCanvas rather than a separate product
+UXBot,uxbot,styling-variant,Capitalization variants resolve to UXbot
+autocraft.sh,autocraft,styling-variant,Domain label resolves to Autocraft
+HyperPlane,hyperplane,styling-variant,Capitalization on the product surface resolves to Hyperplane
+Backdraft AI,backdraft,styling-variant,Localized and English surfaces belong to Backdraft
+VberAI AI Studio,vberai-studio,product-surface,AI Studio is the independently surfaced game-design workspace inside the VberAI platform
+FigCraft Studio,figcraft,product-surface,Studio is the interactive workspace of the FigCraft desktop product
+Mowgli AI,mowgli,styling-variant,Company and product labels resolve to Mowgli
+Uitiful Studio,uitiful,product-surface,Studio is the early-access workspace of Uitiful
+WebSim,websim,styling-variant,Capitalization and historical websim.ai domain resolve to current Websim
+gNucleus AI,gnucleus,styling-variant,Chinese and global product surfaces belong to one gNucleus engineering platform
+AI GemDesign,gemdesign,styling-variant,Discovery domain prefix resolves to GemDesign
+SoulCanvas,soulcanvas,translated-name,English domain label resolves to 灵境画布
+AIPTO Unified AI Studio,aipto,product-surface,Unified AI Studio is the retained canvas inside AIPTO
+大腾智能 CAD One,datengcad,product-surface,CAD One editions belong to the 大腾智能 CAD product lineage
+Layout Live,layout,product-surface,Desktop direct manipulation and source writeback is one surface of the Layout design-system compiler
+Layout Explorer,layout,product-surface,Variant generation and Figma promotion belong to the same Layout project authority
+TypeUI MCP,typeui,agent-interface,MCP serves the published TypeUI design-system package and layout choices to external coding agents
+Windframe AI,windframe,product-surface,AI generation enters the same Windframe project canvas and export lifecycle
+Windframe MCP,windframe,agent-interface,MCP is an agent access surface of Windframe rather than a separate product
+Step1.dev,step1,styling-variant,Domain spelling resolves to Step1
+OpenUI Lang,openui,artifact-name,OpenUI Lang is the declarative generated artifact and runtime contract of OpenUI
+Agent SCAD,agent-scad,spacing-variant,Spacing variant resolves to the open-source AgentSCAD product and not the AgentsCAD paper
+Gemcoder,gemcoder-ai,styling-variant,The broader requirement-to-software product is branded Gemcoder.AI
+AI-prototyper-tool,ai-prototyper,repository-name,Repository spelling resolves to AI Prototyper
+TokVista,tokvista,capitalization-variant,Capitalization variants resolve to Tokvista
+Behavr AI,behavr,styling-variant,Marketing suffix resolves to the Behavr simulated-usability product
+Dawn Studio,dawn-design,product-surface,The multiplayer studio is the primary workspace of Dawn
+mydesignmd,mydesign-md,styling-variant,Domain spelling resolves to MYDESIGN.MD
+designmd.ai,designmd,domain-name,Domain label resolves to the DESIGNmd community registry
+OpenGenerativeUI,open-generative-ui,spacing-variant,Repository spelling resolves to Open Generative UI
+MarmoUI,marmo-ui,spacing-variant,Repository spelling resolves to Marmo UI
+Zephyr,zephyr-framework,short-name,Short framework name resolves to Zephyr Framework
+Google A2UI,a2ui,lineage-label,Early Google lineage and current A2UI Project repository represent one protocol project
+Handle Extension,handle,product-surface,Chrome extension and MCP server are coupled surfaces of Handle
+Design Mode Browser Extension,design-mode-extension,disambiguation,Standalone open extension is distinct from Cursor and v0 product modes
+CodeCanvas-AI,codecanvas-ai,repository-name,Repository spelling resolves to CodeCanvas AI
+Prefab UI,prefab,package-name,Python package and public product resolve to Prefab
+QoQo AI,qoqo,descriptive-name,Marketing phrase resolves to the QoQo Figma companion
+Better UX Writing,bux,expanded-name,Expanded plugin title resolves to BUX
+Dream UI,dreamui,spacing-variant,Spacing variant resolves to DreamUI by Noor Maqsood
+prompt.to.design,prompt-to-design,punctuation-variant,Lowercase branded spelling resolves to Prompt.to.design
+superun,superun,capitalization-variant,Lowercase brand spelling resolves to Superun
+1UI Design Generator,oneui,product-surface,Hosted generator and Figma plugin belong to one 1UI product
+FigmaClaude,flaude,source-internal-name,Legacy internal plugin constant resolves to Flaude
+Worried Presenter plugin,worried-presenter,product-surface,Figma plugin resolves to Worried Presenter
+DS Docs Generator,design-system-docs-generator,short-name,Short description resolves to Design System Docs Generator
+AI UX Writer Figma plugin,ai-ux-writer,disambiguation,Plugin ID 1636752735091846870 fixes the otherwise generic name
+Buzzy AI,buzzy,descriptive-name,Figma plugin and hosted application platform resolve to Buzzy
+RocketPenSelector,rocketpen,product-surface,Chrome selector and Figma importer are coupled surfaces of RocketPen
+Aesthetron,aesthetron,short-name,Unqualified brand resolves to Aesthetron AI
+Dora AI Figma Plugin,dora-ai,product-surface,Figma plugin and Dora AI hosted project are one product lineage
+FigmaAI Auto Layer Naming,ainaming,repository-name,Repository title resolves to AINaming
+AI UX Audit,heuristic-ai,alternate-name,Published Community surface and Heuristic AI repository are one plugin
+Heuristic AI UX Audit,heuristic-ai,descriptive-name,Expanded description resolves to Heuristic AI
+Candor Figma plugin,candor,product-surface,Community ID 1628422272500301906 resolves to Candor
+Figma to Webflow ExportFlow,exportflow,expanded-name,Community listing resolves to ExportFlow
+Design Audit Lens Figma plugin,design-audit-lens,product-surface,Community plugin 1649498558808466087 resolves to Design Audit Lens
+Glide Design AI,glide-design,previous-name,Current product styling is GlideDesign while the creator launch post used Glide Design AI
+Variables Tokens Collections Importer,figma-variables-generator,component-surface,Importer plugin 1619733963699677957 is one half of the Figma Variables Generator Ecosystem rather than a separate product lineage
+Fluvara.ai,fluvara,expanded-name,Domain styling resolves to Fluvara
+SVGenius AI SVG illustration generator,svgenius-figma,expanded-name,Figma plugin 1585442932233795342 is distinct from the unrelated SVGenius animation website and benchmark
+Design System Sync Figma plugin,design-system-sync,product-surface,Community plugin 1561389071519901700 resolves to Design System Sync
+Atomic Component Generator Figma plugin,atomic-component-generator,product-surface,Creator portfolio identifies this beta separately from Design System Sync
+FigML Figma XML Exporter,figml,expanded-name,Community plugin 1515328157096190551 resolves to FigML
+Taploop,taploop-studio,short-name,Current visual workspace is branded Taploop Studio
+SyncPoint AI Design Sync Layer,syncpoint,expanded-name,Product descriptor resolves to SyncPoint by Axis Labs
+ThroughLine Claude Code plugin,throughline,product-surface,Claude plugin and cross-agent npm adapters are surfaces of the same ThroughLine project
+TokenIgnite Figma plugin,tokenignite,product-surface,Figma plugin is the variable-authoring surface of the TokenIgnite runtime bridge
+tokenignite npm package,tokenignite,product-surface,SDK and CLI distribution belongs to the TokenIgnite product
+SEO Image Renamer Figma plugin,seo-image-renamer-figma,expanded-name,Community plugin 1655043623186594415 resolves to SEO Image Renamer
+JMPY Figma plugin,jmpy-me,product-surface,Figma canvas integration belongs to the JMPY.me managed link and QR platform
+jmpy-mcp-server,jmpy-me,product-surface,Public MCP packaging belongs to JMPY.me and is not a separately counted implementation
+TypeCraft AI Title and Poster Text Generator,typecraft,expanded-name,Review-queue and released plugin names resolve to TypeCraft
+MKitFlow Figma to n8n bridge,mkitflow,expanded-name,Webhook and bidirectional command surfaces belong to MKitFlow
+FigPilot.ai ChatGPT and DALL-E 3 in Figma,figpilot-ai,expanded-name,Community plugin 1309912337130106358 resolves to FigPilot.ai
+FigPilot by PicWise.ai,figpilot-ai,product-attribution,FigPilot is a separate plugin product by the PicWise maintainer lineage rather than an alias of the editor suite
+PicWise AI Figma plugin,picwise-ai,expanded-name,Image-generation editing and tracing suite resolves to PicWise.ai
+Calino AI Image Generator,calino,expanded-name,Community plugin 1517540693787924133 resolves to Calino
+SparkUI Figma plugin,sparkui,expanded-name,Community plugin 1474891133434707360 resolves to SparkUI
+ContentKit Populate Anything,contentkit,expanded-name,Figma plugin and Intersections web app are coupled surfaces of one managed content system
+Intersections ContentKit,contentkit,organization-qualified-name,ContentKit belongs to Intersections Design Lab and is not the static playground file
+Open Gallery,jaaz,downstream-copy,Repository is a Jaaz downstream copy and does not add a canonical product lineage
+jaaz-2506,jaaz,dated-copy,Repository preserves a dated Jaaz copy and resolves to the canonical 11cafe lineage
+MemFree AI Page Generator,pagegen,product-surface,The design-relevant surface is independently branded PageGen while MemFree remains the broader search product
+Superdesign MCP Server,superdesign-mcp,independent-derivative,Separate maintainer distribution and executable MCP contract justify a record distinct from upstream Superdesign
+ATV Design,atv-design,independent-derivative,Open CoDesign-derived implementation has its own desktop release identity auth path workspace contract and maintainer lineage
+Designart Main and OpenGallery copies,jaaz,copy-cluster,Five repository cards in SAT-GH-002 retain canonical Jaaz code or download links and do not create additional product counts
+AI Canvas Desktop,ai-canvas-desktop,qualified-name,Use the desktop qualifier to distinguish Nick Chadwick's local scene editor from Kaiyu Hsu's forkable AI Canvas
+AI Canvas by Kaiyu Hsu,kyh-ai-canvas,creator-qualified-name,Separate template and team lineage from AI Canvas Desktop and unrelated canvas repositories
+TypeUI DESIGN.md Extractor,design-md-chrome,expanded-name,Chrome Web Store extension and design-md-chrome repository are one Bergside product
+MemFree PageGen,pagegen,repository-surface,Design-specific generator source is hosted in the broader MemFree repository
+Frontend Slides layout-presets fork,frontend-slides,derivative-surface,Explicit fork keeps the upstream product name artifact contract and workflow while adding a maintained preset pack so it is evidence for the same product family rather than a second product
+D2 Canvas by Aristos,d2-canvas,creator-qualified-name,Distinguishes this D2 diagram editor from unrelated products named Canvas
+design.md by Jeftar Mascarenhas,design-md-agent-skill,repository-qualified-name,Generic repository name resolves to the executable agent skill and script bundle maintained by Jeftar Mascarenhas
+superdesign-skill,superdesign,current-product-surface,The maintained skill explicitly identifies itself and the hosted canvas as the current Superdesign product while the older extension is historical so it updates rather than duplicates the canonical record
+Whiteport BMAD expansion,whiteport-design-studio,distribution-surface,The BMAD module and standalone installer distribute the same Whiteport Design Studio methodology and artifact workflow
+Penpot AI Kit,penpot-ai-kit,independent-official-surface,Official Penpot repository packages an independently named installable agent workflow with its own checkpoints reports and release identity while the Penpot editor remains the host authority
+AOSE,agent-office-suite,abbreviation,AOSE is the public short name for Agent Office Suite
+HTMLSlide and Aniya Studio,aniya-studio,repository-component,HTMLSlide is the editor subsystem distributed as the Aniya Studio product rather than a separately released lineage
+Free Web Press and TractStack,tractstack,current-product-surface,The Free Web Press narrative and astro-tractstack source identify one TractStack adaptive publishing and design product
+Claude Design reverse-engineered prompt,claude-design-system-prompt,independent-derivative,The repository openly derives behavior from Claude Design but packages an independently maintained cross-agent workflow and release identity
+Vibma TalkToFigma foundation,vibma,independent-derivative,Vibma credits cursor-talk-to-figma-mcp while maintaining its own typed tool schemas lint version history package and product lifecycle
+AionUi Morph PPT,aionui,product-surface,Morph PPT and office assistants are user-facing AionUi surfaces backed by separately distributed OfficeCLI
+OfficeCLI inside AionUi,officecli,independent-component,OfficeCLI has its own binary MCP skill releases and artifact contract so it remains a product record despite AionUi integration
+ALLWEONE AI Presentation Generator,presentation-ai,expanded-name,Public repository and hosted surface resolve to the ALLWEONE Presentation AI product
+Bridge DS,noemuch-bridge,package-alias,The npm package bridge-ds compiler skills and repository product name Bridge are one maintained lineage
+Vibe Otter open-source educational version,vibe-otter-lite,distribution-qualified-name,The repository explicitly distinguishes the Lite educational distribution from the hosted full Vibe Otter experience so this record covers the independently inspectable open artifact
+ShopNest AI Website Builder,shopnest,product-name,The generic repository name resolves to the ShopNest local-shop product implemented in source
+Figma to design.md,figma-to-design-md,current-product-name,Repository and hosted web surface use this name for the same token-to-document workflow
+Coframe,agentic-design-canvas,repository-name,Repository name coframe publishes the product as Agentic Design Canvas
+xupeiwust EoStudio search surface,eostudio,repository-mirror,First-seen repository points its own badges and documentation at the actively maintained embeddedos-org EoStudio lineage so the canonical source is counted once
+AI Design System Remix export,anthropic-claude-design,exported-artifact,The repository declares itself a Claude Design handoff bundle with chats and generated project files and does not establish another product
+Fusion 360 MCP Server,mcp-link-fusion,repository-name,The repository distributes the product as MCP-Link for Autodesk Fusion
+Codex Slides in the nexu ecosystem,codex-slides,independent-product,Shared organization and coding-agent host do not collapse its persistent image-native deck project into Open Design or HTML Video
+PPT Design Prompt conversion of awesome-design-md,ppt-design-prompt,independent-derivative,The project consumes the excluded upstream corpus but adds an executable medium-specific transformation and manifest authority
+Generative Media Skills workflow module,vibe-workflow,embedded-product-surface,The bundled workflow commands call the existing MuAPI workflow graph product rather than defining a second graph authority
+Shokunin bundled Kami,kami,bundled-distribution,Shokunin carries a copy of Kami but the tw93 repository owns the templates content IR renderers and release lineage
+Shokunin Impeccable Lite,impeccable,bundled-distribution,Shokunin identifies its module as a lite integration and directs users to the independent Impeccable runtime
+ONLYOFFICE DesktopEditors and DocumentServer,onlyoffice-ai-editors,same-product-distributions,Desktop and web server repositories share editor components document authority and the first-party AI plugin
+ONLYOFFICE AI plugin,onlyoffice-ai-editors,embedded-product-component,The plugin supplies AI control inside the counted ONLYOFFICE native editor rather than a second user artifact
+Jarvis fork of hedless Onshape MCP,jarvis-onshape-mcp,independent-derivative,Fork attribution is preserved while substantial truth visual-diff and high-level workflow mechanisms justify a separate maintained product record
+CLI-Anything Design application harnesses,cli-anything,collection-components,FreeCAD Blender GIMP Krita Inkscape Draw.io and other harnesses are shipped components of one generation framework and registry
+Starry Slides and StarryKit,starrykit,current-product-lineage,Repository history identifies Starry Slides as the archived predecessor of the current broader StarryKit visual workspace
+Frontend Slides Editable fork,frontend-slides-editable,independent-derivative,The fork retains upstream generation guidance but adds a maintained object editor history persistence and portable source export authority
+Director ai-recorder package,director,current-product-name,Public product name and CLI are Director while repository and package history retain ai-recorder identifiers
+SeaSlides output opened in Tylina,tylina,independent-companion-product,SeaSlides authors and validates Typst while Tylina independently owns rendered-page editing source synchronization local history and ACP integration
+ai-slide-generator repository,tellr,current-product-name,Repository identifiers retain ai-slide-generator while the current released product is tellr
+DexCode,amaroad,previous-product-name,DexCode is the earlier name of the current Amaroad lineage
+Sparo Agentic OS,sparo-os,current-product-lineage,Sparo Agentic OS and Sparo OS identify one current product lineage
+xupeiwust cycleCAD and unresolved vvlars-cmd source claim,cyclecad,current-verifiable-source,Count the inspectable xupeiwust repository only because the README-named vvlars-cmd address was unavailable during review
+nazirlouis ruth_v3 reference,ruth-v3,unresolved-upstream-reference,Count the inspectable mkk2026 repository only because the README-named nazirlouis address was unavailable during review
+Deckestra use of PPT Master,deckestra,independent-derivative,Deckestra is independently released and adds its own orchestration while acknowledging PPT Master as an upstream
+Mira Reversa dependency,reversa,independent-upstream-framework,Reversa is independently released and usable although Mira uses it for plugin authoring
+Paper2Any open-source codebase,paper2any,independent-open-source-product,OpenDCAI explicitly distinguishes this implementation from the private hosted Studio product
+Paper to Any Studio and Nexus,paper-to-any-studio,current-commercial-product,Studio and Nexus form the separately distributed commercial workspace lineage described by first-party sources
+BitFun foundation used by Sparo OS,bitfun,independent-predecessor-product,BitFun remains independently published and usable although Sparo derives technical foundations from it
+html-to-editable-pptx repository,editable-presentation-studio,current-project-name,Repository path and public project name identify one editable presentation product
+FigmaLint Figma Community plugin,figmalint,current-product-surface,Repository and Figma plugin surface are one FigmaLint product
+Kanvas Obsidian project board,kanvas-obsidian,independent-product,Do not merge the implemented Obsidian Canvas coordination product with the unrelated paper-only Kanvas AI prototype
+Instruckt core Laravel Astro and Tauri adapters,instruckt,platform-adapters,Framework packages implement one shared annotation and MCP feedback product
+creative-excellence,genjutsu,previous-product-name,genjutsu version three is the renamed continuation of creative-excellence
+genjutsu bundled UI UX Pro Max data,genjutsu,bundled-upstream-module,The independently sourced knowledge module remains attributed upstream but is not a second genjutsu product
+RFingAdam mcp-blender,rfingadam-mcp-blender,independent-product,Do not merge this implementation with the separately maintained Blender MCP for n8n
+Draw.io Engineering MCP extension,drawio-engineering-mcp,independent-derivative,Engineering vocabulary and generators extend but do not replace the official draw.io MCP product
+Official draw.io MCP,drawio-mcp,upstream-product,The app server tool server plugins and project instructions are delivery surfaces of one official product
+RFlect linked beside eng-mcp-suite,rflect,independent-companion-product,RFlect is separately distributed and owns its own GUI analysis engine and MCP server
+KiCAD MCP Server,kicad-mcp-server,independent-predecessor-product,The TypeScript server remains separately installable and active even though the maintainer calls Konnect its successor
+Konnect,konnect,successor-independent-product,Rust and KiCad 10 architecture plus a native IPC mutation path define an independently usable successor rather than a rename
+drawio-scientific-illustrator,scientific-illustrator,predecessor-repository,The maintainer declares Scientific Illustrator the integrated upgrade and moves future work there
+claude-office-skills,anthropic-agent-skills,third-party-copy,The third-party repository identifies its Office skills as copies of the canonical Anthropic collection
+Yank Note Extension,yank-note,official-component,AI Copilot and other extensions install into Yank Note and write the same editor document
+arc-kit,arckit,compatibility-repository,The older repository remains an entry point while arckit-claude carries the current source of the same ArcKit product
+arckit-claude,arckit,current-source-repository,Current plugin repository and compatibility repository resolve to one product lineage
+HeroUI MCP,heroui,official-component,The MCP extracts and serves the component and theme authority of the HeroUI design system
+HeroUI Native,heroui,product-surface,React and Native packages plus their agent skills remain one HeroUI design-system lineage
+Figma MCP Server,figma-mcp-server,independent-product-surface,External MCP invocation permissions and tool contracts are distinct from the built-in Figma Design Agent
+Figma Design Agent,figma-design-agent,independent-product-surface,The built-in agent acts inside Figma Design and is not merged with the external MCP server
+Ladislav Gazo Draw.io MCP Server,lgazo-drawio-mcp,independent-implementation,Browser-extension relay and monorepo architecture are independent from the official JGraph server
+Simon Kurtz Draw.io MCP Server,simonkurtz-drawio-mcp,independent-implementation,Non-fork direct-XML server owns its diagram model icon library and transaction mode
+Claude Terminal,claude-terminal,independent-shell-product,Desktop project workspace is independently released around Claude Code and is not an alias for the upstream agent
+Higgsfield Brandkit,higgsfield-skills,official-component,Brand identity approval state and deterministic builders are a Design surface within the one Higgsfield Skills collection
+CraftEditor,crafter,official-component,Raster-to-editable-SVG conversion and multi-agent figure generation are two workflows of the same Crafter release
+svg-infographic,skillstead,official-component,Qualifying visual skill is distributed and versioned inside the Skillstead collection
+Claude Talk to Figma MCP,claude-talk-to-figma-arinspunk,current-product-name,Repository now presents itself as AI Agents Talk to Figma while retaining the earlier package name
+cursor-talk-to-figma foundation,claude-talk-to-figma-arinspunk,independent-derivative,arinspunk credits the upstream pattern but maintains its own tools packaging queue and plugin implementation
+Qt Figma token and component skills,qt-agent-skills,official-components,Token extraction component generation UI design and QML review ship as one Qt skill collection
+ts-figure-svg,spark-to-paper-skills,official-component,Figure candidate redraw and audit execute inside the spark-to-paper paper artifact pipeline
+nature-figure,nature-skills,official-component,Figure and paper-to-presentation skills share one nature-skills collection and release boundary
+Google Stitch Agent Skills,google-stitch,official-component,Official skills operate the hosted Stitch project screen and design-system authority rather than creating another product
+CADDesigner-Code,caddesigner,current-source-repository,The public code repository implements the previously discovered CADDesigner research product
+Image to Shape-Safe SVG,image-to-shape-safe-svg,svg-specialist-product,Maintainer retains the shape-safe SVG workflow while routing native PowerPoint reconstruction to a separate skill
+Image to PPTX,image-to-pptx,native-pptx-successor-product,New skill constructs native PowerPoint objects rather than replacing the still-usable explicit SVG workflow
+SciFig Scientific Figure Skill,scifig,official-open-component,Open skill structures and generates raster drafts then hands editable SVG PPTX and multi-round work to the hosted SciFig product
+png-to-svg and create-svg-icon,svg-icon-skills,official-components,Conversion and icon-direction skills form one paired SVG Icon Skills workflow
+png2svg,ian-nuttall-skills,official-component,Qualifying visual reconstruction skill is distributed within Ian Nuttall's broader skill collection
+generate-design-system,work-with-design-systems,previous-skill-name,Version two expands the earlier build-only skill into inspect and build modes under the current name
+codestate-cs figma-to-design,d2c,previous-source-repository,Same author and workflow continue under d2c-ai with later commits and feature work
+Claude Figma Kit commands,claude-figma-kit,official-components,Brief token component page and review commands are one plugin workflow
+Multi-Agent-CAD foundation used by Claude-To-Print,claude-to-print,independent-derivative-product,Credits Multi-Agent CAD foundations but replaces orchestration and adds multi-color region and 3MF delivery
+Shield Design,slide-promax,former-source-repository,Older repository now names and installs Slide ProMax while the current product repository is independently published under that name
+DinhLucent Slide_ProMax,slide-promax,current-source-repository,Current same-author product source and install target
+Presenton Skills,presenton,official-component,Official agent skill calls the existing Presenton API and returns the same editable presentation and preview authority
+BMAD Slide Maker,bmad-slide-maker,independent-component,Independently installable visual skill inside the mixed BMAD marketplace
+BMAD Slides Generator,bmad-slides-generator,independent-component,Separate HTML presentation workflow and artifact graph inside the same marketplace
+SimpleCORE SVG Diagrams,simplecore-svg-diagrams,independent-component,Independently routed visual skill inside a mixed plugin marketplace
+SimpleCORE Wireframe Boards,simplecore-wireframe-boards,independent-component,Independently routed board authoring skill inside a mixed plugin marketplace
+SimpleCORE Board Parity Walk,simplecore-board-parity-walk,independent-component,Independently routed long-running visual verification skill
+CAD Skills,text-to-cad,current-product-name,Current README names the product CAD Skills while the repository and public domain retain Text to CAD
+Image Split,image-split,independent-companion-product,Can run independently and supplies semantic layer artifacts to Image-PPT-King and other renderers
+Jon Fermin cadsmith,jonfermin-cadsmith,creator-qualified-name,Qualified to avoid merging the separate CADSmith multi-agent research pipeline
+Webflow Skills,webflow-ai,official-component,Official skill repository exposes the existing Webflow MCP and product graph rather than a separate product
+@densrt/webstudio-mcp,webstudio-mcp,package-name,Published package identity is retained even though the current public source is under marksagangms-debug
+jiji262 Claude Design Skill,claude-design-skill-jiji,independent-derivative-product,Portable implementation derives from the observed Claude Design prompt but owns its source templates and maintenance
+morilab txt2cad,text-to-cad,consumer-workspace,Installed workspace consumes the upstream earthtojake CAD Skills product
+VatsalyaBhadaurya text2cad-agent,text-to-cad,copied-source,README and source reproduce earthtojake CAD Skills while crediting the upstream repository
+LZM163126lzm text-to-cad,text-to-cad,copied-source,Repository reproduces the earthtojake skill tree and public product identity
+adagora cad-tools,text-to-cad,copied-source,Repository reproduces the earthtojake skill tree under a different repository name
+nludd25 text-to-cad,text-to-cad,copied-source,Repository README assets badges and skill graph point to the upstream earthtojake product
+Costrict earthtojake mirror,text-to-cad,automated-mirror,Repository description explicitly identifies an auto-generated plugin mirror
+ecologicavertical earthtojake copy,text-to-cad,copied-source,Repository retains earthtojake badges links product name and complete skill graph
+Effective HTML Plannotator companion,plannotator,independent-companion-product,Recommended review surface owns human annotation and agent feedback rather than HTML artifact authoring
+plannotator design-artifact,effective-html,official-component,Standalone distribution contains the exact same design-artifact skill blob as the broader Effective HTML product
+YY Design archived repository,design-agent-skills,former-source-repository,Archived README redirects all installation development and releases to the current Design Agent Skills repository
+Manal Kaff OpenDesign,manalkaff-opendesign,creator-qualified-name,Qualified to avoid merging the separate nexu-io Open Design desktop application
+Parametric Canvas Command Hook,cad-as-code-template,identical-source-surface,README agent contract and export implementation blobs are identical to CAD-as-Code Template at the checked revisions
+Nazir Louis ADA V2,ada-v2-nazir,creator-qualified-name,Original multimodal CAD assistant lineage is qualified to distinguish a later separately maintained code derivative
+Syed Daiam A.D.A,ada-v2-syed,independent-derivative-product,Retains the ADA artifact graph but adds and maintains a tested provider abstraction and separate release history
+Codex Game Studio,codex-game-studio,independent-port,Ports the Claude Code Game Studios operating model into Codex-native skills and handoffs
+gstack-game,gstack-game,independent-methodology-derivative,Borrows engineering patterns and game sources but rewrites the game-specific judgment and review pipeline
+Atlas Agent Teams design-ux,atlas-design-ux,independent-component,Separately installable plugin with its own manifest commands agents skills hooks and team log
+Atlas Agent Teams 3d-design,atlas-3d-design,independent-component,Separately installable 3D plugin with a different host and artifact graph
+Shain DLS,shain-design-system-skill,independent-companion-product,Separately released token and Figma-system skill used by Shain Designer Kit
+OpenCAD CAID correction companion,simcorrect,independent-companion-product,SimCorrect owns fault identification parameter patches simulation reload and validation against OpenCAD artifacts
+Claude Code Game Studios,claude-code-game-studios,upstream-product,Source operating model explicitly ported by Codex Game Studio and cited by gstack-game
+Emdash Skills,emdash-skills,current-product-name,Repository name remains claude-skills while current public product name is Emdash Skills
+Tonone team bundles,tonone,distribution-components,Design product engineering and full-team bundles are installable slices of one maintained agent system
+iOS Design Agent Skill,ios-design-agent-skill,independent-platform-port,Ports Anthropic frontend design methodology into native SwiftUI constraints and maintains a separate product and release surface
+AI Design Skills workshop folders,ai-design-skills,distribution-components,Contributed token extraction Figma translation accessibility and critique skills share one workshop collection and update boundary
+Scott's Dope Skills visual folders,s-stack,distribution-components,Brief authoring frontend production critiques and convergence loops are operated skills inside one maintained collection
+Qwen MM Plugins Blender,qwen-blender,independent-component,Separately installable plugin MCP runtime and Blender-native artifact graph
+Qwen MM Plugins FreeCAD,qwen-freecad,independent-component,Separately installable plugin XML-RPC runtime and parametric FCStd artifact graph
+Qwen MM Plugins Video Edit,qwen-video-edit,independent-component,Separately installable media workflow runtime and reusable motion asset system
+NijoP elctronics-kit,electronics-agent-kit,copied-source,Repository commit is byte-identical to the earlier o2scale Electronics Agent Kit revision
+xianlinyue162-beep kicad-pcba-engineering-skills,kicad-pcba-engineering-skills,former-owner-url,Old clone URL redirects to the current tsukimori-dev repository without creating a second product
+Michal Protasowicki kicad-tools skill,michpro-kicad-tools,independent-integration-companion,Separately maintained Agent Skills distribution and workflow layer depends on the Robb Walters kicad-tools engine
+BrandDocs format skills,brand-docs,distribution-components,DOCX PPTX and XLSX skills share one Brand Profile engine installation and release boundary
+thvroyal Kimi Skills,kimi-office,unofficial-source-distribution,Repository states that its document skills were extracted from Moonshot AI Kimi and does not claim an independent invention
+Pascal visual skill folders,pascal-skills,distribution-components,Palette extraction image comparison OCR and web design share one installer maintainer and release boundary
+YUV.AI creative skill folders,yuv-ai-creative-skills,distribution-components,The common installer pilot and design system intentionally bind deck landing and video workflows into one product stack
+StyleKit catalog skill and export APIs,stylekit,one-product-multiple-surfaces,Style browsing agent application and token or rule export operate the same governed style definitions
+Paper2Poster PosterAgent and evaluation suite,paper2poster,product-and-evidence-suite,Evaluation code tests the same poster generation artifact and does not constitute a second product
+notebooklm-py and Gemini Notebook,notebooklm-py,independent-unofficial-adapter,The open-source client adds a released agent CLI and export boundary while Google retains the separately operated hosted notebook product
+Claude Financial Services named agents,claude-financial-services,distribution-components,Self-contained agent packages are synchronized from one official vertical suite and share its source release and skill authority
+SenseNova office workflow skills,sensenova-skills,distribution-components,PPT spreadsheet infographic and research modules are composed and shipped through one SenseNova distribution
+Unreal-Blender MCP embedded BlenderMCP,unreal-blender-mcp,independent-upstream-extension,Repository includes the upstream Blender bridge as a submodule but adds a separately maintained cross-host server and Unreal plugin
+ArtClaw host plugins,artclaw-bridge,distribution-components,Host-specific plugins share one bridge core tool manager session model and synchronized skill lifecycle
+AI Forge MCP servers and ForgeRoom,ai-forge-mcp,product-components,The command center review surfaces and sixteen servers are presented and subscribed as one production pipeline
+DCC-MCP Blender adapter,dcc-mcp-blender,independent-ecosystem-adapter,Blender adapter has its own package extension release host dispatcher and native artifact capability graph within a broader ecosystem
+Blender Scene Agent web Teams and voice,blender-scene-agent,product-surfaces,Three transports share one agent tool stack isolated VM and persistent Blender scene
+Posecode language renderer and MCP,posecode,product-components,Specification parser renderer evaluation playground and agent server operate one canonical movement artifact format
+Jithin Blender skill and ahujasid BlenderMCP,jithin-blender-skill,independent-workflow-companion,The project depends on the shared transport but publishes its own installable correction workflow patterns and viewport utilities
+DataEvolver paper code and dataset workflow,dataevolver,released-research-system,The repository supplies an independently runnable visual construction and evidence pipeline rather than only a paper claim
+adobepy broker SDK and Adobe bridges,adobepy,independent-shared-runtime,Standalone CLI Python SDK and host bridges directly operate several Adobe artifact graphs beyond adapter packaging
+DCC AI OpenAI image texture skill,dcc-ai-openai-image,independent-workflow-package,Generation and editing share one installable texture source handoff contract
+dcc-cua runtime CLI and semantic profiles,dcc-cua,independent-control-runtime,Extracted runtime owns exact window observation action verification and safety rather than one host adapter
+DCC LookDev turntable skill,dcc-lookdev,independent-workflow-package,Marketplace package creates a calibrated review scene by composing active DCC tools
+DCC MaterialX lookdev skill,dcc-materialx,independent-artifact-workflow,Package owns portable MTLX authoring validation and inspection semantics
+DCC-MCP 3ds Max adapter,dcc-mcp-3dsmax,independent-ecosystem-adapter,Separate release owns 3ds Max dispatch typed capabilities and native scene operations
+DCC-MCP After Effects adapter,dcc-mcp-aftereffects,independent-ecosystem-adapter,Separate Adobe adapter owns composition layer timeline and render queue capabilities
+DCC-MCP Cinema 4D adapter,dcc-mcp-cinema4d,independent-ecosystem-adapter,Headless adapter has a separate package and atomic C4D document lifecycle
+DCC-MCP ComfyUI adapter,dcc-mcp-comfyui,independent-ecosystem-adapter,Separate package owns ComfyUI workflow validation execution jobs and artifact retrieval
+DCC-MCP Core control plane,dcc-mcp-core,independent-platform-product,Gateway CLI Admin UI policy job artifact and Skill systems form the ecosystem control product
+DCC-MCP Flow Production Tracking adapter,dcc-mcp-fpt,independent-ecosystem-adapter,Separate adapter owns typed production coordination while fpt-cli is its pinned execution component
+DCC-MCP FreeCAD adapter,dcc-mcp-freecad,independent-ecosystem-adapter,Separate package owns parametric FCStd mutation validation and CAD exchange
+DCC-MCP Godot adapter,dcc-mcp-godot,independent-ecosystem-adapter,Packaged EditorPlugin and sidecar own Godot scene game QA and export capabilities
+DCC-MCP Houdini adapter,dcc-mcp-houdini,independent-ecosystem-adapter,Separate package owns Houdini node authoring HDA execution rendering and project persistence
+DCC-MCP Illustrator adapter,dcc-mcp-illustrator,independent-ecosystem-adapter,Separate package owns Illustrator typed DOM vector edits and native exports
+DCC-MCP Mari adapter,dcc-mcp-mari,independent-ecosystem-adapter,Separate package and host plugin own Mari projects graphs layers shaders and texture exports
+DCC-MCP Marmoset adapter,dcc-mcp-marmoset,independent-ecosystem-adapter,Separate Toolbag plugin owns live lookdev rendering validation and scene save
+DCC-MCP Maya adapter,dcc-mcp-maya,independent-ecosystem-adapter,Separate mature host product owns Maya dispatch capability graph jobs and project state
+DCC-MCP Maya AdvancedSkeleton skill,dcc-mcp-maya-advancedskeleton,independent-workflow-companion,Installable third party rigging workflow owns FitSkeleton setup and reproducible rig build
+DCC-MCP Maya mGear skill,dcc-mcp-maya-mgear,independent-workflow-companion,Marketplace package owns Shifter guide rig build and template interchange above the Maya adapter
+DCC-MCP Maya Procedural Architecture skill,dcc-mcp-maya-procedural-architecture,independent-domain-workflow,Separate package owns seeded house generation styles PBR assembly and review flow
+DCC-MCP Nuke adapter,dcc-mcp-nuke,independent-ecosystem-adapter,Separate host package owns compositing adjustments Gizmo assets rendering and script persistence
+DCC-MCP OpenSCAD adapter,dcc-mcp-openscad,independent-ecosystem-adapter,Standalone release owns bounded parameter validation preview and atomic geometry export
+DCC-MCP OpenUSD adapter,dcc-mcp-openusd,independent-ecosystem-adapter,Separate package owns stage material camera animation composition and package semantics
+DCC-MCP Photoshop adapter,dcc-mcp-photoshop,independent-ecosystem-adapter,Separate adapter binds the shared broker to a complete Photoshop typed skill surface
+DCC-MCP RenderDoc adapter,dcc-mcp-renderdoc,independent-verification-product,Separate release owns graphics capture inspection thumbnail timeline and resource evidence
+DCC-MCP Substance 3D Designer adapter,dcc-mcp-substance3d-designer,independent-ecosystem-adapter,Embedded package owns procedural PBR material creation inside Designer
+DCC-MCP Substance 3D Painter adapter,dcc-mcp-substance3d-painter,independent-ecosystem-adapter,Embedded package owns project layers smart materials save and texture export
+DCC-MCP TouchDesigner adapter,dcc-mcp-touchdesigner,independent-ecosystem-adapter,Separate embedded server owns operator parameter project and viewport operations
+DCC-MCP Tracy adapter,dcc-mcp-tracy,independent-verification-product,Separate package owns profiler capture export summarization and durable performance evidence
+DCC-MCP Unity adapter,dcc-mcp-unity,independent-ecosystem-adapter,Separate UPM bridge and sidecar own Unity project scene QA and build jobs
+DCC-MCP Unreal adapter,dcc-mcp-unreal,independent-ecosystem-adapter,Separate plugin and sidecar own a broad Unreal native skill graph and optional official bridge
+DCC-MCP Wwise adapter,dcc-mcp-wwise,independent-ecosystem-adapter,Separate WAAPI product owns interactive audio authoring preview banks and Work Unit delivery
+DCC-MCP ZBrush adapter,dcc-mcp-zbrush,independent-ecosystem-adapter,Separate bridge and package own sculpt correction baking interchange and turntable evidence
+DCC Pipeline Publish skills,dcc-pipeline-publish,independent-workflow-package,Four installable delivery and acceptance contracts share one manifest and evidence product boundary
+DCC Texture Pipeline skills,dcc-texture-pipeline,independent-workflow-package,OIIO and OCIO Skills share one deterministic texture preparation release boundary
+DCC-MCP Qt UI Actions skill,dcc-ui-qt-actions,independent-runtime-companion,Installable action package completes legacy Qt correction using stable selectors and screenshots
+EasyEDA Copilot and KiCad Copilot,easyeda-copilot,independent-sibling-product,The same maintainer releases separate extensions for different host-native circuit graphs and installation boundaries
+KiCad Happy,kicad-happy,independent-review-product,The review and fabrication-governance distribution is installable independently from KiCad authoring agents and owns a distinct evidence artifact loop
+Motion Previs Studio and Blockout,motion-previs-studio,independent-suite-product,The source-analysis workspace and grey-box scene authoring workspace are separately installed products with different authoritative project states
+BlenderMCP by ahujasid,blendermcp,upstream-product,The original released addon and MCP server are counted separately from independently maintained transports workflows and cross-host extensions built around it
+Preso AI by Atharva Jagtap,preso-ai,independent-homonym,The open-source local-first editor is unrelated to the separately operated Preso product at trypreso.com
+DeepPCB and SparkBench,deeppcb,independent-hosted-product,SparkBench evaluates agents while DeepPCB operates a revisioned PCB placement and routing workspace with its own editor and artifact authority
+Unreal MCP,unreal-mcp,independent-first-party-surface,Epic's embedded editor plugin is distinct from community Unreal bridges and harnesses even when they expose overlapping host operations
+NotebookLM,gemini-notebook,former-product-name,Google's current first-party product page and help center surface the hosted product as Gemini Notebook
+Office Raccoon and SenseNova Skills,office-raccoon,independent-host-and-distribution,The closed office agent bundles the separately installable skills but also owns its own sessions assets and editable PPT surface
+Blockout MCP,blockout,execution-component,Standalone bridge republishes the bundled control contract and mutates the same Blockout project authority
+Hermes DaVinci Resolve Plugin,unofficial-davinci-mcp,execution-component,Maintainer's Hermes-only plugin is a narrower client-specific distribution of the same Resolve live and interchange product surface
+Master Canvas Hermes Plugin,master-canvas,execution-component,Plugin adds a Hermes entry point without creating a second board or handoff artifact
+Master Canvas MCP,master-canvas,execution-component,Standalone server and bundled bridge both read and write the canonical master-canvas-project JSON
+Motion Previs MCP,motion-previs-studio,execution-component,Bridge discovers and drives a running Motion Previs Studio session and its production pack
+Sam PDF Studio MCP,sam-pdf-studio,execution-component,Thin wrapper invokes the editor's own local PDF engine and has no independent document authority
+Quilter and EasyEDA Copilot,quilter,independent-hosted-product,Quilter owns a hosted cross-EDA candidate search and review lifecycle rather than the EasyEDA extension's live document graph
+Seko and Office Raccoon,seko,independent-sibling-product,SenseTime releases separate video-story and office-document workspaces with different project and artifact authority
+DaVinci Resolve and Unofficial DaVinci MCP,davinci-resolve,independent-host-and-bridge,Blackmagic owns the native media project while the community bridge adds an independently installable agent and interchange surface
+sandyup/comfyui-mcp and artokun/comfyui-mcp,comfyui-mcp,repository-mirror,The copied repository republishes the canonical package documentation domains badges and workflow control plane without an independent product artifact
+Trace and KiCad,trace-pcb,independent-product-fork,Trace keeps standard KiCad project files compatible but adds its own synchronized AI representation agent modes version history and product release
+Fluxwing Skills,fluxwing-skills,independent-agent-workflow,Installable skills author and review project-owned UXSCII artifacts rather than merely restating the underlying format specification
+UXSCII,uxscii,independent-artifact-format,Schema validator CLI examples and extension rules make the format independently usable outside Fluxwing
+cxDesinger repository name,cxdesigner,canonical-spelling,Retain the released product spelling in display text while using a stable lowercase census slug
+Pigcasso Canva repository,pigcasso-canvas,alias,Repository name references Canva while the first-party product and application call the workspace Pigcasso Canvas
+ComfyUI and Comfy Cloud,comfyui,managed-deployment-variant,Local and hosted deployments retain the same workflow graph and canvas artifact while differing in GPU account and persistence ownership
+Official Comfy MCP cloud and local connections,comfy-mcp-official,product-modes,First-party documentation explicitly presents both servers as two connections of the same named agent product
+Comfy Skills,comfy-mcp-official,distribution-component,Canonical plugin packages hosted MCP configuration and steering commands while deferring live discovery execution auth and workflow storage
+Comfy CLI,comfyui,execution-component,CLI installs launches validates and runs the canonical workspace and supplies the execution engine for official Local Comfy MCP
+Comfy In-App Agent and Comfy MCP,comfy-in-app-agent,independent-sibling-surface,In-App Agent owns chat beside the managed canvas while MCP connects external agents from separate clients
+artokun comfyui-mcp and official Comfy MCP,comfy-mcp-official,independent-first-party-product,The official local and cloud product is separately maintained from the community control plane and exposes a different tool and runtime contract
+QuiverAI MCP,quiverai,agent-interface,Hosted MCP uses the same OAuth account Gallery tasks models billing and SVG creations as the QuiverAI app
+QuiverAI agent plugins,quiverai,distribution-components,Codex and Cursor bundles only package the canonical hosted MCP configuration and QuiverAI instructions
+QuiverAI API,quiverai,developer-interface,REST endpoints invoke the same Arrow capabilities and structured SVG artifact family without another workspace
+Trace CLI,trace-pcb,product-interface,CLI and desktop share the local engine backend accounts quotas versions teams and circuit project authority
+Trace MCP Server,trace-pcb,agent-interface,Hosted and local MCP expose existing Trace services and project-scoped files to external agents
+Trace Agent Plugin,trace-pcb,distribution-component,Skills and MCP configuration teach clients to operate Trace but do not own circuits or versions
+Trace SDKs and GitHub Action,trace-pcb,developer-components,Programmatic clients and CI packaging invoke the same engine tool loop and project artifacts
+Trace Partner API,trace-pcb,developer-interface,Partner endpoints expose the existing circuit component and validation platform rather than a second product
+Trace Symbols and Footprints Libraries,trace-component-libraries,paired-product-surfaces,Two artifact-specific sites share one component platform architecture identity account generation validation and contribution lifecycle
+Remotion,remotion,canonical,Official skills Studio browser Studio and render packages operate on one React composition authority
+Canvoss,canvoss,canonical,Editor agent and renderer are infrastructure surfaces over one LayoutDocument and EditorOp model
+Huashu Design,huashu-design,canonical,One installable workflow routes multiple deliverable-specific source formats through a shared design discipline
+HomeVerse,homeverse,canonical,Generated variants copilot and 3D studio belong to one project and scene lifecycle
+Hangover,hangover,canonical,Datasheet reasoning chat and XYFlow circuit authoring converge on one persisted project graph
+Cova,cova,canonical,Direct controls AI suggestions preview and export share one constrained cover configuration
+Logo Generator,logo-generator-skill,canonical,Skill workflow SVG variants comparison and showcase generation form one filesystem-native product surface
+Remotion Agent Skills,remotion,agent-interface,Installable guidance teaches external coding agents to author inspect and render the canonical React composition
+Remotion agent plugins,remotion,distribution-components,Cursor Codex Kimi Code and Claude Code packages are generated distributions of the same official skills
+Remotion Studio and Browser Studio,remotion,visual-interfaces,Both project and directly edit the canonical React composition and add no separate durable artifact
+Remotion rendering surfaces,remotion,delivery-components,Renderer Lambda Cloud Run Vercel and language SDKs execute the same composition and produce derivative media
+Remotion Player and Editor Starter,remotion,embedding-components,Embeddable preview and starter infrastructure let applications host the same Remotion artifact model
+Remotion components prompts and templates,remotion,authoring-components,Official libraries and starter resources extend one composition model without owning a second project authority
+Remotion Prompt to Motion Graphics,remotion-prompt-to-motion-graphics,canonical,Standalone browser workspace owns a prompt code preview revision and render loop distinct from the framework
+Remotion AI Video Template,remotion-ai-video-template,canonical,Standalone CLI project owns generated story assets and a timeline JSON consumed by Remotion
+AI Media Canvas,ai-media-canvas,qualified-canonical,Tutti OS project is distinguished from other products named AI Canvas by its repository and revisioned Excalidraw authority
+Nika Character Studio,nika-character-studio,canonical,Character card data HTML front end agent patches and exports share one local studio lifecycle
+UIX AI Agent,uix-ai-agent,canonical,Connected screens project JSON live HTML and refinement history belong to one browser workspace
+Rhino Grasshopper MCP,rhino-grasshopper-mcp,qualified-canonical,Grasshopper component-graph bridge is separately maintained from RhinoMCP and other Rhino scene bridges
+Homemaker,homemaker,canonical,Three.js editor project directory Claude agent and screenshot loop share one interior workspace
+Lunima,lunima,canonical,Current photonic editor and former Connect-A-PIC lineage share the same process-aware grid and project authority
+Shape,shape,canonical,Desktop editor visual tools preview and agent review operate on one repository source authority
+Data Formulator,data-formulator,canonical,Chart agents encodings variants and sessions share one Microsoft Research data workspace
+Resume Matcher,resume-matcher,canonical,Master resumes tailored descendants builder preview and PDF delivery share one document product
+Clypra,clypra,canonical,Timeline editor local transcription captions and export operate on one project lifecycle
+Caret IDE,caret,distribution-shell,VSCodium distribution packages the canonical Caret core where Design Mode and synchronization are implemented
+Caret,caret,canonical,Core repository owns the design layer rendering source mapping agent editing and sync state
+Vextra MCP,vextra-mcp,canonical,Read-only MCP and its Vextra Core dependency expose one local design-file inspection interface
+Vextra Core,vextra-mcp,dependency-component,Document graph import layout and rendering engine supports the MCP but has no separate AI-native product loop
+BurnGuard Design,burnguard-design,canonical,Local application owns the project HTML agent context comments checkpoints preview and delivery lifecycle
+AI Creative Studio,ai-creative-studio,canonical,Distributed specialists and the Creative Director share one reviewed campaign-package workflow
+Diamond Design AI,diamond-design-ai,canonical,Jewelry brief image versions selection workshop handoff and delivery share one session authority
+DesignFlow AI,designflow-ai,qualified-canonical,Repository named FigmaAI defines its own DesignFlow element graph and is not a Figma product
+Substrata,substrata,canonical,Maker architecture and hacker surfaces share one Gantasmo project and provider workspace
+AKO Visual Design Agent,ako-visual-design-agent,canonical,Deterministic perception proposal approval and production stages share one trace-linked asset package
+DraftWalk,draftwalk,canonical,Plan schema direct editing agent operations Blender compile and exports share one home project
+Visual Agent Designer,visual-agent-designer,canonical,Project context generated assets critique and handoff belong to one local VAD lifecycle
+Manim Explainer Agent,manim-agent,canonical,Content visual plan Manim source render and MP4 delivery form one animation run
+Integrated SaaS Design Agent,integrated-saas-design-agent,canonical,Diagnosis candidate wireframes screenshots evaluations synthesis and ranking share one run directory
+AI UI Generator,ai-ui-generator,qualified-canonical,Design Engine name is resolved to the Dhruv Suyal constrained JSX browser workspace
+AI Design Studio,ai-design-studio,qualified-canonical,Room-focused application is distinguished from other generic projects named AI Design Studio
+AI Design Workspace,ai-design-workspace-catalog,qualified-canonical,Print catalog source workspace is distinguished by its cj1044821606-cell repository and edition model
+DesignCanvas,designcanvas,qualified-canonical,Local tldraw execution-graph product is separate from the earlier Design Canvas visual decision workspace
+UX Planner,ux-planner,canonical,Skill interview specification handoff and lock-in feedback operate one UX decision artifact
+BuildGraph,buildgraph,qualified-canonical,Graph-Studio repository defines the BuildGraph visual MEP and structural engineering product
+Open Design AI by Sai Kiran,open-design,source-copy,Pinned code and changelog preserve the nexu-io Open Design product identity
+Ghost AI by Ahmed Hobeishy,ghost-ai,tutorial-derivative,Customized repository retains the JavaScript Mastery Ghost AI project lifecycle
+Arch AI by Pranjeet,ghost-ai,tutorial-derivative,Renamed build follows the same Ghost AI architecture tutorial
+Collab Planner Next,ghost-ai,tutorial-derivative,Personalized planner follows the same Ghost AI tutorial and artifact model
+AI Architecture Studio by Chabel Bossa,ghost-ai,tutorial-derivative,Repository explicitly follows the Ghost AI tutorial under different branding
+Virtuoso Bridge Lite,virtuoso-bridge-lite,canonical,Canonical product name in the source repository
+pbi-cli,pbi-cli,canonical,Canonical package and repository name
+OWOX Model Canvas,owox-model-canvas,canonical,Canonical open-source canvas product name
+AutoCkt,autockt,canonical,Canonical released research-system name
+RTL-CLAW,rtl-claw,canonical,Canonical agentic RTL system name
+EDACraft,edacraft,canonical,Canonical electronics-design product name
+CAP / CAD-GPT,cad-gpt-cap,qualified-canonical,Combined product and repository names disambiguate this CAD system
+claude-eda,claude-eda,qualified-canonical,Repository-qualified canonical name for this EDA skill system
+AI Revit Family Maker,ai-revit-family-maker,canonical,Canonical application name
+Chipster,chipster,qualified-canonical,Repository context disambiguates this digital-design system
+Visual Authoring,visual-authoring,qualified-canonical,Repository context disambiguates the generic product phrase
+Neo Studio V2,neo-studio,canonical,Current verifiable Neo Studio implementation
+Neo Studio V1,neo-studio,predecessor,Earlier implementation in the same Neo Studio lineage
+IceZone Studio,icezone-studio,canonical,Canonical creative-workspace name
+QBIC,qbic,qualified-canonical,Repository context disambiguates the short product name
+PixelRuller,pixelruller,canonical,Canonical MCP visual-inspection product name
+Gia-co-Design,gia-co-design,canonical,Canonical co-design application name
+brawt,brawt,canonical,Canonical product identity exposed by the OpenDesigner repository
+OpenDesigner repository,brawt,repository-name,Repository name differs from the brawt product identity
+UML Tool,uml-tool,qualified-canonical,Repository context disambiguates the generic diagram-tool name
+Agent Diagram Tool,agent-diagram-tool,qualified-canonical,Repository context disambiguates the product name
+Co-Design Canvas,co-design-canvas,canonical,Canonical AI-assisted canvas name
+Boutiqaat Creative Studio,boutiqaat-creative-studio,canonical,Canonical campaign-workspace name
+LocalOffice,localoffice,canonical,Canonical local visual-workspace name
+Computational Design Skills,computational-design-skills,qualified-canonical,Creator and repository context identify this executable skill collection
+Agent Skills for Autodesk Platform Services,autodesk-platform-services-skills,canonical,Canonical official Autodesk agent-skills collection
+acad-cuix-builder,autodesk-platform-services-skills,dependency-component,Implementation dependency inside the Autodesk agent-skills boundary
+Claude Engineering Skills Library,claude-engineering-skills,qualified-canonical,Creator and repository context identify this engineering skill collection
+AMS-IO-Agent,ams-io-agent,canonical,Canonical analog mixed-signal agent name
+SymXplorer,symxplorer,canonical,Canonical symbolic circuit-exploration product name
+FPGA Design Agent,fpga-design-agent,qualified-canonical,Creator and repository context identify this FPGA system
+Chili Chiplets,chili-chiplets,canonical,Canonical chiplet-design product name
+Specula Method,specula-method,canonical,Canonical method layer in the Specula product family
+Hype,hype,qualified-canonical,Creator and repository context disambiguate this code-native visual IDE
+inLUMEN,inlumen,canonical,Canonical diagram-canvas product spelling
+Monogatari,monogatari,qualified-canonical,Organization and repository context disambiguate this story workspace
+Forge Projects,forge-projects,qualified-canonical,Creator and repository context identify this interface-design workspace
+Local Design Canvas,local-design-canvas,qualified-canonical,Repository context disambiguates this local UI canvas
+Delft AI Toolkit,delft-ai-toolkit,canonical,Canonical name of the superseding toolkit repository
+Delft AI Toolkit prototype,delft-ai-toolkit,predecessor-repository,Archived prototype redirects to the superseding product repository
+SpiceXplorer,spicexplorer,canonical,Canonical circuit-exploration product name
+spicexplorer-workspace,spicexplorer,unresolved-upstream-reference,First-party linked successor is inaccessible and is not counted independently
+spicexplorer-platform,spicexplorer,unresolved-upstream-reference,First-party linked successor is inaccessible and is not counted independently
+spicexplorer-ui,spicexplorer,unresolved-upstream-reference,First-party linked successor is inaccessible and is not counted independently
+spicexplorer-orchestration,spicexplorer,unresolved-upstream-reference,First-party linked successor is inaccessible and is not counted independently
+Specula BOS,specula-bos,canonical,Canonical operating-system layer in the Specula product family
+SPECULA Framework,specula-framework,canonical,Canonical implemented framework layer
+SPECULA Skill,specula-skill,canonical,Canonical installable agent-skill layer
+Cucumber Studio,loomic,source-copy,Renamed repository contains the Loomic implementation
+Loomic by fouadhaidouri,loomic,source-copy,Repository contains a copied Loomic archive and source
+Loomic by ObunagaLabs,loomic,source-copy,Repository reproduces the Loomic implementation
+OWOX Data Marts,owox-data-marts,canonical,Canonical upstream analytics-platform product name
+ContextCypher,contextcypher,canonical,Canonical security architecture workspace name
+WriterFlow,writerflow,canonical,Product name implemented in the Collaborative-Editor repository
+Collaborative-Editor,writerflow,repository-name,Repository name contains the WriterFlow product source
+MarkdownFlows,markdownflows,canonical,Canonical local Mermaid desktop name
+Gitary,gitary,canonical,Canonical Git-native authoring product name
+Asciitecture,asciitecture,canonical,Canonical ASCII wireframe editor name
+AI Diagram Hub,ai-draw-nexus,canonical,Canonical name in the earliest verified source
+AI Draw Nexus,ai-draw-nexus,product-name,Common repository and lineage name for AI Diagram Hub
+AI Draw Nexus by fxdm41202425,ai-draw-nexus,copied-source,Head commit and tree are identical to the earlier source
+AI Draw Nexus by duo-ge,ai-draw-nexus,copied-source,Disconnected repository retains the same product and code lineage
+AI Draw Nexus by itbuff666,ai-draw-nexus,copied-source,Tree is identical to the earlier source
+AI Diagram Hub by Doraemon-code,ai-draw-nexus,independent-derivative,Expanded copy retains the same product identity and artifact model
+NexusDraw,ai-draw-nexus,fork-and-rebrand,Repository identifies itself as a reorganized AI Draw Nexus derivative
+Smart Mermaid Assistance,smart-mermaid-assistance,canonical,Canonical Wails desktop product name
+Vibe Mermaid Editor,vibe-mermaid,canonical,Canonical conversational Mermaid editor name
+Mermaid Live Desktop,mermaid-live-desktop,canonical,Canonical local Ollama desktop name
+Architect Studio X,architect-studio-x,canonical,Canonical proposal-gated architecture workspace name
+Loom Architecture Weaver,loom-architecture,qualified-canonical,Qualified name separates this Kubernetes editor from unrelated Loom products
+Loom by Flying Cat Studio,loom-architecture,product-name,Short source name in the Flying Cat Studio repository
+Graphini,graphini,canonical,Canonical AI Mermaid workspace name
+drawloop-skill,drawloop-skill,canonical,Canonical file-first Excalidraw skill name
+OpenDiagram,opendiagram,canonical,Canonical semantic-spec architecture diagram product name
+Diagram AI by Mohamed Badwy,diagram-ai,qualified-canonical,Creator qualifier disambiguates multiple Diagram AI repositories
+Codigram,codigram,canonical,Canonical JavaFX UML and ERD product name
+AI Diagrams by Kavishan Nipun,ai-diagrams,qualified-canonical,Creator qualifier disambiguates the generic product name
+AI Diagrammer by Eric Tech,ai-diagrammer,qualified-canonical,Creator qualifier disambiguates the structured RoughJS product
+AG0 Diagramming Agent,ag0-diagramming-agent,canonical,Canonical CoreSpeed template product name
+TechDraw,techdraw,canonical,Canonical React Flow architecture editor name
+Diagrams by Bunlong Heng,diagrams-bunlong,qualified-canonical,Creator qualifier disambiguates the generic product name
+FlowForge by Krish Jain,flowforge,qualified-canonical,Creator qualifier disambiguates unrelated FlowForge products
+AI Diagram,sketch-chat,canonical,Canonical draw.io bridge product name in the Sketch.chat repository
+Sketch.chat,sketch-chat,repository-name,Repository name for the AI Diagram product
+SilverCraft AI,silvercraft-ai,canonical,Canonical agentic data-modeling product name
+HTML AI Diagram Editor,html-ai-diagram-editor,canonical,Canonical pure-browser source editor name
+Draw.io Figure Replicator,drawio-figure-replicator,canonical,Canonical reference-replication skill name
+AI Diagrams Toolkit,ai-diagrams-toolkit,canonical,Canonical Mermaid agent-toolkit name
+UML Flow,uml-flow,canonical,Canonical custom-DSL UML editor name
+Sirelia,sirelia,canonical,Canonical watched Mermaid visualization tool name
+AuricIDE,auricide,canonical,Canonical Markdown-first agent IDE name
+Author by Autograph,author-autograph,qualified-canonical,Organization qualifier disambiguates the generic writing-app name
+MermaidGen,mermaidgen,canonical,Canonical Gemini Mermaid editor name
+Apo,apo,qualified-canonical,Creator context disambiguates the research and canvas workspace
+Synthezy,synthezy,canonical,Canonical collaborative AI whiteboard name
+Flowbase,flowbase,qualified-canonical,Repository context identifies the AI productivity workspace
+DiagramAI / text2diagram,text2diagram,qualified-canonical,Repository and product names disambiguate this Mermaid application
+DiagAI by Manas More,diagai,qualified-canonical,Creator qualifier identifies the external-agent text parser
+DiagramAI by Nihal Choutapelly,diagramai-nihal,qualified-canonical,Creator qualifier separates this diagram-language application
+Flow2Go,flow2go,canonical,Canonical schema-first diagram engine name
+AI Diagram Generator / Draw.io Codex,drawio-codex,qualified-canonical,Repository qualifier identifies the mxGraph handoff application
+LLMO AI Diagram Architect,llmo-diagram-generator,canonical,Canonical local Mermaid architecture product name
+Thoth Blueprint,thoth-blueprint,canonical,Canonical schema-graph design workspace name
+Viso MCP,viso-mcp,canonical,Canonical MCP-backed visual modeling product name
+CareerVivid,careervivid,canonical,Canonical Excalidraw career-visualization product name
+Architecture Draw.io Automation,architecture-drawio-automation,canonical,Canonical MCP draw.io automation project name
+Cloud Architecture Diagrams,cloud-architecture-diagrams,qualified-canonical,Product label distinguishes the cloud-arch-marketplace repository from generic diagram sets
+Azure Diagram MCP Server,azure-diagram-mcp-server,qualified-canonical,Functional product label identifies the Jah-yee repository
+Interactive Architecture Diagrams,interactive-architecture-diagrams,qualified-canonical,Functional label identifies the architecture-diagram skill product
+Mermaid Chart for VS Code,mermaid-chart-vscode,canonical,Canonical Mermaid Chart extension product name
+STRIDE GPT,stride-gpt,canonical,Canonical threat-modeling product name
+Diagram Creator by Pramit De,diagram-creator-pramit,qualified-canonical,Creator qualifier disambiguates the generic repository name
+AI Diagram Copilot by Pranav,ai-diagram-copilot-pranav,qualified-canonical,Creator qualifier distinguishes unrelated diagram copilots
+Swark,swark,canonical,Canonical VS Code architecture-diagram product name
+Archify,archify,canonical,Canonical typed architecture-delivery skill name
+Product Diagram Copilot,product-diagram-copilot,canonical,Canonical TUARAN product name
+Diagram Copilot by xidoke,diagram-copilot-xidoke,qualified-canonical,Creator qualifier distinguishes unrelated diagram copilots
+InterviewForge,interview-forge,canonical,Canonical system-design interview product name
+NoteGen,note-gen,canonical,Canonical local-first note and canvas product name
+Litho,litho,canonical,Current product name for the deepwiki-rs repository
+deepwiki-rs,litho,repository-name,Repository name retained for source traceability
+CodeWiki,codewiki,canonical,Canonical repository-documentation product name
+OpenMAIC,openmaic,canonical,Canonical AI classroom platform name
+ChartDB,chartdb,canonical,Canonical database diagram platform name
+CodeBoarding,codeboarding,canonical,Canonical codebase visualization product name
+BloxAI,bloxai,canonical,Canonical AI-assisted Excalidraw product name
+DreamForge,dreamforge,canonical,Canonical AI worldbuilding workspace name
+Live Diagramming Copilot,live-diagramming-copilot,qualified-canonical,Functional product label for the diagram-workspace repository
+Marp Slides Template,marp-slides-template,canonical,Canonical Copilot-enabled slide workflow name
+SDD Diagram Copilot,sdd-diagram-copilot,canonical,Canonical specification-driven diagram workspace name
+Agon,agon,canonical,Canonical multi-agent consensus product name
+SRE Design,sre-design,canonical,Canonical provenance-grounded reliability design system name
+Azure Diagram Skill,azure-diagram-skill,canonical,Canonical GitHub Copilot skill name
+Strands Agents Diagram Tool,strands-tools-diagram,qualified-canonical,Qualified name identifies the diagram tool inside the broader tools repository
+LearnHouse,learnhouse,canonical,Canonical learning platform name
+Builder Skills System Architect,builder-skills-system-architect,qualified-canonical,Qualified name identifies the architecture skill within the package
+Copilot SDD Skills,copilot-sdd-skills,qualified-canonical,Qualified name identifies the SDD artifact workflow within the skills repository
+AI Factory,ai-factory,canonical,Canonical evidence-grounded agent factory name
+Excalidraw Plugin,excalidraw-plugin,canonical,Canonical reusable aryxenv plugin product name
+Excalidraw Workflow,excalidraw-plugin,lineage-extension,Repository explicitly extends the plugin with dark-mode export and does not create a separate product
+KnowForge,knowforge,canonical,Canonical document knowledge workspace name
+AI Consulting Workflow,ai-consulting-soyeon,qualified-canonical,Functional label identifies the Soyeon Ahn consulting automation repository
+DBX,dbx,canonical,Canonical database management product name
+Tabularis,tabularis,canonical,Canonical database workspace name
+MerMark Editor,mermark-editor,canonical,Canonical AI Markdown and Mermaid editor name
+Grok Build,grok-build,canonical,Canonical xAI coding-agent product name
+ArchiGen,archigen,canonical,Canonical product name in the Archmind repository
+Archmind,archigen,repository-name,Repository name for the ArchiGen product
+YuzuDraw,yuzudraw,canonical,Canonical ASCII diagram editor name
+Archie,archie-ea,canonical,Canonical enterprise architecture product name
+Archie EA,archie-ea,product-name,Expanded source label for Archie
+Sylang Studio,sylang-studio,canonical,Canonical MBSE-oriented studio brand
+Hermes Studio,sylang-studio,shared-engine,Shared studio-core engine whose Hermes brand lacks the Sylang MBSE Design surface
+Archischema,archischema,canonical,Canonical collaborative database schema product name
+MermaidStudio by CatFoxVoyager,mermaid-studio-catfox,qualified-canonical,Maintainer qualifier separates this local-first product from unrelated Mermaid Studio projects
+RPAForge,rpaforge,canonical,Canonical visual RPA studio name
+LZBot 5000,lzbot-5000,canonical,Canonical landing-zone design agent name
+Codoptic,codoptic,canonical,Canonical diagram-as-code product name
+Unkode,unkode,canonical,Canonical living architecture product name
+Canopy,canopy,qualified-canonical,Repository context identifies the Kroki and MCP diagram workspace
+Mermaid Agent,mermaid-agent,canonical,Canonical validator-loop Mermaid editor name
+Cloud Visualizer Pro,cloud-visualizer-pro,canonical,Canonical Azure architecture workspace name
+Azure Cloud AI Visualizer,cloud-visualizer-pro,repository-name,Repository name for Cloud Visualizer Pro
+Foblex Flow,foblex-flow,canonical,Canonical Foblex node-editor infrastructure name
+F-Flow,foblex-flow,product-name,Library shorthand used by the source
+Mermalaid,mermalaid,canonical,Canonical macOS Mermaid and MCP product name
+MermaidGenie,mermaidgenie,canonical,Canonical collaborative Mermaid product name
+Idem,idem,canonical,Canonical company-building platform name
+CloudArchGen,cloudarchgen,canonical,Canonical cloud architecture generator name
+CloudArch,cloudarchgen,repository-name,Repository name for CloudArchGen
+Draw.io Live Editor,drawio-live-editor,canonical,Canonical local LLM draw.io editor name
+WAM Diagram Editor,wam-studio,canonical,Canonical WAM graph product name
+WAM Studio,wam-studio,product-name,Short label for the same WAM product surface
+Easy UML,easy-uml,canonical,Canonical DeepSeek UML product name
+LiveDiagram,livediagram,canonical,Canonical collaborative agent-addressable diagram product name
+livediagram.app,livediagram,product-name,Domain-styled source name for LiveDiagram
+MindGraph,mindgraph,canonical,Canonical AI map workspace name
+BlueLens,bluelens,canonical,Canonical living architecture blueprint product name
+AI JointJS Diagram Editor,diagram-designer-jointjs,qualified-canonical,Functional qualifier identifies the JointJS JSON product
+OWASP ThreatAtlas,threatatlas,canonical,Canonical OWASP threat-modeling product name
+ThreatAtlas,threatatlas,product-name,Short first-party product label
+Nuxt AI Draw.io,nuxt-ai-drawio,canonical,Canonical Nuxt draw.io agent product name
+UML Transcoder,uml-transcoder,canonical,Canonical UML and code conversion workspace name
+NanaDraw,nanadraw,canonical,Canonical scientific visual authoring product name
+DiPeO,dipeo,canonical,Canonical Diagrammed People and Organizations product name
+GenAI DrawIO Creator,genai-drawio-creator,canonical,Canonical native draw.io chat product name
+Turbo EA,turbo-ea,canonical,Canonical enterprise architecture digital-twin product name
+SysVis.AI,sysvis-ai,canonical,Canonical system design visualizer name
+Sys-Arc-Visl,sysvis-ai,repository-name,Repository name for SysVis.AI
+IntelliDraw,intellidraw,canonical,Canonical collaborative AI diagram platform name
+Mermaid Studio on Workers,mermaid-studio-workers,qualified-canonical,Runtime qualifier separates this Cloudflare product from unrelated Mermaid Studio projects
+Werilog,werilog,canonical,Canonical Verilog and circuit design workspace name
+Software Design Mermaid MCP,software-design-mermaid-mcp,canonical,Canonical multi-round MCP editor name
+ScyllaDB Diagram Skill,scylla-diagram-skill,canonical,Canonical ScyllaDB architecture skill name
+ScyllaDB Diagram Editor,scylla-diagram-skill,companion-surface,Companion editor is part of the skill handoff and no independently published source product was found
+Claude Cowork for Office,claude-cowork-office,canonical,Canonical local office agent product name
+ArchiFlow,archiflow,canonical,Canonical WAM architecture editor name
+Zukai,zukai,canonical,Canonical JSON-native cloud diagram editor name
+CloudMap,cloudmap,canonical,Canonical AWS architecture product name
+claudio_demo_v0.2,cloudmap,repository-name,Newer source repository for CloudMap
+claudio2.2,cloudmap,duplicate-repository,Earlier repository for the same CloudMap product and maintainer lineage
+Diagram X,diagram-x,canonical,Canonical AI node diagram editor name
+KronEditor,kroneditor,canonical,Canonical AI PLC design and runtime product name
+Visual Diagram Editor by Roman Zabolotin,visual-diagram-editor-rzabolotin,qualified-canonical,Maintainer qualifier separates this generic product name from other diagram editors
+Agent Architecture by Shivraj,agent-setup,qualified-canonical,Repository context identifies the Copilot SDLC agent and diagram skill system
+Agent Setup,agent-setup,repository-name,Repository name for Agent Architecture
+MedPaper Assistant,medpaper-assistant,canonical,Canonical medical research and visual authoring workspace name
+Medical Paper Assistant,medpaper-assistant,product-name,Expanded source label for MedPaper Assistant
+X-FluxAgent,x-fluxagent,canonical,Canonical ComfyUI AI module workflow extension name
+AgentGo,agentgo,canonical,Canonical local-first visual agent application IDE name
+MimoCanvas,mimo-canvas,canonical,Canonical image and video workflow canvas name
+Mimo Canvas,mimo-canvas,alias,Spaced rendering of the MimoCanvas product name
+FIGS,figs,canonical,Canonical knowledge-graph schema and ontology workspace name
+Open Agent Builder,open-agent-builder,canonical,Canonical 01.AI visual agent workflow builder name
+open-agentkit-builder,open-agent-builder,repository-name,Source repository name for Open Agent Builder
+ClaudeKit Marketing,claudekit-marketing,canonical,Canonical upstream Claude Code marketing and design kit name
+Workshop Design System,claudekit-marketing,duplicate-repository,GitHub Copilot repackaging whose files retain ClaudeKit authorship and predominantly exact upstream content
+AgentFlow by Darshit Sharma,agentflow,qualified-canonical,Maintainer qualifier separates this generic visual agent workflow product name
+AgentFlow,agentflow,product-name,Displayed product name in the Darshit Sharma repository
+ZeroNode,zeronode,canonical,Canonical AI knowledge graph canvas name
+MyN8N,myn8n,canonical,Canonical personal visual automation platform name
+Fluxus by LachPawel,fluxus,qualified-canonical,Maintainer qualifier separates this generic automation product name
+Fluxus,fluxus,product-name,Displayed visual automation builder name
+Vibe Automation Studio,vibe-automation,canonical,Canonical bilingual visual automation product name
+NGP Automation,vibe-automation,duplicate-repository,Later byte-identical repository tree for Vibe Automation Studio
+Story Blocks,story-blocks,canonical,Canonical visual interactive-fiction authoring product name
+WebNode Framework,webnode,canonical,Canonical graph-to-Python web framework and editor name
+webnode,webnode,repository-name,Source repository name for WebNode Framework
+NLJ Platform,nlj-platform,canonical,Canonical nonlinear learning graph authoring platform name
+NLJ Viewer,nlj-platform,repository-name,Historical repository label for the NLJ Platform source
+Agentic Signal,agentic-signal,canonical,Canonical local visual agent workflow engine name
+Calcstack,calcstack,canonical,Canonical multi-editor AI design platform name
+Figma Weave,figma-weave,canonical,Current product name after Figma acquired Weavy
+Weavy,figma-weave,acquired-name,Former name of the same product and team now called Figma Weave
+Velocity,velocity,canonical,Canonical OptimiLabs local-first agent workflow command center name
+WorkflowOS,workflowos,canonical,Canonical Production AI Institute PSF workflow studio name
+PSF Workflow Studio,workflowos,product-name,Descriptive hosted studio name for WorkflowOS
+OpenCanvas by OpenCanvas AI,opencanvas-ai,qualified-canonical,Owner qualifier separates this executable media canvas from LangChain Open Canvas
+OpenCanvas,opencanvas-ai,product-name,Displayed name of the OpenCanvas AI desktop product
+OpenFlow by Nazih Khelifa,openflow-ai-studio,qualified-canonical,Maintainer qualifier separates this creative workflow studio from OpenFlowKit and unrelated projects
+OpenFlow,openflow-ai-studio,product-name,Displayed name of the multimodal creative workflow studio
+WZRDFLOW,wzrdflow,canonical,Canonical generative workflow storyboard and timeline product name
+wzrd-flow-app,wzrdflow,duplicate-repository,Later divergent repository snapshot from the same owner and product lineage
+AutoGPT Platform,autogpt,canonical,Current visual agent builder and execution platform lineage
+AutoPilot,autogpt,product-surface,Conversational graph-building surface inside the AutoGPT platform
+ToolJet,tooljet,canonical,Canonical low-code application workflow and agent platform name
+Langflow,langflow,canonical,Canonical visual agent and AI workflow platform name
+Inkeep Agents,inkeep-agents,canonical,Canonical interoperable visual builder and TypeScript SDK product name
+Open Agent Builder by Firecrawl,firecrawl-open-agent-builder,qualified-canonical,Owner qualifier separates Firecrawl product from the unrelated 01.AI product
+RocketRide,rocketride,canonical,Canonical visual portable AI pipeline platform name
+Dograh,dograh,canonical,Canonical visual voice agent platform name
+Refly,refly,canonical,Canonical agentic workspace and skills builder name
+ClaraVerse,claraverse,canonical,Canonical private AI workspace name
+agents-ui,agents-ui,canonical,Current visual Claude Code orchestration product name
+claude-code-cli-ui,agents-ui,repository-name,Discovery repository name for agents-ui
+ChatDev 2.0,chatdev,canonical,Current visual multi-agent workflow lineage name
+DevAll,chatdev,current-alias,Alternate current branding used by the ChatDev 2.0 project
+ChatDev 1.0,chatdev,legacy-name,Historical software-company formulation retained on a legacy branch
+Open Gumloop,open-gumloop,canonical,Canonical distinct open workflow product inspired by Gumloop
+Archon by Cole Medin,archon-workflows,qualified-canonical,Maintainer qualifier separates this visual coding workflow product from ArchonDev
+Archon,archon-workflows,product-name,Displayed product name in the Cole Medin repository
+Astron RPA,astron-rpa,canonical,Canonical iFLYTEK visual RPA and agent integration product name
+ChatbotX,chatbotx,canonical,Canonical visual omnichannel agent workflow product name
+SmythOS Studio,smythos-studio,canonical,Canonical SmythOS visual agent builder name
+Flock by Onelevenvy,flock-agent-orchestrator,qualified-canonical,Maintainer qualifier separates the visual multi-agent harness from unrelated Flock products
+Flock,flock-agent-orchestrator,product-name,Displayed product name in the Onelevenvy repository
+Tesslate Agent Builder,tesslate-agent-builder,canonical,Canonical TFrameX visual agent builder name
+Fireworks Tech Graph,fireworks-tech-graph,canonical,Canonical constrained technical diagram skill name
+Automotive Skills Suite,automotive-skills-suite,canonical,Canonical automotive builder and reviewer skill chain name
+Teable,teable,canonical,Canonical AI data workflow and application platform name
+Budibase,budibase,canonical,Canonical operations app automation and agent platform name
+Vercel AI Workflow Builder Template,vercel-workflow-builder-template,canonical,Canonical deployable Workflow DevKit visual builder template name
+AI Workflow Builder Template,vercel-workflow-builder-template,product-name,Short displayed name in the Vercel Labs repository
+WrenAI,wrenai,canonical,Canonical governed generative BI and dashboard platform name
+n8n Workflow Builder MCP Server,n8n-workflow-builder-mcp,canonical,Canonical external-agent control bridge for n8n workflows
+Orca IDE,orca-ide,canonical,Canonical Stably agent IDE name
+Orca,orca-ide,product-name,Short displayed name of the Stably agent IDE
+Tersa,tersa,canonical,Canonical Vercel Labs visual AI playground name
+Buzz by Block,buzz-workspace,qualified-canonical,Owner qualifier separates the signed collaboration workspace from unrelated Buzz products
+Buzz,buzz-workspace,product-name,Displayed workspace name in the Block repository
+FluxorAI,fluxorai,canonical,Canonical visual automation product name
+Fluxora,fluxorai,package-name,Internal package name used by the FluxorAI source tree
+node-workflow by muuhdra,vibe-workflow,duplicate-repository,Repository self-identifies as Vibe Workflow and retains its MuAPI lineage
+Vibe-Workflow by drosales10,vibe-workflow,duplicate-repository,Archived repository republishes the Vibe Workflow product
+less-vibe-workflow-sagnek,vibe-workflow,duplicate-repository,Repository republishes the Vibe Workflow product identity and architecture
+Vibe-Workflow by rfpassos,vibe-workflow,duplicate-repository,Repository reproduces Vibe Workflow branding screenshots and hosted product link
+Vibe-Workflow by irfanarfianto,vibe-workflow,duplicate-repository,Repository reproduces Vibe Workflow branding architecture and setup
+Ledgyx,ledgyx,canonical,Canonical Ineron low-code operations and agent platform name
+Agent Canvas by randomvibecoder,agent-canvas-randomvibecoder,qualified-canonical,Owner qualifier separates the executable drawing canvas from unrelated Agent Canvas products
+TimeCapsule SLM,timecapsule-slm,canonical,Canonical research and creative-coding workspace name
+Canvas AI Page Context Generation Skill,canvas-ai-page-context-generation,canonical,Canonical Drupal Canvas context-extraction skill name
+Varbase AI Figma,varbase-ai-figma,canonical,Canonical Vardot Figma-to-Drupal-Canvas resolver package name
+Drup-AID,drup-aid,canonical,Canonical Drupal agent distribution name
+AI Shortfilm Studio,ai-shortfilm-studio,canonical,Displayed product name in the AI-video repository
+AI Workflow Generator by Wafiq,wafiq-ai-workflow-generator,qualified-canonical,Owner qualifier separates this graph and Airflow product from generic names
+AI Game LaunchPad,ai-game-launchpad,canonical,Canonical bounded generative game platform name
+AI Workflow Studio by Kedar Vartak,kedar-ai-workflow-studio,qualified-canonical,Owner qualifier identifies the SQLite compiler and runner product
+AI Workflow Studio by Erin,erin-ai-workflow-studio,qualified-canonical,Owner qualifier identifies the web control plane and desktop executor product
+WorkflowAI by Dresar,workflowai-dresar,qualified-canonical,Owner qualifier separates the planning and coding-agent handoff workspace
+Wallbit Workflows,wallbit-workflows,canonical,Canonical Studio registry CLI and skill product boundary
+wallbit-cli,wallbit-workflows,product-component,Execution CLI for the same Wallbit workflow schema and registry
+wallbit-workflow-builder,wallbit-workflows,product-component,Agent authoring skill for the same Wallbit workflow product
+HomeBrain,homebrain,canonical,Canonical local-first home automation platform name
+ComfyUI Workflow Studio,comfyui-workflow-studio,canonical,Canonical ComfyUI artifact management and assistance plugin name
+SmartModeler,smartmodeler,canonical,Canonical QGIS AI geoprocessing modeler name
+Drupal Canvas,drupal-canvas,canonical,Canonical Drupal visual site and page builder name
+Canvas AI,drupal-canvas,product-component,Hidden AI submodule that operates on the Drupal Canvas artifact authority
+Drupal Canvas Plugin,drupal-canvas-plugin,canonical,Canonical cross-harness Canvas skills marketplace name
+Canvas AI Migrations,canvas-ai-migrations,canonical,Canonical autonomous Drupal-to-Canvas migration system name
+AI Figma,ai-figma,canonical,Canonical Vardot-maintained Drupal Figma agent-context module name
+MAF Agent Builder Canvas,maf-agent-builder-canvas,canonical,Canonical Microsoft Agent Framework canvas prototype name
+AI Agent Builder by Leon,leon-ai-agent-builder,qualified-canonical,Owner qualifier separates this fixed ReAct canvas from unrelated agent builders
+Aidemyst AgentStudio,aidemyst-agentstudio,canonical,Canonical Aidemyst visual workflow and agent platform name
+Trinity Creative Canvas,trinity-creative-canvas,canonical,Canonical local creative orchestration canvas name
+Quill AI,quill-ai,qualified-canonical,AI qualifier separates this artifact builder from unrelated Quill products
+FRACTA Visual Agent Builder,fracta-agent-builder,canonical,Canonical builder surface within the FRACTA governance dashboard
+Agentify AI,agentix,alias,Repository title maps to the product name Agentix shown by the application
+NodeMind,nodemind,canonical,Canonical graph-executing agent builder name
+Effective and Efficient Agent Architecture,forgelang,alias,Repository title maps to the ForgeLang product implemented by the source
+Voiceblox,voiceblox,canonical,Canonical versioned voice-agent graph builder name
+DonkeyWork Agents,donkeywork-agents,canonical,Canonical DonkeyWork visual agent platform name
+OpenCode Flow,opencode-flow,canonical,Canonical archived OpenCode planning and worktree desktop product name
+AI Resume Builder,gemini-resume-builder,qualified-canonical,Gemini qualifier distinguishes the typed resume fabrication product
+Voice AI Workflow Builder,voice-ai-workflow-builder,canonical,Canonical React Flow voice workflow prototype name
+ADK Studio,adk-studio,canonical,Canonical standalone visual product extracted from ADK Rust
+OpenAI Agent Builder,openai-agent-builder,qualified-canonical,Organization qualifier separates the AgentKit canvas from unrelated builders
+Sim,sim,canonical,Canonical Sim collaborative agent and workflow product name
+AIWorkflow,sim,copied-source,Replacement README name maps to a mirror of the Sim source tree
+RAGFlow,ragflow,canonical,Canonical InfiniFlow visual agent and retrieval product name
+BoncFlow,ragflow,copied-source,Replacement branding maps to a mirror retaining RAGFlow package and source identity
+Google ADK Web,google-adk-web,canonical,Canonical open developer UI and visual builder for Google Agent Development Kit
+Google ADK Visual Agent Builder,google-adk-web,product-surface,Builder name maps to the authoring surface implemented in Google ADK Web
+Nyno,nyno,canonical,Canonical flowagi.eu visual workflow engine and portable file name
+Flowise,flowise,canonical,Canonical FlowiseAI visual LLM and agent workflow platform name
+AgentViz,flowise,copied-source,Renamed repository retains Flowise structure assets node catalogue and implementation
+FlowForge AI by Daniel,flowforge-ai-daniiel,qualified-canonical,Owner qualifier separates this agent graph prototype from unrelated FlowForge products
+Nextflow by Aadithyan A.S,nextflow-aadithyanas,qualified-canonical,Owner qualifier separates this Mongo-backed workflow application from same-named builders
+No-Code ADK Interface,google-adk-nocode,canonical,Canonical independent form-to-Google-ADK source generator name
+I Love Agents,i-love-agents,canonical,Canonical community agent registry and workflow product name
+AISpirit Agent,aispirit-agent,canonical,Canonical AISpirit Labs workspace and embedded agentic-graph builder name
+NextFlow AI Workflow Builder,nextflow-ai-workflow-builder,qualified-canonical,Capitalization and owner lineage distinguish this Prisma and Gemini implementation
+Local Visual Agent Workflow,local-visual-agent-workflow,canonical,Canonical local folder-grounded visual workflow product name
+AI Tutors Hub Visual Agent Builder,visual-agent-builder-amrsaeed,qualified-canonical,Product and owner qualifier merge the two uploaded repository surfaces
+AI Workflow Builder by Anshi Jain,ai-workflow-builder-anshii,qualified-canonical,Owner qualifier separates the governance-first relational workflow application
+Agent Mesh on Streaming World,agent-mesh-sre,canonical,Canonical Kafka SRE conference companion and builder name
+Tessra,tessra,canonical,Canonical portable visual agent packaging product name
+Orchestral AI,orchestral-ai,canonical,Canonical project-to-agent-workflow product name
+Visual Agent Builder by Brahim Abdelbeki,visual-agent-builder-brahim,qualified-canonical,Owner qualifier separates the LangGraph materializing implementation
+Brainfuel Agent Builder,brainfuel-agent-builder,qualified-canonical,Owner qualifier identifies the native macOS Agentic application
+AI Workflow Builder by Burhan086,burhan-ai-workflow-builder,qualified-canonical,Owner qualifier separates this natural-language pipeline product from unrelated workflow builders
+Naaviq,naaviq,canonical,Canonical identity spanning the declared web editor and API compiler repositories
+AgentBuilder by Chebale Omkar,agentbuilder-chebale,qualified-canonical,Owner qualifier separates this form-led multi-agent team builder from unrelated AgentBuilder products
+AI Workflow Builder by Codexnever,no-code-ai-workflow-codexnever,qualified-canonical,Owner qualifier identifies the Appwrite-backed graph implementation
+System Prompt,system-prompt,canonical,Canonical multi-workflow compute-graph product name in the inspected repository
+ContextUI,contextui,canonical,Canonical source-first desktop workflow and MCP product name
+AETHEROS,aetheros,canonical,Canonical prompt-to-blueprint visual agent prototype name
+ADK Playground,adk-playground,canonical,Canonical YAML-first Google ADK authoring and debugging product name
+FloAgenticAI,floagenticai,canonical,Canonical durable visual agent workflow platform name
+OpenAgent by DeepFlowAI,openagent,qualified-canonical,Organization qualifier separates this governed agent operations product from same-named repositories
+AI Workflow Builder by Demilade01,ai-workflow-demilade,qualified-canonical,Owner qualifier separates this relational React Flow implementation
+Planet AI Workflow Builder,planet-ai-workflow,canonical,One product identity spans the frontend canvas and backend execution repositories
+PolySynergy,polysynergy,canonical,Canonical superproject identity for the eight pinned platform components
+Drag-and-Swap,drag-and-swap,canonical,Canonical wallet-scoped visual trading-agent product name
+ai-workflow-builder by fuleinist,ai-workflow-builder-fuleinist,qualified-canonical,Owner qualifier distinguishes the DAG-to-source implementation
+Giselle,giselle,canonical,Canonical typed workflow and published application platform name
+AIOS,aios,canonical,Canonical visual agent authoring surface within the AIOS repository
+Heym,heym,canonical,Canonical versioned visual workflow and delivery platform name
+CRIMETRYX AI,crimetryx-ai,canonical,Canonical forensic case analysis and agent coordination product name
+Workshop Buddy,workshop-buddy,canonical,Canonical Microsoft-maintained solution-design workshop product name
+AI Workflow Builder by Jiazhen Zhu,taskstream,qualified-canonical,Repository product is canonically identified as TaskStream to distinguish generic workflow-builder names
+TaskStream,taskstream,canonical,Canonical versioned visual AI workflow product name
+JoySafeter,joysafeter,canonical,Canonical JD.com security agent graph and skill platform name
+Quorve,quorve,canonical,Canonical visual autonomous-agent authoring prototype name
+Froglips,froglips,canonical,Canonical native local-LLM workstation and Flows product name
+Agent Workflow Canvas,agent-workflow-canvas,canonical,Canonical interactive enterprise agent-control workflow study name
+Human Control Plane,human-control-plane,canonical,Canonical interactive human-oversight policy lab name
+Kyndryl Consult Agent Builder for Modernization,kyndryl-agent-builder,canonical,Canonical monorepo product name spanning form-based source generation and agent coordination
+AgentForge,agentforge,canonical,Canonical desktop coding-agent team and pipeline editor name
+FlowSpect,flowspect,canonical,Canonical cross-builder visual-agent graph security analyser name
+BrokieAI,brokieai,canonical,Canonical Magicred visual Solana agent product; the later Shreyas repository is a source duplicate
+ABC Agent Builder Console,abc-agent-builder-console,canonical,Canonical governed public-sector visual agent workflow product name
+Ghosted,ghosted,canonical,Canonical agent-native desktop development workspace and canvas name
+Melaya,melaya,product-surface,Agent Builder is the counted visual pipeline product within Melaya while Device Control is a tool family and Trading remains preview
+Graph AI,graph-ai,canonical,Canonical versioned visual AI workflow and multi-channel runtime name
+AI Workflow Builder by Nidhi Sarda,ai-workflow-builder-nids12,qualified-canonical,Owner qualifier separates this fixed document-to-Gemini graph prototype from generic same-named builders
+Forge by Nihal A. Shetty,forge-nihalashetty,qualified-canonical,Owner qualifier separates this self-hosted agent platform from unrelated Forge products
+NodeBase AI Workflow Builder,nodebase-ai-workflow-builder,canonical,Canonical persisted Inngest-backed AI workflow product name
+Hustl3,hustl3,canonical,Canonical decentralized visual agent blueprint and execution platform name
+SUTRADHAR AI,sutradhar-ai,canonical,Canonical Team Yurei personal agent and pipeline product name
+Soniq,soniq,canonical,Canonical versioned voice-agent design test and operation platform name
+LightLang AI Workflow Builder,lightlang-workflow-builder,canonical,Canonical interactive LightLang sequential prompt workflow application name
+Visual Agent Builder by Reed Richardson,visual-agent-builder-reedrich12,qualified-canonical,Creator qualifier separates this agent-controlled system canvas from generic same-named builders
+NextFlow by Richa Sharma,nextflow-richa-sharma,qualified-canonical,Creator qualifier separates this minimal Gemini graph from other unrelated NextFlow projects
+AI Workflow Builder by R. Mounith Reddy,ai-workflow-builder-rmounith,qualified-canonical,Creator qualifier separates this Supabase and Gemini graph runtime from generic same-named builders
+AI Workflow Builder by Roberts B,ai-workflow-builder-robertsbob,qualified-canonical,Creator qualifier separates this Qt and Python workflow IDE from generic same-named builders
+Flow Maker,flow-maker,canonical,Canonical LlamaIndex visual workflow runner and TypeScript compiler name
+Prax,flowise,fork-and-rebrand,Partial one-commit tree rewrites Flowise files and names but does not establish a separate visual artifact implementation
+Pyonair AI Builder,flowise,fork-and-rebrand,Declared Flowise base retains more than two thousand exact same-path source blobs with branding changes
+AI Agent Workflow Builder by Sanket Hatti,ai-workflow-builder-sanket-hatti,qualified-canonical,Creator qualifier separates this relational approval workflow from generic same-named builders
+HeliosGen,heliosgen,canonical,Canonical visual image and video pipeline workspace name
+ModelWeave,modelweave,canonical,Canonical document-grounded agent operations workspace name
+AgenticBuilder by showjihyun,agenticbuilder-showjihyun,qualified-canonical,Repository-owner qualifier separates this product from unrelated agent builder platforms
+AI Workflow Builder by Sneha Chaurasia,ai-workflow-builder-sneha-chaurasia,qualified-canonical,Creator qualifier separates this Groq-to-n8n materializer from generic same-named builders
+Visual Agent Builder by Freek van den Bosch,visual-agent-builder-studentfrederick,qualified-canonical,Creator qualifier separates this browser-native Claude canvas from generic same-named builders
+AI Workflow Builder by Subham Mohanta,ai-workflow-builder-subham-mohanta,qualified-canonical,Creator qualifier separates this Hasura approval pipeline from generic same-named builders
+Aura AI Workflow Builder,aura-ai-workflow-builder,canonical,Canonical LiteGraph and Gemini workflow canvas name
+Smart Canvas,smart-canvas,canonical,Canonical suzam26 visual agent and workflow product name
+AI Workflow Builder by Tim Wijma,ai-workflow-tim-wijma,qualified-canonical,Creator qualifier separates this Vue Flow and LiteLLM implementation from generic same-named builders
+Cadens,cadens,canonical,Canonical name of the proposed self-hostable agent application extracted from Platon Agent
+AI Workflow Builder by Syeda Tooba Hasnain,ai-workflow-builder-toobahasnain,qualified-canonical,Creator qualifier separates this generated editable plan canvas from generic same-named builders
+Kgents,kgents,canonical,Canonical Agent-as-a-Service platform identity built around Langflow artifacts
+AI Workflow Builder by Upinder Kaur,ai-workflow-builder-upinder28,qualified-canonical,Creator qualifier separates this Hasura and Groq governed workflow from generic same-named builders
+AI Workflow Builder Platform by VMK-004,ai-workflow-automation-vmk,qualified-canonical,Creator qualifier separates this persistent Ollama and FAISS graph runtime from generic same-named builders
+N8N AI Workflow Builder by W3JDev,n8n-ai-workflow-builder-w3jdev,qualified-canonical,Creator qualifier separates this prompt-to-n8n materializer from other n8n workflow generators
+AgCluster Container,agcluster-container,canonical,Canonical self-hosted Claude Agent SDK configuration and container workspace name
+AgentForge by winka-alcel,agentforge-winka-alcel,qualified-canonical,Owner qualifier separates this conversational agent platform from the unrelated coding-agent canvas already named AgentForge
+Doodle Agent,doodleagent,canonical,Canonical multimodal freeform drawing agent and runnable canvas system name
+Voice Agent Platform by YumikoooD,voice-agent-platform-yumikoood,qualified-canonical,Owner qualifier separates this OpenAI Realtime agent platform from other voice workflow builders
+AI UI Builder by Alexandr Davydov,ai-ui-builder-eptura,qualified-canonical,Creator qualifier separates this typed component renderer from unrelated AI UI Builder repositories
+AI UI Builder by beingshappy,ai-ui-builder-beingshappy,qualified-canonical,Creator qualifier separates this HTML CSS and JavaScript bundle generator from unrelated namesakes
+ComposeFlow,composeflow,canonical,Canonical AI-first Compose Multiplatform visual application editor name
+Frappe Studio,frappe-studio,canonical,Canonical Frappe visual application builder name
+Grills,grills,canonical,Canonical self-hosted generative UI workspace name
+AI UI Builder by Sharad Patil,ai-ui-builder-sharadpatil,qualified-canonical,Creator qualifier separates this persistent Gemini React workspace from unrelated namesakes
+Dyad,dyad,canonical,Canonical local AI application builder and upstream source name
+OpenLaudable,dyad,copied-source,Relabeled tree retains Will Chen authorship Dyad engine conventions and matching application internals
+Mobirise AI,mobirise-ai,canonical,Current AI-mediated site builder inside the Mobirise product lineage
+AI-Powered Website Builder by Ratna Babu,ai-website-builder-ratna,qualified-canonical,Creator qualifier separates this Convex and Sandpack project from unrelated namesakes
+PlayCode AI,playcode,canonical,Current hosted website and application builder product
+Playcode Desktop,playcode,legacy-component,Deprecated desktop client belongs to the current PlayCode product lineage
+AI Website Builder by V,ai-website-builder-builtbyv,qualified-canonical,Maintainer qualifier separates the portable skill and scaffold from unrelated repositories
+Codey,codey,canonical,Product name used by the Hamza Amir SaaS AI website builder
+DeepSite,deepsite,canonical,Canonical product and Hugging Face Space maintained by enzostvs
+DeepSite Locally,deepsite,declared-fork,Repository explicitly declares the enzostvs DeepSite Space as its upstream
+Cofounder,cofounder,canonical,Open Interface full-stack generative application builder
+Prompt2UI by Sully Omar,prompt2ui-sully,qualified-canonical,Maintainer qualifier separates the in-memory React artifact studio from namesakes
+Prompt to UI by Sanyam Bassi,prompt-to-ui-sanyam,qualified-canonical,Maintainer qualifier identifies the local structured design canvas
+Prompt-UI by Ayesha and Mahek,prompt-ui-ayesha-mahek,qualified-canonical,Maintainer qualifier identifies the FastAPI HTML generator
+PRISM,prism-prompt-to-ui,qualified-canonical,Cinematic Scene IR studio inside the repository prism subtree
+Convertix AI,convertix-ai,canonical,Canonical structured landing-page SaaS repository identity
+LandingForge,landingforge,canonical,Canonical multi-provider HTML website editor identity
+AlwaysBlue,alwaysblue,canonical,Canonical Django AI landing-page builder identity
+AI Landing Page Studio,ai-landing-page-studio,canonical,Canonical multi-tenant landing-page platform identity
+AI Landing Page Builder by Ali Tamer,ai-landing-page-builder-ali-tamer,qualified-canonical,Maintainer qualifier separates the staged Gemini builder from namesakes
+PagePilot,pagepilot,canonical,Product name used by the Galih Pratama landing-page workshop repository
+OpenKombai,openkombai,canonical,Canonical local screenshot-to-React studio identity
+GetUI.ai,getui-ai,canonical,Canonical product name in the Jayesh frontend generator source
+AI Module Generator by Sawan Kumar,ai-module-generator-sawan,qualified-canonical,Maintainer qualifier separates the repository-grounded module pipeline from generic namesakes
+AI Frontend Generator by Arijeet Priyadarshi,ai-frontend-generator-arijeet,qualified-canonical,Maintainer qualifier identifies the typed blueprint pipeline
+AI Frontend Generator by Marcelo Lima,ai-frontend-generator-marcelorl,qualified-canonical,Maintainer qualifier identifies the multi-agent filesystem generator
+AI Frontend Generator by Tamil Selvan,ai-frontend-generator-metamil,qualified-canonical,Maintainer qualifier identifies the Gemini three-pane editor
+AI Component Builder by Aditya Sharma,ai-component-builder-aditya,qualified-canonical,Repository calls the persisted code workspace an AI Component Builder
+AI Frontend Generator by Amit Sharma,ai-frontend-generator-amit,qualified-canonical,Maintainer qualifier identifies the local CodeGen workspace
+GNR8,gnr8,canonical,Canonical multi-agent text-to-website product name
+WebCraft,webcraft,canonical,Canonical Kriti team website builder identity
+HexCode,hexcode,canonical,Canonical Kriti team text-to-website platform identity
+Curate,curate,canonical,Canonical Kriti team text-to-website builder identity
+TextToWebsite,text-to-website-rahul,qualified-canonical,Maintainer qualifier separates the 2023 hackathon project from generic namesakes
+GenWeb by Dhruv Pansuriya,genweb-dhruv,qualified-canonical,GenWeb source identifiers and maintainer qualifier identify this Kriti project
+WebGalaxy,webgalaxy,canonical,Canonical team repository and shared product history
+WebGalaxy by Saanchi Gupta,webgalaxy,copied-history,Repository shares the canonical WebGalaxy commit graph and team implementation
+WebAgent,webagent-ragul,qualified-canonical,Maintainer qualifier separates the local React filesystem builder from namesakes
+Frame Bucket,frame-bucket,canonical,Canonical taxonomy-driven web design generator identity
+Redesignr AI,redesignr-ai,canonical,First-party product and browser extension identify one Redesignr workspace
+Lanhu to Code,lanhu-to-code,canonical,Canonical source repository identity
+Storybook Assistant,storybook-assistant,canonical,Canonical Claude Code plugin repository identity
+AI Webpage Generator by Achuajays,ai-webpage-generator-achua,qualified-canonical,Maintainer qualifier separates this product from same-name repositories
+GPT-4 Landing Page Creator,gpt4-landing-page-creator-renzo,qualified-canonical,Historical product title and maintainer qualify the same-name repository
+SiteGen AI,sitegen-ai-mohamad,qualified-canonical,README product name plus maintainer separates the implementation
+AI Webpage Generator by Pablo de Groot,ai-webpage-generator-pa741,qualified-canonical,Maintainer qualifier separates the component-persistent generator
+Web Page Generator by Natalie Basille,web-page-generator-natalie,qualified-canonical,Maintainer qualifier separates the streamed renderer
+AI Webpage Generator by Pavan Kumar,ai-webpage-generator-pavan,qualified-canonical,Maintainer qualifier separates the downloadable file generator
+WebSim AI Webpage Generator wrapper,websim,upstream-wrapper,Thin client delegates generation and authority to the canonical WebSim product
+Aether Architect,aether-architect,canonical,Canonical source repository and product title
+AI-Powered UI Components Generator,ai-ui-components-generator-thegreatbonnie,canonical,TheGreatBonnie repository carries the public product history and adoption
+AI-Powered UI Components Generator by doy1354,ai-ui-components-generator-thegreatbonnie,copied-history,Repository resolves to the exact canonical commit
+HasCode UI,hascode-ui,canonical,Application source and persisted component identity
+AI UI Generator by Mohammed Kahab,ai-ui-generator-kahab,qualified-canonical,Maintainer qualifier separates same-name generators
+AI UI Table Generator,ai-ui-table-generator-dladislav,qualified-canonical,Table artifact specialization and maintainer identify the product
+Bolt Clone by Pankaj Kumar,bolt-new,derivative-clone,Repository explicitly retains the Bolt name and artifact protocol
+Prompt-to-Website Generator by Varun Padala,prompt-to-website-padala,qualified-canonical,Maintainer qualifier separates same-name repositories
+CodeCooks,codecooks,canonical,Canonical multipage product repository
+AI Website Builder by Shekh Basir,ai-website-builder-shekhbasir,qualified-canonical,Maintainer qualifier separates the full-stack implementation
+Panth PageBuilder AI,panth-pagebuilder-ai,canonical,Product page package and repository establish one Magento extension
+Synapse App Builder,synapse-app-builder,canonical,Canonical self-hosted package identity
+AI Voice Page Builder,ai-voice-page-builder-graeber,qualified-canonical,Maintainer and voice-input specialization identify the project
+AI CodeTutor Video Generator,ai-code-tutor-video,qualified-canonical,README product identity supersedes the unrelated repository name Verceti
+Generative UI App by Abhay,generative-ui-app-abhay,qualified-canonical,Maintainer qualifier separates generic product title
+AI2UI Component Generator,ai2ui-component-generator,canonical,Repository branding and deployed product identity establish AI2UI
+AI Component Generator Sandbox,ai-component-generator-sandbox,qualified-canonical,Sandbox identity and maintainer distinguish this independently runnable browser product
+CreAI,creai,canonical,Repository and workspace use one product identity
+AI React Component Generator by Amit Nandan,ai-react-component-generator-amit,qualified-canonical,Maintainer qualifier separates the generic title
+Shadway,shadway,canonical,Repository package and registry share one product identity
+SOLIDWORKS AI Cover Generator,solidworks-ai-cover-generator,qualified-canonical,Independent customer demo identity avoids attribution to Dassault Systemes or the SOLIDWORKS product
+Verilog IDE,verilog-ide,canonical,Repository and running workspace share one identity
+BlueStone AI Jewelry Prototype,bluestone-ai-jewelry-prototype,qualified-canonical,Independent prototype identity avoids counting it as an official BlueStone product
+Micracode,micracode,canonical,Package repository and workspace share one product identity
+AI Web App Builder by Abdul Musawar,ai-web-app-builder-mazzyy,qualified-canonical,Maintainer qualifier separates the generic title
+NxtBuild,nxtbuild,canonical,README project model and builder surface establish one product lineage
+Hanzo App,hanzo-app,canonical,Hanzo operates an independently named service despite declared source derivation
+ModernUI Maker,modernui-maker,canonical,Earliest discovered upstream source establishes the canonical component-generator lineage
+project_threejs_ai,project-threejs-ai,canonical,Original JavaScript Mastery tutorial repository establishes the source lineage
+OSW Studio,osw-studio,canonical,Independent product identity and substantial VFS deployment and persistence evolution justify separation from DeepSite
+AI Component Generator by CodeWithRhituraj,modernui-maker,duplicate,Source comparison resolves the repository to ModernUI Maker
+Craftly AI,modernui-maker,duplicate,Restyling does not replace the inherited generation editor preview and export architecture
+AI Component Generator by Amir Alam,modernui-maker,duplicate,Source comparison resolves the repository to ModernUI Maker
+GenUI by Vignesh Siva,modernui-maker,duplicate,Source comparison resolves the repository to ModernUI Maker
+AIShop Core,project-threejs-ai,duplicate,Shared shirt canvas and generation source resolve the repository to the tutorial lineage
+3D AI Powered T-Shirt Generator by LXAEZ,project-threejs-ai,duplicate,Source comparison resolves the repository to the tutorial lineage
+AI Web App Builder by Mohan Baragi,nxtbuild,duplicate,Generation service builder page and live preview match NxtBuild
+Website That Builds Itself,website-that-builds-itself,canonical,Repository and spatial browser workspace establish one product identity
+AI Component Builder by Bamdad Erfanian,ai-component-builder-bamerf,qualified-canonical,Maintainer qualifier separates the generic title
+AI Component Builder by bluntbrain,ai-component-builder-bluntbrain,qualified-canonical,Maintainer qualifier and Firebase gallery distinguish this implementation
+AI Component Builder by StackedByAdit,ai-component-builder-stacked,qualified-canonical,Maintainer qualifier distinguishes its Gemini implementation
+AI Component Builder by Gokul Krishna,ai-component-builder-gokul,qualified-canonical,Maintainer qualifier and Redux Sandpack implementation establish an independent record
+AI Component Builder by Aman Raj,ai-component-builder-iaman,qualified-canonical,Maintainer qualifier distinguishes its Gemini implementation
+AI Component Builder by Debanik,ai-component-builder-debanik,qualified-canonical,Maintainer qualifier and runtime evaluator establish an independent record
+Qwen3 Coder WebDev by Ethan Ng,qwen3-coder-webdev-ethan,qualified-canonical,Embedded application name and maintainer qualifier replace the generic repository title
+bigbangdev,bigbangdev,canonical,Repository workspace and agent runtime share one identity
+NemoClaw Game Factory,nemoclaw-game-factory,canonical,Repository and ordinary-user workspace share one product identity
+AI-Powered UI Builder by kiryuchi10,ai-ui-builder-kiryuchi,qualified-canonical,Maintainer qualifier separates the generic product title
+Deterministic AI UI Builder by ujjwal1541,deterministic-ai-ui-builder-ujjwal,qualified-canonical,Maintainer qualifier separates a distinct constrained-schema implementation
+UI Architect by Anees ur Rehman,ui-architect-aranees,qualified-canonical,Workspace branding and maintainer qualifier establish the product boundary
+Deterministic AI UI Builder by codeacks,deterministic-ai-ui-builder-codeacks,qualified-canonical,Maintainer qualifier separates a distinct local-version UIPlan implementation
+AI UI Builder by Merchantry,ai-ui-builder-merchantry,qualified-canonical,Maintainer qualifier and persisted schema product establish an independent record
+AI Website Generator by Louvivien,ai-website-generator-louvivien,qualified-canonical,Maintainer qualifier separates the generic title
+Ideaship,ideaship,canonical,Repository service and workspace share one product identity
+AI Website Generator by Shaxxshankari,ai-website-generator-shaxx,qualified-canonical,Maintainer qualifier separates its multimodal and Netlify workflow
+AI Component Builder by Devisha Arora,ai-component-builder-devisha,qualified-canonical,Maintainer qualifier separates its independently implemented browser loop
+React AI Component Builder by Artem Synytsin,react-ai-component-builder-synytsin,qualified-canonical,Maintainer qualifier and react-live architecture establish an independent record
+Yellow Machine,yellow-machine,canonical,Repository branding and Firebase gallery share one identity
+a0 AI Component Studio,a0-component-studio,canonical,Repository workspace and API-documentation grounding use the a0 identity
+PromptOnent,promptonent,canonical,Repository and streaming canvas share one product identity
+PromptUI by devSakshi022R,promptui-devsakshi,qualified-canonical,Workspace branding and maintainer qualifier establish the product boundary
+AI Website Generator by shrik4,ai-website-generator-shrik4,qualified-canonical,Maintainer qualifier separates the generic title
+ogaTa.ai,ogata-ai,canonical,Repository service and user workspace share one identity
+AI Website Generator by aifeifei798,ai-website-generator-aifeifei,qualified-canonical,Maintainer qualifier separates the staged command-line product
+AI Website Generator by Shrutika Kapade,ai-website-generator-shrutika,qualified-canonical,Maintainer qualifier separates the Streamlit product
+GenSite AI,gensite-ai-devendra,qualified-canonical,Product branding and maintainer lineage establish the canonical record
+AI Website Generator by Pappu Kumar,ai-website-generator-pappu,qualified-canonical,Maintainer qualifier separates the Laravel product
+CompAI by Vishwesh Upadhyay,modernui-maker,duplicate,Home.jsx source comparison resolves CompAI to ModernUI Maker
+WebLy,webly,qualified-canonical,Repository branding and its project frame authority establish the canonical record
+GenU Advanced,genu-advanced,qualified-canonical,Advanced multi-stack compiler and persisted library separate this implementation from the course scaffold
+AI UI Builder by Rigoberto Quezada,ai-ui-builder-isvaku,qualified-canonical,Maintainer qualifier separates the persisted multi-provider take-home implementation
+WebApp AI UI Builder,webapp-ai-ui-builder,canonical,Repository product and its structured app schema share one identity
+AIWebGenerator by Kuroda Kayn,aiwebgenerator-kuroda,qualified-canonical,Maintainer qualifier separates the Nuxt and Dexie implementation
+Pitch Craft,pitch-craft,canonical,In-product branding and Firebase chat authority share one identity
+WebCraft AI by Krish Anand,webcraft-krish,qualified-canonical,Maintainer qualifier separates this worker-orchestrated product from other WebCraft names
+AI Component Builder by Sanskriti Singh,ai-component-builder-sanskriti,qualified-canonical,Maintainer qualifier separates the OpenAI and Firebase implementation
+AI Website Generator by shubharthaksangharsha,ai-website-generator-shubh,qualified-canonical,Maintainer qualifier separates the multi-provider local-version product
+AI Component Generator by Ayush Raj,modernui-maker,duplicate,Source-shingle comparison resolves the repository to ModernUI Maker
+GenUI by Amit Bhatiya,modernui-maker,duplicate,Source scaffold comparison resolves the repository to ModernUI Maker
+AI UI Component Generator by Mohit Bare,modernui-maker,duplicate,Substantial source and file-layout inheritance resolves the repository to ModernUI Maker
+AI Component Generator by Sayeed,modernui-maker,duplicate,Near-exact Home source resolves the repository to ModernUI Maker
+GenUI Studio by Muskan Gupta,modernui-maker,duplicate,Inherited generator editor preview and export scaffold resolves the repository to ModernUI Maker
+AI Component Generator by Piyush Maurya,modernui-maker,duplicate,Refactored helpers do not create a new authority beyond the ModernUI Maker scaffold
+AI Component Generator by Safiya Fatima,modernui-maker,duplicate,History and settings extend the inherited ModernUI Maker product identity
+Aedify AI by Sumit Maurya,modernui-maker,duplicate,Simplified Home code retains the registered source scaffold and product loop
+Aedify AI by Sunil Gupta,modernui-maker,duplicate,Near-exact Aedify source resolves through the same ModernUI Maker lineage
+AI Component Generator by Ram Vinay Kumar,modernui-maker,duplicate,Near-exact Home source resolves the repository to ModernUI Maker
+AI-Powered UI Component Generator by Ryan,ai-component-builder-sfyr,qualified-canonical,Maintainer qualifier separates the multimodal esbuild implementation
+AI UI Builder by Akshay Chaulya,ai-ui-builder-akshay,qualified-canonical,Maintainer qualifier separates the planner generator reviewer pipeline
+AI UI Builder by Julian Shen,ui-builder-julianshen,qualified-canonical,Maintainer qualifier separates the Go SQLite preview service
+PromptUI by Tushar Mokal,promptui-tushar,qualified-canonical,Maintainer qualifier separates this OpenRouter implementation from other PromptUI names
+webAi.new,webai-new,canonical,Repository identity and its generated workspace share one name
+AI Website Generator by Jordan D'Souza,ai-website-generator-jordan,qualified-canonical,Maintainer qualifier separates the local TinyLlama schema pipeline
+AI Website Generator by Nithin1616,ai-website-generator-nithin,qualified-canonical,Maintainer qualifier separates the Streamlit materialization pipeline
+AI Component Builder 21st,ai-component-builder-sanskriti,duplicate,Matching cleanup preview and Firestore files resolve the implementation to Sanskriti Singh's builder
+AI Website Generator by niko-e7,webly,duplicate,Matching frame routes and editable iframe mechanics resolve the implementation to WebLy
+AI Orchestration UI Generator by Shishir Gupta,ai-orchestration-honey610,qualified-canonical,Repository identity and the controlled plan renderer establish this implementation as its own canonical record
+AI Website Generator by Dhanu7789,ai-website-generator-dhanu7789,qualified-canonical,The earliest preserved commit lineage and complete OpenAI preview delivery loop establish the upstream canonical record
+AI Website Generator by Vadane Amruta,ai-website-generator-dhanu7789,duplicate,The repository preserves all five upstream commits and adds only a small derivative commit
+AI Component Builder by Harsh Bhanushali,ai-component-builder-harshbhx,qualified-canonical,Cursor Agent streaming and the repository-specific preview shell establish a distinct implementation
+AI Website Generator by Tulsi Pandey,ai-website-generator-tulsi,qualified-canonical,The structured blueprint compiler and dual MongoDB filesystem state establish the canonical record
+VERXA AI,verxa-ai,qualified-canonical,Repository branding and its form asset preview packaging loop establish the canonical record
+VISION.AI by Vishnu Prahalathan,vision-ai-vishnu,qualified-canonical,Maintainer qualification separates this OpenAI JSON and Blob preview implementation
+SiteForge AI by P Sreyanshu Anupam,siteforge-ai-psa,qualified-canonical,Maintainer qualification separates the Gemini streaming Flask and PostgreSQL implementation
+AI Website Generator by GururajCharan,ai-website-generator-gururaj,qualified-canonical,Maintainer qualification separates this single-file Streamlit and Gemini delivery loop
+UIGen by Arshan Nawaz,uigen-arshan,qualified-canonical,Its project-tree chat loop and intentionally lossy preview establish a distinct implementation
+ClientSight / GazeBuilder preserved team repository,clientsight-gazebuilder,qualified-canonical,The current repository preserves the multi-author lineage and the most complete gaze generation persistence and export source tree
+GazeBuilder snapshot by Nxver-GitHub,clientsight-gazebuilder,duplicate,The one-commit snapshot shares product identity README preview and gaze-dwell mechanics with the preserved team repository
+AI Website Generator by Krishna Priya,ai-website-generator-kpriya,qualified-canonical,Maintainer qualification separates this Gemini Monaco iframe and single-HTML delivery loop
+SiteForge AI by Maf-Kelvin,siteforge-ai-maf,qualified-canonical,Maintainer qualification separates this Groq structured-source refinement and ZIP implementation
+AI Website Generator mirror by Dhanu7789,ai-website-generator-dhanu7789,duplicate,All tracked files are byte-identical to the already counted repository owned by the same maintainer
+AI UI Builder by Diego Perez,ai-ui-builder-devdiego,qualified-canonical,Its validation repair loop and nested browser-persisted version graph establish a distinct implementation
+AI Website Generator by Praneet Biswal,ai-website-generator-praneet,qualified-canonical,Maintainer qualification separates this Ollama code-block parser preview and server-side ZIP loop
+AI Website Generator by Rishikesh Ugale,ai-website-generator-rishi,qualified-canonical,Maintainer qualification separates this Puter AI MongoDB iframe and ZIP implementation
+Dora AI by ishika-86,webcraft-ai-siddharth,duplicate,The later repository preserves Siddharth WebCraft's full master prompt and controller sequence despite renaming files and changing billing values
+AI Website Generator by GokulBits18,ai-website-generator-gokulbits,qualified-canonical,Maintainer qualification separates this minimal Llama JSON and iframe implementation
+AI Website Generator by Aditya Umale,ai-website-generator-aditya-umale,qualified-canonical,Its structured multi-page React graph and overlay edit model establish a distinct implementation
+Ventura Startup Analyzer,ventura-startup-analyzer,canonical,Strategy analysis and landing prototype share one persisted startup workspace with separate version tracks
+Image to React Component Converter by Imroz Wahid,image-to-react-iwahid,qualified-canonical,Maintainer qualification separates this MCP and REST screenshot-to-TSX authority from other image-to-code tools
+IA Landing Generator Pro,ai-landing-generator-pro,canonical,One suite identity spans generated landing dashboard UI kit report presentation and marketing artifacts
+InstantSite AI,instantsite-ai,canonical,Repository branding and its Gemini source-to-iframe and ZIP loop establish the product record despite simulated platform chrome
+GenWebAI by Artibar,genwebai-artibar,qualified-canonical,Brand and maintainer qualification distinguish this Groq and MongoDB publication surface from generic repository names
+AI-Powered Website Generator by Tony-VBB,ai-website-generator-tony,qualified-canonical,Maintainer qualification separates the staged design-analysis multi-provider persistence and external-deployment implementation
+PromptCraft AI,promptcraft-ai,canonical,Named product identity joins prompt and screenshot generation explicit demo fallback version checkpoints preview and delivery
+Premium Website Generator by Edouard Kerwing,premium-website-generator-edouard,qualified-canonical,Maintainer and product qualification separate the tool-calling virtual-file-system builder from generic website generator names
+WebCraft AI by Siddharth Kumar Rai,webcraft-ai-siddharth,qualified-canonical,The March repository and continuous commit history establish the source authority later reproduced by the Ishika Dora snapshot
+AI UI Generator by Deepanshu Sharma,ai-ui-generator-deepanshu,qualified-canonical,Maintainer qualification separates the Groq whitelist repair and VersionStore implementation
+AI UI Generator by Mohannad Abdelrazek,ai-ui-generator-mondo,qualified-canonical,Maintainer qualification separates the browser-only OpenAI Babel and local history implementation
+UIGen by Ayman Garz,anthropic-course-uigen,duplicate-course-lineage,Course-specific source and migration evidence identify one Anthropic UIGen sample
+AI UI Generator by Dhruv Jain,ai-ui-generator-dhruv,qualified-canonical,Maintainer qualification separates the Gemini multi-agent whitelist and browser-version implementation
+React UI Generator by Anish,anthropic-course-uigen,duplicate-course-lineage,Provider changes retain the Claude Code in Action UIGen scaffold and artifact authority
+AI UI Generator by Mohit Aggarwal,ai-ui-generator-mohit,qualified-canonical,Maintainer qualification separates the Groq and Mongo fallback version implementation
+AI UI Generator by yashsaini0759,ai-ui-generator-yash,qualified-canonical,Maintainer qualification separates the Gemini in-memory session and rollback implementation
+Artifex UI Generator,artifex-ui-generator,canonical,Named product branding joins Gemini generation editable history preview and download
+Ryzen AI by Anushka Chaudhary,ryzen-ai-anushka,qualified-canonical,Maintainer qualification separates the credential-gated provider path from explicit demo fallback
+VibeUI by Farazkhan542,vibeui-faraz,qualified-canonical,Maintainer qualification separates this Gemini Stitch Sandpack and ZIP product from the unrelated VibeUI resource API
+Ryze UI Agent by Mohd Mazhar Khan,ryze-ui-agent-mazhar,qualified-canonical,Maintainer qualification separates the three-stage Gemini and LiveProvider implementation
+Polymath AI Builder,anthropic-course-uigen,duplicate-course-lineage,Near-total source overlap and course-specific paths identify one sample lineage
+RyzeAI by Lakshmiprasanth,ryzeai-lakshmi,qualified-canonical,Maintainer qualification separates the Groq server-version and rollback implementation
+Ryze UI Generator by Rohit Kumar,ryze-ui-generator-rohit,qualified-canonical,Maintainer qualification separates the model-planned deterministic materialization loop
+Prompt2Site by Jay Sankopal,prompt2site-jay,qualified-canonical,Maintainer and named-product qualification separate the expiring multi-store HTML CSS JavaScript implementation
+DeepSite fork by schuerstedt,deepsite,duplicate,The repository retains the existing DeepSite product and source lineage
+AI Generator by Abhi Gandhi,ai-generator-abhi,qualified-canonical,Maintainer qualification separates the local Ollama multi-file Mongo and ZIP implementation
+AI Website Builder by aakriti0223,webcraft-ai-siddharth,duplicate,The principal frontend architect prompt and controller sequence reproduce Siddharth WebCraft
+Webora by JOSIAHTHEPROGRAMMER,webora-josiah,qualified-canonical,Maintainer qualification separates this OpenRouter Prisma versioned Webora from the unrelated existing Webora record
+AI Website Builder by Vaibhav Hajare,ai-website-builder-lab1207,qualified-canonical,Maintainer qualification separates the Google GenAI virtual-file workspace
+NexaBuild by Aqib Ahmed,nexabuild-aqib,canonical,Named product identity joins Gemini generation session versions editing ZIP and GitHub Pages delivery
+AI Website Builder by Rizwan Ullah,greatstack-ai-website-builder,duplicate,Public implementation of the GreatStack course product rather than an independent team definition
+FlashSite,deepsite,duplicate,The repository explicitly identifies itself as a DeepSite extension
+AI Website Builder by Bonifacio Calindoro,ai-website-builder-bonifacio,qualified-canonical,Maintainer qualification separates the OpenAI file-locked session and restoration implementation
+Forge AI App Builder by Ronak Goyal,ai-app-builder-piyush,duplicate,Fifty-one identical path and blob pairs plus later repository creation identify the Piyush source lineage
+AI Website Builder by Zyra,ai-website-builder-zaran,qualified-canonical,Maintainer qualification separates the OpenRouter Prisma website-version implementation
+AI Website Builder by Mohammad Armaan,ai-website-builder-mohammad,qualified-canonical,Maintainer qualification separates the Gemini frame and direct iframe element-editing authority
+AI Website Builder by pg1590,greatstack-ai-website-builder,duplicate,Public implementation of the GreatStack course product
+AI Website Builder by Firefetch,ai-website-builder-firefetch,qualified-canonical,Maintainer qualification separates the tool-mutated SQLite artifacts snapshots and external delivery implementation
+AI Website Builder by Abhinav,greatstack-ai-website-builder,duplicate,Public implementation of the GreatStack course product
+AI Website Builder by Vijay Kusekar,ai-website-builder-vijay,qualified-canonical,Maintainer qualification separates the planned per-file Mongo and operation-revision implementation
+AI Website Builder by Krishna Paralkar,ai-website-builder-krishna,qualified-canonical,Maintainer qualification separates the OpenRouter single-document SQLite implementation
+Agentic AI Website Builder by Akhil Maratha,agentic-ai-website-builder-akhil,qualified-canonical,Maintainer qualification separates the OpenRouter multi-file Mongo version workspace
+AI Website Builder by Vedp6,greatstack-ai-website-builder,duplicate,Public implementation of the GreatStack course product
+WebForge AI by hrsh-arcx,greatstack-ai-website-builder,duplicate,Renamed public implementation of the GreatStack course product
+AI Website Builder by Safwan Hanif,ai-website-builder-safwan,qualified-canonical,Maintainer qualification separates the Groq Gemini component and PostgreSQL snapshot implementation
+Webstew AI,webstew-ai,canonical,Source branding joins the multi-provider multi-target workspace under the Webstew identity
+Zen AI Website Builder,greatstack-ai-website-builder,duplicate,Renamed public implementation of the GreatStack course product
+AI Website Builder by WIN-cod,webcraft-ai-siddharth,duplicate,The principal frontend architect prompt and controller sequence reproduce Siddharth WebCraft
+AI Component Generator by Shakti Prasad Ram,ai-component-generator-shakti,qualified-canonical,Maintainer and source qualification identify one Mongo-backed component generator
+React Component Generator by Mohit Kumar,react-component-generator-mohit,qualified-canonical,Maintainer and source qualification identify the Gemini Mongo component workspace
+Comp-gen by Aditya Singh Gautam,comp-gen-aditya,qualified-canonical,Maintainer and source qualification identify its editable OpenRouter component workspace
+DevoraUI,devoraui,canonical,Repository branding joins generation saved components preview and npm publication
+AI Website Builder by Subrata Ghosh,ai-website-builder-subrata,qualified-canonical,Maintainer qualification separates the OpenAI multi-page filesystem builder
+AgentSite,agentsite,canonical,Repository package and product identity align under AgentSite
+VoxelSite,voxelsite,canonical,Organization product and repository identity align under VoxelSite
+AI Website Builder by Dennis Faucher,ai-website-builder-dennis,qualified-canonical,Maintainer qualification separates the disk-backed OpenRouter HTML builder
+Buildify by Pragya Manna,buildify-pragya,qualified-canonical,Maintainer and repository identity define the Gemini three-file builder
+AI Website Builder by Vardhan V,ai-website-builder-vardhan,qualified-canonical,Maintainer qualification separates the Groq single-document conversational builder
+AI Website Builder by Lucas H507,ai-website-builder-lucas,qualified-canonical,Maintainer qualification separates the Ollama retrieval and deterministic assembly architecture
+AI Website Builder by markec12345678,ai-website-builder-markec,qualified-canonical,Maintainer qualification separates the browser Gemini HTML workspace
+AI Website Builder by Chitransh Chocksey,ai-website-builder-chitransh,qualified-canonical,Maintainer qualification separates the Gemini structured three-file correction loop
+AI App Builder by Piyush Agarwal,ai-app-builder-piyush,qualified-canonical,Earliest observable public repository and source comparison make this the canonical record for the tutorial lineage
+Forge by Dhruv Bansal,forge-dhruv,qualified-canonical,Distinct validated routes project schema repair versions and restore establish an independent implementation
+AI App Builder SaaS by Yayasan At-Tauhid,ai-app-builder-saas-tauhid,qualified-canonical,Distinct Hono provider and parent-version implementation establishes independent artifact authority
+RAJ AI App Builder,raj-ai-app-builder,canonical,Repository product presentation and RAJ AI maintainer identity align
+LUMA AI Studio,luma-ai-studio,canonical,Repository branding and SQL-backed LangGraph product identity align
+VibeSDK MVP,vibesdk-mvp,canonical,README product identity and source route align under VibeSDK MVP
+BuildRx,buildrx,canonical,Repository branding and multi-agent project workspace align under BuildRx
+AI App Builder by Pragati,ai-app-builder-piyush,duplicate,Later repository belongs to the Piyush tutorial source lineage
+Forge by Subham Jain,ai-app-builder-piyush,duplicate,Shared generator Prisma and Sandpack source belongs to the Piyush lineage
+AI App Builder by Shrish,ai-app-builder-piyush,duplicate,High exact-source overlap identifies the Piyush lineage
+AI App Builder by Aman Kumar,ai-app-builder-piyush,duplicate,Near-complete exact-source overlap identifies the Piyush lineage
+AI App Builder by Giorgi Kavtaradze,ai-app-builder-piyush,duplicate,Later timing and source identity identify the Piyush lineage
+AI App Builder by magical-soul,ai-app-builder-piyush,duplicate,Near-complete exact-source overlap identifies the Piyush lineage
+AI App Builder by EDProgrammerist,ai-app-builder-piyush,duplicate,Substantive tracked source is shared with the earlier Piyush implementation
+AI App Builder by 2102031000002,ai-app-builder-piyush,duplicate,The derivative retains the Piyush file authority and workspace
+Forge AI App Builder by Aryan,ai-app-builder-piyush,duplicate,Forge branding wraps the Piyush tutorial source lineage
+Nexa Agentic AI App Builder by Asif Ahmed Sahil,ai-app-builder-piyush,duplicate,Shared core paths and blobs identify the Piyush tutorial lineage
+Forgey by Ishuklaji,ai-app-builder-piyush,duplicate,Divergent edges retain the Piyush generator and workspace core
+Buildify by Arush,ai-app-builder-piyush,duplicate,Later timing and shared core source identify the Piyush lineage
+Hephaestus by MrSyr3x,ai-app-builder-piyush,duplicate,Renaming does not separate copied Piyush artifact authority
+AI App Builder by Abhinav Aggarwal,ai-app-builder-piyush,duplicate,Substantial exact-source overlap identifies the Piyush lineage
+ForgeAI by Sahil Jadhav,ai-app-builder-piyush,duplicate,The core project generator and workspace belong to the Piyush lineage
+Flux by Kartik,ai-app-builder-piyush,duplicate,The later repository retains the central Piyush source lineage
+UIGen Claude Code in Action sample,anthropic-course-uigen,qualified-canonical,Official course evidence and public source mirrors establish one sample product authority
+UIGen by Rebar7,anthropic-course-uigen,duplicate-course-lineage,File tools migrations and project schema match the course sample
+AI Component Generator MCP by Lucas,anthropic-course-uigen,duplicate-course-lineage,MCP additions retain the course sample artifact graph
+MultiAI TS,anthropic-course-uigen,duplicate-course-lineage,Provider routing changes do not replace the UIGen product authority
+AI UI Generator by Harshi,ai-ui-generator-harshi,qualified-canonical,Independent single-document generator with editable iframe projection and export
+Synapese 25,synapese-25,qualified-canonical,Typed brand-aware layout graph with React and Shopify materialization
+Forma Fluens,forma-fluens,qualified-canonical,Independent Gemini HTML studio with local history and direct correction
+GenUI by Dimple,genui-dimple,qualified-canonical,Independent multi-framework code generator and browser editor
+GenUI by Aman,genui-aman,qualified-canonical,Independent single-document Gemini generator and editor
+Takumi,takumi,qualified-canonical,Independent structured React generation workspace with Sandpack and Prisma
+DesignForge AI,designforge-ai,qualified-canonical,Independent AI-assisted component system playground and local kit
+UiChemy,uichemy,qualified-canonical,Independent Figma-to-native-WordPress conversion product with AI Mode
+Naano WP AI Website Builder,naano-wp-ai-builder,qualified-canonical,Independent section-oriented WordPress generation and publication workflow
+Spaceforge,spaceforge,qualified-canonical,Independent browser-local model site builder with durable versions
+XSharko AI,xsharko-ai,qualified-canonical,Independent persisted website generation workspace
+Naklikam,naklikam,qualified-canonical,Independent Claude-driven project filesystem and delivery workspace
+ParuAI,greatstack-ai-website-builder,duplicate,Renamed implementation retaining GreatStack schemas prompts assets and version protocol
+Buildora AI Studio,buildora-ai-studio,qualified-canonical,Independent Mongo-backed website source workspace
+ABSBuilder,absbuilder,qualified-canonical,Independent server-generated single-document website editor
+Velora.AI,genie-ai-website-builder,duplicate,Later repository retaining the Genie lineage Mongo fields controllers credit flow and slug protocol
+AI Site Builder by Aaditya,greatstack-ai-website-builder,duplicate,Public implementation retaining GreatStack course schemas assets and plan copy
+Vibra Code,vibra-code,qualified-canonical,Independent mobile app builder with E2B agent runtime and native preview
+sandboxd,sandboxd,qualified-canonical,Independent self-hosted sandbox app builder and deployment surface
+BoltDIY V2.0 by Stijnus,bolt-new,derivative-clone,Bolt artifact protocol and WebContainer workbench remain authoritative
+Open Claude,open-claude,qualified-canonical,Independent general assistant with a first-class multi-file Build surface
+Totalum AI App Builder Open,totalum-ai-app-builder,qualified-canonical,Independent open workspace for the Totalum VCAAS project service
+NativeBot,nativebot,qualified-canonical,Independent agent-driven Expo project builder and store delivery tool
+Buildable,buildable,qualified-canonical,Independent agent plugin and CLI that governs runnable prototype generation
+BuilderAI by Raj Patel,builderai-raj,qualified-canonical,Independent multi-agent app generation pipeline and workspace
+AppFromAI,appfromai,qualified-canonical,Independent on-device generated module factory with style editing
+Opsiforce,opsiforce,qualified-canonical,Independent Kubernetes-hosted app-building agent workspace
+AI Builder by Nishant Chaudhary,ai-builder-nishant,qualified-canonical,Independent typed dashboard graph editor and exporter
+Stitch Clone by Irfan Khan,stitch-clone-khandev,qualified-canonical,Independent implementation with a real but browser-memory-only screen and code loop
+CODEUI,codeui-paurakh,qualified-canonical,Independent durable multi-file builder with visual editing checkpoints and export
+Ayushi.AI,ayushi-ai,qualified-canonical,Independent single-document generator editor preview export and publication loop
+WebCraft AI by Aryan Ghugare,greatstack-ai-website-builder,duplicate,Public implementation of the GreatStack course product
+WebBuild by Arpit Tiwari,webbuild-arpitt,qualified-canonical,Independent section-graph canvas whose publication surface is explicitly simulated
+GenwebAI by Piyush,genie-ai-website-builder,duplicate,Near-identical renamed copy of the earliest currently evidenced Genie source lineage
+GenWeb AI by Prince Chauhan,genie-ai-website-builder,duplicate,Later implementation of the same Mongo website source lineage
+Wizardry AI Website Builder,greatstack-ai-website-builder,duplicate,Public implementation of the GreatStack course product
+Forgix,forgix,derived-canonical,Shared Mongo builder base is materially redefined by screenshot and URL rebuild inputs
+GenSite,gensite,qualified-canonical,Independent multi-page streamed website project with durable version and release boundaries
+Genie AI Website Builder,genie-ai-website-builder,qualified-canonical,Earliest currently evidenced public source for its Mongo OpenRouter lineage without an original-author claim
+FanBox,fanbox,qualified-canonical,Independent local visual workspace and resumable coding-agent cockpit
+Oboto,oboto,qualified-canonical,Independent general agent with persistent editable versioned UI Surfaces
+Generative UI Builder,generative-ui-builder-v3rmxni7,qualified-canonical,Independent screenshot-to-validated-layout multi-agent pipeline
+GreatStack AI Website Builder course project,greatstack-ai-website-builder,qualified-canonical,Official course identity absorbs public learner implementations into one product lineage
+OrangePencil,openpencil-zseven,duplicate,OpenPencil source and product identity remain canonical
+DesignToolOpen,openpencil-zseven,duplicate,Generic repository rename around the OpenPencil implementation
+DesignTool,openpencil-zseven,duplicate,Generic repository rename around the OpenPencil implementation
+PenBoard,penboard,derived-canonical,OpenPencil fork whose native document adds storyboard connections data entities shared views and project workflows
+justapen,openpencil-zseven,duplicate,Repository rename around OpenPencil source and package identity
+OpenPencil for Compass,openpencil-zseven,duplicate,Compass packaging adaptation of OpenPencil
+OpenPencil Pro,openpencil-zseven,duplicate,OpenPencil implementation without a materially new product authority
+Prompt to Website by Ketchup269,bolt-new,duplicate,Bolt course implementation with the same artifact and WebContainer loop
+CodeSeed,bolt-new,duplicate,Bolt course implementation under a new name
+MasyncAI,bolt-new,duplicate,Bolt course implementation under a new name
+Bolt Clone by swwaadhin,bolt-new,duplicate,Explicit Bolt clone
+Website Builder AI by Supriyo Das,bolt-new,duplicate,Bolt course implementation with the same source protocol
+AI Website Builder by dhakas9360,bolt-new,duplicate,Bolt course implementation with the same source protocol
+Code2Cloud,genie-ai-website-builder,duplicate,Genie source lineage with the same Mongo artifact protocol
+AppiaV2,appiav2,derived-canonical,Bolt-derived workspace with material project persistence native-app and deployment boundaries
+AI-Powered Website Generator by Susmita Dey,websitebuilder-susmita,qualified-canonical,Independent multi-page Gemini website workspace
+Wilder Website Builder,bolt-new,duplicate,Bolt course implementation with the same source protocol
+VibeCoding a Website,vibecoding-a-website,qualified-canonical,Independent website lifecycle skill suite and course product
+Reactor by admineral,reactor-admineral,derived-canonical,Focused Sandpack authoring product derived from the Vercel AI SDK generative UI demo
+we0-dev/we0 public workspace,we0,historical-source,Public legacy workspace raises evidence depth for the current We0 lineage without becoming a second product
+Web Builder by Basith Ahmed,bolt-new,duplicate,Historical Bolt artifact and WebContainer source under another repository identity
+ReactGen,bolt-new,duplicate,Historical Bolt source derivative
+Cobra AI 2.0,cobra-ai-2,qualified-canonical,Independent single-JSX website persistence and recreation loop
+AI Website Builder by GitCoderAditya,bolt-new,duplicate,Historical Bolt source derivative
+AI Website Builder by Vaibhav Gupta,bolt-new,duplicate,Historical Bolt source derivative
+Agentic AI Website Builder by Tayyab Ellahi,ai-website-generator-tayyabeh,qualified-canonical,Independent streamed file workspace and WebContainer preview
+Quibly,quibly,derived-canonical,Bolt-derived workbench with durable projects versions and account orchestration
+bolt.new clone by Arshpreet Singh,bolt-new,duplicate,Explicit Bolt clone
+w0 by ierfanam,we0,duplicate,Public We0 workspace reproduction
+WebAI by Sparsh Joshi,webai-sparsh,derived-canonical,Bolt-derived workspace with material GitHub and Vercel delivery authority
+AI Website Builder by Ashutosh More,bolt-new,duplicate,Historical Bolt source derivative
+Website Builder Agent by peter890176,website-builder-agent-peter,qualified-canonical,Variant review and promotion into snapshot-backed editable project files
+SiteForSite,bolt-new,duplicate,Historical Bolt source derivative
+AI Engine by Arjun Kumar,bolt-new,duplicate,Historical Bolt source derivative
+Appia2025,appiav2,predecessor,Earlier same-maintainer version of AppiaV2
+Prompt-to-App AI Code Generator by Pradeep,prompt-to-app-pradeep,qualified-canonical,Independent browser-local multi-target file generator
+PromptToApp by Sahil Tanwani,prompttoapp-sahil,qualified-canonical,Independent Spring tool and Kubernetes preview project workspace
+AI Coders Prompt to App,cloudflare-vibesdk,duplicate,Imported Cloudflare VibeSDK fork
+Front-end Builder by Siddhartha Kumar,front-end-builder-siddhartha,qualified-canonical,Independent single-HTML generation preview and download loop
+AI-Powered Web App Builder by Shubha,ai-web-app-builder-shubha,qualified-canonical,Mongo-backed single-document project with code snapshots
+AI App Builder by Abdul Baqui,ai-app-builder-abdul,qualified-canonical,Supabase file workspace with real version restore
+AI App Developer by Rajnish Kumar,ai-app-developer-rajnish,qualified-canonical,Managed multi-file project with collaboration and deployment state
+ForgeAI by Mousewarriors,forgeai-mousewarriors,qualified-canonical,Local-first blueprint file and recoverable version model
+NOIR.dev,noir-dev,qualified-canonical,Supabase code and version workspace
+CloudAIIDE,polaris-umang,duplicate,Later public copy of the Polaris Convex project lineage
+MerchMate AI,merchmate,qualified-canonical,Independent AI product-mockup and image-editing loop
+Nova AI Builder in fast-code,fast-code-nova,qualified-canonical,Validated structured UI specification drives preview and code
+Argus by Sammy Tourani,argus-sammy,derived-canonical,Open Lovable derivative with persistent builds collaboration and deploy rollback
+Polaris by Umang,polaris-umang,qualified-canonical,Earliest evidenced public canonical of the shared Polaris CloudAIIDE source lineage
+gcode by beatnyk77,firecrawl-open-lovable,duplicate,Near-exact Open Lovable source reproduction
+Buildev by Jun Rod,buildev-isjunrod,same-name-distinct,Independent scene-graph product unrelated to bryfar Buildev
+OpenVibeCoding,openvibecoding,qualified-canonical,Tencent CloudBase ordinary-user app-building product around the open agent kernel
+Deskhand,deskhand,qualified-canonical,General desktop agent with first-class local visual artifact previews
+MDMA,mdma,qualified-canonical,AI-authorable interactive Markdown document format and runnable renderer loop
+ApexNeural AI Website Builder for WordPress,wordpress-ai-builder-apex,qualified-canonical,Three companion repositories consolidated as one product lineage
+Wordpress Frontend React by ApexNeural,wordpress-ai-builder-apex,companion-repository,Newer frontend revision of the same builder
+WordPress Frontend by ApexNeural,wordpress-ai-builder-apex,companion-repository,Frontend paired with the same Flask builder backend
+Cloudflare VibeSDK,cloudflare-vibesdk,qualified-canonical,First-party upstream for imported forks
+Firecrawl Open Lovable,firecrawl-open-lovable,qualified-canonical,First-party upstream for gcode and source ancestor of material derivative Argus
+AppMaker,appmaker,qualified-canonical,Independent single-document app workspace
+AI App Builder by Shoaib Ahmed,ai-app-builder-edge,qualified-canonical,Local-first multi-file builder with delivery gates and bounded versions
+NeuroForge,bolt-new,duplicate,Renamed bolt.diy source lineage
+AI App Builder by Eugene McMillian,ai-app-builder-eugene,qualified-canonical,Independent Supabase single-code project loop
+K2 Vibe,k2-vibe,qualified-canonical,Independent K2 Think and WebContainer builder
+GENESIS HighLevel App Builder,genesis-highlevel,qualified-canonical,HighLevel-specific generated marketplace app workspace
+Tenali v-1,tenali-v1,qualified-canonical,Independent three-part browser website editor
+MakeMyWebsite AI,make-my-website-ai,qualified-canonical,Earliest verified frontend and backend lineage
+MakeMyWebsite AI backend,make-my-website-ai,companion-source,Backend half of one product identity
+Prompt2Website,make-my-website-ai,duplicate,Later squashed reproduction of the same source family
+AI Website Generator by Varun Sharma,ai-website-generator-varun,qualified-canonical,Independent multi-page direct and AI editing loop
+LLM Website Generator by Yuzai Akira,llm-website-generator-yuzai,qualified-canonical,Independent browser-local single-document generator
+AKN AI Website Generator,akn-website-generator,qualified-canonical,Independent OVH-backed site refinement loop
+AI Website Generator by Maurya Patel,ai-website-generator-maurya,qualified-canonical,Independent Groq three-file generator
+BuilderWeb,builderweb,qualified-canonical,Multi-studio managed business design platform
+Kadnya,kadnya,qualified-canonical,Independent AI to Builder.io authoring bridge
+ETER,eter,qualified-canonical,Live tenant site and assistant platform
+Buildflow3,buildflow3,qualified-canonical,Typed site generation and session version workspace
+InsightIQ Marketing Studio,insightiq,qualified-canonical,Structured multi-artifact marketing design studio
+gstack,gstack,qualified-canonical,Agent design and browser evidence toolchain
+AWS Deploy on AWS plugin,aws-deploy-on-aws,qualified-canonical,Official successor to the deprecated AWS Diagram MCP server
+Bedrock Image MCP Server,bedrock-image-mcp-server,qualified-canonical,Community successor to the deprecated AWS Labs Nova Canvas server
+AI App Builder by Doratiotto67,ai-app-builder-doratiotto,qualified-canonical,Supabase-backed prompt generation and source-marked WebContainer refinement
+AlgoCraft,algocraft,qualified-canonical,Algorand-oriented approval-gated AI file operations in a browser IDE
+Promptly,promptly,qualified-canonical,Cursor artifact-program builder with browser-owned source and preview
+Vibe Coding Suite,vibe-code-suite,qualified-canonical,Multi-agent local workspace diff bridge to one visual WebContainer workbench
+Vibe Coding Platform by lwshakib,vibe-coding-platform-lwshakib,qualified-canonical,Database-authoritative Gemini tool workspace with preview and Git delivery
+VibecodeAI,vibecodeai,qualified-canonical,Skill-governed persistent prompt-to-site workspace with audit records
+Vibe Coder by bluebot-609,vibe-coder-bluebot,qualified-canonical,Explicitly saved SQLite projects with Gemini generation and runtime repair
+UiMason,uimason,qualified-canonical,Approval-gated multi-agent application source with live WebContainer projection
+Despy,despy,qualified-canonical,Policy-governed AI collaboration and executable coursework evidence
+DevPilot,devpilot,qualified-canonical,Database-authoritative browser agent with mandatory expiring rollback snapshots
+XCA Agent,xca-agent,qualified-canonical,Persisted spec and source pipeline with ZIP delivery and explicitly stubbed runtime
+Shakespeare,shakespeare,qualified-canonical,Browser-owned Git source workspace with in-browser build preview and provider delivery
+Velocity AI Coder,velocity-ai-coder,qualified-canonical,Owner and product qualifier separates the mobile local-file builder from OptimiLabs Velocity
+Context Space,ctx-space,qualified-canonical,Approval-gated AG-UI file authoring with Babel iframe evidence and PocketBase recovery
+Shakedroid,shakedroid,qualified-canonical,Shakespeare-derived product materially extends the outcome to buildable and signable Android packages
+PHANTOM by Mohammad Abdul Raffay,phantom-raffay,qualified-canonical,Maintainer qualifier separates the Firestore WebContainer and Netlify project loop from unrelated Phantom products
+CodeRocket,coderocket,qualified-canonical,Versioned file artifact build storage and deployment promotion form one self-hostable product
+BOLT AI Website Builder by Jagdish Suthar,bolt-website-maker-jagdish,qualified-canonical,Two companion repositories implement one Gemini Mongo and WebContainer product distinct from StackBlitz Bolt source
+CoderX,coderx,qualified-canonical,Streaming action protocol and WebContainer workspace define the Narayaaana11 product
+VibeCoder by Dublyo,vibecoder-dublyo,qualified-canonical,Maintainer qualifier separates the GitHub-authoritative IDE from unrelated VibeCoder names
