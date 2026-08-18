@@ -56,8 +56,6 @@ projects/
 |---|---|
 | `data/census.csv` | 1504 条权威记录：定义/实现标签、形态、证据深度、生命周期 |
 | `data/quality-tiers.csv` | 两档筛查结论 |
-| `data/ai-native-scores-v2.csv` | 各条 AI-native 维度与理由（层内参考） |
-| `data/entity-layers.csv` | 实体层次（H1–H6） |
 | `data/slug-paths.json` | slug → 树路径 |
 | `data/candidates.csv` · `discovery-batches.csv` · `verification-waves.csv` · `saturation-strata.csv` | 发现与验证登记册 |
 | `data/identity-map.csv` · `organizations.csv` · `taxonomy.json` | 别名/组织/分类法 |

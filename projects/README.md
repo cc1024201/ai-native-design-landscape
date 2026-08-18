@@ -1,36 +1,12 @@
-# projects/ — 分层组织（结构自解释）
+# projects/
 
-**1504 条记录** · 活性 {'active': 1476, 'archived': 28} · 层次 {'H1': 190, 'H2': 1077, 'H3': 97, 'H4': 122, 'H5': 9, 'H6': 9}
+**1504 条** · 两档：值得深度分析 121 / 其他 1383
 
 ```
 projects/
-├── 01-depth-analysis/   值得深度分析（124）— 逐篇定制分析
-│   ├── 01-active/ 02-archived/  (生命周期)
-│   └── <layer>/<band>/<form>/<slug>   (实体层次 → AI-native 档 → 产品形态)
-└── 02-others/          其他（1380）— 仅归档登记，不分析
-    ├── INDEX.md        全部 1380 条登记表（已归类为不值得分析）
-    └── <slug>/README.md  证据档案归档
+├── 01-depth-analysis/  值得深度分析（逐篇定制分析）
+│   └── <life>/<类型>/<形态>/<slug>
+└── 02-others/          其他（仅登记，不分析）
 ```
 
-结构自解释：`01-depth-analysis/` 里的分层 `INDEX.md` 报告条数/成员/档位/覆盖缺口/不足与缺陷/下一步；`02-others/INDEX.md` 登记全部"不值得分析"条目及归类依据。
-
-## 质量分档（data/quality-tiers.csv）
-
-| 档 | 定义 | 条数 |
-|---|---|---|
-| **值得深度分析** | 有独特机制、证据充分、值得逐篇定制分析（判定依据: v2≥8.5 或 H1 产品 v2≥7.5） | 121 |
-| 其他 | 其余全部（含边缘与排除：模板/研究基准/mock/无证据） | 1383 |
-
-> 只有"值得深度分析"档做逐篇定制分析。
-
-## 全局现状与缺口
-- 地理证据: 2402 候选行中仅 742 有第一方区域证据，其余未知（candidates.csv）
-- 发现分层: 27 个声明分层中 26 个仍 active，1 个 paused（channel-figma-forum）→ 发现未饱和
-- 语言/区域批次稀疏：多数语言层仅有 1 个基线批次（saturation-strata.csv）
-- evidence 深度: 285 条 architecture 级（18%）待升级（各层 INDEX 列明细）
-
-## 结构性债务（已知）
-- H2 开源项目 1000+ 条为"混合袋"：含接近产品形态的个人项目（heym、graph-ai），边界判定见对应 INDEX
-- 名字不带 mcp 的桥类可能仍留在 H2（talktofigma 已记录）——分层 v3 应做穷举审计
-- H5/H6 未评分（模板/研究验证语义不同）——如需要可比性，另立指标
-- 3 个 PS1 维护脚本已适配新树但未在 pwsh 实机验证
+`data/quality-tiers.csv` 为两档依据；INDEX 由 `scripts/build-indexes.py` 从树生成。
