@@ -1,39 +1,7 @@
 # UXbot
 
-> Research status: **Architecture-level** · Last reviewed: **2026-08-12**
+UXbot's answer to "what is design" is *the product workflow, not the screen.* It first turns a description, screenshot set or template into an editable product flow — page descriptions, functions, and page-to-page relationships — and only then generates high-fidelity screens against that whole-product scope. [What is UXbot](https://www.uxbot.cn/tutorial/what-is-uxbot). The act of design is defining and restructuring the journey before pixels exist, which keeps the generator from hallucinating each page in isolation.
 
-| Field | Value |
-|---|---|
-| Team | UXbot · operating region not established from first-party evidence |
-| Product shape | AI product-design workspace rather than only a page generator |
-| Authority | hosted project joining product workflow screens interactions and generated platform code |
-| Delivery | shared prototype cloud simulator hosting and Web iOS Android source export |
-| Lifecycle | active |
+The implementation is one project with several materializations. The hosted project retains the workflow and design state; screens stay editable at multiple levels — regenerate a whole screen, optimize a selected area, adjust visual properties directly, switch the global style, add or remove flows. The project can then run in a cloud simulator so interaction paths are reviewed as a product rather than as disconnected frames. [Development and running tutorial](https://www.uxbot.cn/tutorial/). Web, iOS and Android code exports are downstream platform materializations, and cloud hosting is an executable projection of the same project.
 
-## The workflow graph comes before the screens
-
-UXbot first turns a description screenshot set or template into a product workflow. Users can edit page descriptions functions and page-to-page relationships before or alongside high-fidelity generation. That workflow gives the generator a whole-product scope rather than asking it to infer each page independently.
-
-Generated screens remain editable at several levels: regenerate an entire screen optimize a selected area directly adjust visual properties switch the global style and add or remove flows. The project can then run in a cloud simulator so interaction paths are reviewed as a product rather than as disconnected frames.
-
-## One project several materializations
-
-The browser project retains the workflow and design state. Web iOS and Android code exports are downstream platform materializations; cloud hosting and the online simulator are executable projections of the project. Public evidence does not establish lossless code-to-canvas round trips so exported source is not treated as the same authority.
-
-```text
-brief / screenshots / template
-        -> editable workflow and product scope
-        -> multi-screen visual project
-        -> interactive cloud simulation
-        -> platform-specific source or hosted delivery
-```
-
-## Evidence boundary
-
-The tutorial documents creation modes editing and output paths but not the proprietary internal node schema model orchestration or repository mapping. Team geography remains unknown because a Chinese-language product and domain are not location evidence.
-
-## Primary evidence
-
-- [UXbot product surface](https://www.uxbot.cn/)
-- [UXbot product introduction](https://www.uxbot.cn/tutorial/what-is-uxbot)
-- [UXbot development and running tutorial](https://www.uxbot.cn/tutorial/)
+That single-authority framing comes with a deliberate boundary: public evidence does not establish a lossless code-to-canvas round trip, so exported platform source is treated as a delivery fork of the hosted project, not as the same authority you can edit back in. [Product surface](https://www.uxbot.cn/). What is left unverified is the proprietary machinery behind it — the internal node schema, model orchestration, and how the workflow graph maps to generated repositories. The design truth UXbot owns is the connected workflow plus its multi-screen visual state, kept live in a simulator and projected outward into code; the platform files are what you take away, not what it keeps.

@@ -1,27 +1,9 @@
 # Frappe Studio
 
-> Research status: **Source-level** · Lifecycle: **active-transition** · Last reviewed: **2026-08-12**
+Frappe Studio's position is uncompromising for a visual builder: design is the page's block tree, and the AI assistant is not a separate mock canvas layered on top — it reads the same tree the visual builder edits and applies typed operations back to that identical graph. The [AgentRunner](https://github.com/frappe/studio/blob/ecdee25f094f2d1b77bccf1931cddbd101b1888b/studio/ai/agent/loop.py) compresses the current page into model context, maintains a server-side `WorkingTree` mirror, separates terminal-server-client operations from full-page artifact tools, and validates each operation against that mirror before returning the result to the model. There is one page document, and the agent is a second hand on it.
 
-Frappe Studio is an early visual application builder for the Frappe Framework. Its AI assistant is not a separate mock canvas: it reads the current page block tree and applies typed operations to the same graph edited by the visual builder.
+On the front end the streaming loop carries that same convergence. [AIChatController.ts](https://github.com/frappe/studio/blob/ecdee25f094f2d1b77bccf1931cddbd101b1888b/frontend/src/components/AIChatController.ts) consumes page JSON and tool batches in real time and routes every batch through [ToolDispatcher](https://github.com/frappe/studio/blob/ecdee25f094f2d1b77bccf1931cddbd101b1888b/frontend/src/components/ai/toolDispatch.ts), whose operations create, move, remove or patch blocks and wire styles, bindings, variables, events and visibility — the full canvas vocabulary as typed mutations. It then invokes `savePage`, joining AI and manual editing at the native Studio page document rather than at a generated import. There is no boundary where generated output becomes a different artifact; the agent's edits are indistinguishable from hand edits except by provenance.
 
-## A mirrored block tree governs agent work
+The split that does exist in the design is persistence versus export. Frappe doctypes persist pages, resources, scripts and AI sessions, so the database-backed Studio page is the ordinary editing authority; the [export module](https://github.com/frappe/studio/blob/ecdee25f094f2d1b77bccf1931cddbd101b1888b/studio/export.py) writes documents as JSON and companion code as diffable files, but only in developer mode — a controlled materialization of the live graph, not its source of truth. The [README](https://github.com/frappe/studio/blob/ecdee25f094f2d1b77bccf1931cddbd101b1888b/README.md) labels the project very early and not production-ready; that cautions the lifecycle, not the source-visible creation-and-correction loop, which already proves the core thesis: AI that speaks the builder's own operation language against the builder's own tree.
 
-The pinned [`AgentRunner`](https://github.com/frappe/studio/blob/ecdee25f094f2d1b77bccf1931cddbd101b1888b/studio/ai/agent/loop.py) compresses the current page into model context and maintains a server-side `WorkingTree`. It separates terminal server client and full-page artifact tools then validates each client operation against that mirror before returning the result to the model.
-
-## Streaming operations mutate the live canvas
-
-[`AIChatController.ts`](https://github.com/frappe/studio/blob/ecdee25f094f2d1b77bccf1931cddbd101b1888b/frontend/src/components/AIChatController.ts) consumes page JSON and tool batches in real time. It sends every batch through [`ToolDispatcher`](https://github.com/frappe/studio/blob/ecdee25f094f2d1b77bccf1931cddbd101b1888b/frontend/src/components/ai/toolDispatch.ts), whose operations create move remove or patch blocks and wire styles bindings variables events and visibility. The controller then invokes `savePage`, joining AI and manual editing at the native Studio page document.
-
-## Persistence and source export are separate boundaries
-
-Frappe doctypes persist pages resources scripts and AI sessions. The [export module](https://github.com/frappe/studio/blob/ecdee25f094f2d1b77bccf1931cddbd101b1888b/studio/export.py) writes standard documents as JSON and companion code as diffable files but only in developer mode. The database-backed Studio page remains the ordinary editing authority; exported app source is a controlled materialization.
-
-## Lifecycle caution
-
-The [README](https://github.com/frappe/studio/blob/ecdee25f094f2d1b77bccf1931cddbd101b1888b/README.md) explicitly labels the project very early and not production-ready. That affects lifecycle confidence but not the source-visible creation and correction loop.
-
-## Pinned evidence
-
-- [Repository](https://github.com/frappe/studio)
-- [Inspected tree](https://github.com/frappe/studio/tree/ecdee25f094f2d1b77bccf1931cddbd101b1888b)
-- Commit: `ecdee25f094f2d1b77bccf1931cddbd101b1888b`
+[Evidence: repository](https://github.com/frappe/studio) · [pinned tree @ ecdee25f](https://github.com/frappe/studio/tree/ecdee25f094f2d1b77bccf1931cddbd101b1888b)

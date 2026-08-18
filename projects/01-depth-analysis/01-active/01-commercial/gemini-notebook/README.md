@@ -1,17 +1,5 @@
 # Gemini Notebook
 
-> Research status: **Architecture-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+Gemini Notebook (formerly NotebookLM) defines design, in its first-party Slide Deck workspace, as **a staged revision that materializes an entirely new deck** — not as the original prompt and not as the downloaded file. A notebook owner picks format (detailed or presenter), length, audience, style and focus, keeps working while the hosted service generates, and then refines through the [official Slide Deck help](https://support.google.com/notebooklm/answer/16757456?hl=en): per-slide instructions for text, layout and visual changes, edits grouped into `Pending Changes`, deletion restorable before application, and reorderable thumbnails. The act of design is the controlled facing of edits against a working deck, made explicit because nothing is silently overwritten.
 
-Gemini Notebook, formerly NotebookLM, now includes a first-party Slide Deck workspace inside its source-grounded Studio. A notebook owner can choose a detailed or presenter format, length, audience, style and focus, then keep working while the hosted service generates the deck.
-
-## Revisions are staged and materialize a new deck
-
-The [official Slide Deck help](https://support.google.com/notebooklm/answer/16757456?hl=en) documents per-slide instructions for text, layout and visual changes. Multiple edits are grouped as `Pending Changes`; deletion can be restored before application; thumbnails can be reordered; and generating the revision creates an entirely new deck instead of silently overwriting the current one. Previously generated decks remain loadable.
-
-This makes the hosted deck—not the original prompt or downloaded PDF—the working authority. Notebook sources ground initial generation, while the staged revision set records the user's current decision boundary. Presentation and sharing stay in the notebook; PDF and PowerPoint are explicit delivery copies. The [current product page](https://notebooklm.google/) names the service Gemini Notebook, while the support URL and older ecosystem integrations preserve the NotebookLM lineage.
-
-## Evidence
-
-- [Gemini Notebook product](https://notebooklm.google/)
-- [Slide generation, revision, history and export contract](https://support.google.com/notebooklm/answer/16757456?hl=en)
-- [Google's NotebookLM Studio examples](https://blog.google/innovation-and-ai/products/notebooklm/notebooklm-google-io-2026/)
+What owns the artifact is the **hosted deck inside the source-grounded Studio**, not the prompt or the export. Notebook sources ground the initial generation, then the staged revision set records where the user's decision boundary currently sits. Generating a revision produces a new deck while previously generated decks remain loadable — a deliberate append-and-switch model rather than in-place mutation. Presentation and sharing stay in the notebook, and PDF and PowerPoint are explicit delivery copies rather than the live authority. The [current product page](https://notebooklm.google/) names the service Gemini Notebook while the support URL and older ecosystem integrations preserve the NotebookLM lineage, and Google frames Studio around source grounding — the [NotebookLM Studio examples](https://blog.google/innovation-and-ai/products/notebooklm/notebooklm-google-io-2026/) are presented against the user's own notebooks. Because the service is hosted and closed, the precise deck graph, staging semantics and history surface are documented contracts, not inspectable internals — but the staging worker that turns instructions into a new deck is the decisive mechanism.

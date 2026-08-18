@@ -1,34 +1,13 @@
 # Cloudflare VibeSDK
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-13**
+VibeSDK treats design as the whole path from a clarified prompt to a live, branch-scoped deployment — not as a distinct artboard stage. Its defining move is that no single authority owns the artifact: the act of design is spread across four Cloudflare primitives that cooperate without merging.
 
-VibeSDK is Cloudflare's open agentic app-building platform and the upstream source for the `vinilana/aicoders-prompt-to-app` fork discovered in the UI stratum. A user clarifies a request with the agent, watches file/tool changes, deploys branch-scoped previews, inspects browser failures and restores earlier source states.
+## Four authorities, one agent loop
 
-## Four Cloudflare authorities cooperate without becoming one
+`ThinkAgent` runs the model-and-tool loop while a project-specific `SpaceDO` owns the current workspace files, [Cloudflare Artifacts](https://github.com/cloudflare/vibesdk/blob/a318f08625dbb443af7f70dd08d295fd49a0b96b/space/src/space/artifacts-sync.ts) supplies Git commits, branches and restore points, and the [deployment engine](https://github.com/cloudflare/vibesdk/blob/a318f08625dbb443af7f70dd08d295fd49a0b96b/space/src/space/deploy-engine.ts) turns a committed state into a Dynamic Worker preview. A Durable Object Facet owns the generated app's SQLite data. The user watches file/tool changes, inspects browser failures and restores earlier source states — design is what the agent does across all four, not a file one of them labels "the design."
 
-Pinned revision: `a318f08625dbb443af7f70dd08d295fd49a0b96b`.
+## Restore keeps lineage, not application data
 
-`ThinkAgent` owns the model-and-tool loop. A project-specific `SpaceDO` owns current workspace files. Cloudflare Artifacts provides Git commits, branches and restore points. Worker Loader turns a committed state into a Dynamic Worker preview, while an application Durable Object Facet owns generated-app SQLite data.
+State is versioned as Git history: [rollback](https://github.com/cloudflare/vibesdk/blob/a318f08625dbb443af7f70dd08d295fd49a0b96b/sdk/src/workspace.ts) restores a selected commit into the current branch, creates another commit and redeploys — it never rewrites history destructively. That same granularity is why generated-app data is a separate ledger with its own inspect/reset controls and is not implied to roll back with code. Persistence is distributed across these primitives on purpose, and a [pre-deploy safety gate](https://github.com/cloudflare/vibesdk/blob/a318f08625dbb443af7f70dd08d295fd49a0b96b/worker/agents/utils/preDeploySafetyGate.ts) sits in front of the flow.
 
-```mermaid
-flowchart LR
-    U["User and agent"] --> S["SpaceDO files"]
-    S --> G["Artifacts Git history"]
-    G --> W["Dynamic Worker preview"]
-    W --> B["Browser verification"]
-    B --> U
-    W --> D["Per-app SQLite facet"]
-    G -->|restore as new commit| S
-```
-
-## Restore preserves lineage but not application data
-
-Rollback restores a selected commit into the current branch, creates another commit and redeploys, avoiding destructive history rewrite. The generated application's SQLite data has its own inspect/reset controls and is not implied to roll back with code. Export creates an external continuation copy.
-
-## Pinned evidence
-
-- [Repository](https://github.com/cloudflare/vibesdk)
-- [Space workspace API](https://github.com/cloudflare/vibesdk/blob/a318f08625dbb443af7f70dd08d295fd49a0b96b/sdk/src/workspace.ts)
-- [Artifact synchronization](https://github.com/cloudflare/vibesdk/blob/a318f08625dbb443af7f70dd08d295fd49a0b96b/space/src/space/artifacts-sync.ts)
-- [Deployment engine](https://github.com/cloudflare/vibesdk/blob/a318f08625dbb443af7f70dd08d295fd49a0b96b/space/src/space/deploy-engine.ts)
-- [Pre-deploy safety gate](https://github.com/cloudflare/vibesdk/blob/a318f08625dbb443af7f70dd08d295fd49a0b96b/worker/agents/utils/preDeploySafetyGate.ts)
+Because the whole system makes Cloudflare's own durable primitives the storage layer, VibeSDK is less a standalone design product than a reference for how a cloud platform makes agentic app-building its own distribution channel.

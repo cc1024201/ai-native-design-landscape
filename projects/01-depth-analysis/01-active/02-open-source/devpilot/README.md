@@ -1,29 +1,22 @@
 # DevPilot
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-13**
+DevPilot treats design as whatever an autonomous agent can write into a project tree — and its own answer to "what is design" is really about where the mutation may happen, not about the look of the result. The named artifact is a serialized tree in MongoDB; everything else, including the browser, is a projection of it.
 
-DevPilot is a browser-native development environment in which an autonomous agent, a persistent project tree and a live WebContainer projection form one visual application-authoring loop. Unlike a chat assistant beside an IDE, its agent has source-writing tools and a recovery contract around every run.
+## The server tree decides, the browser merely executes
 
-## The database tree is the handoff between server agent and browser runtime
+Pinned revision: `9fbc23895c3c8e9781107810758196f9bd774d8b`. The orchestrator loads one tree and gives the model tools to list, read, search and write files; every `write_file` immediately upserts that tree and emits a `sync_file` event. Crucially, commands are **not** run against the server tree. They are relayed to the signed-in browser and executed inside its WebContainer under an allowlist, returning build or test evidence back to the model. So reasoning and durable mutation live server-side while the executable runtime is owned by the browser — a split that lets the model edit source it never executes directly.
 
-Pinned revision: `9fbc23895c3c8e9781107810758196f9bd774d8b`.
+WebContainer mounts the current tree, boots the framework and hands a `server-ready` URL to a sandboxed iframe. That preview is passive evidence (Monaco, file ops and agent instructions are the only entry points back in), so iteration is source-first rather than DOM-to-source.
 
-The orchestrator loads one serialized project tree from MongoDB. Model tool calls can list, read, search and write files; every successful `write_file` immediately upserts that tree and emits a `sync_file` event. Commands are not executed on the server tree. They are relayed to the signed-in browser and run inside its WebContainer under an allowlist, returning build or test evidence to the model. This split lets server-side reasoning mutate durable source while the browser owns the executable runtime.
+## Mutation only runs under a mandatory snapshot contract
 
-WebContainer mounts the current tree, boots the selected framework and sends a `server-ready` URL to a sandboxed iframe. The preview is passive evidence rather than a DOM-to-source editor: later changes still enter through Monaco, file operations or agent instructions.
-
-## Automatic mutation is guarded by mandatory short-lived snapshots
-
-Before the first write, the agent must create a full-tree checkpoint. Failure stops the run before mutation. A second checkpoint is written when the run ends, including blocked or capped outcomes. Checkpoints live in MongoDB, are scoped to their project, replace the whole tree on restore and expire after 48 hours through a TTL index. The 15 MB application guard reflects MongoDB's single-document limit.
-
-This is deliberately not an approval gate: accepted tool calls apply immediately. Safety comes from visibility, stop/cap controls, an allowlisted command relay and whole-project rollback. GitHub source control adds a longer-lived delivery baseline, but it is separate from the expiring agent checkpoint history.
+Before the first write the agent must checkpoint the whole tree; failure stops the run. A second checkpoint closes the run, even on blocked or capped outcomes. Checkpoints live in MongoDB, are scoped to the project, restore by replacing the tree and expire after 48 hours via a TTL index — with the 15 MB cap reflecting MongoDB's single-document limit. This is expressly **not** an approval gate: accepted calls apply immediately. Safety comes from visibility, stop/cap controls, the allowlisted relay and whole-project rollback, while GitHub is a longer-lived but separate delivery baseline.
 
 ## Pinned evidence
 
 - [Repository](https://github.com/princethakarar/DevPilot)
 - [Autonomous tool loop and browser command relay](https://github.com/princethakarar/DevPilot/blob/9fbc23895c3c8e9781107810758196f9bd774d8b/lib/ai/agent/orchestrator.ts)
 - [Project checkpoint storage and restore](https://github.com/princethakarar/DevPilot/blob/9fbc23895c3c8e9781107810758196f9bd774d8b/lib/checkpoint/store.ts)
-- [Checkpoint and agent-run data model](https://github.com/princethakarar/DevPilot/blob/9fbc23895c3c8e9781107810758196f9bd774d8b/lib/db/schemas.ts)
 - [WebContainer lifecycle and file synchronization](https://github.com/princethakarar/DevPilot/blob/9fbc23895c3c8e9781107810758196f9bd774d8b/modules/webcontainers/hooks/useWebContainer.ts)
 - [Live iframe projection](https://github.com/princethakarar/DevPilot/blob/9fbc23895c3c8e9781107810758196f9bd774d8b/modules/webcontainers/components/ide-preview.tsx)
 - [GitHub delivery actions](https://github.com/princethakarar/DevPilot/blob/9fbc23895c3c8e9781107810758196f9bd774d8b/modules/playground/actions/commit.ts)

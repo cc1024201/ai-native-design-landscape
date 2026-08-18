@@ -1,41 +1,10 @@
 # YouWare
 
-> Research status: **Architecture-level** · Last reviewed: **2026-08-11**
+YouWare defines design as the delivery of a working application, not the production of mockups: [its ordinary job is to generate the app and then alternate among agent, visual and source edits before deploying or exporting it](https://www.youware.com/features/web-app-builder). A React application with interface structure and logic — plus attached backend functions for authentication, database and file storage — is what it produces, and product delivery is primary the whole way through.
 
-| Field | Value |
-|---|---|
-| Team | YouWare · team region not established |
-| Ordinary job | generate a working web application then alternate among agent visual and source edits before deploying or exporting it |
-| Project authority | hosted application source and configuration with live preview |
-| Runtime services | YouBase auth data storage and logic plus Cloudflare deployment |
+The mechanism is that every edit path converges on one hosted source project. Users can click the UI to edit it, ask AI for changes, or open a code editor; all three mutate the same managed source, which drives the live preview, [binds to YouBase state and deploys via Cloudflare](https://www.youware.com/features/ai-code-editor). Because visual and AI edits land in the same working code and runtime rather than producing disconnected screenshots, YouWare reads more like a full-stack delivery product than a mockup generator.
 
-## Source and visual editing share one application
-
-YouWare generates a React application with interface structure and logic. Users can click UI to edit it ask AI for changes or open the code editor. Backend functions such as authentication database and file storage stay attached to the project. Publishing produces a live link and code can be exported for external ownership.
-
-```mermaid
-flowchart LR
-    I["Application intent"] --> A["YouWare agent"]
-    A --> S["Hosted source project"]
-    V["Visual editing"] --> S
-    C["Direct code editing"] --> S
-    S --> R["Live preview"]
-    S --> B["YouBase backend state"]
-    S --> D["Cloudflare deployment"]
-    S --> X["Owned code export"]
-```
-
-## Export may transfer authority
-
-Inside YouWare the source-bearing managed project is canonical. An exported repository can become a new authority outside the product. Public pages do not establish import of external changes or a Git round trip so export is recorded as a transfer boundary rather than permanent synchronization.
-
-Visual edits and AI edits are valuable because they converge on the same working code and runtime. This distinguishes YouWare from a mockup generator and makes product delivery primary.
-
-## Evidence ceiling
-
-The hosted implementation is closed. File schema patch strategy backend migrations version history sandboxing deployment rollback and export/import semantics are not public. “Full code access” must be evaluated against plan and generated project scope.
-
-## Primary evidence
+Authority and persistence follow the hosted project. Inside the product the source-bearing managed application is canonical; [an exported repository can become a new authority outside the product](https://www.youware.com/features/ai-website-builder), and because public pages do not establish import of external changes or a Git round trip, export is recorded as a transfer boundary rather than permanent synchronization. The closed implementation leaves file schema, patch strategy, backend migration and rollback unverified, so "full code access" must be weighed against plan- and generation-scope. The design is the runnable, deployable application — hosting, backend and export all orbit that one source of truth.
 
 - [YouWare web app builder](https://www.youware.com/features/web-app-builder)
 - [YouWare AI code editor](https://www.youware.com/features/ai-code-editor)

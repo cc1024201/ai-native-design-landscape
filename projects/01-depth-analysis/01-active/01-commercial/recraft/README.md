@@ -1,36 +1,11 @@
 # Recraft
 
-> Research status: **Architecture-level** · Last reviewed: **2026-08-12**
+Recraft defines design as the act of arranging several kinds of visual artifacts in one collaborative project, and its distinctive claim is that those artifacts are not all editable the same way. The infinite canvas of Recraft Studio holds generated and imported images, frames, mockups, text, shapes and comments together, prompts adapt to whichever object is selected, and every raster edit returns a new image version while preserving the original. Raster work spans inpaint, outpaint, backgrounds, upscaling, masks and mockup placement — a pixel-first notion of design where each run is a new generation.
 
-| Field | Value |
-|---|---|
-| Team | Recraft · headquartered in London United Kingdom |
-| Ordinary job | generate arrange refine and deliver raster vector and mockup assets in one collaborative project |
-| Authority | Recraft Studio infinite canvas and its typed visual objects |
-| Lifecycle | active |
+Vectors break that uniformity on purpose. Recraft generates actual SVG paths, and its vector editor lets a user select shapes, drag anchors, recolor paths and duplicate elements without leaving the canvas; export can preserve SVG, PDF or Lottie structure while raster export produces PNG, JPG, PDF or TIFF. The canvas therefore holds objects at different levels of resolution — some genuinely structured geometry, some just pixels — and "design" is what happens across both, not in either one alone. The mockup frame is a third kind: a placed design layer inside a print or web presentation.
 
-## One canvas contains artifacts with different editability
+That mix is also where the product's limits are most honest. Imported and edited image history is documented as bounded: not every intermediate edit appears in the project timeline, and some outputs must be exported then re-imported to be reused, so the canvas's authority is real but not a complete lineage of everything it has touched. In other words, one shared canvas contains objects that are edited back to source (vectors) and objects that are only versioned as new generations (rasters), and the project treats that asymmetry as a feature rather than papering over it.
 
-Recraft Studio places generated and imported images frames mockups text shapes and comments on an infinite canvas. Prompts adapt to the selected object and edits produce a new image version while preserving the original. Raster operations include inpaint outpaint backgrounds upscale masks and mockup placement.
+The accurate vocabulary for this project is its own: versions, paths, anchors, frames, mockups. Recraft is headquartered in London.
 
-Vectors are materially different. Recraft generates SVG paths and its current vector editor lets users select shapes drag anchors recolor paths and duplicate elements without leaving the canvas. Vector export can preserve SVG PDF or Lottie structure while raster export produces PNG JPG PDF or TIFF. The dossier therefore does not describe every object as either “just pixels” or “fully structured.”
-
-```mermaid
-flowchart TD
-    C["Infinite project canvas"] --> R["Raster generation and versions"]
-    C --> V["Vector paths and anchor editing"]
-    C --> M["Mockup frame plus applied design layer"]
-    C --> T["Text shapes frames and comments"]
-    R --> X["Raster export"]
-    V --> Y["SVG PDF or Lottie"]
-    M --> Z["Print or web mockup"]
-```
-
-Imported and edited image history has documented limits: not every intermediate edit appears in the project timeline and some outputs must be exported then re-imported for reuse. Recraft's own About page establishes the London headquarters used for region evidence.
-
-## Primary evidence
-
-- [Recraft Studio canvas](https://www.recraft.ai/docs/recraft-studio/work-area/canvas)
-- [Vector editor and native path control](https://www.recraft.ai/blog/vector-editor)
-- [History import and export limits](https://www.recraft.ai/docs/recraft-studio/importing/about-importing)
-- [Recraft team and headquarters](https://www.recraft.ai/about)
+**Evidence:** [Recraft Studio canvas](https://www.recraft.ai/docs/recraft-studio/work-area/canvas) · [Vector editor and native path control](https://www.recraft.ai/blog/vector-editor) · [History import and export limits](https://www.recraft.ai/docs/recraft-studio/importing/about-importing) · [Team and headquarters](https://www.recraft.ai/about)

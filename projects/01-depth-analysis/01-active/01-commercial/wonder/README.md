@@ -1,17 +1,10 @@
 # Wonder
 
-> Research status: **Architecture-level** · Last reviewed: **2026-08-11**
+Wonder's definition of design is a **code-mapped document** — a canvas whose representation is claimed to map one-to-one to application code, so that "design" and "implementation" are not separate artifacts but two faces of the same structure. Its ordinary job is to generate and then directly edit UI on that canvas and move changes in either direction between the design and a coding agent.
 
-| Field | Value |
-|---|---|
-| Team | Wonder · team region not established |
-| Ordinary job | generate and directly edit UI on a code-backed canvas then move changes between design and an application agent |
-| Authority | Wonder's code-mapped design document |
-| Lifecycle | public alpha |
+## The canvas and the code agent share one boundary
 
-## Design data and code are intended to round-trip
-
-Wonder states that its design representation maps one-to-one to code. The canvas supports precise selection edits, style variants and continuing flows; React and Tailwind can be copied for delivery. Its MCP server can read and write Wonder design data, so a coding agent can bring an existing component context into the canvas or update the canvas from code-side intent.
+Wonder's [MCP server](https://wonder.design/docs/mcp) can read *and* write Wonder design data. A coding agent can pull an existing component's context into the canvas, and the canvas can push intent back out toward code-side changes. The canvas itself supports precise selection edits, style variants and continuing flows, with React and Tailwind as the delivery format ([product](https://wonder.design/)).
 
 ```mermaid
 flowchart LR
@@ -23,18 +16,8 @@ flowchart LR
     W --> X["React + Tailwind delivery"]
 ```
 
-## “One-to-one” is a product contract not an inferred parser
+## "One-to-one" is a product contract, not an observed parser
 
-First-party documentation establishes direct data access and bidirectional tools but does not publish the design schema or mapping implementation. The dossier therefore records source-authority/live-projection architecture at the observable boundary without claiming lossless equivalence for arbitrary React components or round-trip preservation of application logic.
+First-party docs establish direct data access and bidirectional tools, but they do not publish the design schema or the mapping implementation. So the record holds "one-to-one" as a source-authority/live-projection contract at the observable boundary, without claiming lossless equivalence for arbitrary React components or round-trip preservation of application logic. Wonder continues the founding team's earlier Superflex design-to-code product, but the lineage moved from export-oriented translation toward this continuing code-and-canvas document — the authority itself changed shape.
 
-Wonder follows the same founding team’s earlier Superflex design-to-code product. The later candidate is resolved into this current lineage rather than counted as another active team. That lineage transition matters because the authority moved from export-oriented translation toward a continuing code-and-canvas document.
-
-## Evidence ceiling
-
-Public alpha evidence does not establish file serialization, autosave guarantees, named versions, branch/merge behavior, MCP authorization or conflict semantics. Exact production compatibility remains an acceptance question per codebase.
-
-## Primary evidence
-
-- [Wonder product](https://wonder.design/)
-- [Wonder MCP documentation](https://wonder.design/docs/mcp)
-- [Wonder public-alpha lineage account](https://www.producthunt.com/products/wonder-public-alpha)
+Public alpha material ([Wonder](https://wonder.design/) · [Wonder MCP documentation](https://wonder.design/docs/mcp) · [public-alpha lineage account](https://www.producthunt.com/products/wonder-public-alpha)) does not establish file serialization, autosave guarantees, named versions, branch/merge behavior, MCP authorization, or conflict semantics. Production compatibility with a given codebase remains an acceptance question.

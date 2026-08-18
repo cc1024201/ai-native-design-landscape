@@ -1,24 +1,14 @@
 # Backdraft
 
-> Research status: **Architecture-level** · Last reviewed: **2026-08-12**
+Backdraft answers "what is design" by pointing at the source files that already exist in a project folder. Existing HTML, CSS, React, Tailwind and TypeScript are the authority; the canvas is only a live projection of them. The documentation is explicit that this is not generation into a proprietary design model — there is no separate artifact to export from. The design **is** the code, and the editor's job is to make editing that code feel visual.
 
-| Field | Value |
-|---|---|
-| Team | Backdraft · operating region not established |
-| Surface | macOS desktop and web code-native visual editor |
-| Authority | existing HTML CSS React Tailwind and TypeScript source files |
-| Writer | deterministic CST patches for visual edits; bounded file operations for agent edits |
-| Lifecycle | active |
+## The canvas is a projection; the Concrete Syntax Tree is the writer
 
-## The source file is not an export target
+The decisive mechanism is CST patching. A visual edit targets the existing syntax — its exact tree nodes — and rewrites only the corresponding CSS or JSX, preserving surrounding routing, API calls, business logic and source formatting instead of regenerating the whole component. Selecting and moving an element updates the underlying source; changing the code rebuilds every affected tile. Because edits are patches into the live syntax tree, the projection and the source cannot drift the way a generated model's output can. [Bidirectional code–design mechanism](https://backdraftai.com/bidirectional-code-design)
 
-Backdraft opens an existing project folder and renders pages as tiles on a spatial canvas. Selecting and moving a visual element updates the corresponding CSS or JSX; changing the code updates every affected tile. Its documentation explicitly distinguishes this from generation into a proprietary design model.
+## The agent adds bounded mutation plus visual verification
 
-The decisive implementation claim is Concrete Syntax Tree patching. A visual edit targets the existing syntax while retaining surrounding routing state API calls business logic and source formatting instead of regenerating the whole component. That makes the canvas a live projection of source authority.
-
-## Agent loop adds evidence to mutation
-
-The integrated agent can read and search project files make bounded multi-file changes and capture screenshots at selected viewports. Tiles rebuild after edits so layout regressions can be observed before a Git commit. An annotation queue gives the agent exact visual targets; CLI agents such as Claude Code Codex and Gemini CLI can be run from the same chat surface.
+Beyond direct visual patching, an integrated agent reads and searches project files, makes bounded multi-file changes and captures screenshots at chosen viewports. Tiles rebuild so layout regressions are visible before any Git commit, and an annotation queue hands the agent exact visual targets. External CLI agents — Claude Code, Codex, Gemini CLI — can be run from the same chat surface, all converging on the same source files. [Feature and agent surface](https://backdraftai.com/features)
 
 ```text
 source files -> parse/render -> spatial canvas
@@ -27,15 +17,6 @@ source files -> parse/render -> spatial canvas
      |------ agent file edit + screenshot verification
 ```
 
-Figma and Webflow imports materialize into editable source. GitHub commits Netlify deployment and a local dev server advance those same files; there is no separate export stage for normal shipping.
+Figma and Webflow imports materialize into editable source rather than a parallel object graph, and GitHub commits, Netlify deploys and the local dev server all advance those same files — there is no separate export stage for normal shipping. [Docs](https://backdraftai.com/docs.html)
 
-## Evidence boundary
-
-The product implementation is closed. Documentation establishes CST behavior and source authority but not the exact parser libraries patch conflict rules or persistence database.
-
-## Primary evidence
-
-- [Backdraft product surface](https://backdraftai.com/)
-- [Backdraft documentation](https://backdraftai.com/docs.html)
-- [Bidirectional editing mechanism](https://backdraftai.com/bidirectional-code-design)
-- [Backdraft feature and agent surface](https://backdraftai.com/features)
+The implementation is closed, so this stays at the architecture level: documentation establishes the CST behavior and source authority, but not the exact parser libraries, patch conflict rules, or persistence database. [Product surface](https://backdraftai.com/)

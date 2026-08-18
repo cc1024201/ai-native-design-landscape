@@ -1,34 +1,11 @@
 # VibeCoder by Dublyo
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-13**
+VibeCoder's answer to "what is design" is economical and self-deprecating: **design is a set of file changes in a GitHub repository**, and nothing else claims the title. Reading the pinned source at `2358cef3`, the PostgreSQL `VcProject` row holds framework, repository, branch, deployment identity and environment values, and chat records which paths changed and what model ran — but **the database points at source without containing it**. File bodies are fetched from and written to the configured GitHub repository through the content API; the repo, not the database, is the authoritative design artifact. The scaffold of a self-hosted system is small: project routing, deployment metadata and repair attempts live in Postgres, while the design itself lives in GitHub.
 
-VibeCoder makes a GitHub repository the canonical application artifact. Its AI pipeline classifies a request, optionally researches and plans it, emits complete file replacements, commits them through the GitHub API, then lets browser preview and container deployment consume that commit history.
+Everything follows from making **Git history the version mechanism, shared by humans and agents alike**. The [pipeline](https://github.com/dublyo/vibecoder/blob/2358cef37fd61542d4acf56ec4b3575c19c12bc0/src/lib/vibecoder/pipeline.ts) classifies a request, optionally researches and plans it, parses fenced file blocks, then [commits multi-file replacements and returns a commit SHA](https://github.com/dublyo/vibecoder/blob/2358cef37fd61542d4acf56ec4b3575c19c12bc0/src/lib/vibecoder/github.ts). The manual editor [route](https://github.com/dublyo/vibecoder/blob/2358cef37fd61542d4acf56ec4b3575c19c12bc0/src/app/api/vibecoder/projects/%5Bid%5D/files/route.ts) writes through the same GitHub content API and creates its own commit. There is exactly one lineage of truth, and both the direct and Maestro pipelines advance it the same way — a commit is the receipt for any change, agent-authored or human.
 
-## The database points at source but does not contain it
+The genuinely clever part is how preview **not** being authoritative keeps the model honest. After a response, the [chat stream](https://github.com/dublyo/vibecoder/blob/2358cef37fd61542d4acf56ec4b3575c19c12bc0/src/app/api/vibecoder/projects/%5Bid%5D/chat/route.ts) sends changed file bodies to the client for immediate Sandpack-style feedback, while the full file browser loads from GitHub. The transient preview can therefore show only the changed subset plus its scaffold; the repository remains the complete authority, so the fast preview must not be mistaken for a full recovery snapshot.
 
-Pinned revision: `2358cef37fd61542d4acf56ec4b3575c19c12bc0`.
+Build and deploy continue from commits rather than from the preview. [Build routes](https://github.com/dublyo/vibecoder/blob/2358cef37fd61542d4acf56ec4b3575c19c12bc0/src/app/api/vibecoder/projects/%5Bid%5D/build/route.ts) clone the repository inside a managed container and run bounded commands; a Ralph loop watches build or runtime evidence, proposes fixes and commits them, with attempt counts stored on deployment records. [Deploy](https://github.com/dublyo/vibecoder/blob/2358cef37fd61542d4acf56ec4b3575c19c12bc0/src/app/api/vibecoder/projects/%5Bid%5D/deploy/route.ts) triggers a GitHub Actions workflow, and webhook/Portainer code moves the built image into the running environment and updates project deployment status. ZIP export reads repository files, adding framework scaffolding only when missing — again treating Git as truth.
 
-PostgreSQL `VcProject` rows hold framework, repository, branch, deployment identity, environment values and an optional plan. Chat messages record which paths changed and what model was used; deployment rows record commit SHA, logs, errors and repair attempts. File bodies are fetched from and written to the configured GitHub repository rather than duplicated into the project row.
-
-The direct and Maestro pipelines both parse fenced file blocks, commit multiple files and return a commit SHA. Manual editor writes use the same GitHub content API and create their own commit. Git history is consequently the version mechanism for both agent and human changes.
-
-## Preview is fast evidence with a narrower snapshot
-
-After a response, the chat stream sends the changed file bodies to the client for immediate Sandpack-style feedback. The full source and file browser are loaded from GitHub routes. This means an incremental preview can temporarily show only the changed subset plus its scaffold while the repository remains the complete authority. The product should not treat the transient preview payload as a full recovery snapshot.
-
-## Build repair and deployment continue from commits
-
-Build routes clone the repository inside a managed container and run bounded commands. The Ralph loop watches build or runtime evidence, proposes fixes and commits them, with attempt counts stored on deployment records. Manual deployment triggers a GitHub Actions workflow; webhook and Portainer code move the built image into the running environment and update the project's deployment status. ZIP export reads repository files, adding framework scaffolding only when missing.
-
-This is a server-heavy self-hosted architecture: losing PostgreSQL loses project routing and deployment metadata, while losing GitHub loses the authoritative design source. Neither store alone is a complete backup.
-
-## Pinned evidence
-
-- [Repository](https://github.com/dublyo/vibecoder)
-- [Project message and deployment schema](https://github.com/dublyo/vibecoder/blob/2358cef37fd61542d4acf56ec4b3575c19c12bc0/prisma/schema.prisma)
-- [Generation tiers and commit boundary](https://github.com/dublyo/vibecoder/blob/2358cef37fd61542d4acf56ec4b3575c19c12bc0/src/lib/vibecoder/pipeline.ts)
-- [GitHub file and multi-file commit implementation](https://github.com/dublyo/vibecoder/blob/2358cef37fd61542d4acf56ec4b3575c19c12bc0/src/lib/vibecoder/github.ts)
-- [Chat stream preview payload and repair handoff](https://github.com/dublyo/vibecoder/blob/2358cef37fd61542d4acf56ec4b3575c19c12bc0/src/app/api/vibecoder/projects/%5Bid%5D/chat/route.ts)
-- [Manual source mutation route](https://github.com/dublyo/vibecoder/blob/2358cef37fd61542d4acf56ec4b3575c19c12bc0/src/app/api/vibecoder/projects/%5Bid%5D/files/route.ts)
-- [Container build path](https://github.com/dublyo/vibecoder/blob/2358cef37fd61542d4acf56ec4b3575c19c12bc0/src/app/api/vibecoder/projects/%5Bid%5D/build/route.ts)
-- [Deployment trigger](https://github.com/dublyo/vibecoder/blob/2358cef37fd61542d4acf56ec4b3575c19c12bc0/src/app/api/vibecoder/projects/%5Bid%5D/deploy/route.ts)
+The trade-off is a server-heavy self-hosted split: **losing PostgreSQL loses project routing and deployment metadata; losing GitHub loses the design source**. Neither store alone is a complete backup, which defines exactly what a full backup must span. The product's own philosophy — commit the code, keep the pointer in the DB, let preview mirror but never substitute for the repo — is the whole design story.

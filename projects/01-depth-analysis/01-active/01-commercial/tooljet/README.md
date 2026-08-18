@@ -1,24 +1,15 @@
 # ToolJet
 
-> Research status: **Architecture-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+ToolJet treats design as configuration that stays editable, not as a snapshot that is generated and discarded. It is an established low-code platform whose definition of "design" is the reversible wiring of an application: the component canvas, the data queries feeding it, the environment values, the workflow graph and the agent configuration all remain first-class, editable surfaces after anything is built.
 
-ToolJet is an established low-code application platform whose current product combines a drag-and-drop UI builder, data queries, workflows, AI app generation, and an agent builder.
+## The application remains a directly editable canvas
 
-## The application remains directly editable
-
-Generated starts land in ToolJet's component canvas rather than only as screenshots or prose. Components, queries, environment values, and workflow actions remain configurable, and versions can be promoted through GitSync and deployment stages.
+The decisive mechanism is that generated starts land in ToolJet's component canvas rather than as screenshots or prose. Components, queries, environment values and workflow actions stay configurable, and versions can be promoted through GitSync and deployment stages. Design here is not a one-way generation event — it is a mutable, versionable graph the product continues to own.
 
 ## Agents operate beside apps and workflows
 
-ToolJet describes agents as automators that can orchestrate processes across platform resources. That makes the product boundary larger than prompt-to-UI: a managed app, its workflow graph, and an agent configuration can jointly define delivery.
+ToolJet's boundary is larger than prompt-to-UI: it describes agents as automators that orchestrate processes across platform resources. A managed app, its workflow graph and an agent configuration can jointly define what gets delivered, so the design artifact extends beyond pixels into the behavior and data layer of a running product. [ToolJet AI overview](https://docs.tooljet.ai/docs/tooljet-ai/overview)
 
-## The open repository does not expose the whole AI path
+## The openness boundary
 
-The inspected AGPL tree contains the conventional app builder, workflow surfaces, AI client state, service calls, and enterprise test contracts. It does not expose enough of the hosted generation and agent implementation to trace model output through every mutation and deployment boundary. Those capabilities are therefore recorded at architecture level, while the open foundation revision is pinned separately.
-
-## Evidence
-
-- Product and repository: [ToolJet/ToolJet](https://github.com/ToolJet/ToolJet)
-- Inspected open foundation revision: [`21c05d18312a436606ab2fb9e5d52a6c57e1b57d`](https://github.com/ToolJet/ToolJet/tree/21c05d18312a436606ab2fb9e5d52a6c57e1b57d)
-- [ToolJet AI documentation](https://docs.tooljet.ai/docs/tooljet-ai/overview)
-- [Application builder documentation](https://docs.tooljet.com/docs/app-builder/overview/)
+The AGPL repository exposes the conventional builder, workflow surfaces and AI client/service calls, but not enough of the hosted generation and agent core to trace model output through every mutation and deployment boundary, so those capabilities are recorded at architecture level. [Evidence: ToolJet/ToolJet](https://github.com/ToolJet/ToolJet) @ [21c05d18](https://github.com/ToolJet/ToolJet/tree/21c05d18312a436606ab2fb9e5d52a6c57e1b57d) · [application builder docs](https://docs.tooljet.com/docs/app-builder/overview/)

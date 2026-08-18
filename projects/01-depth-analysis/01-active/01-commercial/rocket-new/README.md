@@ -1,45 +1,11 @@
 # Rocket.new
 
-> Research status: **Architecture-level** · Last reviewed: **2026-08-11**
+Rocket.new (the DhiWise lineage's current product) treats design as something that is only real once it is source. A prompt, Figma file, image or document enters a build agent that produces a code-backed web or mobile project with a running preview — and from that moment the artifact authority is the editable source files, not the picture. Its distinctive move is the **coupling**: direct-manipulation AI edits and manual code edits are not separate generations but views over one continuing project, with the user owning and able to export the source ([product](https://www.rocket.new/)).
 
-| Field | Value |
-|---|---|
-| Team | DhiWise → Rocket.new · team region not established |
-| Ordinary job | turn a prompt design reference or Figma input into a working app and continue through visual edits code and deployment |
-| Authority | the Rocket project and its editable source files |
-| Lifecycle | active transition from the DhiWise design-to-code product |
+The decisive mechanism is that **Visual Edit writes to the same code project**. The user selects an element, drives it with natural language, and saving writes those pending edits to source; Code View exposes the same files for precise manual work, and GitHub or ZIP moves that source outside the hosted surface ([visual edits written to code](https://docs.rocket.new/build/editor/visual-edit)). There is no clean seam between "designing" and "coding" — the same file is the target of both the canvas-level gesture and the text-level edit. This is what makes Rocket a design-to-app continuation rather than a design-to-mockup tool.
 
-## Visual selection writes to the same code project
+Figma is an import channel, not a bridge. Documentation says adding screens is supported but updating existing screens from later Figma changes is not yet fully supported — so the relationship is one-directional reconstruction into Rocket's project, not a lossless bidirectional sync ([FAQ](https://docs.rocket.new/help/faq)). Authority has moved from the design reference into the generated code project the moment the app is built.
 
-Rocket can start from natural language Figma or other attached visual and document inputs. It generates a web or mobile code project with a running preview. Visual Edit binds controls and a quick natural-language request to a selected element; saving writes those pending edits to source. Code View exposes the same files for precise manual work and GitHub or ZIP moves that source outside the hosted surface.
+The evidence ceiling is the project's weak point: the hosted project format, patch protocol, model orchestration, build isolation, autosave checkpoints and Git merge semantics are all closed, and public docs establish user-visible source ownership but do not independently validate the one-prompt production-quality claims. What is observable is the contract — prompt or Figma in, an owned, editable, deployable code project out.
 
-```mermaid
-flowchart LR
-    I["Prompt Figma image or document"] --> A["Rocket build agent"]
-    A --> P["Code-backed project"]
-    P --> V["Interactive preview"]
-    V --> E["Element-targeted Visual Edit"]
-    E --> P
-    H["Direct Code View edits"] --> P
-    P --> G["GitHub or ZIP"]
-    P --> D["Hosted or app-store delivery"]
-```
-
-The important coupling is explicit: direct manipulation AI changes and manual code edits are views over a continuing project rather than disconnected generations. The user owns and can export the source.
-
-## DhiWise is a lineage transition not another team
-
-The DhiWise homepage now identifies the product as Rocket.new. DhiWise documentation still exposes the earlier Figma-to-React and Flutter translation path; the current Rocket surface expands that lineage to prompt-led full applications research backend integrations visual editing and deployment. One team lineage is counted with the current product as canonical.
-
-Figma remains an import channel. Current Rocket documentation says adding screens is supported while updating existing screens from later Figma changes is not yet fully supported. This is not a lossless bidirectional Figma-code bridge.
-
-## Evidence ceiling
-
-The hosted project format patch protocol model orchestration build isolation autosave checkpoints and Git merge semantics are closed. Public docs establish user-visible source ownership and editing paths but do not independently validate production quality or one-prompt completion claims.
-
-## Primary evidence
-
-- [DhiWise transition to Rocket.new](https://www.dhiwise.com/)
-- [Rocket current product](https://www.rocket.new/)
-- [Visual edits written to code](https://docs.rocket.new/build/editor/visual-edit)
-- [Code ownership persistence and Figma limitations](https://docs.rocket.new/help/faq)
+[Evidence: Rocket product](https://www.rocket.new/) · [Visual Edit → code](https://docs.rocket.new/build/editor/visual-edit) · [Code ownership & Figma limits](https://docs.rocket.new/help/faq) · [DhiWise transition](https://www.dhiwise.com/)

@@ -1,35 +1,12 @@
 # Mowgli
 
-> Research status: **Architecture-level** · Last reviewed: **2026-08-12**
+Mowgli's answer is that design is an expansion of agreed decisions — the look is generated only after the what and the why are pinned down. Its implementation is a decision gate: brief questions (or a Figma import) resolve into a living product specification, and that specification owns the canvas rather than a series of unrelated prompt results.
 
-Mowgli makes a product specification the context spine for visual exploration. The canvas is not organized as a series of unrelated prompt results.
+The decisive split is moodboard before product. Mowgli first proposes multiple flagship-screen directions and a larger moodboard of visual themes, lets users remix attributes across options, and only after an explicit choice expands the direction across every screen, flow and state. Design is deferred until exploration yields a commitment; the specification is kept in sync so later screens are generated from intent, not from style alone.
 
-## Specification and moodboard are different decision layers
-
-A new project begins with questions about users functions states and flows or by importing an existing Figma file. The answers become a living specification. Before generating the complete product Mowgli proposes multiple flagship-screen directions and a larger moodboard of visual themes. Users can remix attributes across options then explicitly choose a direction.
-
-Only after that decision does the system expand the direction across every screen flow and state. Targeted chat edits operate on a selected button card or section while global prompts can rework a whole page or product. The specification is kept in sync so later screens are not generated from visual style alone.
-
-```mermaid
-flowchart LR
-    B["Brief questions or Figma import"] --> S["Living product specification"]
-    S --> M["Moodboard and alternatives"]
-    M --> P["Selected direction"]
-    P --> C["Full screen and flow canvas"]
-    C --> R["Interactive React prototype"]
-    C --> E["Figma React or agent bundle"]
-```
-
-## Reversibility and delivery
-
-Version history and branching make conversational experiments reversible. Interactive prototypes add real navigation and transitions and update when a screen or flow changes. Delivery can be an editable Figma file React and Tailwind reference code or an agent-ready package containing specification styling and prompts.
-
-The public export documentation calls the React output structurally flat and assumption-free. It is intended as an implementation reference that a coding agent can reorganize rather than a claimed production component architecture. That caveat is central to the authority boundary.
-
-## Primary evidence
+Targeted chat edits operate on a selected card or section; global prompts rework a whole page. Version history and branching make these conversational experiments reversible. Delivery is the telling part of the authority boundary: the React output is documented as structurally flat and assumption-free — an implementation reference a coding agent may reorganize, backed by the spec that is passed along. The product can also deliver an editable Figma file or an agent bundle carrying intent (spec, styling, prompts) forward. Persistence is the spec, not the pixels.
 
 - [Mowgli product and whole-product canvas](https://mowgli.ai/)
 - [AI design-generation workflow](https://mowgli.ai/features/ai-design-generation)
 - [Conversational editing and version history](https://mowgli.ai/features/chat-with-your-design)
-- [Code Figma and agent delivery](https://mowgli.ai/features/export-to-code)
-- [Mowgli team](https://mowgli.ai/about)
+- [Code, Figma and agent delivery](https://mowgli.ai/features/export-to-code)

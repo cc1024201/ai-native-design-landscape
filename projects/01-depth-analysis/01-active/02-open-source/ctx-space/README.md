@@ -1,30 +1,9 @@
 # Context Space
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-13**
+Context Space answers "what is design" with an unusually frank server/client split: design is a human-approved stream of file operations, and the immediate source writer is the browser UI, not the language model. A CopilotKit client sends a brief to an AG-UI agent, the agent renders a proposed plan for approval, and only after approval does the browser execute model-requested writes against a Zustand project store. The backend exposes `proposePlan`, `writeFile` and `deleteFile` as tools but deliberately does not run the file tools itself — the UI relays them, which is what makes approval precede mutation real rather than cosmetic ([useAgentTools.tsx](https://github.com/super-nived/ctx-space/blob/c6dff37583f02af6e520798ed2dfdf6423ac9438/frontend/src/features/agent/useAgentTools.tsx)).
 
-Context Space treats application design as a human-approved stream of file operations. A CopilotKit client sends a brief to an AG-UI agent, renders the proposed plan for approval, executes model-requested writes in the browser, and continuously projects the resulting React files into an iframe.
+The decisive mechanism is **browser-executed mutation with a replayable edit log**. Each write appends a before/after record; restore rebuilds the complete file map by replaying edits through a selected index, with Zustand persisting current files and the edit log to localStorage ([projectStore.ts](https://github.com/super-nived/ctx-space/blob/c6dff37583f02af6e520798ed2dfdf6423ac9438/frontend/src/store/projectStore.ts)). The live evidence path is a Babel document loaded through iframe `srcDoc`, not a WebContainer — a genuine build-and-repair loop for the supported React subset where runtime errors return via `postMessage` and can be sent back as a synthetic user message for correction ([useLivePreview.ts](https://github.com/super-nived/ctx-space/blob/c6dff37583f02af6e520798ed2dfdf6423ac9438/frontend/src/features/preview/useLivePreview.ts)).
 
-## Approval precedes mutation
+Durable persistence and fine-grained history have **different authorities**. FastAPI proxies complete project files, chat, thread id and usage into PocketBase for cross-device recovery and project switching, and GitHub publication writes the saved file map to a repository. But the local edit log is browser-only: loading a PocketBase project resets it, so a recovered project keeps current source and conversation while losing the local sequence the History panel depends on ([projects.py](https://github.com/super-nived/ctx-space/blob/c6dff37583f02af6e520798ed2dfdf6423ac9438/backend/app/projects.py), [github.py](https://github.com/super-nived/ctx-space/blob/c6dff37583f02af6e520798ed2dfdf6423ac9438/backend/app/github.py)). The design lives in files the agent proposes and the human authorizes, the browser holds the source of truth between approvals, and the durable cloud copy is a snapshot that drops the edit lineage.
 
-Pinned revision: `c6dff37583f02af6e520798ed2dfdf6423ac9438`.
-
-The backend exposes `proposePlan`, `writeFile` and `deleteFile` as model tools but deliberately does not execute the file tools itself. CopilotKit relays them to registered frontend handlers. `proposePlan` pauses for approve or request-changes input; only after approval does `writeFile` mutate the Zustand project store. This makes the UI—not the language model or FastAPI process—the immediate source writer.
-
-Each write appends a before/after edit record. Restore rebuilds the complete file map by replaying edits through a selected index. Zustand persists the current files and edit log in localStorage, while transient preview state is excluded.
-
-## The live evidence path is a Babel document, not WebContainer
-
-The current repository has moved beyond its stale phase checklist but has not implemented the advertised WebContainer path. `useLivePreview` turns the file map into a generated HTML document using Babel and esm.sh, then loads it through iframe `srcDoc`. Runtime errors return through `postMessage` and can be sent back as a synthetic user message for correction. This supports a genuine build-and-repair loop for the supported React subset without npm installation or a general Node runtime.
-
-## Durable projects and edit history have different authorities
-
-FastAPI proxies complete project files, chat messages, thread id and usage data into PocketBase, enabling project switching and cross-device recovery. GitHub publication creates or updates a repository from the saved file map and records its URL. The fine-grained edit log is only browser-local, however: loading a PocketBase project resets that log. A recovered project therefore preserves current source and conversation but not the local sequence used by the History panel.
-
-## Pinned evidence
-
-- [Repository](https://github.com/super-nived/ctx-space)
-- [Approval and browser-executed file tools](https://github.com/super-nived/ctx-space/blob/c6dff37583f02af6e520798ed2dfdf6423ac9438/frontend/src/features/agent/useAgentTools.tsx)
-- [File authority and replayable local edit log](https://github.com/super-nived/ctx-space/blob/c6dff37583f02af6e520798ed2dfdf6423ac9438/frontend/src/store/projectStore.ts)
-- [Babel iframe preview and runtime-error relay](https://github.com/super-nived/ctx-space/blob/c6dff37583f02af6e520798ed2dfdf6423ac9438/frontend/src/features/preview/useLivePreview.ts)
-- [PocketBase project contract and GitHub publication route](https://github.com/super-nived/ctx-space/blob/c6dff37583f02af6e520798ed2dfdf6423ac9438/backend/app/projects.py)
-- [GitHub repository writer](https://github.com/super-nived/ctx-space/blob/c6dff37583f02af6e520798ed2dfdf6423ac9438/backend/app/github.py)
+[Evidence: repository](https://github.com/super-nived/ctx-space) · [approval & browser-executed file tools](https://github.com/super-nived/ctx-space/blob/c6dff37583f02af6e520798ed2dfdf6423ac9438/frontend/src/features/agent/useAgentTools.tsx) · [edit-log authority](https://github.com/super-nived/ctx-space/blob/c6dff37583f02af6e520798ed2dfdf6423ac9438/frontend/src/store/projectStore.ts)

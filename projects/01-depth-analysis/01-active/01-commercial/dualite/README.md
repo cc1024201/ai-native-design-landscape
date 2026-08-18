@@ -1,43 +1,7 @@
 # Dualite
 
-> Research status: **Architecture-level** · Last reviewed: **2026-08-11**
+Dualite defines design as the object you are pointing at in a live preview — and once you point, that object is a code-backed element, not a picture. Its decisive move is **Interaction Mode**: a natural-language request is bound to whatever element the user has selected in the running product, so "make this look right" is really "revise *this specific instance* of the running UI" rather than demanding a fresh untracked image from the model. That binding is what separates Dualite from a plain screenshot-to-code generator: the agent is mutating a real, addressable node in the project, and the preview lets the human confirm it before anything else advances. [Dualite product](https://dualite.dev/)
 
-| Field | Value |
-|---|---|
-| Team | Dualite · team region not established |
-| Ordinary job | begin with a prompt Figma file repository or template and continue until a deployable full-stack product exists |
-| Authority | the code-backed Dualite project and its connected source repository |
-| Lifecycle | active |
+The implementation is a convergence, not a single pipeline. Four entrances — a prompt, a Figma import, an existing GitHub repository, or a template — all deposit into one browser project that holds frontend code, backend wiring, authentication and deployment state. Figma frames are imported and converted into an editable working project, and from that point Dualite's project becomes authoritative: later prompts can add behavior, pages and Supabase-backed data, and the running preview is the loop the user verifies against. The shared authority is the code-backed Dualite project and its connected source repository, not the original Figma graph. [Figma import and continued AI editing](https://dualite.dev/blogs/how-to-import-figma-design-into-dualite)
 
-## Four entrances converge on one project
-
-Dualite is not only a Figma exporter. Prompt Figma GitHub and template starts all enter a browser project containing frontend code backend wiring authentication and deployment state. A Figma import is converted into an editable working project; subsequent prompts can add behavior pages and Supabase-backed data.
-
-Interaction Mode binds a natural-language request to the element selected in the running preview. That target binding is the decisive Design mechanism: the agent is revising a specific code-backed object rather than producing an untracked replacement image.
-
-```mermaid
-flowchart TB
-    P["Prompt"] --> J["Dualite project"]
-    F["Figma frames"] --> J
-    G["GitHub repository"] --> J
-    T["Template"] --> J
-    J --> V["Running preview"]
-    V --> I["Element-targeted Interaction Mode"]
-    I --> J
-    J --> S["Supabase and application state"]
-    J --> O["GitHub ZIP or deployment"]
-```
-
-## The authority changes at import
-
-Figma remains evidence of the imported visual intent but the live project becomes authoritative for later logic and visual changes. Current first-party material establishes adding Figma screens and continuing with AI; it does not establish a lossless push of arbitrary code-side changes back into the original Figma graph.
-
-## Evidence ceiling
-
-The project schema model routing code patch format autosave/version semantics and GitHub conflict behavior are not public. Marketing comparisons describe current capabilities but do not replace acceptance tests for fidelity accessibility framework quality or preservation of hand-written code.
-
-## Primary evidence
-
-- [Current Dualite product](https://dualite.dev/)
-- [Figma import and continued AI editing](https://dualite.dev/blogs/how-to-import-figma-design-into-dualite)
-- [Current input edit backend and delivery surface](https://dualite.dev/blogs/dualite-vs-kombai-which-ai-tool-should-you-choose-to-build-in-2026)
+Persistence then leans on ordinary software mechanics: changes land in the project and its repository, live in a running preview, and end as a GitHub ZIP or deployment. Figma stays as evidence of the imported visual intent, but a lossless push of arbitrary code-side changes back into the original Figma document is not established. Because the schema, routing, code-patch format, autosave and GitHub conflict semantics are not public, the product's claims rest at the marketing-comparison level — the interaction loop is real, but a faithful test of fidelity, accessibility and hand-written code preservation needs acceptance runs Dualite's docs do not stand in for. [Dualite vs Kombai](https://dualite.dev/blogs/dualite-vs-kombai-which-ai-tool-should-you-choose-to-build-in-2026)

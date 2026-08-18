@@ -1,40 +1,11 @@
 # Wix Harmony
 
-> Research status: **Architecture-level** · Last reviewed: **2026-08-11**
+Wix Harmony defines design as mutation of a production business site — the design is not a deliverable the agent hands off, it is the living managed site a merchant already runs. Design, business capability and deployment are one artifact: the Wix site graph that also carries commerce, bookings and payments. Aria (the agent) starts from a prompt template or blank canvas, can create a whole site, page, section or custom element, and can configure business capabilities, but the result is not a generated snapshot — it is the normal site the merchant continues to edit with pixel-level drag-and-drop immediately afterward, and the agent stays available across editor and dashboard ([Wix Harmony](https://www.wix.com/harmony)).
 
-| Field | Value |
-|---|---|
-| Team | Wix · Israel |
-| Ordinary job | start or reshape a production business site through Aria and then continue with full visual editing and publication |
-| Native authority | managed Wix site graph and attached business capabilities |
-| Identity boundary | current Harmony builder; retired Wix ADI is a predecessor and Base44 remains a separately branded acquired product |
+The decisive mechanism is **continuous mutation of the same managed graph**. Rather than one-time generation followed by handoff, Aria is a recurring presence operating on the same object surface the human edits. Wix's framing that Aria understands site structure and makes scoped changes "without breaking unrelated functionality" establishes a native managed-graph contract ([launch & mechanism](https://www.wix.com/press-room/home/post/wix-launches-wix-harmony-the-ai-website-builder-that-merges-human-and-artificial-intelligence-rein)). Built-in infrastructure and business services keep product delivery primary: the artifact remains operational after visual generation, which is the whole difference between Harmony and a design-to-code export.
 
-## Aria continuously mutates the normal site
+The identity boundary is worth naming. Harmony is the current lineage: Wix ADI is retired for new sites and legacy projects open in the Wix Editor, so it is a predecessor rather than a second record, while Base44 keeps its own separately branded dossier despite Wix ownership. "Design" here is bounded by the host architecture — it is the current builder's behavior, not a generic AI web product.
 
-Harmony starts from a prompt template or blank canvas. Aria can create a whole site page section or custom element and can configure business capabilities. Direct drag-and-drop editing addresses the same site immediately afterward. The agent remains available across editor and dashboard rather than handing off a one-time generated snapshot.
+The ceiling is the closed implementation: site schema, patch planning, version/restore, custom-element sandboxing and cross-surface consistency are not public, and Wix's reliability claims apply to its infrastructure without proving every agent-generated business flow is correct ([AI builder & ADI transition](https://www.wix.com/ai-website-builder)). The observable contract is what defines the product: Aria creates and reshapes the live production site, and the human continues on the same graph.
 
-```mermaid
-flowchart LR
-    I["Prompt / template / blank"] --> A["Aria"]
-    A --> S["Managed Wix site graph"]
-    H["Pixel-level visual edits"] --> S
-    S --> B["Commerce / bookings / payments"]
-    S --> P["Hosted publication"]
-    P --> A
-```
-
-## Stable host architecture bounds local changes
-
-Wix says Aria understands site structure and can make scoped changes without breaking unrelated functionality. This establishes a native managed-graph contract but not its internal transaction or dependency model. Built-in infrastructure and business services make product delivery primary: the artifact remains operational after visual generation.
-
-Wix ADI was retired for new sites and legacy projects open in the Wix Editor. Harmony is therefore the current lineage rather than a second record beside ADI. Base44 has its own product identity and dossier even though Wix owns it.
-
-## Evidence ceiling
-
-The implementation is closed. Site schema patch planning version restore custom-element sandboxing and cross-surface consistency are not public. Reliability claims apply to Wix infrastructure and do not prove every agent-generated business flow correct.
-
-## Primary evidence
-
-- [Wix Harmony](https://www.wix.com/harmony)
-- [Harmony launch and mechanism](https://www.wix.com/press-room/home/post/wix-launches-wix-harmony-the-ai-website-builder-that-merges-human-and-artificial-intelligence-rein)
-- [Current AI builder and ADI transition](https://www.wix.com/ai-website-builder)
+[Evidence: Wix Harmony](https://www.wix.com/harmony) · [launch & mechanism](https://www.wix.com/press-room/home/post/wix-launches-wix-harmony-the-ai-website-builder-that-merges-human-and-artificial-intelligence-rein) · [AI builder & ADI transition](https://www.wix.com/ai-website-builder)

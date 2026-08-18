@@ -1,19 +1,9 @@
 # tellr
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+tellr treats "design" as the construction of a *data-grounded deck* from a governed data source — a presentation as a conversation-shaped, revidable document, not a one-shot render. Its distinctive move is binding the generation to governed Genie data: profiles connect approved datasets, deck prompts and a visual style, so every slide claims a supervised data lineage before a chart is drawn. That is design constrained by information trust, which is rarer than design as pure aesthetics.
 
-tellr is a Databricks application for generating data-grounded presentations through conversation. Profiles bind governed Genie data, deck prompts and visual style; sessions preserve the resulting decks for direct editing, reordering and export.
+The implementation centers on keeping the deck a persistent, editable artifact rather than a throwaway response. A LangChain agent streams HTML slides with Chart.js visualizations, and — critically — conversation and deck state persist in Lakebase/PostgreSQL. Revision is handled under save-point control: [slide-parser-and-script-management.md](https://github.com/robertwhiffin/ai-slide-generator/blob/54c9ea6ea7a55783f3d41bba962100addbb45fcc/docs/technical/slide-parser-and-script-management.md) documents how revised fragments are parsed and merged back in without losing deck-wide CSS and scripts, so a targeted change does not flatten the surrounding design. [save-points-versioning.md](https://github.com/robertwhiffin/ai-slide-generator/blob/54c9ea6ea7a55783f3d41bba962100addbb45fcc/docs/technical/save-points-versioning.md) adds snapshots, preview and restore around edits.
 
-## Session HTML is revised under save-point control
+Delivery is a projection of that one stored deck. The same authority exports through the bundled [PPTX emitter](https://github.com/robertwhiffin/ai-slide-generator/blob/54c9ea6ea7a55783f3d41bba962100addbb45fcc/services/pptx-emit/emit.mjs) or through a Google Slides integration, and an [MCP server](https://github.com/robertwhiffin/ai-slide-generator/blob/54c9ea6ea7a55783f3d41bba962100addbb45fcc/docs/technical/mcp-integration-guide.md) attributes programmatic decks to the end user and returns them to the same workspace — MCP being another entry into the product graph, not a separate product.
 
-The LangChain agent streams HTML slides with Chart.js visualizations. Conversation and deck state persist in Lakebase/PostgreSQL rather than in a throwaway response. [`slide-parser-and-script-management.md`](https://github.com/robertwhiffin/ai-slide-generator/blob/54c9ea6ea7a55783f3d41bba962100addbb45fcc/docs/technical/slide-parser-and-script-management.md) documents how revised fragments are parsed and merged without losing deck-wide CSS and scripts.
-
-[`save-points-versioning.md`](https://github.com/robertwhiffin/ai-slide-generator/blob/54c9ea6ea7a55783f3d41bba962100addbb45fcc/docs/technical/save-points-versioning.md) adds snapshots, preview and restore around edits. The same stored deck can be exported through the bundled PPTX emitter or through a Google Slides integration. An MCP server attributes programmatic decks to the end user and returns them to the same workspace, so MCP is another entry to the product graph rather than a separate product.
-
-The source repository retains its older `ai-slide-generator` name; tellr is the current product identity. Public evidence did not establish the product team's region precisely enough to assign one.
-
-## Evidence
-
-- [Pinned repository](https://github.com/robertwhiffin/ai-slide-generator/tree/54c9ea6ea7a55783f3d41bba962100addbb45fcc)
-- [MCP integration](https://github.com/robertwhiffin/ai-slide-generator/blob/54c9ea6ea7a55783f3d41bba962100addbb45fcc/docs/technical/mcp-integration-guide.md)
-- [PPTX emitter](https://github.com/robertwhiffin/ai-slide-generator/blob/54c9ea6ea7a55783f3d41bba962100addbb45fcc/services/pptx-emit/emit.mjs)
+So "design" here means: governed data, converted into a deck that stays stored and editable, revised under save points, and exported as one lineage. The source keeps its older `ai-slide-generator` name, but tellr is the current product identity.

@@ -1,41 +1,13 @@
 # Komposo
 
-> Research status: **Architecture-level** · Last reviewed: **2026-08-12**
+Komposo treats design as **composing while exploring**: the work of design is generating and comparing alternate screen directions inside a live project before anything leaves the tool. Its own rebrand says this outright — the former name, CopyCoder, "no longer fit a product centered on composing, exploring and iterating UI." [Evidence: CopyCoder-to-Komposo lineage](https://www.komposo.ai/copycoder)
 
-| Field | Value |
-|---|---|
-| Team | CopyCoder → Komposo · team region not established |
-| Ordinary job | turn a product idea or reference into comparable editable UI screens and then code |
-| Authority transition | Komposo project while designing; exported Figma or application source after handoff |
-| Lifecycle | active rebrand transition |
+The mechanism is a two-phase gate that keeps exploration separate from delivery. The conversational agent plans multi-screen applications and produces several comparable visual variants for selection; follow-up prompts reshape layouts, sections, color and structure within the retained project. Only after a direction is promoted does the user export to Figma or to responsive framework code (Next, React, Vue, Astro, Expo). [Evidence: current design/export loop](https://www.komposo.ai/)
 
-## Variants are promoted before code is generated
+That gate is the whole point: **variants are promoted before code is generated.** The promoted multi-screen project is the working authority while the user stays in Komposo; exported source becomes a new authority on handoff. There is no evidence of code edits synchronizing back into the Komposo project — the export is a one-way boundary, and the Figma representation, component mapping and code-generator internals are closed. Framework names establish targets, not lossless semantic equivalence.
 
-The conversational agent plans multi-screen applications creates screens and can produce several visual directions for selection. Follow-up prompts modify layouts sections color and structure in the retained project. Only after a direction is ready does the user export to Figma or responsive framework code.
+CopyCoder and Komposo are one lineage, counted once: accounts, projects and pricing carried over in the rebrand, so the name change records a technical-direction shift rather than a new product line.
 
-```mermaid
-flowchart LR
-    I["Idea image or UI reference"] --> A["Komposo agent"]
-    A --> V["Comparable screen variants"]
-    V --> H["Human promotion"]
-    H --> P["Editable multi-screen project"]
-    A <--> P
-    P --> F["Figma handoff"]
-    P --> C["Next React Vue Astro or Expo code"]
-```
-
-This sequence keeps exploration distinct from delivery. Exported source is a new authority; current evidence does not show arbitrary code edits synchronizing back into Komposo.
-
-## CopyCoder and Komposo are one lineage
-
-The official rebrand page says accounts projects and pricing stayed intact. It also explains the conceptual shift: the former code-copying name no longer fit a product centered on composing exploring and iterating UI. Counting both names would create a false second team and obscure that technical direction change.
-
-## Evidence ceiling
-
-The native design schema autosave versions Figma representation component mapping and code-generator internals are closed. Framework names establish targets not production quality or lossless semantic equivalence.
-
-## Primary evidence
-
-- [Komposo current design and export loop](https://www.komposo.ai/)
-- [Official CopyCoder-to-Komposo lineage](https://www.komposo.ai/copycoder)
-- [Komposo terms](https://www.komposo.ai/terms)
+- [Komposo](https://www.komposo.ai/)
+- [Lineage](https://www.komposo.ai/copycoder)
+- [Terms](https://www.komposo.ai/terms)

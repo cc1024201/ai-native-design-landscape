@@ -1,39 +1,16 @@
 # Adalo AI
 
-> Research status: **Architecture-level** · Last reviewed: **2026-08-11**
+Adalo AI defines design as *topology first*: the act of design is arranging screens and the navigation, data and action graph that connect them, all inside a visual flow canvas where generation is never separated from behavior. Ada ("Magic Start", "Magic Add", element-targeted "Visual Direction") is a generation surface that pours into a pre-existing native app graph, and the designer's job continues on the canvas after Ada stops.
 
-| Field | Value |
-|---|---|
-| Team | Adalo · team region not established by current first-party evidence |
-| Ordinary job | have Ada create or extend a database-backed app then inspect and alter every screen on a visual flow canvas |
-| Native authority | Adalo screens components navigation actions relational collections and data bindings |
-| Delivery | one project published to iOS Android and web |
+## The multi-screen canvas is the authority
 
-## Generation enters the native app graph
+The decisive mechanism is that Adalo displays screens spatially and links navigation between them; users drag, resize and connect components directly after generation. Because screens, the relational database and the action graph live in one project, a UI change and a behavior change are the same edit — there is no mockup-to-code handoff because there is no split artifact. Generation enters the graph (Magic Start creates several screens with relational data and navigation; Magic Add extends it from a feature request; Visual Direction targets one canvas element), and X-Ray inspects links, data connections, performance and visual consistency before release as advisory evidence, not proof of correctness.
 
-Magic Start creates several screens together with relational data navigation and sample content. Magic Add extends that graph from a feature request. Visual Direction lets a user point at one canvas element and ask Ada for a targeted change. X-Ray analyzes links data connections performance and visual consistency before release.
+## Provider-managed, one-way delivery
 
-```mermaid
-flowchart LR
-    I["App description"] --> M["Magic Start"]
-    M --> G["Native app graph"]
-    A["Magic Add"] --> G
-    V["Element-targeted Visual Direction"] --> G
-    G --> X["X-Ray checks"]
-    G --> P["iOS / Android / web release"]
-```
+Delivery is a single project published to iOS, Android and web, so the native graph is the working object and the release lanes are downstream projections of it. The native project is provider-managed rather than an exposed code repository: evidence is limited to the architecture level because no implementation or serialization is public — agent plan representation, mutation atomicity, version retention, the app-store build pipeline and exact source ownership are all undisclosed. That defines the evidence ceiling: the canvas is where design happens and where authority stays.
 
-## The multi-screen canvas keeps topology visible
-
-Adalo displays screens spatially and links navigation between them. Users drag resize and connect components directly after generation. The database and action graph remain part of the same project so UI generation is not separated from behavior or delivery.
-
-X-Ray findings are advisory evidence and do not prove the generated application correct. The repository classifies constraint-driven engineering as additional because schema action and platform constraints shape the artifact; it does not equate this with physical engineering authority.
-
-## Evidence ceiling
-
-No implementation or serialization is public. Agent plan representation mutation atomicity version retention app-store build pipeline and exact source ownership are unknown. The native project is provider-managed rather than an exposed code repository.
-
-## Primary evidence
+**证据**
 
 - [Adalo AI app builder](https://www.adalo.com/products/ai-app-builder/)
 - [Adalo product platform](https://www.adalo.com/)

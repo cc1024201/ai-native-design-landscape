@@ -1,32 +1,9 @@
 # Dyad
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+Dyad defines "design" as the modification of a local application repository. It is a desktop AI app builder, and its core claim is that the *generated repository remains authoritative* — the design is the real source files on disk, not a hosted screenshot or a proprietary canvas. The ordinary-user loop joins chat-driven file mutation with live preview, direct visual and code correction, Git history and deployment integrations, all coordinated by a desktop database that orchestrates work around the repo.
 
-Dyad is a local AI app builder whose ordinary-user loop joins chat-driven file mutation live application preview direct visual and code correction Git history and deployment integrations. The generated repository remains authoritative; the desktop database coordinates the work around it.
+The implementation enforces that authority by construction. [paths.ts](https://github.com/dyad-sh/dyad/blob/e70cc9f144794b9f100c4857df379bdb4400b614/src/paths/paths.ts) resolves every managed app to a user-selectable local directory, and agent file tools like [write_file.ts](https://github.com/dyad-sh/dyad/blob/e70cc9f144794b9f100c4857df379bdb4400b614/src/pro/main/ipc/handlers/local_agent/tools/write_file.ts) operate only inside that application boundary. Chat is bounded into file operations: [chat_stream_handlers.ts](https://github.com/dyad-sh/dyad/blob/e70cc9f144794b9f100c4857df379bdb4400b614/src/ipc/handlers/chat_stream_handlers.ts) assembles repo context, invokes configured models, processes streamed actions, and records chat and commit metadata in SQLite.
 
-## Local application files own the implementation
+The preview is deliberately not a second canonical canvas. [PreviewIframe.tsx](https://github.com/dyad-sh/dyad/blob/e70cc9f144794b9f100c4857df379bdb4400b614/src/components/preview_panel/PreviewIframe.tsx) shows the managed dev runtime, and the surrounding preview system exposes component selection, style changes, annotations, code, files, tests, logs and publication controls — every one of which feeds changes back into the repository. Versions coordinate the two stores: [version_handlers.ts](https://github.com/dyad-sh/dyad/blob/e70cc9f144794b9f100c4857df379bdb4400b614/src/ipc/handlers/version_handlers.ts) blocks conflicting streams before restore/checkout, coordinates commit-addressed code versions, and can align Neon preview branches; chats, messages, versions, approvals and commit hashes live in the desktop DB while Git holds durable source history.
 
-[`paths.ts`](https://github.com/dyad-sh/dyad/blob/e70cc9f144794b9f100c4857df379bdb4400b614/src/paths/paths.ts) resolves every managed app to a user-selectable local directory. Agent file tools such as [`write_file.ts`](https://github.com/dyad-sh/dyad/blob/e70cc9f144794b9f100c4857df379bdb4400b614/src/pro/main/ipc/handlers/local_agent/tools/write_file.ts) operate inside that application boundary. The product is therefore not a hosted screenshot generator: normal source files are the working authority.
-
-## Chat streams become bounded file operations
-
-The pinned [`chat_stream_handlers.ts`](https://github.com/dyad-sh/dyad/blob/e70cc9f144794b9f100c4857df379bdb4400b614/src/ipc/handlers/chat_stream_handlers.ts) assembles repository context invokes configured models processes streamed actions and records chat and commit metadata in SQLite. Basic and local-agent paths differ in tool protocol but converge on the same app directory and Git boundary.
-
-## Preview is both evidence and an editing surface
-
-[`PreviewIframe.tsx`](https://github.com/dyad-sh/dyad/blob/e70cc9f144794b9f100c4857df379bdb4400b614/src/components/preview_panel/PreviewIframe.tsx) displays the managed development runtime. The adjacent preview system exposes component selection style changes annotations code files tests logs and publication controls. These surfaces feed changes back into the repository rather than creating a second canonical canvas.
-
-## Versions coordinate Git and data state
-
-[`version_handlers.ts`](https://github.com/dyad-sh/dyad/blob/e70cc9f144794b9f100c4857df379bdb4400b614/src/ipc/handlers/version_handlers.ts) blocks conflicting streams before restore or checkout coordinates commit-addressed code versions and can align Neon preview branches with the selected version. Chats messages versions approvals and commit hashes live in the desktop database while Git keeps durable source history.
-
-## Identity recursion
-
-The discovery result called OpenLaudable retained Will Chen as package author and still referenced Dyad engine conventions while repointing product strings. Source lineage therefore resolves to Dyad; that copied repository is not counted as another independent product.
-
-## Pinned evidence
-
-- [Repository](https://github.com/dyad-sh/dyad)
-- [Inspected tree](https://github.com/dyad-sh/dyad/tree/e70cc9f144794b9f100c4857df379bdb4400b614)
-- [Official product site](https://dyad.sh/)
-- Commit: `e70cc9f144794b9f100c4857df379bdb4400b614`
+So "design" is a code-writing act whose truth is the checked-in repository, with the desktop database as the coordination layer and Git as the version authority.

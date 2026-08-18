@@ -1,17 +1,30 @@
 # ArtClaw Bridge
 
-> Research status: **Source-level** · Lifecycle: **active beta** · Last reviewed: **2026-08-12**
+ArtClaw Bridge answers "what is design" by refusing to own a scene: for every
+host it touches — Unreal, Maya, 3ds Max, Blender, Houdini, Substance and
+ComfyUI — the native scene or node graph stays authoritative, and the product
+is the **agent layer that operates it**. Design is whatever the artist
+already works in; ArtClaw contributes the transport and the tooling around
+executing changes there.
 
-ArtClaw Bridge is a multi-DCC agent layer for Unreal, Maya, 3ds Max, Blender, Houdini, Substance applications and ComfyUI. Its product claim goes beyond raw remote execution: artists can discover, generate, version, publish and share tools and skills from an in-editor conversation surface.
+Its implementation sits on a deliberately minimal execution primitive: each
+DCC exposes a narrow Python execution entry, while `mcp_server.py`
+standardizes the agent transport that reaches it. That small core is what
+makes the rest possible. On top of it, the real product claim is a **managed
+tool lifecycle** rather than raw remote execution — artists can discover,
+generate, version, publish and share tools and skills from an in-editor
+conversation surface. `skill_sync.py` and a CLI skill hub add installation,
+updates and team distribution, and in-editor sessions persist and can resume
+after a host restart.
+[Bridge core](https://github.com/IvanYangYangXi/artclaw_bridge/blob/de1c262547e078264c4a4189f6252c2f0ee7639c/core/bridge_core.py) ·
+[Skill sync](https://github.com/IvanYangYangXi/artclaw_bridge/blob/de1c262547e078264c4a4189f6252c2f0ee7639c/core/skill_sync.py)
 
-## A minimal execution primitive supports a managed tool lifecycle
-
-Each host exposes a narrow Python execution entry while [`mcp_server.py`](https://github.com/IvanYangYangXi/artclaw_bridge/blob/de1c262547e078264c4a4189f6252c2f0ee7639c/core/mcp_server.py) standardizes agent transport. [`skill_sync.py`](https://github.com/IvanYangYangXi/artclaw_bridge/blob/de1c262547e078264c4a4189f6252c2f0ee7639c/core/skill_sync.py) and the [CLI skill hub](https://github.com/IvanYangYangXi/artclaw_bridge/blob/de1c262547e078264c4a4189f6252c2f0ee7639c/cli/artclaw_bridge/skill_hub.py) add installation, updates and team distribution. In-editor sessions persist and can be resumed after host restart.
-
-Each DCC's native scene or node graph remains authoritative. ArtClaw is counted once because its shared bridge core, tool manager and synchronized skill lifecycle deliberately form one cross-host product.
-
-## Evidence
-
-- [Pinned repository](https://github.com/IvanYangYangXi/artclaw_bridge/tree/de1c262547e078264c4a4189f6252c2f0ee7639c)
-- [Bridge core](https://github.com/IvanYangYangXi/artclaw_bridge/blob/de1c262547e078264c4a4189f6252c2f0ee7639c/core/bridge_core.py)
-- [Tool event evidence writer](https://github.com/IvanYangYangXi/artclaw_bridge/blob/de1c262547e078264c4a4189f6252c2f0ee7639c/core/tool_event_writer.py)
+The decisive move is that ArtClaw treats the agent's *capability* — the skill
+— as the durable, shareable artifact, not the produced scene. A skill made in
+one host is discoverable, versioned and installable across the fleet, so the
+designer's repeated expertise becomes the thing the system persists and
+distributes, while each host's scene remains transient working state. It is
+counted once because the shared bridge core, tool manager and synchronized
+skill lifecycle deliberately form one cross-host product.
+[Tool event evidence writer](https://github.com/IvanYangYangXi/artclaw_bridge/blob/de1c262547e078264c4a4189f6252c2f0ee7639c/core/tool_event_writer.py) ·
+[Pinned repository](https://github.com/IvanYangYangXi/artclaw_bridge/tree/de1c262547e078264c4a4189f6252c2f0ee7639c)

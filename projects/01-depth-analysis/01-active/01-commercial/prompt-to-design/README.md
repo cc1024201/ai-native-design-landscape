@@ -1,32 +1,36 @@
 # Prompt.to.design
 
-> Research status: **Architecture-level** · Last reviewed: **2026-08-12**
+Prompt.to.design answers "what is design" by locating it inside the Figma
+document a person already has open, and by treating the AI's output as
+provisional until the human decides to commit. Design is not the generated
+picture; it is the native, editable file that the assistant only produces on
+request. The whole product is built around that split between generation and
+materialization.
 
-Prompt.to.design is Superun's AI assistant inside Figma. It creates or modifies interface layouts through several bounded operations rather than only a blank-canvas prompt: Kick Start, Style Transfer, Region Design, Smart Fill, element modification, template remix and frame redesign.
+The decisive mechanism is the **result panel as a holding pen** rather than a
+live canvas. A prompt, selected frame, region or style first resolves into a
+scrollable preview with analysis, summary, history, feedback and refinement
+controls — none of which touches the design file. The model's output is
+authored and re-runnable outside Figma's authority. Only an explicit
+**Import to Figma** turns that candidate into editable frames, Auto Layout,
+text layers and components; that is the single point where the AI's answer
+becomes the user's document.
+[Evidence: generation result and Figma import](https://docs.superun.ai/prompt-to-design/features/modify-elements)
 
-## Generated candidates become native only at import
+The product is not one unbounded prompt-to-page tool but a family of
+**bounded mutations** that each set their own intent boundary. **Smart Fill**
+inserts a new region inside a selected frame while leaving the rest
+untouched; **Frame Redesign** changes the visual language of a layout while
+preserving its structure; Style Transfer, Region Design and template remix
+each constrain what the model is allowed to move. These narrower operations
+imply the agent reasons about structural preservation, yet the closed
+implementation never reveals how it decides what to keep.
+[Frame Redesign](https://docs.superun.ai/prompt-to-design/features/frame-redesign)
 
-The result panel separates generation from Figma authority. A result first appears as a scrollable preview with analysis, summary, history, feedback and refinement controls. “Import to Figma” is the materialization step that creates editable frames, Auto Layout, text layers and components.
-
-```mermaid
-flowchart LR
-    S["Selected frame region style or prompt"] --> G["Hosted generation"]
-    G --> P["Preview analysis and history"]
-    P --> R["Refine or compare"]
-    R --> I["Import to Figma"]
-    I --> N["Editable native layers and components"]
-```
-
-Smart Fill is more constrained than whole-page generation: it inserts a new region inside a selected frame while leaving the rest unchanged. Frame Redesign preserves the selected layout while changing its visual language. These are important intent boundaries even though the closed implementation does not reveal how structural preservation is checked.
-
-## Coupled to Superun, but not the same product
-
-Results can open as a browser demo in Superun, and both products share documentation and organization. Prompt.to.design is nevertheless counted separately because it is an independently installable Figma surface whose final authority is a native design file; Superun is a full managed application project with backend and publishing semantics.
-
-Model routing, Figma-node mapping, prototype-link generation, history retention and exact synchronization with Superun are not publicly disclosed. Team geography remains unknown in reviewed first-party material.
-
-## Primary evidence
-
-- [Prompt.to.design overview](https://docs.superun.ai/prompt-to-design/guide/welcome)
-- [Generation result and Figma import](https://docs.superun.ai/prompt-to-design/features/modify-elements)
-- [Frame Redesign](https://docs.superun.ai/prompt-to-design/features/frame-redesign)
+Prompt.to.design is coupled to Superun — results can open as a browser demo
+there, and they share docs and organization — but it is counted separately
+because its final authority is a native Figma file, not a managed project.
+Model routing, node-mapping, prototype-link generation and history retention
+are undisclosed; what is public is the contract that generation is hosted and
+the document is the destination. Design lives in Figma; the assistant is the
+channel into it. [Overview](https://docs.superun.ai/prompt-to-design/guide/welcome)

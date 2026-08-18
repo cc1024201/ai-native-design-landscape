@@ -1,32 +1,17 @@
 # Cofounder
 
-> Research status: **Source-level** · Lifecycle: **active-transition** · Last reviewed: **2026-08-12**
-
-Cofounder is an early-alpha local full-stack application generator. Instead of jumping from a brief directly to one code blob it builds product documents UX architecture backend contracts a structured visual-layout layer and versioned React views before exporting a runnable application.
+Cofounder treats design as a staged, inspectable corridor instead of a single prompt-to-code jump. The product brief does not become a blob; it is decomposed into product requirements, UX sitemap, backend contracts, a structured visual-layout layer and versioned React views that only then export a runnable application. Design, in Cofounder's own vocabulary, is the intermediate material the model reasons over before any code is authoritative.
 
 ## Project state is addressed by semantic operations
 
-[`project.js`](https://github.com/nraiden/cofounder/blob/19ba19f61737d654493175208df468395e2193f4/cofounder/api/system/functions/op/project.js) maps named operations such as product requirements UX sitemap database schema backend server layout and React view to paths inside a project-state tree. View records carry explicit `{id}/{version}` coordinates and a preference record chooses which version the exported app consumes.
+The decisive mechanism is a project-state tree that named operations mutate rather than free-form file writes. [`project.js`](https://github.com/nraiden/cofounder/blob/19ba19f61737d654493175208df468395e2193f4/cofounder/api/system/functions/op/project.js) maps operations such as product requirements, UX sitemap, database schema, backend server, layout and React view to paths inside that tree. Every view record carries explicit `{id}/{version}` coordinates, and a preference record decides which version the exported app actually consumes. The machine does not own a canvas; it owns a versioned semantic graph.
 
 ## Layout is an intermediate Design artifact
 
-The [`layoutv1` designer](https://github.com/nraiden/cofounder/blob/19ba19f61737d654493175208df468395e2193f4/cofounder/api/system/functions/designer/layoutv1.js) asks a model to reason over a product view and a primitive ontology then emit an SVG layout made of bounded semantic rectangles. The render operation turns that SVG into an image for reference. This is a structured design checkpoint rather than a screenshot-only generator.
+The [`layoutv1` designer](https://github.com/nraiden/cofounder/blob/19ba19f61737d654493175208df468395e2193f4/cofounder/api/system/functions/designer/layoutv1.js) asks the model to reason over a product view and a primitive ontology, then emit an SVG layout made of bounded semantic rectangles; a render operation turns that SVG into an image for reference. This is a structured design checkpoint with documented intent, not a screenshot that just happens to be generated.
 
 ## Architecture grounds code generation
 
-[`ux/sitemap.js`](https://github.com/nraiden/cofounder/blob/19ba19f61737d654493175208df468395e2193f4/cofounder/api/system/functions/ux/sitemap.js) materializes unique and shared views plus cross-links. [`webapp/view.js`](https://github.com/nraiden/cofounder/blob/19ba19f61737d654493175208df468395e2193f4/cofounder/api/system/functions/webapp/view.js) generates each React view against product documents backend specifications global state and the chosen layout direction.
+[`ux/sitemap.js`](https://github.com/nraiden/cofounder/blob/19ba19f61737d654493175208df468395e2193f4/cofounder/api/system/functions/ux/sitemap.js) materializes unique and shared views plus cross-links, and [`webapp/view.js`](https://github.com/nraiden/cofounder/blob/19ba19f61737d654493175208df468395e2193f4/cofounder/api/system/functions/webapp/view.js) generates each React view against product documents, backend specs, global state and the chosen layout direction. The Artifact is therefore produced inside a lattice of earlier decisions, not in isolation.
 
-## Export makes versions executable
-
-Project operations write backend specifications SQL server code React state roots versioned view components and layout images into an ordinary application directory. Placeholder imports are resolved through Cofounder's Vite integration and users can invoke component iteration from the running app. Files become the delivery authority while the local state tree preserves upstream rationale and alternatives.
-
-## Maturity boundary
-
-The repository explicitly labels itself unstable early alpha and identifies major iteration and validation modules as incomplete. The mechanisms above are implemented but should not be read as a production-reliability claim.
-
-## Pinned evidence
-
-- [Repository](https://github.com/nraiden/cofounder)
-- [Inspected tree](https://github.com/nraiden/cofounder/tree/19ba19f61737d654493175208df468395e2193f4)
-- [Project site](https://cofounder.openinterface.ai/)
-- Commit: `19ba19f61737d654493175208df468395e2193f4`
+Export resolves placeholder imports through Vite and lets users invoke component iteration from the running app. Files become the delivery authority while the local state tree preserves the upstream rationale and the rejected alternatives. The repository labels itself unstable early alpha, so these are implemented mechanisms, not a production-reliability claim. [Evidence: nraiden/cofounder @ 19ba19f6](https://github.com/nraiden/cofounder) · [project site](https://cofounder.openinterface.ai/)

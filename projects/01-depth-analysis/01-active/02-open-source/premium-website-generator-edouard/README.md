@@ -1,24 +1,9 @@
 # Premium Website Generator by Edouard Kerwing
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+This builder treats "design" as context — a bundle of curated design intelligence fed to a tool-calling code agent, where the art of the product is deciding which slices of that intelligence to attach to a given brief. Quality is not a fixed artifact so much as a function of how the generation contract is assembled: anti-slop guidance, motion, smooth-scroll behavior, component libraries, and a knowledge base are each selected from the brief and injected into [`chat/route.ts`](https://github.com/weedappcreator/Premium-website-generator-/blob/8969ad09c6be534c0adaeea20fa5a07d2f86b9e5/src/app/api/chat/route.ts) alongside the core generation prompt. The bundled design libraries steer decisions; the successful tool mutations decide the artifact.
 
-This builder defines design quality as context supplied to a tool-calling code agent. Its authoritative artifact is a mutable virtual file graph; the large bundled design libraries influence generation but are not themselves counted as separate products.
+Implementation centers on a mutable virtual file graph. The chat route reconstructs a [`VirtualFileSystem`](https://github.com/weedappcreator/Premium-website-generator-/blob/8969ad09c6be534c0adaeea20fa5a07d2f86b9e5/src/lib/file-system.ts) from the incoming project, then the agent's file-creation, string-replacement, rename, delete, and Figma tool calls operate on that in-memory graph during the streamed response. The canonical artifact is therefore whatever the tool calls produced, not the live preview: [`PreviewFrame.tsx`](https://github.com/weedappcreator/Premium-website-generator-/blob/8969ad09c6be534c0adaeea20fa5a07d2f86b9e5/src/components/preview/PreviewFrame.tsx) merely locates a React entry, transforms imports and JSX, and projects it in a sandboxed iframe.
 
-## Design intelligence becomes agent context
+Projection and persistence have separate boundaries. Only on chat completion do authenticated projects persist messages and the serialized file graph, via the Prisma schema (declared as PostgreSQL despite README text still saying SQLite). Direct edits are not shown crossing the server boundary until a save-producing workflow runs — the preview is ephemeral rendering of the virtual graph, and the graph only becomes durable at the persisted end of a turn.
 
-[`chat/route.ts`](https://github.com/weedappcreator/Premium-website-generator-/blob/8969ad09c6be534c0adaeea20fa5a07d2f86b9e5/src/app/api/chat/route.ts) combines a core generation contract with anti-slop, motion, smooth-scroll, component and knowledge-base context selected from the brief. [`provider.ts`](https://github.com/weedappcreator/Premium-website-generator-/blob/8969ad09c6be534c0adaeea20fa5a07d2f86b9e5/src/lib/provider.ts) resolves multiple hosted or local models and includes a clearly identifiable mock provider for development.
-
-## Tool calls mutate the source authority
-
-The chat route reconstructs [`VirtualFileSystem`](https://github.com/weedappcreator/Premium-website-generator-/blob/8969ad09c6be534c0adaeea20fa5a07d2f86b9e5/src/lib/file-system.ts) from the incoming project graph. File creation, string replacement, rename, delete and Figma tools operate on that graph during the streamed response. The design corpus guides decisions; successful tool mutations determine the artifact.
-
-## Projection and persistence have separate boundaries
-
-[`PreviewFrame.tsx`](https://github.com/weedappcreator/Premium-website-generator-/blob/8969ad09c6be534c0adaeea20fa5a07d2f86b9e5/src/components/preview/PreviewFrame.tsx) locates a React entry, transforms imports and JSX and projects it in a sandboxed iframe. On chat completion, authenticated projects persist messages and the serialized file graph. [`schema.prisma`](https://github.com/weedappcreator/Premium-website-generator-/blob/8969ad09c6be534c0adaeea20fa5a07d2f86b9e5/prisma/schema.prisma) currently declares PostgreSQL, despite README text that still says SQLite; direct edits are not shown crossing the server boundary until a save-producing workflow runs.
-
-## Evidence
-
-- [Canonical repository](https://github.com/weedappcreator/Premium-website-generator-)
-- [Inspected tree](https://github.com/weedappcreator/Premium-website-generator-/tree/8969ad09c6be534c0adaeea20fa5a07d2f86b9e5)
-- [Maintainer region evidence](https://github.com/weedappcreator)
-- Commit: `8969ad09c6be534c0adaeea20fa5a07d2f86b9e5`
+[Evidence: canonical repository](https://github.com/weedappcreator/Premium-website-generator-) · [inspected tree at `8969ad09c6be534c0adaeea20fa5a07d2f86b9e5`](https://github.com/weedappcreator/Premium-website-generator-/tree/8969ad09c6be534c0adaeea20fa5a07d2f86b9e5)

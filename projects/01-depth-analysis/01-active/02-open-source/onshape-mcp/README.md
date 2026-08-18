@@ -1,20 +1,7 @@
 # Onshape MCP
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+Onshape MCP states its answer to "what is design" by pointing away from itself: the design is the live Onshape document already held in the cloud. Nothing about the project recreates CAD in a local shadow scene — no mirrored geometry, no paused parameter state. It treats design as a continuous, versioned engineering object whose authority is Onshape's own document, workspace and feature history, and it inserts an agent into that loop as a control adapter that mutates the real thing ([server.py](https://github.com/hedless/onshape-mcp/blob/54d21ccc4a5376f692cddd01959305be01e40a53/onshape_mcp/server.py)).
 
-Onshape MCP gives an external agent typed access to live Onshape documents. It does not recreate CAD in a local shadow scene: document IDs, workspaces and element IDs address the established cloud model directly.
+How it implements that is a typed tool surface organized around Onshape's object model rather than around pixels or prompts. Documents, Part Studios, sketches, constraints, features, assemblies, variables, measurements, interference analysis and export are each exposed as operations; builder modules validate structured requests like extrude, revolve, fillet, pattern and mates before they are dispatched to the Onshape APIs ([feature builders](https://github.com/hedless/onshape-mcp/tree/54d21ccc4a5376f692cddd01959305be01e40a53/onshape_mcp/builders)). The loop is an engineering loop: an agent picks or creates a document, applies feature-level mutations, reads measured state back and exports the authoritative cloud result.
 
-## Its tool surface follows the engineering object model
-
-[`server.py`](https://github.com/hedless/onshape-mcp/blob/54d21ccc4a5376f692cddd01959305be01e40a53/onshape_mcp/server.py) registers tools for documents, Part Studios, sketches, constraints, features, assemblies, variables, measurements, interference analysis and export. Builder modules validate structured operations such as extrude, revolve, fillet, pattern and mates before calling the Onshape APIs.
-
-The ordinary loop is a live engineering loop: an agent selects or creates a document, applies feature-level mutations, inspects measured state and exports the authoritative cloud result. Native Onshape history and workspace semantics remain the version boundary; the MCP server is a control adapter.
-
-The maintainer profile reports California, United States.
-
-## Evidence
-
-- [Pinned repository and tool catalog](https://github.com/hedless/onshape-mcp/tree/54d21ccc4a5376f692cddd01959305be01e40a53)
-- [MCP registration](https://github.com/hedless/onshape-mcp/blob/54d21ccc4a5376f692cddd01959305be01e40a53/onshape_mcp/server.py)
-- [Feature builders](https://github.com/hedless/onshape-mcp/tree/54d21ccc4a5376f692cddd01959305be01e40a53/onshape_mcp/builders)
-- [Maintainer location evidence](https://github.com/hedless)
+The decisive move is that the MCP server itself carries no design semantics and no store. Onshape's native history and workspace semantics remain the version boundary; the server is purely a channel that translates agent tool calls into mutations of the host graph, addressing document IDs, workspace IDs and element IDs ([MCP registration](https://github.com/hedless/onshape-mcp/blob/54d21ccc4a5376f692cddd01959305be01e40a53/onshape_mcp/server.py)). Persistence and versioning stay with Onshape; the adapter contributes only structure at the boundary. Design here is not generated — it is a live artifact an agent can operate on directly.

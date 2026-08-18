@@ -1,39 +1,10 @@
 # DreamUI
 
-> Research status: **Architecture-level** · Last reviewed: **2026-08-12**
+DreamUI answers "what is design" with one editable Figma graph that many different artifact loops write into. It is a single plugin surface by Noor Maqsood spanning prompt-to-screen, connected product flows, selected-layer chat editing, screenshot and HTML reconstruction, variants, critique, tokens and history. The point is that every path ends in native Figma layers the user can keep editing.
 
-DreamUI is a recent Figma plugin by Noor Maqsood that combines screen generation, product flows, selected-layer chat editing, screenshot and HTML reconstruction, design variants, critique, tokens and history in one native-canvas surface.
+The decisive mechanism is that all these operations converge on a mutable native graph: a prompt or a screenshot or selected layers all produce editable Figma output, which then feeds chat edit, critique, continuation, variants, a UI kit or code. Generation history lets previous runs be restored or remixed back into the graph. Native editability is the strongest evidence available because the hosted implementation is closed — node identity across turns, token extraction, variant lineage and history persistence are not public.
 
-## One plugin spans several different artifact loops
-
-The feature list should not be collapsed into a claim that every operation shares one internal representation. Public evidence establishes these user-visible paths:
-
-- prompt to an editable screen or connected multi-screen product;
-- screenshot or HTML to real Figma layers;
-- selected layers to conversational edits, critique or continuation;
-- one screen to five to ten redesign variants;
-- previous generations to restore or remix;
-- colors and typography to reusable tokens and a generated UI kit.
-
-```mermaid
-flowchart TD
-    I["Prompt screenshot HTML or selected layers"] --> G["DreamUI operation"]
-    G --> F["Editable Figma graph"]
-    F --> C["Chat edit critique or continuation"]
-    F --> V["Variants tokens UI kit or code"]
-    G --> H["Generation history"]
-    H --> F
-```
-
-## Native editability is stronger evidence than implementation detail
-
-The creator explicitly describes editable Figma output, but the hosted implementation is closed. Node identity across chat turns, screenshot decomposition, token extraction, variant lineage, generated-code fidelity, model selection and history persistence are not publicly disclosed. “Restore” therefore means a product capability, not proof of lossless Figma-version recovery.
-
-The product also includes non-AI utilities such as contrast checking and Iconify insertion. They belong to the same plugin surface but are not evidence of agentic behavior.
-
-DreamUI's creator identity is public; no reliable first-party team-location statement was found, so region remains unknown.
-
-## Primary evidence
+The non-AI utilities (contrast checking, Iconify insertion) sit on the same surface but are not agentic behavior, which keeps the boundary honest. Creator identity is public while team location is not, so region is unknown.
 
 - [Creator's complete feature announcement](https://forum.figma.com/showcase-your-work-14/dreamui-figma-plugin-by-noor-maqsood-56341)
 - [Figma Community plugin](https://www.figma.com/community/plugin/1656620010944492160/dreamui-ai-ui-generator-design-system-wireframe-generator-ai-design-copilot-tokens-html)

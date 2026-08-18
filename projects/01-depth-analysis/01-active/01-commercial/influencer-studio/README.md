@@ -1,27 +1,15 @@
 # Influencer Studio
 
-> Research status: **Architecture-level** · Last reviewed: **2026-08-12**
-
-| Field | Value |
-|---|---|
-| Team | Influencer Studio · team region not established |
-| Ordinary job | plan character-consistent scenes then regenerate weak takes without leaving the final editing timeline |
-| Authority | account project containing storyboard scenes generated versions assets and multi-track edit |
-| Lifecycle | active |
+Influencer Studio defines design as a **character-consistent scene plan that stays live down to the final cut**. Its ordinary job is to plan character-consistent scenes upstream, then regenerate weak takes without ever leaving the editing timeline. The authoritative unit is an account project holding storyboard scenes, generated versions, assets and a multi-track edit together.
 
 ## A clip keeps its generative identity
 
-The Studio Editor stores more than a media file at a timeline position. Each generated clip remains connected to the model operation that produced it so the selected take can be extended upscaled lip-synced or regenerated in place. The replacement returns to the same slot while prior versions remain organized.
+The Studio Editor does not store a detached media file at a timeline position. Each generated clip stays connected to the model operation that produced it, so a selected take can be [extended, upscaled, lip-synced or regenerated in place](https://influencerstudio.com/features/ai-video-editor) — the replacement returns to the same slot while prior versions stay organized. Upstream, the Storyboard Canvas records duration, camera motion, lens, location, lighting and character references ([cinematic film workflow](https://influencerstudio.com/features/cinematic-films)); generated takes drop into unlimited video, audio and overlay tracks where captions, transitions, narration and music finish the cut.
 
-Storyboard Canvas sits upstream: scenes record duration camera motion lens location lighting and character references. Generated takes move into unlimited video audio and overlay tracks where captions transitions narration and music complete the cut. Account persistence lets the same timeline resume on another machine.
-
-This is a different architecture from exporting clips from a model and importing them into an unrelated editor:
+This differs from exporting clips from a model and importing them into an unrelated editor:
 
 `scene specification → take versions → selected clip on timeline → per-clip generative repair → 4K render`
 
-Character identity and continuity are model-mediated constraints rather than proof of a deterministic character graph. A finished render bakes the accepted takes; public evidence does not show a reversible mapping from pixels back to storyboard or generation parameters.
+## The boundary of the authority
 
-## Primary evidence
-
-- [Influencer Studio generation-aware timeline](https://influencerstudio.com/features/ai-video-editor)
-- [Storyboard-to-editor film workflow and version control](https://influencerstudio.com/features/cinematic-films)
+Account persistence lets the same timeline resume on another machine, but character identity and continuity are **model-mediated constraints**, not proof of a deterministic character graph. A finished render bakes the accepted takes; the public evidence at [Influencer Studio](https://influencerstudio.com/) shows no reversible mapping from pixels back to storyboard or generation parameters — the authority is forward-moving and regenerable, not invertible.

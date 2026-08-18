@@ -1,38 +1,13 @@
 # GlideDesign
 
-> Research status: **Architecture-level** · Last reviewed: **2026-08-12**
+GlideDesign (launched as Glide Design AI, by founder Brian Permut in the United States; his profile places him in Rohnert Park, California) defines design as *decisions before pixels*. A single brief is expanded into an audience and product strategy, a user flow, explicit UX risks and success criteria before any screen exists; only then do responsive screens, component notes and product copy follow. The artifact is not a screenshot download but a live hosted project the designer reads back through, in which strategy and screen state travel together on one page.
 
-| Field | Verified value |
-|---|---|
-| Current name | GlideDesign |
-| Launch name | Glide Design AI |
-| Founder | Brian Permut |
-| Team region | United States; founder profile says Rohnert Park, California |
-| Canonical surface | hosted design project with screens, critique, preview and handoff |
+## The critique is the working artifact
 
-GlideDesign starts before layout. One brief produces an audience and product strategy, flow, UX risks and success criteria; these decisions feed responsive screens, component notes and product copy. The user then reviews the result from six named design perspectives, applies section-scoped changes, shares a preview and exports implementation direction.
+The decisive mechanism is the six-perspective critique: after generation the user reviews the result from six named design perspectives, applies section-scoped changes to a selected region, and the workspace treats breakpoints, states and copy as connected while that region is refined. This is not regenerate-and-hope iteration — it is a structured review-and-patch loop in which the answer to "why does this screen look like this" stays bound to the same project that will ship. Refinement, preview and handoff all read from the single hosted projection, so the observable working object is the project, not any exported image.
 
-## Strategy and screen state travel together
+## Handoff is explanatory, not a code drop
 
-```mermaid
-flowchart LR
-    B["Product brief"] --> S["Audience flow risks and goals"]
-    S --> C["High-fidelity responsive screens and copy"]
-    C --> Q["Six-perspective critique"]
-    Q --> E["Section-scoped refinement"]
-    E --> P["Shareable preview"]
-    E --> H["Builder-oriented handoff notes"]
-```
+The output contract is deliberately developer-facing: component structure, layout logic, interaction behavior and design rationale are prepared for builders or coding agents. That frames design as a reasoning deliverable handed across a boundary, rather than a finished visual. Authority is still one-directional — the site points at Figma for deeper work but documents no round-trip identity or synchronized-edits model, and the stored schema, generation models, version graph and whether a critique fix is a structured patch or a regeneration are all undisclosed. The boundary is clear: GlideDesign owns the design reasoning and the reviewed project; deeper tooling owns the artifact after handoff.
 
-The official workspace describes breakpoints, states and copy as connected while a selected region is refined. That makes the hosted project—not a downloaded screenshot—the observable working artifact. Its handoff is intentionally explanatory: component structure, layout logic, interaction behavior and design rationale are prepared for developers or coding agents.
-
-## Authority and delivery boundaries
-
-The public site says designs can be handed to Figma for deeper work, but it does not document a round-trip identity model or prove that later Figma edits synchronize back. It likewise does not disclose the stored project schema, generation models, version graph, undo semantics or whether a one-click critique fix is a structured patch or regeneration. A browser acceptance run requiring account state was not performed.
-
-## Primary evidence
-
-- [Current product and workflow](https://www.glidedesign.ai/)
-- [Product-design output contract](https://www.glidedesign.ai/ai-product-design-generator)
-- [Founder launch post](https://forum.figma.com/showcase-your-work-14/i-built-an-ai-design-workspace-that-turns-product-prompts-into-high-fidelity-screens-would-love-feedback-from-figma-designers-53900)
-- [Founder profile and region evidence](https://www.linkedin.com/in/brian-permut-519566182)
+The observable surface is the workflow and output contract; a browser acceptance run requiring account state was not performed, so fix semantics remain at the contract level rather than verified behavior. Supporting evidence: the [current product and workflow](https://www.glidedesign.ai/), the [product-design output contract](https://www.glidedesign.ai/ai-product-design-generator), the [founder launch post](https://forum.figma.com/showcase-your-work-14/i-built-an-ai-design-workspace-that-turns-product-prompts-into-high-fidelity-screens-would-love-feedback-from-figma-designers-53900) and the [founder profile and region evidence](https://www.linkedin.com/in/brian-permut-519566182).

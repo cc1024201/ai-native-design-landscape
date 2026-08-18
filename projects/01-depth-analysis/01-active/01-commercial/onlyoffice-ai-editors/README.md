@@ -1,24 +1,15 @@
 # ONLYOFFICE AI Editors
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+ONLYOFFICE AI Editors refuses to say what design is on its own: the design is whatever a person already has open as a native office document. Its answer to the second question is equally decisive — the AI does not create a design; it only makes the mature editor do the work. The plugin states a desired outcome, streams structured slide commands, and hands those to `Asc.Editor.callCommand` so that themes, slides, charts, images and placeholder text become genuine edits to the live presentation, not a parallel deck the user must reconcile later.
 
-ONLYOFFICE AI Editors denotes one product lineage across DocumentServer, DesktopEditors and the first-party AI plugin. The repositories are not counted as separate products because they share editor components, native office-document authority and the same embedded AI control layer.
-
-## AI calls native editor operations
-
-At plugin commit `4dfd1ab0c7c7c623a77b92917fb4ac4a36f98bb1`, [`generate-presentation-with-theme.js`](https://github.com/ONLYOFFICE/onlyoffice.github.io/blob/4dfd1ab0c7c7c623a77b92917fb4ac4a36f98bb1/sdkjs-plugins/content/ai/.dev/helpers/slide/generate-presentation-with-theme.js) registers a presentation-generation function. It streams structured commands, validates layouts and placeholders, creates a theme and slides, and uses `Asc.Editor.callCommand` to mutate the live native presentation. Companion helpers add charts, images and placeholder text through the same editor API.
+That is the axis the whole product turns on. The durable artifact is the office file handled by DocumentServer / DesktopEditors — a schema with its own authority, save path and export pipeline — and the AI plugin is a control surface layered on top of it. [`generate-presentation-with-theme.js`](https://github.com/ONLYOFFICE/onlyoffice.github.io/blob/4dfd1ab0c7c7c623a77b92917fb4ac4a36f98bb1/sdkjs-plugins/content/ai/.dev/helpers/slide/generate-presentation-with-theme.js) validates layouts and placeholders and creates theme objects before mutating nodes, so the model is constrained to speak the editor's vocabulary rather than inventing its own.
 
 ```text
-AI model configuration + user request -> streamed structured slide commands
+AI model config + user request -> streamed structured slide commands
 -> ONLYOFFICE native theme / slide / drawing objects
 -> ordinary editor correction -> native office save and export
 ```
 
-The durable artifact remains the office document handled by the mature editor; the plugin is a control surface, not a parallel deck schema. The pinned DocumentServer revision is `f580eb58439432310943ece02c9730c6a21365e7`; DesktopEditors revision `6a0bea2d0d127c658f57c41c1de4a5ce49e84fb0` is evidence of another distribution of the same lineage. ONLYOFFICE reports Latvia.
+The consequence is that "design" here is inseparable from the document medium: what counts as a result is a corrected, then saved, native office file. The AI has no storage and owns nothing; session state is incidental, and the same lineage ships in DocumentServer, DesktopEditors and the plugin without being counted as separate products because the editor components, office-document authority and embedded AI control layer are shared. ONLYOFFICE reports Latvia.
 
-## Evidence
-
-- [Pinned DocumentServer](https://github.com/ONLYOFFICE/DocumentServer/tree/f580eb58439432310943ece02c9730c6a21365e7)
-- [Pinned AI plugin](https://github.com/ONLYOFFICE/onlyoffice.github.io/tree/4dfd1ab0c7c7c623a77b92917fb4ac4a36f98bb1/sdkjs-plugins/content/ai)
-- [Themed presentation mutation](https://github.com/ONLYOFFICE/onlyoffice.github.io/blob/4dfd1ab0c7c7c623a77b92917fb4ac4a36f98bb1/sdkjs-plugins/content/ai/.dev/helpers/slide/generate-presentation-with-theme.js)
-- [Maintainer location evidence](https://github.com/ONLYOFFICE)
+**Evidence:** [Pinned AI plugin](https://github.com/ONLYOFFICE/onlyoffice.github.io/tree/4dfd1ab0c7c7c623a77b92917fb4ac4a36f98bb1/sdkjs-plugins/content/ai) · [Themed presentation mutation](https://github.com/ONLYOFFICE/onlyoffice.github.io/blob/4dfd1ab0c7c7c623a77b92917fb4ac4a36f98bb1/sdkjs-plugins/content/ai/.dev/helpers/slide/generate-presentation-with-theme.js) · [Pinned DocumentServer](https://github.com/ONLYOFFICE/DocumentServer/tree/f580eb58439432310943ece02c9730c6a21365e7)

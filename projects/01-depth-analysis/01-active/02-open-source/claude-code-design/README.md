@@ -1,45 +1,9 @@
 # claude-code-design
 
-> Research status: **Source-level** · Last reviewed: **2026-08-12**
+claude-code-design answers "what is design" by refusing to grant the model a private picture of the work. The artifact is ordinary HTML/JSX/CSS living in the repository, and the design act is the loop that makes that artifact verifiable from the outside rather than trusted from a hidden canvas state. It removes the managed canvas and reconstructs a concrete lifecycle for Claude Code: skills route the task, starter components scaffold the artifact, Chrome DevTools supplies visual evidence, and explicit commands persist tweaks, register outputs and export them.
 
-`claude-code-design` removes the managed canvas but reconstructs a concrete artifact lifecycle for Claude Code. Skills route the task, starter components scaffold the artifact, Chrome DevTools supplies visual evidence, and explicit commands persist tweaks, register outputs and export them.
+The decisive mechanism is that every mutation carries an evidence gate. `/done` is not a conversational flourish but a gate that waits for document/font readiness, captures a screenshot plus a DOM snapshot, sweeps the console for errors and only then registers clean output — a pipeline ordering that runs `brief → skill → HTML artifact → local server → screenshot/DOM snapshot → tweak/register → HTML/PDF/PPTX/MP4` (revision [`ce68c84`](https://github.com/bluzir/claude-code-design/commit/ce68c84edb8b4ae0d82e3cbae216190443c474b7)). Because the artifact is text in the repo, Git diff becomes the audit and revert surface; there is no opaque intermediate state.
 
-## A terminal workflow with visual gates
+Tweak persistence replaces hidden canvas state with an explicit two-phase contract. `/make-tweakable` binds a preview panel to CSS variables and, when the browser permits, writes proposed values to `pending.yaml`; `/apply-tweaks` validates those values against the artifact schema, edits the source and appends a timestamped applied log ([`verify-artifact`](https://github.com/bluzir/claude-code-design/blob/ce68c84edb8b4ae0d82e3cbae216190443c474b7/.claude/skills/verify-artifact/SKILL.md), [tweak-application contracts](https://github.com/bluzir/claude-code-design/blob/ce68c84edb8b4ae0d82e3cbae216190443c474b7/.claude/skills/create-design-system/SKILL.md)). `/inspect` maps a described element through the stored accessibility snapshot to a source selector and location — weaker than a native design node ID, but materially more precise than asking the model to guess from a screenshot. Distinct wireframe, prototype, deck and design-system skills keep the artifact class explicit, and reusable stages under [`starters/`](https://github.com/bluzir/claude-code-design/tree/ce68c84edb8b4ae0d82e3cbae216190443c474b7/starters) supply the scaffold the model starts from.
 
-```text
-brief
-  -> context detection + specialized skill
-  -> HTML artifact from starter components
-  -> local server / browser preview
-  -> screenshot + DOM snapshot + console sweep
-  -> optional tweak log and source application
-  -> asset registration
-  -> HTML / PDF / PPTX / MP4 delivery
-```
-
-The artifact is ordinary HTML/JSX/CSS in the repository. `/done` is a gate rather than a conversational flourish: it waits for document/font readiness, takes visual and DOM evidence, checks console errors and registers clean output.
-
-## Tweak persistence replaces hidden canvas state
-
-`/make-tweakable` binds a preview panel to CSS variables and writes proposed values to `pending.yaml` when the browser permits. `/apply-tweaks` validates those values against the artifact schema, edits the source and appends a timestamped applied log. Git diff can therefore audit or revert the change.
-
-`/inspect` maps a described element through the stored accessibility snapshot to a source selector/location. The mapping is weaker than a native design node ID but materially more precise than asking the model to guess from a screenshot.
-
-## Pinned operational evidence
-
-Revision [`ce68c84`](https://github.com/bluzir/claude-code-design/commit/ce68c84edb8b4ae0d82e3cbae216190443c474b7) includes:
-
-- distinct [wireframe](https://github.com/bluzir/claude-code-design/blob/ce68c84edb8b4ae0d82e3cbae216190443c474b7/.claude/skills/wireframe/SKILL.md), [prototype](https://github.com/bluzir/claude-code-design/blob/ce68c84edb8b4ae0d82e3cbae216190443c474b7/.claude/skills/interactive-prototype/SKILL.md), [deck](https://github.com/bluzir/claude-code-design/blob/ce68c84edb8b4ae0d82e3cbae216190443c474b7/.claude/skills/make-deck/SKILL.md) and [design-system](https://github.com/bluzir/claude-code-design/blob/ce68c84edb8b4ae0d82e3cbae216190443c474b7/.claude/skills/create-design-system/SKILL.md) paths;
-- [verification](https://github.com/bluzir/claude-code-design/blob/ce68c84edb8b4ae0d82e3cbae216190443c474b7/.claude/skills/verify-artifact/SKILL.md), [registration](https://github.com/bluzir/claude-code-design/blob/ce68c84edb8b4ae0d82e3cbae216190443c474b7/.claude/skills/register-asset/SKILL.md) and tweak-application contracts;
-- executable [PDF](https://github.com/bluzir/claude-code-design/blob/ce68c84edb8b4ae0d82e3cbae216190443c474b7/scripts/export-pdf.mjs) and [PPTX](https://github.com/bluzir/claude-code-design/blob/ce68c84edb8b4ae0d82e3cbae216190443c474b7/scripts/export-pptx.mjs) scripts;
-- reusable stages and components under [`starters/`](https://github.com/bluzir/claude-code-design/tree/ce68c84edb8b4ae0d82e3cbae216190443c474b7/starters).
-
-## Limits
-
-No license file was present, and the package's npm `test` script is an intentional failure placeholder; no green-test claim is made. The maintainer profile identifies Bali and supports an Indonesia label. This record is independent of Anthropic's Claude Design because it has a separate maintainer and filesystem interface, not because the methodology is unrelated.
-
-## Decisive sources
-
-- [Repository README](https://github.com/bluzir/claude-code-design/blob/ce68c84edb8b4ae0d82e3cbae216190443c474b7/README.md)
-- [Getting started](https://github.com/bluzir/claude-code-design/blob/ce68c84edb8b4ae0d82e3cbae216190443c474b7/GETTING_STARTED.md)
-- [Maintainer profile](https://github.com/bluzir)
+The design act here is reconciliation: make the model's intention legible to a browser, prove it against the running artifact, and write the change back into source so it stays reviewable. No license file was present and the npm `test` script is an intentional failure placeholder, so no green-test claim is made. This record is independent of Anthropic's Claude Design — a separate maintainer and filesystem interface, not an identical methodology. [Repository README](https://github.com/bluzir/claude-code-design/blob/ce68c84edb8b4ae0d82e3cbae216190443c474b7/README.md) · [Getting started](https://github.com/bluzir/claude-code-design/blob/ce68c84edb8b4ae0d82e3cbae216190443c474b7/GETTING_STARTED.md)

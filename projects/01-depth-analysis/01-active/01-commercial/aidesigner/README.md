@@ -1,42 +1,15 @@
 # AIDesigner
 
-> Research status: **Architecture-level** · Last reviewed: **2026-08-11**
+AIDesigner defines design as a persistent brand context that a single project carries across media, rather than a one-shot generation. Its act of design is not just producing a screen — it is *remembering* a direction so that the next deliverable (a website UI, a mobile screen, a logo, a campaign graphic) inherits the accepted look. Saved colors, logos, references and assets form the brand context that feeds later outputs, which means the user stops re-explaining taste in every prompt. [Current product and edit loop](https://www.aidesigner.ai/)
 
-| Field | Value |
-|---|---|
-| Team | AIDesigner Inc. · team region not established |
-| Ordinary job | create and keep refining UI brand systems and visual assets in one AI design project |
-| Authority | the saved editable AIDesigner project and its brand context |
-| Lifecycle | active |
+## The editor keeps the accepted design editable over time
 
-## The project remembers direction across media
+Prompts and visual references enter a design agent, but what survives is an editable design project: sections copy and imagery can be targeted and refined after generation, while the accepted direction persists. Persistence is the product's real claim — the saved project is not a flattened export but a live thing that accepts further edits and yields variants and published output from the same lineage.
 
-AIDesigner accepts prompts and references for website UI mobile screens brand kits logos campaign graphics and images. Generated UI remains editable: sections copy and imagery can be targeted while the accepted direction persists. Saved colors logos references and assets form brand context for later outputs rather than being repeated in every prompt.
-
-```mermaid
-flowchart LR
-    I["Prompt and visual references"] --> A["Design agent"]
-    B["Saved brand kit"] --> A
-    A --> P["Editable design project"]
-    P --> E["Section copy and image edits"]
-    E --> P
-    P --> V["Variants and assets"]
-    P --> W["Published website"]
-    M["MCP-connected coding agent"] <--> P
-```
-
-The MCP path is important because it lets another agent read or create design work rather than treating the product as a gallery. The browser project still owns design composition; a coding agent owns whatever production code it later creates.
+Perhaps the strongest signal of its model is the MCP path. It does not treat the product as a closed gallery — an [MCP-connected coding agent](https://www.aidesigner.ai/mcp) can read or create design work inside the project. Yet authority is deliberately divided: the browser project still owns the design composition, while whatever production code a coding agent later creates is that agent's own artifact.
 
 ## Breadth does not erase distinct artifact types
 
-UI screens brand kits and generated images share context but have different editability. Public language supports editable website designs and targeted refinement; it should not be read as proof that every logo image or campaign asset is a structured vector graph.
+UI screens, brand kits and generated images share context but do not share editability. Public language supports editable website designs and targeted refinement; it should not be overread as proof that every logo or campaign asset is a structured vector graph. The flow is genuinely product-shaped: prompt and references → design agent → editable project → section copy and image edits → variants/assets, with a published website and an MCP-connected agent both reading from that same saved project.
 
-## Evidence ceiling
-
-The native project schema MCP tool contract autosave version graph publication format and code-export fidelity are not publicly exposed. Claims about design taste or professional quality are product positioning and are not used as technical evidence.
-
-## Primary evidence
-
-- [AIDesigner current product and edit loop](https://www.aidesigner.ai/)
-- [Current plans and persistent project limits](https://www.aidesigner.ai/pricing)
-- [AIDesigner MCP workflow](https://www.aidesigner.ai/mcp)
+The native project schema, MCP tool contract, autosave, version graph, publication format and code-export fidelity are not publicly exposed — so claims about design taste or professional quality are product positioning rather than technical evidence. What is visible is the persistence promise: brand direction saved once, reused across everything the project later makes. [Pricing and persistent project limits](https://www.aidesigner.ai/pricing)

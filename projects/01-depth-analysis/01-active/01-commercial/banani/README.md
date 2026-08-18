@@ -1,41 +1,9 @@
 # Banani
 
-> Research status: **Architecture-level** · Last reviewed: **2026-08-11**
+Banani answers "what is design" at the project level: design is a *connected screen flow that grows as one component-based project*, not a single generated picture. An ordinary user hands over a PRD, a prompt, a Figma file or an image reference, and the Banani agent builds out entire flows while reusing components and design tokens — the generation is judged not by one pretty frame but by whether the project holds together as a reusable, navigable whole.
 
-| Field | Value |
-|---|---|
-| Team | Banani · founders named publicly; team region not established |
-| Ordinary job | turn a PRD or reference into a connected screen flow and keep refining it as one component-based project |
-| Native authority | Banani screens components tokens and project history |
-| Delivery | shared canvas/prototype link editable Figma layers images code and MCP context |
+The decisive mechanism is that the durable unit moved from the individual screen to the project. Agent Mode's [product contract](https://www.banani.co/product/ai-ui-agent) and its [beta overview](https://intercom.help/banani/en/articles/14431725-agent-mode-and-components-beta-overview) describe a memory that carries preferences and brand rules across the whole session, plus *unified project-wide history*: undo and redo stop being per-screen and become project-scoped, so a deleted screen can be recovered rather than being lost with its frame. The flow is: reference → agent → a project screen graph, fed by tokens, reusable components and memory, further refined by direct edits and conversation, then projected outward through project-wide history, editable Figma layers, and code/MCP/prototype links.
 
-## Agent Mode moves history to the project level
+Handoff is a set of ownership boundaries rather than one synchronized authority. Figma transfer retains editable layers and auto layout; code and MCP support carry the design into engineering. But the public evidence does not establish a bidirectional merge back into Banani from either Figma or changed source, so those are treated as downstream projections of a single project authority, not equals in a loop.
 
-Banani's current component-based project type lets the agent create entire flows while reusing components and design tokens. Memory carries preferences and brand rules across the session. Unified history moves undo and redo from a single screen to the project so deleted screens can be recovered. These contracts make the project—not an individual generated picture—the durable unit.
-
-```mermaid
-flowchart LR
-    P["PRD / prompt / Figma or image reference"] --> A["Banani agent"]
-    A --> G["Project screen graph"]
-    T["Tokens + reusable components + memory"] --> G
-    H["Direct edits and conversation"] --> G
-    G --> V["Project-wide history"]
-    G --> F["Editable Figma layers"]
-    G --> C["Code / MCP / prototype link"]
-```
-
-## Handoff has several ownership boundaries
-
-Figma transfer retains editable layers and auto layout according to current pricing/help contracts. Code and MCP support carry the design into engineering. Public evidence does not establish a bidirectional merge from Figma or changed source back to Banani, so these are treated as downstream projections rather than one synchronized authority.
-
-Agent Mode is a beta product mode inside Banani and is not counted separately. Regular and component-based projects may have different editing capabilities; claims about unified history and shared components apply specifically to the documented mode.
-
-## Evidence ceiling
-
-No native schema or implementation is public. Component-instance semantics, history retention, prototype interaction graph, export fidelity and concurrent conflict handling remain unknown.
-
-## Primary evidence
-
-- [Banani AI UI Agent](https://www.banani.co/product/ai-ui-agent)
-- [Agent Mode and components beta](https://intercom.help/banani/en/articles/14431725-agent-mode-and-components-beta-overview)
-- [Project creation contract](https://intercom.help/banani/en/articles/11695827-create-a-new-project)
+The ceiling is architecture-level: no native schema or implementation is public. Component-instance semantics, history retention, the prototype interaction graph, export fidelity and concurrent-conflict handling all remain unknown — but the *intent* is legible: [the project contract](https://intercom.help/banani/en/articles/11695827-create-a-new-project) makes the project, with its shared components and tokens, the thing AI builds and a person owns.
