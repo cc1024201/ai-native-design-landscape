@@ -1,6 +1,6 @@
 # 商业产品（01-commercial）
 
-**88 条**
+**90 条**
 
 | 项目 | 组织 | 证据深度 | 生命周期 |
 |---|---|---|---|
@@ -22,13 +22,13 @@
 | [Bolt.new](bolt-new/) | stackblitz | architecture ⚠ | active |
 | [Botlab.art](botlab-art/) | botlab-art | architecture ⚠ | active |
 | [Fusion](builderio-fusion/) | builder-io | architecture ⚠ | active |
+| [Calicat](calicat/) | beijing-damaidi | architecture ⚠ | active |
 | [Caliper](caliper/) | caliper | architecture ⚠ | active |
 | [Canva Magic Design](canva-magic-design/) | canva | architecture ⚠ | active |
-| [Caret](caret/) | caret | source | active |
 | [Cloudflare VibeSDK](cloudflare-vibesdk/) | cloudflare | source | active |
-| [CodeCanvas AI](codecanvas-ai/) | codecanvas-ai | source | active |
-| [Cofounder](cofounder/) | openinterface | source | active |
+| [Cursor](cursor/) | anysphere | architecture ⚠ | active |
 | [Data Formulator](data-formulator/) | microsoft | source | active |
+| [Devin](devin/) | cognition | architecture ⚠ | active |
 | [DreamUI](dreamui/) | dreamui | architecture ⚠ | active |
 | [Drupal Canvas](drupal-canvas/) | drupal | source | active |
 | [Dualite](dualite/) | dualite | architecture ⚠ | active |
@@ -66,6 +66,8 @@
 | [Prompt.to.design](prompt-to-design/) | superun | architecture ⚠ | active |
 | [Recraft](recraft/) | recraft | architecture ⚠ | active |
 | [Relume](relume/) | relume | architecture ⚠ | active |
+| [Replit Design](replit-design/) | replit | architecture ⚠ | active |
+| [Rivet](rivet-design/) | rivet | architecture ⚠ | active |
 | [Rocket.new](rocket-new/) | rocket-new | architecture ⚠ | active |
 | [Seko](seko/) | sensenova | architecture ⚠ | active |
 | [Shape](shape/) | shape | source | active |
@@ -93,4 +95,4 @@
 | [YouWare](youware/) | youware | architecture ⚠ | active |
 | [Zoea](zoea/) | zoea | architecture ⚠ | active |
 
-**evidence 缺口**（61 条仅架构级，待源码/文档升级）: adalo-ai, adobe-firefly-creative-agent, aidesigner, alloy, anthropic-claude-design, anything, atoms, backdraft …
+**evidence 缺口**（66 条仅架构级，待源码/文档升级）: adalo-ai, adobe-firefly-creative-agent, aidesigner, alloy, anthropic-claude-design, anything, atoms, backdraft …

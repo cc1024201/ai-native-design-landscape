@@ -6,8 +6,8 @@
 projects/
 ├── 01-depth-analysis/   worth deep analysis (custom per-project analysis)
 │   └── 01-active/
-│   ├── 01-commercial/  88 条
-│   ├── 02-open-source/  33 条
+│   ├── 01-commercial/  90 条
+│   ├── 02-open-source/  31 条
 └── 02-others/           others - registration only
 ```
 

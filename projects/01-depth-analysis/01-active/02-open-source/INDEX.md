@@ -1,6 +1,6 @@
 # 开源项目（02-open-source）
 
-**33 条**
+**31 条**
 
 | 项目 | 组织 | 证据深度 | 生命周期 |
 |---|---|---|---|
@@ -10,14 +10,14 @@
 | [Auto-Slides](auto-slides/) | westlake-university | source | active |
 | [BuilderAI by Raj Patel](builderai-raj/) | raj-patel | source | active |
 | [CADDesigner](caddesigner/) | zhejiang-university | source | active |
-| [Calicat](calicat/) | beijing-damaidi | architecture ⚠ | active |
+| [Caret](caret/) | caret | source | active |
 | [claude-code-design](claude-code-design/) | bluzir | source | active |
+| [CodeCanvas AI](codecanvas-ai/) | codecanvas-ai | source | active |
+| [Cofounder](cofounder/) | openinterface | source | active |
 | [Crafter](crafter/) | haozhe-zhao | source | active |
 | [Context Space](ctx-space/) | super-nived | source | active |
-| [Cursor](cursor/) | anysphere | architecture ⚠ | active |
 | [DCC-MCP Unreal](dcc-mcp-unreal/) | dcc-mcp | source | active |
 | [DeepSite](deepsite/) | enzostvs | source | active |
-| [Devin](devin/) | cognition | architecture ⚠ | active |
 | [DevPilot](devpilot/) | princethakarar | source | active |
 | [Emdash Skills](emdash-skills/) | megabyte-labs | source | active |
 | [Figma Console MCP](figma-console-mcp/) | southleft | source | active |
@@ -33,9 +33,7 @@
 | [OpenMontage](openmontage/) | calesthio | source | active |
 | [OpenPencil ZSeven](openpencil-zseven/) | zseven-w | source | active |
 | [Premium Website Generator by Edouard Kerwing](premium-website-generator-edouard/) | edouard-automations | source | active |
-| [Replit Design](replit-design/) | replit | architecture ⚠ | active |
 | [RFingAdam mcp-blender](rfingadam-mcp-blender/) | rfingadam | source | active |
-| [Rivet](rivet-design/) | rivet | architecture ⚠ | active |
 | [VibeCoder by Dublyo](vibecoder-dublyo/) | dublyo | source | active |
 
-**evidence 缺口**（8 条仅架构级，待源码/文档升级）: calicat, cursor, devin, figma-mcp-server, kombai, magicpath, replit-design, rivet-design
+**evidence 缺口**（3 条仅架构级，待源码/文档升级）: figma-mcp-server, kombai, magicpath
