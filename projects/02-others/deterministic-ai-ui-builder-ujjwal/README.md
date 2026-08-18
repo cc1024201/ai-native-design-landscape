@@ -1,19 +1,7 @@
 # Deterministic AI UI Builder by ujjwal1541
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-This builder restricts model output to a fixed component vocabulary. The schema—not emitted JSX—is the canonical UI artifact, so validation and rendering can reject unsupported structures before execution.
-
-## Edge generation targets a bounded graph
-
-[`generate-ui/index.ts`](https://github.com/ujjwal1541/AI-UI-Builder/blob/797e8d771d8a026ccbe29a281f8fd7a30c081a6f/supabase/functions/generate-ui/index.ts) runs the multi-stage generation request. [`componentSchema.ts`](https://github.com/ujjwal1541/AI-UI-Builder/blob/797e8d771d8a026ccbe29a281f8fd7a30c081a6f/src/lib/componentSchema.ts) defines the component and property envelope accepted by the client.
-
-## Renderer and versions protect different boundaries
-
-[`PreviewPanel.tsx`](https://github.com/ujjwal1541/AI-UI-Builder/blob/797e8d771d8a026ccbe29a281f8fd7a30c081a6f/src/components/PreviewPanel.tsx) maps validated nodes to the fixed component library. The [`Supabase migration`](https://github.com/ujjwal1541/AI-UI-Builder/blob/797e8d771d8a026ccbe29a281f8fd7a30c081a6f/supabase/migrations/20260211105127_create_ui_generator_schema.sql) persists sessions, messages and versions. Runtime safety therefore comes from the bounded interpreter while recovery comes from stored version records.
-
-## Pinned evidence
-
-- [Canonical repository](https://github.com/ujjwal1541/AI-UI-Builder)
-- [Inspected tree](https://github.com/ujjwal1541/AI-UI-Builder/tree/797e8d771d8a026ccbe29a281f8fd7a30c081a6f)
-- Commit: `797e8d771d8a026ccbe29a281f8fd7a30c081a6f`
+- 定义：原生制品创作（+委托式创作、运行时纠正、变体决策、系统治理）
+- 实现：原生图形权威（+托管应用项目图、候选隔离与晋升）
+- 形态：standalone-design-agent · 层次：开源项目 · 生命周期：active · 证据深度：source

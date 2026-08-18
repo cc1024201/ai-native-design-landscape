@@ -1,23 +1,7 @@
 # Inkeep Agents
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Inkeep Agents joins a no-code visual builder and a TypeScript SDK around one managed agent configuration rather than forcing technical and non-technical authors into separate products.
-
-## Two authoring surfaces share one authority
-
-The management UI writes agents, sub-agents, tools, MCP servers, credentials, projects, prompts, and triggers through `agents-api`. The SDK and CLI push and pull the same resources. Two-way synchronization is therefore the central product mechanism: code can refine a visual definition and the visual builder can revise a code-authored agent.
-
-## Execution and evaluation stay attached
-
-The API runs agents with conversation state, artifact contracts, delegation, scheduled or external triggers, and OpenTelemetry traces. Evaluation datasets, configurations, jobs, and results reference the managed definitions instead of becoming detached benchmark files.
-
-## Merge semantics matter more than export
-
-Branch and merge routes, previews, and improvement records show that collaboration is not a one-way code generator. The risk boundary is configuration reconciliation across authors and surfaces; credentials remain referenced resources rather than being embedded in exported source.
-
-## Pinned evidence
-
-- Repository: [inkeep/agents](https://github.com/inkeep/agents)
-- Inspected management API, visual UI, SDK/CLI sync, execution, branch, and evaluation tree: [`1777e6e1ff65c286946216b7acd5a8b4cd15c0a7`](https://github.com/inkeep/agents/tree/1777e6e1ff65c286946216b7acd5a8b4cd15c0a7)
-- Immutable revision: [commit `1777e6e`](https://github.com/inkeep/agents/commit/1777e6e1ff65c286946216b7acd5a8b4cd15c0a7)
+- 定义：约束驱动工程（+源码视觉创作、委托式创作、系统治理、运行时纠正、端到端交付）
+- 实现：源码权威·实时投射（+原生图形权威、托管应用项目图、运行时意图中继）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

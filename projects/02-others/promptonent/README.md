@@ -1,20 +1,7 @@
 # PromptOnent
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-PromptOnent streams component source into an isolated renderer and treats completed generations as selectable browser-local versions.
-
-## Streaming has a completion boundary
-
-[`generate/route.ts`](https://github.com/Abrar090909/promptonent/blob/aad1c7e4301d33f4ded803bedc234ce1a7ce38b5/app/api/generate/route.ts) forwards Gemini chunks. [`useGeminiStream.ts`](https://github.com/Abrar090909/promptonent/blob/aad1c7e4301d33f4ded803bedc234ce1a7ce38b5/hooks/useGeminiStream.ts) accumulates them, supports cancellation and saves history only after a completed response.
-
-## Sandbox and history solve different problems
-
-[`PreviewFrame.tsx`](https://github.com/Abrar090909/promptonent/blob/aad1c7e4301d33f4ded803bedc234ce1a7ce38b5/components/canvas/PreviewFrame.tsx) builds a script-enabled iframe without same-origin authority. [`canvasStore.ts`](https://github.com/Abrar090909/promptonent/blob/aad1c7e4301d33f4ded803bedc234ce1a7ce38b5/store/canvasStore.ts) persists prompt/code entries and selection in localStorage. Isolation protects execution; history supports recovery.
-
-## Pinned source
-
-- [Canonical repository](https://github.com/Abrar090909/promptonent)
-- [Inspected commit](https://github.com/Abrar090909/promptonent/commit/aad1c7e4301d33f4ded803bedc234ce1a7ce38b5)
-- [Maintainer region evidence](https://github.com/Abrar090909)
-- Commit: `aad1c7e4301d33f4ded803bedc234ce1a7ce38b5`
+- 定义：源码视觉创作（+委托式创作、运行时纠正、变体决策）
+- 实现：源码权威·实时投射（+候选隔离与晋升、托管应用项目图）
+- 形态：standalone-design-agent · 层次：开源项目 · 生命周期：active · 证据深度：source

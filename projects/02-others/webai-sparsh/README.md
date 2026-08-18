@@ -1,28 +1,7 @@
 # WebAI by Sparsh Joshi
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-13**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-WebAI is a Bolt-derived source workspace whose independent contribution sits at delivery. Users generate and repair project files in a browser workbench, run them through WebContainers, then create a GitHub repository and initiate Vercel deployment from the same product surface.
-
-## The source tree crosses three authorities
-
-Pinned revision: `9a0b5f7b8bd9130b3f2ce9688a7708c0bc0f5551`.
-
-The editor's current file map drives WebContainer preview. Git integration materializes a repository copy, and the deploy service sends a selected source state to Vercel. Those are distinct authorities: a successful preview does not mean Git contains the same files, and a repository update does not by itself prove the deployed URL moved.
-
-WebAI also exposes correction behavior around generation/runtime failures. That makes the preview an evidence-producing feedback loop rather than a decorative screenshot.
-
-## Why shared UI does not make it a duplicate
-
-The chat and editor retain recognizable Bolt ancestry, which the identity map records. The implemented GitHub creation, isomorphic-git flow and direct Vercel handoff change the ordinary user's completion path enough to retain WebAI as a derived canonical project.
-
-## Recovery limit
-
-No independently verified version ledger was found in the inspected tree. Git can become durable authority only after a successful push; before that, browser workspace state remains vulnerable to reload or runtime loss.
-
-## Pinned evidence
-
-- [Repository](https://github.com/Sparshjoshi-iit/WebAI)
-- [Chat and file handoff](https://github.com/Sparshjoshi-iit/WebAI/blob/9a0b5f7b8bd9130b3f2ce9688a7708c0bc0f5551/frontend/src/components/chatPanel.tsx)
-- [WebContainer hook](https://github.com/Sparshjoshi-iit/WebAI/blob/9a0b5f7b8bd9130b3f2ce9688a7708c0bc0f5551/frontend/src/hooks/useWebContainer.ts)
-- [Deployment service](https://github.com/Sparshjoshi-iit/WebAI/blob/9a0b5f7b8bd9130b3f2ce9688a7708c0bc0f5551/frontend/src/services/deploy.ts)
+- 定义：端到端交付（+委托式创作、源码视觉创作、运行时纠正）
+- 实现：源码权威·实时投射（+托管应用项目图）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active · 证据深度：source

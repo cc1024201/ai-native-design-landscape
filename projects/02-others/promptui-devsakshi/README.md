@@ -1,15 +1,7 @@
 # PromptUI by devSakshi022R
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-PromptUI puts generated source under three user-controlled mutation paths: another Gemini prompt, direct Monaco editing and restoration through local prompt history.
-
-[`generate/route.ts`](https://github.com/devSakshi022R/AI-UI-builder/blob/6308aebed915210bd447496c3ea7fcd27c48e041/app/api/generate/route.ts) produces constrained React/Tailwind source. [`generate/page.tsx`](https://github.com/devSakshi022R/AI-UI-builder/blob/6308aebed915210bd447496c3ea7fcd27c48e041/app/dashboard/generate/page.tsx) joins prompting, editable code, preview, scoring, copy and React/HTML export.
-
-[`ui-preview.tsx`](https://github.com/devSakshi022R/AI-UI-builder/blob/6308aebed915210bd447496c3ea7fcd27c48e041/components/preview/ui-preview.tsx) executes the current source representation. [`app.store.ts`](https://github.com/devSakshi022R/AI-UI-builder/blob/6308aebed915210bd447496c3ea7fcd27c48e041/store/app.store.ts) retains client-side generation and prompt history; the inspected tree does not claim a server project database.
-
-## Evidence
-
-- [Canonical repository](https://github.com/devSakshi022R/AI-UI-builder)
-- [Inspected tree](https://github.com/devSakshi022R/AI-UI-builder/tree/6308aebed915210bd447496c3ea7fcd27c48e041)
-- Commit: `6308aebed915210bd447496c3ea7fcd27c48e041`
+- 定义：源码视觉创作（+委托式创作、运行时纠正、变体决策、端到端交付）
+- 实现：源码权威·实时投射（+候选隔离与晋升、设计-代码物化）
+- 形态：standalone-design-agent · 层次：开源项目 · 生命周期：active · 证据深度：source

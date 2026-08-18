@@ -1,25 +1,7 @@
 # Agon
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Agon uses multiple agents to negotiate a structured decision model called the Truth Map. Architecture diagrams are outputs of that governed consensus state rather than the primary database.
-
-## Truth Map operations are validated
-
-At [`e6495efa`](https://github.com/simonholmes001/agon/tree/e6495efae5f7eae140eba62c69661c4b90a9c84d), claims, evidence, assumptions, risks and decisions form typed domain entities. Agents return patches; a validator checks those patches before repository persistence.
-
-## Consensus has durable infrastructure
-
-PostgreSQL repositories retain sessions and Truth Maps while Redis supports snapshots and SignalR broadcasts events. Convergence evaluation determines when the council has reached a usable result.
-
-## Current visual boundary
-
-The verified product generates architecture Mermaid and related documents from the result. The README's richer browser Truth Map explorer is still described as coming soon, so this dossier does not treat it as a shipped visual editor.
-
-## Evidence
-
-- [Pinned repository](https://github.com/simonholmes001/agon/tree/e6495efae5f7eae140eba62c69661c4b90a9c84d)
-- [Truth Map model](https://github.com/simonholmes001/agon/blob/e6495efae5f7eae140eba62c69661c4b90a9c84d/backend/src/Agon.Domain/TruthMap/TruthMap.cs)
-- [Patch validator](https://github.com/simonholmes001/agon/blob/e6495efae5f7eae140eba62c69661c4b90a9c84d/backend/src/Agon.Domain/TruthMap/PatchValidator.cs)
-- [Persistence repository](https://github.com/simonholmes001/agon/blob/e6495efae5f7eae140eba62c69661c4b90a9c84d/backend/src/Agon.Infrastructure/Persistence/PostgreSQL/TruthMapRepository.cs)
-- [Published scope and diagram claims](https://github.com/simonholmes001/agon/blob/e6495efae5f7eae140eba62c69661c4b90a9c84d/README.md)
+- 定义：变体决策（+系统治理、视觉协调证据、端到端交付）
+- 实现：原生图形权威（+托管应用项目图、源码权威·实时投射、候选隔离与晋升）
+- 形态：visual-decision-verification-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

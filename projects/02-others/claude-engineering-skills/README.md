@@ -1,19 +1,7 @@
 # Claude Engineering Skills Library
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-The Claude Engineering Skills Library focuses on mechanical aerospace fluid and pump design. It combines domain databases package integrations helper scripts and thinking workflows so an external agent can assemble a traceable engineering analysis rather than improvising every equation.
-
-## Design work is composed from capabilities
-
-At commit [`1c3340b`](https://github.com/Soljourner/claude-engineering-skills/tree/1c3340ba171b475fb0ecd7b1699e41dac6acd986) the inventory routes requests to data sources such as material and pump curves calculations and integration instructions for tools including OpenFOAM ANSYS SolidWorks and COMSOL. A system-design request can combine component selection loss calculation optimization and performance plotting.
-
-The skill files are the agent interface; Python examples and third-party solvers perform deterministic computation. The library does not own a common geometry model or project database so downstream CAD and simulation files remain authoritative.
-
-This dossier records the collection as an engineering design toolkit rather than claiming each database reference is a separate product. Public first-party evidence did not establish the maintainer's region.
-
-## Evidence
-
-- [Capability inventory](https://github.com/Soljourner/claude-engineering-skills/blob/1c3340ba171b475fb0ecd7b1699e41dac6acd986/SKILLS_INVENTORY.md)
-- [Engineering context initializer](https://github.com/Soljourner/claude-engineering-skills/blob/1c3340ba171b475fb0ecd7b1699e41dac6acd986/skills/helpers/engineering-context-init/SKILL.md)
-- [Pinned README](https://github.com/Soljourner/claude-engineering-skills/blob/1c3340ba171b475fb0ecd7b1699e41dac6acd986/README.md)
+- 定义：约束驱动工程（+系统治理、委托式创作、原生制品创作、视觉协调证据）
+- 实现：文件系统 agent·视觉证据（+参数化工程模型权威、设计-代码物化）
+- 形态：general-agent-visual-tools · 层次：agent 工作流 · 生命周期：active · 证据深度：source

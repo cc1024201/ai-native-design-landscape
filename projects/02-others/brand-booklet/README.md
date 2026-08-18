@@ -1,26 +1,7 @@
 # Brand Booklet
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Brand Booklet defines brand creation as a resumable, gated filesystem project. Strategy, visual direction and one approved primary mark must exist before parallel asset production; the final output includes machine-readable tokens and agent guidance as well as imagery.
-
-## The folder tree is a production ledger
-
-The skill first routes Scratch, Inspired, Rebrand or Optimize into different intake. It records competing territories and requires one selection. After visual-system definition, a primary logo is a blocking gate; later variants use image editing against that approved anchor rather than unrelated text-to-image calls.
-
-```text
-mode-specific intake -> strategy -> territory approval -> visual system
--> primary-logo approval -> coherent variants/marketing assets
--> per-asset audit/regeneration -> Markdown system + HTML/PDF booklet
-```
-
-[`SKILL.md`](https://github.com/tillmannvey-spec/brand-booklet/blob/851f893bdede4a4f39388bc47198dff6ee000de8/SKILL.md) fixes every phase's output path. `00_session.md` is append-only progress and a resume pointer; asset metadata and full prompts preserve lineage. [`build_asset_index.py`](https://github.com/tillmannvey-spec/brand-booklet/blob/851f893bdede4a4f39388bc47198dff6ee000de8/scripts/build_asset_index.py) helps compile the asset set. The workflow relies on external generation and review skills, but it does not hide that dependency.
-
-No license file or reliable maintainer-region evidence was found.
-
-## Sources
-
-- [Pinned repository](https://github.com/tillmannvey-spec/brand-booklet/tree/851f893bdede4a4f39388bc47198dff6ee000de8)
-- [Prompt architecture](https://github.com/tillmannvey-spec/brand-booklet/blob/851f893bdede4a4f39388bc47198dff6ee000de8/references/prompt-patterns.md)
-- [Booklet template](https://github.com/tillmannvey-spec/brand-booklet/blob/851f893bdede4a4f39388bc47198dff6ee000de8/references/booklet-template.md)
-- [Audit checklist](https://github.com/tillmannvey-spec/brand-booklet/blob/851f893bdede4a4f39388bc47198dff6ee000de8/templates/critique-checklist.md)
+- 定义：委托式创作（+变体决策、系统治理、运行时纠正、端到端交付）
+- 实现：文件系统 agent·视觉证据（+候选隔离与晋升、源码权威·实时投射）
+- 形态：general-agent-visual-tools · 层次：开源项目 · 生命周期：active · 证据深度：source

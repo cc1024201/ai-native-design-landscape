@@ -1,23 +1,7 @@
 # AI-Powered Website Generator by Tony-VBB
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-This generator inserts an explicit design-brief stage before source creation, then keeps saving and external deployment as user-controlled transitions rather than automatic consequences of a model response.
-
-## Analysis and prompt enhancement precede generation
-
-[`generate/route.ts`](https://github.com/Tony-VBB/ai-website-generator-/blob/bf5e6d9c9ef39eb6133267f2f13ba3722b1c4736/app/api/generate/route.ts) first asks Groq to identify missing visual and structural decisions and then expands the brief with concrete color, typography, layout and motion choices. Groq, Hugging Face or OpenRouter can generate the final single HTML document; a separate MERN mode emits one marked file at a time.
-
-## Saving promotes transient output to a project
-
-[`page.tsx`](https://github.com/Tony-VBB/ai-website-generator-/blob/bf5e6d9c9ef39eb6133267f2f13ba3722b1c4736/app/page.tsx) holds generated HTML and the analysis in client state until the user names and saves it. [`Project.ts`](https://github.com/Tony-VBB/ai-website-generator-/blob/bf5e6d9c9ef39eb6133267f2f13ba3722b1c4736/models/Project.ts) then persists the brief, enhanced brief, analysis, current HTML, provider and model in MongoDB. A project is one current snapshot rather than a version graph.
-
-## Delivery paths execute against provider APIs
-
-[`PreviewPanel.tsx`](https://github.com/Tony-VBB/ai-website-generator-/blob/bf5e6d9c9ef39eb6133267f2f13ba3722b1c4736/components/PreviewPanel.tsx) projects HTML with `srcDoc`, copies it and builds a ZIP. The GitHub, Netlify and Vercel API routes accept a user token and make real provider requests; unlike simulated “deploy” UI, failure is returned when credentials or provider calls are invalid.
-
-## Evidence
-
-- [Canonical repository](https://github.com/Tony-VBB/ai-website-generator-)
-- [Inspected tree](https://github.com/Tony-VBB/ai-website-generator-/tree/bf5e6d9c9ef39eb6133267f2f13ba3722b1c4736)
-- Commit: `bf5e6d9c9ef39eb6133267f2f13ba3722b1c4736`
+- 定义：端到端交付（+委托式创作、变体决策、源码视觉创作）
+- 实现：托管应用项目图（+源码权威·实时投射、托管生成制品工作区、设计-代码物化）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active · 证据深度：source

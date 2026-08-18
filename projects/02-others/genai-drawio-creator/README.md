@@ -1,23 +1,7 @@
 # GenAI DrawIO Creator
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-GenAI DrawIO Creator is a conversational control surface over draw.io. Users can create, modify, and enhance a diagram while retaining draw.io XML and the embedded editor as the correction environment.
-
-## Conversation targets current document state
-
-The application supplies diagram context to the model and interprets the response as draw.io mutations. Subsequent prompts can revise the same document instead of starting a new image. Direct canvas editing remains available when natural language is slower or ambiguous.
-
-## An MCP edge broadens the controller
-
-The preview MCP server allows an external compatible agent to participate in the same diagram workflow. Multi-provider support changes which model executes a request, while the draw.io relay and document format define the architecture.
-
-## The XML boundary remains visible
-
-Export and persistence preserve a normal draw.io artifact. Generated XML must still be rendered and inspected; schema validity cannot establish that an architecture, process, or label is correct. The repository does not make deployment a consequence of diagram generation.
-
-## Pinned evidence
-
-- Repository: [tuoxie2046/GenAI-DrawIO-Creator](https://github.com/tuoxie2046/GenAI-DrawIO-Creator)
-- Inspected Next.js source: [`4b67b17a3dc5cd93d6f6ec69f4e5405cc460bf39`](https://github.com/tuoxie2046/GenAI-DrawIO-Creator/tree/4b67b17a3dc5cd93d6f6ec69f4e5405cc460bf39)
-- Immutable revision: [commit `4b67b17`](https://github.com/tuoxie2046/GenAI-DrawIO-Creator/commit/4b67b17a3dc5cd93d6f6ec69f4e5405cc460bf39)
+- 定义：原生制品创作（+委托式创作、运行时纠正、端到端交付）
+- 实现：运行时意图中继（+原生图形权威、外部 agent 画布、候选隔离与晋升）
+- 形态：agent-controllable-canvas · 层次：连接桥 · 生命周期：active · 证据深度：source

@@ -1,23 +1,7 @@
 # AI Website Builder by Zyra
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Zyra's builder makes each OpenRouter response a complete WebsiteVersion containing HTML, CSS and JavaScript. Conversation provides model context but version rows provide the artifact history.
-
-## Generation appends instead of overwriting
-
-[generate/route.ts](https://github.com/supportzaranp-dev/AI-Website-Builder/blob/2d6b96c39e64705f8221cb9e06bb7ac606f57655/app/api/projects/%5Bid%5D/generate/route.ts) reads prior chat, asks [openrouter.ts](https://github.com/supportzaranp-dev/AI-Website-Builder/blob/2d6b96c39e64705f8221cb9e06bb7ac606f57655/lib/openrouter.ts) for a structured three-layer website and creates a new WebsiteVersion. A follow-up does not destroy the previous source bundle.
-
-## The schema separates dialogue and artifact states
-
-[schema.prisma](https://github.com/supportzaranp-dev/AI-Website-Builder/blob/2d6b96c39e64705f8221cb9e06bb7ac606f57655/prisma/schema.prisma) gives Project separate messages and versions. Version selection is therefore independent from reconstructing code out of prose history.
-
-## Preview and delivery use the selected version
-
-[Workspace.tsx](https://github.com/supportzaranp-dev/AI-Website-Builder/blob/2d6b96c39e64705f8221cb9e06bb7ac606f57655/components/Workspace.tsx) assembles the active version into srcDoc, exposes its three code tabs and downloads the same composed HTML. The source snapshot is durable but delivery is a local file rather than hosted deployment.
-
-## Evidence
-
-- [Canonical repository](https://github.com/supportzaranp-dev/AI-Website-Builder)
-- [Inspected tree](https://github.com/supportzaranp-dev/AI-Website-Builder/tree/2d6b96c39e64705f8221cb9e06bb7ac606f57655)
-- Commit: 2d6b96c39e64705f8221cb9e06bb7ac606f57655
+- 定义：端到端交付（+委托式创作、源码视觉创作、运行时纠正）
+- 实现：托管应用项目图（+源码权威·实时投射、设计-代码物化）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active · 证据深度：source

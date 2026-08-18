@@ -1,23 +1,7 @@
 # Presentation App
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Presentation App is a local web application in which a Claude Agent session creates and revises HTML slides. Its unit of persistence is a session containing messages, context files and slide records; PowerPoint is a delivery projection of that state.
-
-## Conversation mutates stored slides
-
-[`session.py`](https://github.com/jerryjliu/presentation_app/blob/914dc221369bfe5a066260792d02339f9104bd2b/backend/session.py) stores sessions on disk, and [`models.py`](https://github.com/jerryjliu/presentation_app/blob/914dc221369bfe5a066260792d02339f9104bd2b/backend/models.py) makes slide and message structures explicit. The agent can add or revise slide HTML across turns. The React renderer previews the stored HTML, while the Node converter maps the deck to editable PptxGenJS elements.
-
-```text
-brief + context files -> agent session -> ordered HTML slide state
--> browser preview -> conversational revision -> PPTX
-```
-
-The current UI is primarily conversational rather than a freeform direct editor. No reliable maintainer-region evidence was found.
-
-## Evidence
-
-- [Pinned repository](https://github.com/jerryjliu/presentation_app/tree/914dc221369bfe5a066260792d02339f9104bd2b)
-- [Session persistence](https://github.com/jerryjliu/presentation_app/blob/914dc221369bfe5a066260792d02339f9104bd2b/backend/session.py)
-- [Slide renderer](https://github.com/jerryjliu/presentation_app/blob/914dc221369bfe5a066260792d02339f9104bd2b/web/src/components/SlideRenderer.tsx)
-- [PPTX converter](https://github.com/jerryjliu/presentation_app/blob/914dc221369bfe5a066260792d02339f9104bd2b/backend/pptx_converter/convert.js)
+- 定义：委托式创作（+原生制品创作、变体决策、端到端交付）
+- 实现：原生图形权威（+文件系统 agent·视觉证据）
+- 形态：standalone-design-agent · 层次：开源项目 · 生命周期：active · 证据深度：source

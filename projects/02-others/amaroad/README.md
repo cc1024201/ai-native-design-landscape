@@ -1,20 +1,7 @@
 # Amaroad
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Amaroad, previously named DexCode, is an AI slide-creation environment for developers. It intentionally makes the browser view-only: the ordinary authoring route is to ask a coding agent to edit MDX source and observe the hot-reloaded deck.
-
-## MDX files own the slide order and composition
-
-Each slide is a separate MDX module using a bounded component vocabulary. [`mdx-slide-source.ts`](https://github.com/co-r-e/amaroad/blob/0ed5c29010f0c9c97e9669e3e88939a773d2f93e/src/lib/mdx-slide-source.ts) resolves editable source, while [`deck-loader.ts`](https://github.com/co-r-e/amaroad/blob/0ed5c29010f0c9c97e9669e3e88939a773d2f93e/src/lib/deck-loader.ts) materializes the ordered deck for the live application.
-
-The bundled deck-designer and spreadsheet-to-slides skills give agents domain rules but do not replace source authority. PDF and PPTX are exports from that source. The lack of direct manipulation is therefore a deliberate technical direction rather than a missing editor feature.
-
-CORe's first-party GitHub organization profile identifies Japan.
-
-## Evidence
-
-- [Pinned repository](https://github.com/co-r-e/amaroad/tree/0ed5c29010f0c9c97e9669e3e88939a773d2f93e)
-- [Deck types](https://github.com/co-r-e/amaroad/blob/0ed5c29010f0c9c97e9669e3e88939a773d2f93e/src/types/deck.ts)
-- [Export implementation](https://github.com/co-r-e/amaroad/blob/0ed5c29010f0c9c97e9669e3e88939a773d2f93e/src/lib/export.ts)
-- [Organization profile](https://github.com/co-r-e)
+- 定义：源码视觉创作（+委托式创作、原生制品创作、视觉协调证据）
+- 实现：源码权威·实时投射（+文件系统 agent·视觉证据）
+- 形态：code-native-visual-ide · 层次：开源项目 · 生命周期：active · 证据深度：source

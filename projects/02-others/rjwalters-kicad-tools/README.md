@@ -1,16 +1,7 @@
 # kicad-tools by Robb Walters
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-kicad-tools is a Python/CLI foundation for agents to parse, analyze and mutate KiCad schematics and boards without driving the GUI. It adds JSON-shaped access, programmatic repair, manufacturer-aware checks, routing support, MCP and fabrication export around native `.kicad_sch` and `.kicad_pcb` files.
-
-## Structured reasoning meets native files
-
-Agents can export board state for layout decisions, apply geometric operations and save a new native file. ERC/DRC, schematic parity, renders and downloadable fabrication packages verify different failure classes; none is accepted as a substitute for the others. The live gallery projects boards into 2D/3D inspection but the KiCad documents remain authoritative.
-
-The package is both infrastructure and an independently usable workflow. Its APIs do not certify electrical or manufacturing correctness beyond the checks actually run.
-
-- [Pinned repository](https://github.com/rjwalters/kicad-tools/tree/c7313b398bc1f28499baa0c23ae88cda85c118e4)
-- [Source package](https://github.com/rjwalters/kicad-tools/tree/c7313b398bc1f28499baa0c23ae88cda85c118e4/src/kicad_tools)
-- [MCP surface](https://github.com/rjwalters/kicad-tools/tree/c7313b398bc1f28499baa0c23ae88cda85c118e4/src/kicad_tools/mcp)
-- [Maintainer profile checked; no location published](https://github.com/rjwalters)
+- 定义：约束驱动工程（+原生制品创作、运行时纠正、视觉协调证据、端到端交付）
+- 实现：参数化工程模型权威（+文件系统 agent·视觉证据）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

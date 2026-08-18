@@ -1,23 +1,7 @@
 # AI Shortfilm Studio
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-AI Shortfilm Studio is a full production pipeline whose editable artifact moves from storyboards and generated media to an assembled film and multimodal review.
-
-## Stages retain versioned artifacts
-
-Projects hold storyboard and media versions, uploaded clips, generation tasks, dependency state, and review results. Changing an upstream stage invalidates dependent outputs rather than pretending the old film is still current.
-
-## The agent canvas is a control projection
-
-A React Flow graph exposes existing production stages and validated connections. It configures and runs the pipeline, while artifact snapshots—not canvas pixels—remain the durable production record.
-
-## Delivery and critique are executable stages
-
-Adapters call real language, video, and multimodal providers; missing credentials fail instead of silently substituting fake output. FFmpeg materializes `final.mp4`, after which review can create explicit regeneration tasks. Test adapters are limited to declared test paths.
-
-## Pinned evidence
-
-- Repository: [dcongthinh0-ship-it/AI-video](https://github.com/dcongthinh0-ship-it/AI-video)
-- Inspected project models, versioned artifacts, React Flow canvas, dependency invalidation, provider adapters, FFmpeg assembly, and review loop: [`3272ed111a50463aa6af3c2cc9c02e2fdc16e918`](https://github.com/dcongthinh0-ship-it/AI-video/tree/3272ed111a50463aa6af3c2cc9c02e2fdc16e918)
-- Immutable revision: [commit `3272ed1`](https://github.com/dcongthinh0-ship-it/AI-video/commit/3272ed111a50463aa6af3c2cc9c02e2fdc16e918)
+- 定义：原生制品创作（+委托式创作、运行时纠正、变体决策、端到端交付、视觉协调证据）
+- 实现：托管应用项目图（+原生图形权威、候选隔离与晋升、文件系统 agent·视觉证据）
+- 形态：agent-controllable-canvas · 层次：开源项目 · 生命周期：active · 证据深度：source

@@ -1,18 +1,7 @@
 # WhipUI
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-WhipUI is a routing and context layer for frontend design work inside existing coding agents. It intentionally does not add a new model, browser or editor; it makes prompt, screenshot, Figma, live URL and repository inputs converge on one durable project-design contract.
-
-## Project DNA outlives one generation turn
-
-Initialization writes `PROJECT-DNA.md`, a machine-readable project DNA, a task-specific design fingerprint and host instructions for Codex, Claude Code and VS Code. A request is routed to installed design intelligence, existing components, Figma MCP or Playwright according to its source.
-
-“Pick from Web” captures DOM, computed styles, bounds, screenshots, accessibility context and interaction states for a user-selected element. That record informs adaptation rather than blind copying. Playwright then checks identity, hierarchy, type, color, spacing, responsiveness, states and accessibility over bounded repair iterations.
-
-Repository code remains the implementation authority. DNA and fingerprints preserve intent; web/Figma captures and screenshots are reference evidence. The maintainer profile contains a non-geographic joke string, so region remains unknown rather than treating it as location evidence.
-
-- [Pinned repository](https://github.com/VVeb1250/WhipUI/tree/19f3f859dc4ddfb41d53403fa7681d38790e1e27)
-- [Router implementation](https://github.com/VVeb1250/WhipUI/tree/19f3f859dc4ddfb41d53403fa7681d38790e1e27/src)
-- [Pinned operating contract](https://github.com/VVeb1250/WhipUI/blob/19f3f859dc4ddfb41d53403fa7681d38790e1e27/README.md)
-- [Profile checked; published location is not usable geographic evidence](https://github.com/VVeb1250)
+- 定义：系统治理（+运行时纠正、设计-代码翻译）
+- 实现：文件系统 agent·视觉证据（+源码权威·实时投射）
+- 形态：general-agent-visual-tools · 层次：开源项目 · 生命周期：active · 证据深度：source

@@ -1,16 +1,7 @@
 # KiSkill
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-KiSkill combines nine portable skills with a pure-Python `kx` engine for headless KiCad work. It reads, edits, renders, verifies and fabricates schematics and boards through a session state machine rather than allowing untracked raw text mutation.
-
-## Nothing saves before geometric review
-
-The project moves from clean discovery through probed and edited states, using byte-stable source handling, headless ERC/DRC, semantic and pixel diffs and rendered visual checks. Layout can use a DSN/SES autorouting loop; fabrication produces grouped BOM, placement and Gerber outputs only after review.
-
-KiCad files retain authority and the same executable version is pinned for writing and verification. Optional simulation and external part services create explicit dependency boundaries rather than broad correctness guarantees.
-
-- [Pinned repository](https://github.com/AvatarSD/KiSkill/tree/4375392763cbcda59b20dcecd6d43f102a013094)
-- [Architecture and state machine](https://github.com/AvatarSD/KiSkill/blob/4375392763cbcda59b20dcecd6d43f102a013094/doc/DESIGN.md)
-- [Review skill](https://github.com/AvatarSD/KiSkill/blob/4375392763cbcda59b20dcecd6d43f102a013094/skills/kicad-review/SKILL.md)
-- [Maintainer profile: Kyiv Ukraine](https://github.com/AvatarSD)
+- 定义：约束驱动工程（+原生制品创作、运行时纠正、视觉协调证据、端到端交付、系统治理）
+- 实现：参数化工程模型权威（+文件系统 agent·视觉证据）
+- 形态：ai-engineering-design-workspace · 层次：agent 工作流 · 生命周期：active · 证据深度：source

@@ -1,23 +1,7 @@
 # MermaidStudio by CatFoxVoyager
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-This MermaidStudio is a dual-mode authoring environment: Mermaid text remains authoritative while a visual surface and AI commands help users construct, repair, and refine it.
-
-## Source and visual editing stay coupled
-
-The editor parses Mermaid source into a live preview and exposes visual drag interactions without redefining the result as an opaque canvas file. Changes must return to valid Mermaid syntax. Generation, syntax repair, and enhancement therefore operate on a portable code artifact that can leave the application.
-
-## Local and remote inference are product choices
-
-The source contains several inference routes: browser-side WebGPU models, Ollama, OpenAI-compatible endpoints, and cloud providers. This is more than a provider dropdown because the local paths change where diagram context is processed. The application still validates generated Mermaid before treating it as usable design state.
-
-## History is bounded and local
-
-Local storage holds the working state and a bounded history of roughly 50 versions. That supports quick recovery but is not equivalent to a collaborative repository or server-side audit log. Exported Mermaid remains the most durable and interoperable artifact.
-
-## Pinned evidence
-
-- Repository: [CatFoxVoyager/MermaidStudio](https://github.com/CatFoxVoyager/MermaidStudio)
-- Inspected tree: [`e527d8efc164a6b972c62584342091e32aeea1ac`](https://github.com/CatFoxVoyager/MermaidStudio/tree/e527d8efc164a6b972c62584342091e32aeea1ac)
-- Immutable revision: [commit `e527d8e`](https://github.com/CatFoxVoyager/MermaidStudio/commit/e527d8efc164a6b972c62584342091e32aeea1ac)
+- 定义：源码视觉创作（+委托式创作、原生制品创作、运行时纠正、变体决策、端到端交付）
+- 实现：源码权威·实时投射（+候选隔离与晋升、原生图形权威、设计-代码物化）
+- 形态：code-native-visual-ide · 层次：开源项目 · 生命周期：active · 证据深度：source

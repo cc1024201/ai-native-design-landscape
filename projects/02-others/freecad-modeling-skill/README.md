@@ -1,16 +1,7 @@
 # FreeCAD Modeling Skill
 
-> Research status: **Architecture-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-FreeCAD Modeling Skill gives an agent a reproducible route from a natural-language part request to FreeCAD Python source, headless execution, native and exchange files, validation and visual inspection. It uses FreeCAD as an engineering runtime rather than treating a generated mesh as the only result.
-
-## Source, native model and exchange file remain distinguishable
-
-The Python script captures construction logic; `FreeCADCmd` materializes an FCStd document and STEP export; validation checks shape and file properties; CAD Explorer supplies the review projection. A failure at any later stage returns to source or export repair without erasing which artifact was authoritative.
-
-The public repository exposes the operating contract and validation guidance but not a comparably deep standalone runtime implementation, so this dossier stops at architecture-level evidence.
-
-- [Pinned repository](https://github.com/ranranjiang666/freecad-modeling/tree/4fb2a03345a0a2723f430b6f74a44786ff152dbe)
-- [Agent skill](https://github.com/ranranjiang666/freecad-modeling/blob/4fb2a03345a0a2723f430b6f74a44786ff152dbe/SKILL.md)
-- [Export and validation contract](https://github.com/ranranjiang666/freecad-modeling/blob/4fb2a03345a0a2723f430b6f74a44786ff152dbe/references/export-and-validation.md)
-- [Maintainer profile checked; no location published](https://github.com/ranranjiang666)
+- 定义：约束驱动工程（+原生制品创作、运行时纠正、端到端交付）
+- 实现：参数化工程模型权威（+文件系统 agent·视觉证据）
+- 形态：ai-engineering-design-workspace · 层次：agent 工作流 · 生命周期：active · 证据深度：architecture

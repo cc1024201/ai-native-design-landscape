@@ -1,23 +1,7 @@
 # LZBot 5000
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-LZBot 5000 is counted for a file-producing architecture workflow, not for a proprietary canvas. It coordinates specialized agents and MCP tools to turn a request into an inspectable bundle of architecture evidence.
-
-## The deliverable is a bundle
-
-The workflow produces source-controlled documents and diagrams rather than hiding the answer in chat. Architecture descriptions, decisions, and visual evidence can be reviewed as files. Their usefulness comes from being diffable and reusable by later agents or humans.
-
-## Orchestration is the implementation
-
-AWS Strands-style agents divide research, architecture, and artifact-production responsibilities. MCP provides external tool edges. The control plane is therefore the agent graph and its file contracts, while Mermaid or other visuals are one output type within a larger governed deliverable.
-
-## Authority and limits
-
-The filesystem is the durable handoff surface; a rendered diagram is derived evidence. The repository demonstrates orchestration and artifact assembly, but it does not prove that recommendations match a live estate or that produced architecture has passed organizational review.
-
-## Pinned evidence
-
-- Repository: [chungos/lzbot-5000](https://github.com/chungos/lzbot-5000)
-- Inspected workflow source: [`f3bfdf5e938b0a437fc67575cc6955c8cc27de39`](https://github.com/chungos/lzbot-5000/tree/f3bfdf5e938b0a437fc67575cc6955c8cc27de39)
-- Immutable revision: [commit `f3bfdf5`](https://github.com/chungos/lzbot-5000/commit/f3bfdf5e938b0a437fc67575cc6955c8cc27de39)
+- 定义：系统治理（+委托式创作、端到端交付、视觉协调证据）
+- 实现：文件系统 agent·视觉证据（+设计-代码物化、托管生成制品工作区、运行时意图中继）
+- 形态：general-agent-visual-tools · 层次：开源项目 · 生命周期：active · 证据深度：source

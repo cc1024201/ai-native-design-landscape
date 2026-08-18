@@ -1,19 +1,7 @@
 # AI Website Generator by Shaxxshankari
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-This generator accepts three grounding modes—plain brief, reference screenshot and Figma-derived context—but converges all of them on website source before preview and deployment.
-
-## Input adapters do not own the artifact
-
-[`figmaMCP.js`](https://github.com/Shaxxshankari/ai_website_generator_gs/blob/7298bfd0eba3ea9df58fa3bb1592a68a05adb479/figmaMCP.js) extracts design context for the Figma path. [`groqGenerate.js`](https://github.com/Shaxxshankari/ai_website_generator_gs/blob/7298bfd0eba3ea9df58fa3bb1592a68a05adb479/groqGenerate.js) turns the selected context into generated website code. The screenshot or Figma source grounds generation but does not remain the editable authority.
-
-## Browser review precedes release
-
-[`index.html`](https://github.com/Shaxxshankari/ai_website_generator_gs/blob/7298bfd0eba3ea9df58fa3bb1592a68a05adb479/public/index.html) exposes mode selection, result and preview controls. [`netlifyDeploy.js`](https://github.com/Shaxxshankari/ai_website_generator_gs/blob/7298bfd0eba3ea9df58fa3bb1592a68a05adb479/netlifyDeploy.js) moves accepted source into Netlify delivery.
-
-## Pinned evidence
-
-- [Canonical repository](https://github.com/Shaxxshankari/ai_website_generator_gs)
-- [Inspected tree](https://github.com/Shaxxshankari/ai_website_generator_gs/tree/7298bfd0eba3ea9df58fa3bb1592a68a05adb479)
-- Commit: `7298bfd0eba3ea9df58fa3bb1592a68a05adb479`
+- 定义：端到端交付（+委托式创作、源码视觉创作、设计-代码翻译、运行时纠正）
+- 实现：源码权威·实时投射（+设计-代码物化、托管应用项目图）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active · 证据深度：source

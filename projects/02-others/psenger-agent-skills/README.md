@@ -1,15 +1,7 @@
 # Philip Senger AI Agent Skills
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-This production-oriented skill collection enters the map through its Design Critique workflow. The skill inspects a supplied interface or design scope, applies a repeatable review structure and writes prioritized findings rather than offering unscoped aesthetic advice.
-
-## One review surface inside a broader collection
-
-The Design operation is independently invokable but distributed and versioned with the repository's other engineering skills. It is therefore one product record, not a separate record for every skill. The review artifact coordinates later work; target source or design files retain mutation authority.
-
-No independent renderer or design canvas is established by the checked source, so the evidence supports review and governance rather than native visual authoring.
-
-- [Pinned repository](https://github.com/psenger/ai-agent-skills/tree/96716a643138665b4e335f836fb661f126944644)
-- [Design Critique skill](https://github.com/psenger/ai-agent-skills/blob/96716a643138665b4e335f836fb661f126944644/skills/design-critique/SKILL.md)
-- [Maintainer profile: Sydney Australia](https://github.com/psenger)
+- 定义：视觉协调证据（+系统治理）
+- 实现：文件系统 agent·视觉证据（+运行时意图中继）
+- 形态：visual-decision-verification-workspace · 层次：agent 工作流 · 生命周期：active · 证据深度：source

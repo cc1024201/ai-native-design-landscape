@@ -1,19 +1,7 @@
 # PagePilot
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-PagePilot is a deliberately small Indonesian landing-page workshop. Its important choice is that the model creates a typed content graph; a deterministic renderer owns layout and export.
-
-## The model fills a bounded schema
-
-[`generate/route.ts`](https://github.com/galpratama/ai-landing-page-builder/blob/8f83e3556d01ba993e4dac62e551fda6a9a7644b/src/app/api/generate/route.ts) asks OpenRouter for an object containing eyebrow, headline, description, CTA, and three distinct features. Invalid or unavailable model output falls back transparently to a local deterministic draft.
-
-## Projection and export share the graph
-
-[`page.tsx`](https://github.com/galpratama/ai-landing-page-builder/blob/8f83e3556d01ba993e4dac62e551fda6a9a7644b/src/app/page.tsx) renders the current `SiteDraft` as a responsive preview and interpolates the same fields into a standalone HTML document. This makes delivery reproducible, although arbitrary layout editing and durable projects are outside the current product.
-
-## Pinned evidence
-
-- [Repository](https://github.com/galpratama/ai-landing-page-builder)
-- [Inspected tree](https://github.com/galpratama/ai-landing-page-builder/tree/8f83e3556d01ba993e4dac62e551fda6a9a7644b)
-- Commit: `8f83e3556d01ba993e4dac62e551fda6a9a7644b`
+- 定义：委托式创作（+源码视觉创作、端到端交付）
+- 实现：原生图形权威（+设计-代码物化）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active · 证据深度：source

@@ -1,23 +1,7 @@
 # Dafty
 
-> Research status: **Architecture-level** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-| Field | Value |
-|---|---|
-| Team | Dafty · team region not established |
-| Product truth | brand-aware social campaign workspace rather than the presentation agent suggested by discovery text |
-| Authority | saved brand studio assets and campaign context |
-| Lifecycle | active |
-
-## Brand extraction creates the governing state
-
-Dafty begins from a website or user-supplied styles and extracts logo colors typography visual style and brand feel into a studio. That retained context governs generated posts ads carousels product graphics images videos reels and campaign variants. Assets remain managed together rather than being independent model responses.
-
-The site describes direct visual editing sketch-based direction a repeatable graphics pipeline and publication. The working unit is therefore a brand project spanning several deliverables. A final social image or video is a promoted asset; the brand memory and library remain available for the next campaign.
-
-First-party evidence does not reveal whether brand extraction yields explicit tokens embeddings references or prompts. Nor does it define an object-level editor schema version history or the APIs behind publishing. Claims about professional consistency are positioning rather than technical proof.
-
-## Primary evidence
-
-- [Dafty brand-to-campaign workflow](https://www.dafty.ai/)
-- [Dafty application studio](https://app.dafty.ai/)
+- 定义：系统治理（+委托式创作、原生制品创作、变体决策、端到端交付）
+- 实现：托管应用项目图（+候选隔离与晋升、托管生成制品工作区）
+- 形态：established-visual-platform · 层次：商业产品 · 生命周期：active · 证据深度：architecture

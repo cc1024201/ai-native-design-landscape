@@ -1,25 +1,7 @@
 # Product Diagram Copilot
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Product Diagram Copilot is a diagram-specification service with desktop and web delivery paths. It can use Ollama or an OpenAI-compatible endpoint without tying artifact ownership to either provider.
-
-## Generated specification is retained
-
-At [`9e7ebae1`](https://github.com/TUARAN/ProductDiagramCopilot/tree/9e7ebae1a20b761d8ee7ccd69ba4875286a83f31), prompts produce typed diagram data through a generator service. Mermaid and draw.io are separate renderers of that specification rather than model-native outputs with unrelated semantics.
-
-## Application state extends beyond the chat
-
-Artifact records live in the database and larger objects can be placed in MinIO. Celery jobs separate generation from the UI; Vue and Tauri provide browser and desktop shells. The artifact has identity and storage independent of one inference request.
-
-## Technical boundary
-
-Mermaid is primarily a source projection while draw.io provides the stronger downstream manual-editing handoff. The current evidence does not establish bidirectional synchronization from draw.io back into the stored specification.
-
-## Evidence
-
-- [Pinned repository](https://github.com/TUARAN/ProductDiagramCopilot/tree/9e7ebae1a20b761d8ee7ccd69ba4875286a83f31)
-- [Diagram specification](https://github.com/TUARAN/ProductDiagramCopilot/blob/9e7ebae1a20b761d8ee7ccd69ba4875286a83f31/backend/app/generator/spec.py)
-- [Generation service](https://github.com/TUARAN/ProductDiagramCopilot/blob/9e7ebae1a20b761d8ee7ccd69ba4875286a83f31/backend/app/generator/service.py)
-- [Artifact model](https://github.com/TUARAN/ProductDiagramCopilot/blob/9e7ebae1a20b761d8ee7ccd69ba4875286a83f31/backend/app/models/artifact.py)
-- [Storage boundary](https://github.com/TUARAN/ProductDiagramCopilot/blob/9e7ebae1a20b761d8ee7ccd69ba4875286a83f31/backend/app/core/storage.py)
+- 定义：委托式创作（+源码视觉创作、原生制品创作、端到端交付）
+- 实现：托管应用项目图（+源码权威·实时投射、设计-代码物化、原生图形权威）
+- 形态：standalone-design-agent · 层次：开源项目 · 生命周期：active · 证据深度：source

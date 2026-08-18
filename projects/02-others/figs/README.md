@@ -1,23 +1,7 @@
 # FIGS
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-FIGS is a pre-alpha workspace for turning source material into a governed knowledge schema, inspecting that schema as a graph, and testing it through retrieval and Cypher queries.
-
-## Provenance precedes visualization
-
-Ingested sources are tracked before entities and relations become graph material. The editor therefore represents an ontology and its evidence lineage—not merely boxes copied from an LLM answer. Users can alter schema structure while retaining a route back to source-bearing content.
-
-## The graph has two interrogation paths
-
-GraphRAG lets a user explore knowledge through model-assisted retrieval, while the Cypher playground exposes direct graph queries. The visual schema, stored graph, and query results provide different views on the same modeled domain. That combination makes FIGS closer to a schema laboratory than a general whiteboard.
-
-## Pre-alpha claims are separated from code
-
-The inspected Next.js and graph-database source includes OpenAI AI SDK integration and the current graph surfaces. MCP support is described as a future direction and is not counted as an implemented agent interface. Production hardening, migration stability, and collaborative governance also remain unproven at this stage.
-
-## Pinned evidence
-
-- Repository: [zhileiz/figs](https://github.com/zhileiz/figs)
-- Inspected application source: [`f6470c39db1c8a35352cc047f1acb66de75d6d61`](https://github.com/zhileiz/figs/tree/f6470c39db1c8a35352cc047f1acb66de75d6d61)
-- Immutable revision: [commit `f6470c3`](https://github.com/zhileiz/figs/commit/f6470c39db1c8a35352cc047f1acb66de75d6d61)
+- 定义：系统治理（+原生制品创作、视觉协调证据、约束驱动工程）
+- 实现：原生图形权威（+托管应用项目图、候选隔离与晋升）
+- 形态：visual-decision-verification-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

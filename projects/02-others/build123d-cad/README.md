@@ -1,16 +1,7 @@
 # build123d-cad
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-build123d-cad is a hardware-design skill suite spanning mechanical CAD, electronics, PCB and circuit work, URDF, simulation, FEA, gait and actuator analysis, manufacturing preparation and printer handoff. Shared schemas and handoff protocols let specialist modules contribute to one physical-system design without pretending that they share one native file format.
-
-## Typed handoffs connect several engineering authorities
-
-Parametric CAD source and exported solids own geometry; electronics and simulation tools own their domain files; a design-score schema and module handoffs record requirements, assumptions and checks across boundaries. Preview artifacts support inspection, while physical actions such as printing remain separately gated from generation and validation.
-
-The product boundary is the maintained integration protocol and specialist skill graph. Individual skills are not counted as separate teams because they are designed as modules of this one hardware super-suite.
-
-- [Pinned repository](https://github.com/baibai2013/build123d-cad/tree/6567fa96a8741fdad09a557c4f96e5c76b8a6c97)
-- [Top-level skill router](https://github.com/baibai2013/build123d-cad/blob/6567fa96a8741fdad09a557c4f96e5c76b8a6c97/SKILL.md)
-- [Shared handoff protocol](https://github.com/baibai2013/build123d-cad/blob/6567fa96a8741fdad09a557c4f96e5c76b8a6c97/shared/handoff-protocols.md)
-- [Maintainer profile checked; no location published](https://github.com/baibai2013)
+- 定义：约束驱动工程（+系统治理、运行时纠正、端到端交付、原生制品创作）
+- 实现：参数化工程模型权威（+文件系统 agent·视觉证据）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

@@ -1,24 +1,7 @@
 # Kittl
 
-> Research status: **Architecture-level** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-| Field | Value |
-|---|---|
-| Team | Kittl · team region audit pending |
-| Ordinary job | delegate a complete creative task then continue refining graphic print brand merchandise or motion work in the editor |
-| Authority | Kittl project canvas with editable visual objects |
-| Lifecycle | active |
-
-## Agentic work lands inside an established editor
-
-Kittl combines an agentic AI surface for complete design tasks with image vector and video generation. The result continues into an infinite collaborative canvas rather than ending at a model download. The editor also provides typography effects vectorization mockups templates asset libraries and real-time collaboration across branding print merchandise and social outputs.
-
-The product contains multiple artifact classes. Generated raster media remains image-level unless vectorized. AI vector generation produces editable artwork; type and layout elements are canvas objects; motion adds a time-based delivery layer. These should not be collapsed into one universal graph merely because they share a workspace.
-
-Brand and reusable-template context constrain later work but public pages do not expose a token schema agent tool interface version model or how vector and motion state are serialized. The implementation is closed and the current evidence supports architecture depth only.
-
-## Primary evidence
-
-- [Kittl AI-first design platform and editor](https://www.kittl.com/)
-- [Kittl agentic AI surface](https://www.kittl.com/features/agentic-ai)
-- [Kittl infinite canvas](https://www.kittl.com/features/infinite-canvas)
+- 定义：原生制品创作（+委托式创作、系统治理、变体决策、端到端交付）
+- 实现：原生图形权威（+候选隔离与晋升、托管应用项目图）
+- 形态：established-visual-platform · 层次：商业产品 · 生命周期：active · 证据深度：architecture

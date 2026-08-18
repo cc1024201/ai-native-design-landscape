@@ -1,27 +1,7 @@
 # TaskStream
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-TaskStream is a full-stack visual AI workflow system whose stored React Flow graph reaches a queued backend executor. The source also contains assistant-like UI that is rule-based; this dossier separates that presentation from the real runtime.
-
-## The versioned graph is authoritative
-
-[workflow.py](https://github.com/jason-jz-zhu/TaskStream/blob/f56918d618aef202513228049202add67478ee22/backend/app/models/workflow.py) stores nodes and edges as workflow JSON, validates acyclicity and retains separate `WorkflowVersion` snapshots. Publication and organization scope live on the same record.
-
-## Runs consume the saved topology
-
-[executor.py](https://github.com/jason-jz-zhu/TaskStream/blob/f56918d618aef202513228049202add67478ee22/backend/app/tasks/executor.py) builds a topological order, passes connected upstream output into registered node executors and writes per-node status, inputs, output, retries and provider metadata. Celery queues the run; OpenAI, Anthropic, Mistral and Ollama adapters implement LLM nodes.
-
-## “AI assistant” is not the prompt-to-graph evidence
-
-[WorkflowAssistant.tsx](https://github.com/jason-jz-zhu/TaskStream/blob/f56918d618aef202513228049202add67478ee22/frontend/src/components/workflow/WorkflowAssistant.tsx) returns hard-coded suggestions. The generate page similarly uses keyword rules. TaskStream qualifies through editable graph execution and versioning, not through those simulated authoring claims.
-
-## Delivery and inspection
-
-Manual, webhook, schedule and API triggers create durable runs, and the run routes expose logs as they progress. That makes the ordinary loop edit → save/version → publish/trigger → inspect, with a clear backend authority.
-
-## Pinned evidence
-
-- [Repository](https://github.com/jason-jz-zhu/TaskStream)
-- [Inspected tree](https://github.com/jason-jz-zhu/TaskStream/tree/f56918d618aef202513228049202add67478ee22)
-- [Run records](https://github.com/jason-jz-zhu/TaskStream/blob/f56918d618aef202513228049202add67478ee22/backend/app/models/run.py)
+- 定义：源码视觉创作（+原生制品创作、运行时纠正、系统治理、端到端交付）
+- 实现：原生图形权威（+托管应用项目图、运行时意图中继）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

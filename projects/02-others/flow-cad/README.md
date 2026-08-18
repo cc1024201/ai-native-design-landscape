@@ -1,16 +1,7 @@
 # Flow CAD
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Flow CAD is a reusable project-local CAD workbench for agents and humans. A `flow` CLI creates models, review bundles and exports while repository instructions define where geometry, reports, cache state and viewer evidence belong.
-
-## STEP-first authority is explicit
-
-Parametric source and STEP preserve engineering intent. Derived meshes feed a local viewer, but a geometry-authority module prevents the projection from silently becoming the canonical model. Export bundles and review reports record what source produced each deliverable, and cached views can be invalidated when authority changes.
-
-This structure makes a CAD task reviewable across sessions: another agent can inspect the same source, regenerate evidence and distinguish a stale render from the accepted model instead of relying on conversational memory.
-
-- [Pinned repository](https://github.com/gnulnx/flow-cad/tree/bb2e28596433e458d40ff96c75f468f466cc5a16)
-- [Project skill](https://github.com/gnulnx/flow-cad/blob/bb2e28596433e458d40ff96c75f468f466cc5a16/skills/flow-cad-project/SKILL.md)
-- [Geometry-authority implementation](https://github.com/gnulnx/flow-cad/blob/bb2e28596433e458d40ff96c75f468f466cc5a16/src/flow_cad/viewer/geometry_authority.py)
-- [Maintainer location evidence](https://github.com/gnulnx)
+- 定义：约束驱动工程（+运行时纠正、视觉协调证据、端到端交付）
+- 实现：参数化工程模型权威（+文件系统 agent·视觉证据）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

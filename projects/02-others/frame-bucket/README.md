@@ -1,23 +1,7 @@
 # Frame Bucket
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Frame Bucket reverses the usual blank-prompt workflow. A human-authored design taxonomy constrains recommendation; the user assembles a recipe; then Anthropic generates an archived HTML artifact whose design contract and page lineage support later work.
-
-## Recommendation does not own the final decision
-
-[`recommend/route.ts`](https://github.com/mckechniep/frame-bucket/blob/32149cd6966968c297814e74589a5d23953ebc5d/src/app/api/recommend/route.ts) maps a brief to catalog options. The user can alter that recipe before generation, preserving an explicit decision boundary between model advice and artifact creation.
-
-## Generation preserves source and rendered output
-
-[`generate/route.ts`](https://github.com/mckechniep/frame-bucket/blob/32149cd6966968c297814e74589a5d23953ebc5d/src/app/api/generate/route.ts) validates the recipe, streams Anthropic HTML, retains pre-injection `htmlSource`, injects image assets, saves the archive, and creates a site/page row referencing it.
-
-## Iteration creates lineage rather than overwrite
-
-[`iterate/route.ts`](https://github.com/mckechniep/frame-bucket/blob/32149cd6966968c297814e74589a5d23953ebc5d/src/app/api/iterate/route.ts) derives a new artifact from a current one. [`site/[siteId]/page/route.ts`](https://github.com/mckechniep/frame-bucket/blob/32149cd6966968c297814e74589a5d23953ebc5d/src/app/api/site/%5BsiteId%5D/page/route.ts) derives a design contract from the landing artifact before generating coherent subpages and deliberately retains artifacts when page links are removed.
-
-## Pinned evidence
-
-- [Repository](https://github.com/mckechniep/frame-bucket)
-- [Inspected tree](https://github.com/mckechniep/frame-bucket/tree/32149cd6966968c297814e74589a5d23953ebc5d)
-- Commit: `32149cd6966968c297814e74589a5d23953ebc5d`
+- 定义：原生制品创作（+委托式创作、系统治理、变体决策、运行时纠正、端到端交付）
+- 实现：原生图形权威（+托管生成制品工作区、候选隔离与晋升）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active · 证据深度：source

@@ -1,17 +1,7 @@
 # Comfy In-App Agent
 
-> Research status: **Architecture-level** · Lifecycle: **active-transition** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Comfy In-App Agent is a private-alpha chat experience inside Comfy Cloud. Unlike external MCP clients it is co-located with the native node canvas: a user prompts in the app and watches the agent build or edit the visible workflow graph.
-
-## The current evidence is narrow but decisive
-
-The [first-party alpha page](https://docs.comfy.org/agent-tools/in-app-agent) confirms both mutation verbs—build and edit—and identifies the graph as the target. The [Agent Tools comparison](https://docs.comfy.org/agent-tools) distinguishes it from the cloud and local MCP connections by client ownership setup GPU location and visual review: the in-app product needs no separate agent client and is intended for users who want to see the canvas and check workflows visually.
-
-This is enough to establish a distinct interaction model but not enough to infer prompt planning permissions history semantics or implementation details. Those remain unknown until public access or deeper documentation appears. ComfyUI's saved graph is still the artifact authority; the record counts the agent surface rather than duplicating the host.
-
-## Evidence
-
-- [Comfy In-App Agent private alpha](https://docs.comfy.org/agent-tools/in-app-agent)
-- [Official Agent Tools overview](https://docs.comfy.org/agent-tools)
-- [Related Comfy MCP contract](https://docs.comfy.org/agent-tools/mcp)
+- 定义：原生制品创作（+委托式创作、运行时纠正、视觉协调证据、变体决策）
+- 实现：原生图形权威（+托管应用项目图、候选隔离与晋升）
+- 形态：agent-platform-design-surface · 层次：商业产品 · 生命周期：active-transition · 证据深度：architecture

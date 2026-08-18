@@ -1,28 +1,7 @@
 # OpenPage
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-OpenPage is a JSON-first website builder in which agent generation and human editing operate on the same typed document. This avoids treating generated React source or a rendered DOM as the only recoverable state.
-
-## SiteConfig is the shared authority
-
-[`generate-site.ts`](https://github.com/buildingopen/openpage/blob/9818eb43a88e01b23cb55752e19902d8285a853b/src/lib/generate-site.ts) accepts Gemini or server output only after block, variant and theme validation; a deterministic template is an explicit fallback. The editor reorders blocks, edits properties, switches variants and themes, and exposes the JSON directly. The renderer resolves each registered block from that same config.
-
-```text
-prompt -> validated SiteConfig JSON -> block renderer
-        -> layers/properties/drag edit -> new JSON snapshot
-        -> history restore / local project persistence
-        -> standalone HTML export or deployment
-```
-
-[`projectsStore.ts`](https://github.com/buildingopen/openpage/blob/9818eb43a88e01b23cb55752e19902d8285a853b/src/store/projectsStore.ts) persists projects locally. Version history keeps configuration snapshots, while [`export-html.ts`](https://github.com/buildingopen/openpage/blob/9818eb43a88e01b23cb55752e19902d8285a853b/src/lib/export-html.ts) materializes a zero-runtime HTML document. Exported HTML is portable delivery, but roundtripping edits from that HTML into JSON is not part of the source contract.
-
-The project is MIT-licensed. The organization profile reports Germany.
-
-## Sources
-
-- [Pinned repository](https://github.com/buildingopen/openpage/tree/9818eb43a88e01b23cb55752e19902d8285a853b)
-- [Site types](https://github.com/buildingopen/openpage/blob/9818eb43a88e01b23cb55752e19902d8285a853b/src/blocks/types.ts)
-- [Version history UI](https://github.com/buildingopen/openpage/blob/9818eb43a88e01b23cb55752e19902d8285a853b/src/editor/VersionHistory.tsx)
-- [Deploy security tests](https://github.com/buildingopen/openpage/blob/9818eb43a88e01b23cb55752e19902d8285a853b/tests/deploy-security.test.ts)
-- [MIT license](https://github.com/buildingopen/openpage/blob/9818eb43a88e01b23cb55752e19902d8285a853b/LICENSE)
+- 定义：原生制品创作（+委托式创作、运行时纠正、端到端交付）
+- 实现：原生图形权威（+托管应用项目图、源码权威·实时投射、设计-代码物化）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active · 证据深度：source

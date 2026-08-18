@@ -1,17 +1,7 @@
 # DCC-MCP Blender
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-DCC-MCP Blender is the Blender host adapter in the wider DCC-MCP ecosystem. It embeds a Streamable HTTP server in Blender and exposes typed, progressively loadable skills across scene assembly, mesh/UV work, rigging, materials, node graphs, physics, rendering and interchange.
-
-## Typed capabilities replace unrestricted host scripting
-
-[`_capability_manifest.py`](https://github.com/dcc-mcp/dcc-mcp-blender/blob/1f1dacc54c1bb9fa0f8b347f345437f59c23e40d/src/dcc_mcp_blender/_capability_manifest.py) declares the available surface; host dispatchers serialize calls into Blender's UI thread. [`context_snapshot.py`](https://github.com/dcc-mcp/dcc-mcp-blender/blob/1f1dacc54c1bb9fa0f8b347f345437f59c23e40d/src/dcc_mcp_blender/context_snapshot.py) gives agents bounded scene context, while render-job and readiness modules keep long operations inspectable.
-
-The live scene and `.blend` file remain authoritative. This adapter is counted independently from the shared DCC-MCP core because it has its own installable release, Blender extension, tested host dispatcher and artifact-specific tool graph.
-
-## Evidence
-
-- [Pinned repository](https://github.com/dcc-mcp/dcc-mcp-blender/tree/1f1dacc54c1bb9fa0f8b347f345437f59c23e40d)
-- [Scene operations](https://github.com/dcc-mcp/dcc-mcp-blender/blob/1f1dacc54c1bb9fa0f8b347f345437f59c23e40d/src/dcc_mcp_blender/_scene_ops.py)
-- [Blender setup skill](https://github.com/dcc-mcp/dcc-mcp-blender/blob/1f1dacc54c1bb9fa0f8b347f345437f59c23e40d/skills/dcc-mcp-blender-setup/SKILL.md)
+- 定义：原生制品创作（+委托式创作、端到端交付）
+- 实现：外部 agent 画布（+原生图形权威）
+- 形态：agent-controllable-canvas · 层次：连接桥 · 生命周期：active · 证据深度：source

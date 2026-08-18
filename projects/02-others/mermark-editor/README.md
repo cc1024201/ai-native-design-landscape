@@ -1,26 +1,7 @@
 # MerMark Editor
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-MerMark Editor is a desktop Markdown workspace where Claude, Codex, Ollama and OpenAI-compatible providers can propose direct document changes. Mermaid diagrams participate in the same guarded source-editing lifecycle.
-
-## Per-document access maps constrain the agent
-
-At commit [`8970487e`](https://github.com/Vesperino/MerMarkEditor/tree/8970487e375e1940a68ee20b0d99c2d398765a3e), the Tauri backend builds an access map for each session and exposes file tools through provider adapters. The model does not receive unrestricted filesystem authority by default.
-
-## Proposal and recovery surround mutation
-
-AI edits become previewable proposals with explicit Apply or Discard. Snapshots and temporary recovery records protect the pre-change document, while atomic-save tests cover the final filesystem boundary.
-
-## Mermaid-aware targeting
-
-The editor parses Mermaid blocks into dedicated nodes and can pin the corresponding source as AI context. Accepted edits serialize back to Markdown attributes and source; the preview is not a parallel hidden artifact.
-
-## Evidence
-
-- [Pinned source](https://github.com/Vesperino/MerMarkEditor/tree/8970487e375e1940a68ee20b0d99c2d398765a3e)
-- [AI access map](https://github.com/Vesperino/MerMarkEditor/blob/8970487e375e1940a68ee20b0d99c2d398765a3e/src-tauri/src/ai/access_map.rs)
-- [Snapshot lifecycle](https://github.com/Vesperino/MerMarkEditor/blob/8970487e375e1940a68ee20b0d99c2d398765a3e/src-tauri/src/ai/snapshots.rs)
-- [AI panel](https://github.com/Vesperino/MerMarkEditor/blob/8970487e375e1940a68ee20b0d99c2d398765a3e/src/components/ai/AiPanel.vue)
-- [Mermaid extension](https://github.com/Vesperino/MerMarkEditor/blob/8970487e375e1940a68ee20b0d99c2d398765a3e/src/extensions/MermaidExtension.ts)
-- [Targeting tests](https://github.com/Vesperino/MerMarkEditor/blob/8970487e375e1940a68ee20b0d99c2d398765a3e/src/__tests__/composables/useAiMermaidTarget.test.ts)
+- 定义：源码视觉创作（+委托式创作、运行时纠正、变体决策、端到端交付）
+- 实现：源码权威·实时投射（+文件系统 agent·视觉证据、候选隔离与晋升、设计-代码物化）
+- 形态：code-native-visual-ide · 层次：开源项目 · 生命周期：active · 证据深度：source

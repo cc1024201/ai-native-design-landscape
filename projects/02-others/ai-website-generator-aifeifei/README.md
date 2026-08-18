@@ -1,17 +1,7 @@
 # AI Website Generator by aifeifei798
 
-> Research status: **Source-level** · Lifecycle: **active-transition** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-This command-line builder uses a plan-driven pipeline to keep independently generated sections visually coherent. A design document is not explanatory collateral; it becomes input to later CSS and template calls.
-
-## Staged authority
-
-[`generator.py`](https://github.com/aifeifei798/AI-Website-Generator/blob/84e291bd6a30e634ccf46529599234f730459c56/ai/generator.py) asks Gemini separately for the master plan, design document, CSS and section templates. [`prompts.py`](https://github.com/aifeifei798/AI-Website-Generator/blob/84e291bd6a30e634ccf46529599234f730459c56/ai/prompts.py) carries rules from planning into those specialized roles.
-
-[`builder.py`](https://github.com/aifeifei798/AI-Website-Generator/blob/84e291bd6a30e634ccf46529599234f730459c56/builder.py) writes the plan and design records, assembles templates and materializes a website directory. [`main.py`](https://github.com/aifeifei798/AI-Website-Generator/blob/84e291bd6a30e634ccf46529599234f730459c56/main.py) accepts the user brief. Image generation remains a mock at this commit and is not counted as a working capability.
-
-## Pinned evidence
-
-- [Canonical repository](https://github.com/aifeifei798/AI-Website-Generator)
-- [Inspected tree](https://github.com/aifeifei798/AI-Website-Generator/tree/84e291bd6a30e634ccf46529599234f730459c56)
-- Commit: `84e291bd6a30e634ccf46529599234f730459c56`
+- 定义：端到端交付（+委托式创作、源码视觉创作、系统治理）
+- 实现：设计-代码物化（+文件系统 agent·视觉证据、托管应用项目图）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active-transition · 证据深度：source

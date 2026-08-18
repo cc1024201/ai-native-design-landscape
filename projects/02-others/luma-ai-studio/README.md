@@ -1,23 +1,7 @@
 # LUMA AI Studio
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-LUMA exposes a file-manipulating LangGraph agent rather than asking a model for one opaque project blob. SQL-backed project state and tool-mediated edits make the agent interface the central implementation fact.
-
-## Gemini reasons through explicit workspace tools
-
-[agent.py](https://github.com/kreeshal17/LUMA-AI-STUDIO/blob/7435a9b04ad816092fa40512dfde6a65a3fbc0cd/backend/agent.py) builds a LangGraph ReAct loop around Gemini. [tools.py](https://github.com/kreeshal17/LUMA-AI-STUDIO/blob/7435a9b04ad816092fa40512dfde6a65a3fbc0cd/backend/tools.py) exposes bounded read write edit and list operations so the model mutates a named project graph.
-
-## SQL retains the project outside the model context
-
-[db.py](https://github.com/kreeshal17/LUMA-AI-STUDIO/blob/7435a9b04ad816092fa40512dfde6a65a3fbc0cd/backend/db.py) defines durable users projects files and related state. Model context can be reconstructed from this authority rather than serving as the only copy.
-
-## Preview export and GitHub consume stored files
-
-[main.py](https://github.com/kreeshal17/LUMA-AI-STUDIO/blob/7435a9b04ad816092fa40512dfde6a65a3fbc0cd/backend/main.py) exposes generation file and export operations while [github.py](https://github.com/kreeshal17/LUMA-AI-STUDIO/blob/7435a9b04ad816092fa40512dfde6a65a3fbc0cd/backend/github.py) publishes the project through GitHub. The frontend uses Sandpack for runtime proof. No complete version graph was established in the inspected schema.
-
-## Evidence
-
-- [Canonical repository](https://github.com/kreeshal17/LUMA-AI-STUDIO)
-- [Inspected tree](https://github.com/kreeshal17/LUMA-AI-STUDIO/tree/7435a9b04ad816092fa40512dfde6a65a3fbc0cd)
-- Commit: 7435a9b04ad816092fa40512dfde6a65a3fbc0cd
+- 定义：原生制品创作（+委托式创作、源码视觉创作、运行时纠正、端到端交付）
+- 实现：托管应用项目图（+文件系统 agent·视觉证据、源码权威·实时投射）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active · 证据深度：source

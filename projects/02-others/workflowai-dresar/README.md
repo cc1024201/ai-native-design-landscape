@@ -1,23 +1,7 @@
 # WorkflowAI by Dresar
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-WorkflowAI is an Indonesian planning workspace that turns a software idea into a coordinated implementation specification for a downstream coding agent.
-
-## The canvas is a specification system
-
-A guided interview and PRD feed generated flowcharts, user journeys, database models, technology choices, and task structures. These canvases coordinate product intent; they are not an automation graph that this application itself executes.
-
-## The final artifact is an agent handoff
-
-The workspace assembles the retained structures into a large JSON and Markdown implementation prompt. That package is designed for another coding agent, making delivery a filesystem specification rather than a deployed application.
-
-## Persistence preserves planning context
-
-Projects, canvas structures, generated documents, and provider settings are stored in the application database. Gemini and Groq can be selected and rotated, but the model does not become the durable source of truth after generation.
-
-## Pinned evidence
-
-- Repository: [dresar/workflowai](https://github.com/dresar/workflowai)
-- Inspected interview and PRD flow, canvas structures, document generation, provider registry, database persistence, and final agent prompt: [`3e937f2cc97dea8128a72e88a9efa58c7c243a79`](https://github.com/dresar/workflowai/tree/3e937f2cc97dea8128a72e88a9efa58c7c243a79)
-- Immutable revision: [commit `3e937f2`](https://github.com/dresar/workflowai/commit/3e937f2cc97dea8128a72e88a9efa58c7c243a79)
+- 定义：视觉协调证据（+委托式创作、系统治理、设计-代码翻译、端到端交付）
+- 实现：托管应用项目图（+设计-代码物化、原生图形权威）
+- 形态：agent-platform-design-surface · 层次：开源项目 · 生命周期：active · 证据深度：source

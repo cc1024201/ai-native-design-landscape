@@ -1,23 +1,7 @@
 # ClaudeKit Marketing
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-ClaudeKit Marketing is a Claude Code kit that defines design as a filesystem-governed production workflow spanning brand systems, logos, corporate identity, banners, slides, icons, social assets, and visual review.
-
-## Files—not a proprietary canvas—carry authority
-
-`docs/brand-guidelines.md` is treated as human-readable brand truth. JSON design tokens and generated CSS synchronize that truth into downstream UI and slide work. HTML, SVG, PPTX, images, and organized asset directories are durable outputs that ordinary editors and review tools can reopen.
-
-## Skills compose a production line
-
-The design entry point routes into specialized brand, design-system, banner, slides, frontend, multimodal, and browser-review skills. Gemini and MiniMax scripts generate or analyze media; HTML/CSS can be rendered and captured at exact dimensions; token validators and asset checks return defects to the workflow. Claude Code orchestrates these steps but the artifact remains inspectable outside the agent session.
-
-## Upstream identity matters
-
-The repository is a single published source tree owned by `Bek85` and authored internally as ClaudeKit Marketing. The later Workshop Design System repackages a subset for GitHub Copilot: 202 of its 282 files match exactly and those matches represent 89.5% of its bytes. This map counts the upstream product once and records Workshop as a derivative duplicate rather than inventing a second team definition.
-
-## Pinned evidence
-
-- Repository: [Bek85/claudekit-marketing](https://github.com/Bek85/claudekit-marketing)
-- Inspected kit and executable scripts: [`d35068e68390fc2bca5d4737fa5dc713e11b00d7`](https://github.com/Bek85/claudekit-marketing/tree/d35068e68390fc2bca5d4737fa5dc713e11b00d7)
-- Immutable revision: [commit `d35068e`](https://github.com/Bek85/claudekit-marketing/commit/d35068e68390fc2bca5d4737fa5dc713e11b00d7)
+- 定义：委托式创作（+原生制品创作、系统治理、设计-代码翻译、变体决策、端到端交付）
+- 实现：文件系统 agent·视觉证据（+设计-代码物化、源码权威·实时投射、候选隔离与晋升）
+- 形态：general-agent-visual-tools · 层次：开源项目 · 生命周期：active · 证据深度：source

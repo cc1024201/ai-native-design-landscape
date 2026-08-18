@@ -1,17 +1,7 @@
 # AI Website Generator by shrik4
 
-> Research status: **Source-level** · Lifecycle: **active-transition** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-This builder exposes OpenAI, Gemini, Anthropic and OpenRouter behind one provider interface, then normalizes their answers into a structured website project rather than rendering raw chat text.
-
-## Provider choice precedes artifact assembly
-
-[`ai-providers.ts`](https://github.com/shrik4/AI-Website-Generator/blob/fabf890bb483a4ed08451099936bc50d13396e7d/server/services/ai-providers.ts) implements provider-specific calls. [`website-generator.ts`](https://github.com/shrik4/AI-Website-Generator/blob/fabf890bb483a4ed08451099936bc50d13396e7d/server/services/website-generator.ts) parses and assembles the common website representation defined with the shared schema.
-
-[`website-preview.tsx`](https://github.com/shrik4/AI-Website-Generator/blob/fabf890bb483a4ed08451099936bc50d13396e7d/client/src/components/website-preview.tsx) renders the generated site while the client offers code and download views. The public project has server storage but not a branch-oriented version graph.
-
-## Source anchors
-
-- [Canonical repository](https://github.com/shrik4/AI-Website-Generator)
-- [Inspected tree](https://github.com/shrik4/AI-Website-Generator/tree/fabf890bb483a4ed08451099936bc50d13396e7d)
-- Commit: `fabf890bb483a4ed08451099936bc50d13396e7d`
+- 定义：端到端交付（+委托式创作、源码视觉创作、运行时纠正、变体决策）
+- 实现：托管应用项目图（+源码权威·实时投射、设计-代码物化）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active-transition · 证据深度：source

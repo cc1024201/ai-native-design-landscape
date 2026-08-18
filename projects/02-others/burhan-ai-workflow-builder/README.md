@@ -1,23 +1,7 @@
-# AI Workflow Builder by Burhan
+# AI Workflow Builder by Burhan086
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-This is a compact Streamlit product that turns one natural-language request into a transient executable pipeline. Its useful distinction is not a general-purpose canvas: the model authors a constrained plan, Graphviz exposes that plan, and the same in-memory object is then executed.
-
-## The artifact is an LLM-produced tool plan
-
-[app.py](https://github.com/burhan086/ai-workflow-builder/blob/ad960ecb4ad8c033bd7a44ebc583ef6ff8a80373/app.py) asks Llama 3.3 for JSON whose steps can only name `github_fetch`, `llm_summarize`, or `send_notification`. `input_from_step` is the dependency contract. The Graphviz view is therefore a projection of executable JSON, not an independently editable diagram.
-
-## Execution stays deliberately narrow
-
-The run button walks the returned step list in order, carries prior output into the next tool, and can make real GitHub, Groq, and webhook calls. There is no durable workflow store, version history, manual graph correction, scheduling, or reusable deployment surface in the inspected commit.
-
-## Why it belongs in the landscape
-
-It represents a distinct product definition: delegated creation of a small automation followed by human inspection and explicit execution. The ordinary loop is prompt → inspect generated DAG → run → read per-step output, with the generated plan disappearing when the Streamlit session is lost.
-
-## Pinned evidence
-
-- [Repository](https://github.com/burhan086/ai-workflow-builder)
-- [Inspected tree](https://github.com/burhan086/ai-workflow-builder/tree/ad960ecb4ad8c033bd7a44ebc583ef6ff8a80373)
-- [Runtime and three tool adapters](https://github.com/burhan086/ai-workflow-builder/blob/ad960ecb4ad8c033bd7a44ebc583ef6ff8a80373/app.py)
+- 定义：委托式创作（+源码视觉创作、约束驱动工程、端到端交付）
+- 实现：原生图形权威（+设计-代码物化、运行时意图中继）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

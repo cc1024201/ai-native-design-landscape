@@ -1,17 +1,7 @@
 # dom-to-pptx
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-dom-to-pptx is both a browser materializer and an agent presentation-engineering skill. It reads computed DOM geometry and style, then reconstructs the page as editable native PowerPoint text, shapes, vectors, images, transitions and animations.
-
-## Browser layout is measured, then rebuilt as a native deck
-
-[`node-exporter.js`](https://github.com/atharva9167j/dom-to-pptx/blob/e103460915f0241f31c65d8e869e778dd38a49f4/src/node-exporter.js) drives the headless export path. The installed [`dom-to-pptx-skill`](https://github.com/atharva9167j/dom-to-pptx/blob/e103460915f0241f31c65d8e869e778dd38a49f4/skills/dom-to-pptx-skill/SKILL.md) constrains source HTML and requires validation; [`pptx-normalizer.js`](https://github.com/atharva9167j/dom-to-pptx/blob/e103460915f0241f31c65d8e869e778dd38a49f4/src/pptx-normalizer.js) regularizes the resulting package.
-
-HTML is the layout-generation authority before export. The `.pptx` becomes a distinct native editing authority after materialization, rather than a screenshot embedded in a slide.
-
-## Evidence
-
-- [Pinned repository](https://github.com/atharva9167j/dom-to-pptx/tree/e103460915f0241f31c65d8e869e778dd38a49f4)
-- [Validation contract](https://github.com/atharva9167j/dom-to-pptx/blob/e103460915f0241f31c65d8e869e778dd38a49f4/skills/dom-to-pptx-skill/reference/VALIDATION.md)
-- [Maintainer profile: India](https://github.com/atharva9167j)
+- 定义：设计-代码翻译（+源码视觉创作、原生制品创作、端到端交付）
+- 实现：设计-代码物化（+原生图形权威）
+- 形态：design-code-bridge · 层次：开源项目 · 生命周期：active · 证据深度：source

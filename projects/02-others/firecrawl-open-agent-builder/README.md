@@ -1,23 +1,7 @@
 # Open Agent Builder by Firecrawl
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Firecrawl's Open Agent Builder is a visual no-code editor for agent pipelines, distinct from 01.AI's separate product with the same generic name.
-
-## Eight node types define the control language
-
-Start, Agent, MCP Tool, Transform, If/Else, While Loop, User Approval, and End nodes form a React Flow graph. That small vocabulary makes branching, repetition, tools, and explicit human pauses visible instead of burying them in an agent prompt.
-
-## LangGraph executes the saved design
-
-A graph compiler maps the canvas into LangGraph state and conditional transitions. Convex persists workflows, executions, and streamed status; transform work can run in an E2B sandbox. The execution view therefore projects live node state back onto the authored graph.
-
-## Deployment keeps external tools separate
-
-Firecrawl extraction, HTTP calls, and MCP tools enter through node adapters and credentials. The graph coordinates them but does not claim ownership of their external data or side effects. Approval nodes expose the point at which a person can stop a consequential continuation.
-
-## Pinned evidence
-
-- Repository: [firecrawl/open-agent-builder](https://github.com/firecrawl/open-agent-builder)
-- Inspected canvas, node catalog, LangGraph compiler, Convex, streaming, MCP, and sandbox tree: [`be856e57f8126e90915c898f473dc94fbaefc945`](https://github.com/firecrawl/open-agent-builder/tree/be856e57f8126e90915c898f473dc94fbaefc945)
-- Immutable revision: [commit `be856e5`](https://github.com/firecrawl/open-agent-builder/commit/be856e57f8126e90915c898f473dc94fbaefc945)
+- 定义：约束驱动工程（+源码视觉创作、委托式创作、运行时纠正、系统治理、端到端交付）
+- 实现：原生图形权威（+托管应用项目图、运行时意图中继、候选隔离与晋升）
+- 形态：ai-engineering-design-workspace · 层次：商业产品 · 生命周期：active · 证据深度：source

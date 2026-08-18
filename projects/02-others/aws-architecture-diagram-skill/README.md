@@ -1,18 +1,7 @@
 # AWS Architecture Diagram Skill
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-AWS Architecture Diagram Skill packages an AWS-specific visual language for Claude, Codex and Kiro. It provides icon references, editable templates and validation so an agent can compose diagrams with recognizable AWS semantics instead of guessing generic boxes.
-
-## Templates establish topology; icon references preserve vocabulary
-
-The skill selects from reusable VPC, three-tier, static-site, serverless and event-driven structures, then adapts the native Draw.io XML. Category-specific icon references constrain shape names, while the validation script and all-icons visual fixture catch broken style or resource mappings.
-
-The output is an ordinary `.drawio` document that users can continue editing. The skills for different agent hosts are delivery adapters for one product and are not counted as separate implementations.
-
-## Evidence
-
-- [Pinned repository](https://github.com/vidanov/aws-architecture-diagram-skill/tree/29c1babbbe7ec69bed7f28f34380f906af5ae7af)
-- [Canonical skill](https://github.com/vidanov/aws-architecture-diagram-skill/blob/29c1babbbe7ec69bed7f28f34380f906af5ae7af/skills/aws-architecture-diagram/SKILL.md)
-- [Three-tier template](https://github.com/vidanov/aws-architecture-diagram-skill/blob/29c1babbbe7ec69bed7f28f34380f906af5ae7af/templates/three-tier-web-app.drawio)
-- [Draw.io validator](https://github.com/vidanov/aws-architecture-diagram-skill/blob/29c1babbbe7ec69bed7f28f34380f906af5ae7af/tests/validate_drawio.py)
+- 定义：原生制品创作（+系统治理、视觉协调证据）
+- 实现：文件系统 agent·视觉证据（+原生图形权威）
+- 形态：general-agent-visual-tools · 层次：agent 工作流 · 生命周期：active · 证据深度：source

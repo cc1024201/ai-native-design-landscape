@@ -1,22 +1,7 @@
 # StarryKit
 
-> Research status: **Architecture-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-StarryKit is a hosted MCP plus native visual editor for presentations, posters, social graphics, web and UI compositions. The installable repository supplies the skill and connection contract; the visual document runtime itself is hosted.
-
-## References become editable native elements
-
-The first-party workflow accepts an idea, image, website or `design.md`, recreates it as element-level content, lets the agent refine it through MCP and lets a person continue in the editor. Exports include PPTX, PDF, SVG, PNG, JPEG, HTML and Google Slides.
-
-```text
-intent or visual reference -> hosted MCP operations -> StarryKit document
--> agent element edits <-> manual editor -> multi-format export
-```
-
-[`mcp-workflow.md`](https://github.com/StarryKit/starrykit-plugin/blob/4d4f7768bf1ef24d4ff89de2216cdd6688ccd5e0/skills/starrykit/references/mcp-workflow.md) establishes the control and handoff semantics, but the public repository cannot establish the hosted document schema or persistence implementation. Claims therefore stop at architecture level. The earlier Starry Slides repository state is an archived predecessor, not a second product. Region remains unknown.
-
-## Evidence
-
-- [Pinned plugin and product contract](https://github.com/StarryKit/starrykit-plugin/tree/4d4f7768bf1ef24d4ff89de2216cdd6688ccd5e0)
-- [Agent skill](https://github.com/StarryKit/starrykit-plugin/blob/4d4f7768bf1ef24d4ff89de2216cdd6688ccd5e0/skills/starrykit/SKILL.md)
-- [Hosted MCP workflow](https://github.com/StarryKit/starrykit-plugin/blob/4d4f7768bf1ef24d4ff89de2216cdd6688ccd5e0/skills/starrykit/references/mcp-workflow.md)
+- 定义：委托式创作（+原生制品创作、设计-代码翻译、端到端交付）
+- 实现：托管生成制品工作区（+外部 agent 画布、原生图形权威）
+- 形态：standalone-design-agent · 层次：商业产品 · 生命周期：active · 证据深度：architecture

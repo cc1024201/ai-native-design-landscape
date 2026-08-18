@@ -1,23 +1,7 @@
 # Tessra
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Tessra defines agent design as packaging: persona, model, memory, skills and an ordered runbook are composed visually and exported together as a portable agent directory.
-
-## The canvas edits a typed draft
-
-[App.tsx](https://github.com/ayush-that/openagents-project/blob/8f71343cc35e26b9f2b425fe7554a8be6b892ba0/src/App.tsx) maps base blocks and skill packs into React Flow nodes while maintaining the underlying AgentDraft. Geometry helps composition, but persona and runbook semantics remain typed fields rather than arbitrary node labels.
-
-## Export promotes a draft into authority
-
-[agentPackage.ts](https://github.com/ayush-that/openagents-project/blob/8f71343cc35e26b9f2b425fe7554a8be6b892ba0/src/agentPackage.ts) creates a versioned manifest and emits agent.json, SOUL.md, MEMORY.md, workflow.json and skill Markdown. That downloadable package is the runtime-ready handoff; the browser canvas itself is not persisted as a hosted project.
-
-## Execution boundary
-
-The starter package points at 0G-compatible compute and storage contracts, but this repository primarily authors and exports. It does not prove that every exported skill is deployed or that the canvas observes a live run.
-
-## Pinned evidence
-
-- [Repository](https://github.com/ayush-that/openagents-project)
-- [Inspected tree](https://github.com/ayush-that/openagents-project/tree/8f71343cc35e26b9f2b425fe7554a8be6b892ba0)
-- [Agent types](https://github.com/ayush-that/openagents-project/blob/8f71343cc35e26b9f2b425fe7554a8be6b892ba0/src/types.ts)
+- 定义：设计-代码翻译（+源码视觉创作、原生制品创作、系统治理、端到端交付）
+- 实现：设计-代码物化（+候选隔离与晋升、源码权威·实时投射）
+- 形态：design-code-bridge · 层次：开源项目 · 生命周期：active · 证据深度：source

@@ -1,24 +1,7 @@
 # Bezi
 
-> Research status: **Architecture-level** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-| Field | Value |
-|---|---|
-| Team | Bezi · team region not established |
-| Current product | project-aware AI agent inside Unity |
-| Ordinary job | build debug and automate a real game project with inspectable changes rather than generate a detached game |
-| Authority | Unity scripts assets scenes GameObjects and packages |
-| Lifecycle | active transition |
-
-## Bezi indexes the project then proposes native work
-
-The current product continuously indexes Unity scripts assets scenes packages and external context such as game-design documents specifications spreadsheets and local folders. It can generate or modify scripts create shaders build editor tools assemble scene and level operations and trace interactions that cause visual bugs.
-
-Changes are proposed as diffs that a user can inspect approve or modify before they land in the Unity project. Restoration makes the host project recoverable. A structured knowledge layer stores coding standards design specifications and architecture decisions that guide teammates and reusable Skills package repeated workflows.
-
-The Unity project remains authoritative; Bezi's index and knowledge state are contextual projections. Public material does not define scene mutation APIs indexing latency diff coverage or the granularity of restoration. The current “for Unity” product framing supersedes the earlier general collaborative 3D-design positioning without splitting the lineage.
-
-## Primary evidence
-
-- [Bezi current Unity agent and project index](https://www.bezi.com/)
-- [Bezi Unity product details](https://www.bezi.com/for-unity)
+- 定义：源码视觉创作（+运行时纠正、系统治理、原生制品创作、端到端交付）
+- 实现：源码权威·实时投射（+外部 agent 画布、运行时意图中继）
+- 形态：agent-platform-design-surface · 层次：开源项目 · 生命周期：active-transition · 证据深度：architecture

@@ -1,18 +1,7 @@
 # Zero-Build Slides
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Zero-Build Slides minimizes the artifact contract so an agent can safely author it: four plain JavaScript files, no build step and no proprietary service. `data.js` is deck authority, `layouts.js` is the component vocabulary, `themes.js` supplies tokens and `app.js` renders and navigates.
-
-## Agent readability is an architectural constraint
-
-The bundled [`SKILL.md`](https://github.com/decocms/zero-build-slides/blob/e367b9d1905d3f1c4e1699068998dbcfaa2676f0/SKILL.md) tells an agent to edit explicit slide objects and choose registered layouts. Hash routes select deck, slide and theme without server state. Because all authority stays in readable files, ordinary source control provides persistence and versioning.
-
-This product has no embedded freeform editor and should not be described as a Figma substitute. Its Design definition is agent-authored source constrained by a visual schema and deterministic renderer. The deco CMS organization reports Brazil.
-
-## Evidence
-
-- [Pinned repository](https://github.com/decocms/zero-build-slides/tree/e367b9d1905d3f1c4e1699068998dbcfaa2676f0)
-- [Canonical deck data](https://github.com/decocms/zero-build-slides/blob/e367b9d1905d3f1c4e1699068998dbcfaa2676f0/data.js)
-- [Layout registry](https://github.com/decocms/zero-build-slides/blob/e367b9d1905d3f1c4e1699068998dbcfaa2676f0/layouts.js)
-- [Maintainer location evidence](https://github.com/decocms)
+- 定义：源码视觉创作（+委托式创作、系统治理、端到端交付）
+- 实现：源码权威·实时投射（+文件系统 agent·视觉证据）
+- 形态：general-agent-visual-tools · 层次：开源项目 · 生命周期：active · 证据深度：source

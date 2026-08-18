@@ -1,23 +1,7 @@
 # Convertix AI
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Convertix AI treats a landing page as structured template data rather than an opaque code dump. A model fills that graph; section controls, publishing, and analytics continue operating on the same page identity.
-
-## The model is constrained to the product schema
-
-[`landing-page-ai.service.ts`](https://github.com/radwa-talaat/convertix-ai/blob/65384e2cbfae7c0dc28c77b19d36a5526cc0cc03/services/ai/landing-page-ai.service.ts) joins the OpenAI Responses path to validated landing-page data. The renderer then interprets the template instead of executing arbitrary model prose.
-
-## Direct editing returns to structured authority
-
-The editor's [`template-mutators.service.ts`](https://github.com/radwa-talaat/convertix-ai/blob/65384e2cbfae7c0dc28c77b19d36a5526cc0cc03/services/editor/template-mutators.service.ts) changes sections and fields in that template. [`use-editor-autosave.ts`](https://github.com/radwa-talaat/convertix-ai/blob/65384e2cbfae7c0dc28c77b19d36a5526cc0cc03/hooks/editor/use-editor-autosave.ts) and Supabase project/page services make those changes reopenable.
-
-## Publication is a snapshot boundary
-
-[`publishing.service.ts`](https://github.com/radwa-talaat/convertix-ai/blob/65384e2cbfae7c0dc28c77b19d36a5526cc0cc03/services/publishing/publishing.service.ts) copies current content into `published_content`, increments a version, records a publish snapshot, and exposes the public URL. Draft edits therefore do not silently change the released page. Export is available through [`export.service.ts`](https://github.com/radwa-talaat/convertix-ai/blob/65384e2cbfae7c0dc28c77b19d36a5526cc0cc03/services/editor/export.service.ts).
-
-## Pinned evidence
-
-- [Repository](https://github.com/radwa-talaat/convertix-ai)
-- [Inspected tree](https://github.com/radwa-talaat/convertix-ai/tree/65384e2cbfae7c0dc28c77b19d36a5526cc0cc03)
-- Commit: `65384e2cbfae7c0dc28c77b19d36a5526cc0cc03`
+- 定义：原生制品创作（+委托式创作、运行时纠正、端到端交付、系统治理）
+- 实现：原生图形权威（+托管生成制品工作区、候选隔离与晋升）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active · 证据深度：source

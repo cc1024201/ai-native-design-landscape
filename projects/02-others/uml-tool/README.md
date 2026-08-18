@@ -1,19 +1,7 @@
 # UML Tool
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-UML Tool is intentionally small: it gives a human and a repository-local coding agent one diagram JSON to discuss and edit. The point is not AI generation as a button; it is a live shared artifact outside chat.
-
-## Source and snapshot are kept separate
-
-At commit [`71b2e2c`](https://github.com/goodmorningcoffee/uml_tool/tree/71b2e2c7fd0172023422a52e51f73710a9840de5) diagrams under `data/diagrams` store nodes edges positions sizes notes and meta-links. [`shared/diagram.js`](https://github.com/goodmorningcoffee/uml_tool/blob/71b2e2c7fd0172023422a52e51f73710a9840de5/shared/diagram.js) validates the model. The browser supports direct manipulation while server operations let an agent inspect and mutate the current diagram.
-
-Server-Sent Events refresh the open browser after agent operations. Operation logs provide trace evidence; SVG files under `data/exports` are visual snapshots and never the edit authority.
-
-The tool is save-oriented rather than true simultaneous multiplayer editing. That limitation is stated by the project and prevents overclaiming a CRDT collaboration model. The maintainer profile lists NYC United States.
-
-## Evidence
-
-- [Agent bridge tests](https://github.com/goodmorningcoffee/uml_tool/blob/71b2e2c7fd0172023422a52e51f73710a9840de5/tests/agent_bridge.test.js)
-- [Server implementation](https://github.com/goodmorningcoffee/uml_tool/blob/71b2e2c7fd0172023422a52e51f73710a9840de5/server/app.js)
-- [Pinned README](https://github.com/goodmorningcoffee/uml_tool/blob/71b2e2c7fd0172023422a52e51f73710a9840de5/README.md)
+- 定义：原生制品创作（+视觉协调证据、端到端交付、源码视觉创作）
+- 实现：源码权威·实时投射（+外部 agent 画布、原生图形权威、文件系统 agent·视觉证据）
+- 形态：agent-controllable-canvas · 层次：开源项目 · 生命周期：active · 证据深度：source

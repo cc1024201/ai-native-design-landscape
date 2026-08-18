@@ -1,28 +1,7 @@
 # claude-eda
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-claude-eda is a project bootstrap and operating contract for Claude Code working on KiCad. It does not embed a model in KiCad; it assembles constraints skills agents and MCP servers so an external agent can enter a recoverable engineering workspace.
-
-## The product is the prepared project boundary
-
-At commit [`59f21a4`](https://github.com/l3wi/claude-eda/tree/59f21a402c5246d6720d6892bddc2347238b2c32) the CLI creates `.claude` instructions MCP configuration project settings and a design-constraints document. Specialized agents cover placement routing schematic organization DRC and manufacturing handoff. The [KiCad MCP command](https://github.com/l3wi/claude-eda/blob/59f21a402c5246d6720d6892bddc2347238b2c32/src/commands/kicad-mcp.ts) manages the external write bridge.
-
-KiCad files and constraint documents remain source; ERC DRC and export results are evidence. The scaffolder adds health checks and repair for environment drift but does not pretend that an LLM can override electrical rules.
-
-```mermaid
-flowchart LR
-    C["claude-eda init"] --> P["KiCad project + constraints"]
-    P --> A["Claude skills / agents"]
-    A --> M["KiCad MCP servers"]
-    M --> K["Schematic / PCB source"]
-    K --> V["ERC · DRC · manufacturing export"]
-```
-
-The maintainer's first-party profile lists Andorra. Provider and KiCad dependencies mean source inspection proves orchestration but not a paid model run.
-
-## Evidence
-
-- [Repository README](https://github.com/l3wi/claude-eda/blob/59f21a402c5246d6720d6892bddc2347238b2c32/README.md)
-- [Constraint schema](https://github.com/l3wi/claude-eda/blob/59f21a402c5246d6720d6892bddc2347238b2c32/templates/claude/skills/eda-architect/reference/CONSTRAINT-SCHEMA.md)
-- [Schematic skill](https://github.com/l3wi/claude-eda/blob/59f21a402c5246d6720d6892bddc2347238b2c32/templates/claude/skills/eda-schematics/SKILL.md)
+- 定义：系统治理（+约束驱动工程、原生制品创作、运行时纠正、端到端交付）
+- 实现：文件系统 agent·视觉证据（+外部 agent 画布、源码权威·实时投射）
+- 形态：general-agent-visual-tools · 层次：开源项目 · 生命周期：active · 证据深度：source

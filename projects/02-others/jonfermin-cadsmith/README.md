@@ -1,18 +1,7 @@
-# cadsmith
+# Jon Fermin cadsmith
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Jon Fermin's cadsmith turns a natural-language description of a physical object into parametric build123d or CadQuery source, manufacturable exports and an interactive Three.js preview. Its defining choice is to keep executable Python—not the preview mesh—as the model of record.
-
-## Preview and CAD authority are deliberately unequal
-
-The make-model skill asks at most one clarification round, writes a parameterized Python generator, exports STEP/STL and creates a scene manifest for browser inspection. Review and fix agents can iterate on existing models, while a separate export path reaches STL, OBJ, glTF or GLB through Blender.
-
-The Three.js view is only an approximation; unsupported booleans are shown as wireframes rather than presented as final geometry. Python plus the CAD kernel owns constructive intent, STEP captures exchange geometry, STL is a manufacturing derivative and the browser supplies review evidence.
-
-Successful export does not establish fit, load capacity or print process suitability. Those remain domain judgments beyond the public review loop. This record is qualified by maintainer because a separate project named CADSmith already exists in the census.
-
-- [Pinned repository](https://github.com/JonFermin/cadsmith/tree/0d64f9a4344066b91f6d972d5404d14fa08428a5)
-- [Model-generation skill](https://github.com/JonFermin/cadsmith/tree/0d64f9a4344066b91f6d972d5404d14fa08428a5/.claude/skills/make-model)
-- [Three.js previewer](https://github.com/JonFermin/cadsmith/tree/0d64f9a4344066b91f6d972d5404d14fa08428a5/previewer)
-- [Maintainer location evidence](https://github.com/JonFermin)
+- 定义：约束驱动工程（+原生制品创作、运行时纠正、端到端交付）
+- 实现：参数化工程模型权威（+文件系统 agent·视觉证据）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

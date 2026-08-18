@@ -1,23 +1,7 @@
-# Director
+# director
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Director is a local-first production system for turning a live application into a narrated walkthrough video, editable pitch deck, dailies and a canonical production manifest. The repository and npm history use `ai-recorder`, but the product and CLI are now Director.
-
-## Approval separates planning from capture
-
-[`storyboard.ts`](https://github.com/dubh3124/Director/blob/affcf2d1bd799db6d434479c6d6a157bf58160e3/src/storyboard.ts) validates versioned YAML or JSON scenes and stage directions. Agents can scout the app and draft or revise that Storyboard, but `shoot` and `premiere` require explicit approval before browser control and artifact writes. [`manifest.ts`](https://github.com/dubh3124/Director/blob/affcf2d1bd799db6d434479c6d6a157bf58160e3/src/manifest.ts) records the resulting production.
-
-```text
-live app -> scout -> versioned storyboard -> check -> approval
--> capture + voiceover + dailies -> final-cut.mp4 + pitch-deck.pptx + manifest
-```
-
-CLI, SDK and MCP are peer adapters over the same operations. The A2A surface is explicitly a preview. No reliable first-party location was found.
-
-## Evidence
-
-- [Pinned repository](https://github.com/dubh3124/Director/tree/affcf2d1bd799db6d434479c6d6a157bf58160e3)
-- [Storyboard schema and validation](https://github.com/dubh3124/Director/blob/affcf2d1bd799db6d434479c6d6a157bf58160e3/src/storyboard.ts)
-- [Production manifest](https://github.com/dubh3124/Director/blob/affcf2d1bd799db6d434479c6d6a157bf58160e3/src/manifest.ts)
-- [Editor/provider boundary](https://github.com/dubh3124/Director/blob/affcf2d1bd799db6d434479c6d6a157bf58160e3/src/editor.ts)
+- 定义：视觉协调证据（+委托式创作、变体决策、端到端交付）
+- 实现：文件系统 agent·视觉证据（+候选隔离与晋升、设计-代码物化）
+- 形态：general-agent-visual-tools · 层次：开源项目 · 生命周期：active · 证据深度：source

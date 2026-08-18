@@ -1,21 +1,7 @@
 # Reversa
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Reversa is a specification reverse-engineering framework for agents. It inspects an existing software product, checkpoints the analysis, extracts visual and design-system evidence, and produces a browsable software-design dossier without mutating the source project.
-
-## Two persisted trees separate process from evidence
-
-[`state.json`](https://github.com/sandeco/reversa/blob/f3c36892e8aefa44f020f7ad74917089e67ddaa3/templates/state.json) and its schema define resumable phase/checkpoint state under `.reversa/`. Evidence and generated specification artifacts live under `_reversa_sdd/`, preserving a clear boundary between research output and the inspected codebase.
-
-The Design System agent extracts tokens and components, while the Visor skill reasons over screenshots and visual states. [`viewer.html`](https://github.com/sandeco/reversa/blob/f3c36892e8aefa44f020f7ad74917089e67ddaa3/templates/documentation/viewer.html) is a projection of the dossier, not its authority. Mira uses Reversa for plugin authoring, but Reversa is independently released and is therefore counted as its own product framework.
-
-The maintainer's first-party profile identifies Brazil.
-
-## Evidence
-
-- [Pinned repository](https://github.com/sandeco/reversa/tree/f3c36892e8aefa44f020f7ad74917089e67ddaa3)
-- [State schema](https://github.com/sandeco/reversa/blob/f3c36892e8aefa44f020f7ad74917089e67ddaa3/agents/reversa/references/state-schema.md)
-- [Design-system agent](https://github.com/sandeco/reversa/blob/f3c36892e8aefa44f020f7ad74917089e67ddaa3/agents/reversa-design-system/SKILL.md)
-- [Visor skill](https://github.com/sandeco/reversa/blob/f3c36892e8aefa44f020f7ad74917089e67ddaa3/agents/reversa-visor/SKILL.md)
-- [Maintainer profile](https://github.com/sandeco)
+- 定义：系统治理（+视觉协调证据、设计-代码翻译、端到端交付）
+- 实现：文件系统 agent·视觉证据（+源码权威·实时投射）
+- 形态：general-agent-visual-tools · 层次：开源项目 · 生命周期：active · 证据深度：source

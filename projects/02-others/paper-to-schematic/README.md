@@ -1,16 +1,7 @@
 # Paper to Schematic
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Paper to Schematic transcribes scanned arcade schematics into a structured board graph, human-verifiable component and net records, KiCad documents and physical probe/discrepancy outputs.
-
-## Human review sits between vision and electrical source
-
-Immutable scan pages are decoded and tiled; agent skills identify components without inventing pinouts; an Explorer UI lets a reviewer move, resize, verify and wire detections. The validated graph is then exported to per-sheet `.kicad_sch`, reparsed and optionally checked with KiCad ERC.
-
-The project is domain-specific but its graph and skills are reusable across boards. Current evidence supports transcription and KiCad export; project-file wiring for some ERC exclusions remains unfinished.
-
-- [Pinned repository](https://github.com/alanswx/paper-to-schematic/tree/8049fe64324922c654263023efde2bdf0356ba4e)
-- [Schematic graph skill](https://github.com/alanswx/paper-to-schematic/blob/8049fe64324922c654263023efde2bdf0356ba4e/.agents/skills/schematic-graph/SKILL.md)
-- [Explorer review skill](https://github.com/alanswx/paper-to-schematic/blob/8049fe64324922c654263023efde2bdf0356ba4e/.agents/skills/explorer/SKILL.md)
-- [Maintainer profile: San Francisco California](https://github.com/alanswx)
+- 定义：约束驱动工程（+委托式创作、原生制品创作、视觉协调证据、运行时纠正、端到端交付）
+- 实现：文件系统 agent·视觉证据（+候选隔离与晋升、参数化工程模型权威）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

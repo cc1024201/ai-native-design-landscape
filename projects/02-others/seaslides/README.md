@@ -1,22 +1,7 @@
 # SeaSlides
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-SeaSlides is an agent toolchain for authoring presentation-oriented Typst and Touying projects. It treats readable `.typ` source and a project-owned theme as authority, then makes visual review and compilation receipts part of delivery.
-
-## Quality gates are first-class artifacts
-
-The skill routes quick and full workflows, selects among more than 180 catalogued themes and writes `main.typ` plus `template.typ`. Compilation produces PDF, per-page PNGs, a contact sheet and `compile-manifest.json`; optional `typ2pptx` delivery is downstream of the source deck. [`visual-review.md`](https://github.com/touying-typ/seaslides/blob/dcde5bf6c6875b300e2999fc7766f369a13a67ac/skills/seaslides-typst-slides-skill/workflows/visual-review.md) specifies repeated inspection rather than assuming a successful compile looks usable.
-
-```text
-source material -> narrative and theme decision -> Typst/Touying source
--> compile receipt + page renders + overview -> review/repair -> PDF/PNG/PPTX
-```
-
-SeaSlides authors and validates the project; the separately surfaced Tylina application owns WYSIWYG editing and is counted independently. Maintainer region remains unknown.
-
-## Evidence
-
-- [Pinned repository and output contract](https://github.com/touying-typ/seaslides/tree/dcde5bf6c6875b300e2999fc7766f369a13a67ac)
-- [Create-presentation workflow](https://github.com/touying-typ/seaslides/blob/dcde5bf6c6875b300e2999fc7766f369a13a67ac/skills/seaslides-typst-slides-skill/workflows/create-presentation.md)
-- [Visual review workflow](https://github.com/touying-typ/seaslides/blob/dcde5bf6c6875b300e2999fc7766f369a13a67ac/skills/seaslides-typst-slides-skill/workflows/visual-review.md)
+- 定义：源码视觉创作（+委托式创作、系统治理、端到端交付）
+- 实现：源码权威·实时投射（+文件系统 agent·视觉证据、设计-代码物化）
+- 形态：general-agent-visual-tools · 层次：开源项目 · 生命周期：active · 证据深度：source

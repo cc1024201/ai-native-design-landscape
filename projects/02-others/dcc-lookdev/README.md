@@ -1,17 +1,7 @@
 # DCC LookDev
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-DCC LookDev is a portable workflow package for producing comparable PBR presentation and review scenes across different DCC hosts. Its first product is `lookdev-turntable`; it relies on host adapters for mutations but owns the calibration and review contract.
-
-## A turntable is treated as a measurement setup
-
-The package fixes a camera-facing reference group, visible HDRI environment, measured ColorChecker and gray/white/chrome spheres. A twelve-second sequence first rotates the subject under fixed light and then rotates light around a fixed subject. Those two phases distinguish geometry/readability problems from lighting dependence.
-
-The [Skill contract](https://github.com/dcc-mcp/dcc-lookdev/blob/3121a34632e79ef130bf30675e092487b9821dc8/skill/lookdev-turntable/SKILL.md) also maps asset intent such as hard-surface, creature or translucent work to typed HDR recommendations while keeping every choice overridable. Native Maya, Blender, Houdini or Unreal scenes remain authoritative; the package supplies a repeatable scene recipe and acceptance evidence rather than another universal scene format.
-
-## Evidence
-
-- [Pinned workflow repository](https://github.com/dcc-mcp/dcc-lookdev/tree/3121a34632e79ef130bf30675e092487b9821dc8)
-- [Typed turntable tools](https://github.com/dcc-mcp/dcc-lookdev/blob/3121a34632e79ef130bf30675e092487b9821dc8/skill/lookdev-turntable/tools.yaml)
-- [First-party product description](https://github.com/dcc-mcp/dcc-lookdev/blob/3121a34632e79ef130bf30675e092487b9821dc8/README.md)
+- 定义：原生制品创作（+系统治理、视觉协调证据）
+- 实现：外部 agent 画布（+原生图形权威、文件系统 agent·视觉证据）
+- 形态：agent-controllable-canvas · 层次：开源项目 · 生命周期：active · 证据深度：source

@@ -1,23 +1,7 @@
 # No-Code ADK Interface
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-No-Code ADK Interface is an independent form-driven authoring shell for Google ADK. Unlike Google's graph-oriented ADK Web, this package compiles a structured agent form into a runnable filesystem project.
-
-## The form schema is the authoring contract
-
-[app.py](https://github.com/abhishekkumar35/google-adk-nocode/blob/e73b98f32806d2d4fa464e459177a568292d5ec9/src/google/adk/nocode/app.py) defines model, instruction, tools, provider, API/client generation and nested sub-agent configuration. The browser client loads those options and submits one AgentConfig object.
-
-## Create means materialize source
-
-The create endpoint writes an agent directory containing generated Python, optional FastAPI service, JavaScript or TypeScript clients and documentation. The run endpoint imports that generated project and invokes its root agent. Generated files, not a hidden hosted record, become the durable and executable authority.
-
-## Adapter boundary
-
-The project reuses Google ADK as runtime and can target Ollama, but its authoring UI and code materializer are independently implemented. It is therefore an ecosystem adapter rather than a duplicate copy of ADK Web.
-
-## Pinned evidence
-
-- [Repository](https://github.com/abhishekkumar35/google-adk-nocode)
-- [Inspected tree](https://github.com/abhishekkumar35/google-adk-nocode/tree/e73b98f32806d2d4fa464e459177a568292d5ec9)
-- [Browser authoring client](https://github.com/abhishekkumar35/google-adk-nocode/blob/e73b98f32806d2d4fa464e459177a568292d5ec9/src/google/adk/nocode/static/js/app.js)
+- 定义：设计-代码翻译（+源码视觉创作、委托式创作、端到端交付）
+- 实现：设计-代码物化（+源码权威·实时投射、托管应用项目图）
+- 形态：design-code-bridge · 层次：开源项目 · 生命周期：active · 证据深度：source

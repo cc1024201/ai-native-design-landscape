@@ -1,19 +1,7 @@
 # GetUI.ai
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-GetUI.ai is a minimal prompt-to-frontend loop whose artifact is one executable source string. Its value for the landscape is architectural clarity rather than feature breadth.
-
-## Groq creates the source authority
-
-[`groq_client.py`](https://github.com/Jayesh-019/AI-frontendGenerator/blob/7d12ef27680d21ddbd3f94af3caad0638a5482b0/utils/groq_client.py) constrains a Groq-hosted model to return HTML, CSS, and JavaScript. [`app.py`](https://github.com/Jayesh-019/AI-frontendGenerator/blob/7d12ef27680d21ddbd3f94af3caad0638a5482b0/app.py) exposes that call to the browser.
-
-## Browser history is the persistence boundary
-
-[`app.js`](https://github.com/Jayesh-019/AI-frontendGenerator/blob/7d12ef27680d21ddbd3f94af3caad0638a5482b0/static/js/app.js) stores generated source in `localStorage`, reopens it from chat history, and assigns exactly that source to `iframe.srcdoc`. There is no server project model, version branching, or direct editor in the pinned source.
-
-## Pinned evidence
-
-- [Repository](https://github.com/Jayesh-019/AI-frontendGenerator)
-- [Inspected tree](https://github.com/Jayesh-019/AI-frontendGenerator/tree/7d12ef27680d21ddbd3f94af3caad0638a5482b0)
-- Commit: `7d12ef27680d21ddbd3f94af3caad0638a5482b0`
+- 定义：源码视觉创作（+委托式创作、视觉协调证据）
+- 实现：源码权威·实时投射（+托管生成制品工作区）
+- 形态：standalone-design-agent · 层次：开源项目 · 生命周期：active · 证据深度：source

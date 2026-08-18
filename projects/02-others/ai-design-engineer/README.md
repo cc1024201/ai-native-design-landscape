@@ -1,16 +1,7 @@
 # AI Design Engineer
 
-> Research status: **Architecture-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-AI Design Engineer is an eight-persona Claude Code plugin for taking an agentic application from rough intent through product framing, UX structure, frontend design and production architecture. The design-specific roles sit beside data, security, backend and orchestration specialists so interface decisions can carry their constraints forward.
-
-## Personas own different decision artifacts
-
-Blueprompt produces app and agent blueprints; Brooks frames human jobs and success; Clarity creates research findings, information architecture, flows, wireframes and validation criteria; Bliss turns the accepted direction into tokens and production interface code. Other personas supply topology, data, security and backend contracts.
-
-Public evidence exposes the role and handoff contracts but not an independent visual runtime or persistent artifact service. The dossier therefore stops at architecture level: generated specifications and repository code are host-agent outputs, while the plugin defines how they should be sequenced and reviewed.
-
-- [Pinned repository](https://github.com/agenisea/ai-design-engineering-cc-plugins/tree/5fda2d364c9f7a799c42c4d7014961e4b61c8e3b)
-- [Clarity UX skill](https://github.com/agenisea/ai-design-engineering-cc-plugins/blob/5fda2d364c9f7a799c42c4d7014961e4b61c8e3b/claude-code/plugins/ai-design-engineer/skills/clarity/SKILL.md)
-- [Bliss interface skill](https://github.com/agenisea/ai-design-engineering-cc-plugins/blob/5fda2d364c9f7a799c42c4d7014961e4b61c8e3b/claude-code/plugins/ai-design-engineer/skills/bliss/SKILL.md)
-- [Maintainer profile checked; no location published](https://github.com/agenisea)
+- 定义：端到端交付（+变体决策、原生制品创作、系统治理、设计-代码翻译）
+- 实现：候选隔离与晋升（+文件系统 agent·视觉证据）
+- 形态：agent-platform-design-surface · 层次：开源项目 · 生命周期：active · 证据深度：architecture

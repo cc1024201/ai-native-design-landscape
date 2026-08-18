@@ -1,23 +1,7 @@
 # Canvas AI Page Context Generation Skill
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-This Claude Code skill converts an existing Drupal Canvas page and its component system into reusable page-building guidance for later agents.
-
-## It begins from rendered and source evidence
-
-The workflow exports a Canvas page with Drush, then inspects its SDC metadata, Twig, CSS, schemas, and JavaScript components. It resolves actual colors, spacing, typography, layout patterns, and component usage instead of inventing a design system from a screenshot alone.
-
-## The artifact is a guideline contract
-
-The result is a `<page-type>-page-guidelines.md` file that records visual patterns and component constraints. Drupal Canvas can load that document as AI Context, making it a governance input for page-builder agents rather than a second page runtime.
-
-## Authority stays in Drupal Canvas
-
-The skill reads and summarizes the host artifact; it does not itself publish a page or own component revisions. Its design contribution is durable context extraction and agent guidance.
-
-## Pinned evidence
-
-- Repository: [akhilbabu-qed-42/Canvas-AI-Page-Generation-Skill](https://github.com/akhilbabu-qed-42/Canvas-AI-Page-Generation-Skill)
-- Inspected skill instructions and page-context extraction workflow: [`b34d3474ac7da7f3593e3ce5e37ac15bbd56550f`](https://github.com/akhilbabu-qed-42/Canvas-AI-Page-Generation-Skill/tree/b34d3474ac7da7f3593e3ce5e37ac15bbd56550f)
-- Immutable revision: [commit `b34d347`](https://github.com/akhilbabu-qed-42/Canvas-AI-Page-Generation-Skill/commit/b34d3474ac7da7f3593e3ce5e37ac15bbd56550f)
+- 定义：系统治理（+设计-代码翻译、视觉协调证据）
+- 实现：文件系统 agent·视觉证据（+设计-代码物化、外部 agent 画布）
+- 形态：general-agent-visual-tools · 层次：agent 工作流 · 生命周期：active · 证据深度：source

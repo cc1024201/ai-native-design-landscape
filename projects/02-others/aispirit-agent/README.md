@@ -1,23 +1,7 @@
 # AISpirit Agent
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-AISpirit Agent is a modular agent workspace whose agentic-graph package adds a PixiJS-backed builder to a deeper event-driven Python runtime.
-
-## The canvas is not the runtime
-
-[canvas.py](https://github.com/aispiritlabs/aispiritlab-agentic/blob/d396a1b0c865bac6e025f43f9bcd057b00160adc/packages/agentic_graph/src/agentic_graph/canvas.py) presents nodes and links inside Gradio. Graph models and serialization preserve the authored structure, while validation and [compiler.py](https://github.com/aispiritlabs/aispiritlab-agentic/blob/d396a1b0c865bac6e025f43f9bcd057b00160adc/packages/agentic_graph/src/agentic_graph/compiler.py) translate it into registered runtime objects.
-
-## Runs are eventful and recoverable
-
-The core workflow package routes messages through processors, reactors and a runtime instead of replaying UI gestures. [sqlite_event_store.py](https://github.com/aispiritlabs/aispiritlab-agentic/blob/d396a1b0c865bac6e025f43f9bcd057b00160adc/packages/agentic/src/agentic/workflow/sqlite_event_store.py) records serialized workflow events and checkpoints with WAL persistence.
-
-## Code generation is another projection
-
-The graph package can emit a summary and Python representation. That makes the canvas a constrained system-authoring interface over runtime and source projections, not a decorative diagram of a separately maintained agent.
-
-## Pinned evidence
-
-- [Repository](https://github.com/aispiritlabs/aispiritlab-agentic)
-- [Inspected tree](https://github.com/aispiritlabs/aispiritlab-agentic/tree/d396a1b0c865bac6e025f43f9bcd057b00160adc)
-- [Graph runtime](https://github.com/aispiritlabs/aispiritlab-agentic/blob/d396a1b0c865bac6e025f43f9bcd057b00160adc/packages/agentic_graph/src/agentic_graph/runtime.py)
+- 定义：源码视觉创作（+原生制品创作、运行时纠正、系统治理、端到端交付）
+- 实现：原生图形权威（+设计-代码物化、托管应用项目图）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

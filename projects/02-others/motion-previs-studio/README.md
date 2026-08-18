@@ -1,17 +1,7 @@
 # Motion Previs Studio
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Motion Previs Studio is a filmmaking decision workspace for extracting reusable motion intent from a reference shot. A user chooses an exact range and declares whether the authority is camera motion, actor motion, object motion or the full scene before the app derives pose, depth, masks, edges and camera evidence.
-
-## The production pack records intent and diagnostics together
-
-[`cameraMotion.ts`](https://github.com/wassermanproductions/motion-previs-studio/blob/95e7d0ff1d4cc546f7eb09a74ccbd084988a19bc/src/lib/cameraMotion.ts) solves movement separately from subject content. [`quality.ts`](https://github.com/wassermanproductions/motion-previs-studio/blob/95e7d0ff1d4cc546f7eb09a74ccbd084988a19bc/src/lib/quality.ts) makes readiness observable instead of treating a completed encode as a valid reference. The exported pack joins control videos with camera JSON, OpenPose keypoints, a shot bible, model presets, manifests and a quality report so downstream generation can be traced back to the inspected source.
-
-The working session—not any single derivative video—holds selected media, trim, mode, settings and the last bundle. [`sessionRestore.ts`](https://github.com/wassermanproductions/motion-previs-studio/blob/95e7d0ff1d4cc546f7eb09a74ccbd084988a19bc/src/lib/sessionRestore.ts) restores that decision state, while the [MCP bridge](https://github.com/wassermanproductions/motion-previs-studio/blob/95e7d0ff1d4cc546f7eb09a74ccbd084988a19bc/mcp/motion-previs-mcp.mjs) drives the same running app rather than maintaining a second shadow project.
-
-## Evidence
-
-- [Pinned repository](https://github.com/wassermanproductions/motion-previs-studio/tree/95e7d0ff1d4cc546f7eb09a74ccbd084988a19bc)
-- [Pose inspection canvas](https://github.com/wassermanproductions/motion-previs-studio/blob/95e7d0ff1d4cc546f7eb09a74ccbd084988a19bc/src/components/PoseCanvas.tsx)
-- [Agent control contract](https://github.com/wassermanproductions/motion-previs-studio/blob/95e7d0ff1d4cc546f7eb09a74ccbd084988a19bc/mcp/README.md)
+- 定义：视觉协调证据（+原生制品创作、变体决策、运行时纠正、端到端交付）
+- 实现：文件系统 agent·视觉证据（+外部 agent 画布、候选隔离与晋升）
+- 形态：visual-decision-verification-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

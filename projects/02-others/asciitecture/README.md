@@ -1,25 +1,7 @@
 # Asciitecture
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Asciitecture's technical bet is unusually simple: ASCII is both a visual material and an agent interface. People arrange web controls or diagram shapes on a canvas; the output remains legible text that can be reviewed in Markdown and handed to a coding assistant.
-
-## The export is the interface
-
-At commit [`5532f10a`](https://github.com/AnimaDigitalSolutions/Asciitecture/tree/5532f10adb7d5361a6d8fe52cae8f9d503352ec7) [`Canvas`](https://github.com/AnimaDigitalSolutions/Asciitecture/blob/5532f10adb7d5361a6d8fe52cae8f9d503352ec7/src/components/Canvas.jsx) holds positioned components and renders the ASCII composition. Local storage autosaves the working tabs. Export produces Markdown rather than a proprietary scene package.
-
-The repository does not contain a hidden autonomous agent. Its AI-native boundary is an explicit handoff contract: [`AI_GUIDE`](https://github.com/AnimaDigitalSolutions/Asciitecture/blob/5532f10adb7d5361a6d8fe52cae8f9d503352ec7/AI_GUIDE.md) and template libraries explain the visual vocabulary to an external model. That modest boundary is why it is classified as a general agent visual tool rather than delegated creation.
-
-```text
-drag visual components → ASCII scene → Markdown prompt/context → coding agent
-          ↑                                             │
-          └──────── human edits the returned idea ──────┘
-```
-
-No share backend or Git integration is implemented; the artifact is local browser state plus exported text. The organization profile provides no region.
-
-## Evidence
-
-- [Pinned README](https://github.com/AnimaDigitalSolutions/Asciitecture/blob/5532f10adb7d5361a6d8fe52cae8f9d503352ec7/README.md)
-- [AI-facing template vocabulary](https://github.com/AnimaDigitalSolutions/Asciitecture/blob/5532f10adb7d5361a6d8fe52cae8f9d503352ec7/src/lib/ai-templates.js)
-- [Diagram templates](https://github.com/AnimaDigitalSolutions/Asciitecture/blob/5532f10adb7d5361a6d8fe52cae8f9d503352ec7/src/lib/ai-diagram-templates.js)
+- 定义：原生制品创作（+视觉协调证据、设计-代码翻译、端到端交付）
+- 实现：文件系统 agent·视觉证据（+源码权威·实时投射、设计-代码物化）
+- 形态：general-agent-visual-tools · 层次：开源项目 · 生命周期：active · 证据深度：source

@@ -1,19 +1,7 @@
 # Co-Design Canvas
 
-> Research status: **Source-level** · Lifecycle: **historical** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Co-Design Canvas is an architectural and urban-design prototype that combines a shared drawing surface Google Maps context and ComfyUI image generation. It represents an earlier form of human/AI co-design where generated proposals return to the same spatial board.
-
-## A lightweight server joins canvas and generator
-
-At commit [`2535d48`](https://github.com/Utopia5327/codesigncanvasoffline/tree/2535d48c587be238d9dc0a34cc290b5dd7586610) [`script.js`](https://github.com/Utopia5327/codesigncanvasoffline/blob/2535d48c587be238d9dc0a34cc290b5dd7586610/script.js) manages drawing uploaded images and collaboration state. [`app.py`](https://github.com/Utopia5327/codesigncanvasoffline/blob/2535d48c587be238d9dc0a34cc290b5dd7586610/app.py) connects Firebase storage and local ComfyUI jobs including inpainting workflows.
-
-The board is the coordination surface and generated raster images are editable inputs for another pass. There is no source-level parametric building model so outputs should not be described as BIM or CAD authority.
-
-The source contains machine-specific setup instructions and an older dependency stack. It proves a working prototype boundary rather than a maintained hosted service. The maintainer profile lists New York United States.
-
-## Evidence
-
-- [Pinned README](https://github.com/Utopia5327/codesigncanvasoffline/blob/2535d48c587be238d9dc0a34cc290b5dd7586610/README.md)
-- [ComfyUI workflow](https://github.com/Utopia5327/codesigncanvasoffline/blob/2535d48c587be238d9dc0a34cc290b5dd7586610/Inpaint_Anything.json)
-- [Browser canvas](https://github.com/Utopia5327/codesigncanvasoffline/blob/2535d48c587be238d9dc0a34cc290b5dd7586610/index.html)
+- 定义：原生制品创作（+委托式创作、运行时纠正、视觉协调证据、端到端交付、变体决策）
+- 实现：原生图形权威（+托管生成制品工作区、托管应用项目图）
+- 形态：standalone-design-agent · 层次：开源项目 · 生命周期：historical · 证据深度：source

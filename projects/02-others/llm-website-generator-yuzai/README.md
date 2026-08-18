@@ -1,27 +1,7 @@
 # LLM Website Generator by Yuzai Akira
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-13**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-This is a client-side, single-document generator. It lets a user choose Google Gemini or OpenRouter, generate complete HTML, edit the result and immediately inspect it without introducing a server-side project model.
-
-## The artifact never leaves the tab by default
-
-Pinned revision: `e356a1a786dd504cdeb4ffbce317cfd6ce0ad14b`.
-
-The agent returns one HTML string. The app hands that string to a text editor and an iframe; edits mutate the same in-memory value. Copy is the implemented escape hatch. There is no virtual filesystem, component graph, deployment object or multi-page authority.
-
-## Persistence stops at configuration
-
-Theme, provider choice and API settings use browser storage, but the generated document does not. Reloading therefore preserves how to call the model while discarding what the model and user made. That distinction rules out treating settings persistence as project persistence.
-
-## Provider abstraction is product-visible
-
-Google and OpenRouter adapters normalize different streaming and response shapes into the same HTML handoff. Provider selection changes generation plumbing, not artifact semantics: both paths still terminate in one editable document.
-
-## Pinned evidence
-
-- [Repository](https://github.com/yuzaiakira/LLM-Website-Generator)
-- [Generation agent](https://github.com/yuzaiakira/LLM-Website-Generator/blob/e356a1a786dd504cdeb4ffbce317cfd6ce0ad14b/assets/js/agent.js)
-- [Application state and handoff](https://github.com/yuzaiakira/LLM-Website-Generator/blob/e356a1a786dd504cdeb4ffbce317cfd6ce0ad14b/assets/js/app.js)
-- [Editor and preview authority](https://github.com/yuzaiakira/LLM-Website-Generator/blob/e356a1a786dd504cdeb4ffbce317cfd6ce0ad14b/assets/js/editor.js)
-- [Persisted settings boundary](https://github.com/yuzaiakira/LLM-Website-Generator/blob/e356a1a786dd504cdeb4ffbce317cfd6ce0ad14b/assets/js/settings.js)
+- 定义：源码视觉创作（+委托式创作、端到端交付）
+- 实现：源码权威·实时投射（+设计-代码物化）
+- 形态：code-native-visual-ide · 层次：开源项目 · 生命周期：active · 证据深度：source

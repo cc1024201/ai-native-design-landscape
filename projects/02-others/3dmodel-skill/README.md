@@ -1,16 +1,7 @@
 # 3dmodel Skill
 
-> Research status: **Architecture-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-3dmodel is a Claude Code skill for choosing and operating a 3D production route across generative base meshes, Blender, Fusion 360 and Three.js. It treats target selection as a design decision: organic one-offs, precise manufacturable parts, reusable assets and interactive explainers require different authorities and optimization work.
-
-## Every route must close a visual feedback loop
-
-The shared method is generate or model, render, inspect the image, critique the worst defect and correct it. Blender source and GLB own asset work, Fusion's parametric model owns precision, and Three.js source owns the interactive viewer. Screenshots and renders are evidence rather than interchangeable masters.
-
-The repository supplies operational guidance and reusable code patterns but no independent modeling runtime or persistence service. Its evidence ceiling is therefore architecture level even though the artifact and handoff boundaries are explicit.
-
-- [Pinned repository](https://github.com/fletcherholt/3dmodel-skill/tree/857c2415c21421558ff8b33bfd92c921e3b7af25)
-- [3dmodel skill](https://github.com/fletcherholt/3dmodel-skill/blob/857c2415c21421558ff8b33bfd92c921e3b7af25/SKILL.md)
-- [Blender pipeline reference](https://github.com/fletcherholt/3dmodel-skill/blob/857c2415c21421558ff8b33bfd92c921e3b7af25/references/blender-pipeline.md)
-- [Maintainer profile checked; no location published](https://github.com/fletcherholt)
+- 定义：原生制品创作（+运行时纠正、设计-代码翻译、端到端交付、约束驱动工程）
+- 实现：文件系统 agent·视觉证据（+源码权威·实时投射）
+- 形态：general-agent-visual-tools · 层次：agent 工作流 · 生命周期：active · 证据深度：architecture

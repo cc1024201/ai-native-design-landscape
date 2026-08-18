@@ -1,23 +1,7 @@
 # AI App Builder SaaS by Yayasan At-Tauhid
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-This implementation makes model choice and version lineage explicit application concepts. Its mock provider is a named development mode and is not conflated with Anthropic OpenAI Gemini or DeepSeek output.
-
-## One provider interface carries distinct provenance
-
-[provider.ts](https://github.com/YayasanAt-Tauhid/AI-App-Builder-SaaS/blob/75eeae83ee11247e8095e99b8f48dc0f7a995f46/apps/api/src/ai/provider.ts) selects a configured provider. Concrete adapters implement real external calls while [mock.ts](https://github.com/YayasanAt-Tauhid/AI-App-Builder-SaaS/blob/75eeae83ee11247e8095e99b8f48dc0f7a995f46/apps/api/src/ai/mock.ts) is used only when explicitly selected or credentials are absent.
-
-## Versions form a parent-linked graph
-
-[schema.ts](https://github.com/YayasanAt-Tauhid/AI-App-Builder-SaaS/blob/75eeae83ee11247e8095e99b8f48dc0f7a995f46/apps/api/src/db/schema.ts) stores projects files versions and parent-version references. [versions.ts](https://github.com/YayasanAt-Tauhid/AI-App-Builder-SaaS/blob/75eeae83ee11247e8095e99b8f48dc0f7a995f46/apps/api/src/routes/versions.ts) supports listing comparison and restoration instead of treating a numeric counter as history.
-
-## Runtime and delivery follow selected authority
-
-[builder.tsx](https://github.com/YayasanAt-Tauhid/AI-App-Builder-SaaS/blob/75eeae83ee11247e8095e99b8f48dc0f7a995f46/apps/web/components/builder.tsx) joins editing generation and version selection around the current project. Sandpack projects its files and [export.ts](https://github.com/YayasanAt-Tauhid/AI-App-Builder-SaaS/blob/75eeae83ee11247e8095e99b8f48dc0f7a995f46/apps/api/src/routes/export.ts) packages them.
-
-## Evidence
-
-- [Canonical repository](https://github.com/YayasanAt-Tauhid/AI-App-Builder-SaaS)
-- [Inspected tree](https://github.com/YayasanAt-Tauhid/AI-App-Builder-SaaS/tree/75eeae83ee11247e8095e99b8f48dc0f7a995f46)
-- Commit: 75eeae83ee11247e8095e99b8f48dc0f7a995f46
+- 定义：原生制品创作（+委托式创作、源码视觉创作、运行时纠正、变体决策、端到端交付）
+- 实现：托管生成制品工作区（+托管应用项目图、源码权威·实时投射、候选隔离与晋升）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active · 证据深度：source

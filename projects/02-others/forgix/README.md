@@ -1,23 +1,7 @@
 # Forgix
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Forgix descends from a public single-document website-builder source family but materially changes what can authorize a build. A prompt a screenshot or an existing URL can seed the accepted HTML; that new multi-input definition is why it remains an independent derived record.
-
-## Visual and existing-site evidence are first-class inputs
-
-[`client/src/pages/Generate.jsx`](https://github.com/Tanayahue/Forgix/blob/a5e47a12a470b1c5670834ecdd5a09c29a8cf021/client/src/pages/Generate.jsx) exposes prompt image and URL paths. [`server/controllers/Website.controllers.js`](https://github.com/Tanayahue/Forgix/blob/a5e47a12a470b1c5670834ecdd5a09c29a8cf021/server/controllers/Website.controllers.js) sends screenshots through the vision-capable model and extracts an existing page before asking the model to rebuild it.
-
-That differs from a rebrand of the shared Mongo builder: visual pixels or an external site can now establish the initial design evidence rather than only prose.
-
-## A mutable HTML document remains the output authority
-
-[`server/models/website.model.js`](https://github.com/Tanayahue/Forgix/blob/a5e47a12a470b1c5670834ecdd5a09c29a8cf021/server/models/website.model.js) persists `latestCode` conversation and publication fields. [`client/src/pages/Editor.jsx`](https://github.com/Tanayahue/Forgix/blob/a5e47a12a470b1c5670834ecdd5a09c29a8cf021/client/src/pages/Editor.jsx) uses that document for editing and preview. Revisions replace sequential current source; there is no immutable version graph.
-
-## Evidence and lineage limit
-
-- [Canonical repository](https://github.com/Tanayahue/Forgix)
-- [Inspected tree](https://github.com/Tanayahue/Forgix/tree/a5e47a12a470b1c5670834ecdd5a09c29a8cf021)
-- Commit: `a5e47a12a470b1c5670834ecdd5a09c29a8cf021`
-
-Exact controller and schema fingerprints connect Forgix to the Genie public source family. The multi-input artifact contract is the material divergence. The maintainer profile states Jaipur; team region is recorded as India.
+- 定义：端到端交付（+委托式创作、设计-代码翻译、源码视觉创作、运行时纠正）
+- 实现：托管应用项目图（+源码权威·实时投射、托管生成制品工作区）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active · 证据深度：source

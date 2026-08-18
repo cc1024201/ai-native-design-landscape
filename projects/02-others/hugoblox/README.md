@@ -1,25 +1,7 @@
 # HugoBlox
 
-> Research status: **Architecture-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-HugoBlox defines AI site building around portable source ownership: its hosted Hugo Chat proposes a site as structured Markdown, while the open kit renders that source through reusable Hugo blocks. The product promise is not merely “AI makes a page”; it is “AI writes an artifact you can keep editing and deploy elsewhere.”
-
-## The open authority starts after generation
-
-[`modules/blox/schemas/blocks.json`](https://github.com/HugoBlox/kit/blob/68cbf3353012a6f962093df1dac3ed571df7b93d/modules/blox/schemas/blocks.json) describes the block vocabulary the Markdown selects. Theme data and module templates deterministically materialize it into a site. The ordinary loop is therefore:
-
-```text
-natural-language intent -> hosted Hugo Chat -> structured Markdown
--> open block schema and Hugo renderer -> direct source edits -> portable deployment
-```
-
-The repository establishes the artifact format, rendering kit, themes and deployment portability. It does not expose the hosted generator's prompts, model orchestration or revision store, so this dossier stops at architecture-level evidence instead of inventing a source path for the closed stage.
-
-The HugoBlox GitHub organization reports a United Kingdom location.
-
-## Evidence
-
-- [Pinned kit and product contract](https://github.com/HugoBlox/kit/tree/68cbf3353012a6f962093df1dac3ed571df7b93d)
-- [Block schema](https://github.com/HugoBlox/kit/blob/68cbf3353012a6f962093df1dac3ed571df7b93d/modules/blox/schemas/blocks.json)
-- [Block module](https://github.com/HugoBlox/kit/tree/68cbf3353012a6f962093df1dac3ed571df7b93d/modules/blox)
-- [Maintainer location evidence](https://github.com/HugoBlox)
+- 定义：源码视觉创作（+委托式创作、系统治理、端到端交付）
+- 实现：源码权威·实时投射（+托管生成制品工作区）
+- 形态：ai-app-site-builder · 层次：商业产品 · 生命周期：active · 证据深度：architecture

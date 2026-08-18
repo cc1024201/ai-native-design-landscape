@@ -1,17 +1,7 @@
 # BlenderMCP
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-BlenderMCP is the independently released upstream bridge that made a running Blender scene addressable by MCP clients. It supports scene inspection, viewport screenshots, object creation and deletion, material changes and an unrestricted Python escape hatch, with optional external asset and 3D-generation providers.
-
-## The bridge transports intent; Blender owns the scene
-
-The [addon](https://github.com/ahujasid/blender-mcp/blob/3ab892510cc0e5435ba5e611c01fb1021fbde8de/addon.py) runs a socket endpoint inside Blender, where commands can reach the live dependency graph and Blender Python API. The [MCP server](https://github.com/ahujasid/blender-mcp/blob/3ab892510cc0e5435ba5e611c01fb1021fbde8de/src/blender_mcp/server.py) translates client tools into that protocol and returns scene facts or rendered viewport evidence.
-
-There is no parallel scene model in the adapter: the open Blender document is the live authority and a saved `.blend` file is its durable form. Screenshots close an inspect-correct-inspect loop, while arbitrary Python makes the surface extensible but also moves safety and save discipline to the user. Downstream forks and workflow packages are not aliases when they ship their own transport or correction contract; this record names the original released addon/server boundary.
-
-## Evidence
-
-- [Pinned repository](https://github.com/ahujasid/blender-mcp/tree/3ab892510cc0e5435ba5e611c01fb1021fbde8de)
-- [Official product site](https://blendermcp.org/)
-- [Installation and capability contract](https://github.com/ahujasid/blender-mcp/blob/3ab892510cc0e5435ba5e611c01fb1021fbde8de/README.md)
+- 定义：原生制品创作（+委托式创作、运行时纠正、视觉协调证据、端到端交付）
+- 实现：外部 agent 画布（+原生图形权威、文件系统 agent·视觉证据）
+- 形态：agent-controllable-canvas · 层次：连接桥 · 生命周期：active · 证据深度：source

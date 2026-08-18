@@ -1,25 +1,7 @@
 # SRE Design
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-SRE Design treats reliability architecture as a provenance-bound knowledge system. LLMs can propose gaps and operations, but deterministic re-grounding decides whether those changes become accepted topology evidence.
-
-## YAML carries evidence and identity
-
-At commit [`1713dc5f`](https://github.com/latent-sre/sre-design/tree/1713dc5f64d293c0e3b8a4bccf56809eecdd8406), schema-governed records describe services, interfaces, risks and source pointers. Collectors derive facts from code and operational files rather than asking the model to invent the estate.
-
-## The model proposes pointers, not final truth
-
-Draft prompts and gap finders return constrained changes. The pipeline re-resolves pointers against current evidence and applies trust and substance gates before persistence and publication.
-
-## Diagrams are governed projections
-
-Mermaid topology renderers and narration operate after the knowledge base passes its checks. This makes the visual output auditable: a node can be traced to a governed record and its evidence rather than only to a prompt.
-
-## Evidence
-
-- [Pinned source](https://github.com/latent-sre/sre-design/tree/1713dc5f64d293c0e3b8a4bccf56809eecdd8406)
-- [Architecture pipeline](https://github.com/latent-sre/sre-design/blob/1713dc5f64d293c0e3b8a4bccf56809eecdd8406/src/sre_kb/pipeline/architecture.py)
-- [LLM draft contract](https://github.com/latent-sre/sre-design/blob/1713dc5f64d293c0e3b8a4bccf56809eecdd8406/src/sre_kb/synth/draft_prompts.py)
-- [Diagram renderer](https://github.com/latent-sre/sre-design/blob/1713dc5f64d293c0e3b8a4bccf56809eecdd8406/src/sre_kb/render/diagrams.py)
-- [Schema registry](https://github.com/latent-sre/sre-design/blob/1713dc5f64d293c0e3b8a4bccf56809eecdd8406/src/sre_kb/schemas/registry.yaml)
+- 定义：系统治理（+委托式创作、视觉协调证据、运行时纠正、端到端交付）
+- 实现：源码权威·实时投射（+文件系统 agent·视觉证据、候选隔离与晋升）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

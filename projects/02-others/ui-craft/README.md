@@ -1,27 +1,7 @@
 # UI Craft
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-UI Craft is an installable design-engineering control plane for coding agents. It spans direction, persistent context, source construction and deterministic review; the mechanism that distinguishes it from a prompt pack is the executable gate and recovery layer.
-
-## Design context can graduate into enforcement
-
-Users may begin with direct craft or critique commands, then persist a brief, tokens and remembered decisions under `.ui-craft/`. A bundled MCP server exposes anti-slop checks, token lint, an acceptance bar and UI scoring. Review agents combine those mechanical results with accessibility and design judgment.
-
-```text
-existing project + brief/tokens -> routed craft command -> source change
--> deterministic MCP gates + review agents -> correction/finalize
--> persistent design memory; installer snapshots allow rollback
-```
-
-[`score-ui.mjs`](https://github.com/educlopez/ui-craft/blob/2ee6e0889a7a6ceb1542fe9e6793b71c697e1c2a/mcp/src/tools/score-ui.mjs) makes a score reproducible, while [`acceptance-bar.mjs`](https://github.com/educlopez/ui-craft/blob/2ee6e0889a7a6ceb1542fe9e6793b71c697e1c2a/mcp/src/tools/acceptance-bar.mjs) checks declared completion criteria. The Go installer detects agent harnesses, writes atomically, snapshots targets and restores only its own changes on failure. Repository source remains final authority.
-
-The project is MIT-licensed. The maintainer profile reports Madrid, Spain.
-
-## Sources
-
-- [Pinned repository](https://github.com/educlopez/ui-craft/tree/2ee6e0889a7a6ceb1542fe9e6793b71c697e1c2a)
-- [Core skill](https://github.com/educlopez/ui-craft/blob/2ee6e0889a7a6ceb1542fe9e6793b71c697e1c2a/skills/ui-craft/SKILL.md)
-- [Token lint](https://github.com/educlopez/ui-craft/blob/2ee6e0889a7a6ceb1542fe9e6793b71c697e1c2a/mcp/src/tools/tokens-lint.mjs)
-- [Backup store](https://github.com/educlopez/ui-craft/blob/2ee6e0889a7a6ceb1542fe9e6793b71c697e1c2a/cli/backup/store.go)
-- [MIT license](https://github.com/educlopez/ui-craft/blob/2ee6e0889a7a6ceb1542fe9e6793b71c697e1c2a/LICENSE)
+- 定义：系统治理（+委托式创作、运行时纠正、变体决策、端到端交付）
+- 实现：候选隔离与晋升（+文件系统 agent·视觉证据、设计-代码物化）
+- 形态：general-agent-visual-tools · 层次：开源项目 · 生命周期：active · 证据深度：source

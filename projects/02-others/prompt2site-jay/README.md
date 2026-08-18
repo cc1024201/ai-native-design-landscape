@@ -1,23 +1,7 @@
 # Prompt2Site by Jay Sankopal
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Prompt2Site defines a small hosted website artifact as three separately stored source layers. Authentication and history use Firebase identity while MongoDB owns the expiring generated project.
-
-## OpenRouter is parsed into three authorities
-
-[aiControllers.js](https://github.com/jayy0077/AI_Website_Generator/blob/4608d13f1e6852753c776740b880be2b5ccb0a29/backend/controllers/aiControllers.js) asks OpenRouter for labeled HTML, CSS and JavaScript blocks and parses them into a structured response. A failed or malformed block is visible as missing-source placeholders rather than a hidden template substitute.
-
-## Projects deliberately expire
-
-[Project.js](https://github.com/jayy0077/AI_Website_Generator/blob/4608d13f1e6852753c776740b880be2b5ccb0a29/backend/models/Project.js) stores the three layers with a seven-day Mongo TTL. [save.js](https://github.com/jayy0077/AI_Website_Generator/blob/4608d13f1e6852753c776740b880be2b5ccb0a29/backend/routes/save.js) binds them to the authenticated user. This is durable short-lived storage rather than indefinite version history.
-
-## Preview and ZIP reassemble the same layers
-
-The frontend composes current HTML, CSS and JavaScript into an iframe. Its download path writes those same layers into a portable ZIP; history recovers saved projects but does not expose snapshots inside one project.
-
-## Evidence
-
-- [Canonical repository](https://github.com/jayy0077/AI_Website_Generator)
-- [Inspected tree](https://github.com/jayy0077/AI_Website_Generator/tree/4608d13f1e6852753c776740b880be2b5ccb0a29)
-- Commit: 4608d13f1e6852753c776740b880be2b5ccb0a29
+- 定义：端到端交付（+委托式创作、源码视觉创作、运行时纠正）
+- 实现：托管应用项目图（+设计-代码物化、源码权威·实时投射）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active · 证据深度：source

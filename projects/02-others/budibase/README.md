@@ -1,23 +1,7 @@
 # Budibase
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Budibase combines an operations app builder, a visual automation graph, and AI agents that can act through those applications and workflows.
-
-## Applications and automations have different authorities
-
-Screens, components, data sources, forms, roles, and queries define the employee-facing application. A separate flow canvas represents triggers, branches, loops, actions, and logs. The platform connects them without claiming that a workflow graph is also the UI document.
-
-## Agents are configured as operational actors
-
-Agent records include instructions, models, tools, structured outputs, data access, deployment channels, and logs. Agents can invoke application or automation actions and route approvals, while those deterministic resources remain individually editable.
-
-## Runtime feedback returns to the builders
-
-Automation runs project step state and logs onto the flow. Agent sessions expose calls, outputs, and deployment behavior. Docker and Kubernetes packaging make the same workspace self-hostable, including a LiteLLM service for model routing.
-
-## Pinned evidence
-
-- Repository: [Budibase/budibase](https://github.com/Budibase/budibase)
-- Inspected app builder, automation canvas, agents, model routing, run logs, and deployment tree: [`db0fe97d022e2b5ce6fea40e4101a4d36e8e4373`](https://github.com/Budibase/budibase/tree/db0fe97d022e2b5ce6fea40e4101a4d36e8e4373)
-- Immutable revision: [commit `db0fe97`](https://github.com/Budibase/budibase/commit/db0fe97d022e2b5ce6fea40e4101a4d36e8e4373)
+- 定义：源码视觉创作（+原生制品创作、约束驱动工程、委托式创作、运行时纠正、端到端交付）
+- 实现：托管应用项目图（+原生图形权威、运行时意图中继、候选隔离与晋升）
+- 形态：established-visual-platform · 层次：商业产品 · 生命周期：active · 证据深度：source

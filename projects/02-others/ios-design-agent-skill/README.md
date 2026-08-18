@@ -1,15 +1,7 @@
 # iOS Design Agent Skill
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-This skill ports an aesthetic web-design method into native SwiftUI constraints. It reviews typography, color, composition, motion and depth while preserving Dynamic Type, dark mode and accessibility rather than translating web recipes literally.
-
-## Critique returns compilable mutation guidance
-
-The ordinary job is an audit of an existing iOS interface. Findings are prioritized and paired with concrete SwiftUI changes, so code remains the durable artifact while the audit supplies a mutation plan. A published application audit demonstrates the path, but it is evidence of use rather than a controlled benchmark.
-
-The repository establishes methodology and output contract; it does not provide an independent visual renderer or prove that every proposed code fragment has been executed against the target app.
-
-- [Pinned repository](https://github.com/vermont42/iOS-Design-Agent-Skill/tree/7606a41ad51fd040dc9cc813533e4d7552be4c49)
-- [Operational skill](https://github.com/vermont42/iOS-Design-Agent-Skill/blob/7606a41ad51fd040dc9cc813533e4d7552be4c49/ios-design-agent-skill/SKILL.md)
-- [Maintainer profile: Orinda California](https://github.com/vermont42)
+- 定义：视觉协调证据（+运行时纠正、系统治理）
+- 实现：文件系统 agent·视觉证据（+源码权威·实时投射）
+- 形态：general-agent-visual-tools · 层次：agent 工作流 · 生命周期：active · 证据深度：source

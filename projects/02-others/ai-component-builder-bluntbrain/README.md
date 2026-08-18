@@ -1,20 +1,7 @@
 # AI Component Builder by bluntbrain
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-This course-backed implementation adds an explicit keep/discard boundary to the usual prompt-and-preview exercise. Generated React source is transient until the user saves it into the gallery.
-
-## Runtime source remains inspectable
-
-[`App.tsx`](https://github.com/bluntbrain/ai-component-builder-react-js/blob/e24fa00bda245da8090e3dae4a5a751deea9b48f/src/App.tsx) calls OpenAI from the client, cleans the response and coordinates generation and saving. [`preview-panel.tsx`](https://github.com/bluntbrain/ai-component-builder-react-js/blob/e24fa00bda245da8090e3dae4a5a751deea9b48f/src/preview-panel.tsx) builds an isolated `srcDoc` with React, Babel and Tailwind so the current JSX has both code and visual projections.
-
-## Firebase is candidate storage
-
-[`firebase.ts`](https://github.com/bluntbrain/ai-component-builder-react-js/blob/e24fa00bda245da8090e3dae4a5a751deea9b48f/src/firebase.ts) persists selected components for later gallery retrieval. That does not create a full project graph; it creates a small promoted-variant collection.
-
-## Pinned evidence
-
-- [Canonical repository](https://github.com/bluntbrain/ai-component-builder-react-js)
-- [Inspected tree](https://github.com/bluntbrain/ai-component-builder-react-js/tree/e24fa00bda245da8090e3dae4a5a751deea9b48f)
-- [Maintainer region evidence](https://github.com/bluntbrain)
-- Commit: `e24fa00bda245da8090e3dae4a5a751deea9b48f`
+- 定义：源码视觉创作（+委托式创作、运行时纠正、变体决策）
+- 实现：源码权威·实时投射（+候选隔离与晋升、托管应用项目图）
+- 形态：standalone-design-agent · 层次：开源项目 · 生命周期：active · 证据深度：source

@@ -1,22 +1,7 @@
 # PowerPoint Business
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-PowerPoint Business is an SVG-native multi-agent presentation workflow. Consultant, Researcher, Planner, Designer and Reviewer roles pass explicit artifacts rather than one shared conversation, ending in one source SVG per slide plus PPTX and HTML projections.
-
-## Semantic SVG is the edit boundary
-
-Every SVG element receives a stable semantic ID. Natural-language edits resolve through a slide manifest, target the relevant SVG content and save the previous source under `slides/history/` before regeneration. `sync_manifest.py` restores agreement after any SVG change. The source SVG and manifest therefore own editability; the PPTX embeds those SVGs for Office 365 and carries PNG fallbacks for older viewers.
-
-## Planning and visual review are routed separately
-
-The Planner writes an outline and page-level planning cards. The Designer first creates neutral draft SVGs, then applies theme polish without changing content structure. The Reviewer scores content and visuals and routes failures back to the responsible role. `check_svg.py` enforces structural rules and contrast; `preview.py` produces a browsable deck review surface.
-
-## Delivery and recovery boundary
-
-PPTX and HTML are exports from the SVG project, not independent authorities. History is per-slide file recovery rather than a collaborative presentation version graph. Office editability depends on SVG support, so older clients see the raster fallback rather than native slide shapes.
-
-- [Pinned PowerPoint Business revision](https://github.com/Noi1r/powerpoint-business/tree/6ab663b12bc11724783135359e407b62bf2e9cba)
-- [Five-role workflow and artifact contract](https://github.com/Noi1r/powerpoint-business/blob/6ab663b12bc11724783135359e407b62bf2e9cba/SKILL.md)
-- [SVG validator](https://github.com/Noi1r/powerpoint-business/blob/6ab663b12bc11724783135359e407b62bf2e9cba/scripts/check_svg.py)
-- [PPTX exporter](https://github.com/Noi1r/powerpoint-business/blob/6ab663b12bc11724783135359e407b62bf2e9cba/scripts/export_pptx.py)
+- 定义：原生制品创作（+委托式创作、变体决策）
+- 实现：源码权威·实时投射（+文件系统 agent·视觉证据、候选隔离与晋升）
+- 形态：standalone-design-agent · 层次：开源项目 · 生命周期：active · 证据深度：source

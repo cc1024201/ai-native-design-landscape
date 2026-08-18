@@ -1,28 +1,7 @@
-# BUILDFLOW3
+# Buildflow3
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-13**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-BUILDFLOW3 treats generation as production of a typed site specification rather than only an HTML completion. Its strongest implemented feature is a transparent, session-local history state machine shared by prompt revisions and artifact delivery.
-
-## GeneratedSite is the canonical artifact
-
-Pinned revision: `1f1cf02f6c38deb0d756a69881132aba09b7d39f`.
-
-`GeneratedSite` carries structure, design rationale, HTML, CSS, JavaScript and React-oriented output. Preview does not become a second authority: one composer derives the iframe document, new-tab view and downloadable HTML from the current typed object.
-
-## Prompt history and version history are one sequence
-
-Initial generation restarts a generic `useVersionHistory` machine; each successful natural-language revision appends a complete `GeneratedSite` plus its instruction. Users can undo, redo or jump directly to any entry. If they revise after moving backward, future entries are discarded, making the model explicitly linear rather than branching.
-
-## The whole graph is ephemeral
-
-The history hook is deliberately network-free and there is no database-backed project identity. Refresh loses the initial site, revisions and active cursor. Download preserves the current projection only; it does not serialize the design rationale or version sequence.
-
-## Pinned evidence
-
-- [Repository](https://github.com/n0k3m0r8k20i1g4-arch/BUILDFLOW3)
-- [Canonical generated-site type](https://github.com/n0k3m0r8k20i1g4-arch/BUILDFLOW3/blob/1f1cf02f6c38deb0d756a69881132aba09b7d39f/lib/generation/types.ts)
-- [Linear history state machine](https://github.com/n0k3m0r8k20i1g4-arch/BUILDFLOW3/blob/1f1cf02f6c38deb0d756a69881132aba09b7d39f/lib/hooks/useVersionHistory.ts)
-- [Generation and revision integration](https://github.com/n0k3m0r8k20i1g4-arch/BUILDFLOW3/blob/1f1cf02f6c38deb0d756a69881132aba09b7d39f/lib/hooks/useSiteGenerator.ts)
-- [Shared preview and download projection](https://github.com/n0k3m0r8k20i1g4-arch/BUILDFLOW3/blob/1f1cf02f6c38deb0d756a69881132aba09b7d39f/lib/preview/composeDocument.ts)
-- [Direct historical selection](https://github.com/n0k3m0r8k20i1g4-arch/BUILDFLOW3/blob/1f1cf02f6c38deb0d756a69881132aba09b7d39f/components/preview/HistoryPanel.tsx)
+- 定义：原生制品创作（+委托式创作、源码视觉创作、变体决策、端到端交付）
+- 实现：原生图形权威（+源码权威·实时投射、设计-代码物化）
+- 形态：code-native-visual-ide · 层次：开源项目 · 生命周期：active · 证据深度：source

@@ -1,18 +1,7 @@
 # drawio-ai-kit
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-drawio-ai-kit is an orchestration and validation framework for cloud and technical diagrams. It asks the agent to declare topology and containment, then computes coordinates, applies canonical stencil identities and audits the resulting Draw.io XML.
-
-## Logical topology is compiled into editable geometry
-
-Catalog files are the source of truth for AWS, Azure, GCP and other stencil names and colors. A layout engine turns pipeline, hierarchy, network, hub-spoke, mesh, sequence and hybrid structures into positioned graph objects; a validator rejects invented stencils and rule violations. The CLI can render the `.drawio` file to PNG so the agent can inspect and rectify visible defects.
-
-The project removed its earlier MCP server at version 1.0.0 in favor of a local CLI plus thin domain skills. That transition does not change the artifact boundary: editable Draw.io XML remains authoritative, while PNG is disposable visual evidence.
-
-## Evidence
-
-- [Pinned repository](https://github.com/sparklabx/drawio-ai-kit/tree/66c614b28e8f008e8bcea15df99f54bd7f298a02)
-- [Layout engine](https://github.com/sparklabx/drawio-ai-kit/blob/66c614b28e8f008e8bcea15df99f54bd7f298a02/src/layout-engine.mjs)
-- [AWS stencil catalog](https://github.com/sparklabx/drawio-ai-kit/blob/66c614b28e8f008e8bcea15df99f54bd7f298a02/catalog/aws.json)
-- [Migration and visual-check contract](https://github.com/sparklabx/drawio-ai-kit/blob/66c614b28e8f008e8bcea15df99f54bd7f298a02/README.md)
+- 定义：原生制品创作（+系统治理、视觉协调证据）
+- 实现：文件系统 agent·视觉证据（+原生图形权威、源码权威·实时投射）
+- 形态：general-agent-visual-tools · 层次：开源项目 · 生命周期：active · 证据深度：source

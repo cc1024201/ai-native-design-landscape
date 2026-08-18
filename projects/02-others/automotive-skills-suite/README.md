@@ -1,23 +1,7 @@
 # Automotive Skills Suite
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Automotive Skills Suite is a chain of installable Claude skills that defines engineering design as the production and review of standards-bound artifacts across automotive safety, cybersecurity, systems, quality, calibration, and verification.
-
-## File contracts form the system graph
-
-Each builder emits a structured XLSX or related artifact whose sheets and fields become inputs to downstream skills. Traceability IDs, schemas, and tab names are operational interfaces: breaking them can invalidate an analysis chain even when the prose still looks plausible.
-
-## Every builder has a reviewer
-
-A matching confirmation skill reopens the artifact, checks required structure and domain rules, and produces findings plus a visual dashboard. Fault trees, GSN arguments, charts, and Mermaid views are derived evidence, not substitutes for the structured workbook authority.
-
-## Standards shape rather than merely label output
-
-ISO 26262, SOTIF, ASPICE, AUTOSAR, ASAM, cybersecurity, and quality practices impose different required records and review logic. The suite is therefore intentionally heterogeneous; it does not pretend one universal template can represent every engineering deliverable.
-
-## Pinned evidence
-
-- Repository: [jherrodthomas/automotive-skills-suite](https://github.com/jherrodthomas/automotive-skills-suite)
-- Inspected builder/reviewer pairs, schemas, samples, renderers, and validation scripts: [`386191efc25c71d28fe3692ae29123affe015645`](https://github.com/jherrodthomas/automotive-skills-suite/tree/386191efc25c71d28fe3692ae29123affe015645)
-- Immutable revision: [commit `386191e`](https://github.com/jherrodthomas/automotive-skills-suite/commit/386191efc25c71d28fe3692ae29123affe015645)
+- 定义：约束驱动工程（+原生制品创作、系统治理、端到端交付、视觉协调证据）
+- 实现：参数化工程模型权威（+文件系统 agent·视觉证据、候选隔离与晋升）
+- 形态：general-agent-visual-tools · 层次：agent 工作流 · 生命周期：active · 证据深度：source

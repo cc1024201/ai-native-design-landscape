@@ -1,21 +1,7 @@
 # Gia-co-Design
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Gia-co-Design is a browser-local UI design studio where model-generated HTML stays editable as source and as a live preview. It combines variant generation direct manipulation pinned feedback automated critique and portable session sharing.
-
-## Preview edits can return to code
-
-At commit [`6e0c474`](https://github.com/alpha-1-design/Gia-co-Design-/tree/6e0c474e58c109d7393f388dbd7dc29e473f58b5) provider adapters support several BYOK endpoints. [`PreviewCanvas.tsx`](https://github.com/alpha-1-design/Gia-co-Design-/blob/6e0c474e58c109d7393f388dbd7dc29e473f58b5/src/components/PreviewCanvas.tsx) renders generated HTML and exposes element selection movement spacing typography radius and color controls. Sync writes these changes back into the current code direction.
-
-Turns can contain one to three directions. Critique can produce severity-tagged accessibility hierarchy responsiveness and polish findings and a fix action regenerates the selected direction. [`VersionHistoryModal.tsx`](https://github.com/alpha-1-design/Gia-co-Design-/blob/6e0c474e58c109d7393f388dbd7dc29e473f58b5/src/components/VersionHistoryModal.tsx) exposes the saved turn history.
-
-Exports include PNG standalone HTML a UI-kit ZIP and complete JSON session backup. Encoded share links carry turns directions pins and code in read-only form; browser storage remains the private working authority.
-
-Public profile evidence does not establish a physical team region.
-
-## Evidence
-
-- [Provider boundary](https://github.com/alpha-1-design/Gia-co-Design-/blob/6e0c474e58c109d7393f388dbd7dc29e473f58b5/src/lib/providers.ts)
-- [Export implementation](https://github.com/alpha-1-design/Gia-co-Design-/blob/6e0c474e58c109d7393f388dbd7dc29e473f58b5/src/components/ExportModal.tsx)
-- [Pinned README](https://github.com/alpha-1-design/Gia-co-Design-/blob/6e0c474e58c109d7393f388dbd7dc29e473f58b5/README.md)
+- 定义：源码视觉创作（+委托式创作、原生制品创作、运行时纠正、变体决策、设计-代码翻译、端到端交付）
+- 实现：源码权威·实时投射（+候选隔离与晋升、设计-代码物化、托管应用项目图）
+- 形态：standalone-design-agent · 层次：开源项目 · 生命周期：active · 证据深度：source

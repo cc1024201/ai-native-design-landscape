@@ -1,23 +1,7 @@
 # AI Website Builder by Vaibhav Hajare
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-This browser workspace makes a separated virtual file set the current artifact. Google GenAI streams generation and follow-up changes while users can also import or directly rewrite those files.
-
-## Streaming output is normalized into files
-
-[geminiService.ts](https://github.com/lab1207/AI-Website-Builder/blob/d6ceb9bc66f3e6e8ace2aac3817c1b71073db05d/services/geminiService.ts) supplies conversation context and asks Google GenAI for the project's structured file content. The service does not claim a backend persistence layer.
-
-## The workspace owns correction and import
-
-[App.tsx](https://github.com/lab1207/AI-Website-Builder/blob/d6ceb9bc66f3e6e8ace2aac3817c1b71073db05d/App.tsx) holds current files, chat context and direct changes in browser state. Imported files enter the same graph as generated ones; there is no automatic distinction after acceptance.
-
-## Preview and export are projections of current files
-
-[PreviewPane.tsx](https://github.com/lab1207/AI-Website-Builder/blob/d6ceb9bc66f3e6e8ace2aac3817c1b71073db05d/components/PreviewPane.tsx) assembles the current files into an iframe. Copy and export act on that graph while durable versions and hosted deployment remain absent.
-
-## Evidence
-
-- [Canonical repository](https://github.com/lab1207/AI-Website-Builder)
-- [Inspected tree](https://github.com/lab1207/AI-Website-Builder/tree/d6ceb9bc66f3e6e8ace2aac3817c1b71073db05d)
-- Commit: d6ceb9bc66f3e6e8ace2aac3817c1b71073db05d
+- 定义：原生制品创作（+委托式创作、源码视觉创作、端到端交付）
+- 实现：源码权威·实时投射（+设计-代码物化）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active · 证据深度：source

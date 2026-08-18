@@ -1,24 +1,7 @@
 # HasCode UI
 
-> Research status: **Source-level** · Lifecycle: **active-transition** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-HasCode UI is a persisted component workshop. A generated TSX component is not just displayed once: it acquires revisions, can be forked, and is compiled in the browser into the preview used to inspect it.
-
-## Creation starts a component lineage
-
-[`component.ts`](https://github.com/lutfi-haslab/hascode-ui/blob/da16362f311a42155e5e51f7a91c7b47e2faa6e5/src/server/api/routers/component.ts) selects an OpenAI or Anthropic generation path and creates both the component and its initial revision. [`openai.ts`](https://github.com/lutfi-haslab/hascode-ui/blob/da16362f311a42155e5e51f7a91c7b47e2faa6e5/src/server/openai.ts) extracts TSX from model responses and anchors later changes to the existing code instead of asking for an unrelated replacement.
-
-## Revision and fork are different operations
-
-The chat sends an instruction against a revision and persists the model's result as another revision. [`EditorTabs.tsx`](https://github.com/lutfi-haslab/hascode-ui/blob/da16362f311a42155e5e51f7a91c7b47e2faa6e5/src/components/EditorTabs.tsx) can also fork a selected revision into a new component identity. This is a genuine branch choice rather than an undo stack.
-
-## Projection is compiled from stored source
-
-[`compiler.ts`](https://github.com/lutfi-haslab/hascode-ui/blob/da16362f311a42155e5e51f7a91c7b47e2faa6e5/src/utils/compiler.ts) transforms TSX and generates Tailwind CSS in the browser. The preview therefore remains downstream of persisted source. The code tab is read-only in the pinned UI; correction returns through chat rather than direct source editing.
-
-## Pinned evidence
-
-- [Canonical repository](https://github.com/lutfi-haslab/hascode-ui)
-- [Persisted schema](https://github.com/lutfi-haslab/hascode-ui/blob/da16362f311a42155e5e51f7a91c7b47e2faa6e5/prisma/schema.prisma)
-- [Inspected tree](https://github.com/lutfi-haslab/hascode-ui/tree/da16362f311a42155e5e51f7a91c7b47e2faa6e5)
-- Commit: `da16362f311a42155e5e51f7a91c7b47e2faa6e5`
+- 定义：源码视觉创作（+委托式创作、运行时纠正、变体决策、端到端交付）
+- 实现：源码权威·实时投射（+候选隔离与晋升、托管应用项目图）
+- 形态：standalone-design-agent · 层次：开源项目 · 生命周期：active-transition · 证据深度：source

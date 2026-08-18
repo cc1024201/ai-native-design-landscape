@@ -1,23 +1,7 @@
 # Unkode
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Unkode treats software architecture as a repository-resident model that agents and developers can inspect, compare, and update. Its differentiator is not diagram generation alone but preserving an explicit architectural contract near the code.
-
-## YAML is the working authority
-
-Architecture entities and relationships live in structured YAML. Visual diagrams and documentation are generated projections. This direction matters: a rendered view can be replaced without losing the model, while editing only an exported image would not update the architectural contract.
-
-## Agent work is grounded by the contract
-
-The agent reads repository context and the declared architecture, then uses that material for questions, analysis, and proposed updates. The same model can be checked for divergence as the implementation changes. In this definition of design, maintaining correspondence is as important as making the initial diagram.
-
-## Drift is evidence, not automatic truth
-
-Diffs can reveal that code and the declared model no longer agree, but they do not decide which side is correct. A developer still has to promote the intended change—update the model, update the code, or explain the exception.
-
-## Pinned evidence
-
-- Repository: [deepcodersinc/unkode](https://github.com/deepcodersinc/unkode)
-- Inspected implementation: [`379f7005da89afb3c030ce019b92d12e1b93618b`](https://github.com/deepcodersinc/unkode/tree/379f7005da89afb3c030ce019b92d12e1b93618b)
-- Immutable revision: [commit `379f700`](https://github.com/deepcodersinc/unkode/commit/379f7005da89afb3c030ce019b92d12e1b93618b)
+- 定义：系统治理（+源码视觉创作、运行时纠正、视觉协调证据）
+- 实现：文件系统 agent·视觉证据（+源码权威·实时投射、设计-代码物化、候选隔离与晋升）
+- 形态：standalone-design-agent · 层次：开源项目 · 生命周期：active · 证据深度：source

@@ -1,23 +1,7 @@
 # AI Website Generator by Rishikesh Ugale
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-This project separates generation from persistence: Puter.js creates a three-layer site in the browser and a FastAPI service stores the resulting bundle as a recoverable MongoDB project. A built-in fallback means the visible artifact is not always model-authored.
-
-## Generation has an explicit fallback boundary
-
-[`aiService.js`](https://github.com/rishieeee/ai-website-generator/blob/6e585749deed9d2e67332ec0bea0f40643d5e45f/frontend/src/services/aiService.js) calls Puter AI for strict JSON containing HTML, CSS and JavaScript and uses multiple parsing strategies. Missing Puter support, parse failure or request failure returns a fixed fallback bundle; the implementation makes this substitution visible in source rather than falsely treating every result as a successful model response.
-
-## Saved projects own recovery
-
-[`Home.jsx`](https://github.com/rishieeee/ai-website-generator/blob/6e585749deed9d2e67332ec0bea0f40643d5e45f/frontend/src/pages/Home.jsx) saves each resulting bundle and reloads prior projects through the API. [`endpoints.py`](https://github.com/rishieeee/ai-website-generator/blob/6e585749deed9d2e67332ec0bea0f40643d5e45f/backend/app/api/endpoints.py) provides MongoDB create, list, get and delete operations. This is project persistence without an immutable revision chain.
-
-## Projection and delivery consume the bundle
-
-[`PreviewFrame.jsx`](https://github.com/rishieeee/ai-website-generator/blob/6e585749deed9d2e67332ec0bea0f40643d5e45f/frontend/src/components/PreviewFrame.jsx) writes the current three source layers into an iframe document. [`zipper.js`](https://github.com/rishieeee/ai-website-generator/blob/6e585749deed9d2e67332ec0bea0f40643d5e45f/frontend/src/utils/zipper.js) creates a downloadable project ZIP from the same values.
-
-## Evidence
-
-- [Canonical repository](https://github.com/rishieeee/ai-website-generator)
-- [Inspected tree](https://github.com/rishieeee/ai-website-generator/tree/6e585749deed9d2e67332ec0bea0f40643d5e45f)
-- Commit: `6e585749deed9d2e67332ec0bea0f40643d5e45f`
+- 定义：端到端交付（+委托式创作、源码视觉创作）
+- 实现：托管应用项目图（+设计-代码物化、源码权威·实时投射）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active · 证据深度：source

@@ -1,17 +1,7 @@
 # mcp-pcb-emcopilot
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-mcp-pcb-emcopilot is an EMC and signal-integrity review system for real PCB artifacts. It parses KiCad schematic and layout files, cross-references the BOM, applies market-specific preflight constraints and queues deeper simulations when a finding needs evidence.
-
-## Three-way artifact correlation makes findings addressable
-
-The [source package](https://github.com/RFingAdam/mcp-pcb-emcopilot/tree/bb7043c4269f162ce6e53c24ee0f17478b0faed1/src) resolves schematic nets, layout geometry and component identities into shared findings. Return-path, decoupling, crosstalk, plane-resonance and high-speed-interface analyzers operate on those parsed artifacts.
-
-Cross-MCP intents can request regulatory limits, openEMS/NEC2 simulation or circuit work without erasing where a claim originated. Native KiCad files remain authority; reports and queues are review/correction evidence.
-
-## Evidence
-
-- [Pinned repository](https://github.com/RFingAdam/mcp-pcb-emcopilot/tree/bb7043c4269f162ce6e53c24ee0f17478b0faed1)
-- [Source package](https://github.com/RFingAdam/mcp-pcb-emcopilot/tree/bb7043c4269f162ce6e53c24ee0f17478b0faed1/src)
-- [Documentation](https://github.com/RFingAdam/mcp-pcb-emcopilot/tree/bb7043c4269f162ce6e53c24ee0f17478b0faed1/docs)
+- 定义：系统治理（+约束驱动工程、运行时纠正、视觉协调证据）
+- 实现：文件系统 agent·视觉证据（+参数化工程模型权威、外部 agent 画布）
+- 形态：ai-engineering-design-workspace · 层次：连接桥 · 生命周期：active · 证据深度：source

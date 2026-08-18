@@ -1,23 +1,7 @@
 # AI Builder by Nishant Chaudhary
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-AI Builder defines a dashboard as typed JSON rather than a chat transcript or screenshot. The model proposes that graph; the user can arrange it on a canvas or edit the JSON directly; rendering and export consume the same accepted schema.
-
-## A typed dashboard graph is authoritative
-
-[`src/ai/aiClient.ts`](https://github.com/Nishant-Chaudhary5338/ai-builder/blob/a64bff01ac57589e25310556986f94e81cfc440f/src/ai/aiClient.ts) asks the provider for an `AIDashboardSchema` and can request a schema diff for later prompts. [`src/stores/builderStore.ts`](https://github.com/Nishant-Chaudhary5338/ai-builder/blob/a64bff01ac57589e25310556986f94e81cfc440f/src/stores/builderStore.ts) holds the current schema together with prompt history active version and saved versions in browser storage.
-
-The renderer in [`DashboardFromSchema.tsx`](https://github.com/Nishant-Chaudhary5338/ai-builder/blob/a64bff01ac57589e25310556986f94e81cfc440f/src/components/canvas/DashboardFromSchema.tsx) maps that graph to draggable and resizable dashboard widgets. This is direct graph correction rather than a screenshot overlay.
-
-## Manual correction and promotion
-
-[`JSONPanel.tsx`](https://github.com/Nishant-Chaudhary5338/ai-builder/blob/a64bff01ac57589e25310556986f94e81cfc440f/src/components/panels/JSONPanel.tsx) exposes the authority in Monaco. [`codeGen.ts`](https://github.com/Nishant-Chaudhary5338/ai-builder/blob/a64bff01ac57589e25310556986f94e81cfc440f/src/lib/codeGen.ts) projects the adopted graph to React or JSON for export. Versions remain browser-local; the source does not establish a hosted collaboration or deployment backend.
-
-## Evidence and location
-
-- [Canonical repository](https://github.com/Nishant-Chaudhary5338/ai-builder)
-- [Inspected tree](https://github.com/Nishant-Chaudhary5338/ai-builder/tree/a64bff01ac57589e25310556986f94e81cfc440f)
-- Commit: `a64bff01ac57589e25310556986f94e81cfc440f`
-
-The maintainer profile states New Delhi; team region is recorded as India.
+- 定义：原生制品创作（+委托式创作、源码视觉创作、运行时纠正、变体决策、端到端交付）
+- 实现：原生图形权威（+源码权威·实时投射、候选隔离与晋升）
+- 形态：agent-controllable-canvas · 层次：开源项目 · 生命周期：active · 证据深度：source

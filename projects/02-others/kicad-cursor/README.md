@@ -1,16 +1,7 @@
 # kicad-cursor
 
-> Research status: **Architecture-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-kicad-cursor is a chat-driven Cursor workspace that combines a design brief, datasheets, component selection, schematic and PCB MCP servers and an ERC/DRC verification skill.
-
-## design.yaml is the conversational handoff
-
-The agent reads `design.yaml`, selects parts from a shared library, mutates a live KiCad project through IPC and uses the official CLI for verification. Native `.kicad_sch` and `.kicad_pcb` files remain authoritative; constraints, BOM targets and reports support the path.
-
-The checked repository hard-codes the maintainer's Windows global-library paths and requires WSL for part import. It therefore establishes a working personal architecture and reusable template, not a portable zero-configuration product.
-
-- [Pinned repository](https://github.com/cyon1c/kicad-cursor/tree/ea4d359f6a5f733521add60b70a9b7abb8832deb)
-- [Project skill](https://github.com/cyon1c/kicad-cursor/blob/ea4d359f6a5f733521add60b70a9b7abb8832deb/.cursor/skills/kicad-project/SKILL.md)
-- [Verification skill](https://github.com/cyon1c/kicad-cursor/blob/ea4d359f6a5f733521add60b70a9b7abb8832deb/.cursor/skills/design-verify/SKILL.md)
-- [Maintainer profile: United States](https://github.com/cyon1c)
+- 定义：约束驱动工程（+委托式创作、原生制品创作、运行时纠正）
+- 实现：外部 agent 画布（+运行时意图中继、文件系统 agent·视觉证据）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：architecture

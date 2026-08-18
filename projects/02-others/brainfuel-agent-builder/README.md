@@ -1,23 +1,7 @@
 # Brainfuel Agent Builder
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Brainfuel Agent Builder is a native macOS workflow canvas. Its defining technical direction is local structured authority: SwiftData stores the graph, native services execute it and provider credentials stay in Keychain.
-
-## The graph has domain and persistence models
-
-[GraphDocument.swift](https://github.com/brainfuel/agent-builder/blob/264c14df0e9a5a83b612f9863f85a5ffafac3da8/Agentic/Models/Persistence/GraphDocument.swift) is the saved counterpart to typed domain nodes and edges. [GraphPersistenceService.swift](https://github.com/brainfuel/agent-builder/blob/264c14df0e9a5a83b612f9863f85a5ffafac3da8/Agentic/Services/Persistence/GraphPersistenceService.swift) commits editor changes through SwiftData rather than flattening the canvas into an image.
-
-## Coordination follows graph structure
-
-[CoordinatorOrchestrator.swift](https://github.com/brainfuel/agent-builder/blob/264c14df0e9a5a83b612f9863f85a5ffafac3da8/Agentic/Services/Execution/CoordinatorOrchestrator.swift) selects a root, traverses graph edges, constructs typed handoff packets and records a coordinator run. Provider and tool services handle live LLM and MCP calls.
-
-## Inspection is part of authoring
-
-The canvas, schema controls and execution view expose node contracts and live traces. This makes the product closer to a local agent IDE than a hosted no-code SaaS. There is no evidence of collaborative server versions or shared deployment.
-
-## Pinned evidence
-
-- [Repository](https://github.com/brainfuel/agent-builder)
-- [Inspected tree](https://github.com/brainfuel/agent-builder/tree/264c14df0e9a5a83b612f9863f85a5ffafac3da8)
-- [Live provider execution](https://github.com/brainfuel/agent-builder/blob/264c14df0e9a5a83b612f9863f85a5ffafac3da8/Agentic/Services/Execution/LiveProviderExecutionService.swift)
+- 定义：约束驱动工程（+源码视觉创作、原生制品创作、运行时纠正、系统治理）
+- 实现：原生图形权威（+托管应用项目图、运行时意图中继）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

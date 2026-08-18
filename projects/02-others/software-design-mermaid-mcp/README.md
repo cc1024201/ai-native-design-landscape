@@ -1,23 +1,7 @@
 # Software Design Mermaid MCP
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Software Design Mermaid MCP creates a deliberate turn-taking loop between Claude and a visual Mermaid editor: the model proposes structure, the user manipulates it spatially, and the revised source returns to the conversation.
-
-## A browser editor is opened as an MCP interaction
-
-The server launches a drag-and-drop editing surface for the model's Mermaid proposal. Users can move nodes, edit labels, draw connections, and work with subgraphs while seeing a live preview. Submitting returns the corrected Mermaid to the calling agent.
-
-## Human geometry becomes machine-readable again
-
-The key innovation is not just preview. Direct manipulation is translated back into source that can inform the next agent turn. This prevents visual corrections from becoming an invisible side channel and makes the user an active design participant.
-
-## Session boundary and limits
-
-The browser-mediated interaction is a runtime relay, not a durable collaborative diagram repository. Mermaid parsing constrains what can round-trip; valid submitted source still requires architectural and domain review.
-
-## Pinned evidence
-
-- Repository: [wzh4464/software-design-mermaid-mcp](https://github.com/wzh4464/software-design-mermaid-mcp)
-- Inspected MCP/editor source: [`498d32fb2dc9364b231f1f58229b22170c3823ae`](https://github.com/wzh4464/software-design-mermaid-mcp/tree/498d32fb2dc9364b231f1f58229b22170c3823ae)
-- Immutable revision: [commit `498d32f`](https://github.com/wzh4464/software-design-mermaid-mcp/commit/498d32fb2dc9364b231f1f58229b22170c3823ae)
+- 定义：源码视觉创作（+原生制品创作、运行时纠正、变体决策）
+- 实现：源码权威·实时投射（+外部 agent 画布、候选隔离与晋升、运行时意图中继）
+- 形态：agent-controllable-canvas · 层次：连接桥 · 生命周期：active · 证据深度：source

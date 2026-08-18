@@ -1,19 +1,7 @@
 # Yellow Machine
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Yellow Machine separates transient generation from retained component history. The current Gemini result is not durable until the user presses Save.
-
-## Generation and isolation
-
-[`Slide1.tsx`](https://github.com/Codevesh090/YellowMachine-Ai-Component-Builder/blob/87394fc633db43ccd3021a04c508d97ffb0fc1c5/src/components/Slide1.tsx) sends the prompt to Gemini and requests raw single-root JSX. [`PreviewComponent.tsx`](https://github.com/Codevesh090/YellowMachine-Ai-Component-Builder/blob/87394fc633db43ccd3021a04c508d97ffb0fc1c5/src/components/PreviewComponent.tsx) constructs a sandboxed iframe document and deliberately excludes same-origin access.
-
-## Promotion to gallery
-
-[`firebase.ts`](https://github.com/Codevesh090/YellowMachine-Ai-Component-Builder/blob/87394fc633db43ccd3021a04c508d97ffb0fc1c5/src/firebase.ts) creates, lists and deletes saved component records. Gallery cards render their own preview, so selection creates a recoverable candidate collection rather than just chat history.
-
-## Pinned evidence
-
-- [Canonical repository](https://github.com/Codevesh090/YellowMachine-Ai-Component-Builder)
-- [Inspected tree](https://github.com/Codevesh090/YellowMachine-Ai-Component-Builder/tree/87394fc633db43ccd3021a04c508d97ffb0fc1c5)
-- Commit: `87394fc633db43ccd3021a04c508d97ffb0fc1c5`
+- 定义：源码视觉创作（+委托式创作、运行时纠正、变体决策）
+- 实现：源码权威·实时投射（+候选隔离与晋升、托管应用项目图）
+- 形态：standalone-design-agent · 层次：开源项目 · 生命周期：active · 证据深度：source

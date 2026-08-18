@@ -1,16 +1,7 @@
 # PCBA Design Skills
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-PCBA Design Skills is a modular electronics team that can start from an idea, schematic, netlist-like drawing, PCB, BOM or fabrication package and produce reviewable artifacts through order preparation.
-
-## Program state invalidates downstream work
-
-`program-state.json` coordinates briefs, sourcing locks, circuit review, humanized schematics, layout experiments, release manifests and optional order records. A changed netlist, part/package or footprint invalidates dependent gates. Visual QA is mandatory beside ERC/DRC, with connectivity comparison preserving electrical meaning through schematic cleanup.
-
-The workflow stops before consequential ordering unless the user approves. Its published case study demonstrates a real path, while the skills explicitly avoid treating zero opens or a successful upload as proof of correct assembly.
-
-- [Pinned repository](https://github.com/Keitark/pcba-design-skills/tree/d41e9996f052016727403236cf0f7476f8f23a1b)
-- [Program manager](https://github.com/Keitark/pcba-design-skills/blob/d41e9996f052016727403236cf0f7476f8f23a1b/.agents/skills/manage-pcba-program/SKILL.md)
-- [Artifact contracts](https://github.com/Keitark/pcba-design-skills/blob/d41e9996f052016727403236cf0f7476f8f23a1b/docs/artifact-contracts.md)
-- [Maintainer profile checked; no location published](https://github.com/Keitark)
+- 定义：约束驱动工程（+系统治理、运行时纠正、视觉协调证据、端到端交付）
+- 实现：文件系统 agent·视觉证据（+参数化工程模型权威）
+- 形态：ai-engineering-design-workspace · 层次：agent 工作流 · 生命周期：active · 证据深度：source

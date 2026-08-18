@@ -1,28 +1,7 @@
 # StyleSeed
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-StyleSeed is a design-method compiler and verification layer for coding agents. Its contribution is not another component collection: it turns a selected grammar, surface adapter, brand recipe, palette and bounded project choices into a persistent design lock and a small hash-verifiable rule bundle.
-
-## The lock controls drift; the renderer remains replaceable
-
-`STYLESEED.md` records the chosen design direction. [`resolve-context.mjs`](https://github.com/bitjaru/styleseed/blob/1a00699d1a8ec083f53a0cd5196de2b252c1e0ed/engine/.claude/skills/ss-resolve/scripts/resolve-context.mjs) composes the active context into `.styleseed/effective-rules.md` and a manifest containing selections and source hashes. [`validate-engine.mjs`](https://github.com/bitjaru/styleseed/blob/1a00699d1a8ec083f53a0cd5196de2b252c1e0ed/scripts/validate-engine.mjs) exercises selection, bundle hashing, drift detection and the score-before-visual-verify ordering.
-
-```text
-product job + references -> three distinct directions -> human selection
--> STYLESEED.md -> deterministic context bundle + provenance manifest
--> agent changes repository source -> code score >= 80
--> real render/screenshot review -> fix and re-render -> human evidence
-```
-
-[`STUDIO-PIPELINE.md`](https://github.com/bitjaru/styleseed/blob/1a00699d1a8ec083f53a0cd5196de2b252c1e0ed/engine/STUDIO-PIPELINE.md) preserves rejected directions and the selection rationale before implementation. The repository source remains the final UI authority; StyleSeed owns the constraint compilation, decision record and evidence gates. That separation lets the same method target product UI, decks, documents and single frames without pretending to own every renderer.
-
-The project is MIT licensed. The maintainer profile does not provide reliable region evidence. Reported benchmark gains are not treated as independent validation here.
-
-## Evidence
-
-- [Pinned repository](https://github.com/bitjaru/styleseed/tree/1a00699d1a8ec083f53a0cd5196de2b252c1e0ed)
-- [Architecture contract](https://github.com/bitjaru/styleseed/blob/1a00699d1a8ec083f53a0cd5196de2b252c1e0ed/engine/ARCHITECTURE.md)
-- [Context resolver](https://github.com/bitjaru/styleseed/blob/1a00699d1a8ec083f53a0cd5196de2b252c1e0ed/engine/.claude/skills/ss-resolve/scripts/resolve-context.mjs)
-- [Studio decision pipeline](https://github.com/bitjaru/styleseed/blob/1a00699d1a8ec083f53a0cd5196de2b252c1e0ed/engine/STUDIO-PIPELINE.md)
-- [Executable contract validation](https://github.com/bitjaru/styleseed/blob/1a00699d1a8ec083f53a0cd5196de2b252c1e0ed/scripts/validate-engine.mjs)
+- 定义：系统治理（+变体决策、运行时纠正、源码视觉创作、视觉协调证据）
+- 实现：文件系统 agent·视觉证据（+候选隔离与晋升、源码权威·实时投射）
+- 形态：general-agent-visual-tools · 层次：开源项目 · 生命周期：active · 证据深度：source

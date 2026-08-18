@@ -1,23 +1,7 @@
-# ÉTER
+# ETER
 
-> Research status: **Architecture-level** · Lifecycle: **active** · Last reviewed: **2026-08-13**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-ÉTER is a hosted no-code platform whose public showcase describes two related products: a multi-tenant website builder and an embeddable AI assistant. The website path qualifies independently because ordinary users can move from a guided brief to a customized and published visual artifact.
-
-## The public product contract is a six-step site lifecycle
-
-The documented flow gathers business context, generates copy, lets the user change colors, typography and layout, previews the assembled site and publishes it on a tenant-specific domain. This is closer to a constrained design system than to a freeform code editor: visible parameters and generated content are the correction surface.
-
-## Publishing is part of the artifact definition
-
-Tenant routing and domain delivery are presented as first-class platform capabilities rather than a download afterthought. The accompanying AI assistant can be embedded into sites, but it is not used as a substitute for evidence about the website-authoring loop.
-
-## Evidence ceiling
-
-The showcase repository contains only public documentation; the application source and data model are private. It supports product and architecture claims through its live deployment and demonstration, but cannot establish storage schema, version behavior, runtime isolation or source-to-preview mapping. Those remain unresolved rather than guessed.
-
-## Public evidence
-
-- [Showcase repository](https://github.com/IgnacioGentili/eter-showcase)
-- [Live platform](https://www.eter.cloud/)
-- [Product demonstration](https://www.loom.com/share/beb7774c2ec144378bf2e6a4744b7215)
+- 定义：端到端交付（+委托式创作、原生制品创作、系统治理）
+- 实现：托管应用项目图（+托管生成制品工作区、原生图形权威）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active · 证据深度：architecture

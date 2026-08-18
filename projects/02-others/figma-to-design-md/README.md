@@ -1,26 +1,7 @@
 # Figma to design.md
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Figma to design.md converts implementation-side token sources—and optionally live Figma context—into a structured document that coding agents can consume. Its starting assumption is important: current source tokens are evidence, while intent and judgment still require human completion.
-
-## Detection precedes classification
-
-The [skill contract](https://github.com/albertzhangz10/figma-design-system-to-design-md/blob/610316591cb24f8de24812b9a3d5ddbb5f517ff1/skills/figma-design-system-to-design-md/SKILL.md) searches CSS variables, JSON/TypeScript tokens, Tailwind configuration and global styles. It classifies colors, typography, spacing, radius, borders, elevation and responsive rules, then can query Figma MCP for component and effect evidence.
-
-```text
-repository token/config sources + optional Figma context
--> detect and classify -> structured design.md draft
--> human fills intent and do/don't judgment -> confirm -> write file
-```
-
-The explicit confirmation before saving prevents discovery from silently replacing an existing design contract. `design.md` is a portable snapshot; there is no automatic watcher or reverse write to source tokens or Figma, so later drift requires rerunning the workflow and reviewing the diff.
-
-The repository also links a web surface for nontechnical users; it represents the same conversion workflow rather than a separate product. The project is MIT-licensed. No reliable maintainer-region evidence was found.
-
-## Evidence
-
-- [Pinned repository](https://github.com/albertzhangz10/figma-design-system-to-design-md/tree/610316591cb24f8de24812b9a3d5ddbb5f517ff1)
-- [English product contract](https://github.com/albertzhangz10/figma-design-system-to-design-md/blob/610316591cb24f8de24812b9a3d5ddbb5f517ff1/README.md)
-- [Chinese product contract](https://github.com/albertzhangz10/figma-design-system-to-design-md/blob/610316591cb24f8de24812b9a3d5ddbb5f517ff1/README.zh-CN.md)
-- [MIT license](https://github.com/albertzhangz10/figma-design-system-to-design-md/blob/610316591cb24f8de24812b9a3d5ddbb5f517ff1/LICENSE)
+- 定义：设计-代码翻译（+系统治理、原生制品创作、视觉协调证据）
+- 实现：文件系统 agent·视觉证据（+设计-代码物化、外部 agent 画布）
+- 形态：design-code-bridge · 层次：开源项目 · 生命周期：active · 证据深度：source

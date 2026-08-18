@@ -1,23 +1,7 @@
 # Turbo EA
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Turbo EA models an organization's IT landscape as a configurable digital twin. Diagrams are only one way to view a metamodel of cards, fields, subtypes, relationships, and lifecycle facts.
-
-## The metamodel is data
-
-Administrators can define record types and relations without recompiling domain classes. Draw.io and BPMN views project subsets of that graph for analysis. This makes the enterprise repository—not any single canvas—the authority.
-
-## AI and MCP operate on governed records
-
-AI assistance can analyze or propose changes, while the MCP server exposes structured operations. Write batching, safeguards, and explicit mutation boundaries matter because one agent action may touch many linked facts. The tool surface is consequently closer to database administration than free-form drawing.
-
-## A digital twin is a maintained claim
-
-PostgreSQL persistence and the self-hosted stack make the model durable. They do not guarantee that it matches the real estate: connectors, owners, and review processes must keep it current. Diagram export and BPMN views remain evidence products, not deployment engines.
-
-## Pinned evidence
-
-- Repository: [vincentmakes/turbo-ea](https://github.com/vincentmakes/turbo-ea)
-- Inspected platform tree: [`0838d536e91f5c72e2ebe358a25f9bb03c77b704`](https://github.com/vincentmakes/turbo-ea/tree/0838d536e91f5c72e2ebe358a25f9bb03c77b704)
-- Immutable revision: [commit `0838d53`](https://github.com/vincentmakes/turbo-ea/commit/0838d536e91f5c72e2ebe358a25f9bb03c77b704)
+- 定义：系统治理（+原生制品创作、委托式创作、运行时纠正、变体决策）
+- 实现：原生图形权威（+外部 agent 画布、候选隔离与晋升、托管应用项目图）
+- 形态：established-visual-platform · 层次：开源项目 · 生命周期：active · 证据深度：source

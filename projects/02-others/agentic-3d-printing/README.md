@@ -1,18 +1,7 @@
 # Agentic 3D Printing
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Agentic 3D Printing packages requirements, parametric construction, printability review and visual self-inspection into one Claude Code skill. The ordinary interaction is prose iteration, but the durable artifact is a parameterized Python CAD program.
-
-## Manufacturing constraints enter before code
-
-The workflow asks for purpose, critical dimensions, tolerances, mounting, material, printer and orientation. It then states the selected CAD kernel and construction strategy before writing code. A generator exports STL and reports its bounding box and volume; review checks wall thickness, feature size, overhang, bridge and clearance guidance.
-
-A Three.js STL viewer lets the agent inspect several angles and revise source parameters. Python is the design authority; the CAD kernel resolves watertight geometry; STL/3MF are fabrication deliveries; the viewer is evidence. Worked examples preserve scripts, exports, images and handoff notes together.
-
-The rules are practical heuristics, not certification. A passing watertightness or feature-size check cannot prove real load, material behavior or printer calibration.
-
-- [Pinned repository](https://github.com/efdavis/agentic-3d-printing/tree/ced7fa1d006c3f3cd19bbbeaf4b258c64f3507cd)
-- [Five-phase skill](https://github.com/efdavis/agentic-3d-printing/blob/ced7fa1d006c3f3cd19bbbeaf4b258c64f3507cd/SKILL.md)
-- [CAD pattern library](https://github.com/efdavis/agentic-3d-printing/blob/ced7fa1d006c3f3cd19bbbeaf4b258c64f3507cd/references/cad-patterns.md)
-- [Maintainer location evidence](https://github.com/efdavis)
+- 定义：约束驱动工程（+原生制品创作、运行时纠正、端到端交付）
+- 实现：参数化工程模型权威（+文件系统 agent·视觉证据）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

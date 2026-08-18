@@ -1,20 +1,7 @@
 # PPT SaaS
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-PPT SaaS is the application in `shibinsp/pptxfactory`: an AI presentation generator backed by real PPTX templates, generation APIs, a browser slide editor and native deck files.
-
-## Implemented core and claimed surface differ
-
-The backend contains content, template, image, design and document-processing agents and a large native template set. [`SlideEditor.jsx`](https://github.com/shibinsp/pptxfactory/blob/cc837d33715eb130c46297c1ea2d7028c3d1e58c/frontend/src/components/SlideEditor.jsx) implements direct slide operations, and the backend records deck history and writes `.pptx` files.
-
-The global chat component is currently not wired into that editor: `App.jsx` logs proposed actions with a “would integrate” comment. This dossier therefore includes the source-proven generate → edit → save/export loop but does not claim that every README chat command already mutates the open slide. That boundary is consequential evidence, not a reason to discard the implemented product.
-
-No reliable maintainer-region evidence was found.
-
-## Evidence
-
-- [Pinned repository](https://github.com/shibinsp/pptxfactory/tree/cc837d33715eb130c46297c1ea2d7028c3d1e58c)
-- [Backend generation application](https://github.com/shibinsp/pptxfactory/blob/cc837d33715eb130c46297c1ea2d7028c3d1e58c/backend/main.py)
-- [Direct slide editor](https://github.com/shibinsp/pptxfactory/blob/cc837d33715eb130c46297c1ea2d7028c3d1e58c/frontend/src/components/SlideEditor.jsx)
-- [Incomplete chat integration boundary](https://github.com/shibinsp/pptxfactory/blob/cc837d33715eb130c46297c1ea2d7028c3d1e58c/frontend/src/App.jsx)
+- 定义：原生制品创作（+委托式创作、变体决策、端到端交付）
+- 实现：原生图形权威（+托管生成制品工作区、设计-代码物化）
+- 形态：standalone-design-agent · 层次：开源项目 · 生命周期：active · 证据深度：source

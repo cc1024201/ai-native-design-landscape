@@ -1,24 +1,7 @@
 # FluidCAD
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-FluidCAD is a browser parametric CAD environment in which JavaScript source is the canonical model. Visual tools and agents do not edit an opaque duplicate: both work by changing `.fluid.js`, rebuilding it through the geometry engine and observing the result.
-
-## Source is geometry authority
-
-Click-based tools can open parameter dialogs and write code; the viewport evaluates that code into an inspectable scene. The modeling history can roll back features, and STEP import/export provides an engineering interchange boundary. The MCP server separates source mutation, engine control, inspection and screenshot tools in [`mcp/src/tools`](https://github.com/Fluid-CAD/FluidCAD/tree/07c07a7bdab1f7ad419d80dfa68fa0a59647d037/mcp/src/tools).
-
-```text
-human click or agent edit -> .fluid.js
--> exact modeling engine -> scene and feature history
--> inspect + screenshot -> correction -> STEP or source delivery
-```
-
-This is a code-parametric loop: screenshots are evidence, not authority. The repository proves the local and MCP mechanisms but offers no reliable first-party maintainer location, so region remains unknown.
-
-## Evidence
-
-- [Pinned product repository](https://github.com/Fluid-CAD/FluidCAD/tree/07c07a7bdab1f7ad419d80dfa68fa0a59647d037)
-- [Source mutation tools](https://github.com/Fluid-CAD/FluidCAD/blob/07c07a7bdab1f7ad419d80dfa68fa0a59647d037/mcp/src/tools/source.ts)
-- [Geometry inspection tools](https://github.com/Fluid-CAD/FluidCAD/blob/07c07a7bdab1f7ad419d80dfa68fa0a59647d037/mcp/src/tools/inspection.ts)
-- [History and rollback](https://github.com/Fluid-CAD/FluidCAD/blob/07c07a7bdab1f7ad419d80dfa68fa0a59647d037/llm-docs/concepts/history-and-rollback.md)
+- 定义：约束驱动工程（+原生制品创作、源码视觉创作、视觉协调证据）
+- 实现：参数化工程模型权威（+外部 agent 画布、源码权威·实时投射）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

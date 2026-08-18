@@ -1,25 +1,7 @@
 # TextoCAD
 
-> Research status: **Architecture-level** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-| Field | Value |
-|---|---|
-| Team | TextoCAD by GadiDokan Pvt. Ltd. · team region not established |
-| Ordinary job | describe a mechanical part then adjust its parameters and hand it to engineering or printing tools |
-| Authority | browser-side parametric CAD package with feature tree |
-| Lifecycle | active |
-
-## The generated result exposes dimensions and steps
-
-TextoCAD turns a prompt into a browser model accompanied by parameter sliders and a feature tree. Users can change dimensions live and continue through an AI assistant before exporting. The preview is a projection of that parameterized model rather than the primary deliverable.
-
-STEP transfers solid engineering geometry for continued CAD work; STL transfers a triangulated print representation and loses the feature-tree semantics. These outputs should therefore not be treated as equivalent copies of the hosted project.
-
-`prompt → parametric package → sliders / feature history / chat → preview → STEP or STL`
-
-The site also offers human CAD services but that service is not counted as a second product or as evidence of AI behavior. Public pages do not expose the parametric schema geometry kernel rebuild validation version history or whether STEP preserves named parameters.
-
-## Primary evidence
-
-- [TextoCAD editor and model contract](https://textocad.com/)
-- [TextoCAD text-to-CAD workflow](https://textocad.com/text-to-cad)
+- 定义：约束驱动工程（+委托式创作、原生制品创作、运行时纠正、设计-代码翻译）
+- 实现：参数化工程模型权威（+原生图形权威、设计-代码物化）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：architecture

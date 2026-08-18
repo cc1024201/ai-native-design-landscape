@@ -1,24 +1,7 @@
 # Genie AI Website Builder
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Genie is the earliest public repository currently located for a widely copied Mongo and OpenRouter website-builder lineage. It is counted as the provisional canonical source record only in that narrow sense; the evidence does not prove that its maintainer originated an unpublished tutorial or upstream source.
-
-## One Mongo document governs the site
-
-[`server/models/website.model.js`](https://github.com/Abhi21-7/Genie/blob/c123357e5f0280d749b101203123fb535684b2b3/server/models/website.model.js) stores `latestCode` with conversation credit deployment and slug fields. [`server/controllers/website.controllers.js`](https://github.com/Abhi21-7/Genie/blob/c123357e5f0280d749b101203123fb535684b2b3/server/controllers/website.controllers.js) creates that HTML through OpenRouter and sends the current document back for sequential revisions.
-
-[`client/src/pages/Editor.jsx`](https://github.com/Abhi21-7/Genie/blob/c123357e5f0280d749b101203123fb535684b2b3/client/src/pages/Editor.jsx) exposes source and iframe projection from the same value. [`client/src/pages/Generate.jsx`](https://github.com/Abhi21-7/Genie/blob/c123357e5f0280d749b101203123fb535684b2b3/client/src/pages/Generate.jsx) initiates the project. Publication assigns the stored document a stable slug; it is not a separate deployment artifact graph.
-
-## Why later repositories collapse here
-
-Velora.AI GenwebAI and GenWeb AI reproduce substantial normalized source and the same unusual `latestCode` conversation credit and slug protocol. An exact typo in the credit error appears across at least seventeen public repositories. Those are provenance signals rather than seventeen independently defined products. Forgix remains separate because screenshot and URL inputs materially redefine the initial artifact authority.
-
-## Evidence and limit
-
-- [Canonical public repository](https://github.com/Abhi21-7/Genie)
-- [Inspected tree](https://github.com/Abhi21-7/Genie/tree/c123357e5f0280d749b101203123fb535684b2b3)
-- [Representative later mirror](https://github.com/SwaroopVNaik/Velora.AI)
-- Commit: `c123357e5f0280d749b101203123fb535684b2b3`
-
-The maintainer profile states India; team region is recorded as India. No official upstream identity was found.
+- 定义：端到端交付（+委托式创作、源码视觉创作、运行时纠正）
+- 实现：托管应用项目图（+源码权威·实时投射、托管生成制品工作区）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active · 证据深度：source

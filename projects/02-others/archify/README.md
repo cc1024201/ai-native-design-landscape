@@ -1,25 +1,7 @@
 # Archify
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Archify treats architecture communication as a compiled artifact system. An agent authors typed semantic JSON; dedicated renderers and delivery rules produce several visual forms from that model.
-
-## Authoring contract before aesthetics
-
-At commit [`a3bf80c2`](https://github.com/tt-a1i/archify/tree/a3bf80c25a824f5d5c46dfdbfdb96cc52dd4742a), the skill defines supported diagram families and their schemas. Examples and tests constrain nodes, relations and narrative fields before visual rendering.
-
-## Delivery is multi-surface but traceable
-
-The same IR can produce interactive HTML, PNG, SVG, WebM and share-card assets. A visual-check command and delivery contract distinguish semantic validity from rendered usability. Delta artifacts make architectural change itself reviewable.
-
-## Why it is not just a template library
-
-The defining mechanism is the enforced path from an agent-authored model through validation to evidence-bearing deliverables. Templates are runtime components of that pipeline rather than the product's sole value.
-
-## Evidence
-
-- [Pinned repository](https://github.com/tt-a1i/archify/tree/a3bf80c25a824f5d5c46dfdbfdb96cc52dd4742a)
-- [Skill and authoring contract](https://github.com/tt-a1i/archify/blob/a3bf80c25a824f5d5c46dfdbfdb96cc52dd4742a/archify/SKILL.md)
-- [Delivery contract](https://github.com/tt-a1i/archify/blob/a3bf80c25a824f5d5c46dfdbfdb96cc52dd4742a/archify/references/delivery-contract.md)
-- [Architecture delta implementation](https://github.com/tt-a1i/archify/blob/a3bf80c25a824f5d5c46dfdbfdb96cc52dd4742a/archify/delta/architecture-delta.mjs)
-- [Visual check command](https://github.com/tt-a1i/archify/blob/a3bf80c25a824f5d5c46dfdbfdb96cc52dd4742a/archify/bin/visual-check.mjs)
+- 定义：源码视觉创作（+委托式创作、运行时纠正、视觉协调证据、端到端交付）
+- 实现：源码权威·实时投射（+设计-代码物化、文件系统 agent·视觉证据）
+- 形态：agent-platform-design-surface · 层次：开源项目 · 生命周期：active · 证据深度：source

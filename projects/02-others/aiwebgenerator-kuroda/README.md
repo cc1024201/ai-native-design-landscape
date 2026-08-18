@@ -1,19 +1,7 @@
 # AIWebGenerator by Kuroda Kayn
 
-> Research status: **Source-level** · Lifecycle: **active-transition** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-AIWebGenerator is a local-first Nuxt authoring system in which HTML files sit inside a branching version graph. Models, rules, messages and files are all explicit records rather than hidden service state.
-
-## A response becomes a versioned file
-
-[`chat.ts`](https://github.com/KurodaKayn/AIWebGenerator/blob/5c7390259fd2b3f78654a0dc420ef11ee8dcfb2b/app/composables/chat.ts) streams through the selected AI SDK provider and persists the message history against a new version. [`chat/root.vue`](https://github.com/KurodaKayn/AIWebGenerator/blob/5c7390259fd2b3f78654a0dc420ef11ee8dcfb2b/app/components/chat/root.vue) extracts the returned HTML fence, creates a file record and links it to a parent version. Direct Monaco edits go through the same graph as draft user files before later model corrections.
-
-## The browser database is the project authority
-
-[`dexie.ts`](https://github.com/KurodaKayn/AIWebGenerator/blob/5c7390259fd2b3f78654a0dc420ef11ee8dcfb2b/app/composables/dexie.ts) defines IndexedDB tables for projects, files, versions, messages, model credentials and reusable rules. [`html.vue`](https://github.com/KurodaKayn/AIWebGenerator/blob/5c7390259fd2b3f78654a0dc420ef11ee8dcfb2b/app/components/preview/html.vue) projects the selected file through a sandboxed `srcdoc`; React, Vue, Svelte and Lit exports are derived from that file rather than replacing it.
-
-## Evidence
-
-- [Canonical repository](https://github.com/KurodaKayn/AIWebGenerator)
-- [Inspected tree](https://github.com/KurodaKayn/AIWebGenerator/tree/5c7390259fd2b3f78654a0dc420ef11ee8dcfb2b)
-- Commit: `5c7390259fd2b3f78654a0dc420ef11ee8dcfb2b`
+- 定义：源码视觉创作（+委托式创作、运行时纠正、变体决策、系统治理、端到端交付）
+- 实现：托管应用项目图（+源码权威·实时投射、候选隔离与晋升、设计-代码物化）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active-transition · 证据深度：source

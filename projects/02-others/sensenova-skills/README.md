@@ -1,17 +1,7 @@
 # SenseNova Skills
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-SenseNova Skills is an office-production system whose modules compose research, spreadsheets, infographics and presentations into end-to-end agent workflows. It includes both filesystem skills and a visual PPT workbench where a user can inspect, select, resize and regenerate slide elements.
-
-## Page HTML is retained as an editable intermediate
-
-The [PPT generation contract](https://github.com/OpenSenseNova/SenseNova-Skills/blob/44537f9132ac9622fb1cda67e99672d1f2f495e3/docs/sn-ppt-generate.md) moves from style specification and outline to an asset plan, VLM quality checks, page HTML, per-page review and PPTX export. The [workbench contract](https://github.com/OpenSenseNova/SenseNova-Skills/blob/44537f9132ac9622fb1cda67e99672d1f2f495e3/docs/sn-ppt-workbench_en.md) reopens that material in a direct-manipulation surface.
-
-Retained HTML is the re-editable page source during generation; the exported `.pptx` is the native delivery artifact. Spreadsheet and infographic skills share the same install and orchestration boundary, so the distribution is one canonical product.
-
-## Evidence
-
-- [Pinned repository](https://github.com/OpenSenseNova/SenseNova-Skills/tree/44537f9132ac9622fb1cda67e99672d1f2f495e3)
-- [PPT workflow skill](https://github.com/OpenSenseNova/SenseNova-Skills/tree/44537f9132ac9622fb1cda67e99672d1f2f495e3/skills/sn-ppt-workflow)
-- [Released editable deck example](https://github.com/OpenSenseNova/SenseNova-Skills/tree/44537f9132ac9622fb1cda67e99672d1f2f495e3/examples/generative-ai-revolution-ppt/result)
+- 定义：委托式创作（+原生制品创作、运行时纠正、端到端交付）
+- 实现：源码权威·实时投射（+设计-代码物化、原生图形权威）
+- 形态：agent-platform-design-surface · 层次：agent 工作流 · 生命周期：active · 证据深度：source

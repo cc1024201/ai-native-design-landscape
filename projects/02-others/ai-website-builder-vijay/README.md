@@ -1,23 +1,7 @@
 # AI Website Builder by Vijay Kusekar
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Vijay's builder separates project planning from per-file generation and later represents revisions as operations against a persisted Mongo file graph. Its numeric version is current-state metadata rather than an archive of every prior graph.
-
-## The model first commits to a file plan
-
-[ai.js](https://github.com/Vijay-2003/AI-Website-Builder/blob/e6a36d5c479c9fc44ed8166658eb8822d5c93ff8/server/services/ai.js) asks OpenRouter for a structured project plan and then generates files under schema and validation checks. Invalid source is normalized before it reaches storage rather than being trusted as an arbitrary response.
-
-## Mongo owns named files and hashes
-
-[Project.js](https://github.com/Vijay-2003/AI-Website-Builder/blob/e6a36d5c479c9fc44ed8166658eb8822d5c93ff8/server/models/Project.js) stores current files, their hashes, generation state and a numeric version. [projectController.js](https://github.com/Vijay-2003/AI-Website-Builder/blob/e6a36d5c479c9fc44ed8166658eb8822d5c93ff8/server/controllers/projectController.js) applies structured revision operations and increments that number.
-
-## Direct editing changes the same graph
-
-The client autosaves manual file changes to the project. [PreviewPanel.jsx](https://github.com/Vijay-2003/AI-Website-Builder/blob/e6a36d5c479c9fc44ed8166658eb8822d5c93ff8/client/src/components/PreviewPanel.jsx) executes current files and [exportProject.js](https://github.com/Vijay-2003/AI-Website-Builder/blob/e6a36d5c479c9fc44ed8166658eb8822d5c93ff8/client/src/utils/exportProject.js) packages them. No source evidence establishes rollback to every numeric version.
-
-## Evidence
-
-- [Canonical repository](https://github.com/Vijay-2003/AI-Website-Builder)
-- [Inspected tree](https://github.com/Vijay-2003/AI-Website-Builder/tree/e6a36d5c479c9fc44ed8166658eb8822d5c93ff8)
-- Commit: e6a36d5c479c9fc44ed8166658eb8822d5c93ff8
+- 定义：原生制品创作（+委托式创作、系统治理、源码视觉创作、运行时纠正、端到端交付）
+- 实现：托管应用项目图（+文件系统 agent·视觉证据、源码权威·实时投射）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active · 证据深度：source

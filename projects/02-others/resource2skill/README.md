@@ -1,20 +1,7 @@
 # Resource2Skill
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Resource2Skill is not another gallery of prompts. Microsoft defines a general runtime that distils tutorials, reference artifacts and code into executable skill libraries, then lets an agent retrieve and compose those skills while operating real Web, PowerPoint, Excel, Blender and audio tools.
-
-## The learned resource becomes operational memory
-
-Two stores separate explanation from execution: `skills_wiki/<domain>` exposes browseable records and `skills_library/<domain>` carries runnable assets. At task time the agent searches this material, selects a small set of references and invokes a domain MCP server. The unusual product claim is therefore not merely generation; human-created examples become addressable operational memory.
-
-The output authority varies by domain. A web task resolves into files and a browser render, PowerPoint into an editable PPTX, and Blender into scene state. The runtime and generated project are authoritative; skill records guide construction but do not themselves prove artifact quality.
-
-## A framework boundary, not a PPT Master duplicate
-
-The PowerPoint route can use PPT Master as a backend, but Resource2Skill adds the distillation, retrieval and multi-domain runtime around it. That makes it an upstream agent platform with an embedded presentation implementation, not a second count of PPT Master.
-
-- [Pinned repository](https://github.com/microsoft/Resource2Skill/tree/7f101b4cfe214cc496d085a34efac528a17cc375)
-- [Runtime entry point](https://github.com/microsoft/Resource2Skill/blob/7f101b4cfe214cc496d085a34efac528a17cc375/cli.py)
-- [Pinned operating contract](https://github.com/microsoft/Resource2Skill/blob/7f101b4cfe214cc496d085a34efac528a17cc375/README.md)
-- [Microsoft location evidence](https://github.com/microsoft)
+- 定义：委托式创作（+原生制品创作、源码视觉创作、端到端交付）
+- 实现：托管应用项目图（+外部 agent 画布、文件系统 agent·视觉证据）
+- 形态：agent-platform-design-surface · 层次：agent 工作流 · 生命周期：active · 证据深度：source

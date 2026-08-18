@@ -1,28 +1,7 @@
 # Design Farmer
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Design Farmer is an operational agent skill for building a design system inside an existing repository. Its value lies in a staged evidence and implementation pipeline rather than a fixed visual editor.
-
-## The project repository becomes the design-system workspace
-
-The skill begins with framework and pattern discovery, extracts repeated visual decisions, creates visual previews and then establishes a checked-in `DESIGN.md` as the source of truth. Tokens, themes, components and Storybook stories are downstream implementations of that document rather than unrelated generated outputs.
-
-[`phase-4.5-design-source-of-truth.md`](https://github.com/hakilee/design-farmer/blob/7015e21a86ef8ea0a7b06610a60afe88c2501919/skills/design-farmer/phases/phase-4.5-design-source-of-truth.md) makes the governance handoff explicit. Later phases build tokens and components, while [`phase-8.5-design-review.md`](https://github.com/hakilee/design-farmer/blob/7015e21a86ef8ea0a7b06610a60afe88c2501919/skills/design-farmer/phases/phase-8.5-design-review.md) adds multi-perspective design review rather than relying only on compilation.
-
-```text
-repository survey -> pattern evidence -> preview -> DESIGN.md authority
--> tokens/themes/components -> Storybook -> visual + semantic review
--> integration and readiness handoff
-```
-
-## Quality gates are part of the artifact loop
-
-The [quality-gate contract](https://github.com/hakilee/design-farmer/blob/7015e21a86ef8ea0a7b06610a60afe88c2501919/skills/design-farmer/docs/QUALITY-GATES.md) and [`phase-11-readiness-handoff.md`](https://github.com/hakilee/design-farmer/blob/7015e21a86ef8ea0a7b06610a60afe88c2501919/skills/design-farmer/phases/phase-11-readiness-handoff.md) require evidence that the governed system is usable in the product. Git and repository files provide persistence and recovery; the skill itself does not own cloud versions.
-
-The pinned tree contains no license file. The maintainer profile identifies Seoul in South Korea.
-
-## Pinned record
-
-- [Repository at `7015e21`](https://github.com/hakilee/design-farmer/tree/7015e21a86ef8ea0a7b06610a60afe88c2501919)
-- [Main skill contract](https://github.com/hakilee/design-farmer/blob/7015e21a86ef8ea0a7b06610a60afe88c2501919/skills/design-farmer/SKILL.md)
+- 定义：系统治理（+委托式创作、端到端交付、视觉协调证据）
+- 实现：文件系统 agent·视觉证据（+源码权威·实时投射）
+- 形态：general-agent-visual-tools · 层次：开源项目 · 生命周期：active · 证据深度：source

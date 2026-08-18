@@ -1,24 +1,7 @@
 # Viso MCP
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Viso MCP is not one diagram editor. It is a file-backed modeling protocol that gives agents and humans shared access to ERDs, BPMN processes and system landscapes.
-
-## The file is inside the loop
-
-At [`7830f156`](https://github.com/fawisi/viso-mcp/tree/7830f156eaaa866641ad64ea6da19c81e8b06fdd), MCP tools create and mutate typed models while file watchers ingest outside edits. Writes are atomic, and layout positions can live in sidecars instead of contaminating semantic source such as DBML.
-
-## Visual editing is a projection with a return path
-
-The React Flow editor uses ELK for layout, but it is not a disposable viewer. Structural changes return to the store and its persisted model; manual position changes are preserved separately. That is a genuine source-authority/live-projection architecture.
-
-## Boundary and delivery
-
-The product spans several notations but keeps one design claim: agents can work on a durable model that a person can inspect and rearrange. Export is downstream of that shared authority rather than the only artifact.
-
-## Evidence
-
-- [Pinned repository](https://github.com/fawisi/viso-mcp/tree/7830f156eaaa866641ad64ea6da19c81e8b06fdd)
-- [MCP tool contract](https://github.com/fawisi/viso-mcp/blob/7830f156eaaa866641ad64ea6da19c81e8b06fdd/src/tools.ts)
-- [Store and persistence](https://github.com/fawisi/viso-mcp/blob/7830f156eaaa866641ad64ea6da19c81e8b06fdd/src/store.ts)
-- [Visual editor](https://github.com/fawisi/viso-mcp/blob/7830f156eaaa866641ad64ea6da19c81e8b06fdd/src/preview/VisoEditor.tsx)
+- 定义：原生制品创作（+源码视觉创作、视觉协调证据、端到端交付）
+- 实现：源码权威·实时投射（+原生图形权威、外部 agent 画布、文件系统 agent·视觉证据）
+- 形态：agent-controllable-canvas · 层次：连接桥 · 生命周期：active · 证据深度：source

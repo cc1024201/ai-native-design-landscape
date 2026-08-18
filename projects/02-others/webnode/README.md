@@ -1,23 +1,7 @@
 # WebNode Framework
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-WebNode Framework is a node-based Python web framework where `graph.json` is edited visually and materialized into an executable `main.py` application.
-
-## `graph.json` is the design authority
-
-The Node Editor defines routes, logic, markup, styles, and relationships as structured graph data. Generation projects that state into Python. The produced file can run independently, but regeneration starts from the graph, making source authority explicit rather than hiding it in a screenshot.
-
-## AI has its own editor but writes the same system
-
-The AI Editor can create nodes, HTML, CSS, application logic, and interface material. Its output joins the graph-to-code pipeline instead of living in a separate mock preview. Users can switch back to direct node editing whenever generated structure is wrong.
-
-## Transcripts are part of recovery
-
-SQLite stores project information and conversational transcripts. The source uses transcript data to reconstruct a damaged canvas, connecting AI interaction history to artifact recovery. This is useful but also means transcript integrity matters; generated Python remains a projection that should be reviewed before deployment.
-
-## Pinned evidence
-
-- Repository: [LifelessA/webnode](https://github.com/LifelessA/webnode)
-- Inspected framework and editors: [`2691173264d606c879c1d4a661a587a580bb7188`](https://github.com/LifelessA/webnode/tree/2691173264d606c879c1d4a661a587a580bb7188)
-- Immutable revision: [commit `2691173`](https://github.com/LifelessA/webnode/commit/2691173264d606c879c1d4a661a587a580bb7188)
+- 定义：源码视觉创作（+委托式创作、原生制品创作、运行时纠正、端到端交付）
+- 实现：源码权威·实时投射（+原生图形权威、设计-代码物化、运行时意图中继）
+- 形态：code-native-visual-ide · 层次：开源项目 · 生命周期：active · 证据深度：source

@@ -1,15 +1,7 @@
 # AI Website Generator by Nithin1616
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-This Streamlit application asks Gemini for three explicitly delimited source artifacts and uses the same extracted files for visual proof and delivery.
-
-[`ai_generator.py`](https://github.com/Nithin1616/ai-website-generator/blob/87ad51553e3de4be2f992365774ac26353353c8a/services/ai_generator.py) combines page type and content in a LangChain prompt whose response contract separates HTML, CSS and JavaScript. [`utils.py`](https://github.com/Nithin1616/ai-website-generator/blob/87ad51553e3de4be2f992365774ac26353353c8a/utils.py) extracts each repeated delimiter and rejects the result operationally when HTML is absent.
-
-[`app.py`](https://github.com/Nithin1616/ai-website-generator/blob/87ad51553e3de4be2f992365774ac26353353c8a/app.py) concatenates the three strings for an embedded Streamlit preview, writes them as `index.html`, `style.css` and `script.js`, and packages those exact files as a ZIP. The filesystem is a transient delivery stage and the inspected app has no saved project or version history.
-
-## Evidence
-
-- [Canonical repository](https://github.com/Nithin1616/ai-website-generator)
-- [Inspected tree](https://github.com/Nithin1616/ai-website-generator/tree/87ad51553e3de4be2f992365774ac26353353c8a)
-- Commit: `87ad51553e3de4be2f992365774ac26353353c8a`
+- 定义：端到端交付（+委托式创作、源码视觉创作）
+- 实现：设计-代码物化（+源码权威·实时投射）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active · 证据深度：source

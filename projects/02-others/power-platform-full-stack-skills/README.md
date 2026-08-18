@@ -1,16 +1,7 @@
 # Power Platform Full Stack Skills
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Power Platform Full Stack Skills is a coordinated agent toolkit for designing, building, checking and deploying Power Apps, Power Pages and Dataverse solutions. UX Designer and Usability Engineer agents work alongside data, architecture, development, testing and ALM specialists rather than handing an isolated mockup to an unrelated build process.
-
-## Clickable wireframes constrain a managed application graph
-
-HTML wireframes and Fluent UI guidance establish flows, states and interaction intent before host implementation. Dataverse manifests, solution files and managed Power Platform resources then become deployment authority. Browser automation and review skills inspect the running surface, while workflow-state records keep agent handoffs and unresolved work explicit.
-
-The resulting product is a domain-specific full-stack delivery system: Design is not only visual generation, but an accountable transition from user flow and data model to a validated managed app or site.
-
-- [Pinned repository](https://github.com/scottdurow/power-platform-full-stack-skills/tree/2709e76be0bdc0c5b5f7437aa14ed9eef13cc598)
-- [UX Designer agent](https://github.com/scottdurow/power-platform-full-stack-skills/blob/2709e76be0bdc0c5b5f7437aa14ed9eef13cc598/agents/UXDesigner.agent.md)
-- [Wireframe skill](https://github.com/scottdurow/power-platform-full-stack-skills/blob/2709e76be0bdc0c5b5f7437aa14ed9eef13cc598/skills/ui-wireframes/SKILL.md)
-- [Maintainer location evidence](https://github.com/scottdurow)
+- 定义：端到端交付（+原生制品创作、源码视觉创作、系统治理、运行时纠正）
+- 实现：托管应用项目图（+候选隔离与晋升）
+- 形态：agent-platform-design-surface · 层次：agent 工作流 · 生命周期：active · 证据深度：source

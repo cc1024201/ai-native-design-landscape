@@ -1,18 +1,7 @@
 # Simon Kurtz Draw.io MCP Server
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Simon Kurtz's Draw.io MCP Server is a non-fork GitHub repository that generates Draw.io XML directly without requiring a running browser extension. It is related to the wider Draw.io MCP ecosystem but has its own diagram model, Azure icon library and transaction semantics.
-
-## Transaction mode stages graph operations before serialization
-
-Tool definitions map agent requests into a structured diagram model. Basic and Azure shapes use committed identifiers; batch and layer operations reduce repeated whole-document rewrites. Transactional mode stages a coherent set of edits and commits or abandons it as a unit, addressing the partial-diagram failures that arise when many independent tool calls mutate XML incrementally.
-
-The generated `.drawio` XML is the editable handoff artifact. No live Draw.io instance is authoritative during generation; users open the resulting file in diagrams.net for direct continuation.
-
-## Evidence
-
-- [Pinned repository](https://github.com/simonkurtz-MSFT/drawio-mcp-server/tree/511aa073ba1133e7b00ebdd16cbc021f1ed4f105)
-- [Diagram model](https://github.com/simonkurtz-MSFT/drawio-mcp-server/blob/511aa073ba1133e7b00ebdd16cbc021f1ed4f105/src/diagram_model.ts)
-- [Tool definitions](https://github.com/simonkurtz-MSFT/drawio-mcp-server/blob/511aa073ba1133e7b00ebdd16cbc021f1ed4f105/src/tool_definitions.ts)
-- [Transactional-mode design](https://github.com/simonkurtz-MSFT/drawio-mcp-server/blob/511aa073ba1133e7b00ebdd16cbc021f1ed4f105/docs/transactional_mode_design.md)
+- 定义：原生制品创作（+委托式创作、系统治理）
+- 实现：文件系统 agent·视觉证据（+原生图形权威、候选隔离与晋升）
+- 形态：agent-controllable-canvas · 层次：连接桥 · 生命周期：active · 证据深度：source

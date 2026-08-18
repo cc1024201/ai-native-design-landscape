@@ -1,17 +1,7 @@
 # DeepPCB
 
-> Research status: **Architecture-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-DeepPCB defines AI electronics design as search over manufacturable board revisions, not a single autorouter result. Users import a design from an existing EDA tool, ask the hosted engine to place and route it under board constraints, and retain access to the best solutions while computation continues.
-
-## Optimization produces candidates; the selected revision remains explicit
-
-The [product contract](https://deeppcb.ai/) says generated layouts are DRC-checked and that the browser editor can manually move, delete or protect elements. Its Cooper assistant can flag and fix likely failures, but the user confirms before routing proceeds. The [help center](https://deeppcb.ai/help/) adds the missing lifecycle detail: runs can be stopped and resumed, revisions remain scrollable, and the download action exports the particular revision currently being viewed.
-
-That separation matters. Imported EDA constraints define the problem; hosted placement and routing generate candidate board states; manual protection records intent that later optimization must respect; and the chosen downloaded revision returns to the user's native tool. DeepPCB therefore owns a revisioned engineering decision surface rather than merely exposing a solver endpoint. Public evidence establishes this architecture, but not the internal optimizer or stored graph implementation.
-
-## Evidence
-
-- [DeepPCB product and editor](https://deeppcb.ai/)
-- [Revision, run and delivery semantics](https://deeppcb.ai/help/)
-- [InstaDeep](https://www.instadeep.com/)
+- 定义：约束驱动工程（+变体决策、原生制品创作、运行时纠正、端到端交付）
+- 实现：参数化工程模型权威（+托管生成制品工作区、候选隔离与晋升、原生图形权威）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：architecture

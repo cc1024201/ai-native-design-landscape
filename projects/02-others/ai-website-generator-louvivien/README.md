@@ -1,20 +1,7 @@
 # AI Website Generator by Louvivien
 
-> Research status: **Source-level** · Lifecycle: **historical** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-This early generator joins two model outputs into a deployable page: ChatGPT writes the HTML structure and Stable Horde supplies imagery. GitHub and Vercel are part of the ordinary-user delivery path rather than documentation-only integrations.
-
-## Page source is assembled server-side
-
-[`openai_utils.py`](https://github.com/Louvivien/AI-website-generator/blob/2c2331b513fcc3fdeb889d61cbb3c04f6037894a/openai_utils.py) handles page generation while [`stablehorde.py`](https://github.com/Louvivien/AI-website-generator/blob/2c2331b513fcc3fdeb889d61cbb3c04f6037894a/stablehorde.py) supplies generated image assets. [`main.py`](https://github.com/Louvivien/AI-website-generator/blob/2c2331b513fcc3fdeb889d61cbb3c04f6037894a/main.py) coordinates the page flow exposed through the HTML frontend.
-
-## Repository publication is the persistence boundary
-
-[`github_utils.py`](https://github.com/Louvivien/AI-website-generator/blob/2c2331b513fcc3fdeb889d61cbb3c04f6037894a/github_utils.py) creates or updates the GitHub representation used for deployment. The application itself has no local revision graph. It is historical because the canonical implementation stopped in 2023.
-
-## Source anchors
-
-- [Canonical repository](https://github.com/Louvivien/AI-website-generator)
-- [Inspected tree](https://github.com/Louvivien/AI-website-generator/tree/2c2331b513fcc3fdeb889d61cbb3c04f6037894a)
-- [Maintainer region evidence](https://github.com/Louvivien)
-- Commit: `2c2331b513fcc3fdeb889d61cbb3c04f6037894a`
+- 定义：端到端交付（+委托式创作、源码视觉创作、运行时纠正）
+- 实现：源码权威·实时投射（+设计-代码物化、托管应用项目图）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：historical · 证据深度：source

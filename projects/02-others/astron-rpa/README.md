@@ -1,24 +1,7 @@
 # Astron RPA
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Astron RPA is iFLYTEK's visual robotic-process-automation platform, extended so Astron Agent can design and trigger the same enterprise workflows through conversational and MCP interfaces.
-
-## A large deterministic action catalog anchors the graph
-
-More than three hundred desktop, browser, office, data, system, and AI capabilities become configurable workflow steps. The editor owns ordering, branches, loops, variables, selectors, and error behavior; agent assistance operates over those concrete capabilities rather than inventing unrestricted UI actions.
-
-## Agent integration is bidirectional
-
-Astron Agent can invoke published RPA flows, while conversational input can help compose automation from available components. MCP provides another trigger and inspection path. The RPA definition remains editable and debuggable after generation.
-
-## Debugging separates design from side effects
-
-Step execution, logs, breakpoints, variables, and packaged deployment make it possible to inspect the workflow before broad rollout. External applications and enterprise data retain their own authority; Astron coordinates side effects but does not turn them into canvas-owned records.
-
-## Pinned evidence
-
-- Repository: [iflytek/astron-rpa](https://github.com/iflytek/astron-rpa)
-- Inspected designer, activity catalog, runtime, debugger, agent, MCP, and packaging tree: [`db74012383c2d9b5d29a89a4444e384cb1d06eaa`](https://github.com/iflytek/astron-rpa/tree/db74012383c2d9b5d29a89a4444e384cb1d06eaa)
-- Immutable revision: [commit `db74012`](https://github.com/iflytek/astron-rpa/commit/db74012383c2d9b5d29a89a4444e384cb1d06eaa)
-- [iFLYTEK open-source profile](https://opensource.iflytek.com/)
+- 定义：约束驱动工程（+源码视觉创作、委托式创作、运行时纠正、端到端交付）
+- 实现：原生图形权威（+外部 agent 画布、运行时意图中继、托管应用项目图）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

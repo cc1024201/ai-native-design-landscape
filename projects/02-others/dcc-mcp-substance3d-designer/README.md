@@ -1,17 +1,7 @@
 # DCC-MCP Substance 3D Designer
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-This adapter embeds a Streamable HTTP server inside Substance 3D Designer and dispatches calls through Designer's Qt main thread. Its current surface is narrow but complete: inspect the active session and create a rendered procedural PBR material package.
-
-## One bounded material pass
-
-The [`designer-session` Skill](https://github.com/dcc-mcp/dcc-mcp-substance3d-designer/blob/c4a00cf448b9043262289e7d721249283d234230/src/dcc_mcp_substance3d_designer/skills/designer-session/SKILL.md) owns the artifact workflow. Host APIs are imported only while a tool runs so catalog discovery is safe outside Designer. The procedural package is created through the actual Designer session and its render path rather than synthesized as unrelated image files.
-
-This is counted despite its small tool count because it crosses the essential boundary from session inspection into native procedural material creation and rendered delivery. The adapter uses its own package, plugin and release; the shared core is only transport and discovery.
-
-## Evidence
-
-- [Pinned adapter](https://github.com/dcc-mcp/dcc-mcp-substance3d-designer/tree/c4a00cf448b9043262289e7d721249283d234230)
-- [Typed tools](https://github.com/dcc-mcp/dcc-mcp-substance3d-designer/blob/c4a00cf448b9043262289e7d721249283d234230/src/dcc_mcp_substance3d_designer/skills/designer-session/tools.yaml)
-- [Main-thread dispatcher](https://github.com/dcc-mcp/dcc-mcp-substance3d-designer/blob/c4a00cf448b9043262289e7d721249283d234230/src/dcc_mcp_substance3d_designer/dispatcher.py)
+- 定义：原生制品创作（+委托式创作、端到端交付）
+- 实现：外部 agent 画布（+原生图形权威、文件系统 agent·视觉证据）
+- 形态：agent-controllable-canvas · 层次：连接桥 · 生命周期：active · 证据深度：source

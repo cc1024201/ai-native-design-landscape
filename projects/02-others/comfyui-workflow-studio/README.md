@@ -1,23 +1,7 @@
 # ComfyUI Workflow Studio
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-ComfyUI Workflow Studio is a plugin that manages workflow, model, image, prompt, batch, and laboratory artifacts around the existing ComfyUI canvas.
-
-## ComfyUI JSON remains authoritative
-
-The plugin can store API or UI workflow JSON and send it back to the ComfyUI canvas. Its Generate UI maps those graphs to inputs for execution, so the Studio does not invent a second node runtime.
-
-## Local models assist catalog work
-
-Ollama or LM Studio can summarize workflows, suggest tags, translate text, improve prompts, and participate in tool-called image generation. These operations augment the retained artifact catalog rather than silently rewriting every graph.
-
-## Images can carry their provenance
-
-Snapshots embed workflow JSON in PNG metadata. Batch axes, Lab keyframes, plan JSON, and an index image preserve experimental structure alongside generated outputs, allowing an image to lead back to the workflow that produced it.
-
-## Pinned evidence
-
-- Repository: [ketle-man/ComfyUI-Workflow-Studio](https://github.com/ketle-man/ComfyUI-Workflow-Studio)
-- Inspected ComfyUI graph exchange, artifact catalog, local-model tools, Generate UI, batch and Lab planning, and embedded PNG provenance: [`4a23564c66fb598b9260b8d70f49e6dca701dd6d`](https://github.com/ketle-man/ComfyUI-Workflow-Studio/tree/4a23564c66fb598b9260b8d70f49e6dca701dd6d)
-- Immutable revision: [commit `4a23564`](https://github.com/ketle-man/ComfyUI-Workflow-Studio/commit/4a23564c66fb598b9260b8d70f49e6dca701dd6d)
+- 定义：原生制品创作（+委托式创作、运行时纠正、变体决策、视觉协调证据、端到端交付）
+- 实现：原生图形权威（+外部 agent 画布、候选隔离与晋升）
+- 形态：agent-platform-design-surface · 层次：开源项目 · 生命周期：active · 证据深度：source

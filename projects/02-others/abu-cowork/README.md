@@ -1,28 +1,7 @@
 # Abu Cowork
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Abu is a local-first Cowork application whose Design surface is broader than a single generator. Built-in frontend, canvas, infographic and artifact skills write ordinary workspace files; a side-by-side code canvas lets the user inspect, edit, preview and roll those files back.
-
-## Saved pages and inline widgets have different authority
-
-Abu distinguishes ephemeral chat visualizations from durable artifacts. [`guidelines.ts`](https://github.com/PM-Shawn/Abu-Cowork/blob/307dbacd9b97b3cd278faef645bc75d1a05b2ddf/src/core/widget/guidelines.ts) constrains HTML, SVG, Mermaid and infographic widgets inside a sandboxed chat frame. A design the user should keep must instead be written as a complete HTML document in the workspace, where the preview panel and code editor operate on the file itself.
-
-The widget CSS and the model-facing vocabulary are generated from the same constants in [`designSystem.ts`](https://github.com/PM-Shawn/Abu-Cowork/blob/307dbacd9b97b3cd278faef645bc75d1a05b2ddf/src/core/widget/designSystem.ts). This avoids a subtle agent-host failure: asking the model to use tokens that the renderer never defines.
-
-```text
-brief + selected skill -> workspace HTML/SVG/PPTX or inline widget
--> live preview + CodeMirror correction -> autosaved source file
--> version snapshot -> further agent/user edits -> rollback if needed
-```
-
-[`canvasVersions.ts`](https://github.com/PM-Shawn/Abu-Cowork/blob/307dbacd9b97b3cd278faef645bc75d1a05b2ddf/src/utils/canvasVersions.ts) and `VersionHistoryMenu` implement named snapshots and restore for canvas files. [`editorReconcile.ts`](https://github.com/PM-Shawn/Abu-Cowork/blob/307dbacd9b97b3cd278faef645bc75d1a05b2ddf/src/utils/editorReconcile.ts) handles the race between local editor text and agent filesystem updates. The workspace file remains authoritative; previews, chat messages and inline widgets are projections or transient evidence.
-
-Abu is Apache-2.0 licensed. The maintainer profile does not state a reliable region.
-
-## Pinned evidence
-
-- [Repository](https://github.com/PM-Shawn/Abu-Cowork/tree/307dbacd9b97b3cd278faef645bc75d1a05b2ddf)
-- [Preview state](https://github.com/PM-Shawn/Abu-Cowork/blob/307dbacd9b97b3cd278faef645bc75d1a05b2ddf/src/stores/previewStore.ts)
-- [HTML widget receiver](https://github.com/PM-Shawn/Abu-Cowork/blob/307dbacd9b97b3cd278faef645bc75d1a05b2ddf/src/components/chat/HtmlWidgetBlock.tsx)
-- [Apache-2.0 license](https://github.com/PM-Shawn/Abu-Cowork/blob/307dbacd9b97b3cd278faef645bc75d1a05b2ddf/LICENSE)
+- 定义：委托式创作（+源码视觉创作、原生制品创作、端到端交付、视觉协调证据）
+- 实现：托管应用项目图（+源码权威·实时投射、文件系统 agent·视觉证据）
+- 形态：agent-platform-design-surface · 层次：开源项目 · 生命周期：active · 证据深度：source

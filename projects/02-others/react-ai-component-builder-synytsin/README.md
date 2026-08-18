@@ -1,18 +1,7 @@
 # React AI Component Builder by Artem Synytsin
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-The product keeps provider credentials server-side while giving the browser a compact source-and-runtime authoring loop.
-
-## Server action returns react-live source
-
-[`generate.ts`](https://github.com/SynytsinA/react-ai-component-builder/blob/127e3e6c784531d6239f31f2b65b18c431f11945/src/app/actions/generate.ts) constrains Gemini to return a named component plus an explicit render call. [`PreviewArea.tsx`](https://github.com/SynytsinA/react-ai-component-builder/blob/127e3e6c784531d6239f31f2b65b18c431f11945/src/components/builder/PreviewArea.tsx) cleans that string and passes it to react-live with error reporting.
-
-[`page.tsx`](https://github.com/SynytsinA/react-ai-component-builder/blob/127e3e6c784531d6239f31f2b65b18c431f11945/src/app/page.tsx) owns the current prompt, source, copy operation and code/preview mode. It does not establish persistent projects or historical variants.
-
-## Source record
-
-- [Canonical repository](https://github.com/SynytsinA/react-ai-component-builder)
-- [Inspected commit](https://github.com/SynytsinA/react-ai-component-builder/commit/127e3e6c784531d6239f31f2b65b18c431f11945)
-- [Maintainer region evidence](https://github.com/SynytsinA)
-- Commit: `127e3e6c784531d6239f31f2b65b18c431f11945`
+- 定义：源码视觉创作（+委托式创作、运行时纠正）
+- 实现：源码权威·实时投射（+设计-代码物化）
+- 形态：standalone-design-agent · 层次：开源项目 · 生命周期：active · 证据深度：source

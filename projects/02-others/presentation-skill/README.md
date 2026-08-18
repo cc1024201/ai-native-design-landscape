@@ -1,18 +1,7 @@
 # Presentation Skill
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Presentation Skill treats an editable deck like compiled software. Structured JSON and a rebuildable workspace are the source; PowerPoint is the distributable artifact; rendered images provide the evidence needed to reject geometrically valid but visually weak output.
-
-## Semantic slots compile into role-layout systems
-
-Quick mode starts from `outline.json`. Workspace mode adds design, content, evidence and asset plans. The compiler normalizes semantic roles, selects one of several full-deck composition grammars, and maps those roles into native PowerPoint text, charts, tables and figures with `pptxgenjs`.
-
-Its QA deliberately has three layers: geometric checks for overflow and density, visual inspection of rendered pages, and placeholder-text detection. The JSON workspace remains the revision authority; manual edits made only in the exported PPTX cannot automatically flow back into it.
-
-The bundled style corpus contains descriptors rather than copied deck assets. It influences grammar selection but is not a template-authority claim over the referenced work.
-
-- [Pinned repository](https://github.com/siril9/presentation-skill/tree/3a22eed290fa2205b6a1e2de5549b4429c5fffd0)
-- [Skill and workspace contract](https://github.com/siril9/presentation-skill/blob/3a22eed290fa2205b6a1e2de5549b4429c5fffd0/SKILL.md)
-- [PPTX compiler](https://github.com/siril9/presentation-skill/blob/3a22eed290fa2205b6a1e2de5549b4429c5fffd0/scripts/build_deck_pptxgenjs.js)
-- [Maintainer profile checked; no location published](https://github.com/siril9)
+- 定义：原生制品创作（+源码视觉创作、系统治理、端到端交付）
+- 实现：源码权威·实时投射（+设计-代码物化、文件系统 agent·视觉证据）
+- 形态：standalone-design-agent · 层次：agent 工作流 · 生命周期：active · 证据深度：source

@@ -1,17 +1,7 @@
 # Posecode
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Posecode defines human movement as readable, editable and renderable source. A `.posecode` document records phases, joint actions, timing, contacts and range constraints; humans, animation tools and language models can all author the same representation.
-
-## The language contract is the artifact authority
-
-The standard parser and language packages validate source independently of a model. The [renderer/embed package](https://github.com/posecode-dev/posecode/tree/579d986c3f8bf1f59414692dd2a0bbe4d867dc4a/packages/posecode-embed) projects it as interactive Three.js motion, while [`posecode-eval`](https://github.com/posecode-dev/posecode/tree/579d986c3f8bf1f59414692dd2a0bbe4d867dc4a/packages/posecode-eval) reports grounding, range-of-motion, collision and fidelity defects. The MCP package exposes generation, validation, critique and sharing to agents.
-
-Text source remains canonical; animation is a deterministic projection. This makes motion inspectable and diffable instead of hiding semantic decisions in a black-box trajectory or binary clip.
-
-## Evidence
-
-- [Pinned repository](https://github.com/posecode-dev/posecode/tree/579d986c3f8bf1f59414692dd2a0bbe4d867dc4a)
-- [Language specification](https://github.com/posecode-dev/posecode/tree/579d986c3f8bf1f59414692dd2a0bbe4d867dc4a/spec)
-- [MCP package](https://github.com/posecode-dev/posecode/tree/579d986c3f8bf1f59414692dd2a0bbe4d867dc4a/packages/posecode-mcp)
+- 定义：源码视觉创作（+原生制品创作、运行时纠正、视觉协调证据、系统治理）
+- 实现：源码权威·实时投射（+外部 agent 画布、文件系统 agent·视觉证据）
+- 形态：visual-editor-infrastructure · 层次：开源项目 · 生命周期：active · 证据深度：source

@@ -1,24 +1,7 @@
 # CareerVivid
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-CareerVivid embeds diagram creation inside a broader career workspace. Its relevant product boundary is the whiteboard path: a user asks for a diagram, Gemini returns native Excalidraw data, and the result continues life as an ordinary editable board.
-
-## Generation lands in native objects
-
-At commit [`be1c929a`](https://github.com/dbt-snowflake-u/CareerVivid/tree/be1c929a16be8454ce01a75fb0a338c63c870e96), the generation modal calls the Gemini service and normalizes the response into Excalidraw elements. The renderer is therefore also the editing surface; there is no screenshot-to-canvas reconstruction step.
-
-## The whiteboard has a project lifecycle
-
-The editor debounces saves to Firestore and maintains preview thumbnails. Human changes after generation are part of the saved artifact, which is stronger than a chat attachment or exported image.
-
-## Why it is counted separately
-
-This is an independently surfaced design workspace within CareerVivid, not evidence that every AI feature in the larger application is a design product. The counted mechanism is specifically native whiteboard generation plus continued editing and persistence.
-
-## Evidence
-
-- [Pinned source](https://github.com/dbt-snowflake-u/CareerVivid/tree/be1c929a16be8454ce01a75fb0a338c63c870e96)
-- [Diagram generation modal](https://github.com/dbt-snowflake-u/CareerVivid/blob/be1c929a16be8454ce01a75fb0a338c63c870e96/src/components/Whiteboard/GenerateDiagramModal.tsx)
-- [Whiteboard editor](https://github.com/dbt-snowflake-u/CareerVivid/blob/be1c929a16be8454ce01a75fb0a338c63c870e96/src/pages/WhiteboardEditor.tsx)
-- [Gemini service](https://github.com/dbt-snowflake-u/CareerVivid/blob/be1c929a16be8454ce01a75fb0a338c63c870e96/src/services/geminiService.ts)
+- 定义：原生制品创作（+委托式创作、运行时纠正、端到端交付）
+- 实现：原生图形权威（+托管应用项目图、候选隔离与晋升）
+- 形态：standalone-design-agent · 层次：开源项目 · 生命周期：active · 证据深度：source

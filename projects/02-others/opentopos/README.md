@@ -1,16 +1,7 @@
 # OpenTopos
 
-> Research status: **Source-level** · Lifecycle: **active research preview** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-OpenTopos turns a text or image prompt into a standalone Blender Python project for a static or articulated 3D object. A design agent defines parts and world-space bounding-box contracts; part agents implement them; Blender materializes and renders the assembly; a vision judge can send failures back into the source.
-
-## Code is the recoverable authority
-
-`outputs/<slug>/src/` contains `design.json`, per-part builders, assembly code and joint declarations. Renders, GLB and URDF under `artifacts/` are disposable projections. `topos inspect` runs Blender headlessly, measures boxes, detects floating or overlapping parts and renders previews before handoff.
-
-The stateless runtime permits parallel part work without shared Blender state, but procedural geometry remains strongest for relatively clean blocky forms. Work-in-progress status and model judgment prevent this from being treated as a general fidelity guarantee.
-
-- [Pinned repository](https://github.com/gaoypeng/opentopos/tree/8c970a8f1ca2847d200cddcdfff2edb41130fbee)
-- [Architecture](https://github.com/gaoypeng/opentopos/blob/8c970a8f1ca2847d200cddcdfff2edb41130fbee/docs/architecture.md)
-- [Blender verifier](https://github.com/gaoypeng/opentopos/blob/8c970a8f1ca2847d200cddcdfff2edb41130fbee/topos/tools/blender_verifier/tool.py)
-- [Maintainer profile: Los Angeles United States](https://github.com/gaoypeng)
+- 定义：源码视觉创作（+委托式创作、原生制品创作、运行时纠正、约束驱动工程、端到端交付）
+- 实现：源码权威·实时投射（+文件系统 agent·视觉证据、参数化工程模型权威）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

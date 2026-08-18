@@ -1,23 +1,7 @@
 # AgentGo
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-AgentGo is a local-first desktop IDE for designing agent applications whose visual DAG, capabilities, approvals, memory, and generated user interface execute together.
-
-## A DAG is an application definition
-
-Branches, loops, parallel work, fan-in, checkpoints, and human-in-the-loop nodes form an executable graph rather than a presentation diagram. ByteDance Eino ADK supplies the Go agent runtime while Wails packages the local desktop surface. The graph determines control flow and retains enough structure for layout repair and compilation checks.
-
-## CapabilityBus separates orchestration from tools
-
-Tools, apps, workflows, and skills enter through a common capability bus. An agent application can therefore call a capability without baking every integration into the canvas node. “Inner Apps” turn an agent flow into a generated task-specific interface, making the visual graph a source for both behavior and user-facing delivery.
-
-## Governance is part of execution
-
-SQLite-backed memory, a truth queue, approval queue, risk middleware, checkpoints, and context-injection previews make consequential transitions explicit. These controls do not prove every generated flow is safe, but they establish concrete pause, inspect, resume, and recover boundaries around the agent runtime.
-
-## Pinned evidence
-
-- Repository: [wk222/AgentGo](https://github.com/wk222/AgentGo)
-- Inspected desktop and runtime tree: [`7f9b60b7f42d6dcbee837e9719aa504f52ebdb41`](https://github.com/wk222/AgentGo/tree/7f9b60b7f42d6dcbee837e9719aa504f52ebdb41)
-- Immutable revision: [commit `7f9b60b`](https://github.com/wk222/AgentGo/commit/7f9b60b7f42d6dcbee837e9719aa504f52ebdb41)
+- 定义：约束驱动工程（+源码视觉创作、委托式创作、运行时纠正、系统治理、端到端交付）
+- 实现：原生图形权威（+托管应用项目图、运行时意图中继、候选隔离与晋升）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

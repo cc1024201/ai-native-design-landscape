@@ -1,26 +1,7 @@
 # XSharko AI
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-XSharko AI is a persisted single-document website builder. OpenRouter creates or revises one complete HTML page; MongoDB keeps the adopted document and its conversation; deployment metadata tracks whether it has moved outside the editor.
-
-## `latestCode` is the source of truth
-
-[`website.models.js`](https://github.com/tamimbro01/xsharkoAI/blob/bd069d90eea0140fbeb0c9d3aa15dfd149815f65/backend/src/models/website.models.js) stores `latestCode` beside user messages deployment status URL and slug. There is no file tree or native design graph. The artifact is the latest complete HTML string.
-
-## Generation and revision share one controller boundary
-
-[`website.controllers.js`](https://github.com/tamimbro01/xsharkoAI/blob/bd069d90eea0140fbeb0c9d3aa15dfd149815f65/backend/src/controllers/website.controllers.js) builds a strict raw-JSON prompt and calls the OpenRouter adapter. Initial generation creates the website record; later prompts include current code and replace `latestCode` after a successful parse. Conversation entries explain the transition but do not themselves determine the page.
-
-## Visual and delivery surfaces
-
-[`WebsiteEditor.jsx`](https://github.com/tamimbro01/xsharkoAI/blob/bd069d90eea0140fbeb0c9d3aa15dfd149815f65/frontend/src/Pages/WebsiteEditor.jsx) loads the stored document for code inspection and visual rendering. Deployment state is explicit in the model. The snapshot does not contain a durable historical version collection so a successful revision overwrites the prior `latestCode` unless external deployment or database backups preserve it.
-
-## Evidence and location
-
-- [Canonical repository](https://github.com/tamimbro01/xsharkoAI)
-- [Inspected tree](https://github.com/tamimbro01/xsharkoAI/tree/bd069d90eea0140fbeb0c9d3aa15dfd149815f65)
-- [OpenRouter adapter](https://github.com/tamimbro01/xsharkoAI/blob/bd069d90eea0140fbeb0c9d3aa15dfd149815f65/backend/config/openRouter.config.js)
-- Commit: `bd069d90eea0140fbeb0c9d3aa15dfd149815f65`
-
-The maintainer's [GitHub profile](https://github.com/tamimbro01) states Bangladesh; team region is recorded as Bangladesh.
+- 定义：端到端交付（+委托式创作、源码视觉创作、运行时纠正）
+- 实现：托管应用项目图（+源码权威·实时投射、托管生成制品工作区）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active · 证据深度：source

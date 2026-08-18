@@ -1,28 +1,7 @@
 # FPGA Design Agent
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-FPGA Design Agent puts specification planning ahead of RTL generation. Its primary artifact is a verified Verilog package accompanied by the frozen intent execution DAG testbench and run evidence needed to explain failure or acceptance.
-
-## Planning state gates execution
-
-At commit [`7bdfb75`](https://github.com/jacoboforero/FPGA_Design_Agent/tree/7bdfb752c78048fd0762049b61f2d484b274b316) a specification helper resolves omissions into a structured planning contract. A queue-backed orchestrator then assigns implementation testbench reflection and debug agents while deterministic workers run lint simulation and acceptance checks.
-
-```mermaid
-flowchart LR
-    S["Draft specification"] --> F["Frozen planning contract"]
-    F --> D["Dependency DAG"]
-    D --> A["LLM implementation / testbench"]
-    A --> V["Verilator / Icarus"]
-    V -->|failure| R["Distill · reflect · patch"]
-    R --> V
-    V -->|pass| P["RTL + evidence pack"]
-```
-
-Run-scoped traces costs task memory and artifacts keep concurrent jobs isolated. Benchmark results are useful implementation evidence but remain configuration-dependent and are not treated as a universal leaderboard. Public first-party evidence did not establish the team region.
-
-## Pinned evidence
-
-- [Planning schema](https://github.com/jacoboforero/FPGA_Design_Agent/blob/7bdfb752c78048fd0762049b61f2d484b274b316/core/schemas/planning_spec.py)
-- [Specification helper](https://github.com/jacoboforero/FPGA_Design_Agent/tree/7bdfb752c78048fd0762049b61f2d484b274b316/agents/spec_helper)
-- [Pinned README](https://github.com/jacoboforero/FPGA_Design_Agent/blob/7bdfb752c78048fd0762049b61f2d484b274b316/README.md)
+- 定义：约束驱动工程（+委托式创作、系统治理、运行时纠正、原生制品创作、端到端交付）
+- 实现：文件系统 agent·视觉证据（+参数化工程模型权威、候选隔离与晋升）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

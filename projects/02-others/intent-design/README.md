@@ -1,16 +1,7 @@
 # Design with Intent
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Design with Intent defines a UX practice for agents around research, strategy, journeys, information architecture, wireframes, content, evaluation, resilience, accessibility, localization, measurement and engineering handoff. Six named agents compose seventeen reusable skills without pretending that visual polish can replace evidence about the problem.
-
-## Design intent is carried through structured artifacts
-
-The system can produce research plans, service blueprints, journey maps, responsive HTML wireframes, evaluation findings, copy matrices and implementation-ready specifications. Each artifact has a different authority: evidence constrains strategy, wireframes test structure, evaluations record defects, and handoff packages translate reviewed decisions into engineering commitments.
-
-An anti-pattern catalog adds a governance gate before handoff, including deceptive and accessibility-hostile behavior. This is therefore a distinct end-to-end UX design product, not a prompt encyclopedia: routing, specialist roles and artifact transitions define how work advances or is refused.
-
-- [Pinned repository](https://github.com/ghaida/intent/tree/b89a519eb570fe7ec61de1eb51f553af0306b515)
-- [Wireframe skill](https://github.com/ghaida/intent/blob/b89a519eb570fe7ec61de1eb51f553af0306b515/skills/wireframe/SKILL.md)
-- [Engineering handoff skill](https://github.com/ghaida/intent/blob/b89a519eb570fe7ec61de1eb51f553af0306b515/skills/specify/SKILL.md)
-- [Maintainer location evidence](https://github.com/ghaida)
+- 定义：端到端交付（+系统治理、原生制品创作、变体决策、视觉协调证据）
+- 实现：候选隔离与晋升（+文件系统 agent·视觉证据）
+- 形态：general-agent-visual-tools · 层次：开源项目 · 生命周期：active · 证据深度：source

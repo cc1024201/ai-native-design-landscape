@@ -1,23 +1,7 @@
 # Tesslate Agent Builder
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Tesslate Agent Builder is a visual authoring layer over the TFrameX multi-agent framework, exposing agents, tools, patterns, triggers, and ordinary data operations in one graph.
-
-## TFrameX concepts remain typed
-
-Agent, tool, pattern, MCP server, input, and trigger nodes map to backend models rather than generic prompt boxes. A flow translator converts the graph into TFrameX orchestration structures and preserves configuration needed for execution.
-
-## Persistence and portability are separate
-
-PostgreSQL and Alembic migrations retain flows and runs for the application. JSON import and export provide a portable representation for a design independent of that managed database. Those paths are not described as lossless code round-tripping.
-
-## Triggers turn a draft into automation
-
-Manual, schedule, email, file, and webhook triggers reference saved flows. Built-in tools and model providers execute through backend registries, so changing a node changes a durable runtime definition rather than only its appearance.
-
-## Pinned evidence
-
-- Repository: [TesslateAI/Agent-Builder](https://github.com/TesslateAI/Agent-Builder)
-- Inspected React Flow nodes, translator, agents, tools, triggers, persistence, execution, and import/export tree: [`76655ca84cac8c6e63230b7526eb7e24bec29a0a`](https://github.com/TesslateAI/Agent-Builder/tree/76655ca84cac8c6e63230b7526eb7e24bec29a0a)
-- Immutable revision: [commit `76655ca`](https://github.com/TesslateAI/Agent-Builder/commit/76655ca84cac8c6e63230b7526eb7e24bec29a0a)
+- 定义：约束驱动工程（+源码视觉创作、委托式创作、运行时纠正、端到端交付）
+- 实现：原生图形权威（+托管应用项目图、运行时意图中继、设计-代码物化）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

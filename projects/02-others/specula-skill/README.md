@@ -1,19 +1,7 @@
 # SPECULA Skill
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-SPECULA Skill narrows the ecosystem to one implementable task: design a constitution and operational state machine for an AI system then prove they align before runtime integration.
-
-## Constitution and state machine must agree
-
-At commit [`b6b83f2`](https://github.com/oddtitoreal/specula-skill/tree/b6b83f2738a0f960320a64616d2cf3440eedd3cd) [`SKILL.md`](https://github.com/oddtitoreal/specula-skill/blob/b6b83f2738a0f960320a64616d2cf3440eedd3cd/SKILL.md) guides an external agent through principles constraints states transitions and guard mappings. Separate JSON schemas validate each artifact and [`validate_specula.py`](https://github.com/oddtitoreal/specula-skill/blob/b6b83f2738a0f960320a64616d2cf3440eedd3cd/scripts/validate_specula.py) checks cross-artifact consistency.
-
-Examples include both fictional luxury-fashion and real community-space brand governance. Validation output is evidence; the constitution and state-machine JSON are the editable authority.
-
-The skill is separately counted from the canonical Framework because it has a smaller user workflow and version boundary. It does not yet implement the broader orchestration trace and memory capabilities on its roadmap. The maintainer profile lists Pesaro Italy.
-
-## Evidence
-
-- [Constitution schema](https://github.com/oddtitoreal/specula-skill/blob/b6b83f2738a0f960320a64616d2cf3440eedd3cd/references/schemas-constitution.json)
-- [State-machine example](https://github.com/oddtitoreal/specula-skill/blob/b6b83f2738a0f960320a64616d2cf3440eedd3cd/examples/community-space-brand/state-machine.json)
-- [Pinned README](https://github.com/oddtitoreal/specula-skill/blob/b6b83f2738a0f960320a64616d2cf3440eedd3cd/README.md)
+- 定义：系统治理（+原生制品创作、运行时纠正、端到端交付）
+- 实现：文件系统 agent·视觉证据（+源码权威·实时投射）
+- 形态：general-agent-visual-tools · 层次：agent 工作流 · 生命周期：active · 证据深度：source

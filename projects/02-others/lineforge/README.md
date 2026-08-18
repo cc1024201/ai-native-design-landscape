@@ -1,17 +1,7 @@
 # lineforge
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-lineforge is a transmission-line design studio with equal Python, CLI, MCP and chat-driven web surfaces. It calculates common geometries analytically and accepts arbitrary bitmap cross-sections for field solving, then exposes impedance, distributed parameters and field plots for iteration.
-
-## One typed engineering model serves every surface
-
-Geometry and material inputs resolve through shared Pydantic models and solvers rather than model-authored arithmetic. The [web studio](https://github.com/RFingAdam/lineforge/tree/60bfe63fd8f1e45cf2671d200a8d9474f1233d27/frontend) adds stack-up editing, chat and result/field visualization; the MCP server exposes fourteen tools over the same library. Long calculations use inspectable task IDs.
-
-`.lineforge.json` preserves modern project input, while JSON/CSV/Touchstone and plots are derived engineering outputs. The maintainer's first-party profile identifies Milwaukee, United States.
-
-## Evidence
-
-- [Pinned repository](https://github.com/RFingAdam/lineforge/tree/60bfe63fd8f1e45cf2671d200a8d9474f1233d27)
-- [Core source](https://github.com/RFingAdam/lineforge/tree/60bfe63fd8f1e45cf2671d200a8d9474f1233d27/src/lineforge)
-- [Maintainer profile](https://github.com/RFingAdam)
+- 定义：约束驱动工程（+原生制品创作、委托式创作、视觉协调证据）
+- 实现：参数化工程模型权威（+外部 agent 画布）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

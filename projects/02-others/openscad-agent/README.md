@@ -1,18 +1,7 @@
 # OpenSCAD Agent
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-OpenSCAD Agent is a Claude Code environment for designing printable 3D objects from natural language. It makes the source/render/export distinction explicit: versioned OpenSCAD code owns the model, PNGs support visual correction, and STL is a validated production handoff.
-
-## Versioned source makes visual correction recoverable
-
-The main skill writes numbered `.scad` revisions and renders each to PNG. The user and agent compare previews, refine dimensions or topology and retain earlier source variants. A separate export skill converts the selected revision to STL and checks for non-manifold or otherwise unprintable geometry.
-
-The screenshot loop gives the agent eyes, but visual plausibility does not become the engineering authority. OpenSCAD source remains editable and reproducible; STL is accepted only after geometry validation.
-
-## Evidence
-
-- [Pinned repository](https://github.com/iancanderson/openscad-agent/tree/d3f3ebf90ec7c743c5b680ff909085f4e780c331)
-- [Ordinary workflow](https://github.com/iancanderson/openscad-agent/blob/d3f3ebf90ec7c743c5b680ff909085f4e780c331/README.md)
-- [Agent instructions](https://github.com/iancanderson/openscad-agent/blob/d3f3ebf90ec7c743c5b680ff909085f4e780c331/CLAUDE.md)
-- [Maintainer profile](https://github.com/iancanderson)
+- 定义：约束驱动工程（+委托式创作、运行时纠正、端到端交付）
+- 实现：源码权威·实时投射（+参数化工程模型权威、文件系统 agent·视觉证据）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

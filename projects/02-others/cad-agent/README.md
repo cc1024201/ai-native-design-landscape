@@ -1,18 +1,7 @@
 # CAD Agent
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-CAD Agent is a self-contained CAD execution and rendering service intended to give external agents a fast visual feedback loop. Modeling, rendering, dimensioning, printability analysis and export all run inside one container rather than being reimplemented by the calling model.
-
-## The container owns CAD semantics; images provide sight
-
-HTTP and MCP commands invoke a CAD/OpenSCAD engine. VTK produces shaded and multiview renders; separate paths create orthographic views and dimensioned blueprints. The same model can be exported to STL, STEP or 3MF and checked for production constraints. An embedded viewer exposes the result without moving geometry authority into the browser.
-
-This is more than a screenshot helper because the service owns executable modeling commands and downstream engineering exports. Conversely, the PNG is never treated as the model: it is feedback around the container's CAD representation.
-
-## Evidence
-
-- [Pinned repository](https://github.com/Svetlana-DAO-LLC/cad-agent/tree/5bbf716870128af0e6e1ac49fff6a315e79a417a)
-- [CAD engine](https://github.com/Svetlana-DAO-LLC/cad-agent/blob/5bbf716870128af0e6e1ac49fff6a315e79a417a/src/cad_engine.py)
-- [MCP interface](https://github.com/Svetlana-DAO-LLC/cad-agent/blob/5bbf716870128af0e6e1ac49fff6a315e79a417a/src/mcp_server.py)
-- [VTK renderer](https://github.com/Svetlana-DAO-LLC/cad-agent/blob/5bbf716870128af0e6e1ac49fff6a315e79a417a/src/vtk_renderer.py)
+- 定义：约束驱动工程（+原生制品创作、运行时纠正、端到端交付）
+- 实现：参数化工程模型权威（+外部 agent 画布、文件系统 agent·视觉证据）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

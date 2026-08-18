@@ -1,20 +1,7 @@
 # Consulting Deck
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Consulting Deck defines presentation design as an evidence-bearing argument, not a sequence of attractive pages. It turns PDFs, documents, tables or research into an answer-first storyline and then into a natively editable PowerPoint deck.
-
-## Evidence precedes the slide
-
-The workflow establishes audience, decision and governing thought before choosing layouts. An evidence ledger distinguishes source facts, calculations, interpretations and hypotheses; chart specifications state the analytical question and takeaway before PowerPoint construction.
-
-Native text, tables, charts, simple frameworks and speaker notes become the delivery authority. Project sources and the evidence ledger remain the revision authority, so an affected slide can be rebuilt without regenerating the whole deck. Rendered slides are QA projections used to catch overflow, compatibility and weak visual hierarchy.
-
-## What the examples prove
-
-The repository includes editable sample decks, renders and machine-readable QA. These prove a reproducible implementation path, not that every future source produces consulting-grade reasoning without human review.
-
-- [Pinned repository](https://github.com/zairuilab/consulting-deck/tree/adf65f9d46e44fa3e936bb35e2dde17c93e3606e)
-- [Skill contract](https://github.com/zairuilab/consulting-deck/blob/adf65f9d46e44fa3e936bb35e2dde17c93e3606e/SKILL.md)
-- [QA record](https://github.com/zairuilab/consulting-deck/blob/adf65f9d46e44fa3e936bb35e2dde17c93e3606e/examples/qa-summary.json)
-- [Maintainer profile checked; no location published](https://github.com/zairuilab)
+- 定义：原生制品创作（+委托式创作、变体决策、端到端交付）
+- 实现：原生图形权威（+文件系统 agent·视觉证据）
+- 形态：standalone-design-agent · 层次：开源项目 · 生命周期：active · 证据深度：source

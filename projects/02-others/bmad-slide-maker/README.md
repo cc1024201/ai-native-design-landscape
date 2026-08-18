@@ -1,18 +1,7 @@
 # BMAD Slide Maker
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-BMAD Slide Maker is an independently installable skill inside the broader BMAD marketplace. It owns the complete deck loop: brainstorm the argument, generate a reviewable React/HTML deck, capture point comments and export editable PPTX, image PPTX, standalone HTML or PDF.
-
-## Tokens survive across 34 layouts
-
-Layouts consume a theme contract rather than literal colors and fonts. The skill resolves an existing brand system first, then an optional external design-intelligence source, and finally a bundled neutral theme. A working deck is copied out of the skill into the user's project, so generated source can evolve without mutating the installed product.
-
-HTML/React is the review authority. Editable PPTX uses a dedicated conversion workflow and differs from the pixel-perfect image-PPTX route. The explicit choice between those outputs prevents “looks identical” and “is editable” from being treated as the same requirement.
-
-The mixed `bmad-labs/skills` repository itself is not counted as a design product; Slide Maker and Slides Generator have separate triggers, contracts and delivery graphs, so they are catalogued independently under one organization.
-
-- [Pinned Slide Maker skill](https://github.com/bmad-labs/skills/blob/088a427df8b0f7065f5270104933064c2627d63a/skills/slide-maker/SKILL.md)
-- [Editable PPTX workflow](https://github.com/bmad-labs/skills/blob/088a427df8b0f7065f5270104933064c2627d63a/skills/slide-maker/references/workflows/export-editable-pptx.md)
-- [Pinned repository](https://github.com/bmad-labs/skills/tree/088a427df8b0f7065f5270104933064c2627d63a/skills/slide-maker)
-- [Organization profile checked; no location published](https://github.com/bmad-labs)
+- 定义：原生制品创作（+委托式创作、变体决策、端到端交付）
+- 实现：源码权威·实时投射（+设计-代码物化、候选隔离与晋升）
+- 形态：standalone-design-agent · 层次：开源项目 · 生命周期：active · 证据深度：source

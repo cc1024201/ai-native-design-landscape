@@ -1,16 +1,7 @@
 # Blender MCP Server by namurokuro
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Blender MCP Server by namurokuro is a single-file host add-on that exposes modeling, materials, animation, physics, render and interchange operations to orchestrating agents such as PolyMCP.
-
-## The add-on owns safe access, not creative state
-
-[`blender_mcp.py`](https://github.com/namurokuro/Blender-MCP-Server/blob/1e79e663c15f7201677cd85512b47bfbbf86f251/blender_mcp.py) embeds the HTTP service, operation queue and monitoring panel inside Blender. [`blender_polymcp.py`](https://github.com/namurokuro/Blender-MCP-Server/blob/1e79e663c15f7201677cd85512b47bfbbf86f251/blender_polymcp.py) demonstrates agent orchestration without making that client the artifact authority.
-
-The running Blender scene and saved `.blend` file remain canonical. Thread-safe queuing is decisive because agent concurrency must resolve into Blender's main-thread mutation model.
-
-## Evidence
-
-- [Pinned repository](https://github.com/namurokuro/Blender-MCP-Server/tree/1e79e663c15f7201677cd85512b47bfbbf86f251)
-- [Install and tool contract](https://github.com/namurokuro/Blender-MCP-Server/blob/1e79e663c15f7201677cd85512b47bfbbf86f251/README.md)
+- 定义：原生制品创作（+委托式创作、端到端交付）
+- 实现：外部 agent 画布（+原生图形权威）
+- 形态：agent-controllable-canvas · 层次：连接桥 · 生命周期：active · 证据深度：source

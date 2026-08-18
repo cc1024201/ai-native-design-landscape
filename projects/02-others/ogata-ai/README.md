@@ -1,19 +1,7 @@
 # ogaTa.ai
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-ogaTa.ai manages generated websites as user projects: model conversation, current source, shared views and deployment records are durable objects rather than one browser response.
-
-## Conversation changes a stored project
-
-[`langchainService.js`](https://github.com/kvineet002/Kriti2025/blob/1c24419d49bfbe896db6a369bbb73d2a32fbfba3/backend/services/langchainService.js) mediates Gemini generation. [`chat.js`](https://github.com/kvineet002/Kriti2025/blob/1c24419d49bfbe896db6a369bbb73d2a32fbfba3/backend/models/chat.js) persists the conversation and generated state used for later turns.
-
-## Preview and publication retain different records
-
-[`SandPackCode.js`](https://github.com/kvineet002/Kriti2025/blob/1c24419d49bfbe896db6a369bbb73d2a32fbfba3/frontend/src/pages/Home/SandPackCode.js) executes the current website source. [`deployedWebsites.js`](https://github.com/kvineet002/Kriti2025/blob/1c24419d49bfbe896db6a369bbb73d2a32fbfba3/backend/models/deployedWebsites.js) and [`deployRouter.js`](https://github.com/kvineet002/Kriti2025/blob/1c24419d49bfbe896db6a369bbb73d2a32fbfba3/backend/routes/deployRouter.js) create a distinct published representation.
-
-## Evidence lock
-
-- [Canonical repository](https://github.com/kvineet002/Kriti2025)
-- [Inspected commit](https://github.com/kvineet002/Kriti2025/commit/1c24419d49bfbe896db6a369bbb73d2a32fbfba3)
-- Commit: `1c24419d49bfbe896db6a369bbb73d2a32fbfba3`
+- 定义：端到端交付（+委托式创作、源码视觉创作、运行时纠正、变体决策）
+- 实现：托管应用项目图（+源码权威·实时投射、候选隔离与晋升）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active · 证据深度：source

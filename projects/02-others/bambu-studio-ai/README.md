@@ -1,15 +1,7 @@
 # Bambu Studio AI
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-Bambu Studio AI spans the physical product loop from an idea through model search or generation, printability analysis and repair, preview, slicer handoff, printing, camera monitoring and notification.
-
-## The model changes authority across the pipeline
-
-Search and five generation providers yield mesh candidates; parametric templates can instead create dimension-controlled CSG. Analysis checks mesh integrity, wall thickness, overhangs, orientation, disconnected parts and printer/material compatibility, then saves repaired or scaled files. Blender turntables provide visual evidence before Bambu Studio slices the selected model and the printer executes it.
-
-Monitoring can pause obvious failures from camera evidence, but software checks do not certify structural performance or safe fabrication. User decision points remain necessary before irreversible printing actions.
-
-- [Pinned repository](https://github.com/heyixuan2/bambu-studio-ai/tree/e4da6b4825e7c6aaa6cfec6dd7ebb3d17660f7b3)
-- [Agent skill](https://github.com/heyixuan2/bambu-studio-ai/blob/e4da6b4825e7c6aaa6cfec6dd7ebb3d17660f7b3/SKILL.md)
-- [Maintainer profile checked; no location published](https://github.com/heyixuan2)
+- 定义：约束驱动工程（+委托式创作、原生制品创作、运行时纠正、端到端交付）
+- 实现：参数化工程模型权威（+文件系统 agent·视觉证据）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

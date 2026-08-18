@@ -1,19 +1,7 @@
 # WebCraft AI by Krish Anand
 
-> Research status: **Source-level** · Lifecycle: **active-transition** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-WebCraft gives the model authority over an executable workspace rather than returning one HTML string. The product boundary spans persistent project prompts, an isolated worker filesystem and separate editor and preview services.
-
-## Streamed actions mutate a live workspace
-
-[`worker/index.ts`](https://github.com/Official-Krish/WebCraft-Website-that-makes-website/blob/42da2019aec38148673fe9fa212c8d26163f2bbe/apps/worker/index.ts) gathers a project's prompt history, streams Gemini 2.5 Pro and passes each chunk to an action parser. [`parser.ts`](https://github.com/Official-Krish/WebCraft-Website-that-makes-website/blob/42da2019aec38148673fe9fa212c8d26163f2bbe/apps/worker/utils/parser.ts) turns tagged file and shell actions into callbacks as they become complete. The [system contract](https://github.com/Official-Krish/WebCraft-Website-that-makes-website/blob/42da2019aec38148673fe9fa212c8d26163f2bbe/apps/worker/utils/Prompt.ts) requires comprehensive file content and adds component identifiers for later targeted edits.
-
-## Rendering is service-level rather than `srcdoc`
-
-Each project receives worker, browser-editor and preview endpoints. [`EditorPanel.tsx`](https://github.com/Official-Krish/WebCraft-Website-that-makes-website/blob/42da2019aec38148673fe9fa212c8d26163f2bbe/apps/frontend/src/components/project/EditorPanel.tsx) switches between those live URLs and can expose the preview full screen. Prisma records the project and its prompt/action history; the running workspace remains the immediate source authority, so this is a managed agent builder rather than a chat-only generator.
-
-## Evidence
-
-- [Canonical repository](https://github.com/Official-Krish/WebCraft-Website-that-makes-website)
-- [Inspected tree](https://github.com/Official-Krish/WebCraft-Website-that-makes-website/tree/42da2019aec38148673fe9fa212c8d26163f2bbe)
-- Commit: `42da2019aec38148673fe9fa212c8d26163f2bbe`
+- 定义：委托式创作（+源码视觉创作、运行时纠正、端到端交付）
+- 实现：文件系统 agent·视觉证据（+托管应用项目图、源码权威·实时投射）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active-transition · 证据深度：source

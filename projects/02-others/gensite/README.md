@@ -1,23 +1,7 @@
 # GenSite
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-GenSite defines a website as a durable map of page files plus shared project state. Generation can stream a multi-page result; corrections target one page or element; versions capture the accepted file map before preview download or publication.
-
-## The project can hold a real page set
-
-[`server/prisma/schema.prisma`](https://github.com/Prathamesh51-debug/GenSite/blob/4ad2420b9a3559fd68be97cf87c11277b9a867af/server/prisma/schema.prisma) stores `files` beside current source conversation versions and publication state. [`generation.controller.ts`](https://github.com/Prathamesh51-debug/GenSite/blob/4ad2420b9a3559fd68be97cf87c11277b9a867af/server/modules/project/generation.controller.ts) streams generation events while the server builds the design brief shared layout and individual pages.
-
-## Correction preserves page identity
-
-[`revision.service.ts`](https://github.com/Prathamesh51-debug/GenSite/blob/4ad2420b9a3559fd68be97cf87c11277b9a867af/server/modules/project/revision.service.ts) resolves a target page from the request or current path. Chat revision replaces that complete page; element edit returns a constrained fragment; manual source saving creates a new durable version. Rollback restores both metadata and the selected file map.
-
-[`ProjectPreview.tsx`](https://github.com/Prathamesh51-debug/GenSite/blob/4ad2420b9a3559fd68be97cf87c11277b9a867af/client/src/features/editor/ProjectPreview.tsx) maps internal links across sandboxed `srcDoc` pages and deliberately uses a stricter sandbox for public views. [`EditorPanel.tsx`](https://github.com/Prathamesh51-debug/GenSite/blob/4ad2420b9a3559fd68be97cf87c11277b9a867af/client/src/features/editor/EditorPanel.tsx) exposes source correction before explicit download or publication.
-
-## Evidence
-
-- [Canonical repository](https://github.com/Prathamesh51-debug/GenSite)
-- [Inspected tree](https://github.com/Prathamesh51-debug/GenSite/tree/4ad2420b9a3559fd68be97cf87c11277b9a867af)
-- Commit: `4ad2420b9a3559fd68be97cf87c11277b9a867af`
-
-No reliable geographic evidence was found; team region remains `unknown`.
+- 定义：端到端交付（+委托式创作、源码视觉创作、运行时纠正、变体决策）
+- 实现：托管应用项目图（+源码权威·实时投射、候选隔离与晋升、托管生成制品工作区）
+- 形态：ai-app-site-builder · 层次：开源项目 · 生命周期：active · 证据深度：source

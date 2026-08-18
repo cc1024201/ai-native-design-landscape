@@ -1,23 +1,7 @@
 # WrenAI
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-WrenAI defines generative business intelligence as a governed path from database meaning to validated SQL, charts, and deployable dashboards rather than a chat window that happens to query data.
-
-## Meaning is kept in reviewable files
-
-Models and relationships live in MDL, organization-specific definitions live in `instructions.md`, and proven examples enter memory. Agents retrieve this context to plan SQL, while the semantic engine validates queries against the modeled data source.
-
-## Generation has a dry-plan boundary
-
-Text-to-SQL output passes schema-aware retrieval, planning, dry validation, and structured error handling before results become charts. This separates model proposal from database execution and leaves evidence for why a field or relationship was available.
-
-## A result can become a delivered artifact
-
-Charts can be assembled into a dashboard and deployed through Vercel or Cloudflare using the browser-side Wren core. MCP, skills, CLI, and SDK surfaces let external agents operate the governed model without moving the semantic authority into their private prompts.
-
-## Pinned evidence
-
-- Repository: [Canner/WrenAI](https://github.com/Canner/WrenAI)
-- Inspected MDL schema, planner, validation, memory, GenBI, dashboard deployment, MCP, and skills tree: [`7f7370e4e9b05a51dbde918cd5c9ecbedafe3d20`](https://github.com/Canner/WrenAI/tree/7f7370e4e9b05a51dbde918cd5c9ecbedafe3d20)
-- Immutable revision: [commit `7f7370e`](https://github.com/Canner/WrenAI/commit/7f7370e4e9b05a51dbde918cd5c9ecbedafe3d20)
+- 定义：系统治理（+委托式创作、原生制品创作、约束驱动工程、端到端交付）
+- 实现：源码权威·实时投射（+设计-代码物化、托管应用项目图、候选隔离与晋升）
+- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source

@@ -1,23 +1,7 @@
 # PixelRuller
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-PixelRuller grew from screenshot measurement into a shared UI authoring surface. A human edits the canvas while a coding agent reads and writes the same structured design through a documented skill and command interface.
-
-## JSON is the meeting point
-
-At commit [`f132293`](https://github.com/kalotrapezis/PixelRuller/tree/f132293706841c387d9fbd6232d88ce53d5fdff1) design JSON stores windows elements hierarchy percentage sizing styles responsive visibility and actions. [`AI_SKILL.md`](https://github.com/kalotrapezis/PixelRuller/blob/f132293706841c387d9fbd6232d88ce53d5fdff1/AI_SKILL.md) teaches an external agent the same vocabulary. The browser canvas can measure screenshots draw shapes and directly edit that model.
-
-Demo mode interprets declared interactions so a design can be exercised before implementation. HTML JSON and XML exports derive from the model; they do not replace it. Example files such as [`PDFExtractorUI.json`](https://github.com/kalotrapezis/PixelRuller/blob/f132293706841c387d9fbd6232d88ce53d5fdff1/web/PDFExtractorUI.json) preserve a concrete handoff from design to application code.
-
-## Distinctive boundary
-
-The app does not call a model itself. AI participation comes from a co-located coding agent following the skill and writing the same files. That is still a real agent interface because changes are structured inspectable and immediately rendered rather than simulated in the UI.
-
-Public first-party evidence did not establish the maintainer region.
-
-## Sources
-
-- [Server and command surface](https://github.com/kalotrapezis/PixelRuller/blob/f132293706841c387d9fbd6232d88ce53d5fdff1/server.py)
-- [Canvas application](https://github.com/kalotrapezis/PixelRuller/blob/f132293706841c387d9fbd6232d88ce53d5fdff1/web/app.js)
-- [Pinned README](https://github.com/kalotrapezis/PixelRuller/blob/f132293706841c387d9fbd6232d88ce53d5fdff1/README.md)
+- 定义：原生制品创作（+源码视觉创作、运行时纠正、设计-代码翻译、视觉协调证据、端到端交付）
+- 实现：源码权威·实时投射（+外部 agent 画布、设计-代码物化、文件系统 agent·视觉证据）
+- 形态：agent-controllable-canvas · 层次：开源项目 · 生命周期：active · 证据深度：source

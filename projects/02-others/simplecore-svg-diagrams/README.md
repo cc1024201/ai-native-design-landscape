@@ -1,16 +1,7 @@
 # SimpleCORE SVG Diagrams
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-SimpleCORE SVG Diagrams is an independently routed skill inside the SimpleCORE marketplace. It turns flow, sequence, state, class, ER, architecture, pipeline and network descriptions into editable SVG or ASCII with an explicit render-audit pass.
-
-## A JSON specification separates layout from SVG text
-
-The skill can auto-layout a JSON graph or convert Mermaid, then writes SVG that remains readable by both people and agents. Its audit catches unresolved arrow markers, label overflow and clipping as the file is authored. Those checks defend structural integrity but do not replace visual judgment.
-
-The SVG is the authority and a rasterized view is the QA projection. This is a distinct visual product even though it shares a release repository with Korean writing and backend-development skills; counting the whole marketplace would blur unrelated definitions of work.
-
-- [Pinned skill directory](https://github.com/simplecore-inc/simplecore-skills/tree/0c45b550b4f59620e406f1e8e84ab714f34b3c1c/plugins/simplecore/skills/svg-diagrams)
-- [Agent skill](https://github.com/simplecore-inc/simplecore-skills/blob/0c45b550b4f59620e406f1e8e84ab714f34b3c1c/plugins/simplecore/skills/svg-diagrams/SKILL.md)
-- [Pinned marketplace source](https://github.com/simplecore-inc/simplecore-skills/tree/0c45b550b4f59620e406f1e8e84ab714f34b3c1c)
-- [Organization location evidence](https://github.com/simplecore-inc)
+- 定义：源码视觉创作（+原生制品创作、运行时纠正）
+- 实现：源码权威·实时投射（+文件系统 agent·视觉证据）
+- 形态：general-agent-visual-tools · 层次：开源项目 · 生命周期：active · 证据深度：source

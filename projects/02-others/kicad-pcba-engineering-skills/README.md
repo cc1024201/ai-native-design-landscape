@@ -1,16 +1,7 @@
 # KiCad PCBA Engineering Skills
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
 
-This Codex-oriented suite routes requirements, schematic, PCB, library, high-speed/power, repair and release work through ten focused skills around KiCad 10.
-
-## Release readiness is an evidence state
-
-A PowerShell wrapper runs official ERC/DRC, parity and zone checks, exports manufacturing files, validates Gerber/drill/BOM/CPL content and writes a machine-readable manifest. The final status remains `NOT_READY_FOR_PCBA_UPLOAD` until every required item is verified; a successful export alone cannot produce `PASS`.
-
-The repository uses live installed documentation, libraries and board-house constraints instead of vendoring them. This keeps source provenance clear but means external specifications must be rechecked at execution time.
-
-- [Pinned repository](https://github.com/tsukimori-dev/kicad-pcba-engineering-skills/tree/53d4c42365646e48b96a729562f9aaf83b39c94d)
-- [Routing skill](https://github.com/tsukimori-dev/kicad-pcba-engineering-skills/blob/53d4c42365646e48b96a729562f9aaf83b39c94d/kicad-pcba-engineering-suite/SKILL.md)
-- [CLI automation](https://github.com/tsukimori-dev/kicad-pcba-engineering-skills/blob/53d4c42365646e48b96a729562f9aaf83b39c94d/kicad-cli-automation/scripts/run-kicad-check.ps1)
-- [Maintainer profile checked; no location published](https://github.com/tsukimori-dev)
+- 定义：约束驱动工程（+系统治理、运行时纠正、端到端交付、视觉协调证据）
+- 实现：文件系统 agent·视觉证据（+参数化工程模型权威）
+- 形态：ai-engineering-design-workspace · 层次：agent 工作流 · 生命周期：active · 证据深度：source
