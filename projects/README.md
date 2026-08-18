@@ -4,25 +4,24 @@
 
 ```
 projects/
-├── 01-active/  (1476 条)
-│   ├── 01-commercial/  (184)
-│   ├── 02-open-source/  (1055)
-│   ├── 03-agent-workflows/  (97)
-│   ├── 04-bridges/  (122)
-│   ├── 05-templates/  (9)
-│   ├── 06-research-eval/  (9)
-│
-├── 02-archived/  (28 条)
-│   ├── 01-commercial/  (6)
-│   ├── 02-open-source/  (22)
-│   ├── 03-agent-workflows/  (0)
-│   ├── 04-bridges/  (0)
-│   ├── 05-templates/  (0)
-│   ├── 06-research-eval/  (0)
-│
+├── 01-depth-analysis/   值得深度分析（124）— 逐篇定制分析
+│   ├── 01-active/ 02-archived/  (生命周期)
+│   └── <layer>/<band>/<form>/<slug>   (实体层次 → AI-native 档 → 产品形态)
+└── 02-others/          其他（1380）— 仅归档登记，不分析
+    ├── INDEX.md        全部 1380 条登记表（已归类为不值得分析）
+    └── <slug>/README.md  证据档案归档
 ```
 
-每层目录内有自动生成的 `INDEX.md`：条数 / 成员 / 档位分布 / **覆盖缺口（未覆盖的组合即空缺）** / **不足与缺陷（evidence 缺口、评分状态、生命周期待刷新、边界存疑）** / 下一步。
+结构自解释：`01-depth-analysis/` 里的分层 `INDEX.md` 报告条数/成员/档位/覆盖缺口/不足与缺陷/下一步；`02-others/INDEX.md` 登记全部"不值得分析"条目及归类依据。
+
+## 质量分档（data/quality-tiers.csv）
+
+| 档 | 定义 | 条数 |
+|---|---|---|
+| **值得深度分析** | 有独特机制、证据充分、值得逐篇定制分析（判定依据: v2≥8.5 或 H1 产品 v2≥7.5） | 124 |
+| 其他 | 其余全部（含边缘与排除：模板/研究基准/mock/无证据） | 1380 |
+
+> 只有"值得深度分析"档做逐篇定制分析。
 
 ## 全局现状与缺口
 - 地理证据: 2402 候选行中仅 742 有第一方区域证据，其余未知（candidates.csv）

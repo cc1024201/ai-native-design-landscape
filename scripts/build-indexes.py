@@ -22,6 +22,7 @@ paths    = json.load(open('data/slug-paths.json'))
 scores   = {r['slug']: r for r in csv.DictReader(open('data/ai-native-scores-v2.csv')) if r['total']}
 strata   = list(csv.DictReader(open('data/saturation-strata.csv')))
 cands    = list(csv.DictReader(open('data/candidates.csv')))
+quality  = {r['slug']: r['tier'] for r in csv.DictReader(open('data/quality-tiers.csv'))}
 
 LIFE = {'01-active': 'active', '02-archived': 'archived'}
 LAYER = {'H1': ('01-commercial', 'H1 完整商业/托管产品', '用户直接购买/订阅使用，公司或团队运营'),
@@ -156,11 +157,11 @@ def form_index(fdir, form, slugs):
     return '\n'.join(lines) + '\n'
 
 # ---------- layer README ----------
-def layer_index(life_dir, layer_key, life_key):
+def layer_index(life_dir, layer_key, life_key, all_slugs):
     dirname, title, _def = LAYER[layer_key]
     d = os.path.join(life_dir, dirname)
     os.makedirs(d, exist_ok=True)
-    slugs = [s for s in layers if layers[s] == layer_key and slug_bucket(s) == life_key]
+    slugs = [s for s in all_slugs if layers[s] == layer_key and slug_bucket(s) == life_key]
     lines = []
     lines.append(f'# {title}（{dirname}）')
     lines.append('')
@@ -181,6 +182,13 @@ def layer_index(life_dir, layer_key, life_key):
         for b in ['01-deep-authoring','02-constrained-write','03-read-only']:
             lines.append(f'| {b} {BAND[b][1]} | {bdist.get(b, 0)} |')
         lines.append('')
+    # 质量两档
+    qdist = Counter(quality.get(s, '?') for s in slugs)
+    lines.append('| 质量档 | 条数 |')
+    lines.append('|---|---|')
+    lines.append(f'| **值得深度分析** | {qdist.get("depth", 0)} |')
+    lines.append(f'| 其他 | {qdist.get("other", 0) + qdist.get("?", 0)} |')
+    lines.append('')
     # 评分状态
     if layer_key in ('H5','H6'):
         lines.append('> 本层不评分（模板/研究验证语义不同），待办见下文。')
@@ -224,9 +232,8 @@ def layer_index(life_dir, layer_key, life_key):
     return '\n'.join(lines) + '\n', d, slugs
 
 # ---------- lifecycle README ----------
-def life_index(life_dir, life_key):
+def life_index(life_dir, life_key, slugs):
     lines = []
-    slugs = [s for s in layers if slug_bucket(s) == life_key]
     lines.append(f'# {"活跃记录" if life_key == "active" else "归档记录"}（{os.path.basename(life_dir)}）')
     lines.append('')
     lines.append(f'**{len(slugs)} 条**')
@@ -272,15 +279,26 @@ def top_index():
     lines.append('')
     lines.append('```')
     lines.append('projects/')
-    for life, lk in LIFE.items():
-        ldist_life = Counter(layers[s] for s in layers if bucket.get(s) == lk)
-        lines.append(f'├── {life}/  ({bdist[lk]} 条)')
-        for k in ['H1','H2','H3','H4','H5','H6']:
-            lines.append(f'│   ├── {LAYER[k][0]}/  ({ldist_life.get(k,0)})')
-        lines.append('│')
+    lines.append('├── 01-depth-analysis/   值得深度分析（124）— 逐篇定制分析')
+    lines.append('│   ├── 01-active/ 02-archived/  (生命周期)')
+    lines.append('│   └── <layer>/<band>/<form>/<slug>   (实体层次 → AI-native 档 → 产品形态)')
+    lines.append('└── 02-others/          其他（1380）— 仅归档登记，不分析')
+    lines.append('    ├── INDEX.md        全部 1380 条登记表（已归类为不值得分析）')
+    lines.append('    └── <slug>/README.md  证据档案归档')
     lines.append('```')
     lines.append('')
-    lines.append('每层目录内有自动生成的 `INDEX.md`：条数 / 成员 / 档位分布 / **覆盖缺口（未覆盖的组合即空缺）** / **不足与缺陷（evidence 缺口、评分状态、生命周期待刷新、边界存疑）** / 下一步。')
+    lines.append('结构自解释：`01-depth-analysis/` 里的分层 `INDEX.md` 报告条数/成员/档位/覆盖缺口/不足与缺陷/下一步；`02-others/INDEX.md` 登记全部"不值得分析"条目及归类依据。')
+    lines.append('')
+    # 全局质量（两档）
+    qd = Counter(quality.values())
+    lines.append('## 质量分档（data/quality-tiers.csv）')
+    lines.append('')
+    lines.append('| 档 | 定义 | 条数 |')
+    lines.append('|---|---|---|')
+    lines.append(f'| **值得深度分析** | 有独特机制、证据充分、值得逐篇定制分析（判定依据: v2≥8.5 或 H1 产品 v2≥7.5） | {qd.get("depth",0)} |')
+    lines.append(f'| 其他 | 其余全部（含边缘与排除：模板/研究基准/mock/无证据） | {qd.get("other",0)} |')
+    lines.append('')
+    lines.append('> 只有"值得深度分析"档做逐篇定制分析。')
     lines.append('')
     # 全局缺陷
     lines.append('## 全局现状与缺口')
@@ -305,12 +323,14 @@ def write(path, content):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     open(path, 'w', encoding='utf-8').write(content)
 
-# ---------- main ----------
+# ---------- depth subtree (worth deep analysis) ----------
+depth_slugs = [s for s in layers if quality.get(s) == 'depth']
 for life_key, life_dirn in [('active', '01-active'), ('archived', '02-archived')]:
-    life_dir = os.path.join('projects', life_dirn)
-    write(os.path.join(life_dir, 'INDEX.md'), life_index(life_dir, life_key))
+    life_dir = os.path.join('projects', '01-depth-analysis', life_dirn)
+    lslugs = [s for s in depth_slugs if slug_bucket(s) == life_key]
+    write(os.path.join(life_dir, 'INDEX.md'), life_index(life_dir, life_key, lslugs))
     for layer_key in ['H1','H2','H3','H4','H5','H6']:
-        content, d, slugs = layer_index(life_dir, layer_key, life_key)
+        content, d, slugs = layer_index(life_dir, layer_key, life_key, lslugs)
         write(os.path.join(d, 'INDEX.md'), content)
         if layer_key in ('H1','H2','H3','H4'):
             for b in BAND:
@@ -319,7 +339,6 @@ for life_key, life_dirn in [('active', '01-active'), ('archived', '02-archived')
                     continue
                 bd = os.path.join(d, b)
                 write(os.path.join(bd, 'INDEX.md'), band_index(life_dir, layer_key, life_key, b, band_slugs))
-                # form sub-dirs
                 fdist = Counter(census[s]['product_form'] for s in band_slugs)
                 for f, cnt in fdist.items():
                     fd = os.path.join(bd, f)
@@ -327,7 +346,6 @@ for life_key, life_dirn in [('active', '01-active'), ('archived', '02-archived')
                     form_slugs = [s for s in band_slugs if census[s]['product_form'] == f]
                     write(os.path.join(fd, 'INDEX.md'), form_index(fd, f, form_slugs))
         else:
-            # H5/H6: no band dir; write form INDEX directly
             fdist = Counter(census[s]['product_form'] for s in slugs)
             for f in FORMS:
                 fs = [s for s in slugs if census[s]['product_form'] == f]
@@ -335,6 +353,27 @@ for life_key, life_dirn in [('active', '01-active'), ('archived', '02-archived')
                 fd = os.path.join(d, f)
                 os.makedirs(fd, exist_ok=True)
                 write(os.path.join(fd, 'INDEX.md'), form_index(fd, f, fs))
+
+# ---------- depth root index ----------
+depth_lines = ['# 01-depth-analysis — 值得深度分析（124）', '',
+    '本目录收录经质量筛查判定**值得深度分析**的项目（判定: v2≥8.5 或 H1 产品 v2≥7.5），',
+    '后续将逐篇撰写定制分析（每个项目单独分析"如何定义设计 / 如何实现"，非模板）。', '',
+    '按原四维组织：生命周期 → 实体层次 → AI-native 档 → 产品形态。', '', '']
+write(os.path.join('projects', '01-depth-analysis', 'INDEX.md'), '\n'.join(depth_lines))
+
+# ---------- others archive index ----------
+other_slugs = sorted((s for s in layers if quality.get(s) != 'depth'), key=lambda x: x)
+ol = ['# 02-others — 已归类为"不值得深度分析"（1380）', '',
+    '这些项目经质量筛查被判定为**不值得深度分析**（重复度高 / 实现单薄 / 证据弱 / 模板·研究基准·mock·无证据）。',
+    '**不再分析**：仅在此登记归档，说明已完成归类。如需复核可打开对应档案 README。', '',
+    '| 项目 | 形态（layer） | 产品形态 | 归类依据 |', '|---|---|---|---|']
+from collections import Counter as _C
+for s in other_slugs:
+    c = census[s]
+    rel = os.path.relpath(os.path.join('projects', paths[s]), os.path.join('projects','02-others')).replace(os.sep, '/')
+    ol.append(f'| [{c["product"]}]({rel}/) | {LAYER[layers[s]][0]} | {FORM_NAME.get(c["product_form"], c["product_form"])} | {quality.get(s,"other")} |')
+lis = '\n'.join(ol) + '\n'
+write(os.path.join('projects', '02-others', 'INDEX.md'), lis)
 
 write(os.path.join('projects', 'README.md'), top_index())
 
