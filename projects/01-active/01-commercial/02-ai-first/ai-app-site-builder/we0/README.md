@@ -1,6 +1,6 @@
 # We0.ai
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-13**
+> Research status: **Source-level** · Lifecycle: **active-transition** · Last reviewed: **2026-08-13**
 
 We0 is one product lineage with two evidence layers that must not be collapsed. The current managed product turns business material into a published website, CMS and growth surface. The public `we0-dev/we0` repository exposes an earlier design-to-code workspace and its browser execution grammar; it does not establish that the current hosted multi-agent service still runs the same implementation.
 

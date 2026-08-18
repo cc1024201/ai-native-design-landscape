@@ -1,6 +1,6 @@
 # Author (Autograph)
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+> Research status: **Source-level** · Lifecycle: **active-transition** · Last reviewed: **2026-08-12**
 
 Author defines a visual not as a neighboring canvas, but as a live node inside a long-form document. The useful unit of analysis is therefore the manuscript: prose owns an embedded tldraw snapshot, and both AI generation and later hand editing must survive through the document lifecycle.
 

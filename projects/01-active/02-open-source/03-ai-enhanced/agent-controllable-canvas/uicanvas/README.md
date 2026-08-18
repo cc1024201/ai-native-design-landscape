@@ -1,6 +1,6 @@
 # UICanvas
 
-> Research status: **Source-level** · Lifecycle: **active** · Last reviewed: **2026-08-12**
+> Research status: **Source-level** · Lifecycle: **active-transition** · Last reviewed: **2026-08-12**
 
 UICanvas is a browser canvas that lets an MCP-connected agent create and modify UI artboards as HTML. Its key boundary is not design-to-code export: HTML/CSS is both what the agent writes and what the canvas renders.
 
