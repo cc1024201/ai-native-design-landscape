@@ -614,6 +614,7 @@
 | [Figsor](figsor/) | 02-open-source | agent 可控画布/领域编辑器 | other |
 | [FigSpecs](figspecs/) | 02-open-source | 设计-代码桥 | other |
 | [Figwright](figwright/) | 02-open-source | 设计-代码桥 | other |
+| [Firebase Studio](firebase-studio/) | 01-commercial | AI 应用/网站构建器 | other |
 | [Open Agent Builder by Firecrawl](firecrawl-open-agent-builder/) | 01-commercial | AI 工程设计工作空间 | other |
 | [Fireworks Tech Graph](fireworks-tech-graph/) | 02-open-source | 带可视化工具的一般 agent | other |
 | [Flato](flato/) | 02-open-source | agent 可控画布/领域编辑器 | other |
@@ -686,6 +687,7 @@
 | [Giselle](giselle/) | 02-open-source | agent 平台内设计面 | other |
 | [Gitary](gitary/) | 02-open-source | agent 平台内设计面 | other |
 | [GitHub Copilot Agent Skills by Thomas Thornton](github-copilot-agent-skills/) | 03-agent-workflows | 带可视化工具的一般 agent | other |
+| [GitHub Spark](github-spark/) | 01-commercial | AI 应用/网站构建器 | other |
 | [Gloria](gloria/) | 02-open-source | agent 可控画布/领域编辑器 | other |
 | [GNR8](gnr8/) | 02-open-source | AI 应用/网站构建器 | other |
 | [gNucleus](gnucleus/) | 02-open-source | AI 工程设计工作空间 | other |
@@ -881,6 +883,7 @@
 | [Monogatari](monogatari/) | 02-open-source | 独立设计 agent 工作空间 | other |
 | [Montevive Penpot MCP](montevive-penpot-mcp/) | 04-bridges | 设计-代码桥 | other |
 | [Morfis](morfis/) | 02-open-source | AI 工程设计工作空间 | other |
+| [Motiff](motiff/) | 01-commercial | 既有视觉平台 + AI | other |
 | [Motion Previs Studio](motion-previs-studio/) | 02-open-source | 视觉决策/验证工作空间 | other |
 | [Multi-Agent CAD](multi-agent-cad/) | 02-open-source | AI 工程设计工作空间 | other |
 | [Musho](musho/) | 01-commercial | 独立设计 agent 工作空间 | other |

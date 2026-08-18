@@ -1,4 +1,125 @@
 slug,product,tier,reason
+adalo-ai,Adalo AI,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+adobe-firefly-creative-agent,Adobe Firefly Creative Agent,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+affine,AFFiNE,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+agent-native-design,Agent-Native Design,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+ai-media-canvas,AI Media Canvas,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+ai-website-builder-safwan,AI Website Builder by Safwan Hanif,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+aidesigner,AIDesigner,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+alloy,Alloy,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+anthropic-claude-design,Claude Design,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+anthropic-course-uigen,UIGen Claude Code in Action sample,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+anything,Anything,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+artclaw-bridge,ArtClaw Bridge,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+atoms,Atoms,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+auto-slides,Auto-Slides,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+backdraft,Backdraft,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+baidu-comate,Comate,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+baidu-miaoda,Miaoda,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+banani,Banani,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+base44,Base44,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+bolt-new,Bolt.new,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+botlab-art,Botlab.art,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+builderai-raj,BuilderAI by Raj Patel,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+builderio-fusion,Fusion,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+caddesigner,CADDesigner,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+calicat,Calicat,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+caliper,Caliper,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+canva-magic-design,Canva Magic Design,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+caret,Caret,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+claude-code-design,claude-code-design,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+cloudflare-vibesdk,Cloudflare VibeSDK,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+codecanvas-ai,CodeCanvas AI,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+cofounder,Cofounder,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+crafter,Crafter,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+ctx-space,Context Space,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+cursor,Cursor,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+data-formulator,Data Formulator,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+dcc-mcp-unreal,DCC-MCP Unreal,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+deepsite,DeepSite,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+devin,Devin,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+devpilot,DevPilot,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+dreamui,DreamUI,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+drupal-canvas,Drupal Canvas,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+dualite,Dualite,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+dyad,Dyad,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+emdash-skills,Emdash Skills,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+figcraft,FigCraft,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+figma-console-mcp,Figma Console MCP,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+figma-design-agent,Figma Design Agent,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+figma-make,Figma Make,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+figma-mcp-server,Figma MCP Server,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+firecrawl-open-lovable,Firecrawl Open Lovable,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+framer-ai,Framer AI,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+frappe-studio,Frappe Studio,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+gamma,Gamma,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+gemini-notebook,Gemini Notebook,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+genjutsu,genjutsu,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+genoffice,GenOffice,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+get-shit-pretty,Get Shit Pretty,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+glide-design,GlideDesign,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+google-antigravity,Google Antigravity,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+google-stitch,Stitch,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+greatstack-ai-website-builder,GreatStack AI Website Builder course project,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+hanzo-app,Hanzo App,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+hostinger-horizons,Hostinger Horizons,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+hyperframes,HyperFrames,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+influencer-studio,Influencer Studio,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+kombai,Kombai,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+komposo,Komposo,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+learnhouse,LearnHouse,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+locofy,Locofy,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+lovable,Lovable,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+magic-patterns,Magic Patterns,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+magicpath,MagicPath,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+mastergo-ai,MasterGo AI,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+mcp-link-fusion,MCP-Link for Autodesk Fusion,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+miro-prototypes,Miro Prototypes,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+mobirise-ai,Mobirise AI,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+mowgli,Mowgli,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+onlook,Onlook,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+onlyoffice-ai-editors,ONLYOFFICE AI Editors,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+onshape-mcp,Onshape MCP,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+openai-codex,Codex,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+openmontage,OpenMontage,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+openpencil-zseven,OpenPencil ZSeven,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+openvibecoding,OpenVibeCoding,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+opsiforce,Opsiforce,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+pptcraft,PPTCraft,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+premium-website-generator-edouard,Premium Website Generator by Edouard Kerwing,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+prompt-to-design,Prompt.to.design,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+recraft,Recraft,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+relume,Relume,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+replit-design,Replit Design,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+rfingadam-mcp-blender,RFingAdam mcp-blender,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+rivet-design,Rivet,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+rocket-new,Rocket.new,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+seko,Seko,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+shape,Shape,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+soulcanvas,灵境画布,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+stagewise,stagewise,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+step1,Step1,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+subframe,Subframe,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+superdesign,Superdesign,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+superun,Superun,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+tellr,tellr,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+tempo,Tempo,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+tencent-codebuddy,CodeBuddy,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+tldraw,tldraw SDK / Agent Starter Kit,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+tooljet,ToolJet,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+uizard,Uizard,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+ux-pilot,UX Pilot,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+uxbot,UXbot,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+vercel-v0,v0,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+vibecoder-dublyo,VibeCoder by Dublyo,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+we0,We0.ai,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+webflow-ai,Webflow AI,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+websim,Websim,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+wix-harmony,Wix Harmony,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+wonder,Wonder,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+workshop-buddy,Workshop Buddy,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+youware,YouWare,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+zoea,Zoea,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 3d-modeling-skill,3D Modeling Skill,other,real auditable dual-route pipeline with pinned source and normative contracts
 3dcodebench,3DCodeBench,other,规则排除
 3dmodel-skill,3dmodel Skill,other,pinned skill with concrete 3D route method and visual feedback loop
@@ -11,25 +132,21 @@ abu-cowork,Abu Cowork,other,pinned open-source Apache-2.0 local-first design sur
 abvx-agent-skills,ABVX Agent Skills,other,source-level validation-gated artifact workflow with pinned repo
 ada-v2-nazir,ADA V2 by Nazir Louis,other,pinned open-source voice-driven parametric CAD to STL with real implementation
 ada-v2-syed,A.D.A by Syed Daiam,other,pinned open-source derived CAD workspace with real provider abstraction
-adalo-ai,Adalo AI,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 addercad,AdderCAD,other,"closed early-access product, only landing page, no exposed source or contracts"
 adeu,Adeu,other,pinned open-source DOCX-to-LLM redlining with Word virtual DOM authority
 adk-playground,ADK Playground,other,pinned open-source ADK authoring/debug env with YAML authority and sandbox
 adk-studio,ADK Studio,other,pinned open-source project graph driving both execution and Rust codegen
 adly,Adly,other,real hosted brand-campaign workspace with MCP/Telegram/WhatsApp surfaces and analyzable release mechanism
-adobe-firefly-creative-agent,Adobe Firefly Creative Agent,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 adobepy,adobepy,other,pinned open-source Rust JSON-RPC broker with typed facades over Adobe hosts
 aesthetron,Aesthetron AI,other,"closed Figma plugin with only product-site evidence, no source or contracts"
 aether-architect,Aether Architect,other,pinned open-source structured UI-tree editor with staged generation
 aetheros,AETHEROS,other,pinned open-source prompt-to-graph-to-blueprint authoring loop genuinely implemented
-affine,AFFiNE,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 ag0-diagramming-agent,AG0 Diagramming Agent,other,pinned open-source file-based shared human/model diagram authorship
 agcluster-container,AgCluster Container,other,pinned open-source governed agent config plus isolated visual work surface
 agent-canvas-randomvibecoder,Agent Canvas,other,"real FastAPI+Fabric.js editor where model tool-call writes executable drawing code, pinned source"
 agent-diagram-tool,Agent Diagram Tool,other,"bidirectional diagram DSL co-designer with undoable edits and React Flow export, pinned source"
 agent-game-forge,Agent Game Forge,other,"coding agent + visual scene editor mutating shared scene graph via daemon SceneOps, pinned source"
 agent-mesh-sre,Agent Mesh on Streaming World,other,real builder with React Flow canvas and localStorage export source code
-agent-native-design,Agent-Native Design,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 agent-office-suite,Agent Office Suite,other,real MCP tools over native artifacts with attributed versioned mutations and RevisionHistory
 agent-scad,AgentSCAD,other,"OpenSCAD authority with deterministic validation/repair loop and SQLite jobs, pinned source"
 agent-setup,Agent Architecture by Shivraj,other,"real Copilot workspace defining role handoffs, artifacts and ticket transitions, pinned source"
@@ -103,7 +220,6 @@ ai-generator-abhi,AI Generator by Abhi Gandhi,other,real local-Ollama code works
 ai-landing-generator-pro,IA Landing Generator Pro,other,real structured-content-into-template landing generator with native React preview authority
 ai-landing-page-builder-ali-tamer,AI Landing Page Builder by Ali Tamer,other,real staged generation kernel materializing files despite scaffold-like surround and weak persistence
 ai-landing-page-studio,AI Landing Page Studio,other,real versioned domain model with immutable draft/published states and public renderer
-ai-media-canvas,AI Media Canvas,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 ai-module-generator-sawan,AI Module Generator by Sawan Kumar,other,real repo-ingesting module generator with a hard LangGraph approval interrupt gate
 ai-orchestration-honey610,AI Orchestration UI Generator by Shishir Gupta,other,real constrained-component-graph governance with validator and DynamicRenderer separate from display JSX
 ai-parametric-cad,AI Parametric CAD Generator,other,real prompt-to-CadQuery/OpenCascade solid pipeline with bounded validation
@@ -150,7 +266,6 @@ ai-website-builder-lucas,AI Website Builder by Lucas H507,other,"source-pinned p
 ai-website-builder-markec,AI Website Builder by markec12345678,other,source-pinned BYOK complete-HTML workspace with session undo and full authoring loop
 ai-website-builder-mohammad,AI Website Builder by Mohammad Armaan,other,source-pinned PostgreSQL frames with contenteditable element-inspection direct-manipulation correction
 ai-website-builder-ratna,AI-Powered Website Builder by Ratna Babu,other,source-pinned Convex-backed file-bundle generator with Sandpack preview and JSON-validated generation
-ai-website-builder-safwan,AI Website Builder by Safwan Hanif,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 ai-website-builder-shekhbasir,AI Website Builder by Shekh Basir,other,"source-pinned Mongo-backed single-document builder with conversation, editor and deploy-slug state"
 ai-website-builder-subrata,AI Website Builder by Subrata Ghosh,other,source-pinned filesystem pipeline multi-page generation with preview and ZIP delivery
 ai-website-builder-vardhan,AI Website Builder by Vardhan V,other,source-pinned conversational single-document builder with conversation-grounded regeneration
@@ -192,7 +307,6 @@ ai-workflow-demilade,AI Workflow Builder by Demilade01,other,real database-backe
 ai-workflow-tim-wijma,AI Workflow Builder by Tim Wijma,other,real Vue Flow editor backed by a real linear FastAPI/LiteLLM runtime
 ai2ui-component-generator,AI2UI Component Generator,other,"historical small stream-to-component workspace, stale since 2024 with no project store"
 aidemyst-agentstudio,Aidemyst AgentStudio,other,mature multi-tenant agent platform compiling saved graphs into real LangGraph execution
-aidesigner,AIDesigner,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 aihouse,AIHouse,other,real commercial design-to-manufacture product with AI layout back into editable spatial graph
 ainaming,AINaming,other,real pinned-source Figma plugin with anchor-constrained and deterministic validation split
 aionui,AionUi,other,real desktop Cowork host with pinned source and workspace/editor/preview mechanism
@@ -206,18 +320,14 @@ akn-website-generator,AKN AI Website Generator,other,real hosted HTML generator 
 ako-visual-design-agent,AKO Visual Design Agent,other,real deterministic design pipeline with review gate
 algocraft,AlgoCraft,other,real prompt-to-app workbench with human approval gate and pinned source
 alice-sdf,ALICE-SDF,other,real SDF geometry runtime with LLM text-to-3D server and pinned source
-alloy,Alloy,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 alwaysblue,AlwaysBlue,other,real Django landing generator with retrieval/component mechanism and pinned source
 amaroad,Amaroad,other,real MDX slide environment with source authority and pinned source
 ams-io-agent,AMS-IO-Agent,other,real EDA IO-ring agent with intent graph and pinned benchmark evidence
 anima,Anima,other,"real hosted product with strong contracts (docs, MCP, SDK source, Git artifact authority)"
 aniya-studio,Aniya Studio,other,real HTML presentation editor with agent DOM-editing and pinned tests
 anthropic-agent-skills,Anthropic Agent Skills,other,official pinned skill collection with concrete document/canvas/brand mechanisms
-anthropic-claude-design,Claude Design,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
-anthropic-course-uigen,UIGen Claude Code in Action sample,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 anti-ai-design,anti-ai-design,other,"skill-only auto-routed UI authoring with thin running-code evidence, no runnable engine"
 antv-infographic,AntV Infographic,other,real parser/runtime/editor/exporter with model-tolerant grammar and source-level evidence
-anything,Anything,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 apo,Apo,other,real Excalidraw planning agent with lossy-summary/structured-event mechanism and pinned source
 app-club-design,App Club Design,other,real Nuxt Figma-like multi-screen canvas agent with project-state authority
 app-store-screenshots,App Store Screenshots,other,real Next.js editor skill with disk-authoritative source-of-truth mechanism
@@ -239,7 +349,6 @@ archon-workflows,Archon by Cole Medin,other,open-source workflow control plane w
 archondev,ArchonDev,other,"packaged product with DESIGN.md truth contract, QA gates and VSIX artifact"
 arckit,ArcKit,other,open-source architecture-governance plugin with pinned source and artifact graph
 argus-sammy,Argus by Sammy Tourani,other,open-source derivative with pinned source and build/deploy double-ledger mechanism
-artclaw-bridge,ArtClaw Bridge,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 artifex-ui-generator,Artifex UI Generator,other,real component generator with Gemini and Babel preview
 artiso,ARTISO,other,hosted fashion collection-lifecycle product with analyzable workflow contracts
 asciitecture,Asciitecture,other,working ASCII canvas app that exports markdown and defines an agent handoff contract
@@ -247,14 +356,12 @@ astron-rpa,Astron RPA,other,iFLYTEK open-source RPA with pinned source and large
 atlas-3d-design,Atlas 3D Design Team,other,"architecture-level team/skill manifests only, no scene runtime"
 atlas-design-ux,Atlas Design UX Team,other,"architecture-level team contracts; artifacts external, no visual runtime to inspect"
 atomic-component-generator,Atomic Component Generator,other,"closed Figma plugin with only landing page, no source or acceptance evidence"
-atoms,Atoms,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 atv-design,ATV Design,other,open-source desktop agent with pinned source and OAuth/BYOK architecture
 aura-ai-workflow-builder,Aura AI Workflow Builder,other,working LiteGraph canvas with backend graph executor
 aurelius,Aurelius,other,open-source gated design-to-code pipeline with pinned source and lockfile
 auricide,AuricIDE,other,open-source orchestration-as-design system with pinned source and SQLite goal state
 auteur,auteur,other,open-source site-building skill with pinned source and screenshot gate
 author-autograph,Author,other,open-source document-native diagram agent with pinned source evidence
-auto-slides,Auto-Slides,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 autockt,AutoCkt,other,open-source RL+SPICE circuit-design loop with pinned source and traceable mechanism
 autocraft,Autocraft,other,live beta product with three mutation lanes as a concrete analyzable mechanism
 autodesk-flow-studio,Autodesk Flow Studio,other,hosted Autodesk CG production product with analyzable scene/export contracts
@@ -267,13 +374,8 @@ aws-deploy-on-aws,AWS Deploy on AWS plugin,other,real architecture-diagram skill
 ayushi-ai,Ayushi.AI,other,"open-source document-driven site builder with pinned source, though thin persistence"
 azure-diagram-mcp-server,Azure Diagram MCP Server,other,"working MCP diagram server with AST security scan and viewer, pinned source"
 azure-diagram-skill,Azure Diagram Skill,other,pinned skill with mxGraph rules plus bundled VS Code extension handoff
-backdraft,Backdraft,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
-baidu-comate,Comate,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
-baidu-miaoda,Miaoda,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 bambu-studio-ai,Bambu Studio AI,other,open-source physical product-loop skill with pinned source and pipeline authority
-banani,Banani,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 baoyu-design,baoyu-design,other,open-source design-system agent skill with pinned source and executed tests
-base44,Base44,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 bedrock-image-mcp-server,Bedrock Image MCP Server,other,"real image MCP server with typed tools and provider adapters, pinned source"
 behavr,Behavr,other,hosted simulated-user usability-study product with analyzable evidence hierarchy
 better-design,Better Design,other,core hosted MCP closed; only registry artifacts verifiable
@@ -296,9 +398,7 @@ bluestone-ai-jewelry-prototype,BlueStone AI Jewelry Prototype,other,"thin commer
 bmad-slide-maker,BMAD Slide Maker,other,pinned skill with theme-token resolution and distinct editable vs image PPTX contracts
 bmad-slides-generator,BMAD Slides Generator,other,real skill with defined artifact graph and browser-verification step
 boardmix-ai,boardmix AI,other,established hosted infinite-canvas platform where AI output enters an editable structured artifact
-bolt-new,Bolt.new,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 bolt-website-maker-jagdish,BOLT AI Website Builder by Jagdish Suthar,other,pinned frontend/backend with real WebContainer projection and Mongo state persistence
-botlab-art,Botlab.art,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 boutiqaat-creative-studio,Boutiqaat Creative Studio,other,pinned orchestration of provider workflows reconciled to a Supabase ledger
 brainfuel-agent-builder,Brainfuel Agent Builder,other,pinned local macOS agent IDE with SwiftData graph persistence and live execution
 brand-booklet,Brand Booklet,other,pinned gated filesystem brand-production ledger with approval gates and resumable state
@@ -313,8 +413,6 @@ build123d-cad,build123d-cad,other,pinned multi-domain hardware skill suite with 
 buildable,Buildable,other,real local product-structure compiler and CLI
 buildcad,BuildCAD,other,hosted product with agent and MCP connectors targeting one cloud model authority
 builder-skills-system-architect,Builder Skills System Architect,other,pinned architecture-package protocol with Mermaid C4 and handoff chain
-builderai-raj,BuilderAI by Raj Patel,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
-builderio-fusion,Fusion,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 builderweb,BuilderWeb,other,pinned structured WebsiteOutput authority with lineage-aware version restore
 buildev,Buildev,other,real design-as-code platform with MCP and AST
 buildev-isjunrod,Buildev by Jun Rod,other,pinned canonical scene-graph model with reverse-UI and AI routes entering one artifact
@@ -337,25 +435,20 @@ cad-gpt-cap,CAP / CAD-GPT,other,pinned gen-logic-as-editable-source mechanism de
 cad-khana,CAD Khana,other,real build123d workbench with assertions and pinned evidence chain
 cad-solver,CAD Solver,other,real BRep kernel with MCP and robustness harness
 cadcursor,CadCursor,other,hosted product with strong 4-layer architecture contracts and live beta
-caddesigner,CADDesigner,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 cadens,Cadens,other,"architecture contract only, no traceable executable source, roadmap"
 cadgenbench,CADGenBench,other,规则排除
 cadsmith,CADSmith,other,real pinned pipeline with nested numerical/visual repair loops
 cae-agent-hub,CAE Agent Hub,other,real MCP solver adapters skills and result viewer
 calcstack,Calcstack,other,active hosted five-editor suite with analyzable project contracts despite closed implementation
-calicat,Calicat,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 calino,Calino,other,closed Figma plugin with architecture-level evidence and no source
-caliper,Caliper,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 candor,Candor,other,"closed Figma plugin, distinctive critic-synthesis mechanism but no source"
 canopy,Canopy,other,source-level pinned MCP render bridge with analyzable deterministic render mechanism
-canva-magic-design,Canva Magic Design,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 canvas-ai-migrations,Canvas AI Migrations,other,"real autonomous migration system with pinned source, agents, tests"
 canvas-ai-page-context-generation,Canvas AI Page Context Generation Skill,other,pinned skill extracting Drupal Canvas design context into guideline contracts
 canvas-copilot-penpot,Canvas Copilot for Penpot,other,real open-source plugin with working build and explicit approval protocol
 canvoss,Canvoss,other,real embeddable infra with pinned LayoutDocument/Operation reducer and agent loop
 capcut,CapCut,other,established hosted video editor where AI drafting feeds an editable project with strong contracts
 careervivid,CareerVivid,other,real pinned native-Excalidraw generation-to-editing mechanism
-caret,Caret,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 cc-design,cc-design,other,"real cross-agent design-build skill with verification, source-level evidence"
 chartdb,ChartDB,other,source-level open-source ERD with pinned commit and cross-dialect translation mechanism
 chatbotx,ChatbotX,other,real open-source visual flow platform with pinned source and runtime
@@ -370,7 +463,6 @@ circle-take,Circle Take,other,pinned OSS filmmaker workspace; concrete quality-g
 circuit-weaver,Circuit Weaver,other,"real KiCad design IR, dispatcher, capability registry and export"
 clai,Clai,other,pinned OSS prompt-to-product workspace; concrete staged pipeline with editable dieline/packaging and versioned project store
 claraverse,ClaraVerse,other,pinned OSS private AI workspace; concrete crews with human review and distinct workflow/artifact surfaces
-claude-code-design,claude-code-design,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 claude-code-game-studios,Claude Code Game Studios,other,pinned OSS role-separated game studio; concrete skills/agents/hooks and quality gates
 claude-code-video-toolkit,Claude Code Video Toolkit,other,pinned OSS video toolkit; concrete project-as-edit-model with Remotion composition and sync timing
 claude-code-workflows,OneRedOak Claude Code Workflows,other,concrete design-review workflow driving Playwright MCP with reproducible slash command
@@ -398,7 +490,6 @@ clientsight-gazebuilder,ClientSight / GazeBuilder,other,pinned OSS gaze-authorin
 cloud-architecture-diagrams,Cloud Architecture Diagrams,other,"real skill with JSON spec schema, serializers to draw.io/Excalidraw and tests"
 cloud-visualizer-pro,Cloud Visualizer Pro,other,pinned OSS Azure graph workspace; concrete grounded React Flow topology distinct from IaC materialization
 cloudarchgen,CloudArchGen,other,pinned OSS full-stack cloud architecture workspace; concrete provider-neutral editable graph with import/analysis/persistence
-cloudflare-vibesdk,Cloudflare VibeSDK,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 cloudmap,CloudMap,other,pinned OSS AWS architecture designer; concrete graph-as-state with NL intent parsing and CDK output despite some disabled paths
 clypra,Clypra,other,pinned OSS open-core editor; concrete wired local Whisper-to-caption-clips timeline loop
 co-design-canvas,Co-Design Canvas,other,archived historical prototype with stale stack; analyzable canvas+ComfyUI inpaint mechanism but thin/unmaintained
@@ -406,7 +497,6 @@ cobra-ai-2,Cobra AI 2.0,other,pinned OSS single-JSX site loop; concrete Mongo-co
 code-inspector,Code Inspector,other,source-level MIT tooling with pinned v2.0.7 and concrete compile-time DOM-to-source mechanism
 code2video,Code2Video,other,pinned OSS educational-video pipeline; concrete executable Manim source loop with scoped critic repairs
 codeboarding,CodeBoarding,other,pinned open source with concrete analysis-JSON join and incremental rebuild mechanism
-codecanvas-ai,CodeCanvas AI,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 codeck,Codeck,other,pinned native macOS editor with MCP server and real deck-as-source mechanism
 codecooks,CodeCooks,other,"historical open source with stale 2024 cutoff, two unconnected surfaces, no live product"
 codejet,Codejet,other,"closed commercial product, architecture-level docs only, no source-traceable mechanism"
@@ -420,7 +510,6 @@ codey,Codey,other,pinned open source with real agent-network mutating E2B sandbo
 codia,Codia,other,"closed commercial product, proprietary schema, architecture-level docs, no source"
 codigram,Codigram,other,pinned open source with real Gemini JSON-gate to object-graph and deterministic codegen
 codoptic,Codoptic,other,source-level open-source DSL/graph/agent workspace with pinned evidence and approval flow
-cofounder,Cofounder,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 comfy-in-app-agent,Comfy In-App Agent,other,"private-alpha feature documented in docs only, no implementation evidence or analyzable mechanism"
 comfy-mcp-official,Comfy MCP,other,first-party Comfy product with pinned local MCP source and strong cloud tool contracts
 comfyui,ComfyUI,other,major open-source executable node-graph host with pinned source and analyzable execution
@@ -443,16 +532,13 @@ cordyceps,Cordyceps,other,"real MCP Grasshopper bridge with source, snapshot sto
 cork-board,Cork Board,other,working app with graph state and a first-class writable MCP interface over project JSON
 cova,Cova,other,pinned open source with real bounded config-object AI merge and undo mechanism
 cr8-xyz,Cr8-xyz,other,pinned platform with real Blender-based CGI engine and WebRTC pixel-stream mechanism
-crafter,Crafter,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 craftflow,CraftFlow,other,early prototype with workable HTML publish loop but several editor controls are fake demo UI
 creai,CreAI,other,"pinned source, real structured generation envelope as model contract"
 creative-forge,Creative Forge,other,pinned derivative canvas with reusable templates and persistence
 crimetryx-ai,CRIMETRYX AI,other,pinned forensic workspace with case-grounded multi-agent loop
 css-studio,CSS Studio,other,closed architecture-level product with issues-only repo and no usable implementation contracts to analyze
-ctx-space,Context Space,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 cuellar-design-skills,Carlos Cuellar Design Skills,other,architecture-level method/template library with no independent runtime
 curate,Curate,other,pinned builder writing Vite project dir as authoritative artifact
-cursor,Cursor,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 cxdesign-agents,CX Design Agents,other,runnable MCP server with phase-gate orchestration and memory
 cxdesigner,cxDesinger,other,pinned Electron studio with page-level project-data mechanism
 cyclecad,cycleCAD,other,"real browser CAD with OpenCascade, CLI/MCP planefaces and IndexedDB persistence, pinned source"
@@ -460,7 +546,6 @@ d2-canvas,D2 Canvas,other,working editor with D2 parse/codegen and a real HTTP/W
 d2c,d2c,other,pinned Figma-to-code bridge with token contract and audits
 dafty,Dafty,other,real hosted brand-extraction campaign workspace with running app studio and analyzable mechanism
 dart-design-agent,Dart AI Design Agent,other,closed product with only landing pages and no implementation evidence
-data-formulator,Data Formulator,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 dataevolver,DataEvolver,other,pinned render-review-repair loop with bounded action space
 datengcad,大腾智能 CAD,other,"commercial CAD product but architecture-level evidence only, no source"
 davinci-resolve,DaVinci Resolve,other,established native media platform whose AI tools operate inside editable native workspaces
@@ -497,7 +582,6 @@ dcc-mcp-substance3d-painter,DCC-MCP Substance 3D Painter,other,"pinned source, g
 dcc-mcp-touchdesigner,DCC-MCP TouchDesigner,other,"pinned source, real host-thread dispatcher with typed ops and viewport capture"
 dcc-mcp-tracy,DCC-MCP Tracy,other,"pinned source, real performance-evidence product with capture and CSV-summary analysis"
 dcc-mcp-unity,DCC-MCP Unity,other,"pinned source, UPM package with two distinct mutation safety contracts and job semantics"
-dcc-mcp-unreal,DCC-MCP Unreal,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 dcc-mcp-wwise,DCC-MCP Wwise,other,"pinned source, real WAAPI adapter authoring audio graph with SoundBank delivery"
 dcc-mcp-zbrush,DCC-MCP ZBrush,other,"pinned source, operational adapter with busy-state recovery and subtool mutation mechanism"
 dcc-pipeline-publish,DCC Pipeline Publish,other,"four real skill scripts with hashing, packaging and acceptance mechanisms"
@@ -508,7 +592,6 @@ deckestra,Deckestra,other,pinned presentation skill with deterministic layout an
 deckscript,DeckScript,other,hosted product but architecture-level evidence from website only
 deepdiagram,DeepDiagram,other,pinned multi-agent visualization workspace with agent-specific renderers
 deeppcb,DeepPCB,other,"hosted product but architecture-level evidence, no source contracts"
-deepsite,DeepSite,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 delements-web-stack,Delements Web Stack,other,template/coordination workspace over external hosts; mechanism thin but analyzable
 delft-ai-toolkit,Delft AI Toolkit,other,pinned distinctive behavior-graph driving both sim and hardware
 dembrandt,Dembrandt,other,"real MCP server, extractors, drift computation, DTCG formatter and tests"
@@ -550,9 +633,7 @@ deskhand,Deskhand,other,"pinned desktop agent with real artifact event model, pe
 despy,Despy,other,pinned governed eval platform applying SEARCH/REPLACE patches through shared WebContainer write path
 deterministic-ai-ui-builder-codeacks,Deterministic AI UI Builder by codeacks,other,pinned deterministic planner/generator/renderer with versioned UIPlan authority
 deterministic-ai-ui-builder-ujjwal,Deterministic AI UI Builder by ujjwal1541,other,pinned bounded-vocabulary schema UI builder with Supabase version persistence
-devin,Devin,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 devoraui,DevoraUI,other,pinned BYOK component generation to Mongo records to npm package publish path
-devpilot,DevPilot,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 diagai,DiagAI,other,real deterministic diagram parser plus React Flow editor
 diagram,Diagram,other,historical closed-source product line retired at 2023 Figma acquisition with distinctive mechanism but no usable contracts today
 diagram-ai,Diagram AI,other,pinned dual-representation diagram pipeline with RAG retrieval and real provider fallback
@@ -592,14 +673,10 @@ drawloop-skill,drawloop-skill,other,real bidirectional excalidraw shared-state c
 drawtir,Drawtir,other,"real canvas/timeline with AI generation, pinned source though custom license"
 dreamforge,DreamForge,other,"real persistence-first world-model graph with agents, pinned source"
 dreamina,Dreamina,other,established hosted canvas with layers/timeline as editable authority and analyzable refinement loop
-dreamui,DreamUI,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 dressx-ai-suite,DRESSX AI Suite,other,real hosted B2B studio with bulk e-commerce production and batch-job continuity mechanism
 drup-aid,Drup-AID,other,real Drupal agent-distribution with orchestrator and revision policy
-drupal-canvas,Drupal Canvas,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 drupal-canvas-plugin,Drupal Canvas Plugin,other,"marketplace manifest and skill/agent prompt content, thin implementation"
 dstoai,DStoAI,other,closed product with only landing page and demo
-dualite,Dualite,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
-dyad,Dyad,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 easeui,EaseUI,other,"hosted product, documented DOM/computed-style-to-Figma mechanism with concrete contracts"
 easy-uml,Easy UML,other,"real NL-to-DSL with local parsers and editable SVG, pinned source"
 easyeda-copilot,EasyEDA Copilot,other,"real EDA extension/MCP with review-before-apply contract, pinned source"
@@ -612,7 +689,6 @@ effective-html,Effective HTML,other,cohesive agent skill set with source-level c
 eigendeck,Eigendeck,other,"real SQLite-document editor with LLM CLI and history-integrity tools, pinned source"
 electronics-agent-kit,Electronics Agent Kit,other,coordination architecture only; several claimed agents still in development
 embodied-scene-generation,Embodied Scene Generation,other,"real scene-JSON authority with agent and editor, pinned source"
-emdash-skills,Emdash Skills,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 engineering-design-plugin,Engineering Design Agent Skills,other,real CAD/SKiDL plugin with pinned cad_runner and integration_checker scripts
 enterprise-ai-design-system,Enterprise AI Design System,other,frameworks with tokens/pipelines but many deliverables remain contracts rather than implementations
 eostudio,EoStudio,other,"real validated generator and project format with pinned source, though broad/early"
@@ -630,16 +706,11 @@ faisca,Faísca,other,active-transition waitlist-stage product with thin evidence
 fanbox,FanBox,other,real desktop shell with file/Git ops and resumable agent sessions
 fast-code-nova,Nova AI Builder in fast-code,other,"real typed spec as canonical artifact, validated generation, pinned source"
 fastbuild123d,FastBuild123d,other,real parametric CAD editor with source-level implementation
-figcraft,FigCraft,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 figedit,FigEdit,other,manifest-centered image reconstruction with editable SVG/PPTX example packages and pinned source
 figma-cli,figma-cli,other,"real local Figma bridge with daemon, plugin and tested commands"
-figma-console-mcp,Figma Console MCP,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
-figma-design-agent,Figma Design Agent,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 figma-design-system-skills,Figma Design System Skills,other,"three real bounded Figma maintenance skills mediated by findings, pinned source"
 figma-editable-dashboard-skill,Figma Editable Dashboard Skill,other,real browser-operated Figma dashboard iteration workflow with pinned source
-figma-make,Figma Make,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 figma-mcp-bridge,Figma MCP Bridge,other,"pinned source, real leader/follower WebSocket bridge with bounded write surface avoiding REST quota"
-figma-mcp-server,Figma MCP Server,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 figma-mcp-write-server,Figma MCP Write Server,other,real typed MCP write bridge to Figma API
 figma-relai,Figma Relai,other,working MCP server plus Figma plugin with file-carried policy and pinned source
 figma-to-astro-pipeline,Figma to Astro Pipeline,other,real production multi-agent Figma-to-Astro pipeline with QA agents and evidence
@@ -658,9 +729,8 @@ figs,FIGS,other,"real schema/provenance graph source, pre-alpha but concrete mec
 figsor,Figsor,other,real authenticated MCP-to-Figma bridge mutating native nodes with source-level evidence
 figspecs,FigSpecs,other,closed Figma plugin with only landing/FAQ evidence and no source to audit
 figwright,Figwright,other,"real two-way Figma MCP server and plugin, source-level evidence"
-firebase-studio,Firebase Studio,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+firebase-studio,Firebase Studio,other,不活跃/归档，归入其他
 firecrawl-open-agent-builder,Open Agent Builder by Firecrawl,other,real visual canvas compiled to LangGraph with persistence
-firecrawl-open-lovable,Firecrawl Open Lovable,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 fireworks-tech-graph,Fireworks Tech Graph,other,"real skill with diagram routers, SVG generators and fail-closed validators at pinned commit"
 flato,Flato,other,hosted product with strong documented object model and MCP contract
 flaude,Flaude,other,"real bidirectional relay and schema DSLL applier, pinned source"
@@ -697,8 +767,6 @@ fpga-design-agent,FPGA Design Agent,other,"source pinned, real planning-gated RT
 fracta-agent-builder,FRACTA Visual Agent Builder,other,prototype node-graph editor; storage wiped on close and simulation only
 frame-bucket,Frame Bucket,other,"source pinned, real taxonomy/recommend/iterate lineage mechanism"
 framelink-mcp,Framelink MCP for Figma,other,"open-source MCP server with pinned source, node walker and image downloader"
-framer-ai,Framer AI,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
-frappe-studio,Frappe Studio,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 freecad-modeling-skill,FreeCAD Modeling Skill,other,"architecture-level only, no comparably deep standalone runtime implementation"
 friction,Friction,other,"closed product, landing page only, personas/heatmaps not source-verifiable"
 froglips,Froglips,other,"source pinned, real graph-runner + local-LLM backend mechanism"
@@ -709,11 +777,9 @@ fudge,Fudge,other,closed product with public output corpus but no analyzable sou
 fusionmcp,FusionMCP,other,real Fusion360 add-in executing validated FusionActions with pinned source
 galileo-ai,Galileo AI,other,defunct historical product with only archived bundles and no live evidence
 game-creator,game-creator,other,"source pinned, real orchestrated game-build + QA visual-baseline mechanism"
-gamma,Gamma,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 garden-skills,Garden Skills,other,"two substantial workflows (web-design-engineer, web-video-presentation) with pinned MIT-licensed source"
 gemcoder-ai,Gemcoder.AI,other,"closed architecture-level product, landing page only, no contracts"
 gemdesign,GemDesign,other,"closed architecture-level product, landing page only, no source or contracts"
-gemini-notebook,Gemini Notebook,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 gemini-resume-builder,Gemini Resume Builder,other,real open-source Mastra workflow with pinned source and explicit promotion mechanism
 genable,Genable,other,real Figma plugin + published genable-mcp package with documented typed-op relay and native-graph contracts
 genai-drawio-creator,GenAI DrawIO Creator,other,conversational draw.io control surface with pinned Next.js source and MCP edge
@@ -722,8 +788,6 @@ generative-ui-app-abhay,Generative UI App by Abhay,other,real Streamlit dashboar
 generative-ui-builder-v3rmxni7,Generative UI Builder,other,"real 5-stage agent pipeline with pinned source, validated layout DSL and reflection"
 genesis-highlevel,GENESIS HighLevel App Builder,other,real HighLevel app builder with transactional Firestore snapshots and token-free WebContainer relay
 genie-ai-website-builder,Genie AI Website Builder,other,real canonical Mongo/OpenRouter website builder with pinned source and latestCode refinement mechanism
-genjutsu,genjutsu,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
-genoffice,GenOffice,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 gensite,GenSite,other,"real multi-page file-map generation with versions, rollback and element/channel-correction edges"
 gensite-ai-devendra,GenSite AI,other,thin single-file Gemini prompt-to-iframe loop with no persistent project graph
 genu-advanced,GenU Advanced,other,real multi-runtime component generator with translation boundary and explicit save-to-library promotion
@@ -731,7 +795,6 @@ genui-aman,GenUI by Aman,other,thin single-state-code studio with only theme per
 genui-dimple,GenUI by Dimple,other,client-only thin generator with demo users and auth/db left as future work
 genweb-dhruv,GenWeb by Dhruv Pansuriya,other,experimental project-file-map generator with weak version semantics and several experimental server paths
 genwebai-artibar,GenWebAI by Artibar,other,thin latestCode one-document Groq loop with deploy but no immutable snapshots and roadmap-only ZIP/editing
-get-shit-pretty,Get Shit Pretty,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 getui-ai,GetUI.ai,other,minimal Groq prompt-to-iframe loop with localStorage-only persistence and no editor or project model
 ghost-ai,Ghost AI,other,real graph-edit mechanism but tutorial-derived active-transition release with limited independent history
 ghosted,Ghosted,other,"real desktop agent-canvas with .canvas file authority, upstream-subgraph compilation and JSON Canvas support"
@@ -739,20 +802,16 @@ gia-co-design,Gia-co-Design,other,"real browser-local studio with direct manipul
 giselle,Giselle,other,real typed workflow-design monorepo with explicit persistence and linked generation-to-app delivery
 gitary,Gitary,other,real git-native multi-format editing surface with AI context manager over repository-files authority
 github-copilot-agent-skills,GitHub Copilot Agent Skills by Thomas Thornton,other,"installable APM bundles wiring workflow and live MCP canvas dependencies, pinned source"
-github-spark,GitHub Spark,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
-glide-design,GlideDesign,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+github-spark,GitHub Spark,other,不活跃/归档，归入其他
 gloria,Gloria,other,"closed hosted product with docs only, no implementation source or serialization schema to analyze"
 gnr8,GNR8,other,"real multi-agent CrewAI loop with feedback regeneration, file inspection, export and GitHub Pages deploy"
 gnucleus,gNucleus,other,real hosted enterprise product with attributable docs and a concrete open deterministic FreeCAD validator
 google-adk-nocode,No-Code ADK Interface,other,form-driven authoring shell that materializes runnable source
 google-adk-web,Google ADK Web / Visual Agent Builder,other,Google's official ADK builder with constrained agent-hierarchy authoring and YAML materialization
-google-antigravity,Google Antigravity,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
-google-stitch,Stitch,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 google-vids,Google Vids,other,real GA Workspace product with strong scene-graph and collaboration contracts
 gpt4-landing-page-creator-renzo,GPT-4 Landing Page Creator,other,real but historical 2023 PHP source-owned loop with stale evidence and no current operation
 graph-ai,Graph AI,other,"real typed workflow editor with immutable run snapshots, per-node executions and delivery channels"
 graphini,Graphini,other,pinned source with real Mermaid workspace and agent file-operation loop
-greatstack-ai-website-builder,GreatStack AI Website Builder course project,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 grills,Grills,other,"pinned source, real provider-backed generative UI workspace with sandbox preview"
 grok-build,Grok Build,other,"xai-org monorepo with Rust Mermaid parser, render engine and raster output"
 gstack,gstack,other,"pinned source, real skill collection with design authorities and comparison board"
@@ -760,7 +819,6 @@ gstack-game,gstack-game,other,"pinned source, real game-design skill pipeline wi
 handle,Handle,other,Chrome extension plus MCP feedback tool with selector tracking and pinned source
 hands-on-deck,hands-on-deck,other,"pinned source, real atomic PPTX patch engine with validation"
 hangover,Hangover,other,"pinned source, real circuit workspace with structured generation and pin repair"
-hanzo-app,Hanzo App,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 hascode-ui,HasCode UI,other,"pinned source, real component workshop with revision and fork"
 heliosgen,HeliosGen,other,"pinned source, real image/video pipeline workspace with provider integration"
 hemline,Hemline,other,closed hosted product with only landing-page evidence and closed agent/asset contracts
@@ -773,7 +831,6 @@ holst-ai,Холст.ИИ,other,"media-generation tool, not a structured UI syste
 homebrain,HomeBrain,other,"pinned source, real home-automation graph with bounded language normalization"
 homemaker,Homemaker,other,"pinned source, real 3D interior workspace with filesystem-agent loop"
 homeverse,HomeVerse,other,"pinned source, real interior studio with layout engine and copilot"
-hostinger-horizons,Hostinger Horizons,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 hozo,HOZO,other,architecture-only closed service method with no usable source or contracts
 html-ai-diagram-editor,HTML AI Diagram Editor,other,"pinned source, real browser diagram workspace with multi-input regeneration"
 html-anything,HTML Anything,other,"pinned source, real sandboxed preview with per-task version history"
@@ -784,7 +841,6 @@ human-control-plane,Human Control Plane,other,real executable policy-lab workspa
 hustl3,Hustl3,other,"real graph-to-runtime handoff but edges do not govern scheduling, thin claimed mechanism"
 hycanvas,HyCanvas,other,"pinned source, real multi-domain document engine with AI layer"
 hype,Hype,other,"pinned source, real macOS document authoring with typed mutation preview boundary"
-hyperframes,HyperFrames,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 hyperplane,Hyperplane,other,closed hosted product with only landing/pricing page evidence and no usable contracts
 i-love-agents,I Love Agents,other,"pinned source, real workflow builder and conditional runner with registry"
 ian-nuttall-skills,Ian Nuttall Skills,other,"png2svg measured reconstruction with analyse and measure_template scripts, pinned source"
@@ -803,7 +859,6 @@ imagegen-pptx-pipeline,ImageGen PPTX Pipeline,other,real stateful approval-to-na
 img2pptx,img2pptx,other,real semantic SVG-to-PPTX reconstruction with clear evidence boundary
 impeccable,Impeccable,other,"design correction layer with 23 commands, deterministic detectors and live browser, pinned source"
 inescop-footwear,INESCOP footwear prototype,other,funded R&D prototype with distinctive last-geometry mechanism but no public production evidence
-influencer-studio,Influencer Studio,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 inkeep-agents,Inkeep Agents,other,real managed agent platform with visual/SDK two-way sync and pinned source
 inlumen,inLUMEN,other,real agent-controllable data-pipeline canvas with persistence guard and pinned source
 insightiq,InsightIQ Marketing Studio,other,"real repo with deterministic mock-AI campaign engine, graph and exporters at pinned commit"
@@ -857,8 +912,6 @@ kittl,Kittl,other,real closed product but architecture-level evidence only
 kleva,Kleva,other,real pinned website builder with source-strings regeneration boundary and partial-but-real persistence path
 knowforge,KnowForge,other,thinnest-persistence one-shot retrieval-to-Mermaid with a concrete but ephemeral mechanism
 knowledge-cat-ppt,Knowledge Cat PPT Skill,other,"source-level, executable plan/validators and editability probes with pinned repo"
-kombai,Kombai,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
-komposo,Komposo,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 konnect,Konnect,other,real pinned Rust MCP with distinct schematic S-expr and live-IPC mutation paths
 kroneditor,KronEditor,other,"real industrial IDE with proposed-diff approval gate, compilation/simulation and live deploy"
 kyh-ai-canvas,AI Canvas by Kaiyu Hsu,other,"working forkable AI visual-editor starter with a real typed-operation mechanism but infrastructure, not a product"
@@ -870,7 +923,6 @@ launchlayer-ai,LaunchLayer AI,other,"working JSON/edit/snapshot SaaS starter wit
 layer-first-raster-to-svg,Layer-First Raster to SVG,other,real pinned skill separating pixel evidence from semantics via a fusion-map schema with render review
 layermate,Layermate,other,hosted Figma plugin product with strong product contracts and concrete native-layer mechanism
 layout,Layout,other,hosted design-system context product with documented Studio/MCP/Figma/Live contracts
-learnhouse,LearnHouse,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 ledgyx,Ledgyx,other,"repository holds only docs and screenshots, not enough implementation source"
 leon-ai-agent-builder,AI Agent Builder by Leon,other,"fixed one-agent composition visualizer, narrow demo with real but minimal mechanism"
 lgazo-drawio-mcp,Ladislav Gazo Draw.io MCP Server,other,real browser-extension bridge to live draw.io canvas with pinned source
@@ -884,19 +936,15 @@ llmo-diagram-generator,LLMO AI Diagram Architect,other,"distinctive local conver
 local-design-canvas,Local Design Canvas,other,real filesystem/Claude bridge with concrete file-watcher and JSONL inbox loop
 local-visual-agent-workflow,Local Visual Agent Workflow,other,"real workflow engine with topological executor, node adapters and SQLite persistence"
 localoffice,LocalOffice,other,"real suite of document tools grounded in a JSON envelope, validators and deterministic engines"
-locofy,Locofy,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 logo-generator-skill,Logo Generator,other,"source-level, concrete SVG variant-selection workflow with conversion scripts"
 loom-architecture,Loom Architecture Weaver,other,rich single-file Kubernetes architecture studio with dual diagram/semantic model and apply gate
 loomic,Loomic,other,real Excalidraw/LangGraph image-video design agent with Supabase-persisted contracts
-lovable,Lovable,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 lovart,Lovart,other,closed hosted product described only by marketing docs with unverifiable canvas internals
 luma-ai-studio,LUMA AI Studio,other,"real LangGraph agent studio with file tools, SQL project state and GitHub export"
 lunima,Lunima,other,"rich photonic-circuit workspace with Anthropic tool loop, simulation and foundry exports"
 lzbot-5000,LZBot 5000,other,real orchestrated agent/MCP architecture-doc workflow producing file bundles
 m2-canvas,M2 Canvas,other,hosted product with usable MCP contract and structured component-graph mechanism
 maf-agent-builder-canvas,MAF Agent Builder Canvas,other,Streamlit prototype whose canvas topology is not executed and eval is simulated
-magic-patterns,Magic Patterns,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
-magicpath,MagicPath,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 make-my-website-ai,MakeMyWebsite AI,other,real two-repo website lifecycle product with Mongo persistence and deploy-as-DB-view mechanism
 manalkaff-opendesign,OpenDesign by Manal Kaff,other,"real skill suite with design-system discovery, specialists and a verifier against brief"
 manim-agent,Manim Explainer Agent,other,real code-visual pipeline where rendering to MP4 is an executable acceptance boundary
@@ -909,11 +957,9 @@ mash-kicad-skills,KiCad Skills by mash,other,"source-level, unified kicad-tool C
 massing,Massing,other,"real IFC-native AEC workspace with validated recipes, MCP and GUID-stable model"
 master-ai-design-system,Master AI Design System,other,real npm CLI migration scaffolding runtime
 master-canvas,Master Canvas,other,pinned source-level AI-video handoff canvas with MCP bridge and real source-authoritative mechanism
-mastergo-ai,MasterGo AI,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 mcp-cad,mcp-cad,other,"typed CAD control layer with stable entity resolution, Inventor provider implemented"
 mcp-cst-studio,mcp-cst-studio,other,"CST Studio wrapper with VBA generation and live native execution, pinned source"
 mcp-excalidraw,mcp_excalidraw,other,"deep source-level Excalidraw workbench with CLI/canvas/MCP, pinned source"
-mcp-link-fusion,MCP-Link for Autodesk Fusion,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 mcp-ltspice-qucs,mcp-ltspice-qucs,other,"real three-server circuit workbench with circuit IR and durable jobs, pinned source"
 mcp-nec2-antenna,mcp-nec2-antenna,other,real NEC2 wire-antenna design interface with pinned source and examples
 mcp-openems,mcp-openems,other,"real openEMS agent interface with reproducible solver scripts, pinned source"
@@ -943,10 +989,8 @@ mimic-ai,Mimic AI,other,pinned MCP+Figma design-system enforcement bridge with r
 mimo-canvas,MimoCanvas,other,pinned Vue Flow media canvas preserving media lineage and repeatable pipelines
 mindgraph,MindGraph,other,pinned full-stack educational map generator with Vue canvas and FastAPI backend
 mira-animator,Mira Animator,other,"source-level, reversible deck-edit mechanism via mira-edit.js, pinned"
-miro-prototypes,Miro Prototypes,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 misko-circuits,circuits by Misko,other,pinned two-skill KiCad/PCB generation workflow with real DRC and fabrication gates
 mkitflow,MKitFlow,other,closed product with only forum posts and no source or usable contracts
-mobirise-ai,Mobirise AI,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 modao-ai,墨刀 AI,other,real platform with documented MCP contract and native-prototype mechanism
 modelweave,ModelWeave,other,"pinned Next.js agent workspace with topological workflow, retrieval and run traces"
 modernui-maker,ModernUI Maker,other,"single-file HTML generator scaffold, no persistence or project model, thin mechanism"
@@ -954,9 +998,8 @@ monet,Monet,other,real Electron video editor with agent surfaces and documented 
 monogatari,Monogatari,other,"pinned visual-novel runtime with deterministic state machine, evaluator and MCP"
 montevive-penpot-mcp,Montevive Penpot MCP,other,pinned source with real normalized tree-plus-image read-only evidence contract
 morfis,Morfis,other,"architecture-level closed-source prototype; product paper only, no source or runtime contract"
-motiff,Motiff,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
+motiff,Motiff,other,不活跃/归档，归入其他
 motion-previs-studio,Motion Previs Studio,other,pinned filmmaking decision workspace with production pack and MCP drive mechanism
-mowgli,Mowgli,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 multi-agent-cad,Multi-Agent CAD,other,pinned four-agent build123d generation with typed handoffs and repair loop
 musho,Musho,other,"defunct product with only a marketing launch account, no traceable evidence"
 mydesign-md,MYDESIGN.MD,other,"hosted product with strong contracts, eight deliverables and a concrete evidence-validation mechanism"
@@ -1006,9 +1049,6 @@ okkslides,OkkSlides,other,closed hosted product evidenced only by a landing page
 omnimcp,OmniMCP,other,pinned tool server with concrete artifact-authoring paths and committed test evidence
 one-aida,one.com Aida,other,real hosted site-builder with documented publish-then-edit product contracts
 oneui,1UI,other,closed product whose only evidence is product page and blog; no source or API contracts
-onlook,Onlook,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
-onlyoffice-ai-editors,ONLYOFFICE AI Editors,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
-onshape-mcp,Onshape MCP,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 onui,onUI,other,"real browser-extension plus MCP annotate/report bridge, pinned and active"
 open-agent-builder,Open Agent Builder,other,source-level pinned visual control graph that materializes into runnable code
 open-ai-design-agent,Open AI Design Agent,other,source-level pinned campaign-plan orchestration with editable state and delivery
@@ -1021,7 +1061,6 @@ open-pencil,OpenPencil,other,source-level MIT design-document-native editor with
 openada,OpenADA,other,real EDA intent+driver CLI with schemas
 openagent,OpenAgent by DeepFlowAI,other,source-level pinned multi-tenant agent ops with JSONB config and real runtime/delivery
 openai-agent-builder,OpenAI Agent Builder,other,hosted product with strong first-party contracts despite sunsetting and no open source
-openai-codex,Codex,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 opencad,OpenCAD,other,source-level pinned CAD-as-code stack with feature DAG and cross-product patch contract
 opencanvas-ai,OpenCanvas,other,source-level pinned Electron generation workflow with executable model nodes and local persistence
 opencode-flow,OpenCode Flow,other,"archived, canvas persistence unfinished, planning graph not wired to runtime"
@@ -1030,14 +1069,10 @@ openflow-ai-studio,OpenFlow,other,source-level pinned node studio where agent su
 openflowkit,OpenFlowKit,other,"pinned source, bidirectional canvas-DSL mechanism and local-first authority"
 openkombai,OpenKombai,other,"pinned source, vision-to-code two-model pipeline mechanism"
 openmaic,OpenMAIC,other,"pinned source, operation-fold whiteboard history and bounded classroom tools"
-openmontage,OpenMontage,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 openpage,OpenPage,other,"pinned source, validated SiteConfig JSON as shared authoring authority"
-openpencil-zseven,OpenPencil ZSeven,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 openscad-agent,OpenSCAD Agent,other,"pinned source, versioned OpenSCAD source/render/STL validation mechanism"
 opentopos,OpenTopos,other,"pinned source, code-as-authority Blender assembly with verifier"
 openui,OpenUI,other,"pinned source, OpenUI Lang parser/runtime and component library boundary"
-openvibecoding,OpenVibeCoding,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
-opsiforce,Opsiforce,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 optiaxiom,Optiaxiom,other,"Optimizely design system with MCP, JSON-UI schema, renderer, designer and Figma adapters"
 opticalmodeler,OpticalModeler,other,"pinned source, evidenced 3D reconstruction with PASS/BLOCKED gates"
 orbis,Orbis,other,real local-first tool with pinned installer and concrete execution-and-export mechanism
@@ -1098,13 +1133,11 @@ ppt-design-prompt,PPT Design Prompt,other,deterministic DESIGN.md translation co
 ppt-master,PPT Master,other,Pinned-source skill with spec-lock + SVG intermediate and native DrawingML conversion
 ppt-saas,PPT SaaS,other,Real backend template generator plus slide editor with proven generate-save loop
 pptagent,PPTAgent / DeepPresenter,other,Prominent pinned-source PPTAgent/DeepPresenter with HTML-as-authority mechanism
-pptcraft,PPTCraft,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 pptist,PPTist,other,Pinned-source established editor with AIPPT streaming into same editable slide authority
 pradaslides,PradaSlides,other,Pinned-source capability-routing skill with artifact contracts and working HTML benchmark
 prd-to-ui-automation-agent,PRD to UI Automation Agent,other,runnable four-agent pipeline with exporters and workbench
 prefab,Prefab,other,Pinned-source Prefect library with DSL-to-versioned-JSON-to-renderer mechanism
 premium-vector-icon-designer,Premium Vector Icon Designer,other,SVG skill with real grid/repair constraints but no benchmark or concrete execution
-premium-website-generator-edouard,Premium Website Generator by Edouard Kerwing,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 presentation-ai,ALLWEONE Presentation AI,other,"Pinned-source full slide app with editable slide tree, history and DOM-to-PPTX exporter"
 presentation-app,Presentation App,other,Pinned-source session-backed HTML slide app with agent revision and PPTX projection
 presentation-builder,Presentation Builder,other,Small repo-native workflow with single finished example and no scene graph or versioning
@@ -1119,7 +1152,6 @@ program-ui,Program UI,other,hosted product with live token-bound copy-to-Figma d
 project-threejs-ai,project_threejs_ai,other,archived 2023 tutorial demo applying raster decals to a fixed shirt scene; stale with thin substance
 prompt-to-app,Prompt To App,other,hosted app builder producing real functional projects with analyzable authority loop
 prompt-to-app-pradeep,Prompt-to-App AI Code Generator by Pradeep,other,"real client-side multi-file generator with Monaco workspace, target-specific file sets, preview and ZIP"
-prompt-to-design,Prompt.to.design,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 prompt-to-ui-sanyam,Prompt to UI by Sanyam Bassi,other,"real multi-model workspace with typed UISchema graph, DB persistence, variants/snapshots and static export"
 prompt-to-website-padala,Prompt-to-Website Generator by Varun Padala,other,thin single-module Streamlit demo keeping HTML/CSS/JS session-only with no persistence or correction
 prompt-ui-ayesha-mahek,Prompt-UI by Ayesha and Mahek,other,thin runnable prototype with transient HTML-string authority and placeholder API key
@@ -1160,18 +1192,15 @@ react-ai-component-builder-synytsin,React AI Component Builder by Artem Synytsin
 react-component-generator-mohit,React Component Generator by Mohit Kumar,other,"real Gemini gen + Mongo persistence + live preview, pinned source"
 reactor-admineral,Reactor by admineral,other,small generative-UI derivative with narrow tool-call loop and no durable persistence
 recombyn,Recombyn,other,"real scene-schema + validated agent operation catalogue, pinned source"
-recraft,Recraft,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 redesignr-ai,Redesignr AI,other,"hosted page-redesign tool with multi-mode editing and React/Tailwind export, analyzable mechanism"
 reel-studio,Reel Studio,other,hosted product with concrete streamable-HTTP MCP tool contract
 refly,Refly,other,"real agentic canvas-to-skill compiler with versioning, pinned source"
 reframe,Reframe,other,extensive real HTML-to-scene compiler with SceneGraph and durable project
 reicon,Reicon,other,"governed icon catalog with MCP search/apply tools and framework codegen, pinned source"
-relume,Relume,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 remotion,Remotion,other,"open-source pinned source, code-as-video-authority with skills and studio writeback mechanism"
 remotion-ai-video-template,Remotion AI Video Template,other,规则排除
 remotion-prompt-to-motion-graphics,Remotion Prompt to Motion Graphics,other,starter template with transient browser state but one concrete edit-preservation mechanism
 replay,Replay,other,"closed product, docs-only pipeline with no source or usable contracts"
-replit-design,Replit Design,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 reqwise-figma-mcp,Reqwise Figma MCP,other,"pinned guarded Figma proxy with validation, leader election and design-system guards"
 resonance-ai,Resonance AI,other,"real text-to-CAD + simulation PoC with validated schema, pinned source"
 resource2skill,Resource2Skill,other,"source-level, distillation/retrieval skill-library runtime over MCP, pinned"
@@ -1180,13 +1209,10 @@ retune,Retune,other,pinned source/npm-aligned real three-authority visual intent
 reveal-presentations,Reveal Presentations,other,real agent plugin with concrete archetype + CSS-variable deck mechanism
 reversa,Reversa,other,real spec reverse-engineering framework with persisted evidence trees
 review-gate,Review Gate,other,pinned Cursor-extension and MCP implementing a blocking visual review gate
-rfingadam-mcp-blender,RFingAdam mcp-blender,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 rflect,RFlect,other,real antenna measurement workspace with 41 MCP tools and deterministic analysis
 rhino-grasshopper-mcp,Rhino Grasshopper MCP,other,pinned TCP bridge driving real Grasshopper graph operations plus layout learner
 rhino-mcp,RhinoMCP,other,pinned socket bridge executing NURBS/scene ops with Rhino as geometric authority
-rivet-design,Rivet,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 rjwalters-kicad-tools,kicad-tools by Robb Walters,other,"real CLI/MCP foundation over native KiCad files, pinned source"
-rocket-new,Rocket.new,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 rocketpen,RocketPen,other,closed Figma plugin with landing page only and no usable contracts
 rocketride,RocketRide,other,"open-source pinned source, portable .pipe pipeline file on one C++ engine"
 rocketsmith,RocketSmith,other,real engineering workspace across simulation/CAD/slicing with mass-calibration
@@ -1213,7 +1239,6 @@ scylla-diagram-skill,ScyllaDB Diagram Skill,other,"source-level, interview-to-.d
 sdd-de,SDD-DE,other,"specification-driven design dev kit with branch-per-spec cycle and extraction/verify skills, real toolkit"
 sdd-diagram-copilot,SDD Diagram Copilot,other,"real yaml authority, graph projection and YAML tests"
 seaslides,SeaSlides,other,"Typst/Touying agent toolchain with compile receipts and visual-review quality gates, concrete mechanism"
-seko,Seko,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 self-review,Self-Review,other,规则排除
 sensenova-skills,SenseNova Skills,other,"source-level, retained-HTML editable intermediate in PPT workflow, pinned"
 seo-image-renamer-figma,SEO Image Renamer,other,"architecture-level only, no public source, narrow rename plugin with weak contracts and thin evidence"
@@ -1225,7 +1250,6 @@ shain-design-system-skill,Shain Design System Skill,other,"architecture-level ev
 shain-designer-kit,Shain Designer Kit,other,"project starter scaffold with a real role-separated team pipeline and project memory, partial substance"
 shakedroid,Shakedroid,other,"implemented Android delivery fork with APK build-service adapter and browser-side signing, concrete mechanism"
 shakespeare,Shakespeare,other,"browser-owned source-repo app builder with isomorphic-git, in-browser build and deploy adapters, substantial"
-shape,Shape,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 shopnest,ShopNest,other,"structured AI site builder with validated business brief and deterministic section/theme/media separation, real implementation"
 silex,Silex Desktop AI,other,"open-source pinned source, Tauri MCP bridge into GrapesJS editor with concrete capability mechanism"
 silvercraft-ai,SilverCraft AI,other,"staged data-modeling supervisor with evidence gates, strict JSON contracts and HITL, substantial implementation"
@@ -1259,7 +1283,6 @@ solidpilot,SolidPilot,other,pinned source; Feature Graph IR with round-trip eval
 solidworks-ai-cover-generator,SOLIDWORKS AI Cover Generator,other,pinned source; variant selection and delivery mechanism
 solidworks-automation-skill,SolidWorks Automation Skill,other,"real CAD workbench/CLI/MCP with capability and evidence contracts, DFM/FEA gates"
 soniq,Soniq,other,pinned source; versioned voice graph with publish-and-pin runtime
-soulcanvas,灵境画布,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 spaceforge,Spaceforge,other,pinned source; browser-local generation into files and versioned sites
 spark-to-paper-skills,spark-to-paper-skills,other,"figure SVG pipeline with deterministic audit and paper orchestrator, pinned source"
 sparkbench,SparkBench,other,规则排除
@@ -1272,10 +1295,8 @@ specula-skill,SPECULA Skill,other,real constitution/state-machine skill with JSO
 spicexplorer,SpiceXplorer,other,real SPICE-in-the-loop optimizer with pinned source
 squarespace-blueprint,Squarespace Blueprint AI,other,real hosted Squarespace feature where AI-built site enters the native editor lineage
 sre-design,SRE Design,other,real provenance pipeline with schema registry and pinned source
-stagewise,stagewise,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 starrykit,StarryKit,other,hosted editor with pinned MCP skill/connection contract and analyzable agent control semantics
 statecraft,Statecraft,other,hosted source-projection product recovering journeys from a real repo with concrete mechanism
-step1,Step1,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 stick,Stick,other,complete persisted generation state machine with pinned source and live surface
 stitch-clone-khandev,Stitch Clone by Irfan Khan,other,规则排除
 stitch-kit,stitch-kit,other,installable orchestration skills layer with recorded MCP schemas and pinned source
@@ -1289,14 +1310,11 @@ stride-gpt,STRIDE GPT,other,real diagram-as-threat-evidence app with pinned impl
 stylekit,StyleKit,other,real agent skill and export API materializing styles with pinned source
 styleseed,StyleSeed,other,real design-lock compiler with hash-verifiable bundles and pinned source
 subcortex-visualization-skill,Subcortex Visualization Skill,other,reproducible ROI figure workflow with atlas/provenance checks and diagnostics
-subframe,Subframe,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 substrata,Substrata,other,real multi-domain workspace with pinned source and OpenSCAD artifacts
 sumi,Sumi,other,real routed design system with gated pipelines and pinned source
 super-design-skills,Super Design Skills,other,"methodology layer with several skills self-labeled light scaffolds, thin mechanism"
-superdesign,Superdesign,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 superdesign-mcp,Superdesign MCP Server,other,pinned independently maintained MCP server with tool contracts and gallery loop
 superinterface,Superinterface,other,real open-core assistant interface with pinned React/Javascript/server source
-superun,Superun,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 sutradhar-ai,Sutradhar AI,other,thin single-model-call workforce UI; graph only orders prompt context
 svg-creation-skill,SVG Creation Skill,other,"raster-to-SVG pipeline with tracer and preview renderer, pinned source"
 svg-factory,SVG Factory,other,real CLI and agent skill for deterministic SVG with pinned source
@@ -1324,11 +1342,8 @@ taskstream,TaskStream,other,pinned full-stack workflow with authoritative versio
 taste-skills,Taste-Skills,other,real visual-audit/ranking skill set with pinned source though experimental validation
 teable,Teable,other,"open relational core plus hosted AI app builder, open source provides real analyzable evidence"
 techdraw,TechDraw,other,pinned architecture-diagram canvas with concrete per-node provider mutation and local storage
-tellr,tellr,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 tempad-dev,TemPad Dev,other,real extension/MCP design-to-code bridge
-tempo,Tempo,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 tenali-v1,Tenali v-1,other,"thin three-state workbench and no project store, only a simple typed generation-to-preview loop"
-tencent-codebuddy,CodeBuddy,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 terravision,TerraVision,other,real tool recovering infra relationships into native Draw.io XML with emitter and tests
 tersa,Tersa,other,pinned Vercel-labs visual AI playground with node composition routed through a provider gateway
 tesslate-agent-builder,Tesslate Agent Builder,other,"pinned visual authoring layer over TFrameX with typed nodes, triggers and PostgreSQL persistence"
@@ -1347,11 +1362,9 @@ tiangong-ai-decks,Tiangong AI Decks,other,filesystem deck pipeline with validate
 timecapsule-slm,TimeCapsule SLM,other,pinned research-capsule plus p5.js creative-coding canvas with local SLM code validation
 timecode-agent,TIMECODE-AGENT,other,pinned video-editing agent with durable evidence and sequence ledgers and re-derived exports
 tinystudio,tinyStudio,other,self-described rough alpha maker IDE with real circuits but partial substance in each view
-tldraw,tldraw SDK / Agent Starter Kit,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 tokenignite,TokenIgnite,other,"closed-core live token stream, only the npm runtime/CLI distribution inspectable"
 tokvista,Tokvista,other,released Figma plugin with strong documented token diff/import contracts despite closed source
 tonone,Tonone,other,real multi-team agent skill bundles with source-level contracts
-tooljet,ToolJet,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 totalum-ai-app-builder,Totalum AI App Builder Open,other,pinned open-source client with typed VCaaS orchestration and version-recovery mechanism
 trace-component-libraries,Trace Symbols and Footprints Libraries,other,"architecture-level hosted generation not exposed in source, only one analyzable EDA-authoring mechanism"
 trace-pcb,Trace,other,real KiCad-derived PCB suite with public grammar and conversion mechanism despite architecture-level ceiling
@@ -1374,7 +1387,6 @@ uigen-arshan,UIGen by Arshan Nawaz,other,open-source React project-tree generato
 uimason,UiMason,other,open-source governed source workspace with agent mesh and approval boundaries
 uitiful,Uitiful,other,"early-access closed product, landing/plans-only evidence with no source or contracts"
 uix-ai-agent,UIX AI Agent,other,open-source structured screen JSON with canvas and contextual refinement
-uizard,Uizard,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 uml-flow,UML Flow,other,open-source compiler-oriented DSL-to-graph dual authority with pinned source
 uml-tool,UML Tool,other,open-source small shared diagram JSON for human/agent co-editing with tests
 uml-transcoder,UML Transcoder,other,open-source bidirectional code-UML-image transcoder with pinned source
@@ -1387,13 +1399,11 @@ unreal-blender-mcp,Unreal-Blender MCP,other,pinned cross-host bridge routing bet
 unreal-mcp,Unreal MCP,other,strong documented Epic Toolset-Registry contract with serialized engine-thread execution
 usertesting,UserTesting,other,"established closed platform, only public help-doc evidence and no usable contracts"
 uspec,uSpec,other,real Figma plugin plus skills with source-level schemas and component-markdown roundtrip
-ux-pilot,UX Pilot,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 ux-planner,UX Planner,other,"Claude Code skill producing a markdown spec, thin implementation"
 ux-reviewer,UX Reviewer,other,规则排除
 ux-studio-ai,UX Studio AI,other,"closed hosted flow planner with only marketing/docs, no source or contracts"
 ux-ui-agent-skills,UX UI Agent Skills,other,"token-based governance runtime with DTCG tokens, adapters, CLI and validators"
 ux-writing-skill,UX Writing Skill,other,"copy governance skill with scoring, Figma integration and packaged dist"
-uxbot,UXbot,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 uxcanvas,UXCanvas.ai,other,"closed hosted product with small evidence surface, only live page and no contracts"
 uxscii,UXSCII,other,"real executable format spec with schema, processor, validator and CLI"
 varbase-ai-figma,Varbase AI Figma,other,open-source Drupal resolver that scores Figma-to-component mapping deterministically
@@ -1402,7 +1412,6 @@ vcad,vCAD,other,open-source parametric CAD with executable geometry kernel and d
 velocity,Velocity,other,open-source local-first command center with concrete workflow/session mechanics
 velocity-ai-coder,Velocity AI Coder,other,"thin partial implementation, sandbox/deploy are synthetic stubs, only local generation is real"
 ventura-startup-analyzer,Ventura Startup Analyzer,other,open-source startup analyzer with persisted strategy/website dual history
-vercel-v0,v0,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 vercel-workflow-builder-template,Vercel AI Workflow Builder Template,other,规则排除
 verilog-ide,Verilog IDE,other,open-source hardware IDE with simulation/synthesis validation of generated RTL
 verxa-ai,VERXA AI,other,pinned source-level site builder with real template+DeepSeek multimodal generation and preview/download variants
@@ -1416,7 +1425,6 @@ vibe-mermaid,Vibe Mermaid Editor,other,pinned source-first Mermaid editor with n
 vibe-otter-lite,Vibe Otter Lite,other,thin educational distribution proving endpoints via two small demonstrative implementations without hosted product substance
 vibe-workflow,Vibe Workflow,other,pinned node-graph workflow builder with save-before-run dependency execution and embeddable editor
 vibecodeai,VibecodeAI,other,pinned persistent ProjectFile workspace with skill-based style governance and dual preview modes
-vibecoder-dublyo,VibeCoder by Dublyo,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 vibecoding-a-website,VibeCoding a Website,other,"skill suite instructions only with no agent runtime, execution not provable from source"
 vibesdk-mvp,VibeSDK MVP,other,"pinned generation route with blueprint+files, deterministic fallback and Sandpack preview despite MVP size"
 vibeui-faraz,VibeUI by Farazkhan542,other,pinned Gemini component-generation workspace with Stitch polish branch and Sandpack runtime
@@ -1446,7 +1454,6 @@ voxelsite,VoxelSite,other,"self-hosted site authoring with provider orchestratio
 wafiq-ai-workflow-generator,AI Workflow Generator by Wafiq,other,generates grounded workflow.json and executable Airflow DAG at pinned source
 wallbit-workflows,Wallbit Workflows,other,real authoring/registry/CLI finance-workflow system
 wam-studio,WAM Diagram Editor,other,"full-stack web-composition editor with generation, persistence and auth at pinned commit"
-we0,We0.ai,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 web-page-generator-natalie,Web Page Generator by Natalie Basille,other,"archived 2024 brief-to-page loop, real streaming mechanism but thin and unmaintained"
 web-to-design-md,web-to-design-md,other,"skill backed by executable browser-evidence and preview-render scripts, pinned source"
 webagent-ragul,WebAgent,other,project directory authoritative with streamed file writes and preview at pinned source
@@ -1457,14 +1464,12 @@ webbuild-arpitt,WebBuild by Arpit Tiwari,other,"section-graph editing mechanism 
 webcraft,WebCraft,other,conversational gen plus GrapesJS editor writing back to version-addressed source
 webcraft-ai-siddharth,WebCraft AI by Siddharth Kumar Rai,other,full HTML document authority with correction and slug publication at pinned commit
 webcraft-krish,WebCraft AI by Krish Anand,other,streamed model actions mutate live executable workspace across services
-webflow-ai,Webflow AI,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 webflow-project-template,Webflow Project Template,other,规则排除
 webgalaxy,WebGalaxy,other,retrieval-grounded fine-tuned generator stores generated page artifacts
 webly,WebLy,other,live product where frame.designCode is authority with edit-back and download
 webnode,WebNode Framework,other,graph.json edited visually materialized into executable main.py with AI editor
 webora,Webora,other,"HTML-authority builder with history, project save and publication at pinned source"
 webora-josiah,Webora by JOSIAHTHEPROGRAMMER,other,two-repo product with Version rows and operational rollback on current_code authority
-websim,Websim,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 website-builder-agent-peter,Website Builder Agent by peter890176,other,"build-job orchestration with variants, review, snapshots and export/deploy"
 website-that-builds-itself,Website That Builds Itself,other,"historical 2024 canvas-composition experiment, real mechanism but no maintained evidence"
 websitebuilder-susmita,AI-Powered Website Generator by Susmita Dey,other,real code-visual correction loop but process-local persistence with no version or deploy
@@ -1475,13 +1480,10 @@ whipui,WhipUI,other,"real routing/context layer with pinned source, DNA files an
 whiteport-design-studio,Whiteport Design Studio,other,pinned BMAD method expansion with staged design discipline and artifact folders
 windframe,Windframe,other,closed commercial IDE with doc-level contracts but no verifiable source or external contracts
 windsurf,Windsurf,other,real shipped editor with instrumented build evidence and deep shared-checkout mechanism
-wix-harmony,Wix Harmony,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
-wonder,Wonder,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 wordpress-ai-builder-apex,ApexNeural AI Website Builder for WordPress,other,real persisted pipeline with pinned React/Flask source and WebContainer authoring loop
 work-with-design-systems,work-with-design-systems,other,pinned Figma agent skill with inspect/build gate and token audit implementation
 workflowai-dresar,WorkflowAI by Dresar,other,real planning workspace with pinned source producing agent handoff specs
 workflowos,WorkflowOS,other,real open reference studio with pinned source and safety-graph mechanism
-workshop-buddy,Workshop Buddy,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 worried-presenter,Worried Presenter,other,"closed Figma plugin, architecture-level only, newly released with high evidence ceiling"
 wrenai,WrenAI,other,"real open-source GenBI with pinned MDL schema, planner and validation pipeline"
 writerflow,WriterFlow,other,real collaborative editor with pinned source and inline diagram-node mechanics
@@ -1491,7 +1493,6 @@ xca-agent,XCA Agent,other,real persisted planner/scaffolder pipeline with pinned
 xsharko-ai,XSharko AI,other,real single-document builder with pinned source and MongoDB authority
 yank-note,Yank Note,other,established Markdown editor with pinned source and official AI copilot extension
 yellow-machine,Yellow Machine,other,real component builder with pinned source and save-to-gallery authority
-youware,YouWare,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 yuv-ai-creative-skills,YUV.AI Creative Skills,other,"routed creative stack bound to shared brand authority, pinned source"
 yuzudraw,YuzuDraw,other,real native macOS text-native diagram app with pinned source and agent /draw path
 zaptrace,ZapTrace,other,real EDA kernel with pinned source and proof-pack verification artifacts
@@ -1501,5 +1502,4 @@ zero-build-slides,Zero-Build Slides,other,real minimal slide framework with pinn
 zeronode,ZeroNode,other,real knowledge-canvas workspace with pinned source and separated generation/similarity roles
 zigma,Zigma,other,historical parked product with only launch-account evidence and no source or schema located
 zinloop,Zinloop,other,"closed architecture canvas, architecture-level from product docs with internals undisclosed"
-zoea,Zoea,depth,规则: v2≥8.5 或 H1 商业产品 v2≥7.5
 zukai,Zukai,other,real file-first canvas with pinned source and four documented MCP/agent edges
