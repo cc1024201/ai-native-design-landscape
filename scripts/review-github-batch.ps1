@@ -55,7 +55,16 @@ foreach ($candidate in (Import-Csv $candidatePath)) {
     Add-CandidateRepoMapping -Map $candidatesByRepo -Candidate $candidate -Url $candidate.discovery_url
 
     if ($candidate.resolution_target -match '^census:(.+)$') {
-        $dossierPath = Join-Path $repoRoot "projects/$($matches[1])/README.md"
+        $slug = $matches[1]
+        $slugPaths = @{}
+        Get-Content -LiteralPath (Join-Path $repoRoot 'data/slug-paths.json') -Raw | ConvertFrom-Json | ForEach-Object {
+            foreach ($prop in $_.PSObject.Properties) { $slugPaths[$prop.Name] = $prop.Value }
+        }
+        $dossierPath = if ($slugPaths.ContainsKey($slug)) {
+            Join-Path (Join-Path $repoRoot 'projects') ($slugPaths[$slug] + '/README.md')
+        } else {
+            Join-Path $repoRoot "projects/$slug/README.md"
+        }
         if (Test-Path $dossierPath) {
             foreach ($line in (Get-Content $dossierPath)) {
                 if ($line -match '(?i)(canonical source repository|source repository|\[repository\]|^- repository|^- source).*(https?://github\.com/[^/\s)]+/[^/\s)#?]+)') {

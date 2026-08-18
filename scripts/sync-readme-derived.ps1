@@ -205,8 +205,13 @@ if ($separatorEnd -lt 0) { throw 'README registry separator not found.' }
 $rowsStart = $separatorEnd + 1
 $rowsEnd = $readme.IndexOf("`n`n", $rowsStart)
 if ($rowsEnd -lt 0) { throw 'README registry terminator not found.' }
+$slugPaths = @{}
+Get-Content -LiteralPath (Join-Path $repoRoot 'data/slug-paths.json') -Raw | ConvertFrom-Json | ForEach-Object {
+    foreach ($prop in $_.PSObject.Properties) { $slugPaths[$prop.Name] = $prop.Value }
+}
 $registryRows = foreach ($record in $records) {
-    "| [$($record.product)](projects/$($record.slug)/) | $($organizationNames[$record.organization]) | $($definitionNames[$record.primary_definition]) | $($formNames[$record.product_form]) | $($architectureNames[$record.primary_architecture]) | $($record.evidence_depth) · $($record.lifecycle) |"
+    $rel = if ($slugPaths.ContainsKey($record.slug)) { $slugPaths[$record.slug] } else { $record.slug }
+    "| [$($record.product)](projects/$rel/) | $($organizationNames[$record.organization]) | $($definitionNames[$record.primary_definition]) | $($formNames[$record.product_form]) | $($architectureNames[$record.primary_architecture]) | $($record.evidence_depth) · $($record.lifecycle) |"
 }
 $readme = $readme.Substring(0, $rowsStart) + ($registryRows -join "`n") + $readme.Substring($rowsEnd)
 

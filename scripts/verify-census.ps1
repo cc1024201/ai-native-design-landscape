@@ -432,7 +432,11 @@ foreach ($identityDecision in $identityMap) {
     }
 }
 
-$directorySlugs = @(Get-ChildItem -LiteralPath $projectsPath -Directory | Where-Object {
+$slugPaths = @{}
+Get-Content -LiteralPath (Join-Path $repoRoot 'data/slug-paths.json') -Raw | ConvertFrom-Json | ForEach-Object {
+    foreach ($prop in $_.PSObject.Properties) { $slugPaths[$prop.Name] = $prop.Value }
+}
+$directorySlugs = @(Get-ChildItem -LiteralPath $projectsPath -Recurse -Directory | Where-Object {
         Test-Path -LiteralPath (Join-Path $_.FullName 'README.md')
     } | Select-Object -ExpandProperty Name | Sort-Object)
 $censusSlugs = @($records.slug | Sort-Object)
@@ -440,8 +444,8 @@ $censusSlugs = @($records.slug | Sort-Object)
 foreach ($missing in @($directorySlugs | Where-Object { $_ -notin $censusSlugs })) {
     $errors.Add("Project directory '$missing' is missing from data/census.csv.")
 }
-foreach ($extra in @($censusSlugs | Where-Object { $_ -notin $directorySlugs })) {
-    $errors.Add("Census slug '$extra' has no projects/$extra/README.md.")
+foreach ($extra in @($censusSlugs | Where-Object { -not $slugPaths.ContainsKey($_) -or -not (Test-Path -LiteralPath (Join-Path $projectsPath $slugPaths[$_])) })) {
+    $errors.Add("Census slug '$extra' has no dossier at projects/$($slugPaths[$extra]).")
 }
 
 foreach ($record in $records) {
@@ -473,7 +477,11 @@ foreach ($record in $records) {
         $errors.Add("$($record.slug) has unknown lifecycle '$($record.lifecycle)'.")
     }
 
-    $dossierReadmePath = Join-Path $projectsPath "$($record.slug)/README.md"
+    $dossierReadmePath = if ($slugPaths.ContainsKey($record.slug)) {
+        Join-Path (Join-Path $projectsPath $slugPaths[$record.slug]) 'README.md'
+    } else {
+        Join-Path $projectsPath "$($record.slug)/README.md"
+    }
     if (Test-Path -LiteralPath $dossierReadmePath) {
         $dossierRaw = Get-Content -LiteralPath $dossierReadmePath -Raw
         $header = ((Get-Content -LiteralPath $dossierReadmePath -TotalCount 8) -join "`n")
@@ -560,13 +568,13 @@ else {
         }
 
         $cells = @($line.Trim('|').Split('|') | ForEach-Object { $_.Trim() })
-        $link = [regex]::Match($cells[0], '^\[([^\]]+)\]\(projects/([^/]+)/\)$')
+        $link = [regex]::Match($cells[0], '^\[([^\]]+)\]\((projects/[^)]+)/\)$')
         if (-not $link.Success) {
             $errors.Add("README registry row has an invalid project link: $line")
             continue
         }
 
-        $slug = $link.Groups[2].Value
+        $slug = Split-Path -Leaf (Split-Path $link.Groups[2].Value)
         if ($registryRows.ContainsKey($slug)) {
             $errors.Add("README registry repeats '$slug'.")
             continue

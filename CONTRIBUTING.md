@@ -13,7 +13,11 @@ A dossier matters when it supports or challenges a field-level claim. Dossier le
 
 ## One project, one directory
 
-Every tracked project lives at `projects/<project-slug>/README.md`.
+Every tracked project lives at a layered path:
+`projects/<lifecycle>/<layer>/<band>/<form>/<slug>/README.md`, where
+lifecycle = 01-active | 02-archived, layer = H1 commercial · H2 open-source · H3 agent workflows · H4 bridges · H5 templates · H6 research/eval,
+band = AI-native band (H1–H3) or host-access depth (H4), form = census product_form.
+Placement is machine-maintained by `scripts/finalize-layers.py` from `data/entity-layers.csv` and `data/slug-paths.json`; never hand-move a project directory outside that script.
 
 The directory unit is an independently identifiable product, open-source project, or independently surfaced design workspace.
 
