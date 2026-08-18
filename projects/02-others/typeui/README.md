@@ -1,7 +1,7 @@
 # TypeUI
 
-**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
+**已归类为不值得深度分析。**
 
-- 定义：系统治理（+变体决策、设计-代码翻译、源码视觉创作）
-- 实现：设计-代码物化（+外部 agent 画布、候选隔离与晋升）
-- 形态：design-code-bridge · 层次：开源项目 · 生命周期：active · 证据深度：architecture
+- 组织：typeui
+- 证据深度：architecture
+- 生命周期：active

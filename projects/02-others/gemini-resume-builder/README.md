@@ -1,7 +1,7 @@
 # Gemini Resume Builder
 
-**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
+**已归类为不值得深度分析。**
 
-- 定义：委托式创作（+原生制品创作、运行时纠正、变体决策、端到端交付）
-- 实现：候选隔离与晋升（+托管应用项目图、设计-代码物化）
-- 形态：standalone-design-agent · 层次：开源项目 · 生命周期：active · 证据深度：source
+- 组织：om-kshirsagar
+- 证据深度：source
+- 生命周期：active

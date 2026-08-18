@@ -1,7 +1,7 @@
 # ARCHITEChTURES
 
-**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
+**已归类为不值得深度分析。**
 
-- 定义：约束驱动工程（+原生制品创作、变体决策、视觉协调证据、设计-代码翻译）
-- 实现：参数化工程模型权威（+原生图形权威、托管应用项目图、设计-代码物化）
-- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：architecture
+- 组织：architechtures
+- 证据深度：architecture
+- 生命周期：active

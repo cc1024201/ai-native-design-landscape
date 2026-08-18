@@ -1,7 +1,7 @@
 # CAE Agent Hub
 
-**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
+**已归类为不值得深度分析。**
 
-- 定义：约束驱动工程（+委托式创作、视觉协调证据、端到端交付）
-- 实现：外部 agent 画布（+文件系统 agent·视觉证据）
-- 形态：ai-engineering-design-workspace · 层次：开源项目 · 生命周期：active · 证据深度：source
+- 组织：cai-aa
+- 证据深度：source
+- 生命周期：active

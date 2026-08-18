@@ -1,7 +1,7 @@
 # Design Agents Flow
 
-**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
+**已归类为不值得深度分析。**
 
-- 定义：视觉协调证据（+系统治理、运行时纠正、设计-代码翻译）
-- 实现：文件系统 agent·视觉证据（+源码权威·实时投射）
-- 形态：general-agent-visual-tools · 层次：开源项目 · 生命周期：active · 证据深度：architecture
+- 组织：charlie-ellington
+- 证据深度：architecture
+- 生命周期：active

@@ -1,7 +1,7 @@
 # ComfyUI
 
-**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
+**已归类为不值得深度分析。**
 
-- 定义：原生制品创作（+委托式创作、运行时纠正、变体决策、视觉协调证据、端到端交付）
-- 实现：原生图形权威（+托管应用项目图、候选隔离与晋升、源码权威·实时投射）
-- 形态：established-visual-platform · 层次：商业产品 · 生命周期：active · 证据深度：source
+- 组织：comfy-org
+- 证据深度：source
+- 生命周期：active

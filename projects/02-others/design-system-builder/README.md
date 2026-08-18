@@ -1,7 +1,7 @@
 # Design System Builder
 
-**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
+**已归类为不值得深度分析。**
 
-- 定义：系统治理（+委托式创作）
-- 实现：文件系统 agent·视觉证据（+设计-代码物化）
-- 形态：general-agent-visual-tools · 层次：开源项目 · 生命周期：active · 证据深度：source
+- 组织：signer-labs
+- 证据深度：source
+- 生命周期：active

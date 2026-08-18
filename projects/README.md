@@ -5,7 +5,7 @@
 ```
 projects/
 ├── 01-depth-analysis/  值得深度分析（逐篇定制分析）
-│   └── <life>/<类型>/<形态>/<slug>
+│   └── <life>/<类型>/<slug>
 └── 02-others/          其他（仅登记，不分析）
 ```
 

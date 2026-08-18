@@ -1,23 +1,41 @@
 # 开源项目（02-open-source）
 
-**21 条**
+**33 条**
 
-| 质量档 | 条数 |
-|---|---|
-| 值得深度分析 | 21 |
-| 其他 | 0 |
+| 项目 | 组织 | 证据深度 | 生命周期 |
+|---|---|---|---|
+| [AI Media Canvas](ai-media-canvas/) | tutti-os | source | active |
+| [AI Website Builder by Safwan Hanif](ai-website-builder-safwan/) | safwan-hanif | source | active |
+| [ArtClaw Bridge](artclaw-bridge/) | ivan-yang | source | active |
+| [Auto-Slides](auto-slides/) | westlake-university | source | active |
+| [BuilderAI by Raj Patel](builderai-raj/) | raj-patel | source | active |
+| [CADDesigner](caddesigner/) | zhejiang-university | source | active |
+| [Calicat](calicat/) | beijing-damaidi | architecture ⚠ | active |
+| [claude-code-design](claude-code-design/) | bluzir | source | active |
+| [Crafter](crafter/) | haozhe-zhao | source | active |
+| [Context Space](ctx-space/) | super-nived | source | active |
+| [Cursor](cursor/) | anysphere | architecture ⚠ | active |
+| [DCC-MCP Unreal](dcc-mcp-unreal/) | dcc-mcp | source | active |
+| [DeepSite](deepsite/) | enzostvs | source | active |
+| [Devin](devin/) | cognition | architecture ⚠ | active |
+| [DevPilot](devpilot/) | princethakarar | source | active |
+| [Emdash Skills](emdash-skills/) | megabyte-labs | source | active |
+| [Figma Console MCP](figma-console-mcp/) | southleft | source | active |
+| [Figma MCP Server](figma-mcp-server/) | figma | architecture ⚠ | active |
+| [genjutsu](genjutsu/) | athevon | source | active |
+| [GenOffice](genoffice/) | genspark-ai | source | active |
+| [Get Shit Pretty](get-shit-pretty/) | jubscodes | source | active |
+| [Kombai](kombai/) | kombai | architecture ⚠ | active |
+| [MagicPath](magicpath/) | newcompute | architecture ⚠ | active |
+| [MCP-Link for Autodesk Fusion](mcp-link-fusion/) | aura-friday | source | active |
+| [Onshape MCP](onshape-mcp/) | hedless | source | active |
+| [Codex](openai-codex/) | openai | source | active |
+| [OpenMontage](openmontage/) | calesthio | source | active |
+| [OpenPencil ZSeven](openpencil-zseven/) | zseven-w | source | active |
+| [Premium Website Generator by Edouard Kerwing](premium-website-generator-edouard/) | edouard-automations | source | active |
+| [Replit Design](replit-design/) | replit | architecture ⚠ | active |
+| [RFingAdam mcp-blender](rfingadam-mcp-blender/) | rfingadam | source | active |
+| [Rivet](rivet-design/) | rivet | architecture ⚠ | active |
+| [VibeCoder by Dublyo](vibecoder-dublyo/) | dublyo | source | active |
 
-| 产品形态 | 条数 |
-|---|---|
-| agent-platform-design-surface | 5 |
-| ai-app-site-builder | 5 |
-| standalone-design-agent | 3 |
-| agent-controllable-canvas | 2 |
-| general-agent-visual-tools | 2 |
-| ai-engineering-design-workspace | 1 |
-| code-native-visual-ide | 1 |
-| established-visual-platform | 1 |
-| visual-decision-verification-workspace | 1 |
-
-## 缺口
-- evidence 缺口（architecture 级 7 条）: magicpath, kombai, cursor, replit-design, calicat, devin, rivet-design
+**evidence 缺口**（8 条仅架构级，待源码/文档升级）: calicat, cursor, devin, figma-mcp-server, kombai, magicpath, replit-design, rivet-design

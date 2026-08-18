@@ -27,34 +27,18 @@ organizations = rows('organizations.csv')
 identity = rows('identity-map.csv')
 candidates = rows('candidates.csv')
 batches = rows('discovery-batches.csv')
-taxonomy = json.load(open(os.path.join(REPO, 'data', 'taxonomy.json')))
 slug_paths = json.load(open(os.path.join(REPO, 'data', 'slug-paths.json')))
 
-# --- census ---
-req = ['slug','product','team_lineage','organization','primary_definition',
-       'product_form','primary_architecture','evidence_depth','lifecycle']
+# --- census (common-sense columns only) ---
+req = ['slug','product','organization','evidence_depth','lifecycle']
 seen = Counter(r['slug'] for r in census)
 for slug, n in seen.items():
     if n > 1: check(False, f"duplicate census slug '{slug}'")
-known_defs = {x['id'] for x in taxonomy.get('designDefinitions', [])}
-known_forms = {x['id'] for x in taxonomy.get('productForms', [])}
-known_arch = {x['id'] for x in taxonomy.get('architectureFamilies', [])}
 for r in census:
     for f in req:
         check(bool(r.get(f)), f"{r.get('slug','?')}: empty required field '{f}'")
-    for fld, known in (('primary_definition', known_defs), ('product_form', known_forms), ('primary_architecture', known_arch)):
-        check(r.get(fld) in known, f"{r.get('slug','?')}: unknown {fld} '{r.get(fld)}'")
-    for aid in r['additional_definitions'].split('|'):
-        if aid: check(aid in known_defs, f"{r.get('slug','?')}: unknown additional definition '{aid}'")
-    for aid in r['additional_architectures'].split('|'):
-        if aid: check(aid in known_arch, f"{r.get('slug','?')}: unknown additional architecture '{aid}'")
-    extras = [x for x in r['additional_definitions'].split('|') if x]
-    if r['primary_definition'] in extras:
-        check(False, f"{r['slug']}: primary definition repeated in additional_definitions")
-    if r['primary_architecture'] in r['additional_architectures'].split('|'):
-        check(False, f"{r['slug']}: primary architecture repeated in additional_architectures")
     check(r['evidence_depth'] in ('source','architecture'), f"{r['slug']}: bad evidence_depth")
-    check(r['lifecycle'] in ('active','active-transition','historical','sunsetting'), f"{r['slug']}: bad lifecycle")
+    check(r['lifecycle'] in ('active','archived'), f"{r['slug']}: bad lifecycle")
 
 # --- organizations ---
 org_ids = Counter(r['id'] for r in organizations)

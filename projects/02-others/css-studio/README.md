@@ -1,7 +1,7 @@
 # CSS Studio
 
-**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
+**已归类为不值得深度分析。**
 
-- 定义：源码视觉创作（+运行时纠正、视觉协调证据）
-- 实现：运行时意图中继（+源码权威·实时投射）
-- 形态：runtime-overlay-bridge · 层次：连接桥 · 生命周期：active · 证据深度：architecture
+- 组织：motion
+- 证据深度：architecture
+- 生命周期：active

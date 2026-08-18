@@ -1,7 +1,7 @@
 # SVG Creation Skill
 
-**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
+**已归类为不值得深度分析。**
 
-- 定义：委托式创作（+设计-代码翻译、原生制品创作）
-- 实现：设计-代码物化（+候选隔离与晋升）
-- 形态：general-agent-visual-tools · 层次：agent 工作流 · 生命周期：active · 证据深度：source
+- 组织：itayfi
+- 证据深度：source
+- 生命周期：active

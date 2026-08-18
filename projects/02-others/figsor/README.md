@@ -1,7 +1,7 @@
 # Figsor
 
-**已归类为不值得深度分析。**（依据 `data/quality-tiers.csv` 两档筛查）
+**已归类为不值得深度分析。**
 
-- 定义：原生制品创作（+运行时纠正、系统治理、设计-代码翻译、端到端交付）
-- 实现：外部 agent 画布（+原生图形权威、设计-代码物化）
-- 形态：agent-controllable-canvas · 层次：开源项目 · 生命周期：active · 证据深度：source
+- 组织：asif-kabir
+- 证据深度：source
+- 生命周期：active
