@@ -37,7 +37,10 @@ def load_overrides(path):
     return {o.get('slug'): (o.get('layer'), o.get('reason','')) for o in arr if o.get('slug')}
 
 OVERRIDES = {}
-_override_paths = [p for p in sys.argv[1:] if p.endswith('.json')] or [f'{ROOT}/scripts/overrides.json']
+# entity-layers.csv is the authoritative result (it already contains the
+# human boundary-review conclusions in its 'basis' column). Overrides are
+# optional inputs for regeneration only.
+_override_paths = [p for p in sys.argv[1:] if p.endswith('.json')]
 for p in _override_paths:
     OVERRIDES.update(load_overrides(p))
     print(f'loaded overrides from {p}: {len(OVERRIDES)} entries', file=sys.stderr)

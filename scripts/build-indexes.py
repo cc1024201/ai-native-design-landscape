@@ -4,7 +4,7 @@ reports coverage, gaps, defects and next steps — no patch documents needed.
 
 Data sources (all must be current):
   data/entity-layers.csv, data/census.csv, data/ai-native-scores-v2.csv,
-  data/lifecycle-classification.csv, data/slug-paths.json, data/saturation-strata.csv,
+  data/slug-paths.json, data/saturation-strata.csv,
   data/candidates.csv
 """
 import csv, json, os, statistics as st
@@ -16,7 +16,8 @@ os.chdir(REPO)
 # ---------- data ----------
 layers   = {r['slug']: r['layer'] for r in csv.DictReader(open('data/entity-layers.csv'))}
 census   = {r['slug']: r for r in csv.DictReader(open('data/census.csv'))}
-bucket   = {r['slug']: r['bucket'] for r in csv.DictReader(open('data/lifecycle-classification.csv'))}
+bucket   = {r['slug']: ('archived' if r['lifecycle'] in ('historical', 'sunsetting') else 'active')
+           for r in csv.DictReader(open('data/census.csv'))}
 paths    = json.load(open('data/slug-paths.json'))
 scores   = {r['slug']: r for r in csv.DictReader(open('data/ai-native-scores-v2.csv')) if r['total']}
 strata   = list(csv.DictReader(open('data/saturation-strata.csv')))
