@@ -14,7 +14,7 @@ The sample refuses to treat a chat reply as authoritative. Its [`file-system.ts`
 
 GitHub code search finds the distinctive `buildStrReplaceTool` in many repositories under `claude-code-in-action/uigen`, `anthropic-academy` or similar labels — e.g. Rebar7/ai-component-generator, Lucasdev90/AI-component-generator-mcp, AymanGarz/ai-ui-generator, nocodeanish/react-ui-generator. Provider or branding changes don't create six independently defined products.
 
-**证据** and limits
+**Evidence** and limits
 
 - [Official Anthropic course](https://anthropic.skilljar.com/claude-code-in-action)
 - [Inspected public course mirror](https://github.com/danjarosz/anthropic-claude-code-course/tree/24ae039c27c35ea0766cd291800c2258118d4d6e)

@@ -14,7 +14,7 @@ BuilderAI treats an app as a multi-file project that a visible multi-agent pipel
 
 Supabase migrations introduce project version history and deployment/share fields; the version-restore route swaps the project's active files for a saved state, and ZIP download, GitHub push, sharing and deployment all read from that same project. Design persists here as versionable source where every downstream output — preview, share, deploy — is just another origin of the file tree.
 
-**证据** and location
+**Evidence** and location
 
 - [Canonical repository](https://github.com/rajpatel9595/BuilderAI)
 - [Inspected tree](https://github.com/rajpatel9595/BuilderAI/tree/a81848c9707135038c04ccfa5b1a2d83e7c8526d)

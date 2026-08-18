@@ -10,7 +10,7 @@ The decisive mechanism is that Adalo displays screens spatially and links naviga
 
 Delivery is a single project published to iOS, Android and web, so the native graph is the working object and the release lanes are downstream projections of it. The native project is provider-managed rather than an exposed code repository: evidence is limited to the architecture level because no implementation or serialization is public — agent plan representation, mutation atomicity, version retention, the app-store build pipeline and exact source ownership are all undisclosed. That defines the evidence ceiling: the canvas is where design happens and where authority stays.
 
-**证据**
+**Evidence**
 
 - [Adalo AI app builder](https://www.adalo.com/products/ai-app-builder/)
 - [Adalo product platform](https://www.adalo.com/)

@@ -12,7 +12,7 @@ Brand phases produce research, strategy, identity and W3C-style token sets (a du
 
 Authority is split deliberately — source code and the `.design/` artifacts both preserve it, so the documented intent survives alongside what was built. Figma MCP enters only as an input bridge, never as the source of truth. Each project carries its own [state template](https://github.com/jubscodes/get-shit-pretty/blob/5754ce8c44cd9cc9d9207e25955a1a89cf875bb8/gsp/templates/projects/state.md); the maintainer is based in Florianópolis, Brazil. The unusual move is that "good design" here is defined operationally: whatever the critique stage can defend against the brief.
 
-**证据**
+**Evidence**
 
 - [Pinned repository](https://github.com/jubscodes/get-shit-pretty/tree/5754ce8c44cd9cc9d9207e25955a1a89cf875bb8)
 - [Project state template](https://github.com/jubscodes/get-shit-pretty/blob/5754ce8c44cd9cc9d9207e25955a1a89cf875bb8/gsp/templates/projects/state.md)

@@ -14,7 +14,7 @@ Caret instruments eligible JSX with stable `data-caret-id` attributes. [`ast-edi
 
 Design-layer work does not automatically overwrite the app. The sync subsystem records a Git bookmark and a `.caret/sync-state.json` baseline, computes a worklist and asks the agent to materialize reviewed design changes into application source. The [sync orchestrator](https://github.com/precious112/caret/blob/c381a6b4616d346f16a7f1b54021f006cc6c867f/src/core/design/sync/sync-orchestrator.ts) coordinates this one-way transition; the saved baseline supports review and undo by rewinding generated application changes. Git and files remain the durable recovery layer.
 
-**证据**
+**Evidence**
 
 - [Pinned core repository](https://github.com/precious112/caret/tree/c381a6b4616d346f16a7f1b54021f006cc6c867f)
 - [Design sync state](https://github.com/precious112/caret/blob/c381a6b4616d346f16a7f1b54021f006cc6c867f/src/core/design/sync/sync-state.ts)

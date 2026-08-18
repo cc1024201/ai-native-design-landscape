@@ -14,7 +14,7 @@ selected canvas context + request -> copilot session response
 
 This proposal/commit split is the decisive mechanism: the model proposes, the document's existing structure plus a human gesture commits. AFFiNE is counted once as an established platform with AI, not separately for each Edgeless action. The Toeverything GitHub organization reports Singapore.
 
-**证据**
+**Evidence**
 
 - [Pinned repository](https://github.com/toeverything/AFFiNE/tree/26c515e050211269e911f7d9cfe162a26c83ed98)
 - [Edgeless copilot source tree](https://github.com/toeverything/AFFiNE/tree/26c515e050211269e911f7d9cfe162a26c83ed98/blocksuite/affine/blocks/edgeless/src/components/copilot)
