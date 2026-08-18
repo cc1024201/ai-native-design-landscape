@@ -17,6 +17,24 @@ projects/
 `data/quality-tiers.csv` is the authority for the tier split. Do not hand-move a project directory;
 regenerate indexes with `scripts/build-indexes.py`.
 
+## Structure conventions
+
+- The `0x-` prefixes in directory names are **file-system sort prefixes only**; the concept
+  is the word after them (`depth-analysis`, `others`, `active`, `commercial`, `open-source`).
+- Index files (`INDEX.md`) are generated from the tree by `scripts/build-indexes.py` — do not
+  hand-edit them; rebuild instead.
+
+## How to add a record
+
+1. Enter the object in `data/candidates.csv` with status `pending` and a discovery URL.
+2. Verify: resolve product & lifecycle, identify aliases, establish the user loop, pin a source
+   revision for source-visible claims, then add the `data/census.csv` row
+   (slug / product / organization / evidence_depth / lifecycle) and the dossier.
+3. Assign the tier in `data/quality-tiers.csv`: `depth` only if active **and** worth a custom
+   analysis; otherwise `other`.
+4. Run `python3 scripts/verify-census.py`, then `python3 scripts/build-indexes.py`.
+5. If `depth`: write the custom analysis (two questions, no template) at `projects/01-depth-analysis/.../<slug>/README.md`.
+
 ## One project, one analysis
 
 - A dossier matters when it establishes or challenges a field-level claim about Design definition or implementation.
