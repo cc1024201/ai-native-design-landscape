@@ -1,0 +1,462 @@
+[
+ {
+  "slug": "open-codesign",
+  "layer": "H2",
+  "reason": "MIT 许可的本地优先桌面设计 agent，开源仓库可自托管、无强制托管工作区，属开源应用。"
+ },
+ {
+  "slug": "pptagent",
+  "layer": "H2",
+  "reason": "中科院团队维护的 MIT 开源仓库，可部署复用的演示生成 agent 项目，非商业托管产品。"
+ },
+ {
+  "slug": "frontend-slides",
+  "layer": "H3",
+  "reason": "档案明确为给编码 agent 的 skill 契约（三视觉预览→选定方向→成稿回路），属 agent skill 包。"
+ },
+ {
+  "slug": "musho",
+  "layer": "H1",
+  "reason": "musho.ai 的 Figma 生成式产品，有官方发布与产品域名，虽已停运仍是商业产品。"
+ },
+ {
+  "slug": "figcraft",
+  "layer": "H1",
+  "reason": "figcraft.ai 官方产品页/文档且具运营实体（QINAXIS），是公司运营的托管产品。"
+ },
+ {
+  "slug": "open-ai-design-agent",
+  "layer": "H2",
+  "reason": "主体是 MIT 开源仓库可自托管，托管入口仅提供管理界面，属开源项目。"
+ },
+ {
+  "slug": "claude-code-design",
+  "layer": "H3",
+  "reason": "为 Claude Code 编写的一组 skill、starter 组件与命令构成创作回路，属 skill 包。"
+ },
+ {
+  "slug": "pagegen",
+  "layer": "H1",
+  "reason": "MemFree 下独立品牌的产品面，有 pagegen.ai 官方页与一键发布闭环，属托管产品面。"
+ },
+ {
+  "slug": "picasso",
+  "layer": "H3",
+  "reason": "明确为 agent skill（SKILL.md），进行视觉方向选择门控流程。"
+ },
+ {
+  "slug": "claudesign",
+  "layer": "H3",
+  "reason": "跨 agent 的 skill 加 DESIGN.md 编排工具包，属 workflow/skill 包。"
+ },
+ {
+  "slug": "hycanvas",
+  "layer": "H2",
+  "reason": "ELv2 源码可用的自托管视觉平台，档案以仓库与自托管能力为证据，属开源类项目。"
+ },
+ {
+  "slug": "drawtir",
+  "layer": "H2",
+  "reason": "自定义许可的自托管仓库项目，档案无订阅定价证据，属组织开源类项目。"
+ },
+ {
+  "slug": "slides-grab",
+  "layer": "H2",
+  "reason": "MIT 开源演示编辑器与门控工具，用户可直接运行使用，属开源应用。"
+ },
+ {
+  "slug": "kin3o",
+  "layer": "H4",
+  "reason": "npm/CLI 工具包，接入既有 Claude/Codex 订阅生成并校验 Lottie，属 CLI 桥。"
+ },
+ {
+  "slug": "aniya-studio",
+  "layer": "H2",
+  "reason": "Apache-2.0 自托管 HTML 演示编辑器，个人维护开源应用。"
+ },
+ {
+  "slug": "kleva",
+  "layer": "H2",
+  "reason": "个人维护的 AI 网站构建器源码仓库，可自行部署，属开源项目。"
+ },
+ {
+  "slug": "presentation-ai",
+  "layer": "H2",
+  "reason": "MIT 开源演示应用，个人维护仓库，非托管商业产品。"
+ },
+ {
+  "slug": "openmontage",
+  "layer": "H3",
+  "reason": "12 阶段 pipeline 清单与导演 skill 指导宿主编码 agent 的创作回路，属 workflow 包。"
+ },
+ {
+  "slug": "ai-slide-editor",
+  "layer": "H2",
+  "reason": "个人开源会话式 PPT 场景图编辑应用，可自行部署。"
+ },
+ {
+  "slug": "openpage",
+  "layer": "H2",
+  "reason": "MIT 开源 JSON 先行网站构建器，可自行部署的应用。"
+ },
+ {
+  "slug": "craftflow",
+  "layer": "H2",
+  "reason": "个人 Node/HTML 原型项目，服务器内存存储，属开源原型。"
+ },
+ {
+  "slug": "webora",
+  "layer": "H2",
+  "reason": "个人教学性质开源项目，README 自述 educational 且无许可。"
+ },
+ {
+  "slug": "presenton",
+  "layer": "H2",
+  "reason": "档案以自托管开源仓库工作流为证据（托管服务另行运营但无商业证据），属开源项目。"
+ },
+ {
+  "slug": "hugoblox",
+  "layer": "H1",
+  "reason": "公司运营产品，官方托管 Hugo Chat 与 HugoBlox 平台构成商业产品。"
+ },
+ {
+  "slug": "draftdeckai",
+  "layer": "H2",
+  "reason": "个人（Delhi）维护的开源 AI 文档工作区仓库。"
+ },
+ {
+  "slug": "affine",
+  "layer": "H1",
+  "reason": "Toeverything 公司运营的成熟平台，含托管云服务与官方产品，属商业/托管产品。"
+ },
+ {
+  "slug": "presentation-app",
+  "layer": "H2",
+  "reason": "个人开源 web 应用，Claude 会话驱动 HTML 幻灯片编辑。"
+ },
+ {
+  "slug": "starrykit",
+  "layer": "H1",
+  "reason": "托管视觉编辑器产品，MCP 与 skill 只是其 agent 接入面，属托管商业产品。"
+ },
+ {
+  "slug": "ppt-saas",
+  "layer": "H2",
+  "reason": "仓库 pptxfactory 中的开源应用，个人维护，可自行部署。"
+ },
+ {
+  "slug": "mira-animator",
+  "layer": "H3",
+  "reason": "agent 运行的演示创作 workshop，专业 agent 链加 CLI 加 skill，属 agent 工作流包。"
+ },
+ {
+  "slug": "paper2any",
+  "layer": "H2",
+  "reason": "档案明确其为开源项目并与商业 Paper to Any Studio 分开计数。"
+ },
+ {
+  "slug": "knowledge-cat-ppt",
+  "layer": "H3",
+  "reason": "story-first 演示 agent skill（含 deck-plan 契约与校验脚本），属 skill 包。"
+ },
+ {
+  "slug": "rw-consulting-ppt",
+  "layer": "H3",
+  "reason": "打包两个 agent 工作流（图片 deck 与重建可编辑 PPT），属 workflow 包。"
+ },
+ {
+  "slug": "deckestra",
+  "layer": "H3",
+  "reason": "隐私门控的本地 Agent Skill，带发布 provenance 锁，属 skill 包。"
+ },
+ {
+  "slug": "paper2slides",
+  "layer": "H3",
+  "reason": "仓库即 skill（paper2slides-skill 加 SKILL.md），agent 读论文生成 Reveal.js 讲稿。"
+ },
+ {
+  "slug": "codeck",
+  "layer": "H2",
+  "reason": "开源的 macOS 原生 Markdown 演示编辑器应用，MCP 为其组件。"
+ },
+ {
+  "slug": "tiangong-ai-decks",
+  "layer": "H3",
+  "reason": "filesystem-first 的 agent 流水线包（pipeline 加 CLI 加 JSON 交接），属 workflow 包。"
+ },
+ {
+  "slug": "eigendeck",
+  "layer": "H2",
+  "reason": "开源桌面/Web 演示编辑器（SQLite 文档），个人维护应用。"
+ },
+ {
+  "slug": "editable-presentation-studio",
+  "layer": "H3",
+  "reason": "独立 agent skill（HTML 转可编辑 PPT/Google Slides），属 skill 包。"
+ },
+ {
+  "slug": "design-os",
+  "layer": "H3",
+  "reason": "明确打包为 agent skill 的门控设计生产工作流，属 workflow 包。"
+ },
+ {
+  "slug": "brand-manual-app",
+  "layer": "H2",
+  "reason": "覆盖 Web 工作区应用（模块加阶段门控加 Supabase 持久化），个人开源项目。"
+ },
+ {
+  "slug": "figmalint",
+  "layer": "H4",
+  "reason": "Figma 插件（文档审计加修复），属插件/连接层。"
+ },
+ {
+  "slug": "comfyui-easy-color-corrector",
+  "layer": "H4",
+  "reason": "ComfyUI 扩展/节点套件，属插件层。"
+ },
+ {
+  "slug": "genjutsu",
+  "layer": "H3",
+  "reason": "两个编排 skill（cast/paint）组成的跨栈 agent 创作系统，属 skill 包。"
+ },
+ {
+  "slug": "get-shit-pretty",
+  "layer": "H3",
+  "reason": "面向编码 agent 的仓库内设计系统与 pipeline skills，属 workflow 包。"
+ },
+ {
+  "slug": "yank-note",
+  "layer": "H2",
+  "reason": "开源本地优先 Markdown 编辑器桌面应用，AI 扩展为其组件。"
+ },
+ {
+  "slug": "figedit",
+  "layer": "H3",
+  "reason": "以 SKILL.md 为核心的截图重建 skill 加示例包，属 skill 包。"
+ },
+ {
+  "slug": "nature-figure-studio",
+  "layer": "H2",
+  "reason": "桌面科学绘图工作区应用为主，skill 为附带面，属开源应用。"
+ },
+ {
+  "slug": "image-svg-pptx-pro",
+  "layer": "H3",
+  "reason": "仓库即 skill（image-svg-pptx-pro-skill 加 SKILL.md），属 skill 包。"
+ },
+ {
+  "slug": "claw-design",
+  "layer": "H3",
+  "reason": "platform-neutral Agent Skill（artifact 契约加验证脚本），属 skill 包。"
+ },
+ {
+  "slug": "claude-webkit",
+  "layer": "H3",
+  "reason": "面向 Claude 的向导式项目 kit（内含多个 .claude skills 的创作流程），属 workflow 包。"
+ },
+ {
+  "slug": "paper2poster",
+  "layer": "H2",
+  "reason": "开源多 agent 科学海报系统（PosterAgent 可运行代码），属开源项目。"
+ },
+ {
+  "slug": "quiverai",
+  "layer": "H1",
+  "reason": "托管商业产品：应用、公开 API、托管 agent 界面与计费，明确公司运营。"
+ },
+ {
+  "slug": "cova",
+  "layer": "H2",
+  "reason": "个人开源封面生成应用，浏览器本地持久化。"
+ },
+ {
+  "slug": "uix-ai-agent",
+  "layer": "H2",
+  "reason": "开源浏览器应用，本地持久化项目 JSON，个人维护。"
+ },
+ {
+  "slug": "homemaker",
+  "layer": "H2",
+  "reason": "开源浏览器 3D 室内工作区，项目目录为权威，个人维护。"
+ },
+ {
+  "slug": "designflow-ai",
+  "layer": "H2",
+  "reason": "个人开源 Figma-like 向量编辑器，原型级实现。"
+ },
+ {
+  "slug": "visual-agent-designer",
+  "layer": "H2",
+  "reason": "本地优先流水线项目，个人维护开源仓库。"
+ },
+ {
+  "slug": "manim-agent",
+  "layer": "H2",
+  "reason": "开源 agent 管道/API 项目，个人维护。"
+ },
+ {
+  "slug": "ai-design-studio",
+  "layer": "H2",
+  "reason": "开源室内设计应用（Supabase 持久化），个人维护。"
+ },
+ {
+  "slug": "neo-studio",
+  "layer": "H2",
+  "reason": "开源本地控制层项目（编排 ComfyUI 等后端），个人维护。"
+ },
+ {
+  "slug": "icezone-studio",
+  "layer": "H2",
+  "reason": "开源节点画布应用，组织维护仓库。"
+ },
+ {
+  "slug": "gia-co-design",
+  "layer": "H2",
+  "reason": "开源浏览器 UI 设计工作室（BYOK、本地存储），个人维护。"
+ },
+ {
+  "slug": "agent-diagram-tool",
+  "layer": "H2",
+  "reason": "开源架构协同设计应用（MCP/HTTP 为组件），个人维护。"
+ },
+ {
+  "slug": "co-design-canvas",
+  "layer": "H2",
+  "reason": "历史开源原型项目（建筑/城市协同设计），非论文、非托管服务。"
+ },
+ {
+  "slug": "markdownflows",
+  "layer": "H2",
+  "reason": "开源桌面 Mermaid 编辑器（Electron），个人维护。"
+ },
+ {
+  "slug": "ai-draw-nexus",
+  "layer": "H2",
+  "reason": "开源多引擎图表项目系统，本地 IndexedDB，个人维护。"
+ },
+ {
+  "slug": "smart-mermaid-assistance",
+  "layer": "H2",
+  "reason": "开源桌面 Mermaid 工作区（GitHub 同步），个人维护。"
+ },
+ {
+  "slug": "mermaidgen",
+  "layer": "H2",
+  "reason": "开源示例级应用（Gemini 生成 Mermaid 源码），个人维护。"
+ },
+ {
+  "slug": "synthezy",
+  "layer": "H2",
+  "reason": "开源白板应用（原生元素加 AI 生成），个人维护。"
+ },
+ {
+  "slug": "text2diagram",
+  "layer": "H1",
+  "reason": "带 Firebase 订阅门控与 Pro 付费墙的微 SaaS，官方形态为订阅产品。"
+ },
+ {
+  "slug": "flow2go",
+  "layer": "H2",
+  "reason": "开源本地图编辑器应用，无强制云账号，个人维护。"
+ },
+ {
+  "slug": "llmo-diagram-generator",
+  "layer": "H2",
+  "reason": "开源本地应用（Streamlit 加 Ollama 加 SQLite），个人维护。"
+ },
+ {
+  "slug": "thoth-blueprint",
+  "layer": "H2",
+  "reason": "开源 schema 编排工作区应用（IndexedDB 检查点），个人维护。"
+ },
+ {
+  "slug": "product-diagram-copilot",
+  "layer": "H2",
+  "reason": "开源 diagram 规范服务（桌面/Web 双端），个人维护。"
+ },
+ {
+  "slug": "note-gen",
+  "layer": "H2",
+  "reason": "开源本地优先知识工作区应用，个人维护。"
+ },
+ {
+  "slug": "mermark-editor",
+  "layer": "H2",
+  "reason": "开源桌面 Markdown 工作区（Tauri），个人维护。"
+ },
+ {
+  "slug": "archischema",
+  "layer": "H2",
+  "reason": "开源 schema 设计环境（Rust/Leptos），个人维护。"
+ },
+ {
+  "slug": "mermaid-studio-catfox",
+  "layer": "H2",
+  "reason": "开源双模 Mermaid 编辑环境，个人维护。"
+ },
+ {
+  "slug": "unkode",
+  "layer": "H2",
+  "reason": "开源架构契约工具项目（YAML 权威加投射），可复用部署。"
+ },
+ {
+  "slug": "mermaidgenie",
+  "layer": "H2",
+  "reason": "开源全栈 Mermaid 工作区（Express/MongoDB），个人维护。"
+ },
+ {
+  "slug": "easy-uml",
+  "layer": "H2",
+  "reason": "开源浏览器 UML/图表应用，个人维护。"
+ },
+ {
+  "slug": "intellidraw",
+  "layer": "H2",
+  "reason": "开源 draw.io 团队工作区（CRDT 协作），个人维护。"
+ },
+ {
+  "slug": "webnode",
+  "layer": "H2",
+  "reason": "开源节点式 Python Web 框架项目，可自行部署。"
+ },
+ {
+  "slug": "timecapsule-slm",
+  "layer": "H2",
+  "reason": "开源浏览器研究加创作工作区，个人维护。"
+ },
+ {
+  "slug": "ai-game-launchpad",
+  "layer": "H2",
+  "reason": "开源游戏生成工作室（模板系统加发布面），个人维护。"
+ },
+ {
+  "slug": "polysynergy",
+  "layer": "H2",
+  "reason": "开源视觉自动化平台（超级项目加组件仓库），个人维护。"
+ },
+ {
+  "slug": "heym",
+  "layer": "H2",
+  "reason": "开源视觉工作流平台 monorepo，源码级证据，无商业订阅证据。"
+ },
+ {
+  "slug": "froglips",
+  "layer": "H2",
+  "reason": "开源原生 macOS 本地 LLM 工作站应用，个人维护。"
+ },
+ {
+  "slug": "abc-agent-builder-console",
+  "layer": "H2",
+  "reason": "开源 agent 构建控制台应用（治理型版本/审计），个人维护。"
+ },
+ {
+  "slug": "ghosted",
+  "layer": "H2",
+  "reason": "开源桌面开发工作区应用（Electron 加 pi agent），个人维护。"
+ },
+ {
+  "slug": "graph-ai",
+  "layer": "H2",
+  "reason": "开源视觉工作流产品（版本化运行快照），个人维护仓库。"
+ }
+]

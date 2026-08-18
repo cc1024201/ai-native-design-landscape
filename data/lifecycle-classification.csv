@@ -1,0 +1,1505 @@
+slug,product,organization,evidence_depth,lifecycle,bucket
+3d-modeling-skill,3D Modeling Skill,ghsi-3d-modeling,source,active,active
+3dcodebench,3DCodeBench,yipeng-3dcodebench,source,active,active
+3dmodel-skill,3dmodel Skill,fletcher-3dmodel,architecture,active,active
+42maker,42Maker,42maker-browser-cad,architecture,active,active
+abc-agent-builder-console,ABC Agent Builder Console,magpiefelt-abc-agent-builder,source,active,active
+absbuilder,ABSBuilder,afi-absbuilder,source,active,active
+abu-cowork,Abu Cowork,pm-shawn-abu-cowork,source,active,active
+abvx-agent-skills,ABVX Agent Skills,abvx-agent-skills,source,active,active
+ada-v2-nazir,ADA V2 by Nazir Louis,nazir-ada-v2,source,active,active
+ada-v2-syed,A.D.A by Syed Daiam,syed-ada-v2,source,active,active
+adalo-ai,Adalo AI,adalo-ada-app-builder,architecture,active,active
+adeu,Adeu,dealfluence-adeu,source,active,active
+adk-playground,ADK Playground,danroblewis-adk-playground,source,active,active
+adk-studio,ADK Studio,zavora-adk,source,active,active
+adly,Adly,adly-marketing-design,architecture,active,active
+adobepy,adobepy,dcc-mcp-adobepy-runtime,source,active,active
+aesthetron,Aesthetron AI,aesthetron-figma-agent,architecture,active,active
+aether-architect,Aether Architect,w3jdev-aether-architect,source,active,active
+aetheros,AETHEROS,dafum-aetheros,source,active,active
+affine,AFFiNE,toeverything-affine,source,active,active
+ag0-diagramming-agent,AG0 Diagramming Agent,corespeed-ag0-diagramming,source,active,active
+agcluster-container,AgCluster Container,whiteboardmonk-agcluster,source,active,active
+agent-canvas-randomvibecoder,Agent Canvas,randomvibecoder-agent-canvas,source,active,active
+agent-diagram-tool,Agent Diagram Tool,thebobrovs-gcp-diagram,source,active,active
+agent-mesh-sre,Agent Mesh on Streaming World,aswin-agent-mesh,source,active,active
+agent-native-design,Agent-Native Design,builderio-agent-native-design,source,active,active
+agent-office-suite,Agent Office Suite,manpo-aose,source,active,active
+agent-scad,AgentSCAD,kevoyuan-agentscad,source,active,active
+agent-setup,Agent Architecture by Shivraj,agent-setup-team,source,active,active
+agent-svgtools,agent-svgtools,wyrd-agent-svgtools,source,active,active
+agent-vision-toolkit,Agent Vision Toolkit,anionex-vision,source,active,active
+agent-workflow-canvas,Agent Workflow Canvas,kevin-astuhuaman-agent-canvas,source,active,active
+agentation,Agentation,agentation,source,active,active
+agentbuilder-chebale,AgentBuilder by Chebale Omkar,chebaleomkar-agentbuilder,source,active,active
+agentflow,AgentFlow,agentflow-darshit-sharma,source,active,active
+agentgo,AgentGo,agentgo-team,source,active,active
+agentic-3d-printing,Agentic 3D Printing,eric-agentic-3d,source,active,active
+agentic-ai-website-builder-akhil,Agentic AI Website Builder by Akhil Maratha,akhil-agentic-builder,source,active,active
+agentic-signal,Agentic Signal,agentic-signal-team,source,active,active
+agentix,Agentix,pruthviraj-agentix,source,active,active
+agents-ui,agents-ui,ngxba-agents-ui,source,active,active
+agents365-drawio-skill,Agents365 Draw.io Skill,agents365-drawio-skill,source,active,active
+agentsite,AgentSite,juan-agentsite,source,active,active
+agon,Agon,agon-team,source,active,active
+ai-app-builder-abdul,AI App Builder by Abdul Baqui,abdul-app-builder,source,active,active
+ai-app-builder-doratiotto,AI App Builder by Doratiotto67,doratiotto-ai-app-builder,source,active,active
+ai-app-builder-edge,AI App Builder by Shoaib Ahmed,edge-ai-app-builder,source,active,active
+ai-app-builder-eugene,AI App Builder by Eugene McMillian,eugene-ai-app-builder,source,active,active
+ai-app-builder-piyush,AI App Builder by Piyush Agarwal,piyush-ai-builder,source,active,active
+ai-app-builder-saas-tauhid,AI App Builder SaaS by Yayasan At-Tauhid,tauhid-app-builder,source,active,active
+ai-app-developer-rajnish,AI App Developer by Rajnish Kumar,rajnish-app-developer,source,active,active
+ai-builder-nishant,AI Builder by Nishant Chaudhary,nishant-dashboard-builder,source,active,active
+ai-cad,AI-CAD,vespo-ai-cad,source,active,active
+ai-code-tutor-video,AI CodeTutor Video Generator,pushkar-code-tutor-video,source,active,active
+ai-component-builder-aditya,AI Component Builder by Aditya Sharma,aditya-sharma-ai-component-builder,source,active,active
+ai-component-builder-bluntbrain,AI Component Builder by bluntbrain,bluntbrain-component-builder,source,active,active
+ai-component-builder-debanik,AI Component Builder by Debanik,debanik-component-builder,source,active,active
+ai-component-builder-devisha,AI Component Builder by Devisha Arora,devisha-component-builder,source,active,active
+ai-component-builder-gokul,AI Component Builder by Gokul Krishna,gokul-component-builder,source,active,active
+ai-component-builder-harshbhx,AI Component Builder by Harsh Bhanushali,harsh-cursor-component-builder,source,active,active
+ai-component-builder-iaman,AI Component Builder by Aman Raj,aman-component-builder,source,active,active
+ai-component-builder-sanskriti,AI Component Builder by Sanskriti Singh,sanskriti-component-builder,source,active,active
+ai-component-builder-stacked,AI Component Builder by StackedByAdit,stacked-component-builder,source,active,active
+ai-component-generator-sandbox,AI Component Generator Sandbox,daniela-component-sandbox,source,active,active
+ai-component-generator-shakti,AI Component Generator by Shakti Prasad Ram,shakti-component-generator,source,active,active
+ai-consulting-soyeon,AI Consulting Workflow,ai-consulting-team,source,active,active
+ai-creative-studio,AI Creative Studio,saoussen-ai-creative-studio,source,active,active
+ai-design-engineer,AI Design Engineer,agenisea-design-engineer,architecture,active,active
+ai-design-skills,AI Design Skills,goodnotes-workshop-skills,source,active,active
+ai-design-space,AI DESIGN SPACE,ai-design-space-studio,architecture,active,active
+ai-design-studio,AI Design Studio,abhinav-room-design-studio,source,active,active
+ai-diagram-copilot-pranav,AI Diagram Copilot by Pranav,pranav-diagram-copilot,source,active,active
+ai-diagrammer,AI Diagrammer,eric-ai-diagrammer,source,active,active
+ai-diagrams,AI Diagrams,kavishan-ai-diagrams,source,active,active
+ai-diagrams-toolkit,AI Diagrams Toolkit,prieto-ai-diagrams-toolkit,source,active,active
+ai-draw-nexus,AI Diagram Hub / AI Draw Nexus,hkxiaoyao-ai-draw-nexus,source,active,active
+ai-factory,AI Factory,ai-factory-team,source,active,active
+ai-figma,AI Figma,vardot-figma-canvas,source,active,active
+ai-forge-mcp,AI Forge MCP,hurtz-ai-forge,architecture,active,active
+ai-frontend-generator-amit,AI Frontend Generator by Amit Sharma,amit-sharma-ai-frontend-generator,source,active,active
+ai-game-launchpad,AI Game LaunchPad,oplooins-game-launchpad,source,active,active
+ai-generator-abhi,AI Generator by Abhi Gandhi,abhi-ai-generator,source,active,active
+ai-landing-generator-pro,IA Landing Generator Pro,emiliano-ia-landing,source,active,active
+ai-media-canvas,AI Media Canvas,tutti-os-ai-media-canvas,source,active,active
+ai-orchestration-honey610,AI Orchestration UI Generator by Shishir Gupta,honey610-ai-orchestration,source,active,active
+ai-parametric-cad,AI Parametric CAD Generator,zak-ai-parametric-cad,source,active,active
+ai-prototyper,AI Prototyper,ai-prototyper-research,source,active,active
+ai-shortfilm-studio,AI Shortfilm Studio,dcongthinh-shortfilm,source,active,active
+ai-ui-builder-akshay,AI UI Builder by Akshay Chaulya,akshay-ai-ui-builder,source,active,active
+ai-ui-builder-devdiego,AI UI Builder by Diego Perez,diego-ai-ui-builder,source,active,active
+ai-ui-builder-eptura,AI UI Builder by Alexandr Davydov,alexandr-davydov-ai-ui-builder,source,active,active
+ai-ui-builder-isvaku,AI UI Builder by Rigoberto Quezada,isvaku-ai-ui,source,active,active
+ai-ui-builder-merchantry,AI UI Builder by Merchantry,merchantry-ui-builder,source,active,active
+ai-ui-designer,AI UI Designer,ai-ui-designer,architecture,active,active
+ai-ui-generator,AI UI Generator / Design Engine,dhruv-ai-ui-generator,source,active,active
+ai-ui-generator-deepanshu,AI UI Generator by Deepanshu Sharma,deepanshu-ai-ui,source,active,active
+ai-ui-generator-dhruv,AI UI Generator by Dhruv Jain,dhruv-ai-ui,source,active,active
+ai-ui-generator-harshi,AI UI Generator by Harshi,harshi-ai-ui-generator,source,active,active
+ai-ui-generator-mohit,AI UI Generator by Mohit Aggarwal,mohit-ai-ui,source,active,active
+ai-ui-generator-mondo,AI UI Generator by Mohannad Abdelrazek,mondo-ai-ui,source,active,active
+ai-ui-generator-yash,AI UI Generator by yashsaini0759,yash-ai-ui,source,active,active
+ai-ui-style-director,AI UI Style Director,bayes-wang-ai-ui-style-director,source,active,active
+ai-ui-table-generator-dladislav,AI UI Table Generator,vladyslav-ai-ui-table-generator,source,active,active
+ai-ux-writer,AI UX Writer,ai-ux-writer-ragnak8,architecture,active,active
+ai-web-app-builder-shubha,AI-Powered Web App Builder by Shubha,shubha-web-builder,source,active,active
+ai-webpage-generator-achua,AI Webpage Generator by Achuajays,achuajays-ai-webpage-generator,source,active,active
+ai-webpage-generator-pa741,AI Webpage Generator by Pablo de Groot,pablo-de-groot-ai-webpage-generator,source,active,active
+ai-website-builder-bonifacio,AI Website Builder by Bonifacio Calindoro,bonifacio-ai-builder,source,active,active
+ai-website-builder-builtbyv,AI Website Builder by V,builtbyv-ai-website-builder,source,active,active
+ai-website-builder-chitransh,AI Website Builder by Chitransh Chocksey,chitransh-ai-builder,source,active,active
+ai-website-builder-dennis,AI Website Builder by Dennis Faucher,dennis-ai-builder,source,active,active
+ai-website-builder-firefetch,AI Website Builder by Firefetch,firefetch-ai-builder,source,active,active
+ai-website-builder-krishna,AI Website Builder by Krishna Paralkar,krishna-ai-builder,source,active,active
+ai-website-builder-lab1207,AI Website Builder by Vaibhav Hajare,lab-ai-builder,source,active,active
+ai-website-builder-lucas,AI Website Builder by Lucas H507,lucas-ai-builder,source,active,active
+ai-website-builder-markec,AI Website Builder by markec12345678,markec-ai-builder,source,active,active
+ai-website-builder-mohammad,AI Website Builder by Mohammad Armaan,mohammad-ai-builder,source,active,active
+ai-website-builder-ratna,AI-Powered Website Builder by Ratna Babu,ratna-babu-ai-website-builder,source,active,active
+ai-website-builder-safwan,AI Website Builder by Safwan Hanif,safwan-ai-builder,source,active,active
+ai-website-builder-shekhbasir,AI Website Builder by Shekh Basir,shekhbasir-ai-website-builder,source,active,active
+ai-website-builder-subrata,AI Website Builder by Subrata Ghosh,subrata-ai-builder,source,active,active
+ai-website-builder-vardhan,AI Website Builder by Vardhan V,vardhan-ai-builder,source,active,active
+ai-website-builder-vijay,AI Website Builder by Vijay Kusekar,vijay-ai-builder,source,active,active
+ai-website-builder-zaran,AI Website Builder by Zyra,zaran-ai-builder,source,active,active
+ai-website-generator-aditya-umale,AI Website Generator by Aditya Umale,aditya-umale-ai-website,source,active,active
+ai-website-generator-dhanu7789,AI Website Generator by Dhanu7789,dhanu7789-google-deepmind,source,active,active
+ai-website-generator-gokulbits,AI Website Generator by GokulBits18,gokulbits-ai-website,source,active,active
+ai-website-generator-gururaj,AI Website Generator by GururajCharan,gururaj-ai-website,source,active,active
+ai-website-generator-jordan,AI Website Generator by Jordan D'Souza,jordan-ai-website,source,active,active
+ai-website-generator-kpriya,AI Website Generator by Krishna Priya,krishna-priya-ai-website,source,active,active
+ai-website-generator-maurya,AI Website Generator by Maurya Patel,maurya-groq-site-generator,source,active,active
+ai-website-generator-nithin,AI Website Generator by Nithin1616,nithin-ai-website,source,active,active
+ai-website-generator-pappu,AI Website Generator by Pappu Kumar,pappu-ai-website,source,active,active
+ai-website-generator-praneet,AI Website Generator by Praneet Biswal,praneet-ai-website,source,active,active
+ai-website-generator-rishi,AI Website Generator by Rishikesh Ugale,rishi-ai-website,source,active,active
+ai-website-generator-shaxx,AI Website Generator by Shaxxshankari,shaxx-ai-website,source,active,active
+ai-website-generator-shrutika,AI Website Generator by Shrutika Kapade,shrutika-ai-website,source,active,active
+ai-website-generator-tayyabeh,Agentic AI Website Builder by Tayyab Ellahi,tayyab-agentic-web,source,active,active
+ai-website-generator-tony,AI-Powered Website Generator by Tony-VBB,tony-ai-website,source,active,active
+ai-website-generator-tulsi,AI Website Generator by Tulsi Pandey,tulsi-ai-website-builder,source,active,active
+ai-website-generator-varun,AI Website Generator by Varun Sharma,varun-ai-website-generator,source,active,active
+ai-workflow-automation-vmk,AI Workflow Builder Platform by VMK-004,vmk-004-ai-workflow-automation,source,active,active
+ai-workflow-builder-anshii,AI Workflow Builder by Anshi Jain,anshii-workflow-builder,source,active,active
+ai-workflow-builder-fuleinist,ai-workflow-builder by fuleinist,fuleinist-workflow-builder,source,active,active
+ai-workflow-builder-rmounith,AI Workflow Builder by R. Mounith Reddy,rmounithreddy-ai-workflow-builder,source,active,active
+ai-workflow-builder-robertsbob,AI Workflow Builder by Roberts B,robertsbob-ai-workflow-builder,source,active,active
+ai-workflow-builder-sanket-hatti,AI Agent Workflow Builder by Sanket Hatti,sanket-hatti-ai-agent-workflow-builder,source,active,active
+ai-workflow-builder-toobahasnain,AI Workflow Builder by Syeda Tooba Hasnain,toobahasnain-ai-workflow-builder,source,active,active
+ai-workflow-builder-upinder28,AI Workflow Builder by Upinder Kaur,upinder28-ai-workflow-builder,source,active,active
+ai-workflow-demilade,AI Workflow Builder by Demilade01,demilade01-ai-workflow,source,active,active
+aidemyst-agentstudio,Aidemyst AgentStudio,aidemyst-agentstudio,source,active,active
+aidesigner,AIDesigner,aidesigner-platform,architecture,active,active
+aihouse,AIHouse,aihouse-design-manufacturing,architecture,active,active
+ainaming,AINaming,donghuc-ainaming,source,active,active
+aionui,AionUi,iofficeai-aionui,source,active,active
+aios,AIOS,harshchavan009-aios,source,active,active
+aipto,AIPTO,aipto-fashion-commerce,architecture,active,active
+aispirit-agent,AISpirit Agent,aispiritlabs-agentic,source,active,active
+akcli,akcli,li-akcli,source,active,active
+akn-website-generator,AKN AI Website Generator,akn-ovh-site-agent,source,active,active
+ako-visual-design-agent,AKO Visual Design Agent,ako-studio-visual-agent,source,active,active
+algocraft,AlgoCraft,algocraft,source,active,active
+alice-sdf,ALICE-SDF,sakamoro-alice-sdf,source,active,active
+alloy,Alloy,alloy,architecture,active,active
+amaroad,Amaroad,core-amaroad,source,active,active
+ams-io-agent,AMS-IO-Agent,arcadia-ams-io,source,active,active
+anima,Anima,anima,architecture,active,active
+aniya-studio,Aniya Studio,yizhian-aniya-studio,source,active,active
+anthropic-agent-skills,Anthropic Agent Skills,anthropic-agent-skills,source,active,active
+anthropic-claude-design,Claude Design,anthropic-labs,architecture,active,active
+anthropic-course-uigen,UIGen Claude Code in Action sample,anthropic-course-uigen,source,active,active
+anti-ai-design,anti-ai-design,huy-anti-ai,source,active,active
+antv-infographic,AntV Infographic,antv-infographic,source,active,active
+anything,Anything,anything,architecture,active,active
+app-store-screenshots,App Store Screenshots,parth-jadhav-app-store-screenshots,source,active,active
+appautomaton-presentation,App Automaton Presentation,appautomaton-presentation,source,active,active
+appfromai,AppFromAI,biosbrick-appfromai,source,active,active
+appiav2,AppiaV2,morningstar-appia,source,active,active
+appmaker,AppMaker,appmaker-six-by-seven,source,active,active
+appy-pie-ui,Appy Pie AI UI Generator,appy-pie-no-code-ui,architecture,active,active
+archie-ea,Archie,archie-ea-team,source,active,active
+archiflow,ArchiFlow,archiflow-team,source,active,active
+archify,Archify,archify-team,source,active,active
+archigen,ArchiGen,archigen-team,source,active,active
+archischema,Archischema,archischema-team,source,active,active
+architechtures,ARCHITEChTURES,architechtures-bim,architecture,active,active
+architect-studio-x,Architect Studio X,balchandar-architect-studio-x,source,active,active
+architecture-drawio-automation,Architecture Draw.io Automation,debajyoti-drawio,source,active,active
+archon-workflows,Archon by Cole Medin,cole-medin-archon,source,active,active
+archondev,ArchonDev,archondev-governance,architecture,active,active
+arckit,ArcKit,tractorjuice-arckit,source,active,active
+argus-sammy,Argus by Sammy Tourani,sammy-argus,source,active,active
+artclaw-bridge,ArtClaw Bridge,ivan-artclaw,source,active,active
+artifex-ui-generator,Artifex UI Generator,artifex-fujitsu,source,active,active
+artiso,ARTISO,artiso-fashion-lifecycle,architecture,active,active
+asciitecture,Asciitecture,anima-asciitecture,source,active,active
+astron-rpa,Astron RPA,iflytek-astron-rpa,source,active,active
+atlas-3d-design,Atlas 3D Design Team,monumental-atlas-3d,architecture,active,active
+atlas-design-ux,Atlas Design UX Team,monumental-atlas-design-ux,architecture,active,active
+atoms,Atoms,metagpt-atoms,architecture,active,active
+atv-design,ATV Design,all-the-vibes-atv-design,source,active,active
+aurelius,Aurelius,pmds-aurelius,source,active,active
+auricide,AuricIDE,jorg-auricide,source,active,active
+auteur,auteur,agi-auteur,source,active,active
+auto-slides,Auto-Slides,westlake-agi-lab,source,active,active
+autockt,AutoCkt,autockt-research,source,active,active
+autodesk-platform-services-skills,Agent Skills for Autodesk Platform Services,autodesk-platform-services,source,active,active
+autogpt,AutoGPT Platform,autogpt-platform,source,active,active
+automotive-skills-suite,Automotive Skills Suite,jherrod-automotive-skills,source,active,active
+aws-architecture-diagram-skill,AWS Architecture Diagram Skill,vidanov-aws-diagram,source,active,active
+aws-deploy-on-aws,AWS Deploy on AWS plugin,aws-deploy-on-aws,source,active,active
+ayushi-ai,Ayushi.AI,harsh-ayushi-ai,source,active,active
+azure-diagram-mcp-server,Azure Diagram MCP Server,jah-yee-diagrams,source,active,active
+azure-diagram-skill,Azure Diagram Skill,azure-diagram-skill-team,source,active,active
+backdraft,Backdraft,backdraft-code-design-editor,architecture,active,active
+baidu-comate,Comate,baidu-comate,architecture,active,active
+baidu-miaoda,Miaoda,baidu-miaoda,architecture,active,active
+bambu-studio-ai,Bambu Studio AI,he-bambu-studio-ai,source,active,active
+banani,Banani,banani-agent-ui,architecture,active,active
+baoyu-design,baoyu-design,jim-liu-baoyu-design,source,active,active
+base44,Base44,base44,architecture,active,active
+bedrock-image-mcp-server,Bedrock Image MCP Server,bedrock-image-mcp,source,active,active
+behavr,Behavr,behavr-simulated-usability,architecture,active,active
+better-design,Better Design,marvkr-better-design,architecture,active,active
+better-web-ui,better-web-ui,aladic-better-web-ui,source,active,active
+bigbangdev,bigbangdev,bigbangdev-product,source,active,active
+bitfun,BitFun,gcwing-bitfun,source,active,active
+blade,Blade,razorpay-blade,source,active,active
+blender-mcp-n8n,Blender MCP for n8n,seehiong-blender-mcp,source,active,active
+blender-mcp-server-namurokuro,Blender MCP Server by namurokuro,namuro-blender-mcp,source,active,active
+blender-mcp-vinhelysia,blender-mcp by vinhelysia,vinh-blender-mcp,source,active,active
+blender-mcp-vxai,Blender MCP VXAI,vxai-blender-mcp,source,active,active
+blender-orchestrator,Agentic Blender Orchestrator,olson-blender-orchestrator,source,active,active
+blender-scene-agent,Blender Scene Agent,rousset-blender-agent,source,active,active
+blendermcp,BlenderMCP,ahujasid-blendermcp,source,active,active
+blockout,Blockout,wasserman-blockout,source,active,active
+bloxai,BloxAI,bloxai-team,source,active,active
+bluelens,BlueLens,bluelens-team,source,active,active
+bmad-slide-maker,BMAD Slide Maker,bmad-slide-maker,source,active,active
+bmad-slides-generator,BMAD Slides Generator,bmad-slides-generator,architecture,active,active
+boardmix-ai,boardmix AI,boardmix-ai,architecture,active,active
+bolt-new,Bolt.new,stackblitz-bolt,architecture,active,active
+bolt-website-maker-jagdish,BOLT AI Website Builder by Jagdish Suthar,bolt-website-maker-jagdish,source,active,active
+botlab-art,Botlab.art,botlab-textile-design,architecture,active,active
+boutiqaat-creative-studio,Boutiqaat Creative Studio,bagzmax7-boutiqaat,source,active,active
+brainfuel-agent-builder,Brainfuel Agent Builder,brainfuel-agentic,source,active,active
+brand-booklet,Brand Booklet,tillmann-brand-booklet,source,active,active
+brand-design-skill,Brand Design Skill,ziguishian-brand-design,source,active,active
+brand-docs,BrandDocs,bonsegna-branddocs,source,active,active
+brand-manual-app,Brand Manual App,admin-brand-manual,source,active,active
+brilliant-design,Brilliant,brilliant-agent-vector-design,architecture,active,active
+budibase,Budibase,budibase-operations-platform,source,active,active
+build123d-cad,build123d-cad,rabbit-build123d-cad,source,active,active
+buildable,Buildable,buildable-agent-kit,source,active,active
+buildcad,BuildCAD,buildcad-cloud-agent,architecture,active,active
+builder-skills-system-architect,Builder Skills System Architect,builder-skills-team,source,active,active
+builderai-raj,BuilderAI by Raj Patel,raj-builderai,source,active,active
+builderio-fusion,Fusion,builder-io-fusion,architecture,active,active
+builderweb,BuilderWeb,builderweb-horizon,source,active,active
+buildev,Buildev,bryxnn-buildev,source,active,active
+buildev-isjunrod,Buildev by Jun Rod,jun-buildev,source,active,active
+buildflow3,Buildflow3,buildflow3,source,active,active
+buildgraph,BuildGraph,muhamadbyaba-buildgraph,source,active,active
+buildify-pragya,Buildify by Pragya Manna,pragya-buildify,source,active,active
+buildora-ai-studio,Buildora AI Studio,adithya-buildora,source,active,active
+buildrx,BuildRx,mabrig-buildrx,source,active,active
+burhan-ai-workflow-builder,AI Workflow Builder by Burhan086,burhan086-workflow-builder,source,active,active
+burnguard-design,BurnGuard Design,ashmoonori-burnguard,source,active,active
+bux,BUX,bux-figma-plugin,architecture,active,active
+buzz-workspace,Buzz,block-buzz,source,active,active
+buzzy,Buzzy,buzzy-figma-app-platform,architecture,active,active
+cad-agent,CAD Agent,svetlana-cad-agent,source,active,active
+cad-as-code-template,CAD-as-Code Template,coffee-cad-as-code,source,active,active
+cad-cae-copilot,CAD CAE Copilot,armpro-cad-cae-copilot,source,active,active
+cad-coworker,CAD Coworker,karaage-cad-coworker,source,active,active
+cad-khana,CAD Khana,cyberchitta-cad-khana,source,active,active
+cad-solver,CAD Solver,valentil-cad-solver,source,active,active
+caddesigner,CADDesigner,caddesigner-zju,source,active,active
+cadgenbench,CADGenBench,huggingface-cadgenbench,source,active,active
+cadsmith,CADSmith,jesse-cadsmith,source,active,active
+cae-agent-hub,CAE Agent Hub,cai-cae-agent-hub,source,active,active
+calcstack,Calcstack,calcstack-team,architecture,active,active
+calicat,Calicat,calicat,architecture,active,active
+calino,Calino,achmad-alimin-calino,architecture,active,active
+candor,Candor,candor-synthetic-critics,architecture,active,active
+canopy,Canopy,canopy-team,source,active,active
+canva-magic-design,Canva Magic Design,canva,architecture,active,active
+canvas-ai-migrations,Canvas AI Migrations,alphons-drupal-canvas-agents,source,active,active
+canvas-ai-page-context-generation,Canvas AI Page Context Generation Skill,akhil-babu-canvas-context,source,active,active
+canvoss,Canvoss,shashank-bhat-canvoss,source,active,active
+capcut,CapCut,bytedance-capcut,architecture,active,active
+careervivid,CareerVivid,careervivid-team,source,active,active
+caret,Caret,precious112-caret,source,active,active
+cc-design,cc-design,zeroz-cc-design,source,active,active
+chartdb,ChartDB,chartdb-team,source,active,active
+chatbotx,ChatbotX,chatbotx-platform,source,active,active
+chili-chiplets,Chili Chiplets,mit-chili-chiplets,source,active,active
+chilldeck,ChillDeck,isha-chilldeck,source,active,active
+chipster,Chipster,chipster-digital-design,source,active,active
+cicada,CICADA,peng-ding-cicada,source,active,active
+circle-take,Circle Take,wasserman-circle-take,source,active,active
+circuit-weaver,Circuit Weaver,matt-circuit-weaver,source,active,active
+clai,Clai,eric-lee-clai,source,active,active
+claraverse,ClaraVerse,claraverse-workspace,source,active,active
+claude-code-design,claude-code-design,bluzir-claude-code-design,source,active,active
+claude-code-game-studios,Claude Code Game Studios,donchitos-game-studios,source,active,active
+claude-code-video-toolkit,Claude Code Video Toolkit,digitalsamba-video-toolkit,source,active,active
+claude-code-workflows,OneRedOak Claude Code Workflows,one-red-oak-design-review,source,active,active
+claude-cowork-office,Claude Cowork for Office,claude-cowork-office-team,source,active,active
+claude-design-auditor-skill,Claude Design Auditor Skill,ash-design-auditor,source,active,active
+claude-design-skill-jiji,Claude Design Skill by jiji262,jiji-claude-design,source,active,active
+claude-design-system-prompt,Claude Design System Prompt,trystan-claude-design-system-prompt,source,active,active
+claude-eda,claude-eda,l3wi-claude-eda,source,active,active
+claude-engineering-skills,Claude Engineering Skills Library,soljourner-engineering-skills,source,active,active
+claude-figma-kit,Claude Figma Kit,tuanna-figma-kit,source,active,active
+claude-financial-services,Claude for Financial Services,anthropic-financial-services,source,active,active
+claude-talk-to-figma-arinspunk,AI Agents Talk to Figma MCP,xulio-figma-mcp,source,active,active
+claude-terminal,Claude Terminal,sterll-claude-terminal,source,active,active
+claude-to-print,Claude-To-Print,oz-claude-to-print,source,active,active
+claude-webkit,Claude Web Builder,tododeia-claude-webkit,source,active,active
+claude2figma,Claude2Figma,senlin-claude2figma,source,active,active
+claudekit-marketing,ClaudeKit Marketing,claudekit-marketing-team,source,active,active
+claw-design,Claw Design,xs-claw-design,source,active,active
+clawphd,ClawPhD,zhihao-clawphd,source,active,active
+clean-vector-reconstruction,Clean Vector Reconstruction,lixin-clean-vector,source,active,active
+clearly,Clearly,clearly,architecture,active,active
+cli-anything,CLI-Anything,hkuds-cli-anything,source,active,active
+clientsight-gazebuilder,ClientSight / GazeBuilder,clientsight-gazebuilder,source,active,active
+cloud-architecture-diagrams,Cloud Architecture Diagrams,hansraj-cloud-arch,source,active,active
+cloud-visualizer-pro,Cloud Visualizer Pro,cloud-visualizer-pro-team,source,active,active
+cloudarchgen,CloudArchGen,cloudarchgen-team,source,active,active
+cloudflare-vibesdk,Cloudflare VibeSDK,cloudflare-vibesdk,source,active,active
+clypra,Clypra,aiera-dev-clypra,source,active,active
+cobra-ai-2,Cobra AI 2.0,harsh-cobra,source,active,active
+code-inspector,Code Inspector,zh-lx-code-inspector,source,active,active
+code2video,Code2Video,show-lab-code2video,source,active,active
+codeboarding,CodeBoarding,codeboarding-team,source,active,active
+codecanvas-ai,CodeCanvas AI,codecanvas-local-ide,source,active,active
+codeck,Codeck,lkuczborski-codeck,source,active,active
+codejet,Codejet,codejet-design-to-web,architecture,active,active
+coderocket,CodeRocket,coderocket,source,active,active
+coderx,CoderX,coderx-narayaaana,source,active,active
+codeui-paurakh,CODEUI,paurakh-codeui,source,active,active
+codewiki,CodeWiki,codewiki-team,source,active,active
+codex-game-studio,Codex Game Studio,jackli-codex-game-studio,architecture,active,active
+codex-slides,Codex Slides,nexu-codex-slides,source,active,active
+codey,Codey,hamza-amir-codey,source,active,active
+codia,Codia,codia-vision-design-platform,architecture,active,active
+codigram,Codigram,mohammad-codigram,source,active,active
+codoptic,Codoptic,codoptic-team,source,active,active
+comfy-mcp-official,Comfy MCP,comfy-org-mcp,architecture,active,active
+comfyui,ComfyUI,comfy-org-comfyui,source,active,active
+comfyui-easy-color-corrector,ComfyUI EasyColorCorrector,regiellis-easy-color,source,active,active
+comfyui-mcp,comfyui-mcp,artokun-comfyui-mcp,source,active,active
+comfyui-workflow-studio,ComfyUI Workflow Studio,ketle-man-comfyui-workflow-studio,source,active,active
+comp-gen-aditya,Comp-gen by Aditya Singh Gautam,aditya-comp-gen,source,active,active
+competition-ppt-template,Competition PPT Template-First,che626-competition-ppt-template,source,active,active
+composeflow,ComposeFlow,composeflow-project,source,active,active
+computational-design-skills,Computational Design Skills,abhinav-computational-design,source,active,active
+consulting-deck,Consulting Deck,zairui-consulting-deck,source,active,active
+contextcypher,ContextCypher,threat-vector-contextcypher,source,active,active
+contextui,ContextUI,contextui-desktop-platform,source,active,active
+convertix-ai,Convertix AI,radwa-talaat-convertix,source,active,active
+convey,Convey,bitovi-convey,source,active,active
+copilot-sdd-skills,Copilot SDD Skills,copilot-sdd-skills-team,source,active,active
+cordyceps,Cordyceps,brooks-talley-cordyceps,source,active,active
+cork-board,Cork Board,wasserman-cork-board,source,active,active
+cova,Cova,guizimo-cova,source,active,active
+cr8-xyz,Cr8-xyz,dreem-cr8,source,active,active
+crafter,Crafter,haozhe-zhao-crafter,source,active,active
+creative-forge,Creative Forge,harsh-solanki-creative-forge,source,active,active
+crimetryx-ai,CRIMETRYX AI,ar-droid-crimetryx,source,active,active
+css-studio,CSS Studio,motion-css-studio,architecture,active,active
+ctx-space,Context Space,ctx-space,source,active,active
+cuellar-design-skills,Carlos Cuellar Design Skills,cuellar-design-skills,architecture,active,active
+cursor,Cursor,anysphere,architecture,active,active
+cxdesign-agents,CX Design Agents,bruno-cxdesign-agents,source,active,active
+cxdesigner,cxDesinger,sean-zhang-cxdesigner,source,active,active
+cyclecad,cycleCAD,xupeiwust-cyclecad,source,active,active
+d2c,d2c,d2c-lineage,source,active,active
+dafty,Dafty,dafty-brand-studio,architecture,active,active
+dart-design-agent,Dart AI Design Agent,dart-design-delegation,architecture,active,active
+data-formulator,Data Formulator,microsoft-research-data-formulator,source,active,active
+dataevolver,DataEvolver,pris-dataevolver,source,active,active
+datengcad,大腾智能 CAD,dateng-cloud-cad,architecture,active,active
+davinci-resolve,DaVinci Resolve,blackmagic-davinci-resolve,architecture,active,active
+dbx,DBX,dbx-team,source,active,active
+dcc-ai-openai-image,DCC AI OpenAI Image,dcc-mcp-openai-image-skill,source,active,active
+dcc-cua,dcc-cua,dcc-mcp-cua-runtime,source,active,active
+dcc-lookdev,DCC LookDev,dcc-mcp-lookdev-workflow,source,active,active
+dcc-materialx,DCC MaterialX,dcc-mcp-materialx-workflow,source,active,active
+dcc-mcp-3dsmax,DCC-MCP 3ds Max,dcc-mcp-3dsmax-adapter,source,active,active
+dcc-mcp-aftereffects,DCC-MCP After Effects,dcc-mcp-aftereffects-adapter,source,active,active
+dcc-mcp-blender,DCC-MCP Blender,dcc-mcp-blender-adapter,source,active,active
+dcc-mcp-cinema4d,DCC-MCP Cinema 4D,dcc-mcp-cinema4d-adapter,source,active,active
+dcc-mcp-comfyui,DCC-MCP ComfyUI,dcc-mcp-comfyui-adapter,source,active,active
+dcc-mcp-core,DCC-MCP Core,dcc-mcp-core-platform,source,active,active
+dcc-mcp-fpt,DCC-MCP Flow Production Tracking,dcc-mcp-fpt-adapter,source,active,active
+dcc-mcp-freecad,DCC-MCP FreeCAD,dcc-mcp-freecad-adapter,source,active,active
+dcc-mcp-godot,DCC-MCP Godot,dcc-mcp-godot-adapter,source,active,active
+dcc-mcp-houdini,DCC-MCP Houdini,dcc-mcp-houdini-adapter,source,active,active
+dcc-mcp-illustrator,DCC-MCP Illustrator,dcc-mcp-illustrator-adapter,source,active,active
+dcc-mcp-mari,DCC-MCP Mari,dcc-mcp-mari-adapter,source,active,active
+dcc-mcp-marmoset,DCC-MCP Marmoset,dcc-mcp-marmoset-adapter,source,active,active
+dcc-mcp-maya,DCC-MCP Maya,dcc-mcp-maya-adapter,source,active,active
+dcc-mcp-maya-advancedskeleton,DCC-MCP Maya AdvancedSkeleton,dcc-mcp-maya-advancedskeleton-skill,source,active,active
+dcc-mcp-maya-mgear,DCC-MCP Maya mGear,dcc-mcp-maya-mgear-skill,source,active,active
+dcc-mcp-maya-procedural-architecture,DCC-MCP Maya Procedural Architecture,dcc-mcp-maya-procedural-architecture-skill,source,active,active
+dcc-mcp-nuke,DCC-MCP Nuke,dcc-mcp-nuke-adapter,source,active,active
+dcc-mcp-openscad,DCC-MCP OpenSCAD,dcc-mcp-openscad-adapter,source,active,active
+dcc-mcp-openusd,DCC-MCP OpenUSD,dcc-mcp-openusd-adapter,source,active,active
+dcc-mcp-photoshop,DCC-MCP Photoshop,dcc-mcp-photoshop-adapter,source,active,active
+dcc-mcp-renderdoc,DCC-MCP RenderDoc,dcc-mcp-renderdoc-adapter,source,active,active
+dcc-mcp-substance3d-designer,DCC-MCP Substance 3D Designer,dcc-mcp-substance3d-designer-adapter,source,active,active
+dcc-mcp-substance3d-painter,DCC-MCP Substance 3D Painter,dcc-mcp-substance3d-painter-adapter,source,active,active
+dcc-mcp-touchdesigner,DCC-MCP TouchDesigner,dcc-mcp-touchdesigner-adapter,source,active,active
+dcc-mcp-tracy,DCC-MCP Tracy,dcc-mcp-tracy-adapter,source,active,active
+dcc-mcp-unity,DCC-MCP Unity,dcc-mcp-unity-adapter,source,active,active
+dcc-mcp-unreal,DCC-MCP Unreal,dcc-mcp-unreal-adapter,source,active,active
+dcc-mcp-wwise,DCC-MCP Wwise,dcc-mcp-wwise-adapter,source,active,active
+dcc-mcp-zbrush,DCC-MCP ZBrush,dcc-mcp-zbrush-adapter,source,active,active
+dcc-pipeline-publish,DCC Pipeline Publish,dcc-mcp-pipeline-publish-workflow,source,active,active
+dcc-texture-pipeline,DCC Texture Pipeline,dcc-mcp-texture-pipeline-workflow,source,active,active
+dcc-ui-qt-actions,DCC-MCP Qt UI Actions,dcc-mcp-qt-ui-actions-skill,source,active,active
+decibel-designer,Decibel Designer,decibel-designer,source,active,active
+deckestra,Deckestra,sunweitao-deckestra,source,active,active
+deckscript,DeckScript,deckscript-local-first,architecture,active,active
+deepdiagram,DeepDiagram,lingyi-deepdiagram,source,active,active
+deeppcb,DeepPCB,instadeep-deeppcb,architecture,active,active
+deepsite,DeepSite,enzostvs-deepsite,source,active,active
+delements-web-stack,Delements Web Stack,delements-web-stack,source,active,active
+dembrandt,Dembrandt,dembrandt-cli-mcp,source,active,active
+design-agent-skills,Design Agent Skills,wang-yy-design,source,active,active
+design-agents-flow,Design Agents Flow,charlie-design-agents-flow,architecture,active,active
+design-audit-lens,Design Audit Lens,design-audit-lens-plugin,architecture,active,active
+design-canvas,Design Canvas,design-canvas,architecture,active,active
+design-dna,Design DNA,zanwei-design-dna,source,active,active
+design-driven-development,Design-Driven Development,moose-ddd,source,active,active
+design-eng-skills,Design Engineering Skills,farming-design-eng,source,active,active
+design-farmer,Design Farmer,hak-lee-design-farmer,source,active,active
+design-for-ai,design-for-ai,ryan-design-for-ai,source,active,active
+design-harness,Design Harness,knuppe-design-harness,architecture,active,active
+design-jarvis,Design Jarvis,renfei-design-jarvis,source,active,active
+design-md-chrome,TypeUI DESIGN.md Extractor,bergside-design-md-chrome,source,active,active
+design-md-extractor,DESIGN.md Extractor,jpoindexter-design-md-extractor,source,active,active
+design-mode-extension,Design Mode,design-mode-browser-extension,source,active,active
+design-os,Design OS,rudy-design-os,source,active,active
+design-ruler,Design Ruler,xiaofeng-design-ruler,source,active,active
+design-system-builder,Design System Builder,signer-design-system-builder,source,active,active
+design-system-docs-generator,Design System Docs Generator,design-system-docs-generator-plugin,architecture,active,active
+design-system-extraction,Design System Extraction Skill,tuotuo-design-system-extraction,source,active,active
+design-system-inspection-kit,Design System Multi-Point Inspection Kit,brad-frost-ds-inspection,source,active,active
+design-system-sync,Design System Sync,alexander-burgos-design-system-sync,architecture,active,active
+designcanvas,DesignCanvas,poer-designcanvas,source,active,active
+designflow,DesignFlow,designflow-react-flow,source,active,active
+designflow-ai,DesignFlow AI,mrsmartboy-designflow,source,active,active
+designforge-ai,DesignForge AI,codesbyshi-designforge,source,active,active
+designmd,DESIGNmd,designmd-community-registry,architecture,active,active
+designmd-maker-jp,DESIGN.md Maker JP,elephancube-design-spec,architecture,active,active
+designpowers,Designpowers,mc-dean-designpowers,source,active,active
+designpro,Design Pro,onimix-designpro,source,active,active
+deskhand,Deskhand,yuhao-deskhand,source,active,active
+despy,Despy,despy-platform,source,active,active
+deterministic-ai-ui-builder-codeacks,Deterministic AI UI Builder by codeacks,codeacks-deterministic-ui,source,active,active
+deterministic-ai-ui-builder-ujjwal,Deterministic AI UI Builder by ujjwal1541,ujjwal-deterministic-ui,source,active,active
+devin,Devin,cognition-devin,architecture,active,active
+devoraui,DevoraUI,prit-devoraui,source,active,active
+devpilot,DevPilot,devpilot-browser-ide,source,active,active
+diagai,DiagAI,manas-diagai,source,active,active
+diagram-ai,Diagram AI,mohamed-diagram-ai,source,active,active
+diagram-copilot-xidoke,Diagram Copilot by xidoke,xidoke-diagram-copilot,source,active,active
+diagram-creator-pramit,Diagram Creator,pramit-diagram-creator,source,active,active
+diagram-design,Diagram Design,cathryn-diagram-design,source,active,active
+diagram-designer-jointjs,AI JointJS Diagram Editor,diagram-designer-jointjs-team,source,active,active
+diagram-x,Diagram X,diagram-x-team,source,active,active
+diagrams-bunlong,Diagrams,bunlong-diagrams,source,active,active
+diamond-design-ai,Diamond Design AI,queue-solutions-diamond,source,active,active
+dipeo,DiPeO,dipeo-team,source,active,active
+director,director,dubh-director,source,active,active
+disenia,DisenIA,disenia-multidevice-ui,architecture,active,active
+dmaya,dMaya,dmaya-ui-canvas,architecture,active,active
+dograh,Dograh,dograh-voice-agent-platform,source,active,active
+dom-to-pptx,dom-to-pptx,atharva-dom-to-pptx,source,active,active
+donkeywork-agents,DonkeyWork Agents,andyjmorgan-donkeywork,source,active,active
+doodleagent,Doodle Agent,yifank-doodleagent,source,active,active
+dora-ai,Dora AI,dora-ai-platform,architecture,active,active
+dosmos,Dosmos,dosmos,source,active,active
+dotgui,dotGUI,dotgui-format-toolchain,source,active,active
+draftbit,Draftbit,draftbit-app-platform,architecture,active,active
+draftdeckai,DraftDeckAI,muneerali-draftdeckai,source,active,active
+draftwalk,DraftWalk,sammsamy02-draftwalk,source,active,active
+drag-and-swap,Drag-and-Swap,farrelljoswara-drag-and-swap,source,active,active
+drawio-ai-kit,drawio-ai-kit,sparklabx-drawio-ai-kit,source,active,active
+drawio-codex,AI Diagram Generator / Draw.io Codex,jinseo-drawio-codex,source,active,active
+drawio-diagram-builder,Draw.io Diagram Builder Skill,xiaowei-drawio-builder,source,active,active
+drawio-engineering-mcp,Draw.io Engineering MCP,rfingadam-drawio-engineering,source,active,active
+drawio-figure-replicator,Draw.io Figure Replicator,jiaqian-drawio-replicator,source,active,active
+drawio-live-editor,Draw.io Live Editor,drawio-live-editor-team,source,active,active
+drawio-mcp,Draw.io MCP,jgraph-drawio-mcp,source,active,active
+drawio2go,DrawIO2Go,atlas-drawio2go,source,active,active
+drawloop-skill,drawloop-skill,sashika-drawloop,source,active,active
+dreamforge,DreamForge,dreamforge-team,source,active,active
+dreamina,Dreamina,bytedance-dreamina,architecture,active,active
+dreamui,DreamUI,dreamui-noor-maqsood,architecture,active,active
+dressx-ai-suite,DRESSX AI Suite,dressx-fashion-commerce,architecture,active,active
+drup-aid,Drup-AID,drelf-drup-aid,source,active,active
+drupal-canvas,Drupal Canvas,drupal-canvas-community,source,active,active
+drupal-canvas-plugin,Drupal Canvas Plugin,alphons-drupal-canvas-agents,source,active,active
+dstoai,DStoAI,dstoai-context-export,architecture,active,active
+dualite,Dualite,dualite-app-builder,architecture,active,active
+dyad,Dyad,dyad-product,source,active,active
+easeui,EaseUI,easeui-jang,architecture,active,active
+easy-uml,Easy UML,easy-uml-team,source,active,active
+easyeda-copilot,EasyEDA Copilot,biosshot-easyeda-copilot,source,active,active
+eda-agent,EDA Agent,salitronic-eda-agent,source,active,active
+edacraft,EDACraft,ephonic-edacraft,source,active,active
+editable-presentation-studio,Editable Presentation Studio,coille-editable-presentation,source,active,active
+ee-circuit-design-skills,EE Circuit Design Skills,thanabordee-ee-circuit,source,active,active
+efecto,Efecto,efecto-agent-design,architecture,active,active
+effective-html,Effective HTML,plannotator-effective-html,source,active,active
+eigendeck,Eigendeck,dgleich-eigendeck,source,active,active
+electronics-agent-kit,Electronics Agent Kit,o2scale-electronics-kit,architecture,active,active
+embodied-scene-generation,Embodied Scene Generation,pudpawat-embodied-scenes,source,active,active
+emdash-skills,Emdash Skills,megabyte-emdash,source,active,active
+engineering-design-plugin,Engineering Design Agent Skills,straydog-engineering-plugin,source,active,active
+erin-ai-workflow-studio,AI Workflow Studio by Erin,erin-workflow-studio,source,active,active
+eter,ETER,eter-platform,architecture,active,active
+etlaq,Etlaq,etlaq-sa,architecture,active,active
+excalidraw-plugin,Excalidraw Plugin,aryxenv-excalidraw,source,active,active
+exfig,ExFig,designpipe-exfig,source,active,active
+exportflow,ExportFlow,exportflow-figma-webflow,architecture,active,active
+extract-design-system,extract-design-system,arvind-extract-design-system,source,active,active
+fablecut,FableCut,ronak-parmar-fablecut,source,active,active
+fabricio-skills,Fabricio Telles Skills,fabricio-visual-skills,source,active,active
+facade,Facade,facade-exterior-design,architecture,active,active
+fanbox,FanBox,fanbox-workspace,source,active,active
+fast-code-nova,Nova AI Builder in fast-code,shashi-nova,source,active,active
+fastbuild123d,FastBuild123d,devon-fastbuild123d,source,active,active
+figcraft,FigCraft,figcraft-local-visual-agent,architecture,active,active
+figedit,FigEdit,giszzt-figedit,source,active,active
+figma-cli,figma-cli,silships-figma-cli,source,active,active
+figma-console-mcp,Figma Console MCP,southleft-figma-console,source,active,active
+figma-design-agent,Figma Design Agent,figma-design-agent,architecture,active,active
+figma-design-system-skills,Figma Design System Skills,edenspiekermann-figma-ds-skills,source,active,active
+figma-editable-dashboard-skill,Figma Editable Dashboard Skill,fazal-dashboard,source,active,active
+figma-make,Figma Make,figma-make,architecture,active,active
+figma-mcp-bridge,Figma MCP Bridge,hopp-figma-mcp-bridge,source,active,active
+figma-mcp-server,Figma MCP Server,figma-mcp-server,architecture,active,active
+figma-relai,Figma Relai,figma-relai,source,active,active
+figma-to-design-md,Figma to design.md,albert-figma-to-design-md,source,active,active
+figma-to-webflow-starter,Figma to Webflow Starter,produlis-figma-webflow,architecture,active,active
+figma-ui-mcp,figma-ui-mcp,tran-hoai-hung-figma-ui-mcp,source,active,active
+figma-variables-generator,Figma Variables Generator Ecosystem,shanmus4-figma-variables-generator,source,active,active
+figma2webflow-aw,Figma2Webflow-AW,khane-figma2webflow,source,active,active
+figmalint,FigmaLint,southleft-figmalint,source,active,active
+figmirror,FigMirror,vila-figmirror,source,active,active
+figml,FigML,figml-piotr-adrian,architecture,active,active
+figpilot-ai,FigPilot.ai,qutesoft-figpilot,architecture,active,active
+figr,Figr,figr-product-context,architecture,active,active
+figs,FIGS,figs-team,source,active,active
+figsor,Figsor,asif-kabir-figsor,source,active,active
+figspecs,FigSpecs,figspecs-handoff-system,architecture,active,active
+figwright,Figwright,roya-figwright,source,active,active
+firecrawl-open-agent-builder,Open Agent Builder by Firecrawl,firecrawl-agent-builder,source,active,active
+firecrawl-open-lovable,Firecrawl Open Lovable,firecrawl-open-lovable,source,active,active
+fireworks-tech-graph,Fireworks Tech Graph,yizhiyanhua-fireworks-tech-graph,source,active,active
+flato,Flato,flato-native-canvas,architecture,active,active
+flaude,Flaude,flaude-ana-gigashvili,source,active,active
+fleck,Fleck,fleck-agent,architecture,active,active
+floagenticai,FloAgenticAI,dearzubi-floagenticai,source,active,active
+flock-agent-orchestrator,Flock,onelevenvy-flock,source,active,active
+floorplan-interior-render,Floor Plan Interior Render,umair-floorplan-interior-render,source,active,active
+flow-cad,Flow CAD,john-flow-cad,source,active,active
+flow-maker,Flow Maker,run-llama-flow-maker,source,active,active
+flow2go,Flow2Go,gus-flow2go,source,active,active
+flowbase,Flowbase,rrs301-flowbase,source,active,active
+flowforge,FlowForge,krish-flowforge,source,active,active
+flowforge-ai-daniiel,FlowForge AI by Daniel,daniiel-flowforge-ai,source,active,active
+flowforge-skill,FlowForge Skill,wentong-flowforge,source,active,active
+flowise,Flowise,flowiseai-flowise,source,active,active
+flowspect,FlowSpect,lonkins-flowspect,source,active,active
+fluidcad,FluidCAD,fluid-cad-fluidcad,source,active,active
+flutterflow,FlutterFlow,flutterflow,architecture,active,active
+fluvara,Fluvara,fluvara-figma-plugin,architecture,active,active
+fluxorai,FluxorAI,priyanshu-fluxorai,source,active,active
+fluxus,Fluxus,fluxus-team,source,active,active
+fluxwing-skills,Fluxwing Skills,trabian-fluxwing,source,active,active
+foblex-flow,Foblex Flow,foblex-flow-team,source,active,active
+forge-dhruv,Forge by Dhruv Bansal,dhruv-forge,source,active,active
+forge-nihalashetty,Forge by Nihal A. Shetty,nihal-shetty-forge,source,active,active
+forge-projects,Forge Projects,naphat-forge-projects,source,active,active
+forgeai-mousewarriors,ForgeAI by Mousewarriors,mousewarriors-forge,source,active,active
+forgix,Forgix,tanaya-forgix,source,active,active
+forma-ai-service,Forma AI Agent Service,andreyka-forma,source,active,active
+forma-fluens,Forma Fluens,forma-fluens-ui,source,active,active
+fpga-design-agent,FPGA Design Agent,jacobo-fpga-design,source,active,active
+fracta-agent-builder,FRACTA Visual Agent Builder,asheesh-fracta,source,active,active
+frame-bucket,Frame Bucket,mckechniep-frame-bucket,source,active,active
+framelink-mcp,Framelink MCP for Figma,framelink-mcp,source,active,active
+framer-ai,Framer AI,framer,architecture,active,active
+freecad-modeling-skill,FreeCAD Modeling Skill,ranran-freecad-modeling,architecture,active,active
+friction,Friction,friction-simulated-research,architecture,active,active
+froglips,Froglips,jeritano-froglips,source,active,active
+front-end-builder-siddhartha,Front-end Builder by Siddhartha Kumar,siddhartha-front-builder,source,active,active
+frontend-slides,Frontend Slides,zarazhangrui-frontend-slides,source,active,active
+frontend-slides-editable,Frontend Slides Editable,archlizheng-frontend-slides-editable,source,active,active
+fudge,Fudge,fudge-design-reference-agent,architecture,active,active
+fusionmcp,FusionMCP,jaskirat-fusionmcp,source,active,active
+game-creator,game-creator,playable-game-creator,source,active,active
+gamma,Gamma,gamma,architecture,active,active
+garden-skills,Garden Skills,conardli-garden-skills,source,active,active
+gemdesign,GemDesign,gemdesign-ai-prototyping,architecture,active,active
+gemini-notebook,Gemini Notebook,google-gemini-notebook,architecture,active,active
+gemini-resume-builder,Gemini Resume Builder,om-kshirsagar-resume-builder,source,active,active
+genable,Genable,musec-genable,architecture,active,active
+genai-drawio-creator,GenAI DrawIO Creator,genai-drawio-creator-team,source,active,active
+gendesigns,GenDesigns,gendesigns-mobile-ui,architecture,active,active
+generative-ui-app-abhay,Generative UI App by Abhay,abhay-generative-ui,source,active,active
+generative-ui-builder-v3rmxni7,Generative UI Builder,nischay-generative-ui-builder,source,active,active
+genesis-highlevel,GENESIS HighLevel App Builder,genesis-highlevel-builder,source,active,active
+genie-ai-website-builder,Genie AI Website Builder,genie-public-source-lineage,source,active,active
+genjutsu,genjutsu,athevon-genjutsu,source,active,active
+genoffice,GenOffice,genspark-genoffice,source,active,active
+gensite,GenSite,prathamesh-gensite,source,active,active
+gensite-ai-devendra,GenSite AI,gensite-ai-product,source,active,active
+genu-advanced,GenU Advanced,genu-advanced-product,source,active,active
+genui-aman,GenUI by Aman,aman-genui,source,active,active
+genui-dimple,GenUI by Dimple,dimple-genui,source,active,active
+genwebai-artibar,GenWebAI by Artibar,artibar-genwebai,source,active,active
+get-shit-pretty,Get Shit Pretty,jubscodes-gsp,source,active,active
+getui-ai,GetUI.ai,jayesh-getui,source,active,active
+ghosted,Ghosted,megasupersoft-ghosted,source,active,active
+gia-co-design,Gia-co-Design,alpha1-gia,source,active,active
+giselle,Giselle,giselles-ai-platform,source,active,active
+gitary,Gitary,peiiii-gitary,source,active,active
+github-copilot-agent-skills,GitHub Copilot Agent Skills by Thomas Thornton,thomas-copilot-agent-skills,source,active,active
+glide-design,GlideDesign,glide-design-brian-permut,architecture,active,active
+gloria,Gloria,gloria-creative-canvas,architecture,active,active
+gnr8,GNR8,srayash-gnr8,source,active,active
+gnucleus,gNucleus,gnucleus-engineering-ai,architecture,active,active
+google-adk-nocode,No-Code ADK Interface,abhishek-google-adk-nocode,source,active,active
+google-adk-web,Google ADK Web / Visual Agent Builder,google-adk-web,source,active,active
+google-antigravity,Google Antigravity,google-antigravity,architecture,active,active
+google-stitch,Stitch,google-stitch,architecture,active,active
+google-vids,Google Vids,google-workspace-vids,architecture,active,active
+graph-ai,Graph AI,musashimiyomoto-graph-ai,source,active,active
+graphini,Graphini,magnova-graphini,source,active,active
+greatstack-ai-website-builder,GreatStack AI Website Builder course project,greatstack-sitebuilder,source,active,active
+grok-build,Grok Build,grok-build-team,source,active,active
+gstack,gstack,gstack-design-toolchain,source,active,active
+gstack-game,gstack-game,fagemx-gstack-game,source,active,active
+handle,Handle,tonkotsu-handle,source,active,active
+hands-on-deck,hands-on-deck,every-hands-on-deck,source,active,active
+hangover,Hangover,arnav-chhabra-hangover,source,active,active
+hanzo-app,Hanzo App,hanzo-app-product,source,active,active
+heliosgen,HeliosGen,segfault42-heliosgen,source,active,active
+hemline,Hemline,hemline-hemy,architecture,active,active
+heroui,HeroUI,heroui-design-system,source,active,active
+heuristic-ai,Heuristic AI,donghuc-heuristic-ai,source,active,active
+hexcode,HexCode,hexcode-kriti-team,source,active,active
+heym,Heym,heymrun-heym,source,active,active
+higgsfield-skills,Higgsfield Skills,higgsfield-skills,source,active,active
+holst-ai,Холст.ИИ,holst-visual-platform,architecture,active,active
+homebrain,HomeBrain,mefree-homebrain,source,active,active
+homemaker,Homemaker,bayllama-homemaker,source,active,active
+homeverse,HomeVerse,anisha-paturi-homeverse,source,active,active
+hostinger-horizons,Hostinger Horizons,hostinger-horizons,architecture,active,active
+html-ai-diagram-editor,HTML AI Diagram Editor,pulipuli-html-ai-diagram,source,active,active
+html-anything,HTML Anything,nexu-html-anything,source,active,active
+html-video,HTML Video,nexu-html-video,source,active,active
+huashu-design,Huashu Design,huashu-design,source,active,active
+hugoblox,HugoBlox,hugoblox-kit,architecture,active,active
+human-control-plane,Human Control Plane,kevin-astuhuaman-control-plane,source,active,active
+hycanvas,HyCanvas,hyscaler-hycanvas,source,active,active
+hype,Hype,mweingartner-hype,source,active,active
+hyperframes,HyperFrames,heygen-hyperframes,source,active,active
+hyperplane,Hyperplane,hyperplane-html-design-canvas,architecture,active,active
+i-love-agents,I Love Agents,aditthya-i-love-agents,source,active,active
+ian-nuttall-skills,Ian Nuttall Skills,ian-nuttall-skills,source,active,active
+icezone-studio,IceZone Studio,icezone-studio,source,active,active
+icon-design,Icon Design,kalebtec-icon-design,source,active,active
+ideaship,Ideaship,ideaship-product,source,active,active
+idem,Idem,idem-team,source,active,active
+image-ppt-king,Image-PPT-King,tate-image-ppt-king,source,active,active
+image-split,Image Split,tate-image-split,source,active,active
+image-svg-pptx-pro,Image SVG PPTX Pro,kongzhe-image-svg-pptx-pro,source,active,active
+image-to-pptx,Image to PPTX,perpetual-image-to-pptx,source,active,active
+image-to-svg,Image to SVG,zyipeng-image-to-svg,source,active,active
+imagegen-pptx-pipeline,ImageGen PPTX Pipeline,eddy-imagegen-pptx,source,active,active
+img2pptx,img2pptx,wenxuan-img2pptx,architecture,active,active
+impeccable,Impeccable,pbakaus-impeccable,source,active,active
+influencer-studio,Influencer Studio,influencer-studio-video,architecture,active,active
+inkeep-agents,Inkeep Agents,inkeep-agents-platform,source,active,active
+inlumen,inLUMEN,datapact-inlumen,source,active,active
+insightiq,InsightIQ Marketing Studio,insightiq-marketing-studio,source,active,active
+inspector,Inspector,inspector-visual-source-editor,architecture,active,active
+instruckt,Instruckt,joshcirre-instruckt,source,active,active
+integrated-saas-design-agent,Integrated SaaS Design Agent,ashish-integrated-design-agent,source,active,active
+intellidraw,IntelliDraw,intellidraw-team,source,active,active
+intent-design,Design with Intent,ghaida-intent,source,active,active
+interactive-architecture-diagrams,Interactive Architecture Diagrams,konrad-architecture-diagrams,source,active,active
+interview-forge,InterviewForge,azaddon-interview-forge,source,active,active
+ios-design-agent-skill,iOS Design Agent Skill,josh-ios-design-skill,source,active,active
+ipollowork,iPolloWork,devin-axis-ipollowork,source,active,active
+ives,ives,antunes-ives,source,active,active
+jaaz,Jaaz,jaaz-multimodal-canvas,source,active,active
+jarvis-onshape-mcp,Jarvis Onshape MCP,reshef-jarvis-onshape-mcp,source,active,active
+jeda,Jeda.ai,jeda-visual-ai-workspace,architecture,active,active
+jenova,Jenova UI prototype generator,jenova-ui-agent,architecture,active,active
+jezweb-claude-skills,Jezweb Claude Skills,jezweb-claude-skills,source,active,active
+jithin-blender-skill,Blender Agent Skill by Jithin Joseph,jithin-blender-workflow,source,active,active
+jmpy-me,JMPY.me,jmpy-link-qr-platform,architecture,active,active
+jonfermin-cadsmith,Jon Fermin cadsmith,jon-cadsmith,source,active,active
+joysafeter,JoySafeter,jd-joysafeter,source,active,active
+jsdesign-ai,即时设计 AI,jsdesign-ai,architecture,active,active
+k2-vibe,K2 Vibe,k2-vibe-hatif,source,active,active
+kadnya,Kadnya,kadnya-builder-bridge,source,active,active
+kami,Kami,tw93-kami,source,active,active
+kanvas-obsidian,Kanvas,xmihura-kanvas,source,active,active
+kedar-ai-workflow-studio,AI Workflow Studio by Kedar Vartak,kedar-vartak-workflow-studio,source,active,active
+ki-stack,Ki-Stack,milind-ki-stack,source,active,active
+kicad-agent-seahan,KiCad Schematic Design Skill by Seahan,han-kicad-agent,source,active,active
+kicad-analysis-mcp,KiCad Analysis MCP,lamaalrajih-kicad-analysis,source,active,active
+kicad-copilot,KiCad Copilot,biosshot-kicad-copilot,source,active,active
+kicad-cursor,kicad-cursor,furedy-kicad-cursor,architecture,active,active
+kicad-happy,KiCad Happy,aklofas-kicad-happy,source,active,active
+kicad-mcp-pro,KiCad MCP Pro,osman-kicad-mcp-pro,source,active,active
+kicad-mcp-server,KiCAD MCP Server,mixelpixx-kicad-mcp,source,active,active
+kicad-pcba-engineering-skills,KiCad PCBA Engineering Skills,tsukimori-kicad-pcba,source,active,active
+kicad-schematic-kenchan,kicad-schematic by Ken Chan,chan-kicad-schematic,source,active,active
+kicad-skills-ipc,KiCad Skills with IPC API,hubert-kicad-ipc-skills,source,active,active
+kicadai,KiCadAI,hills-kicadai,source,active,active
+kiclaw,KiClaw,kiclaw-kiclaw,source,active,active
+kimi-office,Kimi Docs Sheets and Slides,moonshot-kimi-office,architecture,active,active
+kin3o,kin3o,affromero-kin3o,source,active,active
+kintsugi,Kintsugi,veriteknik-kintsugi,source,active,active
+kiskill,KiSkill,avatarsd-kiskill,source,active,active
+kittl,Kittl,kittl-ai-design,architecture,active,active
+knowforge,KnowForge,knowforge-team,source,active,active
+knowledge-cat-ppt,Knowledge Cat PPT Skill,gnipbao-knowledge-cat-ppt,source,active,active
+kombai,Kombai,kombai,architecture,active,active
+konnect,Konnect,mixelpixx-konnect,source,active,active
+kroneditor,KronEditor,kroneditor-team,source,active,active
+kyh-ai-canvas,AI Canvas by Kaiyu Hsu,kaiyu-hsu-ai-canvas,source,active,active
+landingforge,LandingForge,amarhouse-landingforge,source,active,active
+langflow,Langflow,langflow-platform,source,active,active
+lanhu-to-code,Lanhu to Code,ursazoo-lanhu-to-code,source,active,active
+layer-first-raster-to-svg,Layer-First Raster to SVG,pipi-layer-first,source,active,active
+layermate,Layermate,layermate-figma-agent,architecture,active,active
+layout,Layout,layout-design-system-compiler,architecture,active,active
+learnhouse,LearnHouse,learnhouse-team,source,active,active
+ledgyx,Ledgyx,ineron-ledgyx,architecture,active,active
+leon-ai-agent-builder,AI Agent Builder by Leon,leon-hypers-agent-builder,source,active,active
+lgazo-drawio-mcp,Ladislav Gazo Draw.io MCP Server,lgazo-drawio-mcp,source,active,active
+lineforge,lineforge,rfingadam-lineforge,source,active,active
+litho,Litho,litho-team,source,active,active
+live-diagramming-copilot,Live Diagramming Copilot,live-diagramming-team,source,active,active
+livediagram,LiveDiagram,livediagram-team,source,active,active
+llm-website-generator-yuzai,LLM Website Generator by Yuzai Akira,yuzai-llm-site-generator,source,active,active
+llmo-diagram-generator,LLMO AI Diagram Architect,nova-llmo,source,active,active
+local-design-canvas,Local Design Canvas,nguyen-local-design-canvas,source,active,active
+local-visual-agent-workflow,Local Visual Agent Workflow,amitesh-local-workflow,source,active,active
+localoffice,LocalOffice,zohaib-localoffice,source,active,active
+locofy,Locofy,locofy-design-to-code,architecture,active,active
+logo-generator-skill,Logo Generator,guicang-logo-generator,source,active,active
+loom-architecture,Loom Architecture Weaver,flyingcat-loom,source,active,active
+loomic,Loomic,fancyboi999-loomic,source,active,active
+lovable,Lovable,lovable,architecture,active,active
+lovart,Lovart,lovart-chatcanvas,architecture,active,active
+luma-ai-studio,LUMA AI Studio,krishal-luma,source,active,active
+lunima,Lunima,aignermax-lunima,source,active,active
+lzbot-5000,LZBot 5000,lzbot-5000-team,source,active,active
+m2-canvas,M2 Canvas,m2-code-component-canvas,architecture,active,active
+maf-agent-builder-canvas,MAF Agent Builder Canvas,dcnsakthi-maf-canvas,source,active,active
+magic-patterns,Magic Patterns,magic-patterns,architecture,active,active
+magicpath,MagicPath,newcompute-magicpath,architecture,active,active
+make-my-website-ai,MakeMyWebsite AI,make-my-website-ai,source,active,active
+manalkaff-opendesign,OpenDesign by Manal Kaff,manal-opendesign,source,active,active
+manim-agent,Manim Explainer Agent,murtaza-manim-agent,source,active,active
+markdown-exporter,Markdown Exporter,bowen-markdown-exporter,source,active,active
+markdownflows,MarkdownFlows,dotnetfactory-markdownflows,source,active,active
+marmo-ui,Marmo UI,marmoui-agent-system,source,active,active
+marp-slides-template,Marp Slides Template,marp-template-team,source,active,active
+mash-kicad-skills,KiCad Skills by mash,ohtsuka-kicad-skills,source,active,active
+massing,Massing,ibuilder-massing,source,active,active
+master-ai-design-system,Master AI Design System,mohamed-master-ai-design-system,source,active,active
+master-canvas,Master Canvas,wasserman-master-canvas,source,active,active
+mastergo-ai,MasterGo AI,mastergo-ai,architecture,active,active
+mcp-cad,mcp-cad,andiveli-mcp-cad,source,active,active
+mcp-cst-studio,mcp-cst-studio,rfingadam-cst-studio,source,active,active
+mcp-excalidraw,mcp_excalidraw,yctimlin,source,active,active
+mcp-link-fusion,MCP-Link for Autodesk Fusion,aura-mcp-link-fusion,source,active,active
+mcp-ltspice-qucs,mcp-ltspice-qucs,rfingadam-ltspice-qucs,source,active,active
+mcp-nec2-antenna,mcp-nec2-antenna,rfingadam-nec2,source,active,active
+mcp-openems,mcp-openems,rfingadam-openems,source,active,active
+mcp-pcb-emcopilot,mcp-pcb-emcopilot,rfingadam-pcb-emcopilot,source,active,active
+mcpyats,MCPyATS,automateyournetwork-mcpyats,source,active,active
+mdma,MDMA,mobile-reality-mdma,source,active,active
+medpaper-assistant,MedPaper Assistant,medpaper-assistant-team,source,active,active
+melaya,Melaya Agent Builder,melaya-agent-builder,architecture,active,active
+mengto-agent-skills,Meng To Agent Skills,mengto-skills,source,active,active
+merchmate,MerchMate AI,syu-merchmate,source,active,active
+mermaid-agent,Mermaid Agent,mermaid-agent-team,source,active,active
+mermaid-chart-vscode,Mermaid Chart for VS Code,mermaid-chart-vscode,source,active,active
+mermaid-live-desktop,Mermaid Live Desktop,cagri-mermaid-live,source,active,active
+mermaid-studio-catfox,MermaidStudio by CatFoxVoyager,mermaid-studio-catfox-team,source,active,active
+mermaid-studio-workers,Mermaid Studio on Workers,mermaid-studio-workers-team,source,active,active
+mermaidgen,MermaidGen,adimaryanto-mermaidgen,source,active,active
+mermaidgenie,MermaidGenie,mermaidgenie-team,source,active,active
+mermalaid,Mermalaid,mermalaid-team,source,active,active
+mermark-editor,MerMark Editor,mermark-team,source,active,active
+michpro-kicad-tools,kicad-tools Agent Skill by Michal Protasowicki,protasowicki-kicad-skill,source,active,active
+micracode,Micracode,micracode-product,source,active,active
+milestone-designer,Milestone Designer,kenmulford-milestone-designer,source,active,active
+millwright,Millwright,raylan-millwright,source,active,active
+mimic-ai,Mimic AI,mimic-figma-agent,source,active,active
+mimo-canvas,MimoCanvas,mimo-canvas-team,source,active,active
+mindgraph,MindGraph,mindgraph-team,source,active,active
+mira-animator,Mira Animator,sandeco-mira,source,active,active
+miro-prototypes,Miro Prototypes,miro-prototypes,architecture,active,active
+misko-circuits,circuits by Misko,misko-circuits,source,active,active
+mkitflow,MKitFlow,mkitplug-mkitflow,architecture,active,active
+mobirise-ai,Mobirise AI,mobirise-ai,architecture,active,active
+modao-ai,墨刀 AI,modao-ai,architecture,active,active
+modernui-maker,ModernUI Maker,modernui-maker-product,source,active,active
+monet,Monet,het-patel-monet,source,active,active
+monogatari,Monogatari,sakalio-monogatari,source,active,active
+montevive-penpot-mcp,Montevive Penpot MCP,montevive-penpot-mcp,source,active,active
+morfis,Morfis,morfis-snt,architecture,active,active
+motion-previs-studio,Motion Previs Studio,wasserman-motion-previs-studio,source,active,active
+mowgli,Mowgli,mowgli-spec-driven-design,architecture,active,active
+multi-agent-cad,Multi-Agent CAD,pan-chera-mac,source,active,active
+mydesign-md,MYDESIGN.MD,mydesignmd-evidence-spec,architecture,active,active
+myn8n,MyN8N,myn8n-team,source,active,active
+n8n-ai-workflow-builder-w3jdev,N8N AI Workflow Builder by W3JDev,w3jdev-n8n-ai-workflow-builder,source,active,active
+n8n-workflow-builder-mcp,n8n Workflow Builder MCP Server,yasin-n8n-workflow-builder,source,active,active
+naano-wp-ai-builder,Naano WP AI Website Builder,naano-wordpress-builder,source,active,active
+naaviq,Naaviq,chandradot99-naaviq,source,active,active
+naklikam,Naklikam,tedysek-naklikam,source,active,active
+naksha-studio,Naksha Studio,aditya-naksha-studio,source,active,active
+nanadraw,NanaDraw,nanadraw-team,source,active,active
+nativebot,NativeBot,eason-nativebot,source,active,active
+nature-figure-studio,Nature Figure Studio,chenyuanfan-nature-figure-studio,source,active,active
+nature-skills,nature-skills,nature-skills-lineage,source,active,active
+nemoclaw-game-factory,NemoClaw Game Factory,nemoclaw-game-factory-product,source,active,active
+neo-studio,Neo Studio V2,moodpixel-neo-studio,source,active,active
+nexabuild-aqib,NexaBuild by Aqib Ahmed,aqib-nexabuild,source,active,active
+next-ai-draw-io,Next AI Draw.io,dayuan-next-ai-draw-io,source,active,active
+nextflow-aadithyanas,Nextflow by Aadithyan A.S,aadithyan-nextflow,source,active,active
+nextflow-ai-workflow-builder,NextFlow AI Workflow Builder,aman-nextflow,source,active,active
+nika-character-studio,Nika Character Studio,hi-unikitty-nika,source,active,active
+nimbalyst,Nimbalyst,nimbalyst,source,active,active
+nlj-platform,NLJ Platform,nlj-platform-team,source,active,active
+no-code-ai-workflow-codexnever,AI Workflow Builder by Codexnever,codexnever-no-code-workflow,source,active,active
+node-canvas,Node Canvas,ozoshanniao-node-canvas,source,active,active
+nodebase-ai-workflow-builder,NodeBase AI Workflow Builder,nikhil-vs-nodebase,source,active,active
+nodemind,NodeMind,kashyap-nodemind,source,active,active
+noemuch-bridge,Bridge,noemuch-bridge,source,active,active
+noir-dev,NOIR.dev,radz-noir,source,active,active
+note-gen,NoteGen,notegen-team,source,active,active
+notebooklm-py,notebooklm-py,teng-notebooklm-adapter,source,active,active
+nuxt-ai-drawio,Nuxt AI Draw.io,nuxt-ai-drawio-team,source,active,active
+nxtbuild,NxtBuild,nxtbuild-product,source,active,active
+nyno,Nyno,flowagi-nyno,source,active,active
+oboto,Oboto,oboto-surfaces,source,active,active
+office-design-toolkit,Office Design Toolkit,astro-office-design,architecture,active,active
+office-raccoon,Office Raccoon,sensetime-office-raccoon,architecture,active,active
+officebuddy,OfficeBuddy,zhihui-officebuddy,source,active,active
+officecli,OfficeCLI,iofficeai-officecli,source,active,active
+ogata-ai,ogaTa.ai,ogata-ai-product,source,active,active
+oh-my-design,oh-my-design,kwak-seongjae-oh-my-design,source,active,active
+okkslides,OkkSlides,autogent-okkslides,architecture,active,active
+omnimcp,OmniMCP,travor-omnimcp,source,active,active
+one-aida,one.com Aida,one-aida,architecture,active,active
+oneui,1UI,oneui-platform,architecture,active,active
+onlook,Onlook,onlook,source,active,active
+onlyoffice-ai-editors,ONLYOFFICE AI Editors,onlyoffice-ai-editors,source,active,active
+onshape-mcp,Onshape MCP,hedless-onshape-mcp,source,active,active
+onui,onUI,onui,source,active,active
+open-agent-builder,Open Agent Builder,open-agent-builder-team,source,active,active
+open-ai-design-agent,Open AI Design Agent,muapi-open-ai-design-agent,source,active,active
+open-claude,Open Claude,damien-open-claude,source,active,active
+open-codesign,Open CoDesign,opencoworkai,source,active,active
+open-design,Open Design,nexu-open-design,source,active,active
+open-generative-ui,Open Generative UI,copilotkit-open-generative-ui,source,active,active
+open-gumloop,Open Gumloop,composio-open-gumloop,source,active,active
+open-pencil,OpenPencil,openpencil,source,active,active
+openada,OpenADA,simra-openada,source,active,active
+openagent,OpenAgent by DeepFlowAI,deepflowai-openagent,source,active,active
+openai-codex,Codex,openai-codex,source,active,active
+opencad,OpenCAD,caid-opencad,source,active,active
+opencanvas-ai,OpenCanvas,opencanvas-ai-desktop,source,active,active
+opendiagram,OpenDiagram,rupam-opendiagram,source,active,active
+openflow-ai-studio,OpenFlow,nazih-khelifa-openflow,source,active,active
+openflowkit,OpenFlowKit,vrun-openflowkit,source,active,active
+openkombai,OpenKombai,hrishikesh-bania-openkombai,source,active,active
+openmaic,OpenMAIC,openmaic-team,source,active,active
+openmontage,OpenMontage,calesthio-openmontage,source,active,active
+openpage,OpenPage,buildingopen-openpage,source,active,active
+openpencil-zseven,OpenPencil ZSeven,zseven-w,source,active,active
+openscad-agent,OpenSCAD Agent,ian-openscad-agent,source,active,active
+opentopos,OpenTopos,yipeng-opentopos,source,active,active
+openui,OpenUI,thesys-openui,source,active,active
+openvibecoding,OpenVibeCoding,tencent-openvibecoding,source,active,active
+opsiforce,Opsiforce,opsima-opsiforce,source,active,active
+optiaxiom,Optiaxiom,optimizely-axiom-design-system,source,active,active
+opticalmodeler,OpticalModeler,telux-opticalmodeler,source,active,active
+orbis,Orbis,orbis-local-first,architecture,active,active
+orca-ide,Orca IDE,stably-orca,source,active,active
+orchestral-ai,Orchestral AI,binaryshrey-orchestral,source,active,active
+osw-studio,OSW Studio,osw-studio-product,source,active,active
+owox-data-marts,OWOX Data Marts,owox-data-marts,source,active,active
+owox-model-canvas,OWOX Model Canvas,owox-model-canvas,source,active,active
+pagegen,PageGen,memfree-pagegen,source,active,active
+pagepilot,PagePilot,galih-pratama-pagepilot,source,active,active
+panth-pagebuilder-ai,Panth PageBuilder AI,panth-pagebuilder-ai,source,active,active
+paper,Paper,lost-coast-paper,architecture,active,active
+paper-framework-figure-studio-pro,Paper Framework Figure Studio Pro,c-narcissus-figure-studio,architecture,active,active
+paper-to-any-studio,Paper to Any Studio / Nexus,paper-to-any-studio,architecture,active,active
+paper-to-schematic,Paper to Schematic,steremberg-paper-schematic,source,active,active
+paper2any,Paper2Any,opendcai-paper2any,source,active,active
+paper2poster,Paper2Poster,paper2poster-project,source,active,active
+paper2slides,paper2slides,inhyeoklee-paper2slides,source,active,active
+paraflow,Paraflow,paraflow-product-design,architecture,active,active
+partmode,PartMode,bomwiki-partmode,source,active,active
+pascal-skills,Pascal Skills,pascal-visual-skills,source,active,active
+pbi-cli,pbi-cli,mina-saad-pbi-cli,source,active,active
+pcb-agent-teams,PCB-Agent-Teams,zane-pcb-teams,source,active,active
+pcba-design-skills,PCBA Design Skills,keitark-pcba-skills,source,active,active
+pega-blueprint,Pega Blueprint,pega-blueprint,architecture,active,active
+pen-dev,pen.dev,high-agency-pen,architecture,active,active
+pen-editor,Pen Editor,dan-rozhkov-pen-editor,source,active,active
+penboard,PenBoard,penboard-zseven,source,active,active
+penpot,Penpot,penpot-platform,source,active,active
+penpot-ai-kit,Penpot AI Kit,penpot-ai-kit,source,active,active
+phantom-raffay,PHANTOM by Mohammad Abdul Raffay,phantom-raffay,source,active,active
+picwise-ai,PicWise.ai,qutesoft-picwise,architecture,active,active
+pigcasso-canvas,Pigcasso Canvas,kevin-lin-pigcasso,source,active,active
+pilot-marketing-ai-design-system,Pilot Marketing AI Design System,pilot-marketing-ai-ds,source,active,active
+pinvou-agent,Pinvou Agent,pinvou-agent,source,active,active
+pippit,Pippit AI Design,bytedance-pippit,architecture,active,active
+pitch-craft,Pitch Craft,pitch-craft-product,source,active,active
+pix,Pix,skobak-pix,source,active,active
+pixelruller,PixelRuller,kalotrapezis-pixelruller,source,active,active
+pixso,Pixso,pixso-bosiyunchuang,architecture,active,active
+planet-ai-workflow,Planet AI Workflow Builder,dhanu81-planet-ai,source,active,active
+plannotator,Plannotator,plannotator-review,source,active,active
+playcode,PlayCode AI,playcode-ai-builder,architecture,active,active
+plexui-bridge,PlexUI AI Bridge,plexui-token-bridge,architecture,active,active
+plumb-mcp,Plumb,tathagat-maitray-plumb,source,active,active
+poco,Poco,poco-agent-coworker,source,active,active
+polaris-umang,Polaris by Umang,umang-polaris,source,active,active
+polysynergy,PolySynergy,dionsnoeijen-polysynergy,source,active,active
+posecode,Posecode,posecode-project,source,active,active
+power-platform-full-stack-skills,Power Platform Full Stack Skills,scott-power-platform-skills,source,active,active
+powerpoint-business,PowerPoint Business,lizheng-powerpoint,source,active,active
+ppt-as-code,PPT as Code,russell-ppt-as-code,source,active,active
+ppt-design-prompt,PPT Design Prompt,russell-ppt-design-prompt,source,active,active
+ppt-master,PPT Master,hugo-he-ppt-master,source,active,active
+ppt-saas,PPT SaaS,shibin-ppt-saas,source,active,active
+pptist,PPTist,pipipi-pikachu-pptist,source,active,active
+pradaslides,PradaSlides,prodige-pradaslides,architecture,active,active
+prefab,Prefab,prefect-prefab,source,active,active
+premium-vector-icon-designer,Premium Vector Icon Designer,suli-vector-icon,source,active,active
+premium-website-generator-edouard,Premium Website Generator by Edouard Kerwing,edouard-premium-generator,source,active,active
+presentation-ai,ALLWEONE Presentation AI,allweone-presentation-ai,source,active,active
+presentation-app,Presentation App,jerryliu-presentation-app,source,active,active
+presentation-skill,Presentation Skill,siril-presentation-skill,source,active,active
+presenton,Presenton,presenton-ai-presentations,source,active,active
+preso,Preso,preso-presentation-engine,architecture,active,active
+preso-ai,Preso AI,atharva-preso-ai,source,active,active
+primo,Primo,primo-cms,source,active,active
+product-diagram-copilot,Product Diagram Copilot,tuaran-product-diagram,source,active,active
+prompt-to-app,Prompt To App,prompt-to-app-builder,architecture,active,active
+prompt-to-app-pradeep,Prompt-to-App AI Code Generator by Pradeep,pradeep-prompt-app,source,active,active
+prompt-to-design,Prompt.to.design,superun-prompt-to-design,architecture,active,active
+prompt-to-ui-sanyam,Prompt to UI by Sanyam Bassi,sanyam-bassi-prompt-to-ui,source,active,active
+prompt-to-website-padala,Prompt-to-Website Generator by Varun Padala,padala-prompt-to-website,source,active,active
+prompt-ui-ayesha-mahek,Prompt-UI by Ayesha and Mahek,ayesha-mahek-prompt-ui,source,active,active
+prompt2cad,Prompt2CAD,prompt2cad-agent,architecture,active,active
+prompt2site-jay,Prompt2Site by Jay Sankopal,jay-prompt2site,source,active,active
+prompt2ui-sully,Prompt2UI by Sully Omar,sully-prompt2ui,source,active,active
+promptcraft-ai,PromptCraft AI,krish-promptcraft,source,active,active
+promptly,Promptly,promptly-simran,source,active,active
+promptonent,PromptOnent,promptonent-product,source,active,active
+prompttoapp-sahil,PromptToApp by Sahil Tanwani,sahil-prompttoapp,source,active,active
+promptui-devsakshi,PromptUI by devSakshi022R,promptui-devsakshi-product,source,active,active
+promptui-tushar,PromptUI by Tushar Mokal,tushar-promptui,source,active,active
+pronghorn,Pronghorn,government-alberta-pronghorn,source,active,active
+proofshot,ProofShot,proofshot-lineage,source,active,active
+protome,Proto-me,protome-codex-skills,source,active,active
+prototype-to-figma-skill,Prototype to Figma Skill,alima-prototype-to-figma,source,active,active
+psenger-agent-skills,Philip Senger AI Agent Skills,senger-agent-skills,source,active,active
+puck,Puck,puck-editor,source,active,active
+qbic,QBIC,qbic-mcp,source,active,active
+qoderwork-design,QoderWork Design,qoder,architecture,active,active
+qoqo,QoQo,qoqo-distributed,architecture,active,active
+qt-agent-skills,Qt Agent Skills,qt-agent-skills,source,active,active
+quibly,Quibly,rohit-quibly,source,active,active
+quill-ai,Quill AI,tovrr-quill,source,active,active
+quilter,Quilter,quilter-pcb,architecture,active,active
+quiverai,QuiverAI,quiverai-vector-platform,architecture,active,active
+quorve,Quorve,jedidiahdev-quorve,source,active,active
+qwen-blender,Qwen MM Plugins Blender,qwen-blender,source,active,active
+qwen-freecad,Qwen MM Plugins FreeCAD,qwen-freecad,source,active,active
+qwen-video-edit,Qwen MM Plugins Video Edit,qwen-video-edit,source,active,active
+ragflow,RAGFlow,infiniflow-ragflow,source,active,active
+raj-ai-app-builder,RAJ AI App Builder,raj-cerebras-builder,source,active,active
+rampstack-skills,RampStack Brand Build Skills,rampstack-brand-build,source,active,active
+react-ai-component-builder-synytsin,React AI Component Builder by Artem Synytsin,synytsin-react-builder,source,active,active
+react-component-generator-mohit,React Component Generator by Mohit Kumar,mohit-component-generator,source,active,active
+reactor-admineral,Reactor by admineral,admineral-reactor,source,active,active
+recombyn,Recombyn,recombyn-canvas-agent,source,active,active
+recraft,Recraft,recraft-studio,architecture,active,active
+redesignr-ai,Redesignr AI,web5lab-redesignr,architecture,active,active
+reel-studio,Reel Studio,reel-agent-video,architecture,active,active
+refly,Refly,refly-agentic-workspace,source,active,active
+reframe,Reframe,reframe,source,active,active
+reicon,Reicon,dev-chauhan-reicon,source,active,active
+relume,Relume,relume,architecture,active,active
+remotion,Remotion,remotion-agent-era,source,active,active
+remotion-ai-video-template,Remotion AI Video Template,remotion-ai-video-template,source,active,active
+remotion-prompt-to-motion-graphics,Remotion Prompt to Motion Graphics,remotion-prompt-to-motion-graphics,source,active,active
+replay,Replay,replay-recorded-design-system,architecture,active,active
+replit-design,Replit Design,replit,architecture,active,active
+reqwise-figma-mcp,Reqwise Figma MCP,hoangpm96-reqwise-figma-mcp,source,active,active
+resonance-ai,Resonance AI,sjchem-resonance-ai,source,active,active
+resource2skill,Resource2Skill,microsoft-resource2skill,source,active,active
+resume-matcher,Resume Matcher,resume-matcher-project,source,active,active
+retune,Retune,retune,source,active,active
+reveal-presentations,Reveal Presentations,goda-reveal-presentations,source,active,active
+reversa,Reversa,sandeco-reversa,source,active,active
+review-gate,Review Gate,lakshman-review-gate,source,active,active
+rfingadam-mcp-blender,RFingAdam mcp-blender,rfingadam-mcp-blender,source,active,active
+rflect,RFlect,rfingadam-rflect,source,active,active
+rhino-grasshopper-mcp,Rhino Grasshopper MCP,dongwoo-suk-rhino-grasshopper,source,active,active
+rhino-mcp,RhinoMCP,reer-rhino-mcp,source,active,active
+rivet-design,Rivet,rivet,architecture,active,active
+rjwalters-kicad-tools,kicad-tools by Robb Walters,walters-kicad-tools,source,active,active
+rocketpen,RocketPen,rocketpen-figma-plugin,architecture,active,active
+rocketride,RocketRide,rocketride-pipeline-platform,source,active,active
+rocketsmith,RocketSmith,ppak-rocketsmith,source,active,active
+rosebud-ai,Rosebud AI,rosebud-game-creator,architecture,active,active
+rpaforge,RPAForge,rpaforge-team,source,active,active
+ruth-v3,RUTH V3,core-brim-ruth-v3,source,active,active
+rw-consulting-ppt,RW Consulting PPT,pikapika-rw-consulting-ppt,source,active,active
+ryze-ui-agent-mazhar,Ryze UI Agent by Mohd Mazhar Khan,mazhar-ryze,source,active,active
+ryze-ui-generator-rohit,Ryze UI Generator by Rohit Kumar,rohit-ryze,source,active,active
+ryzeai-lakshmi,RyzeAI by Lakshmiprasanth,lakshmi-ryzeai,source,active,active
+ryzen-ai-anushka,Ryzen AI by Anushka Chaudhary,anushka-ryzen,source,active,active
+s-stack,Scott's Dope Skills,tolinski-s-stack,source,active,active
+sam-pdf-studio,Sam PDF Studio,wasserman-sam-pdf-studio,source,active,active
+sandboxd,sandboxd,tastyeffect-sandboxd,source,active,active
+scad-webmcp,SCAD WebMCP,jherr-scad-webmcp,source,active,active
+sceneconductor,SceneConductor,kim-sceneconductor,source,active,active
+sci-figure,sci-figure,xiao-yuling-sci-figure,source,active,active
+scientific-illustrator,Scientific Illustrator,icebird-scientific-illustrator,source,active,active
+scifig,SciFig,scifig-platform,architecture,active,active
+scriptbreak,ScriptBreak,wasserman-scriptbreak,source,active,active
+scylla-diagram-skill,ScyllaDB Diagram Skill,scylla-diagram-skill-team,source,active,active
+sdd-de,SDD-DE,roy-sdd-de,source,active,active
+sdd-diagram-copilot,SDD Diagram Copilot,sdd-diagram-team,source,active,active
+seaslides,SeaSlides,touying-seaslides,source,active,active
+seko,Seko,sensetime-seko,architecture,active,active
+self-review,Self-Review,motiful-self-review,source,active,active
+sensenova-skills,SenseNova Skills,sensenova-office-skills,source,active,active
+seo-image-renamer-figma,SEO Image Renamer,wwwhat-seo-image-renamer,architecture,active,active
+serendie-ai,Serendie Design System AI,serendie-design-system,source,active,active
+serpentine3d,Serpentine3D,banzi-serpentine3d,source,active,active
+shad-expo-studio,Shad Expo Studio,limin-shad-expo,source,active,active
+shadway,Shadway,shadway-product,source,active,active
+shain-design-system-skill,Shain Design System Skill,shain-design-system,architecture,active,active
+shain-designer-kit,Shain Designer Kit,shain-designer-kit,source,active,active
+shakedroid,Shakedroid,shakedroid,source,active,active
+shakespeare,Shakespeare,shakespeare-browser-app-builder,source,active,active
+shape,Shape,shape-desktop-ide,source,active,active
+shopnest,ShopNest,karanvir-shopnest,source,active,active
+silvercraft-ai,SilverCraft AI,yathik-silvercraft,source,active,active
+sim,Sim,simstudioai-sim,source,active,active
+simcorrect,SimCorrect,caid-simcorrect,source,active,active
+simonkurtz-drawio-mcp,Simon Kurtz Draw.io MCP Server,simonkurtz-drawio-mcp,source,active,active
+simplecore-board-parity-walk,SimpleCORE Board Parity Walk,simplecore-board-parity,architecture,active,active
+simplecore-svg-diagrams,SimpleCORE SVG Diagrams,simplecore-svg-diagrams,source,active,active
+simplecore-wireframe-boards,SimpleCORE Wireframe Boards,simplecore-wireframe-boards,source,active,active
+sio,Sio,sio-usability-study,architecture,active,active
+sirelia,Sirelia,aaron-sirelia,source,active,active
+siteforge-ai-maf,SiteForge AI by Maf-Kelvin,maf-kelvin-siteforge,source,active,active
+siteforge-ai-psa,SiteForge AI by P Sreyanshu Anupam,psa-siteforge-ai,source,active,active
+sitegen-ai-mohamad,SiteGen AI,mohamad-amjad-sitegen,source,active,active
+sketch-chat,AI Diagram / Sketch.chat,vishal-sketch-chat,source,active,active
+sketchforge,SketchForge,formsmith-sketchforge,source,active,active
+skillstead,Skillstead,kyungseo-skillstead,source,active,active
+slate,Slate,wasserman-slate,source,active,active
+slide-promax,Slide ProMax,dinh-slide-promax,source,active,active
+slideagent,SlideAgent / DynaSlide,slideagent-dynaslide,source,active,active
+slidefinder,SlideFinder,aymen-slidefinder,source,active,active
+slideflow,SlideFlow,xiaoyesoso-slideflow,source,active,active
+slides-grab,slides-grab,nomadamas-slides-grab,source,active,active
+slidex,SlideX,slidex-presentation,architecture,active,active
+smart-mermaid-assistance,Smart Mermaid Assistance,daewu-smart-mermaid,source,active,active
+smartmodeler,SmartModeler,yusuf-eminoglu-smartmodeler,source,active,active
+smythos-studio,SmythOS Studio,smythos-studio-platform,source,active,active
+software-design-mermaid-mcp,Software Design Mermaid MCP,software-design-mermaid-mcp-team,source,active,active
+solidpilot,SolidPilot,eyfel-solidpilot,source,active,active
+solidworks-ai-cover-generator,SOLIDWORKS AI Cover Generator,regoletto-cover-generator,source,active,active
+solidworks-automation-skill,SolidWorks Automation Skill,wzyn-solidworks-automation,source,active,active
+soniq,Soniq,rachitt-soniq,source,active,active
+soulcanvas,灵境画布,soulcanvas-visual-asset-agent,architecture,active,active
+spaceforge,Spaceforge,ron-reiter-spaceforge,source,active,active
+spark-to-paper-skills,spark-to-paper-skills,vast-spark-to-paper,source,active,active
+sparkbench,SparkBench,photon-sparkbench,source,active,active
+sparkui,SparkUI,sparkui-abbaas,architecture,active,active
+sparo-os,Sparo OS,gcwing-sparo-os,source,active,active
+specula-bos,Specula BOS,specula-bos,architecture,active,active
+specula-framework,SPECULA Framework,specula-framework,source,active,active
+specula-method,Specula Method,specula-method,source,active,active
+specula-skill,SPECULA Skill,specula-skill,source,active,active
+squarespace-blueprint,Squarespace Blueprint AI,squarespace-blueprint,architecture,active,active
+sre-design,SRE Design,sre-design-team,source,active,active
+stagewise,stagewise,stagewise,source,active,active
+starrykit,StarryKit,starrykit-visual-design,architecture,active,active
+statecraft,Statecraft,statecraft-code-journeys,architecture,active,active
+step1,Step1,step1-website-builder,architecture,active,active
+stick,Stick,atiqullah-naemi-stick,source,active,active
+stitch-clone-khandev,Stitch Clone by Irfan Khan,irfan-stitch-clone,source,active,active
+stitch-kit,stitch-kit,booplex-stitch-kit,source,active,active
+story-blocks,Story Blocks,story-blocks-team,source,active,active
+story-video-editor,Story AI Video Editor,story-movie-agent,architecture,active,active
+storyboard-reference-studio,Storyboard Reference Studio,wasserman-storyboard-reference-studio,source,active,active
+stride-gpt,STRIDE GPT,stride-gpt-team,source,active,active
+stylekit,StyleKit,anx-stylekit,source,active,active
+styleseed,StyleSeed,bitjaru-styleseed,source,active,active
+subcortex-visualization-skill,Subcortex Visualization Skill,ma-subcortex,source,active,active
+subframe,Subframe,subframe,architecture,active,active
+substrata,Substrata,gantasmo-substrata,source,active,active
+sumi,Sumi,phazur-sumi,source,active,active
+super-design-skills,Super Design Skills,nick-super-design-skills,architecture,active,active
+superdesign,Superdesign,superdesign,source,active,active
+superdesign-mcp,Superdesign MCP Server,jonthebeef-superdesign-mcp,source,active,active
+superinterface,Superinterface,superinterface-open-core,source,active,active
+superun,Superun,superun-platform,architecture,active,active
+svg-creation-skill,SVG Creation Skill,itay-svg-creation,source,active,active
+svg-factory,SVG Factory,abdy-svg-factory,source,active,active
+svg-icon-skills,SVG Icon Skills,muxia-svg-icons,source,active,active
+svgenius-figma,SVGenius for Figma,svgenius-dmitrii-teleganov,architecture,active,active
+swark,Swark,swark-team,source,active,active
+swe-atlas,SWE Atlas,syahiid-swe-atlas,source,active,active
+sylang-studio,Sylang Studio,sylang-studio-team,source,active,active
+synapese-25,Synapese 25,synapese-layout-generator,source,active,active
+synapse-app-builder,Synapse App Builder,andre-synapse-app-builder,source,active,active
+synthesisui,SynthesisUI,synthesisui-contract-system,architecture,active,active
+synthezy,Synthezy,pritam-synthezy,source,active,active
+syntropy,Syntropy,prateet-mishra-syntropy,source,active,active
+system-prompt,System Prompt,codyadam-system-prompt,source,active,active
+sysvis-ai,SysVis.AI,sysvis-ai-team,source,active,active
+tabularis,Tabularis,tabularis-team,source,active,active
+takumi,Takumi,sejal-takumi,source,active,active
+talk-to-your-slides,Talk-to-Your-Slides,talk-to-your-slides,source,active,active
+talktofigma,TalkToFigma,talktofigma-maintainers,source,active,active
+taploop-studio,Taploop Studio,taploop-studio,architecture,active,active
+taskstream,TaskStream,jason-zhu-taskstream,source,active,active
+taste-skills,Taste-Skills,dragoon-taste,source,active,active
+teable,Teable,teable-ai-data-platform,architecture,active,active
+techdraw,TechDraw,sai-techdraw,source,active,active
+tellr,tellr,databricks-tellr,source,active,active
+tempad-dev,TemPad Dev,baidu-efe-tempad-dev,source,active,active
+tenali-v1,Tenali v-1,tenali-v1,source,active,active
+tencent-codebuddy,CodeBuddy,tencent-cloud-codebuddy,architecture,active,active
+terravision,TerraVision,patrick-terravision,source,active,active
+tersa,Tersa,vercel-labs-tersa,source,active,active
+tesslate-agent-builder,Tesslate Agent Builder,tesslate-agent-builder,source,active,active
+tessra,Tessra,ayush-tessra,source,active,active
+text-to-cad,Text to CAD,earthtojake-text-to-cad,source,active,active
+text-to-cad-coach,Text-to-CAD Coach,jon-text-to-cad-coach,source,active,active
+textocad,TextoCAD,gadidokan-textocad,architecture,active,active
+thedesign-agent-skills,The Design Project Agent Skills,thedesignproject-agent-skills,source,active,active
+thoth-blueprint,Thoth Blueprint,ahs12-thoth,source,active,active
+threatatlas,OWASP ThreatAtlas,threatatlas-team,source,active,active
+threejs-game-skills,Three.js Game Skills,majid-threejs,source,active,active
+throughline,ThroughLine,jordan-pease-throughline,source,active,active
+tiangong-ai-decks,Tiangong AI Decks,linan-tiangong-decks,source,active,active
+timecapsule-slm,TimeCapsule SLM,microcandella-timecapsule,source,active,active
+timecode-agent,TIMECODE-AGENT,ash-timecode-agent,source,active,active
+tinystudio,tinyStudio,mr-industries-tinystudio,source,active,active
+tldraw,tldraw SDK / Agent Starter Kit,tldraw-sdk,source,active,active
+tokvista,Tokvista,tokvista-token-bridge,architecture,active,active
+tonone,Tonone,tonone-agent-teams,source,active,active
+tooljet,ToolJet,tooljet-platform,architecture,active,active
+totalum-ai-app-builder,Totalum AI App Builder Open,totalum-vcaas-builder,architecture,active,active
+trace-component-libraries,Trace Symbols and Footprints Libraries,trace-component-platform,architecture,active,active
+trace-pcb,Trace,trace-pcb,architecture,active,active
+tractstack,TractStack,at-risk-media-tractstack,source,active,active
+trae-work,TRAE Work,trae,architecture,active,active
+trinity-creative-canvas,Trinity Creative Canvas,profengel-trinity,source,active,active
+tuna,Tuna,tuna,source,active,active
+turbo-ea,Turbo EA,turbo-ea-team,source,active,active
+tutti,Tutti,tutti-shared-agent-workspace,source,active,active
+tylina,Tylina,tylina-editor,architecture,active,active
+typecraft,TypeCraft,jason-typecraft,architecture,active,active
+typeui,TypeUI,typeui-design-context,architecture,active,active
+ui-architect-aranees,UI Architect by Anees ur Rehman,aranees-ui-architect,source,active,active
+ui-craft,UI Craft,edu-calvo-ui-craft,source,active,active
+ui-from-references,UI from References,jetray-ui-references,source,active,active
+uichemy,UiChemy,posimyth-uichemy,architecture,active,active
+uigen-arshan,UIGen by Arshan Nawaz,arshan-uigen,source,active,active
+uimason,UiMason,uimason-app,source,active,active
+uix-ai-agent,UIX AI Agent,seeb4coding-uix,source,active,active
+uizard,Uizard,uizard,architecture,active,active
+uml-flow,UML Flow,josa-uml-flow,source,active,active
+uml-tool,UML Tool,goodmorningcoffee-uml,source,active,active
+uml-transcoder,UML Transcoder,uml-transcoder-team,source,active,active
+unkode,Unkode,unkode-team,source,active,active
+uno-studio,Uno Platform Studio / Hot Design,uno-studio,architecture,active,active
+unofficial-davinci-mcp,Wasserman's Unofficial DaVinci MCP,wasserman-unofficial-davinci-mcp,source,active,active
+unreal-agent-harness,Unreal Agent Harness,simmons-unreal-harness,source,active,active
+unreal-blender-mcp,Unreal-Blender MCP,tahooki-unreal-blender,source,active,active
+unreal-mcp,Unreal MCP,epic-unreal-mcp,architecture,active,active
+usertesting,UserTesting,usertesting-platform,architecture,active,active
+uspec,uSpec,redongreen-uspec,source,active,active
+ux-pilot,UX Pilot,ux-pilot-design-workflow,architecture,active,active
+ux-planner,UX Planner,kyzdes-ux-planner,source,active,active
+ux-reviewer,UX Reviewer,swan-ux-reviewer,source,active,active
+ux-studio-ai,UX Studio AI,ux-studio-flow-agent,architecture,active,active
+ux-ui-agent-skills,UX UI Agent Skills,plugin87-ux-ui-agent-skills,source,active,active
+ux-writing-skill,UX Writing Skill,content-designer-ux-writing,source,active,active
+uxbot,UXbot,uxbot-product-design-platform,architecture,active,active
+uxcanvas,UXCanvas.ai,uxcanvas-ui-agent,architecture,active,active
+uxscii,UXSCII,trabian-uxscii,source,active,active
+varbase-ai-figma,Varbase AI Figma,vardot-figma-canvas,source,active,active
+vberai-studio,VberAI Studio,vberai-game-design,architecture,active,active
+vcad,vCAD,ecto-vcad,source,active,active
+velocity,Velocity,optimilabs-velocity,source,active,active
+velocity-ai-coder,Velocity AI Coder,velocity-ai-coder-dr-week,source,active,active
+ventura-startup-analyzer,Ventura Startup Analyzer,ventura-startup-analyzer-team,source,active,active
+vercel-v0,v0,vercel-v0,architecture,active,active
+vercel-workflow-builder-template,Vercel AI Workflow Builder Template,vercel-workflow-builder-template,source,active,active
+verilog-ide,Verilog IDE,sanjay-verilog-ide,source,active,active
+vextra-mcp,Vextra MCP,kcaitech-vextra-mcp,source,active,active
+vibe-automation,Vibe Automation Studio,vibe-automation-team,source,active,active
+vibe-code-suite,Vibe Coding Suite,vibe-code-suite,source,active,active
+vibe-coder-bluebot,Vibe Coder by bluebot-609,vibe-coder-bluebot,source,active,active
+vibe-coding-platform-lwshakib,Vibe Coding Platform by lwshakib,lwshakib-vibe-platform,source,active,active
+vibe-design-system-starter,Vibe Design System Starter,airu-vibe-design-system,source,active,active
+vibe-mermaid,Vibe Mermaid Editor,huang-vibe-mermaid,source,active,active
+vibe-workflow,Vibe Workflow,muapi-vibe-workflow,source,active,active
+vibecodeai,VibecodeAI,vibecodeai-arpon,source,active,active
+vibecoder-dublyo,VibeCoder by Dublyo,vibecoder-dublyo,source,active,active
+vibecoding-a-website,VibeCoding a Website,mark-hinkle-vibecoding,source,active,active
+vibesdk-mvp,VibeSDK MVP,stefan-vibesdk,source,active,active
+vibeui-faraz,VibeUI by Farazkhan542,faraz-vibeui,source,active,active
+vibra-code,Vibra Code,sehind-vibra-code,source,active,active
+video-shotcraft,Video Shotcraft,yihao-video-shotcraft,source,active,active
+videococo,VideoCoCo,li-videococo,source,active,active
+vidova,Vidova,deepshot-vidova,architecture,active,active
+virtuoso-bridge-lite,Virtuoso Bridge Lite,arcadia-virtuoso-bridge,source,active,active
+viscanvas,VisCanvas,viscanvas-asu,source,active,active
+vision-ai-vishnu,VISION.AI by Vishnu Prahalathan,vishnu-vision-ai,source,active,active
+visionary-claude,Visionary for Claude Code,git-webb-visionary,source,active,active
+visk,Visk,visk-powerpoint-engine,architecture,active,active
+viso-mcp,Viso MCP,fawisi-viso,source,active,active
+visual-agent-builder-amrsaeed,AI Tutors Hub Visual Agent Builder,amrsaeed-ai-tutors,source,active,active
+visual-agent-builder-brahim,Visual Agent Builder by Brahim Abdelbeki,brahim-visual-builder,source,active,active
+visual-agent-builder-reedrich12,Visual Agent Builder by Reed Richardson,reed-richardson-visual-agent-builder,source,active,active
+visual-agent-builder-studentfrederick,Visual Agent Builder by Freek van den Bosch,freek-van-den-bosch-visual-agent-builder,source,active,active
+visual-agent-designer,Visual Agent Designer,zullllkar-vad,source,active,active
+visual-authoring,Visual Authoring,vibeworkers-visual-authoring,source,active,active
+visual-diagram-editor-rzabolotin,Visual Diagram Editor by Roman Zabolotin,visual-diagram-editor-rzabolotin-team,source,active,active
+voice-agent-platform-yumikoood,Voice Agent Platform by YumikoooD,yumikoood-voice-agent-platform,source,active,active
+voice-ai-workflow-builder,Voice AI Workflow Builder,quantai-workflow-builder,source,active,active
+voiceblox,Voiceblox,okanaganrusty-voiceblox,source,active,active
+voxelsite,VoxelSite,nowsquare-voxelsite,source,active,active
+wafiq-ai-workflow-generator,AI Workflow Generator by Wafiq,wafiq-workflow-generator,source,active,active
+wallbit-workflows,Wallbit Workflows,jeremyjsx-wallbit-workflows,source,active,active
+wam-studio,WAM Diagram Editor,wam-studio-team,source,active,active
+webagent-ragul,WebAgent,ragul-webagent,source,active,active
+webai-sparsh,WebAI by Sparsh Joshi,sparsh-webai,source,active,active
+webbuild-arpitt,WebBuild by Arpit Tiwari,arpit-webbuild,source,active,active
+webcraft-ai-siddharth,WebCraft AI by Siddharth Kumar Rai,siddharth-webcraft-ai,source,active,active
+webflow-project-template,Webflow Project Template,samuel-webflow-template,source,active,active
+webly,WebLy,webly-product,source,active,active
+webnode,WebNode Framework,webnode-team,source,active,active
+webora-josiah,Webora by JOSIAHTHEPROGRAMMER,josiah-webora,source,active,active
+websim,Websim,websim-simulated-web,architecture,active,active
+website-builder-agent-peter,Website Builder Agent by peter890176,peter-builder-agent,source,active,active
+websitebuilder-susmita,AI-Powered Website Generator by Susmita Dey,susmita-websitebuilder,source,active,active
+webstew-ai,Webstew AI,sgk-webstew,source,active,active
+webstudio-mcp,Webstudio MCP,densrt-webstudio-mcp,source,active,active
+werilog,Werilog,werilog-team,source,active,active
+whipui,WhipUI,whipui-router,source,active,active
+whiteport-design-studio,Whiteport Design Studio,bmad-whiteport-design-studio,source,active,active
+windframe,Windframe,windframe-tailwind-builder,architecture,active,active
+wix-harmony,Wix Harmony,wix-harmony,architecture,active,active
+wordpress-ai-builder-apex,ApexNeural AI Website Builder for WordPress,apex-wordpress-builder,source,active,active
+work-with-design-systems,work-with-design-systems,natdex-design-systems,source,active,active
+workflowai-dresar,WorkflowAI by Dresar,dresar-workflowai,source,active,active
+workflowos,WorkflowOS,production-ai-institute-workflowos,source,active,active
+workshop-buddy,Workshop Buddy,microsoft-workshop-buddy,source,active,active
+worried-presenter,Worried Presenter,worried-presenter-plugin,architecture,active,active
+wrenai,WrenAI,canner-wrenai,source,active,active
+writerflow,WriterFlow,pruthviraj-writerflow,source,active,active
+wzrdflow,WZRDFLOW,five-dee-wzrdflow,source,active,active
+x-fluxagent,X-FluxAgent,x-fluxagent-team,source,active,active
+xca-agent,XCA Agent,xca-agent,source,active,active
+xsharko-ai,XSharko AI,tamim-xsharko,source,active,active
+yank-note,Yank Note,purocean-yank-note,source,active,active
+yellow-machine,Yellow Machine,yellow-machine-product,source,active,active
+youware,YouWare,youware-app-builder,architecture,active,active
+yuv-ai-creative-skills,YUV.AI Creative Skills,yuv-ai-creative-stack,source,active,active
+yuzudraw,YuzuDraw,yuzudraw-team,source,active,active
+zaptrace,ZapTrace,osman-zaptrace,source,active,active
+zcad,zCAD / Zixel 3D CAD,zixel-zcad,architecture,active,active
+zephyr-framework,Zephyr Framework,zephyr-agent-ui,source,active,active
+zero-build-slides,Zero-Build Slides,decocms-zero-build-slides,source,active,active
+zeronode,ZeroNode,zeronode-team,source,active,active
+zinloop,Zinloop,zinloop-system-canvas,architecture,active,active
+zoea,Zoea,zoea-desktop-agent,architecture,active,active
+zukai,Zukai,zukai-team,source,active,active
+a0-component-studio,a0 AI Component Studio,a0-component-studio-product,source,active-transition,active
+a2ui,A2UI,a2ui-protocol,source,active-transition,active
+addercad,AdderCAD,adder-labs-addercad,architecture,active-transition,active
+adobe-firefly-creative-agent,Adobe Firefly Creative Agent,adobe-firefly-creative-agent,architecture,active-transition,active
+agent-game-forge,Agent Game Forge,zero-x-funky-agent-game-forge,source,active-transition,active
+agentforge,AgentForge,lanekingkong-agentforge,source,active-transition,active
+agentforge-winka-alcel,AgentForge by winka-alcel,winka-alcel-agentforge,source,active-transition,active
+agentic-design-canvas,Agentic Design Canvas,moonslicer-agentic-design-canvas,source,active-transition,active
+agentic-ui-design-poc,Agentic UI Design Workflow POC,ramadhani-agentic-ui,source,active-transition,active
+agenticbuilder-showjihyun,AgenticBuilder by showjihyun,showjihyun-agenticbuilder,source,active-transition,active
+ai-canvas-desktop,AI Canvas Desktop,nick-chadwick-ai-canvas,source,active-transition,active
+ai-canvas-studio,AI Canvas Studio,an-pham-ai-canvas-studio,source,active-transition,active
+ai-cms,AI CMS,saksham-ai-cms,source,active-transition,active
+ai-component-builder-sfyr,AI-Powered UI Component Generator by Ryan,sfyr-component-builder,source,active-transition,active
+ai-design-workspace-catalog,AI Design Workspace,cao-catalog-workspace,source,active-transition,active
+ai-frontend-generator-arijeet,AI Frontend Generator by Arijeet Priyadarshi,arijeet-ai-frontend-generator,source,active-transition,active
+ai-landing-page-builder-ali-tamer,AI Landing Page Builder by Ali Tamer,ali-tamer-landing-builder,source,active-transition,active
+ai-landing-page-studio,AI Landing Page Studio,aditya-dwi-putra-landing-studio,source,active-transition,active
+ai-module-generator-sawan,AI Module Generator by Sawan Kumar,sawan-ai-module-generator,source,active-transition,active
+ai-react-component-generator-amit,AI React Component Generator by Amit Nandan,amit-ai-react-component-generator,source,active-transition,active
+ai-revit-family-maker,AI Revit Family Maker,blueray-revit-family,source,active-transition,active
+ai-slide-editor,AI Slide Editor,strgfjojo-ai-slide-editor,source,active-transition,active
+ai-ui-builder-beingshappy,AI UI Builder by beingshappy,beingshappy-ai-ui-builder,source,active-transition,active
+ai-ui-builder-kiryuchi,AI-Powered UI Builder by kiryuchi10,kiryuchi-ui-builder,source,active-transition,active
+ai-ui-builder-sharadpatil,AI UI Builder by Sharad Patil,sharad-patil-ai-ui-builder,source,active-transition,active
+ai-ui-generator-kahab,AI UI Generator by Mohammed Kahab,kahab-ai-ui-generator,source,active-transition,active
+ai-web-app-builder-mazzyy,AI Web App Builder by Abdul Musawar,mazzyy-ai-web-app-builder,source,active-transition,active
+ai-webpage-generator-pavan,AI Webpage Generator by Pavan Kumar,pavan-kumar-ai-webpage-generator,source,active-transition,active
+ai-website-generator-aifeifei,AI Website Generator by aifeifei798,aifeifei-ai-website,source,active-transition,active
+ai-website-generator-shrik4,AI Website Generator by shrik4,shrik4-ai-website,source,active-transition,active
+ai-website-generator-shubh,AI Website Generator by shubharthaksangharsha,shubh-ai-website,source,active-transition,active
+ai-workflow-builder-nids12,AI Workflow Builder by Nidhi Sarda,nids12-ai-workflow-builder,source,active-transition,active
+ai-workflow-builder-sneha-chaurasia,AI Workflow Builder by Sneha Chaurasia,sneha-chaurasia-workflow-builder,source,active-transition,active
+ai-workflow-builder-subham-mohanta,AI Workflow Builder by Subham Mohanta,subham-mohanta-workflow-builder,source,active-transition,active
+ai-workflow-tim-wijma,AI Workflow Builder by Tim Wijma,tim-wijma-ai-workflow,source,active-transition,active
+airship,Airship,nayan-airship,source,active-transition,active
+aiwebgenerator-kuroda,AIWebGenerator by Kuroda Kayn,aiwebgenerator-product,source,active-transition,active
+alwaysblue,AlwaysBlue,rashed-hasan-alwaysblue,source,active-transition,active
+apo,Apo,shaurya-apo,source,active-transition,active
+app-club-design,App Club Design,munonzito-app-club-design,source,active-transition,active
+archgen,ArchGen,archgen-industrial,architecture,active-transition,active
+atomic-component-generator,Atomic Component Generator,alexander-burgos-atomic-component-generator,architecture,active-transition,active
+aura-ai-workflow-builder,Aura AI Workflow Builder,surabhi2408-aura,source,active-transition,active
+author-autograph,Author,autograph-author,source,active-transition,active
+autocraft,Autocraft,autocraft-ai-ui-workspace,architecture,active-transition,active
+autodesk-flow-studio,Autodesk Flow Studio,autodesk-wonder-flow,architecture,active-transition,active
+awesome-design-extractor,Awesome Design Extractor,myoji-awesome-design-extractor,source,active-transition,active
+bezi,Bezi,bezi-unity-agent,architecture,active-transition,active
+bluestone-ai-jewelry-prototype,BlueStone AI Jewelry Prototype,shivam-bluestone-prototype,source,active-transition,active
+brawt,brawt,bernardo-brawt,source,active-transition,active
+brokieai,BrokieAI,magicred-brokieai,source,active-transition,active
+bunyan,Bunyan,bunyan-home-delivery,architecture,active-transition,active
+cad-gpt-cap,CAP / CAD-GPT,blueasuka-cap,source,active-transition,active
+cadcursor,CadCursor,cadcursor-physical-ai,architecture,active-transition,active
+cadens,Cadens,tofulabai-cadens,architecture,active-transition,active
+caliper,Caliper,caliper-code-design,architecture,active-transition,active
+canvas-copilot-penpot,Canvas Copilot for Penpot,gede-sudimahendra-canvas-copilot,source,active-transition,active
+chatdev,ChatDev 2.0 and DevAll,openbmb-chatdev,source,active-transition,active
+chip,CHIP,elleta-chip,source,active-transition,active
+chordio-px-bench,Chordio / PX-bench,chordio-product-experience,architecture,active-transition,active
+claudesign,Claudesign,claudate-claudesign,source,active-transition,active
+cloudmap,CloudMap,cloudmap-team,source,active-transition,active
+cofounder,Cofounder,openinterface-cofounder,source,active-transition,active
+comfy-in-app-agent,Comfy In-App Agent,comfy-org-in-app-agent,architecture,active-transition,active
+contentkit,ContentKit,intersections-contentkit,architecture,active-transition,active
+copy-design-cli,Copy Design CLI,lxcong-copy-design-cli,source,active-transition,active
+craftflow,CraftFlow,akameredon-craftflow,source,active-transition,active
+creai,CreAI,creai-product,source,active-transition,active
+curate,Curate,curate-kriti-team,source,active-transition,active
+d2-canvas,D2 Canvas,aris-montclair-d2-canvas,source,active-transition,active
+dawn-design,Dawn,dawn-multiplayer-design,architecture,active-transition,active
+design-md-agent-skill,design.md Agent Skill,jeftar-mascarenhas-design-md,source,active-transition,active
+design-md-generator,DESIGN.md Generator,jason-hnd-design-md-generator,source,active-transition,active
+design-system-agents,AI Design System Agents,kamil-design-system-agents,source,active-transition,active
+design-system-extractor-skill,Design System Extractor Skill,simon-bloom-design-system-extractor,source,active-transition,active
+designmd-canvas,DESIGN.md Canvas,christopher-maneu-designmd-canvas,source,active-transition,active
+diagramai-nihal,DiagramAI by Nihal,nihal-diagramai,source,active-transition,active
+djasha-system,Djasha System,djasha-system,source,active-transition,active
+drawtir,Drawtir,rantir-drawtir,source,active-transition,active
+enterprise-ai-design-system,Enterprise AI Design System,drai-enterprise-ai-design-system,source,active-transition,active
+eostudio,EoStudio,embeddedos-eostudio,source,active-transition,active
+faisca,Faísca,faisca-brand-content,architecture,active-transition,active
+figma-mcp-write-server,Figma MCP Write Server,olivier-figma-mcp-write-server,source,active-transition,active
+figma-to-astro-pipeline,Figma to Astro Pipeline,wyeworks-figma-astro,architecture,active-transition,active
+figma-weave,Figma Weave,weavy-figma-weave,architecture,active-transition,active
+forgelang,ForgeLang,cloud9ops-forgelang,source,active-transition,active
+forgent3d,Forgent3D,forgent3d-desktop-cloud,source,active-transition,active
+frappe-studio,Frappe Studio,frappe-studio-team,source,active-transition,active
+gemcoder-ai,Gemcoder.AI,gemcoder-app-builder,architecture,active-transition,active
+genweb-dhruv,GenWeb by Dhruv Pansuriya,dhruv-pansuriya-genweb,source,active-transition,active
+ghost-ai,Ghost AI,javascript-mastery-ghost-ai,source,active-transition,active
+grills,Grills,grills-project,source,active-transition,active
+hascode-ui,HasCode UI,haslab-hascode-ui,source,active-transition,active
+hozo,HOZO,dentsu-hozo,architecture,active-transition,active
+hustl3,Hustl3,nisargpatel7042lva-hustl3,source,active-transition,active
+image-to-react-iwahid,Image to React Component Converter by Imroz Wahid,iwahid-image-to-react,source,active-transition,active
+image-to-shape-safe-svg,Image to Shape-Safe SVG,perpetual-shape-safe,source,active-transition,active
+instantsite-ai,InstantSite AI,datta-instant-site,source,active-transition,active
+intellibuild,IntelliBuild,upendra-intellibuild,source,active-transition,active
+jihan-ai-web-builder,Jihan AI Web Builder,jihan-ai-web-builder,source,active-transition,active
+kgents,Kgents,ugo5738-kgents,source,active-transition,active
+kleva,Kleva,bamideleo-kleva,source,active-transition,active
+komposo,Komposo,copycoder-komposo,architecture,active-transition,active
+kyndryl-agent-builder,Kyndryl Consult Agent Builder for Modernization,kyndryl-agent-builder,source,active-transition,active
+launchlayer-ai,LaunchLayer AI,lukas-launchlayer-ai,source,active-transition,active
+lightlang-workflow-builder,LightLang AI Workflow Builder,reasonmethis-lightlang,source,active-transition,active
+mantis-cad,MANTIS CAD,mantis-agent-first-cad,architecture,active-transition,active
+mercer-fashion,Mercer,mercer-cala-fashion,architecture,active-transition,active
+microsoft-designer,Microsoft Designer,microsoft-designer,architecture,active-transition,active
+modelweave,ModelWeave,serhii-sotskyi-modelweave,source,active-transition,active
+nanocanvas,NanoCanvas,an-hoang-vo-nanocanvas,source,active-transition,active
+nextflow-richa-sharma,NextFlow by Richa Sharma,richa-sharma-nextflow,source,active-transition,active
+nightghost-design-agent,design-agent by NightGhost,nightghost-visual-design-agent,source,active-transition,active
+niki,Niki,niki-agent-canvas,architecture,active-transition,active
+penpot-mcp-server,Penpot MCP Server,zcube-penpot-mcp-server,source,active-transition,active
+penpot-skills,Penpot Skills,juan-de-la-cruz-penpot-skills,source,active-transition,active
+picasso,Picasso,viperr-picasso,source,active-transition,active
+pixello,Pixello,pixello-code-native-canvas,architecture,active-transition,active
+pptagent,PPTAgent / DeepPresenter,pptagent-deeppresenter,source,active-transition,active
+pptcraft,PPTCraft,pptcraft-preview,architecture,active-transition,active
+prd-to-ui-automation-agent,PRD to UI Automation Agent,loinz-prd-ui,source,active-transition,active
+presentation-builder,Presentation Builder,zane-cole-presentation-builder,source,active-transition,active
+prism-prompt-to-ui,PRISM,trillion6-prism,source,active-transition,active
+program-ui,Program UI,program-ui-token-system,architecture,active-transition,active
+quby-weave,Quby Weave,qb-weave-ui-studio,architecture,active-transition,active
+quill-design,Quill,michael-hirst-quill,source,active-transition,active
+qwen3-coder-webdev-ethan,Qwen3 Coder WebDev by Ethan Ng,ethan-qwen3-webdev,source,active-transition,active
+rocket-new,Rocket.new,dhiwise-rocket-app-builder,architecture,active-transition,active
+rtl-claw,RTL-CLAW,tongji-rtl-claw,source,active-transition,active
+sand-canvas,Sand,kno-raziel-sand,source,active-transition,active
+silex,Silex Desktop AI,silex-desktop,source,active-transition,active
+smart-canvas,Smart Canvas,suzam26-smart-canvas,source,active-transition,active
+spicexplorer,SpiceXplorer,macanalog-spicexplorer,source,active-transition,active
+storybook-assistant,Storybook Assistant,flight505-storybook-assistant,source,active-transition,active
+storyflow-ai-canvas,StoryFlow AI Canvas,luanluan-storyflow-ai-canvas,source,active-transition,active
+sutradhar-ai,Sutradhar AI,team-yurei-sutradhar,source,active-transition,active
+symxplorer,SymXplorer,macanalog-symxplorer,source,active-transition,active
+syncpoint,SyncPoint,axis-labs-syncpoint,architecture,active-transition,active
+tapcanvas,TapCanvas,tapcanvas-native-ui-agent,architecture,active-transition,active
+tempo,Tempo,tempo-labs,architecture,active-transition,active
+text2diagram,DiagramAI / text2diagram,ad1tyad-text2diagram,source,active-transition,active
+tokenignite,TokenIgnite,nico-brinkschroder-tokenignite,architecture,active-transition,active
+ui-builder-julianshen,AI UI Builder by Julian Shen,julian-ui-builder,source,active-transition,active
+uicanvas,UICanvas,markvely-uicanvas,source,active-transition,active
+uitiful,Uitiful,uitiful-cross-platform-ai-design,architecture,active-transition,active
+unity-ai-tools,Unity AI tools,unity-editor-ai,architecture,active-transition,active
+verxa-ai,VERXA AI,cephas-verxa,source,active-transition,active
+vibe-otter-lite,Vibe Otter Lite,vibeotter-lite,source,active-transition,active
+visdiff,Visdiff,visdiff-agent-convergence,architecture,active-transition,active
+we0,We0.ai,we0-multi-agent-sites,source,active-transition,active
+web-to-design-md,web-to-design-md,paidax-web-to-design-md,source,active-transition,active
+webai-new,webAi.new,webai-new-product,source,active-transition,active
+webapp-ai-ui-builder,WebApp AI UI Builder,webapp-ai-ui-builder-product,source,active-transition,active
+webcraft,WebCraft,webcraft-kriti-team,source,active-transition,active
+webcraft-krish,WebCraft AI by Krish Anand,webcraft-krish-product,source,active-transition,active
+webflow-ai,Webflow AI,webflow,architecture,active-transition,active
+webgalaxy,WebGalaxy,webgalaxy-kriti-team,source,active-transition,active
+webora,Webora,keenoy-webora,source,active-transition,active
+wonder,Wonder,wonder-code-design-canvas,architecture,active-transition,active
+ai-component-builder-bamerf,AI Component Builder by Bamdad Erfanian,bamerf-component-builder,source,historical,archived
+ai-frontend-generator-marcelorl,AI Frontend Generator by Marcelo Lima,marcelo-lima-ai-frontend-generator,source,historical,archived
+ai-frontend-generator-metamil,AI Frontend Generator by Tamil Selvan,tamil-selvan-ai-frontend-generator,source,historical,archived
+ai-ui-components-generator-thegreatbonnie,AI-Powered UI Components Generator,thegreatbonnie-ui-components,source,historical,archived
+ai-voice-page-builder-graeber,AI Voice Page Builder,graeber-voice-page-builder,source,historical,archived
+ai-website-generator-louvivien,AI Website Generator by Louvivien,louvivien-ai-website,source,historical,archived
+ai2ui-component-generator,AI2UI Component Generator,yuval-ai2ui,source,historical,archived
+co-design-canvas,Co-Design Canvas,utopia5327-codesign,source,historical,archived
+codecooks,CodeCooks,codecooks-product,source,historical,archived
+delft-ai-toolkit,Delft AI Toolkit,pvanallen-delft-ai-toolkit,source,historical,archived
+diagram,Diagram,diagram-technologies,architecture,historical,archived
+galileo-ai,Galileo AI,galileo-ai,architecture,historical,archived
+gpt4-landing-page-creator-renzo,GPT-4 Landing Page Creator,renzo-gpt4-landing-page-creator,source,historical,archived
+inescop-footwear,INESCOP footwear prototype,aigen4fashion-footwear,architecture,historical,archived
+motiff,Motiff,motiff,architecture,historical,archived
+musho,Musho,musho-figma-assistant,architecture,historical,archived
+opencode-flow,OpenCode Flow,igor-warzocha-opencode-flow,source,historical,archived
+project-threejs-ai,project_threejs_ai,project-threejs-ai-product,source,historical,archived
+text-to-website-rahul,TextToWebsite,rahul-amlekar-text-to-website,source,historical,archived
+vibma,Vibma,ufira-vibma,source,historical,archived
+web-page-generator-natalie,Web Page Generator by Natalie Basille,natalie-basille-web-page-generator,source,historical,archived
+website-that-builds-itself,Website That Builds Itself,echohive-self-building-site,source,historical,archived
+windsurf,Windsurf,codeium-windsurf,architecture,historical,archived
+zigma,Zigma,zigma-nextui-design-systems,architecture,historical,archived
+firebase-studio,Firebase Studio,firebase-studio,architecture,sunsetting,archived
+github-spark,GitHub Spark,github-spark,architecture,sunsetting,archived
+openai-agent-builder,OpenAI Agent Builder,openai-agentkit,architecture,sunsetting,archived
+strands-tools-diagram,Strands Agents Diagram Tool,strands-tools-team,source,sunsetting,archived
